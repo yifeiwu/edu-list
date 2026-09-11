@@ -26,9 +26,11 @@ school_name,web_domain,type,last_visited,status,sources
 ## How it works (two pipelines)
 
 **Curate** (`src/curate.py`, daily 00:00 UTC) — the rate-limit-sensitive half.
-Fetches 1–2 rotating upstream sources (`sources.yaml` round-robin via
-`state/state.json`): Hipo → ROR → OpenAlex → Wikidata → ETER → Scorecard →
-GIAS → FR → UGC-IN → OSM → crt.sh → WHED-limited. New domains go to the
+Hits every enabled upstream source once per session, each capped by its
+`sources.yaml` per_run: Hipo, ROR, OpenAlex, Wikidata, ETER, Scorecard, GIAS,
+FR, UGC-IN, OSM, crt.sh, Common Crawl CDX (school-keyword-filtered over
+academic suffixes), WHED-limited. Per-adapter cursors advance coverage
+session-to-session. New domains go to the
 pending queue (`state/pending.json`); already-known domains just get their
 `sources` column unioned. No website fetching.
 

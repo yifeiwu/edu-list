@@ -1,5 +1,6 @@
-# Source registry. Each run picks 1-2 enabled sources by round-robin
-# (state/state.json: next_idx) so no single run hammers every upstream.
+# Source registry. EVERY enabled source is hit once per curate session, each
+# capped by its `per_run`. Per-adapter cursors in state/state.json
+# (offsets/pages/suffix rotation) advance coverage session-to-session.
 # kind: bulk-json | api-paged | sparql | csv-download | html-limited | overpass | ct | cc
 sources:
   - id: hipo
@@ -7,7 +8,7 @@ sources:
     enabled: true
     url: https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
     license: MIT
-    per_run: 800
+    per_run: 500
   - id: ror
     kind: api-paged
     enabled: true
@@ -19,7 +20,7 @@ sources:
     enabled: true
     url: https://api.openalex.org/institutions
     license: CC0
-    per_run: 400
+    per_run: 300
   - id: wikidata
     kind: sparql
     enabled: true
@@ -39,13 +40,13 @@ sources:
     # US College Scorecard "Most Recent Institution-Level Data" zip (keyless bulk).
     url: https://collegescorecard.ed.gov/assets/CollegeScorecard_Raw_Data.zip
     license: US-public-domain
-    per_run: 500
+    per_run: 300
   - id: gias
     kind: csv-download
     enabled: true # k12 enabled
     url: ""
     license: OGL-UK
-    per_run: 400
+    per_run: 300
   - id: france-annuaire
     kind: api-paged
     enabled: true
@@ -97,9 +98,9 @@ sources:
     per_run: 50
   - id: commoncrawl
     kind: cc
-    enabled: false # demoted: biased to .edu/.ac.*; kept as optional verifier
+    enabled: true # school discovery: keyword-filtered CDX over academic suffixes
     url: https://index.commoncrawl.org/
     license: public-crawl
-    per_run: 200
+    per_run: 300
 
-# Rotation order is the file order above. Cursors live in state/state.json.
+# Rotation state lives in state/state.json (per-adapter cursors).

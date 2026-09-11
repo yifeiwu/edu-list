@@ -19,7 +19,7 @@ with per-row `sources` citations. Honor each upstream's terms:
 | crt.sh (CT logs) | newly-issued hosts per academic suffix | Public logs | Cite `crtsh:<suffix>`. |
 | WHED / IAU | gap-filler only, ≤10 detail pages/run | Proprietary — limited | Cite `whed:IAU-XXXXXX`, link back, no bulk copy without consent (`centre@iau.global`). |
 | edudirectory.school | hints only | Third-party | Single-page, robots-respecting. |
-| Common Crawl | optional host existence | Public crawl | Demoted (biased to .edu). |
+| Common Crawl (CDX) | school-keyword-filtered hosts over 23 academic suffixes | Public crawl | Cite `commoncrawl:<index>:<suffix>`. 2 rotating suffixes/session. |
 
 UNESCO-UIS statistics are **not** ingested (no domains). Wayback is **not** used
 (per project decision).

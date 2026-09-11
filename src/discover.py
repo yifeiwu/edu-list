@@ -325,7 +325,8 @@ def discover_crtsh(url, state, per_run, timeout=40):
     state.setdefault("cursors", {})["crtsh_idx"] = idx + 1
     try:
         r = _get("https://crt.sh/", timeout,
-                 params={"q": f"%.{suffix}", "output": "json"})
+                 params={"q": f"%.{suffix}", "output": "json",
+                         "exclude": "expired"})
         if r.status_code != 200:
             return []
         data = r.json()
@@ -402,35 +403,62 @@ def discover_whed(url, state, per_run, timeout=30):
     return out
 
 
+# Academic-suffix rotation for Common Crawl school discovery. Suffix-only
+# scans would just re-confirm .edu-style hosts, so each query ALSO applies a
+# school-keyword filter on the indexed URL — this surfaces actual school
+# sites (admissions pages, /academics, colegio/lycée names, …) instead of a
+# random slice of the suffix. Two suffixes per session, cursor rotates.
+CC_SCHOOL_SUFFIXES = [
+    "edu", "ac.uk", "sch.uk", "edu.au", "ac.in", "edu.in", "ac.za",
+    "edu.br", "edu.mx", "ac.jp", "edu.ng", "edu.pk", "edu.ph", "edu.eg",
+    "ac.ke", "edu.gh", "edu.my", "edu.sg", "ac.th", "edu.tr", "edu.ar",
+    "edu.co", "sch.za",
+]
+CC_SCHOOL_URL_RE = (
+    ".*(school|universit|college|academ|institut|polytechnic|lycee|liceo|"
+    "colegio|escuela|escola|ecole|gymnasium|kindergarten|campus|facult).*"
+)
+CC_SUFFIXES_PER_RUN = 2
+
+
 def discover_commoncrawl(url, state, per_run, timeout=30):
-    suffixes = ["edu", "ac.uk", "edu.au", "ac.in"]
     idx = int(state.get("cursors", {}).get("cc_idx", 0))
-    suffix = suffixes[idx % len(suffixes)]
-    state.setdefault("cursors", {})["cc_idx"] = idx + 1
     try:
         info = _get("https://index.commoncrawl.org/collinfo.json", timeout).json()
         index = info[0]["id"]
-        r = _get(f"https://index.commoncrawl.org/{index}-index", timeout,
-                 params={"url": f"*.{suffix}", "output": "json",
-                         "filter": ["status:200", "mime:text/html"],
-                         "collapse": "urlkey", "limit": min(per_run, 500)})
-        if r.status_code != 200:
-            return []
-        out, seen = [], set()
-        for line in r.text.splitlines():
-            try:
-                u = json.loads(line).get("url", "")
-                import urllib.parse as up
-                h = (up.urlparse(u).hostname or "").lower().removeprefix("www.")
-                if h and h not in seen and "." in h:
-                    seen.add(h)
-                    out.append({"name": h, "url": f"https://{h}", "iso2": "",
-                                "type_hint": "", "source": f"commoncrawl:{index}"})
-            except Exception:
-                continue
-        return out[:per_run]
     except Exception:
         return []
+    out, seen = [], set()
+    per_suffix = max(per_run // CC_SUFFIXES_PER_RUN, 50)
+    for k in range(CC_SUFFIXES_PER_RUN):
+        suffix = CC_SCHOOL_SUFFIXES[(idx + k) % len(CC_SCHOOL_SUFFIXES)]
+        try:
+            r = _get(f"https://index.commoncrawl.org/{index}-index", timeout,
+                     params={"url": f"*.{suffix}", "output": "json",
+                             "filter": [f"url:{CC_SCHOOL_URL_RE}",
+                                        "status:200", "mime:text/html"],
+                             "collapse": "urlkey", "limit": min(per_suffix, 500)})
+            if r.status_code != 200:
+                continue
+            for line in r.text.splitlines():
+                try:
+                    u = json.loads(line).get("url", "")
+                    import urllib.parse as up
+                    h = (up.urlparse(u).hostname or "").lower().removeprefix("www.")
+                    if h and h not in seen and "." in h:
+                        seen.add(h)
+                        out.append({"name": h, "url": f"https://{h}", "iso2": "",
+                                    "type_hint": "",
+                                    "source": f"commoncrawl:{index}:{suffix}"})
+                except Exception:
+                    continue
+        except Exception:
+            continue
+        if len(out) >= per_run:
+            break
+    state.setdefault("cursors", {})["cc_idx"] = \
+        (idx + CC_SUFFIXES_PER_RUN) % len(CC_SCHOOL_SUFFIXES)
+    return out[:per_run]
 
 
 # Stubs: configured later (K-12 deferred or third-party ToS-gated).

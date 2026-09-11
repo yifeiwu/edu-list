@@ -1,8 +1,9 @@
 name: Curate (discover)
 
 # Rate-limit-sensitive half: hits shared upstream sources (Wikidata SPARQL,
-# Overpass, ROR/OpenAlex APIs, crt.sh, WHED). Daily, 1-2 sources per run via
-# round-robin. Writes state/pending.json + re-cited sources; no validation.
+# Overpass, ROR/OpenAlex APIs, crt.sh, Common Crawl CDX, WHED). Daily; every
+# enabled source is hit once per session, each capped by its per_run.
+# Writes state/pending.json + re-cited sources; no validation.
 on:
   schedule:
     - cron: "0 0 * * *"   # daily 00:00 UTC

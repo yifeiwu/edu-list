@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Curate (discovery) pipeline — the rate-limit-sensitive half.
 
-Fetches 1-2 rotating upstream sources (Wikidata, Overpass, ROR, crt.sh, …),
-normalizes candidates and appends NEW domains to the pending queue
-(`state/pending.json`). Already-known domains just get their `sources`
-column unioned (re-citation). Performs NO website validation.
+Hits EVERY enabled upstream source once per session (each capped by its
+`sources.yaml` per_run), normalizes candidates and appends NEW domains to
+the pending queue (`state/pending.json`). Already-known domains just get
+their `sources` column unioned (re-citation). Performs NO website validation.
 
 Run: python src/curate.py --config config.yaml --sources sources.yaml
 """
@@ -64,16 +64,14 @@ def pick_sources(sources: list[dict], state: dict, k12: bool,
                  forced: str = "") -> list[dict]:
     if forced:
         return [s for s in sources if s["id"] == forced]
-    enabled = [s for s in sources
-               if s.get("enabled") and (k12 or s["id"] not in
-               ("gias", "osm", "giga"))]
-    if not enabled:
-        return []
-    idx = int(state.get("next_idx", 0))
-    # 2 sources per run: throughput without hammering any single upstream.
-    picks = [enabled[(idx + i) % len(enabled)] for i in range(min(2, len(enabled)))]
-    state["next_idx"] = (idx + len(picks)) % len(enabled)
-    return picks
+    # Hit EVERY enabled source each session, each capped by its `per_run`.
+    # Coverage still advances session-to-session via per-adapter cursors
+    # (offsets/pages/suffix rotation in state). Deadline guard in run_curate
+    # stops early if the session overruns; cursors already persisted per
+    # adapter keep the next session consistent.
+    return [s for s in sources
+            if s.get("enabled") and (k12 or s["id"] not in
+            ("gias", "osm", "giga"))]
 
 
 def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
