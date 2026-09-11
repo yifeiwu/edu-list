@@ -1,0 +1,105 @@
+# Source registry. Each run picks 1-2 enabled sources by round-robin
+# (state/state.json: next_idx) so no single run hammers every upstream.
+# kind: bulk-json | api-paged | sparql | csv-download | html-limited | overpass | ct | cc
+sources:
+  - id: hipo
+    kind: bulk-json
+    enabled: true
+    url: https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
+    license: MIT
+    per_run: 800
+  - id: ror
+    kind: api-paged
+    enabled: true
+    url: https://api.ror.org/organizations
+    license: CC0
+    per_run: 300
+  - id: openalex
+    kind: api-paged
+    enabled: true
+    url: https://api.openalex.org/institutions
+    license: CC0
+    per_run: 400
+  - id: wikidata
+    kind: sparql
+    enabled: true
+    url: https://query.wikidata.org/sparql
+    license: CC0
+    per_run: 300
+  - id: eter
+    kind: csv-download
+    enabled: true
+    # Set to your vendored/cached ETER export URL; skipped gracefully if empty/unreachable.
+    url: ""
+    license: EU-open-data
+    per_run: 400
+  - id: scorecard
+    kind: csv-download
+    enabled: true
+    # US College Scorecard "Most Recent Institution-Level Data" zip (keyless bulk).
+    url: https://collegescorecard.ed.gov/assets/CollegeScorecard_Raw_Data.zip
+    license: US-public-domain
+    per_run: 500
+  - id: gias
+    kind: csv-download
+    enabled: true # k12 enabled
+    url: ""
+    license: OGL-UK
+    per_run: 400
+  - id: france-annuaire
+    kind: api-paged
+    enabled: true
+    url: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-annuaire-education/records
+    license: Etalab-2.0
+    per_run: 300
+  - id: france-sup
+    kind: csv-download
+    enabled: true
+    url: ""
+    license: Etalab-2.0
+    per_run: 300
+  - id: ugc-in
+    kind: html-limited
+    enabled: true
+    url: https://www.ugc.gov.in/universitydetails/university
+    license: IN-open-data
+    per_run: 50
+  - id: osm
+    kind: overpass
+    enabled: true # k12 enabled; quota-sensitive, one bbox per run
+    url: https://overpass-api.de/api/interpreter
+    license: ODbL
+    per_run: 200
+  - id: giga
+    kind: api-paged
+    enabled: true # k12 enabled; locations mostly without websites
+    url: ""
+    license: open-data
+    per_run: 300
+  - id: crtsh
+    kind: ct
+    enabled: true
+    url: https://crt.sh/
+    license: public-logs
+    per_run: 300
+  - id: whed
+    kind: html-limited
+    enabled: true
+    # Polite gap-filler only: <=10 detail pages/run, IDs cited, ToS respected.
+    url: https://whed.net/
+    license: IAU-proprietary-limited
+    per_run: 10
+  - id: edudirectory
+    kind: html-limited
+    enabled: false
+    url: https://edudirectory.school/
+    license: third-party
+    per_run: 50
+  - id: commoncrawl
+    kind: cc
+    enabled: false # demoted: biased to .edu/.ac.*; kept as optional verifier
+    url: https://index.commoncrawl.org/
+    license: public-crawl
+    per_run: 200
+
+# Rotation order is the file order above. Cursors live in state/state.json.

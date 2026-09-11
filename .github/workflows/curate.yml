@@ -1,0 +1,48 @@
+name: Curate (discover)
+
+# Rate-limit-sensitive half: hits shared upstream sources (Wikidata SPARQL,
+# Overpass, ROR/OpenAlex APIs, crt.sh, WHED). Daily, 1-2 sources per run via
+# round-robin. Writes state/pending.json + re-cited sources; no validation.
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily 00:00 UTC
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Force one source id (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edu-domains-curate
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run curator
+        run: |
+          python src/curate.py --config config.yaml --sources sources.yaml --source "${{ inputs.source || '' }}"
+
+      - name: Commit queue + state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/countries state/state.json state/pending.json
+          git diff --cached --quiet || git commit -m "chore(data): curate update $(date -u +%F)"
+          git push

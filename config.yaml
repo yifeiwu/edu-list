@@ -1,0 +1,73 @@
+# Settings for the incremental edu-domains crawler.
+# Free-tier safe: each run is capped by time + validation count.
+
+run:
+  # Max wall-clock seconds for the whole crawl step (workflow timeout is 55 min;
+  # keep headroom for pip install + commit).
+  max_seconds: 2700
+  # Hard cap on HTTP validations per run (new + re-verify combined).
+  max_validations: 600
+  # How many NEW domains to validate per run (rest deferred via cursors).
+  max_new_per_run: 500
+  # How many existing rows to re-verify when NO new domains found.
+  verify_batch_no_new: 500
+  # How many existing rows to piggyback-verify when new domains WERE found.
+  verify_batch_with_new: 100
+  # After this many consecutive Inaccessible results, stop re-checking monthly;
+  # row is kept (archived) but skipped by oldest-N rotation for `archive_skip_days`.
+  archive_after_failures: 6
+  archive_skip_days: 90
+  # Cap on queued unvalidated candidates (curate defers overflow to next run).
+  max_pending: 8000
+
+verify:
+  # Verify hits each website once (homepage only, distributed hosts), so it
+  # is safe to run 2x daily with a higher cap than curation.
+  max_validations: 1000
+  max_new_per_run: 800
+  verify_batch_no_new: 600
+  verify_batch_with_new: 100
+
+validation:
+  timeout_seconds: 10
+  # Homepage bytes to inspect (title/H1/schema/keywords).
+  max_bytes: 32768
+  politeness_delay_seconds: 0.4
+  user_agent: "edu-domains-bot/1.0 (+https://github.com/YOUR_USER/edu-domains; contact: you@example.com)"
+  # Confidence >= threshold => Active (provided final HTTP status is 2xx + HTML).
+  active_threshold: 50
+
+output:
+  countries_dir: data/countries
+  index_path: data/countries/INDEX.md
+
+state_path: state/state.json
+
+# K-12 adapters (GIAS, FR annuaire, OSM-schools, Giga) enabled: full indexing.
+k12_enabled: true
+
+# ISO2 -> multilingual keyword-group mapping is in src/util.py (KEYWORDS_I18N).
+# Country inference: source ISO2 preferred, else suffix map below, else "".
+suffix_country:
+  edu: US
+  ac.uk: GB
+  sch.uk: GB
+  edu.au: AU
+  ac.in: IN
+  edu.in: IN
+  ac.za: ZA
+  edu.br: BR
+  edu.mx: MX
+  ac.jp: JP
+  edu.ng: NG
+  edu.pk: PK
+  edu.ph: PH
+  edu.eg: EG
+  ac.ke: KE
+  edu.gh: GH
+  ac.ug: UG
+  edu.et: ET
+
+blocklist:
+  - example.edu
+  - test.edu
