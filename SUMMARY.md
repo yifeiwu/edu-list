@@ -1,6 +1,6 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 11:04 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 13:27 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
@@ -11,7 +11,7 @@ _Generated 2026-09-13 11:04 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Last runs
 
-- Verify (2026-09-13 11:04 UTC): validated 60, +0 Active, re-verified 60, pending left 0
+- Verify (2026-09-13 13:27 UTC): validated 60, +0 Active, re-verified 60, pending left 0
 
 ## Countries (top 15 by size)
 
@@ -36,12 +36,12 @@ _Generated 2026-09-13 11:04 UTC. Full per-country table: [data/countries/INDEX.m
 | `http-2xx-html` | 45 |
 | `fetch-error:ConnectionError` | 4 |
 | `http-403` | 3 |
-| `fetch-error:ConnectTimeout` | 2 |
 | `fetch-error:SSLError` | 2 |
-| `moved-to:upmc.com` | 1 |
-| `low-confidence:http-2xx-html` | 1 |
-| `moved-to:royalholloway.ac.uk` | 1 |
+| `fetch-error:ConnectTimeout` | 2 |
 | `moved-to:kean.edu` | 1 |
+| `moved-to:royalholloway.ac.uk` | 1 |
+| `low-confidence:http-2xx-html` | 1 |
+| `moved-to:upmc.com` | 1 |
 
 ## Freshness
 
