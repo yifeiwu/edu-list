@@ -1,106 +1,133 @@
 # Source registry. EVERY enabled source is hit once per curate session, each
-# capped by its `per_run`. Per-adapter cursors in state/state.json
-# (offsets/pages/suffix rotation) advance coverage session-to-session.
-# kind: bulk-json | api-paged | sparql | csv-download | html-limited | overpass | ct | cc
+# capped by its strict hourly `per_run` and `timeout_seconds`. Curate runs
+# hourly, so per_run values are kept small: ~200 raw candidates/hour across
+# all sources ≈ one old daily run spread over 24 sessions. Per-adapter
+# cursors in state/state.json (offsets/pages/suffix rotation) advance
+# coverage session-to-session.
+# kind: bulk-json | api-paged | sparql | csv-download | html-limited | overpass
 sources:
   - id: hipo
     kind: bulk-json
     enabled: true
     url: https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
     license: MIT
-    per_run: 500
+    per_run: 25
+    timeout_seconds: 60
   - id: ror
     kind: api-paged
     enabled: true
     url: https://api.ror.org/organizations
     license: CC0
-    per_run: 300
+    per_run: 15
+    timeout_seconds: 40
   - id: openalex
     kind: api-paged
     enabled: true
     url: https://api.openalex.org/institutions
     license: CC0
-    per_run: 300
+    per_run: 15
+    timeout_seconds: 40
+    # Optional override for the OpenAlex polite pool
+    # (https://docs.openalex.org/). When empty, the contact email is derived
+    # from config.yaml validation.user_agent, else DEFAULT_MAILTO.
+    mailto: edu-domains-bot@example.com
   - id: wikidata
     kind: sparql
     enabled: true
     url: https://query.wikidata.org/sparql
     license: CC0
-    per_run: 300
-  - id: eter
-    kind: csv-download
-    enabled: true
-    # Set to your vendored/cached ETER export URL; skipped gracefully if empty/unreachable.
-    url: ""
-    license: EU-open-data
-    per_run: 400
+    per_run: 15
+    timeout_seconds: 60
   - id: scorecard
     kind: csv-download
     enabled: true
-    # US College Scorecard "Most Recent Institution-Level Data" zip (keyless bulk).
-    url: https://collegescorecard.ed.gov/assets/CollegeScorecard_Raw_Data.zip
+    # Fallback URL; the adapter resolves the dated release zip from the data
+    # page (URLs rotate per release, e.g. ..._06102026.zip). The full ~23MB
+    # zip is still fetched each hour; only `per_run` rows are consumed via
+    # cursor, so keep this small.
+    url: https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_06102026.zip
     license: US-public-domain
-    per_run: 300
-  - id: gias
-    kind: csv-download
-    enabled: true # k12 enabled
-    url: ""
-    license: OGL-UK
-    per_run: 300
+    per_run: 15
+    timeout_seconds: 180
   - id: france-annuaire
     kind: api-paged
     enabled: true
     url: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-annuaire-education/records
     license: Etalab-2.0
-    per_run: 300
-  - id: france-sup
-    kind: csv-download
-    enabled: true
-    url: ""
-    license: Etalab-2.0
-    per_run: 300
-  - id: ugc-in
-    kind: html-limited
-    enabled: true
-    url: https://www.ugc.gov.in/universitydetails/university
-    license: IN-open-data
-    per_run: 50
+    per_run: 15
+    timeout_seconds: 40
   - id: osm
     kind: overpass
-    enabled: true # k12 enabled; quota-sensitive, one bbox per run
+    enabled: true # quota-sensitive, one bbox per session
     url: https://overpass-api.de/api/interpreter
     license: ODbL
-    per_run: 200
-  - id: giga
-    kind: api-paged
-    enabled: true # k12 enabled; locations mostly without websites
-    url: ""
-    license: open-data
-    per_run: 300
-  - id: crtsh
-    kind: ct
-    enabled: true
-    url: https://crt.sh/
-    license: public-logs
-    per_run: 300
+    per_run: 15
+    timeout_seconds: 90
   - id: whed
     kind: html-limited
     enabled: true
-    # Polite gap-filler only: <=10 detail pages/run, IDs cited, ToS respected.
+    # Polite gap-filler only: few detail pages/session, IDs cited, ToS respected.
     url: https://whed.net/
     license: IAU-proprietary-limited
+    per_run: 2
+    timeout_seconds: 60
+  - id: dotgov
+    kind: csv-download
+    enabled: true
+    url: https://raw.githubusercontent.com/cisagov/dotgov-data/main/current-full.csv
+    license: CC0
     per_run: 10
-  - id: edudirectory
+    timeout_seconds: 60
+  - id: cricos
+    kind: api-paged
+    enabled: true
+    url: https://data.gov.au/data/api/3/action/package_show
+    license: CC-BY-2.5-AU
+    per_run: 15
+    timeout_seconds: 120
+    package_id: e5ae7059-bfa8-4fa4-a5c0-c13cf3520193
+    resource_name: CRICOS Institutions.csv
+  - id: nuc-ng
     kind: html-limited
-    enabled: false
-    url: https://edudirectory.school/
-    license: third-party
-    per_run: 50
-  - id: commoncrawl
-    kind: cc
-    enabled: true # school discovery: keyword-filtered CDX over academic suffixes
-    url: https://index.commoncrawl.org/
-    license: public-crawl
-    per_run: 300
+    enabled: true
+    url: https://www.nuc.edu.ng/nigerian-univerisities/federal-univeristies
+    license: NG-open-data
+    per_run: 20
+    timeout_seconds: 60
+  - id: nz-schools
+    kind: api-paged
+    enabled: true
+    url: https://catalogue.data.govt.nz/api/3/action/datastore_search
+    license: CC-BY-4.0
+    per_run: 15
+    timeout_seconds: 60
+    resource_id: 4b292323-9fcc-41f8-814b-3c7b19cf14b3
+  - id: deqar
+    kind: csv-download
+    enabled: true
+    url: https://backend.deqar.eu/static/daily-csv/deqar-institutions.csv
+    license: PDDL
+    per_run: 15
+    timeout_seconds: 60
+  - id: ipeds
+    kind: csv-download
+    enabled: true
+    # Year-stamped file; the adapter rolls back up to 2 years when the
+    # configured year 404s after the annual release cycle.
+    url: https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip
+    license: US-public-domain
+    per_run: 15
+    timeout_seconds: 120
+  - id: eter
+    kind: csv-download
+    enabled: false # heavy: ~93MB Zenodo dump per session; enable deliberately
+    url: https://zenodo.org/api/records/10879501/files/ETER_fullDump_26032024.csv/content
+    license: CC-BY-4.0
+    per_run: 10
+    timeout_seconds: 180
 
-# Rotation state lives in state/state.json (per-adapter cursors).
+# Removed sources (code deleted; re-adding needs a new adapter + tests):
+# - ugc-in: UGC India blocks bots (HTTP 403, WAF). Needs browser/API route.
+# - crtsh: crt.sh 502s on %-wildcard CT queries (full-table scans).
+# - commoncrawl: CDX prefix scans + regex filters time out (504/502).
+# - eter/gias/france-sup/giga/edudirectory: no stable bulk URL configured.

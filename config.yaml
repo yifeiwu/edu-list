@@ -2,17 +2,18 @@
 # Free-tier safe: each run is capped by time + validation count.
 
 run:
-  # Max wall-clock seconds for the whole crawl step (workflow timeout is 55 min;
-  # keep headroom for pip install + commit).
-  max_seconds: 2700
+  # Max wall-clock seconds for the whole crawl step (workflows run hourly
+  # with a 30-min job timeout; keep headroom for pip install + commit).
+  max_seconds: 1500
   # Hard cap on HTTP validations per run (new + re-verify combined).
-  max_validations: 600
+  # Hourly scale: ~150/run x 24 ≈ one old twice-daily budget spread out.
+  max_validations: 150
   # How many NEW domains to validate per run (rest deferred via cursors).
-  max_new_per_run: 500
+  max_new_per_run: 100
   # How many existing rows to re-verify when NO new domains found.
-  verify_batch_no_new: 500
+  verify_batch_no_new: 60
   # How many existing rows to piggyback-verify when new domains WERE found.
-  verify_batch_with_new: 100
+  verify_batch_with_new: 15
   # After this many consecutive Inaccessible results, stop re-checking monthly;
   # row is kept (archived) but skipped by oldest-N rotation for `archive_skip_days`.
   archive_after_failures: 6
@@ -22,17 +23,24 @@ run:
 
 verify:
   # Verify hits each website once (homepage only, distributed hosts), so it
-  # is safe to run 2x daily with a higher cap than curation.
-  max_validations: 1000
-  max_new_per_run: 800
-  verify_batch_no_new: 600
-  verify_batch_with_new: 100
+  # is safe to run hourly with a small cap. ~125 validations/run x 24 ≈ the
+  # old twice-daily 1500 x 2 budget spread over the day, fitting the 25-min
+  # budget (0.4s politeness + 10s timeout worst-case, deadline guard still
+  # truncates slow runs).
+  max_validations: 125
+  max_new_per_run: 100
+  verify_batch_no_new: 60
+  verify_batch_with_new: 15
 
 validation:
   timeout_seconds: 10
   # Homepage bytes to inspect (title/H1/schema/keywords).
   max_bytes: 32768
   politeness_delay_seconds: 0.4
+  # Transient transport retry (ConnectionError/Timeout only; TLS and HTTP
+  # statuses are never retried).
+  retries: 1
+  retry_backoff_seconds: 1.0
   user_agent: "edu-domains-bot/1.0 (+https://github.com/YOUR_USER/edu-domains; contact: you@example.com)"
   # Confidence >= threshold => Active (provided final HTTP status is 2xx + HTML).
   active_threshold: 50
@@ -43,19 +51,23 @@ output:
 
 state_path: state/state.json
 
-# K-12 adapters (GIAS, FR annuaire, OSM-schools, Giga) enabled: full indexing.
+# K-12 sources (FR annuaire, OSM, dotgov districts, NZ schools) enabled: full indexing.
 k12_enabled: true
 
 # ISO2 -> multilingual keyword-group mapping is in src/util.py (KEYWORDS_I18N).
-# Country inference: source ISO2 preferred, else suffix map below, else "".
+# Country inference: source ISO2 preferred, else suffix map below, else "XX".
+# Defaults live in src/geo.py DEFAULT_SUFFIX_COUNTRY; entries here
+# override/extend them (merged at runtime via merge_suffix_map).
 suffix_country:
   edu: US
   ac.uk: GB
   sch.uk: GB
+  co.uk: GB
   edu.au: AU
   ac.in: IN
   edu.in: IN
   ac.za: ZA
+  sch.za: ZA
   edu.br: BR
   edu.mx: MX
   ac.jp: JP
@@ -67,6 +79,44 @@ suffix_country:
   edu.gh: GH
   ac.ug: UG
   edu.et: ET
+  edu.my: MY
+  edu.sg: SG
+  ac.th: TH
+  edu.tr: TR
+  edu.ar: AR
+  edu.co: CO
+  edu.pl: PL
+  ac.nz: NZ
+  co.nz: NZ
+  school.nz: NZ
+  edu.nz: NZ
+  edu.id: ID
+  ac.id: ID
+  edu.cn: CN
+  edu.hk: HK
+  edu.tw: TW
+  ac.kr: KR
+  edu.kr: KR
+  edu.vn: VN
+  edu.sa: SA
+  edu.bd: BD
+  ac.bd: BD
+  edu.np: NP
+  edu.lk: LK
+  ac.lk: LK
+  edu.ke: KE
+  edu.ug: UG
+  edu.tz: TZ
+  ac.tz: TZ
+  edu.za: ZA
+  gob.mx: MX
+  gov.mx: MX
+  edu.pe: PE
+  edu.cl: CL
+  edu.py: PY
+  edu.uy: UY
+  edu.ec: EC
+  edu.ve: VE
 
 blocklist:
   - example.edu

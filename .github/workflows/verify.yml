@@ -1,11 +1,12 @@
 name: Verify (validate websites)
 
 # Rate-limit-safe half: hits each school website ONCE (homepage only, polite
-# UA + delay, hosts spread worldwide), so it runs 2x daily with a higher cap.
+# UA + delay, hosts spread worldwide), so it runs hourly with a small cap
+# (~125 validations/run ≈ one old twice-daily budget spread over 24 runs).
 # Drains state/pending.json first, then re-verifies oldest rows.
 on:
   schedule:
-    - cron: "0 6,18 * * *"   # twice daily 06:00 + 18:00 UTC
+    - cron: "30 * * * *"   # hourly at :30 UTC (curate runs at :00, staggered)
   workflow_dispatch:
     inputs:
       limit:
@@ -20,14 +21,16 @@ on:
 permissions:
   contents: write
 
+# Shared with curate.yml: both write data/countries + state/*.json +
+# SUMMARY.md, so they must never overlap.
 concurrency:
-  group: edu-domains-verify
+  group: edu-domains-data
   cancel-in-progress: false
 
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -49,9 +52,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/countries state/state.json state/pending.json
+          git add data/countries state/state.json state/pending.json SUMMARY.md
           git diff --cached --quiet || git commit -m "chore(data): verify update $(date -u +%F-%H%M)"
-          git push
+          git pull --rebase --autostash || true
+          git push || (sleep 10; git pull --rebase --autostash && git push)
 
       - name: Upload per-country CSVs
         uses: actions/upload-artifact@v4

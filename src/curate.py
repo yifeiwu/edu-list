@@ -6,6 +6,9 @@ Hits EVERY enabled upstream source once per session (each capped by its
 the pending queue (`state/pending.json`). Already-known domains just get
 their `sources` column unioned (re-citation). Performs NO website validation.
 
+Service-host endpoints (webmail/LMS/meeting) are never queued: they can
+never validate Active and would only waste verify budget.
+
 Run: python src/curate.py --config config.yaml --sources sources.yaml
 """
 from __future__ import annotations
@@ -16,89 +19,173 @@ import sys
 import time
 from pathlib import Path
 
-import yaml
-
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from src import discover  # noqa: E402
-from src.store import (  # noqa: E402
-    load_all, load_pending, load_state, migrate_legacy, save_pending,
-    save_state, save_touched, write_index,
+from src.cli_common import (  # noqa: E402
+    ROOT as CLI_ROOT,
+    apply_contact,
+    assert_configured_contact,
+    load_cfg,
+    load_runtime,
+    log,
+    resolve_mailto,
+    resolve_paths,
+    resolve_user_agent,
+    save_runtime,
 )
+from src.geo import merge_suffix_map  # noqa: E402
+from src.store import purge_blocklisted  # noqa: E402
 from src.util import (  # noqa: E402
-    country_from_suffix, normalize_domain, union_sources,
+    country_from_suffix, is_service_host, normalize_domain, union_sources,
 )
 
-ADAPTERS = {
-    "hipo": lambda u, s, n, t: discover.discover_hipo(u, s, n, t),
-    "ror": lambda u, s, n, t: discover.discover_ror(u, s, n, t),
-    "openalex": lambda u, s, n, t: discover.discover_openalex(u, s, n, t),
-    "wikidata": lambda u, s, n, t: discover.discover_wikidata(u, s, n, t),
-    "eter": lambda u, s, n, t: discover.discover_csv_generic(u, s, n, "eter", t),
-    "scorecard": lambda u, s, n, t: discover.discover_scorecard(u, s, n, t),
-    "gias": lambda u, s, n, t: discover.discover_csv_generic(u, s, n, "gias", t),
-    "france-annuaire": lambda u, s, n, t: discover.discover_france_annuaire(u, s, n, t),
-    "france-sup": lambda u, s, n, t: discover.discover_csv_generic(u, s, n, "france-sup", t),
-    "ugc-in": lambda u, s, n, t: discover.discover_ugc(u, s, n, t),
-    "osm": lambda u, s, n, t: discover.discover_osm(u, s, n, t),
-    "giga": lambda u, s, n, t: discover.discover_stub(u, s, n, "giga"),
-    "crtsh": lambda u, s, n, t: discover.discover_crtsh(u, s, n, t),
-    "whed": lambda u, s, n, t: discover.discover_whed(u, s, n, t),
-    "edudirectory": lambda u, s, n, t: discover.discover_stub(u, s, n, "edudirectory"),
-    "commoncrawl": lambda u, s, n, t: discover.discover_commoncrawl(u, s, n, t),
+# Re-export for backwards compat (tests import curate.log etc).
+__all__ = ["ADAPTERS", "K12_SOURCES", "pick_sources", "run_curate", "main",
+           "log", "load_cfg", "assert_configured_contact"]
+
+# Active adapters only. Dormant sources (ugc-in, crtsh, commoncrawl,
+# eter/gias/france-sup/giga/edudirectory) were deleted — see SOURCES.md.
+# Untyped callables with mixed arity (openalex takes optional mailto).
+ADAPTERS: dict = {
+    "hipo": lambda src, s: discover.discover_hipo(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 30)),
+    "ror": lambda src, s: discover.discover_ror(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 30)),
+    "openalex": lambda src, s, mailto="": discover.discover_openalex(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 30),
+        mailto=str(src.get("mailto", "") or mailto or discover.DEFAULT_MAILTO)),
+    "wikidata": lambda src, s: discover.discover_wikidata(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 60)),
+    "scorecard": lambda src, s: discover.discover_scorecard(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 120)),
+    "france-annuaire": lambda src, s: discover.discover_france_annuaire(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 40)),
+    "osm": lambda src, s: discover.discover_osm(
+        src.get("url", ""), s, int(src.get("per_run", 200)),
+        int(src.get("timeout_seconds") or 90),
+        boxes=src.get("boxes")),
+    "whed": lambda src, s: discover.discover_whed(
+        src.get("url", ""), s, int(src.get("per_run", 10)),
+        int(src.get("timeout_seconds") or 60)),
+    "dotgov": lambda src, s: discover.discover_dotgov(
+        src.get("url", ""), s, int(src.get("per_run", 100)),
+        int(src.get("timeout_seconds") or 60)),
+    "cricos": lambda src, s: discover.discover_cricos(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 120),
+        package_id=str(src.get("package_id") or
+                       "e5ae7059-bfa8-4fa4-a5c0-c13cf3520193"),
+        resource_name=str(src.get("resource_name") or "CRICOS Institutions.csv")),
+    "nuc-ng": lambda src, s: discover.discover_nuc_ng(
+        src.get("url", ""), s, int(src.get("per_run", 400)),
+        int(src.get("timeout_seconds") or 60)),
+    "nz-schools": lambda src, s: discover.discover_nz_schools(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 60),
+        resource_id=str(src.get("resource_id") or
+                        "4b292323-9fcc-41f8-814b-3c7b19cf14b3")),
+    "deqar": lambda src, s: discover.discover_deqar(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 60)),
+    "ipeds": lambda src, s: discover.discover_ipeds(
+        src.get("url", ""), s, int(src.get("per_run", 300)),
+        int(src.get("timeout_seconds") or 120)),
+    "eter": lambda src, s: discover.discover_eter(
+        src.get("url", ""), s, int(src.get("per_run", 100)),
+        int(src.get("timeout_seconds") or 180)),
 }
 
-
-def log(msg: str) -> None:
-    print(f"[{dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}] {msg}",
-          flush=True)
+# Sources that primarily yield K-12 rows; skipped when k12_enabled is false.
+K12_SOURCES = frozenset({"france-annuaire", "osm", "dotgov", "nz-schools"})
 
 
-def load_cfg(path: Path) -> dict:
-    with open(path, encoding="utf-8") as f:
-        return yaml.safe_load(f) or {}
-
-
-def pick_sources(sources: list[dict], state: dict, k12: bool,
+def pick_sources(sources: list[dict], k12: bool,
                  forced: str = "") -> list[dict]:
     if forced:
-        return [s for s in sources if s["id"] == forced]
+        found = [s for s in sources if s.get("id") == forced]
+        if not found:
+            raise SystemExit(f"unknown --source {forced!r}")
+        return found
     # Hit EVERY enabled source each session, each capped by its `per_run`.
     # Coverage still advances session-to-session via per-adapter cursors
     # (offsets/pages/suffix rotation in state). Deadline guard in run_curate
     # stops early if the session overruns; cursors already persisted per
     # adapter keep the next session consistent.
     return [s for s in sources
-            if s.get("enabled") and (k12 or s["id"] not in
-            ("gias", "osm", "giga"))]
+            if s.get("enabled") and s.get("id") in ADAPTERS
+            and (k12 or s.get("id") not in K12_SOURCES)]
+
+
+def _call_adapter(sid: str, fn, src: dict, state: dict, mailto: str):
+    # Only openalex uses the resolved contact; others take (src, state).
+    if sid == "openalex":
+        try:
+            return fn(src, state, mailto) or []
+        except TypeError:  # pragma: no cover — legacy 2-arg mock
+            return fn(src, state) or []
+    return fn(src, state) or []
 
 
 def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
                by_domain: dict, buckets: dict, pending: list[dict],
                forced: str = "", deadline: float) -> dict:
     """Mutates state/by_domain/buckets/pending. Returns stats."""
-    suffix_map = cfg.get("suffix_country", {})
-    blocklist = set(cfg.get("blocklist", []))
+    # Single contact identity: config UA wins, discover/whois follow.
+    ua = resolve_user_agent(cfg)
+    if ua:
+        discover.UA = {"User-Agent": ua}
+    try:
+        from src import whois_check as _whois
+
+        _whois.UA = {"User-Agent": ua,
+                     "Accept": "application/rdap+json, application/json"}
+    except Exception:
+        pass
+    mailto = resolve_mailto(cfg, src_cfg, ua)
+    suffix_map = merge_suffix_map(cfg.get("suffix_country", {}))
+    blocklist = {str(b).lower().strip(".") for b in cfg.get("blocklist", []) if b}
     k12 = bool(cfg.get("k12_enabled", False))
-    timeout = int(cfg.get("validation", {}).get("timeout_seconds", 10))
     max_pending = int(cfg.get("run", {}).get("max_pending", 8000))
 
-    pending_idx = {e["domain"]: i for i, e in enumerate(pending)}
-    touched: set[str] = set()
-    raw, new, recited = 0, 0, 0
+    # Purge blocklisted rows first (opt-out honored on next run).
+    purged = purge_blocklisted(by_domain, buckets, state, blocklist)
+    touched: set[str] = set(purged)
 
-    for src in pick_sources(src_cfg.get("sources", []), state, k12, forced):
-        sid = src["id"]
+    # Drop service-host endpoints already queued by older runs: they can
+    # never become Active (validate forces Inaccessible) and only burn
+    # verify budget (0.4s politeness + 10s timeout each).
+    before = len(pending)
+    pending[:] = [e for e in pending
+                  if not is_service_host(str(e.get("domain", "")).lower())]
+    skipped_service = before - len(pending)
+    if skipped_service:
+        log(f"  dropped {skipped_service} queued service-host(s) (never Active)")
+
+    pending_idx = {e["domain"]: i for i, e in enumerate(pending)}
+    raw, new, recited, unmapped = 0, 0, 0, 0
+    skipped_new_service = 0
+
+    for src in pick_sources(src_cfg.get("sources", []), k12, forced):
+        sid = src.get("id", "")
         fn = ADAPTERS.get(sid)
         if not fn:
+            log(f"Discover: {sid} has no adapter, skipping")
             continue
         log(f"Discover: {sid} (per_run {src.get('per_run')})…")
         try:
-            cands = fn(src.get("url", ""), state,
-                       int(src.get("per_run", 300)), timeout) or []
+            cands = _call_adapter(sid, fn, src, state, mailto)
+        except SystemExit:
+            raise
         except Exception as e:  # never fail a run on one source
-            log(f"  {sid} error: {type(e).__name__}, skipping")
+            log(f"  {sid} error: {type(e).__name__}: {e}, skipping")
             continue
         log(f"  -> {len(cands)} raw candidates")
         raw += len(cands)
@@ -106,9 +193,14 @@ def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
             d = normalize_domain(c.get("url", ""))
             if not d or d in blocklist:
                 continue
+            if is_service_host(d):
+                skipped_new_service += 1
+                continue
             iso = (c.get("iso2") or "").upper()
-            if len(iso) != 2:
+            if len(iso) != 2 or not iso.isalpha():
                 iso = country_from_suffix(d, suffix_map) or "XX"
+            if iso == "XX":
+                unmapped += 1
             if d in by_domain:
                 # Re-citation of a validated row: union sources, no re-queue.
                 iso0, row0 = by_domain[d]
@@ -137,39 +229,42 @@ def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
                 })
                 pending_idx[d] = len(pending) - 1
                 new += 1
-            time.sleep(0.02)
         if time.time() > deadline:
+            log("  deadline reached, stopping discovery")
             break
 
-    return {"raw": raw, "new": new, "recited": recited, "touched": touched}
+    return {"raw": raw, "new": new, "recited": recited, "touched": touched,
+            "unmapped": unmapped, "skipped_service": skipped_new_service}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Discover new school domains (no validation).")
-    ap.add_argument("--config", default=str(ROOT / "config.yaml"))
-    ap.add_argument("--sources", default=str(ROOT / "sources.yaml"))
+    ap.add_argument("--config", default=str(CLI_ROOT / "config.yaml"))
+    ap.add_argument("--sources", default=str(CLI_ROOT / "sources.yaml"))
     ap.add_argument("--source", default="", help="Force one discovery source id")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-network", action="store_true",
+                    help="Skip upstream fetches (for tests/offline).")
     args = ap.parse_args()
 
     cfg = load_cfg(Path(args.config))
     src_cfg = load_cfg(Path(args.sources))
+    if not args.dry_run and not args.no_network:
+        assert_configured_contact(cfg)
     run = cfg.get("run", {})
-    out = cfg.get("output", {})
-    countries_dir = ROOT / out.get("countries_dir", "data/countries")
-    index_path = ROOT / out.get("index_path", "data/countries/INDEX.md")
-    state_path = ROOT / cfg.get("state_path", "state/state.json")
-    pending_path = state_path.parent / "pending.json"
+    paths = resolve_paths(cfg)
 
-    state = load_state(state_path)
-    if not args.dry_run:
-        migrated = migrate_legacy(ROOT / "data" / "institutions.csv", countries_dir)
-        if migrated:
-            log(f"Migrated {migrated} legacy rows into {countries_dir}")
-    by_domain, buckets = load_all(countries_dir)
-    pending = load_pending(pending_path)
+    state, by_domain, buckets, pending = load_runtime(
+        paths["state_path"], paths["countries_dir"], paths["pending_path"])
     log(f"Loaded {len(by_domain)} domains, {len(pending)} pending")
 
+    if args.no_network:
+        log("NO-NETWORK: skipping discovery, reporting queue state only")
+        log(f"DRY-RUN: raw=0 new_queued=0 recited=0 pending_total={len(pending)}")
+        return 0
+
+    # Resolve contact early so even dry-run discovery uses one identity.
+    apply_contact(cfg, src_cfg)
     deadline = time.time() + int(run.get("max_seconds", 2700))
     stats = run_curate(cfg=cfg, src_cfg=src_cfg, state=state,
                        by_domain=by_domain, buckets=buckets, pending=pending,
@@ -177,13 +272,28 @@ def main() -> int:
 
     if args.dry_run:
         log(f"DRY-RUN: raw={stats['raw']} new_queued={stats['new']} "
-            f"recited={stats['recited']}")
+            f"recited={stats['recited']} unmapped={stats.get('unmapped', 0)} "
+            f"skipped_service={stats.get('skipped_service', 0)}")
         return 0
-    save_touched(countries_dir, buckets, stats["touched"])
-    _, buckets_now = load_all(countries_dir)
-    write_index(index_path, buckets_now)
-    save_pending(pending_path, pending)
-    save_state(state_path, state)
+    save_runtime(countries_dir=paths["countries_dir"], buckets=buckets,
+                 touched=stats["touched"], index_path=paths["index_path"],
+                 pending_path=paths["pending_path"], pending=pending,
+                 state_path=paths["state_path"], state=state,
+                 archive_after=int(run.get("archive_after_failures", 6)))
+    state["last_curate"] = {
+        "at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "raw": stats["raw"], "new": stats["new"],
+        "recited": stats["recited"],
+        "unmapped": stats.get("unmapped", 0),
+        "skipped_service": stats.get("skipped_service", 0),
+    }
+    # save_runtime already saved state once; re-save to include last_curate.
+    from src.store import save_state as _save_state
+
+    _save_state(paths["state_path"], state)
+    if stats.get("unmapped", 0):
+        log(f"NOTE: {stats['unmapped']} candidates fell back to XX "
+            f"(no source ISO + no suffix match) — see XX.csv for review")
     log(f"Done. raw={stats['raw']} new_queued={stats['new']} "
         f"recited={stats['recited']} pending_total={len(pending)}")
     return 0

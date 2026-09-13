@@ -2,10 +2,11 @@
 """Legacy all-in-one entrypoint: curate (discover) then verify, sequentially.
 
 Prefer the split pipelines in production:
-  - src/curate.py  (daily; upstream sources, rate-limit-sensitive)
-  - src/verify.py   (2x daily; individual websites, distributed load)
+  - src/curate.py  (hourly at :00; upstream sources, rate-limit-sensitive)
+  - src/verify.py   (hourly at :30; individual websites, distributed load)
 
 This wrapper preserves the old `python src/crawl.py` behavior for local runs.
+It delegates to run_curate/run_verify (single implementation, no fork).
 """
 from __future__ import annotations
 
@@ -15,54 +16,51 @@ import sys
 import time
 from pathlib import Path
 
-import yaml
-
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.curate import run_curate  # noqa: E402
-from src.store import (  # noqa: E402
-    load_all, load_pending, load_state, migrate_legacy, save_pending,
-    save_state, save_touched, write_index,
+from src.cli_common import (  # noqa: E402
+    ROOT as CLI_ROOT,
+    apply_contact,
+    assert_configured_contact,
+    load_cfg,
+    load_runtime,
+    log,
+    resolve_paths,
+    save_runtime,
 )
+from src.curate import run_curate  # noqa: E402
 from src.verify import run_verify  # noqa: E402
-
-
-def log(msg: str) -> None:
-    print(f"[{dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}] {msg}",
-          flush=True)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Curate then verify (legacy all-in-one).")
-    ap.add_argument("--config", default=str(ROOT / "config.yaml"))
-    ap.add_argument("--sources", default=str(ROOT / "sources.yaml"))
+    ap.add_argument("--config", default=str(CLI_ROOT / "config.yaml"))
+    ap.add_argument("--sources", default=str(CLI_ROOT / "sources.yaml"))
     ap.add_argument("--limit", type=int, default=0,
                     help="Max verifications (0 = use config).")
     ap.add_argument("--source", default="", help="Force one discovery source id")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-network", action="store_true",
+                    help="Skip all network fetches (for tests/offline).")
     args = ap.parse_args()
 
-    with open(args.config, encoding="utf-8") as f:
-        cfg = yaml.safe_load(f) or {}
-    with open(args.sources, encoding="utf-8") as f:
-        src_cfg = yaml.safe_load(f) or {}
+    cfg = load_cfg(Path(args.config))
+    src_cfg = load_cfg(Path(args.sources))
+    if not args.dry_run and not args.no_network:
+        assert_configured_contact(cfg)
     run = cfg.get("run", {})
-    out = cfg.get("output", {})
-    countries_dir = ROOT / out.get("countries_dir", "data/countries")
-    index_path = ROOT / out.get("index_path", "data/countries/INDEX.md")
-    state_path = ROOT / cfg.get("state_path", "state/state.json")
-    pending_path = state_path.parent / "pending.json"
+    paths = resolve_paths(cfg)
 
-    state = load_state(state_path)
-    if not args.dry_run:
-        migrated = migrate_legacy(ROOT / "data" / "institutions.csv", countries_dir)
-        if migrated:
-            log(f"Migrated {migrated} legacy rows into {countries_dir}")
-    by_domain, buckets = load_all(countries_dir)
-    pending = load_pending(pending_path)
+    state, by_domain, buckets, pending = load_runtime(
+        paths["state_path"], paths["countries_dir"], paths["pending_path"])
     log(f"Loaded {len(by_domain)} domains, {len(pending)} pending")
 
+    if args.no_network:
+        log("NO-NETWORK: skipping curate+verify network work")
+        return 0
+
+    apply_contact(cfg, src_cfg)
     deadline = time.time() + int(run.get("max_seconds", 2700))
 
     cstats = run_curate(cfg=cfg, src_cfg=src_cfg, state=state,
@@ -81,11 +79,21 @@ def main() -> int:
             f"added_active={vstats['added_active']} "
             f"reverified={vstats['reverified']}")
         return 0
-    save_touched(countries_dir, buckets, touched)
-    _, buckets_now = load_all(countries_dir)
-    write_index(index_path, buckets_now)
-    save_pending(pending_path, pending)
-    save_state(state_path, state)
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    state["last_curate"] = {"at": now, "raw": cstats["raw"],
+                            "new": cstats["new"],
+                            "recited": cstats["recited"],
+                            "unmapped": cstats.get("unmapped", 0),
+                            "skipped_service": cstats.get("skipped_service", 0)}
+    state["last_verify"] = {"at": now, "validated": vstats["validated"],
+                            "added_active": vstats["added_active"],
+                            "reverified": vstats["reverified"],
+                            "pending_left": vstats["pending_left"]}
+    save_runtime(countries_dir=paths["countries_dir"], buckets=buckets,
+                 touched=touched, index_path=paths["index_path"],
+                 pending_path=paths["pending_path"], pending=pending,
+                 state_path=paths["state_path"], state=state,
+                 archive_after=int(run.get("archive_after_failures", 6)))
     log(f"Done. validated={vstats['validated']} "
         f"added_active={vstats['added_active']} "
         f"reverified={vstats['reverified']} touched={sorted(touched)} "

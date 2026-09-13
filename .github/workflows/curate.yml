@@ -1,12 +1,13 @@
 name: Curate (discover)
 
 # Rate-limit-sensitive half: hits shared upstream sources (Wikidata SPARQL,
-# Overpass, ROR/OpenAlex APIs, crt.sh, Common Crawl CDX, WHED). Daily; every
-# enabled source is hit once per session, each capped by its per_run.
+# Overpass, ROR/OpenAlex APIs, Scorecard, WHED). Hourly; every
+# enabled source is hit once per session, each capped by its strict hourly
+# `per_run` in sources.yaml (kept small so 24 runs/day ≈ one old daily run).
 # Writes state/pending.json + re-cited sources; no validation.
 on:
   schedule:
-    - cron: "0 0 * * *"   # daily 00:00 UTC
+    - cron: "0 * * * *"   # hourly at :00 UTC (verify runs at :30, staggered)
   workflow_dispatch:
     inputs:
       source:
@@ -17,14 +18,16 @@ on:
 permissions:
   contents: write
 
+# Shared with verify.yml: both write data/countries + state/*.json +
+# SUMMARY.md, so they must never overlap (push conflicts + lost updates).
 concurrency:
-  group: edu-domains-curate
+  group: edu-domains-data
   cancel-in-progress: false
 
 jobs:
   curate:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -44,6 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/countries state/state.json state/pending.json
-          git diff --cached --quiet || git commit -m "chore(data): curate update $(date -u +%F)"
-          git push
+          git add data/countries state/state.json state/pending.json SUMMARY.md
+          git diff --cached --quiet || git commit -m "chore(data): curate update $(date -u +%F-%H%M)"
+          git pull --rebase --autostash || true
+          git push || (sleep 10; git pull --rebase --autostash && git push)
