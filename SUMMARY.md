@@ -1,58 +1,68 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 13:43 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 17:11 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **114** across **11** countries
-- Active: **81** (71%) · Inaccessible: **33** (29%)
-- Pending queue: **158** unvalidated candidates
-- Known registration age: **100** domains (median 26.5 yrs)
+- Domains tracked: **222** across **31** countries
+- Active: **135** (61%) · Inaccessible: **87** (39%)
+- Pending queue: **58** unvalidated candidates
+- Known registration age: **153** domains (median 23 yrs)
 
 ## Last runs
 
-- Verify (2026-09-13 13:27 UTC): validated 60, +0 Active, re-verified 60, pending left 0
+- Verify (2026-09-13 17:11 UTC): validated 123, +53 Active, re-verified 15, pending left 58
+- Curate (2026-09-13 13:43 UTC): 184 raw candidates, 158 queued, 16 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 86 | 68 | 18 |
-| IN | 8 | 4 | 4 |
-| FR | 6 | 2 | 4 |
-| GB | 4 | 2 | 2 |
-| BR | 2 | 0 | 2 |
-| CN | 2 | 1 | 1 |
+| US | 107 | 77 | 30 |
+| FR | 17 | 11 | 6 |
+| GB | 17 | 9 | 8 |
+| RU | 13 | 7 | 6 |
+| IN | 11 | 7 | 4 |
+| AU | 7 | 1 | 6 |
+| XX | 7 | 4 | 3 |
+| BR | 6 | 3 | 3 |
+| DE | 4 | 1 | 3 |
+| CA | 3 | 2 | 1 |
+| CN | 3 | 1 | 2 |
+| DZ | 3 | 1 | 2 |
 | UA | 2 | 1 | 1 |
-| AE | 1 | 0 | 1 |
-| CA | 1 | 1 | 0 |
-| CL | 1 | 1 | 0 |
-| UG | 1 | 1 | 0 |
+| GR | 2 | 0 | 2 |
+| PL | 2 | 1 | 1 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 45 |
-| `fetch-error:ConnectionError` | 4 |
-| `http-403` | 3 |
-| `fetch-error:SSLError` | 2 |
-| `fetch-error:ConnectTimeout` | 2 |
+| `http-2xx-html` | 100 |
+| `http-403` | 18 |
+| `fetch-error:ConnectionError` | 18 |
+| `fetch-error:ConnectTimeout` | 8 |
+| `low-confidence:http-2xx-html` | 7 |
+| `fetch-error:SSLError` | 4 |
 | `moved-to:kean.edu` | 1 |
 | `moved-to:royalholloway.ac.uk` | 1 |
-| `low-confidence:http-2xx-html` | 1 |
 | `moved-to:upmc.com` | 1 |
+| `moved-to:noah-495.cloudflareaccess.com` | 1 |
+| `moved-to:uno.edu.br` | 1 |
+| `moved-to:priem.nevskyinstitute.ru` | 1 |
 
 ## Freshness
 
-- Verified in last 30 days: **114** (100%)
+- Verified in last 30 days: **222** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **3**
+- Moved pointers (old domain → new): **11**
 
 ## Alerts
 
-- No alerts.
+- ⚠ `AU`: low Active rate 1/7 (14%) — check for blocks/stale sources
+- ⚠ `AU`: 5/7 blocked (403/429/block-page) — suspected bot-block, verify manually
+- ⚠ `XX`: 7 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
