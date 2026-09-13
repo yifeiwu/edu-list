@@ -1,12 +1,12 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 17:11 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 17:20 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **222** across **31** countries
 - Active: **135** (61%) · Inaccessible: **87** (39%)
-- Pending queue: **58** unvalidated candidates
+- Pending queue: **174** unvalidated candidates
 - Known registration age: **153** domains (median 23 yrs)
 
 ## Last runs
@@ -30,9 +30,9 @@ _Generated 2026-09-13 17:11 UTC. Full per-country table: [data/countries/INDEX.m
 | CA | 3 | 2 | 1 |
 | CN | 3 | 1 | 2 |
 | DZ | 3 | 1 | 2 |
-| UA | 2 | 1 | 1 |
 | GR | 2 | 0 | 2 |
-| PL | 2 | 1 | 1 |
+| MA | 2 | 1 | 1 |
+| PH | 2 | 0 | 2 |
 
 ## Validation signals (reasons in state detail)
 
@@ -44,12 +44,12 @@ _Generated 2026-09-13 17:11 UTC. Full per-country table: [data/countries/INDEX.m
 | `fetch-error:ConnectTimeout` | 8 |
 | `low-confidence:http-2xx-html` | 7 |
 | `fetch-error:SSLError` | 4 |
-| `moved-to:kean.edu` | 1 |
-| `moved-to:royalholloway.ac.uk` | 1 |
-| `moved-to:upmc.com` | 1 |
-| `moved-to:noah-495.cloudflareaccess.com` | 1 |
-| `moved-to:uno.edu.br` | 1 |
-| `moved-to:priem.nevskyinstitute.ru` | 1 |
+| `moved-meta:bundesfinanzministerium.de` | 1 |
+| `moved-to:ccsdschools.com` | 1 |
+| `moved-to:clackesd.org` | 1 |
+| `http-503` | 1 |
+| `soft-404/block-page` | 1 |
+| `empty-body` | 1 |
 
 ## Freshness
 
