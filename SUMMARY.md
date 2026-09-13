@@ -1,50 +1,50 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 20:31 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 22:41 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **325** across **40** countries
-- Active: **197** (61%) · Inaccessible: **128** (39%)
-- Pending queue: **171** unvalidated candidates
-- Known registration age: **190** domains (median 24 yrs)
+- Domains tracked: **428** across **48** countries
+- Active: **265** (62%) · Inaccessible: **163** (38%)
+- Pending queue: **71** unvalidated candidates
+- Known registration age: **245** domains (median 22 yrs)
 
 ## Last runs
 
-- Verify (2026-09-13 19:53 UTC): validated 118, +63 Active, re-verified 15, pending left 74
-- Curate (2026-09-13 17:20 UTC): 178 raw candidates, 116 queued, 26 re-cited
+- Verify (2026-09-13 22:41 UTC): validated 118, +67 Active, re-verified 15, pending left 71
+- Curate (2026-09-13 20:31 UTC): 162 raw candidates, 97 queued, 27 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 126 | 93 | 33 |
-| NG | 21 | 13 | 8 |
-| FR | 19 | 13 | 6 |
-| GB | 18 | 10 | 8 |
-| AU | 17 | 10 | 7 |
-| AL | 15 | 11 | 4 |
+| US | 152 | 114 | 38 |
+| AU | 32 | 21 | 11 |
+| FR | 29 | 18 | 11 |
+| AL | 27 | 16 | 11 |
+| XX | 24 | 13 | 11 |
+| NG | 21 | 14 | 7 |
+| GB | 19 | 10 | 9 |
 | RU | 13 | 7 | 6 |
 | CZ | 12 | 2 | 10 |
-| IN | 11 | 7 | 4 |
-| CN | 9 | 3 | 6 |
-| XX | 7 | 4 | 3 |
+| IN | 12 | 8 | 4 |
+| CN | 10 | 3 | 7 |
+| DE | 7 | 2 | 5 |
 | BR | 6 | 3 | 3 |
-| DE | 6 | 1 | 5 |
+| BJ | 5 | 3 | 2 |
 | CA | 5 | 4 | 1 |
-| BI | 4 | 0 | 4 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 162 |
-| `fetch-error:ConnectionError` | 28 |
-| `http-403` | 26 |
-| `low-confidence:http-2xx-html` | 14 |
-| `fetch-error:ConnectTimeout` | 12 |
-| `fetch-error:SSLError` | 6 |
-| `empty-body` | 3 |
+| `http-2xx-html` | 230 |
+| `http-403` | 36 |
+| `fetch-error:ConnectionError` | 34 |
+| `low-confidence:http-2xx-html` | 20 |
+| `fetch-error:ConnectTimeout` | 17 |
+| `fetch-error:SSLError` | 7 |
+| `empty-body` | 7 |
 | `http-503` | 2 |
 | `parking-linkfarm` | 1 |
 | `moved-meta:bundesfinanzministerium.de` | 1 |
@@ -53,16 +53,16 @@ _Generated 2026-09-13 20:31 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **325** (100%)
+- Verified in last 30 days: **428** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **14**
+- Moved pointers (old domain → new): **17**
 
 ## Alerts
 
 - ⚠ `CZ`: low Active rate 2/12 (17%) — check for blocks/stale sources
-- ⚠ `DE`: low Active rate 1/6 (17%) — check for blocks/stale sources
-- ⚠ `XX`: 7 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `DE`: low Active rate 2/7 (29%) — check for blocks/stale sources
+- ⚠ `XX`: 24 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
