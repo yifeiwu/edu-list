@@ -1,19 +1,71 @@
 {
   "cursors": {
-    "france_offset": 100,
-    "hipo_offset": 500,
-    "openalex_page": 2,
-    "osm_idx": 1,
-    "ror_page": 6,
+    "cricos_offset": 30,
+    "deqar_offset": 30,
+    "france_offset": 115,
+    "hipo_offset": 525,
+    "ipeds_offset": 30,
+    "ipeds_zip_ts": 1789265934.883717,
+    "ipeds_zip_url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+    "openalex_page": 3,
+    "osm_idx": 2,
+    "ror_page": 7,
     "scorecard_offset": 600,
-    "whed_idx": 1,
-    "wikidata_offset": 300
+    "scorecard_zip_ts": 1789265904.785308,
+    "scorecard_zip_url": "https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_06102026.zip",
+    "whed_idx": 2,
+    "wikidata_offset": 315
   },
   "detail": {
+    "ac-aix-marseille.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ac-creteil.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ac-paris.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "aii.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ainextstep.com"
+    },
+    "ainextstep.com": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "alliant.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ashoka.edu.in": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "atharvacoe.ac.in": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "athens.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "barnard.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "bpitindia.edu.in": {
       "code": 200,
@@ -25,30 +77,290 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "brandman.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "bugemauniv.ac.ug": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "bw.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "calbaptist.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "calsouthern.edu": {
+      "code": 200,
+      "confidence": 30,
+      "reason": "low-confidence:http-2xx-html+trusted-suffix"
+    },
+    "centralesupelec.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "cgu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "clpccd.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "coastalalabama.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "columbiabasin.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "columbiasc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "cst.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "cstj.qc.ca": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "csuci.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "davietjal.org": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "devry.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "digipen.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "easternflorida.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "ecpi.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "fho.edu.br": {
       "code": 200,
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+structure"
     },
+    "findlay.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "floridapoly.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "fscj.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "ggc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "hallmark.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "hallmarkuniversity.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hallmark.edu"
+    },
+    "hnu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "iecc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "ieseg.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "iiits.in": {
+      "code": 200,
+      "confidence": 20,
+      "reason": "low-confidence:http-2xx-html"
+    },
     "insa-toulouse.fr": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "irsc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "itt-tech.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "itt-tech.info": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "itu.edu": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix"
     },
     "karazin.ua": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "kean.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "keiseruniversity.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "keller.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:devry.edu"
+    },
+    "king.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "lander.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "laverne.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "lindenwood.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "lipscomb.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "losrios.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "lpu.in": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "maryville.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "marywood.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "mbl.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "mbzuai.ac.ae": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "monroecollege.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "mountsaintvincent.edu": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "mssm.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "mvsu.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "myport.ac.uk": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
+    "ncuindia.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "njcu.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:kean.edu"
     },
     "noah.edu.gr": {
       "code": 200,
@@ -60,12 +372,87 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "park.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "pcom.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "pnw.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "port.ac.uk": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "rccd.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "regent.edu.gh": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "rhul.ac.uk": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:royalholloway.ac.uk"
+    },
+    "roosevelt.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "royalholloway.ac.uk": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "scripps.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "seattlecolleges.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "sempreceub.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sjrstate.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "smccd.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "somaiya.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "stevenson.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "student.42.us.org": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -90,6 +477,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "sullivan.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "sunymaritime.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "tbs.edu": {
       "code": 200,
       "confidence": 50,
@@ -100,65 +497,479 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
     },
+    "tiffin.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "touro.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "trident.edu": {
+      "code": 200,
+      "confidence": 30,
+      "reason": "low-confidence:http-2xx-html+trusted-suffix"
+    },
+    "troy.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "tusculum.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uan.edu.co": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
-    "uniceub.br": {
+    "uasys.edu": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uco.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "umb.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "umc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "umw.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uniceub.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "unochapeco.edu.br": {
       "code": 200,
       "confidence": 20,
       "reason": "low-confidence:http-2xx-html"
     },
+    "uopeople.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "upes.ac.in": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "upmc.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "upmc.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:upmc.com"
+    },
+    "uscga.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "usm.cl": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "utrgv.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uvu.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "wab.edu.pl": {
       "code": 200,
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+structure"
     },
+    "wagner.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wakehealth.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "washjeff.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "westherts.ac.uk": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "wilmu.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wlc.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wne.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "www-en.hnu.edu.cn": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "xavier.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "yhc.edu": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "yosemite.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     }
   },
-  "domain_age": {},
+  "domain_age": {
+    "ac-aix-marseille.fr": "1996-09-26",
+    "ac-creteil.fr": "1998-04-02",
+    "ac-paris.fr": "1996-07-03",
+    "aii.edu": "1992-07-27",
+    "ainextstep.com": "2007-08-03",
+    "alliant.edu": "2000-05-18",
+    "ashoka.edu.in": "2012-06-12",
+    "athens.edu": "1996-04-10",
+    "barnard.edu": "1998-10-21",
+    "bpitindia.in": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "brandman.edu": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "bugemauniv.ac.ug": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "bw.edu": "1996-05-09",
+    "calbaptist.edu": "1996-03-09",
+    "calsouthern.edu": "2007-08-15",
+    "centralesupelec.fr": "2011-06-06",
+    "cgu.edu": "1996-11-27",
+    "clpccd.edu": "2008-10-06",
+    "coastalalabama.edu": "2017-02-02",
+    "columbiabasin.edu": "2002-01-08",
+    "columbiasc.edu": "2008-06-24",
+    "cst.edu": "1997-05-28",
+    "cstj.qc.ca": "2001-12-05",
+    "csuci.edu": "1996-12-10",
+    "davietjal.org": "2003-03-17",
+    "devry.edu": "1995-06-21",
+    "digipen.edu": "1997-04-17",
+    "easternflorida.edu": "2013-05-08",
+    "ecpi.edu": "1996-08-08",
+    "findlay.edu": "1992-09-21",
+    "floridapoly.edu": "2017-07-07",
+    "fscj.edu": "2009-07-08",
+    "ggc.edu": "2009-07-22",
+    "hallmark.edu": "2022-06-21",
+    "hallmarkuniversity.edu": "2015-01-20",
+    "hnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "iecc.edu": "2002-01-09",
+    "ieseg.fr": "1997-06-29",
+    "iiits.in": "2013-06-28",
+    "irsc.edu": "2008-06-25",
+    "itt-tech.edu": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "itt-tech.info": "2016-09-06",
+    "itu.edu": "1994-08-05",
+    "kean.edu": "1989-07-12",
+    "keiseruniversity.edu": "2006-10-23",
+    "keller.edu": "1997-04-23",
+    "king.edu": "1997-04-09",
+    "lander.edu": "1994-06-05",
+    "laverne.edu": "2008-07-10",
+    "lindenwood.edu": "1993-06-11",
+    "lipscomb.edu": "1998-01-06",
+    "losrios.edu": "2002-01-09",
+    "lpu.in": "2005-08-02",
+    "maryville.edu": "1994-06-21",
+    "marywood.edu": "1993-09-20",
+    "mbl.edu": "1989-07-12",
+    "mbzuai.ac.ae": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "monroecollege.edu": "2001-07-03",
+    "mountsaintvincent.edu": "2002-02-05",
+    "mssm.edu": "1991-02-20",
+    "mvsu.edu": "1995-04-05",
+    "myport.ac.uk": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "ncuindia.edu": "2015-05-26",
+    "njcu.edu": "1998-03-30",
+    "park.edu": "1996-09-07",
+    "pcom.edu": "1995-09-22",
+    "pnw.edu": "2015-05-01",
+    "port.ac.uk": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "rccd.edu": "2010-05-06",
+    "rhul.ac.uk": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "roosevelt.edu": "1994-03-14",
+    "royalholloway.ac.uk": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "scripps.edu": "1988-10-07",
+    "seattlecolleges.edu": "2005-12-01",
+    "sjrstate.edu": "2010-11-05",
+    "smccd.edu": "2005-03-15",
+    "somaiya.edu": "1996-10-15",
+    "stevenson.edu": "2008-06-19",
+    "student.42.us.org": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "student.karazin.ua": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "sullivan.edu": "1996-01-04",
+    "sunymaritime.edu": "1992-08-05",
+    "tiffin.edu": "1994-09-21",
+    "touro.edu": "1992-10-26",
+    "trident.edu": "2011-01-13",
+    "troy.edu": "2004-05-19",
+    "tusculum.edu": "1996-02-16",
+    "uasys.edu": "1997-08-18",
+    "uco.edu": "2008-09-02",
+    "umb.edu": "1986-07-10",
+    "umc.edu": "1997-08-20",
+    "umw.edu": "2004-03-31",
+    "uopeople.edu": "2014-03-14",
+    "upes.ac.in": "2003-12-20",
+    "upmc.com": "1999-09-17",
+    "upmc.edu": "1994-06-15",
+    "uscga.edu": "1992-04-24",
+    "usm.cl": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "utrgv.edu": "2014-03-14",
+    "uvu.edu": "2002-04-02",
+    "wagner.edu": "1995-05-13",
+    "wakehealth.edu": "2011-03-03",
+    "washjeff.edu": "1993-08-04",
+    "wilmu.edu": "2007-07-20",
+    "wlc.edu": "1997-05-06",
+    "wne.edu": "2011-03-17",
+    "www-en.hnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-13"
+    },
+    "xavier.edu": "1999-07-26",
+    "yhc.edu": "1995-10-08",
+    "yosemite.edu": "2002-01-09"
+  },
   "failures": {
+    "ac-aix-marseille.fr": 1,
+    "ac-creteil.fr": 1,
+    "ac-paris.fr": 1,
+    "aii.edu": 1,
+    "ainextstep.com": 0,
+    "alliant.edu": 0,
+    "ashoka.edu.in": 1,
     "atharvacoe.ac.in": 0,
+    "athens.edu": 0,
+    "barnard.edu": 0,
     "bpitindia.edu.in": 1,
-    "bpitindia.in": 1,
+    "bpitindia.in": 2,
+    "brandman.edu": 1,
     "bugemauniv.ac.ug": 0,
+    "bw.edu": 0,
+    "calbaptist.edu": 0,
+    "calsouthern.edu": 1,
+    "centralesupelec.fr": 0,
+    "cgu.edu": 0,
+    "clpccd.edu": 1,
+    "coastalalabama.edu": 0,
+    "columbiabasin.edu": 0,
+    "columbiasc.edu": 0,
+    "cst.edu": 1,
+    "cstj.qc.ca": 0,
+    "csuci.edu": 0,
+    "davietjal.org": 0,
+    "devry.edu": 0,
+    "digipen.edu": 0,
+    "easternflorida.edu": 0,
+    "ecpi.edu": 0,
     "fho.edu.br": 1,
+    "findlay.edu": 0,
+    "floridapoly.edu": 0,
+    "fscj.edu": 0,
+    "ggc.edu": 0,
+    "hallmark.edu": 0,
+    "hallmarkuniversity.edu": 1,
+    "hnu.edu.cn": 1,
+    "iecc.edu": 0,
+    "ieseg.fr": 1,
+    "iiits.in": 1,
     "insa-toulouse.fr": 0,
+    "irsc.edu": 0,
+    "itt-tech.edu": 1,
+    "itt-tech.info": 0,
+    "itu.edu": 0,
     "karazin.ua": 0,
-    "mbzuai.ac.ae": 1,
+    "kean.edu": 0,
+    "keiseruniversity.edu": 1,
+    "keller.edu": 1,
+    "king.edu": 0,
+    "lander.edu": 0,
+    "laverne.edu": 1,
+    "lindenwood.edu": 0,
+    "lipscomb.edu": 0,
+    "losrios.edu": 0,
+    "lpu.in": 1,
+    "maryville.edu": 0,
+    "marywood.edu": 0,
+    "mbl.edu": 0,
+    "mbzuai.ac.ae": 2,
+    "monroecollege.edu": 1,
+    "mountsaintvincent.edu": 0,
+    "mssm.edu": 0,
+    "mvsu.edu": 0,
+    "myport.ac.uk": 1,
+    "ncuindia.edu": 0,
+    "njcu.edu": 1,
     "noah.edu.gr": 1,
     "nusaputra.ac.id": 0,
+    "park.edu": 0,
+    "pcom.edu": 0,
+    "pnw.edu": 0,
+    "port.ac.uk": 0,
+    "rccd.edu": 0,
     "regent.edu.gh": 0,
-    "sempreceub.com": 1,
+    "rhul.ac.uk": 1,
+    "roosevelt.edu": 0,
+    "royalholloway.ac.uk": 0,
+    "scripps.edu": 0,
+    "seattlecolleges.edu": 0,
+    "sempreceub.com": 2,
+    "sjrstate.edu": 0,
+    "smccd.edu": 0,
+    "somaiya.edu": 0,
+    "stevenson.edu": 0,
+    "student.42.us.org": 1,
     "student.eit.edu.au": 1,
-    "student.karazin.ua": 1,
+    "student.karazin.ua": 2,
     "student.wab.edu.pl": 1,
     "student.westherts.ac.uk": 1,
+    "sullivan.edu": 0,
+    "sunymaritime.edu": 0,
     "tbs.edu": 0,
     "tcetmumbai.in": 1,
+    "tiffin.edu": 0,
+    "touro.edu": 0,
+    "trident.edu": 1,
+    "troy.edu": 0,
+    "tusculum.edu": 1,
     "uan.edu.co": 1,
-    "uniceub.br": 0,
+    "uasys.edu": 0,
+    "uco.edu": 1,
+    "umb.edu": 0,
+    "umc.edu": 0,
+    "umw.edu": 0,
+    "uniceub.br": 1,
     "unochapeco.edu.br": 1,
+    "uopeople.edu": 0,
+    "upes.ac.in": 0,
+    "upmc.com": 0,
+    "upmc.edu": 1,
+    "uscga.edu": 0,
+    "usm.cl": 0,
+    "utrgv.edu": 0,
+    "uvu.edu": 0,
     "wab.edu.pl": 1,
-    "westherts.ac.uk": 0
+    "wagner.edu": 0,
+    "wakehealth.edu": 0,
+    "washjeff.edu": 1,
+    "westherts.ac.uk": 0,
+    "wilmu.edu": 0,
+    "wlc.edu": 0,
+    "wne.edu": 0,
+    "www-en.hnu.edu.cn": 0,
+    "xavier.edu": 0,
+    "yhc.edu": 0,
+    "yosemite.edu": 0
   },
-  "last_run": "2026-09-12T06:15:02+00:00",
+  "last_curate": {
+    "at": "2026-09-13 02:18 UTC",
+    "new": 143,
+    "raw": 180,
+    "recited": 0,
+    "skipped_service": 0,
+    "unmapped": 15
+  },
+  "last_run": "2026-09-13T02:24:18+00:00",
   "last_verify": {
-    "added_active": 4,
-    "at": "2026-09-12 00:47 UTC",
-    "pending_left": 1551,
-    "reverified": 0,
-    "validated": 8
+    "added_active": 78,
+    "at": "2026-09-13 02:24 UTC",
+    "pending_left": 1591,
+    "reverified": 15,
+    "validated": 121
   },
-  "moved": {}
+  "moved": {
+    "aii.edu": "ainextstep.com",
+    "hallmarkuniversity.edu": "hallmark.edu",
+    "keller.edu": "devry.edu",
+    "njcu.edu": "kean.edu",
+    "rhul.ac.uk": "royalholloway.ac.uk",
+    "upmc.edu": "upmc.com"
+  }
 }
