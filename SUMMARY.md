@@ -1,12 +1,12 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 22:41 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 23:00 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **428** across **48** countries
 - Active: **265** (62%) · Inaccessible: **163** (38%)
-- Pending queue: **71** unvalidated candidates
+- Pending queue: **189** unvalidated candidates
 - Known registration age: **245** domains (median 22 yrs)
 
 ## Last runs
@@ -46,10 +46,10 @@ _Generated 2026-09-13 22:41 UTC. Full per-country table: [data/countries/INDEX.m
 | `fetch-error:SSLError` | 7 |
 | `empty-body` | 7 |
 | `http-503` | 2 |
+| `moved-to:brooklynadultlearning.center` | 1 |
 | `parking-linkfarm` | 1 |
 | `moved-meta:bundesfinanzministerium.de` | 1 |
 | `moved-to:ccsdschools.com` | 1 |
-| `moved-to:clackesd.org` | 1 |
 
 ## Freshness
 
