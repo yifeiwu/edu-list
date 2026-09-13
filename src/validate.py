@@ -15,6 +15,16 @@ Rules (locked spec, strict-TLS revision):
   old domain `moved-to:<new>` and validate the target as its own row
   (rebrands like unochapeco.edu.br -> uno.edu.br must not be misattributed).
   Same-site redirects (apex<->www, http->https, subpath) are NOT moves.
+- Exa second-opinion (optional): when a move target is *dissimilar*
+  (different registrable base, e.g. rhul.ac.uk -> royalholloway.ac.uk) an
+  injected `exa_verify_fn` can confirm the final site is a real institution
+  vs parking. The old domain stays a pointer (never Active); the verdict is
+  recorded as `exa` + `+exa-verified`/`+exa-parking` reason suffix. When a
+  known redirect target is validated with `redirect_from` set, an
+  `exa-verified` verdict can rescue an otherwise low-confidence page to
+  Active, and an `exa-parking` verdict demotes a local Active to
+  Inaccessible. Without a key / offline the hook is None and behavior is
+  unchanged.
 
 Returns a dict with status, confidence, reason, codes for state tracking.
 CSV keeps only (school_name,web_domain,type,last_visited,status,sources).
@@ -34,6 +44,15 @@ from .util import (
     is_social_or_builder, keywords_for_country, normalize_domain,
     registrable_base, same_site,
 )
+
+try:  # optional: only needed when Exa second-opinion is wired in
+    from .exa_check import is_dissimilar_redirect
+except Exception:  # noqa: BLE001 - offline-safe fallback
+    def is_dissimilar_redirect(source: str, target: str) -> bool:  # type: ignore[no-redef]
+        try:
+            return not same_site(source or "", target or "") and source != target
+        except Exception:
+            return False
 
 PARKING_RE_C = [re.compile(p, re.I) for p in PARKING_RES]
 SOFT404_RE_C = [re.compile(p, re.I) for p in SOFT404_RES]
@@ -103,6 +122,47 @@ def _read_limited(resp: requests.Response, limit: int) -> str:
         return raw.decode("utf-8", errors="replace")
 
 
+def _consult_exa(source: str, target: str | None, school_name: str,
+                 country_iso: str,
+                 exa_verify_fn: Callable[..., dict | None] | None) -> dict | None:
+    """Safely ask Exa about a dissimilar redirect target (None = no opinion).
+
+    `exa_verify_fn(source, target, school_name, country_iso)` must return
+    `{verified: True|False|None, reason, evidence?}` or None. Same-site
+    redirects never consult Exa. Any error => None (local verdict stands).
+    """
+    if not exa_verify_fn or not source or not target:
+        return None
+    try:
+        if not is_dissimilar_redirect(source, target):
+            return None
+    except Exception:
+        return None
+    try:
+        try:
+            verdict = exa_verify_fn(source, target, school_name or "",
+                                    country_iso or "")
+        except TypeError:
+            # Back-compat for 2-arg test doubles.
+            verdict = exa_verify_fn(source, target)  # type: ignore[call-arg]
+    except Exception:
+        return None
+    return verdict if isinstance(verdict, dict) else None
+
+
+def _exa_suffix(verdict: dict | None) -> str:
+    """Reason suffix for a decisive Exa verdict, else '' (keep reasons stable)."""
+    if not isinstance(verdict, dict):
+        return ""
+    if verdict.get("verified") is True:
+        reason = str(verdict.get("reason", "exa-verified") or "exa-verified")
+        return "+" + (reason if reason.startswith("exa-") else "exa-verified")
+    if verdict.get("verified") is False:
+        reason = str(verdict.get("reason", "exa-parking") or "exa-parking")
+        return "+" + (reason if reason.startswith("exa-") else "exa-parking")
+    return ""
+
+
 def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                   user_agent: str, max_bytes: int,
                   multisource: bool = False,
@@ -110,7 +170,10 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                   active_threshold: int = 50,
                   sleep_fn: Callable[[float], None] | None = None,
                   retries: int = 1,
-                  retry_backoff: float = 1.0) -> dict:
+                  retry_backoff: float = 1.0,
+                  school_name: str = "",
+                  redirect_from: str | None = None,
+                  exa_verify_fn: Callable[..., dict | None] | None = None) -> dict:
     _sleep = sleep_fn or time.sleep
 
     def _polite() -> None:
@@ -262,9 +325,15 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return {"status": "Inaccessible", "confidence": 5,
                         "reason": f"moved-to-social:{target}", "code": code,
                         "final_domain": final_host, "moved_to": target}
-            return {"status": "Inaccessible", "confidence": 10,
-                    "reason": f"moved-meta:{target}", "code": code,
-                    "final_domain": final_host, "moved_to": target}
+            exa_v = _consult_exa(domain, target, school_name, country_iso,
+                                 exa_verify_fn)
+            suffix = _exa_suffix(exa_v)
+            out: dict = {"status": "Inaccessible", "confidence": 10,
+                         "reason": f"moved-meta:{target}{suffix}", "code": code,
+                         "final_domain": final_host, "moved_to": target}
+            if exa_v is not None:
+                out["exa"] = exa_v
+            return out
 
     low = html.lower()
     title, h1, visible = _visible(html)
@@ -339,6 +408,15 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         reasons.append(f"moved-to:{registrable_base(moved)}"
                        if registrable_base(moved) != moved
                        else f"moved-to:{moved}")
+    # Exa verdicts (dissimilar redirects only; None when skipped/offline).
+    # For pointers (moved) this annotates the OLD domain; for known redirect
+    # targets (redirect_from) it can rescue/demote below.
+    exa_move_verdict = (_consult_exa(domain, moved, school_name, country_iso,
+                                     exa_verify_fn) if moved else None)
+    exa_target_verdict = (
+        _consult_exa(redirect_from or "", domain, school_name, country_iso,
+                     exa_verify_fn)
+        if (redirect_from and not moved) else None)
     # Service endpoints (webmail, LMS, meeting links) are never the
     # institution's website: force Inaccessible regardless of threshold so a
     # lowered `active_threshold` can never promote them (see spotcheck
@@ -346,9 +424,16 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     if is_service_host(domain) or (moved and is_service_host(moved)):
         conf = min(conf, 40)
         reasons.append("service-host")
-        return {"status": "Inaccessible", "confidence": conf,
-                "reason": "low-confidence:" + "+".join(reasons), "code": code,
-                "final_domain": final_host, "moved_to": moved}
+        suffix = _exa_suffix(exa_move_verdict or exa_target_verdict)
+        if suffix:
+            reasons.append(suffix.lstrip("+"))
+        out_svc: dict = {
+            "status": "Inaccessible", "confidence": conf,
+            "reason": "low-confidence:" + "+".join(reasons), "code": code,
+            "final_domain": final_host, "moved_to": moved}
+        if (exa_move_verdict or exa_target_verdict) is not None:
+            out_svc["exa"] = exa_move_verdict or exa_target_verdict
+        return out_svc
     # Cross-domain moves are pointers, never the site itself: the old domain
     # is Inaccessible here; the caller (`verify._mark_moved`/`_handle_move`)
     # records the pointer and validates the target as its own row. This
@@ -356,9 +441,56 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     # previously leaked into spotcheck logs.
     if moved:
         conf = min(conf, 40)
+        suffix = _exa_suffix(exa_move_verdict)
+        if suffix:
+            reasons.append(suffix.lstrip("+"))
+        out_mv: dict = {"status": "Inaccessible", "confidence": conf,
+                        "reason": "+".join(reasons), "code": code,
+                        "final_domain": final_host, "moved_to": moved}
+        if exa_move_verdict is not None:
+            out_mv["exa"] = exa_move_verdict
+        return out_mv
+    # Known redirect target reached via a dissimilar hop (e.g. royalholloway
+    # validated after rhul.ac.uk -> royalholloway.ac.uk): Exa arbitrates when
+    # local heuristics are uncertain. Hard parking/soft-404 already returned
+    # above, so only low-confidence rescue vs Active demotion apply here —
+    # and service-hosts never promote (handled above).
+    if exa_target_verdict is not None:
+        verified = exa_target_verdict.get("verified")
+        suffix = _exa_suffix(exa_target_verdict)
+        if verified is True and conf < active_threshold:
+            # Rescue: local heuristics thin (JS shell / bot-block) but Exa
+            # independently indexes the final domain as the institution.
+            reasons.append(suffix.lstrip("+") or "exa-verified")
+            conf = min(max(conf, active_threshold), 100)
+            return {"status": "Active", "confidence": conf,
+                    "reason": "+".join(reasons), "code": code,
+                    "final_domain": final_host, "moved_to": moved,
+                    "exa": exa_target_verdict}
+        if verified is False and conf >= active_threshold:
+            # Demote: local scoring passed but Exa sees parking content.
+            if suffix:
+                reasons.append(suffix.lstrip("+"))
+            conf = min(conf, 40)
+            return {"status": "Inaccessible", "confidence": conf,
+                    "reason": "low-confidence:" + "+".join(reasons),
+                    "code": code,
+                    "final_domain": final_host, "moved_to": moved,
+                    "exa": exa_target_verdict}
+        # Corroboration (already-Active + exa-verified, already-low +
+        # exa-parking) or inconclusive: keep local verdict, record evidence.
+        if suffix:
+            reasons.append(suffix.lstrip("+"))
+        if conf >= active_threshold:
+            conf = min(conf, 100)
+            return {"status": "Active", "confidence": conf,
+                    "reason": "+".join(reasons), "code": code,
+                    "final_domain": final_host, "moved_to": moved,
+                    "exa": exa_target_verdict}
         return {"status": "Inaccessible", "confidence": conf,
-                "reason": "+".join(reasons), "code": code,
-                "final_domain": final_host, "moved_to": moved}
+                "reason": "low-confidence:" + "+".join(reasons), "code": code,
+                "final_domain": final_host, "moved_to": moved,
+                "exa": exa_target_verdict}
     conf = min(conf, 100)
     if conf >= active_threshold:
         return {"status": "Active", "confidence": conf,

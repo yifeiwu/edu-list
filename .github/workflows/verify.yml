@@ -43,6 +43,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run verifier
+        env:
+          # Optional: enables the Exa second-opinion for dissimilar
+          # cross-domain redirects (rhul.ac.uk -> royalholloway.ac.uk).
+          # When unset, verification runs exactly as before (Exa skipped).
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: |
           ARGS=(--config config.yaml --limit "${{ inputs.limit || '0' }}")
           if [ "${{ inputs.new_only || 'false' }}" = "true" ]; then ARGS+=(--new-only); fi

@@ -44,6 +44,18 @@ validation:
   user_agent: "edu-domains-bot/1.0 (+https://github.com/yifeiwu/edu-domains; contact: billy.gumdrop066@slmails.com )"
   # Confidence >= threshold => Active (provided final HTTP status is 2xx + HTML).
   active_threshold: 50
+  # Exa second-opinion for dissimilar cross-domain redirects
+  # (e.g. rhul.ac.uk -> royalholloway.ac.uk). Only consulted when the redirect
+  # target's registrable base differs ("quite different") to confirm the final
+  # site is a real institution vs a parking page. Disabled automatically when
+  # no API key is set — set EXA_API_KEY env var (wins) or fill exa_api_key
+  # below. Budget-capped per run + cached 90d in state["exa_cache"].
+  exa_enabled: true
+  exa_timeout_seconds: 15
+  exa_num_results: 5
+  exa_search_type: fast
+  exa_max_calls_per_run: 20
+  exa_api_key: ""
 
 output:
   countries_dir: data/countries

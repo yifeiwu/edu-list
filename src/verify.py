@@ -33,6 +33,12 @@ from src.cli_common import (  # noqa: E402
     resolve_user_agent,
     save_runtime,
 )
+from src.exa_check import (  # noqa: E402
+    EXA_CACHE_TTL_DAYS,
+    cached_verify,
+    exa_config_from_cfg,
+    is_dissimilar_redirect,
+)
 from src.geo import merge_suffix_map  # noqa: E402
 from src.store import purge_blocklisted, today_iso  # noqa: E402
 from src.util import (  # noqa: E402
@@ -42,13 +48,29 @@ from src.validate import validate_site  # noqa: E402
 from src.whois_check import years_registered as _domain_age  # noqa: E402
 
 
-def check(domain: str, name: str, iso: str, multisrc: bool, vcfg: dict) -> tuple[str, dict]:
+def _redirect_from_source(source: str) -> str | None:
+    """Immediate predecessor from a `redirect:<old>` provenance chain."""
+    for chunk in reversed((source or "").split(";")):
+        c = chunk.strip()
+        if c.lower().startswith("redirect:"):
+            cand = c.split(":", 1)[1].strip().lower().strip(".")
+            if cand:
+                return cand
+    return None
+
+
+def check(domain: str, name: str, iso: str, multisrc: bool, vcfg: dict,
+          redirect_from: str | None = None,
+          exa_verify_fn=None) -> tuple[str, dict]:
     res = validate_site(f"https://{domain}", domain, iso,
                         vcfg["timeout"], vcfg["ua"], vcfg["max_bytes"],
                         multisource=multisrc, politeness=vcfg["polite"],
                         active_threshold=vcfg["threshold"],
                         retries=vcfg.get("retries", 1),
-                        retry_backoff=vcfg.get("backoff", 1.0))
+                        retry_backoff=vcfg.get("backoff", 1.0),
+                        school_name=name or "",
+                        redirect_from=redirect_from,
+                        exa_verify_fn=exa_verify_fn)
     # Locked rule: non-2xx is ALWAYS Inaccessible regardless of score.
     # validate_site already enforces threshold, but re-check here so a
     # config change takes effect even if the scorer defaults drift.
@@ -93,8 +115,62 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
     failcounts = state.setdefault("failures", {})
     moved_map = state.setdefault("moved", {})
     age_cache = state.setdefault("domain_age", {})
+    exa_cache = state.setdefault("exa_cache", {})
+    exa_cfg = exa_config_from_cfg(cfg)
+    exa_calls = 0
     validated = added = reverified = 0
     suffix_map = merge_suffix_map(cfg.get("suffix_country", {}))
+
+    def _exa_hook(source: str, target: str, school_name: str = "",
+                  country_iso: str = "") -> dict | None:
+        """Budget-capped, cached Exa second-opinion for dissimilar moves.
+
+        Returns None when Exa is disabled/unconfigured, the hop is
+        same-site, the verdict is cached, or the per-run budget is spent —
+        so Exa can never block or crash verification. Cache hits never
+        consume budget; only actual API attempts count.
+        """
+        nonlocal exa_calls
+        try:
+            if not exa_cfg.get("enabled"):
+                return None
+            if not exa_cfg.get("api_key"):
+                return None
+            if not is_dissimilar_redirect(source or "", target or ""):
+                return None
+        except Exception:
+            return None
+        key = (target or "").lower().strip(".").removeprefix("www.")
+        try:
+            import datetime as _dt
+            raw = exa_cache.get(key)
+            if isinstance(raw, dict) and "verified" in raw:
+                ts = str(raw.get("ts", "") or "")
+                try:
+                    day = _dt.date.fromisoformat(ts[:10])
+                    if (_dt.date.today() - day).days < EXA_CACHE_TTL_DAYS:
+                        return raw
+                except ValueError:
+                    pass
+        except Exception:
+            pass
+        try:
+            budget = int(exa_cfg.get("max_calls_per_run", 20))
+        except Exception:
+            budget = 20
+        if exa_calls >= budget:
+            return None
+        exa_calls += 1
+        try:
+            return cached_verify(source, target, school_name, country_iso,
+                                 cache=exa_cache,
+                                 api_key=exa_cfg.get("api_key") or "",
+                                 timeout=int(exa_cfg.get("timeout", 15)),
+                                 num_results=int(exa_cfg.get("num_results", 5)),
+                                 search_type=str(exa_cfg.get("search_type",
+                                                             "fast")))
+        except Exception:
+            return None
 
     def _age(domain: str) -> str:
         try:
@@ -107,7 +183,10 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         """Validate + write a row for a not-yet-known domain."""
         nonlocal validated, added
         multisrc = ";" in (source or "")
-        status, res = check(domain, name, iso, multisrc, vcfg)
+        redirect_from = _redirect_from_source(source or "")
+        status, res = check(domain, name, iso, multisrc, vcfg,
+                            redirect_from=redirect_from,
+                            exa_verify_fn=_exa_hook)
         age = _age(domain)
         row = {"school_name": name or domain, "web_domain": domain,
                "type": classify_type(name or "", domain, type_hint or ""),
@@ -120,6 +199,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         failures[domain] = {"confidence": res.get("confidence", 0),
                             "reason": res.get("reason", ""),
                             "code": res.get("code", 0)}
+        if res.get("exa") is not None:
+            failures[domain]["exa"] = res.get("exa")
         failcounts[domain] = 0 if status == "Active" \
             else int(failcounts.get(domain, 0)) + 1
         if res.get("moved_to"):
@@ -206,9 +287,16 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         pointer, never the site — force Inaccessible + chase the target."""
         row["last_visited"] = today_iso()
         row["status"] = "Inaccessible"
+        # Preserve the Exa-annotated reason when present (e.g.
+        # `moved-to:royalholloway.ac.uk+exa-verified`); else the plain pointer.
+        reason = str(res.get("reason", "") or "")
+        if not reason.startswith("moved-"):
+            reason = f"moved-to:{target}"
         failures[d] = {"confidence": res.get("confidence", 0),
-                       "reason": f"moved-to:{target}",
+                       "reason": reason,
                        "code": res.get("code", 0)}
+        if res.get("exa") is not None:
+            failures[d]["exa"] = res.get("exa")
         # Moved pointers use the same archive pacing as failures (they never
         # become Active) but are tracked separately for visibility.
         failcounts[d] = prev_fc + 1
@@ -268,7 +356,10 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             iso, row = by_domain[d]
             multisrc = ";" in (row.get("sources", ""))
             prev_fc = int(failcounts.get(d, 0))
-            status, res = check(d, row["school_name"], iso, multisrc, vcfg)
+            redirect_from = _redirect_from_source(row.get("sources", ""))
+            status, res = check(d, row["school_name"], iso, multisrc, vcfg,
+                                redirect_from=redirect_from,
+                                exa_verify_fn=_exa_hook)
             mv = res.get("moved_to")
             if mv and mv != d:
                 _mark_moved(d, row, mv, res, prev_fc)
@@ -280,6 +371,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
                 failures[d] = {"confidence": res.get("confidence", 0),
                                "reason": res.get("reason", ""),
                                "code": res.get("code", 0)}
+                if res.get("exa") is not None:
+                    failures[d]["exa"] = res.get("exa")
                 failcounts[d] = 0 if status == "Active" else prev_fc + 1
                 moved_map.pop(d, None)
                 touched.add(iso)
@@ -288,7 +381,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
 
     return {"validated": validated, "added_active": added,
             "reverified": reverified, "touched": touched,
-            "pending_left": len(pending)}
+            "pending_left": len(pending), "exa_calls": exa_calls}
 
 
 def main() -> int:

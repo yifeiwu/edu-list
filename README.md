@@ -60,6 +60,15 @@ local runs.
   the old domain is marked `moved-to:<new>` and the target is validated as
   its own row (`redirect:<old>` provenance). Social/placeholder landings stay
   `Inaccessible`.
+* Exa second-opinion (optional, `EXA_API_KEY`): when a redirect target is
+  quite different from the source (different registrable base, e.g.
+  `rhul.ac.uk → royalholloway.ac.uk`), Exa search constrained to the final
+  domain confirms it hosts a real institution vs a parking page. The old
+  domain stays a pointer (`moved-to:<new>+exa-verified/parking`); a
+  redirect target scoring low-confidence locally can be rescued to `Active`
+  by `exa-verified`, while `exa-parking` demotes a false `Active`. Capped
+  (~20 calls/run) + cached 90d in `state/state.json`; without a key the
+  pipeline behaves exactly as before.
 * TLS strictness: valid TLS is required — expired/self-signed/broken chains
   are `Inaccessible` (one `www`-variant retry covers apex-vs-www cert
   mismatches). No unverified fallback.

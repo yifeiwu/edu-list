@@ -69,6 +69,7 @@ def load_state(path: Path) -> dict:
                 data.setdefault("detail", {})
                 data.setdefault("moved", {})
                 data.setdefault("domain_age", {})
+                data.setdefault("exa_cache", {})
                 data.setdefault("last_run", "")
                 # Drop legacy keys from early schema versions.
                 data.pop("next_idx", None)
@@ -82,7 +83,7 @@ def load_state(path: Path) -> dict:
             except Exception:
                 pass
     return {"cursors": {}, "failures": {}, "detail": {}, "moved": {},
-            "domain_age": {}, "last_run": ""}
+            "domain_age": {}, "exa_cache": {}, "last_run": ""}
 
 
 def save_state(path: Path, state: dict) -> None:
