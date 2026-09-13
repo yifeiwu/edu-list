@@ -1,67 +1,67 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-13 17:20 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-13 19:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **222** across **31** countries
-- Active: **135** (61%) · Inaccessible: **87** (39%)
-- Pending queue: **174** unvalidated candidates
-- Known registration age: **153** domains (median 23 yrs)
+- Domains tracked: **325** across **40** countries
+- Active: **197** (61%) · Inaccessible: **128** (39%)
+- Pending queue: **74** unvalidated candidates
+- Known registration age: **190** domains (median 24 yrs)
 
 ## Last runs
 
-- Verify (2026-09-13 17:11 UTC): validated 123, +53 Active, re-verified 15, pending left 58
-- Curate (2026-09-13 13:43 UTC): 184 raw candidates, 158 queued, 16 re-cited
+- Verify (2026-09-13 19:53 UTC): validated 118, +63 Active, re-verified 15, pending left 74
+- Curate (2026-09-13 17:20 UTC): 178 raw candidates, 116 queued, 26 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 107 | 77 | 30 |
-| FR | 17 | 11 | 6 |
-| GB | 17 | 9 | 8 |
+| US | 126 | 93 | 33 |
+| NG | 21 | 13 | 8 |
+| FR | 19 | 13 | 6 |
+| GB | 18 | 10 | 8 |
+| AU | 17 | 10 | 7 |
+| AL | 15 | 11 | 4 |
 | RU | 13 | 7 | 6 |
+| CZ | 12 | 2 | 10 |
 | IN | 11 | 7 | 4 |
-| AU | 7 | 1 | 6 |
+| CN | 9 | 3 | 6 |
 | XX | 7 | 4 | 3 |
 | BR | 6 | 3 | 3 |
-| DE | 4 | 1 | 3 |
-| CA | 3 | 2 | 1 |
-| CN | 3 | 1 | 2 |
-| DZ | 3 | 1 | 2 |
-| GR | 2 | 0 | 2 |
-| MA | 2 | 1 | 1 |
-| PH | 2 | 0 | 2 |
+| DE | 6 | 1 | 5 |
+| CA | 5 | 4 | 1 |
+| BI | 4 | 0 | 4 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 100 |
-| `http-403` | 18 |
-| `fetch-error:ConnectionError` | 18 |
-| `fetch-error:ConnectTimeout` | 8 |
-| `low-confidence:http-2xx-html` | 7 |
-| `fetch-error:SSLError` | 4 |
+| `http-2xx-html` | 162 |
+| `fetch-error:ConnectionError` | 28 |
+| `http-403` | 26 |
+| `low-confidence:http-2xx-html` | 14 |
+| `fetch-error:ConnectTimeout` | 12 |
+| `fetch-error:SSLError` | 6 |
+| `empty-body` | 3 |
+| `http-503` | 2 |
 | `moved-meta:bundesfinanzministerium.de` | 1 |
 | `moved-to:ccsdschools.com` | 1 |
 | `moved-to:clackesd.org` | 1 |
-| `http-503` | 1 |
 | `soft-404/block-page` | 1 |
-| `empty-body` | 1 |
 
 ## Freshness
 
-- Verified in last 30 days: **222** (100%)
+- Verified in last 30 days: **325** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **11**
+- Moved pointers (old domain → new): **14**
 
 ## Alerts
 
-- ⚠ `AU`: low Active rate 1/7 (14%) — check for blocks/stale sources
-- ⚠ `AU`: 5/7 blocked (403/429/block-page) — suspected bot-block, verify manually
+- ⚠ `CZ`: low Active rate 2/12 (17%) — check for blocks/stale sources
+- ⚠ `DE`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `XX`: 7 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
