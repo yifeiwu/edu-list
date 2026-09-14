@@ -1,18 +1,18 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-14 07:01 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-14 13:45 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **635** across **55** countries
 - Active: **417** (66%) · Inaccessible: **218** (34%)
-- Pending queue: **254** unvalidated candidates
+- Pending queue: **395** unvalidated candidates
 - Known registration age: **366** domains (median 22 yrs)
 
 ## Last runs
 
 - Verify (2026-09-14 07:01 UTC): validated 118, +73 Active, re-verified 15, pending left 254
-- Curate (2026-09-14 06:01 UTC): 177 raw candidates, 140 queued, 3 re-cited
+- Curate (2026-09-14 13:45 UTC): 177 raw candidates, 141 queued, 4 re-cited
 
 ## Countries (top 15 by size)
 
@@ -47,9 +47,9 @@ _Generated 2026-09-14 07:01 UTC. Full per-country table: [data/countries/INDEX.m
 | `empty-body` | 7 |
 | `http-503` | 2 |
 | `soft-404/block-page` | 2 |
+| `moved-to:azcu.edu` | 1 |
 | `moved-to:brooklynadultlearning.center` | 1 |
 | `parking-linkfarm` | 1 |
-| `moved-meta:bundesfinanzministerium.de` | 1 |
 
 ## Freshness
 
