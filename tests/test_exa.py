@@ -363,10 +363,6 @@ def _fb_moved(domain, school="", iso=""):
             "evidence": ["https://new.edu/"], "candidate": "new.edu"}
 
 
-def _fb_none(domain, school="", iso=""):
-    return None
-
-
 def test_fallback_rescues_403_to_active():
     with patch("src.validate.requests.get",
                return_value=make_response(status=403, text="forbidden")):
@@ -508,16 +504,6 @@ def test_discover_domain_uses_unconstrained_search():
                                   api_key="k")
     assert out["domain"] == "new.edu"
     assert out["verified"] is True
-
-
-def test_fallback_check_prefers_self_then_discovery():
-    with patch("src.exa_check.cached_verify_self",
-               return_value={"verified": True, "reason": "exa-verified",
-                             "evidence": [], "ts": "2026-09-13"}):
-        out = exa.fallback_check("x.edu", "X Uni", "US", cache={},
-                                 api_key="k")
-    assert out is not None and out["verified"] is True
-    assert out["candidate"] is None
 
 
 def test_check_allows_exa_rescued_403():

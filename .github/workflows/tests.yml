@@ -3,7 +3,11 @@ name: Tests
 on:
   push:
     branches: ["**"]
+    # Hourly curate/verify bots only touch data + state; skip the test
+    # matrix for those (~48 runs/day saved). Code pushes still run.
+    paths-ignore: ["data/**", "state/**", "SUMMARY.md"]
   pull_request:
+    paths-ignore: ["data/**", "state/**", "SUMMARY.md"]
   workflow_dispatch:
 
 permissions:

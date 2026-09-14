@@ -15,7 +15,7 @@ def _resp(json_data=None, text="", status=200):
 
 def test_no_dormant_adapters():
     for gone in ("discover_ugc", "discover_crtsh", "discover_commoncrawl",
-                 "discover_stub", "discover_csv_generic"):
+                 "discover_stub", "discover_csv_generic", "discover_eter"):
         assert not hasattr(discover, gone), gone
 
 
@@ -196,29 +196,6 @@ def test_ipeds_year_rollback():
         resolved = discover._resolve_ipeds_zip("https://x/HD2024.zip",
                                                {"cursors": {}})
     assert "HD2023.zip" in resolved
-
-
-def test_eter_semicolon_and_cursors():
-    text = ("Institution Name;English Institution Name;Country Code;"
-            "Institutional website\n"
-            "Univ X;Univ X EN;DE;https://univ-x.de/\n"
-            "Univ Y;;12;https://univ-y.example/\n")
-
-    def fake(url, timeout=180, params=None, headers=None, stream=False,
-             tries=3, sleep_fn=None):
-        raw = text.encode()
-        r = MagicMock()
-        r.status_code = 200
-        r.iter_content = MagicMock(return_value=iter([raw]))
-        return r
-
-    with patch("src.discover._get", side_effect=fake):
-        st: dict = {"cursors": {}}
-        out = discover.discover_eter("http://x", st, 10)
-    assert len(out) == 2
-    assert out[0]["iso2"] == "DE"
-    assert out[1]["iso2"] == ""  # non-alpha country code
-    assert out[0]["source"].startswith("eter:")
 
 
 def test_sea_coverage_in_rotation():

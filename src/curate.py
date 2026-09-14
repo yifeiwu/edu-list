@@ -27,11 +27,11 @@ from src.cli_common import (  # noqa: E402
     ROOT as CLI_ROOT,
     apply_contact,
     assert_configured_contact,
+    deadline_for,
+    init_runtime,
     load_cfg,
-    load_runtime,
     log,
     resolve_mailto,
-    resolve_paths,
     resolve_user_agent,
     save_runtime,
 )
@@ -47,60 +47,66 @@ __all__ = ["ADAPTERS", "K12_SOURCES", "pick_sources", "run_curate", "main",
 
 # Active adapters only. Dormant sources (ugc-in, crtsh, commoncrawl,
 # eter/gias/france-sup/giga/edudirectory) were deleted — see SOURCES.md.
-# Untyped callables with mixed arity (openalex takes optional mailto).
-ADAPTERS: dict = {
-    "hipo": lambda src, s: discover.discover_hipo(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 30)),
-    "ror": lambda src, s: discover.discover_ror(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 30)),
-    "openalex": lambda src, s, mailto="": discover.discover_openalex(
+#
+# Simple adapters share (url, state, per_run, timeout); only openalex
+# (mailto), osm (boxes), cricos (package/resource) and nz-schools
+# (resource_id) need extras. Lookups are by name at call time so tests can
+# monkeypatch `discover.discover_*`.
+def _basic(name: str, per_run_default: int, timeout_default: int):
+    def _run(src: dict, s: dict):
+        return getattr(discover, name)(
+            src.get("url", ""), s, int(src.get("per_run", per_run_default)),
+            int(src.get("timeout_seconds") or timeout_default))
+    return _run
+
+
+def _openalex(src: dict, s: dict, mailto: str = ""):
+    return discover.discover_openalex(
         src.get("url", ""), s, int(src.get("per_run", 300)),
         int(src.get("timeout_seconds") or 30),
-        mailto=str(src.get("mailto", "") or mailto or discover.DEFAULT_MAILTO)),
-    "wikidata": lambda src, s: discover.discover_wikidata(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 60)),
-    "scorecard": lambda src, s: discover.discover_scorecard(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 120)),
-    "france-annuaire": lambda src, s: discover.discover_france_annuaire(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 40)),
-    "osm": lambda src, s: discover.discover_osm(
+        mailto=str(src.get("mailto", "") or mailto or discover.DEFAULT_MAILTO))
+
+
+def _osm(src: dict, s: dict):
+    return discover.discover_osm(
         src.get("url", ""), s, int(src.get("per_run", 200)),
         int(src.get("timeout_seconds") or 90),
-        boxes=src.get("boxes")),
-    "whed": lambda src, s: discover.discover_whed(
-        src.get("url", ""), s, int(src.get("per_run", 10)),
-        int(src.get("timeout_seconds") or 60)),
-    "dotgov": lambda src, s: discover.discover_dotgov(
-        src.get("url", ""), s, int(src.get("per_run", 100)),
-        int(src.get("timeout_seconds") or 60)),
-    "cricos": lambda src, s: discover.discover_cricos(
+        boxes=src.get("boxes"))
+
+
+def _cricos(src: dict, s: dict):
+    return discover.discover_cricos(
         src.get("url", ""), s, int(src.get("per_run", 300)),
         int(src.get("timeout_seconds") or 120),
         package_id=str(src.get("package_id") or
                        "e5ae7059-bfa8-4fa4-a5c0-c13cf3520193"),
-        resource_name=str(src.get("resource_name") or "CRICOS Institutions.csv")),
-    "nuc-ng": lambda src, s: discover.discover_nuc_ng(
-        src.get("url", ""), s, int(src.get("per_run", 400)),
-        int(src.get("timeout_seconds") or 60)),
-    "nz-schools": lambda src, s: discover.discover_nz_schools(
+        resource_name=str(src.get("resource_name") or "CRICOS Institutions.csv"))
+
+
+def _nz_schools(src: dict, s: dict):
+    return discover.discover_nz_schools(
         src.get("url", ""), s, int(src.get("per_run", 300)),
         int(src.get("timeout_seconds") or 60),
         resource_id=str(src.get("resource_id") or
-                        "4b292323-9fcc-41f8-814b-3c7b19cf14b3")),
-    "deqar": lambda src, s: discover.discover_deqar(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 60)),
-    "ipeds": lambda src, s: discover.discover_ipeds(
-        src.get("url", ""), s, int(src.get("per_run", 300)),
-        int(src.get("timeout_seconds") or 120)),
-    "eter": lambda src, s: discover.discover_eter(
-        src.get("url", ""), s, int(src.get("per_run", 100)),
-        int(src.get("timeout_seconds") or 180)),
+                        "4b292323-9fcc-41f8-814b-3c7b19cf14b3"))
+
+
+# Untyped callables with mixed arity (openalex takes optional mailto).
+ADAPTERS: dict = {
+    "hipo": _basic("discover_hipo", 300, 30),
+    "ror": _basic("discover_ror", 300, 30),
+    "openalex": _openalex,
+    "wikidata": _basic("discover_wikidata", 300, 60),
+    "scorecard": _basic("discover_scorecard", 300, 120),
+    "france-annuaire": _basic("discover_france_annuaire", 300, 40),
+    "osm": _osm,
+    "whed": _basic("discover_whed", 10, 60),
+    "dotgov": _basic("discover_dotgov", 100, 60),
+    "cricos": _cricos,
+    "nuc-ng": _basic("discover_nuc_ng", 400, 60),
+    "nz-schools": _nz_schools,
+    "deqar": _basic("discover_deqar", 300, 60),
+    "ipeds": _basic("discover_ipeds", 300, 120),
 }
 
 # Sources that primarily yield K-12 rows; skipped when k12_enabled is false.
@@ -247,16 +253,11 @@ def main() -> int:
                     help="Skip upstream fetches (for tests/offline).")
     args = ap.parse_args()
 
-    cfg = load_cfg(Path(args.config))
-    src_cfg = load_cfg(Path(args.sources))
+    cfg, src_cfg, paths, state, by_domain, buckets, pending = init_runtime(
+        Path(args.config), Path(args.sources))
     if not args.dry_run and not args.no_network:
         assert_configured_contact(cfg)
     run = cfg.get("run", {})
-    paths = resolve_paths(cfg)
-
-    state, by_domain, buckets, pending = load_runtime(
-        paths["state_path"], paths["countries_dir"], paths["pending_path"])
-    log(f"Loaded {len(by_domain)} domains, {len(pending)} pending")
 
     if args.no_network:
         log("NO-NETWORK: skipping discovery, reporting queue state only")
@@ -265,7 +266,7 @@ def main() -> int:
 
     # Resolve contact early so even dry-run discovery uses one identity.
     apply_contact(cfg, src_cfg)
-    deadline = time.time() + int(run.get("max_seconds", 2700))
+    deadline = deadline_for(cfg)
     stats = run_curate(cfg=cfg, src_cfg=src_cfg, state=state,
                        by_domain=by_domain, buckets=buckets, pending=pending,
                        forced=args.source, deadline=deadline)

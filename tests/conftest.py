@@ -16,8 +16,6 @@ ACTIVE_HTML = """<html><head><title>Springfield University - Admissions</title>
 <a href="/contact">Contact</a><p>© 2025 Springfield University. All rights reserved.</p>
 <p>{extra}</p></body></html>"""
 
-THIN_HTML = "<html><head><title>Home</title></head><body><p>Hello world</p></body></html>"
-
 
 def make_response(url="https://example.edu/", status=200,
                   text=ACTIVE_HTML, ctype="text/html",

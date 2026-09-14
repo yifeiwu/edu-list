@@ -266,7 +266,7 @@ def classify_type(name: str, domain: str, hint: str = "") -> str:
                             "high school", "gias", "k_12")):
         return "k-12"
     if any(t in h for t in ("university", "college", "polytechnic", "higher-ed",
-                            "higher ed", "tertiary", "ipeds", "scorecard", "eter")):
+                            "higher ed", "tertiary", "ipeds", "scorecard")):
         return "university/college"
     n = re.sub(r"\s+", " ", f"{name} {domain}".lower()).strip()
     uni_markers = ["university", "polytechnic", "universidad",

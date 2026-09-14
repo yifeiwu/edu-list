@@ -51,9 +51,6 @@ sees meaningful load. Per run: drain pending FIFO first, then re-verify —
 Both rewrite only touched country files (sorted), update `INDEX.md` + state,
 and commit only on diff. Budget guards stop each run at ~25 min / cap.
 
-`src/crawl.py` remains as a legacy all-in-one wrapper (curate + verify) for
-local runs.
-
 ## Validation highlights
 
 * Redirect-chain audit: cross-domain moves are chased, not misattributed —
@@ -98,11 +95,9 @@ python src/verify.py --config config.yaml --limit 50 --dry-run
 # Offline (no network, for tests):
 python src/curate.py --no-network
 python src/verify.py --no-network
-# Or legacy all-in-one locally:
-python src/crawl.py --config config.yaml --sources sources.yaml --limit 50 --dry-run
 ```
 
-Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|whed|osm|dotgov|cricos|nuc-ng|nz-schools|deqar|ipeds|eter`.
+Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|whed|osm|dotgov|cricos|nuc-ng|nz-schools|deqar|ipeds`.
 
 ## Config
 

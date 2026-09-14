@@ -19,7 +19,6 @@ with per-row `sources` citations. Honor each upstream's terms:
 | NZ Schools Directory | school name + URL (CKAN datastore, paged) | CC-BY 4.0 | Cite `nz-schools:YYYY-MM-DD`. |
 | DEQAR institutions | name, website_link, country (daily CSV, ~3MB) | PDDL (public domain) | Cite `deqar:YYYY-MM-DD`. QA-filtered EU higher-ed. |
 | US IPEDS HD directory | INSTNM + WEBADDR (year-stamped zip, ~1MB) | US public domain | Year roll-back on 404; cite `ipeds:YYYY-MM`. Broader than Scorecard. |
-| ETER full dump (disabled) | institution name + website + country (Zenodo, ~93MB, `;`-delimited) | CC-BY 4.0 | Heavy; enable deliberately. Cite `eter:YYYY-MM`. |
 
 ## Spiked, not added (2026-09-12 — verified, no adapter)
 
@@ -41,6 +40,7 @@ with per-row `sources` citations. Honor each upstream's terms:
 | UGC India | HTTP 403 (WAF blocks bots, including datacenter IPs). Needs browser/API route. |
 | crt.sh | 502s on `%`-wildcard CT queries (full-table scans). Exact-domain lookups work but can't drive discovery. |
 | Common Crawl CDX | Prefix scans (`*.edu` + URL-regex filter) time out (504/502). CDX suits known-URL lookups, not discovery sweeps. |
+| ETER full dump | Heavy ~93MB/session Zenodo dump; removed 2026-09-14. |
 | GIAS (UK) / FR sup-recherche / Giga | No stable bulk URL configured (see spike notes above for UK). |
 | edudirectory.school | Hint-only; no bulk endpoint. |
 

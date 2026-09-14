@@ -8,12 +8,11 @@ from src.curate import ADAPTERS, pick_sources
 
 def test_no_dormant_adapters_registered():
     for gone in ("gias", "france-sup", "ugc-in", "giga",
-                 "crtsh", "edudirectory", "commoncrawl"):
+                 "crtsh", "edudirectory", "commoncrawl", "eter"):
         assert gone not in ADAPTERS
     for keep in ("hipo", "ror", "openalex", "wikidata", "scorecard",
                  "france-annuaire", "osm", "whed", "dotgov",
-                 "cricos", "nuc-ng", "nz-schools", "deqar", "ipeds",
-                 "eter"):
+                 "cricos", "nuc-ng", "nz-schools", "deqar", "ipeds"):
         assert keep in ADAPTERS
 
 

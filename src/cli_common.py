@@ -1,8 +1,8 @@
-"""Shared CLI boilerplate — single implementation for curate/verify/crawl.
+"""Shared CLI boilerplate — single implementation for curate/verify.
 
 Previously `log`, `load_cfg`, `assert_configured_contact` and path/state
-handling were triplicated across entrypoints and drifted (e.g. `crawl.py`
-dropped `unmapped` from `last_curate`). Import from here instead.
+handling were triplicated across entrypoints and drifted. Import from here
+instead.
 
 Contact identity (consolidated):
 - `validation.user_agent` in `config.yaml` is authoritative.
@@ -102,6 +102,30 @@ def load_runtime(state_path: Path, countries_dir: Path, pending_path: Path):
     by_domain, buckets = load_all(countries_dir)
     pending = load_pending(pending_path)
     return state, by_domain, buckets, pending
+
+
+def init_runtime(config_path: Path | str,
+                 sources_path: Path | str | None = None):
+    """Load configs + paths + runtime state (single implementation).
+
+    Returns (cfg, src_cfg, paths, state, by_domain, buckets, pending).
+    Replaces the load_cfg/resolve_paths/load_runtime/log block previously
+    triplicated in the curate/verify mains.
+    """
+    cfg = load_cfg(Path(config_path))
+    src_cfg = load_cfg(Path(sources_path)) if sources_path else {}
+    paths = resolve_paths(cfg)
+    state, by_domain, buckets, pending = load_runtime(
+        paths["state_path"], paths["countries_dir"], paths["pending_path"])
+    log(f"Loaded {len(by_domain)} domains, {len(pending)} pending")
+    return cfg, src_cfg, paths, state, by_domain, buckets, pending
+
+
+def deadline_for(cfg: dict) -> float:
+    """Wall-clock deadline from `run.max_seconds` (default 2700s)."""
+    import time
+
+    return time.time() + int(cfg.get("run", {}).get("max_seconds", 2700))
 
 
 def save_runtime(*, countries_dir, buckets, touched: set[str],

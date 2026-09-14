@@ -26,10 +26,9 @@ from src.cli_common import (  # noqa: E402
     ROOT as CLI_ROOT,
     apply_contact,
     assert_configured_contact,
-    load_cfg,
-    load_runtime,
+    deadline_for,
+    init_runtime,
     log,
-    resolve_paths,
     resolve_user_agent,
     save_runtime,
 )
@@ -492,19 +491,15 @@ def main() -> int:
                     help="Skip website fetches (for tests/offline).")
     args = ap.parse_args()
 
-    cfg = load_cfg(Path(args.config))
+    cfg, _, paths, state, by_domain, buckets, pending = init_runtime(
+        Path(args.config))
     if not args.dry_run and not args.no_network:
         assert_configured_contact(cfg)
     run = cfg.get("run", {})
-    paths = resolve_paths(cfg)
     countries_dir = paths["countries_dir"]
     index_path = paths["index_path"]
     state_path = paths["state_path"]
     pending_path = paths["pending_path"]
-
-    state, by_domain, buckets, pending = load_runtime(
-        state_path, countries_dir, pending_path)
-    log(f"Loaded {len(by_domain)} domains, {len(pending)} pending")
 
     if args.no_network:
         log("NO-NETWORK: skipping validation, reporting state only")
@@ -518,7 +513,7 @@ def main() -> int:
         log("DRY-RUN: capping validations at 5 (pass --limit to override)")
 
     apply_contact(cfg)
-    deadline = time.time() + int(run.get("max_seconds", 2700))
+    deadline = deadline_for(cfg)
     stats = run_verify(cfg=cfg, state=state, by_domain=by_domain,
                        buckets=buckets, pending=pending, limit=limit,
                        new_only=args.new_only, reverify_only=args.reverify_only,

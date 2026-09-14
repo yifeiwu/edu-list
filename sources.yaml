@@ -118,16 +118,10 @@ sources:
     license: US-public-domain
     per_run: 15
     timeout_seconds: 120
-  - id: eter
-    kind: csv-download
-    enabled: false # heavy: ~93MB Zenodo dump per session; enable deliberately
-    url: https://zenodo.org/api/records/10879501/files/ETER_fullDump_26032024.csv/content
-    license: CC-BY-4.0
-    per_run: 10
-    timeout_seconds: 180
 
 # Removed sources (code deleted; re-adding needs a new adapter + tests):
 # - ugc-in: UGC India blocks bots (HTTP 403, WAF). Needs browser/API route.
 # - crtsh: crt.sh 502s on %-wildcard CT queries (full-table scans).
 # - commoncrawl: CDX prefix scans + regex filters time out (504/502).
-# - eter/gias/france-sup/giga/edudirectory: no stable bulk URL configured.
+# - eter: heavy ~93MB/session Zenodo dump; removed 2026-09-14.
+# - gias/france-sup/giga/edudirectory: no stable bulk URL configured.
