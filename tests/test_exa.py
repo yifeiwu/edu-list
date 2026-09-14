@@ -104,6 +104,20 @@ def test_interpret_no_results_and_error():
     assert exa.interpret_results(None, "x.edu")["reason"] == "exa-error"
 
 
+def test_interpret_commercial_takeover_is_inconclusive():
+    # A lapsed domain serving unrelated commercial copy (e.g. a betting
+    # operator on an expired college domain): substantial indexed text with
+    # no school-name or edu-keyword signal must never verify — word count
+    # alone is not educational evidence.
+    p = _payload(title="Best Games Online - Prizes Every Hour",
+                 url="https://example.edu/",
+                 text=("Play the best games online now. Daily prizes, big "
+                       "winners, fast payouts, bonus rewards every hour. " * 10))
+    v = exa.interpret_results(p, "example.edu", "US", "Springfield University")
+    assert v["verified"] is None
+    assert v["reason"] == "exa-inconclusive"
+
+
 def test_verify_redirect_skips_same_site_and_no_key():
     assert exa.verify_redirect_target(
         "example.edu", "www.example.edu", api_key="k")["reason"] == "exa-skipped:same-site"
@@ -335,3 +349,195 @@ def test_verify_exa_budget_caps_calls(monkeypatch):
     assert calls["n"] == 2
     # Pointer reasons carry the Exa annotation for the consulted moves.
     assert "exa-verified" in state["detail"]["s0.edu"]["reason"]
+
+
+# --- fallback rescue + discovery ---------------------------------------------
+
+def _fb_verified(domain, school="", iso=""):
+    return {"verified": True, "reason": "exa-verified",
+            "evidence": [f"https://{domain}/"], "candidate": None}
+
+
+def _fb_moved(domain, school="", iso=""):
+    return {"verified": None, "reason": "exa-discovered",
+            "evidence": ["https://new.edu/"], "candidate": "new.edu"}
+
+
+def _fb_none(domain, school="", iso=""):
+    return None
+
+
+def test_fallback_rescues_403_to_active():
+    with patch("src.validate.requests.get",
+               return_value=make_response(status=403, text="forbidden")):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Example University",
+                                     exa_fallback_fn=_fb_verified)
+    assert res["status"] == "Active"
+    assert res["moved_to"] is None
+    assert "exa-verified" in res["reason"]
+    assert res["exa"]["verified"] is True
+    # Original transport code preserved for transparency.
+    assert res["code"] == 403
+
+
+def test_fallback_no_hook_keeps_403_inaccessible():
+    with patch("src.validate.requests.get",
+               return_value=make_response(status=403, text="forbidden")):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep)
+    assert res["status"] == "Inaccessible"
+    assert res["reason"] == "http-403"
+
+
+def test_fallback_rescues_connection_error():
+    import requests as _rq
+    with patch("src.validate.requests.get",
+               side_effect=_rq.exceptions.ConnectionError("down")):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=0,
+                                     school_name="Example University",
+                                     exa_fallback_fn=_fb_verified)
+    assert res["status"] == "Active"
+    assert "exa-verified" in res["reason"]
+
+
+def test_fallback_discovers_replacement_domain():
+    import requests as _rq
+    with patch("src.validate.requests.get",
+               side_effect=_rq.exceptions.ConnectionError("down")):
+        res = validate.validate_site("https://old.edu", "old.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=0, school_name="Old University",
+                                     exa_fallback_fn=_fb_moved)
+    assert res["status"] == "Inaccessible"
+    assert res["moved_to"] == "new.edu"
+    assert "exa-discovered" in res["reason"]
+
+
+def test_fallback_tls_never_rescues_same_domain():
+    import requests as _rq
+    with patch("src.validate.requests.get",
+               side_effect=_rq.exceptions.SSLError("bad chain")):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     exa_fallback_fn=_fb_verified)
+    assert res["status"] == "Inaccessible"
+    assert "SSLError" in res["reason"]
+
+
+def test_fallback_tls_can_discover_replacement():
+    import requests as _rq
+    with patch("src.validate.requests.get",
+               side_effect=_rq.exceptions.SSLError("bad chain")):
+        res = validate.validate_site("https://old.edu", "old.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     exa_fallback_fn=_fb_moved)
+    assert res["moved_to"] == "new.edu"
+
+
+def test_fallback_never_rescues_service_or_social():
+    with patch("src.validate.requests.get",
+               return_value=make_response(url="https://mail.example.edu/",
+                                          text=ACTIVE_HTML)):
+        res = validate.validate_site("https://mail.example.edu",
+                                     "mail.example.edu", "US",
+                                     10, UA, 32768, multisource=True,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     active_threshold=10,
+                                     exa_fallback_fn=_fb_verified)
+    assert res["status"] == "Inaccessible"
+    assert "service-host" in res["reason"]
+    # Social placeholders never consult fallback at all.
+    res2 = validate.validate_site("https://facebook.com/x", "facebook.com",
+                                  "US", 10, UA, 32768, politeness=0,
+                                  exa_fallback_fn=_fb_verified)
+    assert res2["reason"] == "social-only/placeholder"
+
+
+def test_fallback_rescues_low_confidence():
+    thin = ("<html><head><title>Home</title></head><body><h1>Hi</h1><p>"
+            + ("lorem ipsum " * 60) + "</p></body></html>")
+    with patch("src.validate.requests.get",
+               return_value=make_response(text=thin)):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Example University",
+                                     exa_fallback_fn=_fb_verified)
+    assert res["status"] == "Active"
+    assert "exa-verified" in res["reason"]
+
+
+def test_verify_domain_self_check():
+    with patch("src.exa_check.search_exa", return_value=_payload()):
+        v = exa.verify_domain("royalholloway.ac.uk", "Royal Holloway", "GB",
+                              api_key="k")
+    assert v["verified"] is True
+
+
+def test_extract_candidate_filters_source_and_social():
+    payload = {"results": [
+        {"url": "https://old.edu/a", "title": "Old", "text": "x"},
+        {"url": "https://www.facebook.com/old", "title": "fb", "text": "x"},
+        {"url": "https://new.edu/", "title": "New University site",
+         "text": "New University admissions campus"},
+        {"url": "https://new.edu/about", "title": "About", "text": "y"},
+    ]}
+    cand, ev = exa.extract_candidate_domain(payload, "old.edu")
+    assert cand == "new.edu"
+    assert ev
+
+
+def test_discover_domain_uses_unconstrained_search():
+    payload = {"results": [
+        {"url": "https://new.edu/", "title": "New University",
+         "text": "New University admissions campus students",
+         "highlights": ["New University"]},
+    ]}
+    with patch("src.exa_check.search_general", return_value=payload):
+        out = exa.discover_domain("New University", "US", "old.edu",
+                                  api_key="k")
+    assert out["domain"] == "new.edu"
+    assert out["verified"] is True
+
+
+def test_fallback_check_prefers_self_then_discovery():
+    with patch("src.exa_check.cached_verify_self",
+               return_value={"verified": True, "reason": "exa-verified",
+                             "evidence": [], "ts": "2026-09-13"}):
+        out = exa.fallback_check("x.edu", "X Uni", "US", cache={},
+                                 api_key="k")
+    assert out is not None and out["verified"] is True
+    assert out["candidate"] is None
+
+
+def test_check_allows_exa_rescued_403():
+    def fake(url, domain, iso, timeout, ua, max_bytes, multisource=False,
+             politeness=0, active_threshold=50, sleep_fn=None,
+             school_name="", redirect_from=None, exa_verify_fn=None,
+             exa_fallback_fn=None, **kw):
+        return {"status": "Active", "confidence": 50,
+                "reason": "http-403+exa-verified", "code": 403,
+                "final_domain": domain, "moved_to": None,
+                "exa": {"verified": True, "reason": "exa-verified",
+                        "evidence": []}}
+    import tests.test_exa as _t  # noqa: F401 (ensure module loaded)
+    from src import verify as _v
+    orig = _v.validate_site
+    _v.validate_site = fake  # type: ignore[assignment]
+    try:
+        vcfg = {"timeout": 10, "max_bytes": 100, "ua": "t", "threshold": 50,
+                "polite": 0}
+        status, res = _v.check("x.edu", "X", "US", False, vcfg)
+        assert status == "Active"
+    finally:
+        _v.validate_site = orig  # type: ignore[assignment]

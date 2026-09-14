@@ -275,11 +275,6 @@ def main() -> int:
             f"recited={stats['recited']} unmapped={stats.get('unmapped', 0)} "
             f"skipped_service={stats.get('skipped_service', 0)}")
         return 0
-    save_runtime(countries_dir=paths["countries_dir"], buckets=buckets,
-                 touched=stats["touched"], index_path=paths["index_path"],
-                 pending_path=paths["pending_path"], pending=pending,
-                 state_path=paths["state_path"], state=state,
-                 archive_after=int(run.get("archive_after_failures", 6)))
     state["last_curate"] = {
         "at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "raw": stats["raw"], "new": stats["new"],
@@ -287,10 +282,11 @@ def main() -> int:
         "unmapped": stats.get("unmapped", 0),
         "skipped_service": stats.get("skipped_service", 0),
     }
-    # save_runtime already saved state once; re-save to include last_curate.
-    from src.store import save_state as _save_state
-
-    _save_state(paths["state_path"], state)
+    save_runtime(countries_dir=paths["countries_dir"], buckets=buckets,
+                 touched=stats["touched"], index_path=paths["index_path"],
+                 pending_path=paths["pending_path"], pending=pending,
+                 state_path=paths["state_path"], state=state,
+                 archive_after=int(run.get("archive_after_failures", 6)))
     if stats.get("unmapped", 0):
         log(f"NOTE: {stats['unmapped']} candidates fell back to XX "
             f"(no source ISO + no suffix match) — see XX.csv for review")

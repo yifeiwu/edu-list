@@ -22,11 +22,12 @@ run:
   max_pending: 8000
 
 verify:
-  # Verify hits each website once (homepage only, distributed hosts), so it
-  # is safe to run hourly with a small cap. ~125 validations/run x 24 ≈ the
-  # old twice-daily 1500 x 2 budget spread over the day, fitting the 25-min
-  # budget (0.4s politeness + 10s timeout worst-case, deadline guard still
-  # truncates slow runs).
+  # Overrides for `run.*` above (verify.py falls back to `run.*` when a key
+  # is missing here). Values differ intentionally: verify hits each website
+  # once (homepage only, distributed hosts), so it runs hourly with a small
+  # cap. ~125 validations/run x 24 ≈ the old twice-daily 1500 x 2 budget
+  # spread over the day, fitting the 25-min budget (0.4s politeness + 10s
+  # timeout worst-case, deadline guard still truncates slow runs).
   max_validations: 125
   max_new_per_run: 100
   verify_batch_no_new: 60
@@ -50,7 +51,14 @@ validation:
   # site is a real institution vs a parking page. Disabled automatically when
   # no API key is set — set EXA_API_KEY env var (wins) or fill exa_api_key
   # below. Budget-capped per run + cached 90d in state["exa_cache"].
+  # Fallback rescue (exa_rescue_enabled): when a direct fetch fails (403,
+  # timeouts, empty-body, soft-404, low-confidence), Exa self-verifies the
+  # same domain to rescue bot-blocks to Active, or discovers a replacement
+  # canonical domain (reported as moved-to:<new> so verify updates the row).
+  # Social/builder and service-hosts are never rescued; TLS errors never
+  # rescue same-domain (strict TLS) but may still discover a replacement.
   exa_enabled: true
+  exa_rescue_enabled: true
   exa_timeout_seconds: 15
   exa_num_results: 5
   exa_search_type: fast
@@ -67,68 +75,11 @@ state_path: state/state.json
 k12_enabled: true
 
 # ISO2 -> multilingual keyword-group mapping is in src/util.py (KEYWORDS_I18N).
-# Country inference: source ISO2 preferred, else suffix map below, else "XX".
-# Defaults live in src/geo.py DEFAULT_SUFFIX_COUNTRY; entries here
-# override/extend them (merged at runtime via merge_suffix_map).
-suffix_country:
-  edu: US
-  ac.uk: GB
-  sch.uk: GB
-  co.uk: GB
-  edu.au: AU
-  ac.in: IN
-  edu.in: IN
-  ac.za: ZA
-  sch.za: ZA
-  edu.br: BR
-  edu.mx: MX
-  ac.jp: JP
-  edu.ng: NG
-  edu.pk: PK
-  edu.ph: PH
-  edu.eg: EG
-  ac.ke: KE
-  edu.gh: GH
-  ac.ug: UG
-  edu.et: ET
-  edu.my: MY
-  edu.sg: SG
-  ac.th: TH
-  edu.tr: TR
-  edu.ar: AR
-  edu.co: CO
-  edu.pl: PL
-  ac.nz: NZ
-  co.nz: NZ
-  school.nz: NZ
-  edu.nz: NZ
-  edu.id: ID
-  ac.id: ID
-  edu.cn: CN
-  edu.hk: HK
-  edu.tw: TW
-  ac.kr: KR
-  edu.kr: KR
-  edu.vn: VN
-  edu.sa: SA
-  edu.bd: BD
-  ac.bd: BD
-  edu.np: NP
-  edu.lk: LK
-  ac.lk: LK
-  edu.ke: KE
-  edu.ug: UG
-  edu.tz: TZ
-  ac.tz: TZ
-  edu.za: ZA
-  gob.mx: MX
-  gov.mx: MX
-  edu.pe: PE
-  edu.cl: CL
-  edu.py: PY
-  edu.uy: UY
-  edu.ec: EC
-  edu.ve: VE
+# Country inference: source ISO2 preferred, else suffix map, else "XX".
+# Defaults live in src/geo.py DEFAULT_SUFFIX_COUNTRY (single source of truth).
+# Add entries here ONLY to override/extend them (merged at runtime via
+# merge_suffix_map). Empty by default to avoid a second copy drifting.
+suffix_country: {}
 
 blocklist:
   - example.edu

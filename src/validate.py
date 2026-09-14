@@ -1,15 +1,31 @@
 """Validation v2: homepage-only, free-tier safe.
 
-Rules (locked spec, strict-TLS revision):
-- Final HTTP status non-2xx (after redirects) => Inaccessible. No exceptions.
-- TLS errors (expired/self-signed/broken chain) => Inaccessible. Every
-  legitimate institution is expected to serve valid TLS; we no longer fall
-  back to verify=False.
+Rules (strict-TLS revision + Exa fallback rescue):
+- Final HTTP status non-2xx (after redirects) => Inaccessible, unless Exa
+  fallback independently verifies the same domain as the institution
+  (bot-block / WAF false-positive) — then Active with `+exa-verified`.
+  Moved pointers (non-2xx with a cross-domain `moved_to`) are never rescued;
+  the pointer is chased instead.
+- TLS errors (expired/self-signed/broken chain) => Inaccessible on the same
+  domain (strict TLS, never rescued to Active). Exa may still supply a
+  *different* canonical domain, reported as `moved_to` so the caller can
+  update the domain.
 - Transient transport failures (ConnectionError/Timeout) are retried once
-  with backoff; persistent failures => Inaccessible.
-- Social-only / builder-placeholder => Inaccessible (not a real website).
-- Parking / soft-404 / empty => Inaccessible.
-- Else score content signals; confidence >= threshold => Active.
+  with backoff; persistent failures => Inaccessible, unless Exa verifies the
+  same domain (rescue) or finds a replacement domain (move).
+- Social-only / builder-placeholder / service-host => Inaccessible, never
+  rescued and never replaced via Exa.
+- Parking / soft-404 / empty => Inaccessible locally; Exa may rescue
+  soft-404/block-page and empty-body to Active, or supply a replacement
+  domain for parked pages (reported as `moved_to`).
+- Educational-identity gate: without any educational signal in the fetched
+  metadata (schema.org edu type, the school's own name, or per-country edu
+  keywords), the page is not the institution's website — even with HTTP 200
+  and substantial copy (lapsed-domain takeovers serve those). Capped below
+  Active as `non-educational-content`; Exa may still rescue with genuine edu
+  evidence or supply a replacement domain.
+- Else score content signals; confidence >= threshold => Active. Below
+  threshold (low-confidence) => Inaccessible, unless Exa verifies (rescue).
 - Cross-domain moves (HTTP redirect or meta-refresh to a different
   registrable base) are reported as `moved_to` so the caller can mark the
   old domain `moved-to:<new>` and validate the target as its own row
@@ -25,6 +41,13 @@ Rules (locked spec, strict-TLS revision):
   Active, and an `exa-parking` verdict demotes a local Active to
   Inaccessible. Without a key / offline the hook is None and behavior is
   unchanged.
+- Exa fallback rescue (optional `exa_fallback_fn(domain, school, iso)` ->
+  `{verified, reason, evidence, candidate?}`): consulted on failure paths
+  (fetch-errors, non-2xx without a move, empty-body, soft-404, low-
+  confidence). `verified is True` rescues the same domain to Active;
+  `candidate` (a different, Exa-verified domain) is reported as `moved_to`
+  so the caller can update the domain. Any error / None / inconclusive
+  keeps the local Inaccessible verdict.
 
 Returns a dict with status, confidence, reason, codes for state tracking.
 CSV keeps only (school_name,web_domain,type,last_visited,status,sources).
@@ -163,6 +186,94 @@ def _exa_suffix(verdict: dict | None) -> str:
     return ""
 
 
+def _consult_exa_fallback(domain: str, school_name: str, country_iso: str,
+                          exa_fallback_fn: Callable[..., dict | None] | None
+                          ) -> dict | None:
+    """Safely ask the Exa fallback hook (None = no opinion / skipped).
+
+    `exa_fallback_fn(domain, school_name, country_iso)` must return
+    `{verified: True|False|None, reason, evidence?, candidate?}` or None.
+    Any error => None (local verdict stands).
+    """
+    if not exa_fallback_fn or not domain:
+        return None
+    try:
+        verdict = exa_fallback_fn(domain, school_name or "",
+                                  country_iso or "")
+    except TypeError:
+        # Wrong arity test doubles / legacy hooks — treat as no opinion.
+        return None
+    except Exception:
+        return None
+    return verdict if isinstance(verdict, dict) else None
+
+
+def _fallback_candidate_target(domain: str, verdict: dict | None) -> str | None:
+    """Normalized dissimilar replacement domain from a fallback verdict."""
+    if not isinstance(verdict, dict):
+        return None
+    cand = (verdict.get("candidate") or verdict.get("domain")
+            or verdict.get("moved_to") or "")
+    cand = str(cand or "").lower().strip().strip(".").removeprefix("www.")
+    if not cand or "." not in cand:
+        return None
+    norm = normalize_domain(cand)
+    if not norm:
+        return None
+    try:
+        if is_social_or_builder(norm) or is_service_host(norm):
+            return None
+        # Require a genuinely different registrable base (not www/apex).
+        if same_site(domain or "", norm):
+            return None
+        return norm
+    except Exception:
+        return None
+
+
+def _apply_exa_fallback(domain: str, school_name: str, country_iso: str,
+                        exa_fallback_fn: Callable[..., dict | None] | None,
+                        *, local_reason: str, local_code: int,
+                        local_final: str,
+                        active_threshold: int,
+                        allow_rescue_same: bool = True) -> dict | None:
+    """Try Exa fallback rescue / domain-update for a failure path.
+
+    Returns a full result dict on rescue (Active) or replacement
+    (Inaccessible + moved_to), else None (keep the local verdict).
+    """
+    verdict = _consult_exa_fallback(domain, school_name, country_iso,
+                                    exa_fallback_fn)
+    if verdict is None:
+        return None
+    # 1) Replacement domain wins: report a move pointer so the caller can
+    # update the domain (chase + validate the target as its own row).
+    target = _fallback_candidate_target(domain, verdict)
+    if target:
+        suffix = _exa_suffix({"verified": True,
+                              "reason": verdict.get("reason") or "exa-discovered"})
+        # Normalize suffix label for discovery (exa-verified -> exa-discovered
+        # only when the hook didn't already say so).
+        reason_core = str(verdict.get("reason", "") or "")
+        if "discover" not in reason_core and "exa-" not in reason_core:
+            suffix = "+exa-discovered"
+        elif suffix == "+exa-verified":
+            suffix = "+exa-discovered"
+        return {"status": "Inaccessible", "confidence": 10,
+                "reason": f"moved-to:{target}{suffix}", "code": local_code,
+                "final_domain": local_final or domain, "moved_to": target,
+                "exa": verdict}
+    # 2) Same-domain rescue (bot-block / network false-positive).
+    if allow_rescue_same and verdict.get("verified") is True:
+        suffix = _exa_suffix(verdict) or "+exa-verified"
+        return {"status": "Active",
+                "confidence": max(int(active_threshold), 50),
+                "reason": f"{local_reason}{suffix}", "code": local_code,
+                "final_domain": local_final or domain, "moved_to": None,
+                "exa": verdict}
+    return None
+
+
 def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                   user_agent: str, max_bytes: int,
                   multisource: bool = False,
@@ -173,7 +284,8 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                   retry_backoff: float = 1.0,
                   school_name: str = "",
                   redirect_from: str | None = None,
-                  exa_verify_fn: Callable[..., dict | None] | None = None) -> dict:
+                  exa_verify_fn: Callable[..., dict | None] | None = None,
+                  exa_fallback_fn: Callable[..., dict | None] | None = None) -> dict:
     _sleep = sleep_fn or time.sleep
 
     def _polite() -> None:
@@ -198,6 +310,13 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         scheme = parts.scheme or "https"
         home = f"{scheme}://{host}/"
     except Exception:
+        fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                 exa_fallback_fn, local_reason="bad-url",
+                                 local_code=0, local_final=domain,
+                                 active_threshold=active_threshold,
+                                 allow_rescue_same=False)
+        if fb is not None:
+            return fb
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "bad-url", "code": 0, "final_domain": domain,
                 "moved_to": None}
@@ -226,22 +345,46 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             _polite()
             if attempt >= max(int(retries), 0):
                 kind = type(e).__name__
+                local_reason = f"fetch-error:{kind}"
+                fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                         exa_fallback_fn,
+                                         local_reason=local_reason,
+                                         local_code=0, local_final=domain,
+                                         active_threshold=active_threshold)
+                if fb is not None:
+                    return fb
                 return {"status": "Inaccessible", "confidence": 0,
-                        "reason": f"fetch-error:{kind}", "code": 0,
+                        "reason": local_reason, "code": 0,
                         "final_domain": domain, "moved_to": None}
             _backoff()
             continue
         except requests.RequestException as e:
             _polite()
             kind = type(e).__name__
+            local_reason = f"fetch-error:{kind}"
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn,
+                                     local_reason=local_reason,
+                                     local_code=0, local_final=domain,
+                                     active_threshold=active_threshold)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 0,
-                    "reason": f"fetch-error:{kind}", "code": 0,
+                    "reason": local_reason, "code": 0,
                     "final_domain": domain, "moved_to": None}
         except Exception as e:  # noqa: BLE001 - boundary guard
             _polite()
             kind = type(e).__name__
+            local_reason = f"fetch-error:{kind}"
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn,
+                                     local_reason=local_reason,
+                                     local_code=0, local_final=domain,
+                                     active_threshold=active_threshold)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 0,
-                    "reason": f"fetch-error:{kind}", "code": 0,
+                    "reason": local_reason, "code": 0,
                     "final_domain": domain, "moved_to": None}
     if ssl_error is not None:
         # Strict TLS: broken/expired/self-signed chains are Inaccessible.
@@ -257,24 +400,63 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                                  timeout=timeout, allow_redirects=True,
                                  stream=True)
             except requests.exceptions.SSLError:
+                fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                         exa_fallback_fn,
+                                         local_reason="fetch-error:SSLError",
+                                         local_code=0, local_final=domain,
+                                         active_threshold=active_threshold,
+                                         allow_rescue_same=False)
+                if fb is not None:
+                    return fb
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": "fetch-error:SSLError", "code": 0,
                         "final_domain": domain, "moved_to": None}
             except requests.RequestException as e2:
                 _polite()
+                local_reason = f"fetch-error:{type(e2).__name__}"
+                fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                         exa_fallback_fn,
+                                         local_reason=local_reason,
+                                         local_code=0, local_final=domain,
+                                         active_threshold=active_threshold)
+                if fb is not None:
+                    return fb
                 return {"status": "Inaccessible", "confidence": 0,
-                        "reason": f"fetch-error:{type(e2).__name__}",
+                        "reason": local_reason,
                         "code": 0, "final_domain": domain, "moved_to": None}
             except Exception as e2:  # noqa: BLE001 - boundary guard
                 _polite()
+                local_reason = f"fetch-error:{type(e2).__name__}"
+                fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                         exa_fallback_fn,
+                                         local_reason=local_reason,
+                                         local_code=0, local_final=domain,
+                                         active_threshold=active_threshold)
+                if fb is not None:
+                    return fb
                 return {"status": "Inaccessible", "confidence": 0,
-                        "reason": f"fetch-error:{type(e2).__name__}",
+                        "reason": local_reason,
                         "code": 0, "final_domain": domain, "moved_to": None}
         else:
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn,
+                                     local_reason=f"fetch-error:{ssl_kind}",
+                                     local_code=0, local_final=domain,
+                                     active_threshold=active_threshold,
+                                     allow_rescue_same=False)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 0,
                     "reason": f"fetch-error:{ssl_kind}",
                     "code": 0, "final_domain": domain, "moved_to": None}
     if g is None:
+        fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                 exa_fallback_fn,
+                                 local_reason="fetch-error:ConnectionError",
+                                 local_code=0, local_final=domain,
+                                 active_threshold=active_threshold)
+        if fb is not None:
+            return fb
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "fetch-error:ConnectionError", "code": 0,
                 "final_domain": domain, "moved_to": None}
@@ -287,6 +469,19 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         ctype = g.headers.get("Content-Type", "text/html")
         if code < 200 or code >= 300:
             _polite()
+            if moved:
+                # HTTP redirect chain already found the new home — chase it.
+                return {"status": "Inaccessible", "confidence": 5,
+                        "reason": f"http-{code}", "code": code,
+                        "final_domain": final_host, "moved_to": moved}
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn,
+                                     local_reason=f"http-{code}",
+                                     local_code=code,
+                                     local_final=final_host,
+                                     active_threshold=active_threshold)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 5,
                     "reason": f"http-{code}", "code": code,
                     "final_domain": final_host, "moved_to": moved}
@@ -311,6 +506,16 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             pass
 
     if not html or len(html.strip()) < 200:
+        if moved:
+            return {"status": "Inaccessible", "confidence": 5,
+                    "reason": "empty-body", "code": code,
+                    "final_domain": final_host, "moved_to": moved}
+        fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                 exa_fallback_fn, local_reason="empty-body",
+                                 local_code=code, local_final=final_host,
+                                 active_threshold=active_threshold)
+        if fb is not None:
+            return fb
         return {"status": "Inaccessible", "confidence": 5,
                 "reason": "empty-body", "code": code,
                 "final_domain": final_host, "moved_to": moved}
@@ -341,11 +546,36 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
 
     for rx in SOFT404_RE_C:
         if rx.search(vlow) or rx.search(low[:2000]):
+            if moved:
+                return {"status": "Inaccessible", "confidence": 10,
+                        "reason": "soft-404/block-page", "code": code,
+                        "final_domain": final_host, "moved_to": moved}
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn,
+                                     local_reason="soft-404/block-page",
+                                     local_code=code,
+                                     local_final=final_host,
+                                     active_threshold=active_threshold)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 10,
                     "reason": "soft-404/block-page", "code": code,
                     "final_domain": final_host, "moved_to": moved}
     for rx in PARKING_RE_C:
         if rx.search(vlow) or rx.search(low[:4000]):
+            if moved:
+                return {"status": "Inaccessible", "confidence": 10,
+                        "reason": "parking", "code": code,
+                        "final_domain": final_host, "moved_to": moved}
+            # Parked: never rescue same-domain, but Exa may know the real home.
+            fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                     exa_fallback_fn, local_reason="parking",
+                                     local_code=code,
+                                     local_final=final_host,
+                                     active_threshold=active_threshold,
+                                     allow_rescue_same=False)
+            if fb is not None:
+                return fb
             return {"status": "Inaccessible", "confidence": 10,
                     "reason": "parking", "code": code,
                     "final_domain": final_host, "moved_to": moved}
@@ -359,6 +589,19 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     links = re.findall(r"<a\s", html, re.I)
     if len(words) < 120 and len(links) > 25 and not any(
             k in vlow for k in keywords_for_country(country_iso)):
+        if moved:
+            return {"status": "Inaccessible", "confidence": 10,
+                    "reason": "parking-linkfarm", "code": code,
+                    "final_domain": final_host, "moved_to": moved}
+        # Linkfarm: never rescue same-domain, but Exa may know the real home.
+        fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                 exa_fallback_fn,
+                                 local_reason="parking-linkfarm",
+                                 local_code=code, local_final=final_host,
+                                 active_threshold=active_threshold,
+                                 allow_rescue_same=False)
+        if fb is not None:
+            return fb
         return {"status": "Inaccessible", "confidence": 10,
                 "reason": "parking-linkfarm", "code": code,
                 "final_domain": final_host, "moved_to": moved}
@@ -367,7 +610,8 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     if multisource:
         conf += 30
         reasons.append("multi-source")
-    if SCHEMA_RE.search(html):
+    schema_hit = bool(SCHEMA_RE.search(html))
+    if schema_hit:
         conf += 25
         reasons.append("schema.org-edu")
     # Keyword search must cover the whole body: modern portal/SPAs bury all
@@ -375,7 +619,8 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     kws = keywords_for_country(country_iso)
     body_low = full_text.lower()
     hay = (vlow + " " + low[:4000])
-    if any(k in hay for k in kws) or any(k in body_low for k in kws):
+    kw_hit = any(k in hay for k in kws) or any(k in body_low for k in kws)
+    if kw_hit:
         conf += 20
         reasons.append("edu-keywords")
     struct_hits = sum(1 for rx in STRUCTURAL_RES if rx.search(html))
@@ -402,6 +647,26 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
              "sedo.com", "godaddy", "domain parking", "this site is parked")):
         conf += 10
         reasons.append("substantial-content")
+
+    # Educational-identity gate (lapsed-domain takeover protection): the page
+    # only counts as the institution's website when its metadata still shows
+    # educational signals — a schema.org edu type, the school's own name, or
+    # per-country edu keywords. Structure/volume/trust bonuses alone
+    # (multi-source, substantial copy, academic suffix) must never promote a
+    # takeover (e.g. a betting operator serving HTTP 200 on an expired
+    # college domain) to Active. Without edu signals the row stays
+    # Inaccessible; Exa may still rescue it with genuine edu evidence or
+    # supply the school's replacement domain via discovery.
+    name_toks = [t.lower() for t in re.split(r"[^a-z0-9]+", school_name or "")
+                 if len(t) >= 4]
+    has_edu_signal = (
+        schema_hit
+        or kw_hit
+        or any(t in hay or t in body_low for t in name_toks)
+    )
+    if not has_edu_signal:
+        conf = min(conf, 40)
+        reasons.append("non-educational-content")
 
     # Base for move-target comparison (registrable, for stable reason suffix).
     if moved:
@@ -496,6 +761,13 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         return {"status": "Active", "confidence": conf,
                 "reason": "+".join(reasons), "code": code,
                 "final_domain": final_host, "moved_to": moved}
+    low_reason = "low-confidence:" + "+".join(reasons)
+    fb = _apply_exa_fallback(domain, school_name, country_iso,
+                             exa_fallback_fn, local_reason=low_reason,
+                             local_code=code, local_final=final_host,
+                             active_threshold=active_threshold)
+    if fb is not None:
+        return fb
     return {"status": "Inaccessible", "confidence": conf,
-            "reason": "low-confidence:" + "+".join(reasons), "code": code,
+            "reason": low_reason, "code": code,
             "final_domain": final_host, "moved_to": moved}

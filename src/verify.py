@@ -35,7 +35,9 @@ from src.cli_common import (  # noqa: E402
 )
 from src.exa_check import (  # noqa: E402
     EXA_CACHE_TTL_DAYS,
+    cached_discover,
     cached_verify,
+    cached_verify_self,
     exa_config_from_cfg,
     is_dissimilar_redirect,
 )
@@ -61,7 +63,7 @@ def _redirect_from_source(source: str) -> str | None:
 
 def check(domain: str, name: str, iso: str, multisrc: bool, vcfg: dict,
           redirect_from: str | None = None,
-          exa_verify_fn=None) -> tuple[str, dict]:
+          exa_verify_fn=None, exa_fallback_fn=None) -> tuple[str, dict]:
     res = validate_site(f"https://{domain}", domain, iso,
                         vcfg["timeout"], vcfg["ua"], vcfg["max_bytes"],
                         multisource=multisrc, politeness=vcfg["polite"],
@@ -70,10 +72,18 @@ def check(domain: str, name: str, iso: str, multisrc: bool, vcfg: dict,
                         retry_backoff=vcfg.get("backoff", 1.0),
                         school_name=name or "",
                         redirect_from=redirect_from,
-                        exa_verify_fn=exa_verify_fn)
-    # Locked rule: non-2xx is ALWAYS Inaccessible regardless of score.
-    # validate_site already enforces threshold, but re-check here so a
-    # config change takes effect even if the scorer defaults drift.
+                        exa_verify_fn=exa_verify_fn,
+                        exa_fallback_fn=exa_fallback_fn)
+    # Non-2xx is Inaccessible — except an Exa fallback rescue, where Exa
+    # independently indexes the same domain as the institution (bot-block /
+    # WAF false-positive). Moved pointers are never Active (chased instead).
+    if res.get("moved_to"):
+        return "Inaccessible", res
+    exa = res.get("exa")
+    if (res["status"] == "Active" and isinstance(exa, dict)
+            and exa.get("verified") is True
+            and "+exa-" in str(res.get("reason", ""))):
+        return "Active", res
     active = (res["status"] == "Active"
               and 200 <= int(res.get("code", 0)) < 300
               and res.get("confidence", 0) >= vcfg["threshold"])
@@ -172,6 +182,88 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         except Exception:
             return None
 
+    def _exa_fallback_hook(domain: str, school_name: str = "",
+                           country_iso: str = "") -> dict | None:
+        """Budget-capped Exa fallback: rescue bot-blocks, update domain.
+
+        Returns ``{verified, reason, evidence, candidate?}`` or None (no
+        opinion / disabled / budget spent). Each API-backed step consumes
+        one unit of ``exa_calls`` (self-verify, then discovery only if the
+        same domain wasn't rescued and budget remains); cache hits are
+        free. Never raises.
+        """
+        nonlocal exa_calls
+        try:
+            if not exa_cfg.get("enabled"):
+                return None
+            if not exa_cfg.get("rescue_enabled", True):
+                return None
+            if not exa_cfg.get("api_key"):
+                return None
+            if not (domain or "").strip():
+                return None
+        except Exception:
+            return None
+        try:
+            budget = int(exa_cfg.get("max_calls_per_run", 20))
+        except Exception:
+            budget = 20
+        api_key = str(exa_cfg.get("api_key") or "")
+        timeout = int(exa_cfg.get("timeout", 15))
+        num_results = int(exa_cfg.get("num_results", 5))
+        search_type = str(exa_cfg.get("search_type", "fast"))
+        # Step 1: self-verify the same domain.
+        if exa_calls >= budget:
+            return None
+        exa_calls += 1
+        try:
+            self_v = cached_verify_self(domain, school_name, country_iso,
+                                        cache=exa_cache, api_key=api_key,
+                                        timeout=timeout,
+                                        num_results=num_results,
+                                        search_type=search_type)
+        except Exception:
+            return None
+        if isinstance(self_v, dict) and self_v.get("verified") is True:
+            return {"verified": True, "reason": self_v.get("reason", ""),
+                    "evidence": list(self_v.get("evidence", []) or []),
+                    "candidate": None}
+        # Step 2: discover a replacement domain (only when same-domain
+        # wasn't rescued and budget remains).
+        if exa_calls >= budget:
+            if isinstance(self_v, dict):
+                return {"verified": self_v.get("verified"),
+                        "reason": self_v.get("reason", ""),
+                        "evidence": list(self_v.get("evidence", []) or []),
+                        "candidate": None}
+            return None
+        exa_calls += 1
+        try:
+            disc = cached_discover(school_name, country_iso, domain,
+                                   cache=exa_cache, api_key=api_key,
+                                   timeout=timeout, num_results=num_results,
+                                   search_type=search_type)
+        except Exception:
+            disc = None
+        if isinstance(disc, dict) and disc.get("domain"):
+            cand = disc.get("domain")
+            try:
+                dissimilar = is_dissimilar_redirect(domain or "", cand or "")
+            except Exception:
+                dissimilar = (str(cand or "").lower()
+                              != (domain or "").lower())
+            if dissimilar and disc.get("verified") is True:
+                return {"verified": None,
+                        "reason": disc.get("reason", ""),
+                        "evidence": list(disc.get("evidence", []) or []),
+                        "candidate": cand}
+        if isinstance(self_v, dict):
+            return {"verified": self_v.get("verified"),
+                    "reason": self_v.get("reason", ""),
+                    "evidence": list(self_v.get("evidence", []) or []),
+                    "candidate": None}
+        return None
+
     def _age(domain: str) -> str:
         try:
             years = _domain_age(domain, timeout=8, cache=age_cache)
@@ -186,7 +278,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         redirect_from = _redirect_from_source(source or "")
         status, res = check(domain, name, iso, multisrc, vcfg,
                             redirect_from=redirect_from,
-                            exa_verify_fn=_exa_hook)
+                            exa_verify_fn=_exa_hook,
+                            exa_fallback_fn=_exa_fallback_hook)
         age = _age(domain)
         row = {"school_name": name or domain, "web_domain": domain,
                "type": classify_type(name or "", domain, type_hint or ""),
@@ -359,7 +452,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             redirect_from = _redirect_from_source(row.get("sources", ""))
             status, res = check(d, row["school_name"], iso, multisrc, vcfg,
                                 redirect_from=redirect_from,
-                                exa_verify_fn=_exa_hook)
+                                exa_verify_fn=_exa_hook,
+                                exa_fallback_fn=_exa_fallback_hook)
             mv = res.get("moved_to")
             if mv and mv != d:
                 _mark_moved(d, row, mv, res, prev_fc)

@@ -262,3 +262,69 @@ def test_ssl_not_retried_as_transient():
                                      politeness=0, sleep_fn=_no_sleep)
     assert "SSLError" in res["reason"]
     assert calls["n"] == 2
+
+
+def _takeover_html():
+    # Lapsed-domain takeover shape: HTTP 200, structural chrome
+    # (canonical/icon/contact links, copyright) and substantial copy — but
+    # nothing educational: no schema edu type, no school name, no edu
+    # keywords. Bonuses alone must never promote it.
+    body = ("<p>Play the best games online now. Daily prizes, big winners, "
+            "fast payouts, bonus rewards every hour. " * 20) + "</p>"
+    return ("<html><head><title>Best Games Online - Prizes Every Hour</title>"
+            '<link rel="canonical" href="https://example.edu/">'
+            '<link rel="icon" href="/favicon.ico">'
+            "</head><body><h1>Welcome - Play and Win</h1>"
+            '<a href="/contact">Contact</a><a href="/promotions">Promotions</a>'
+            "<p>© 2025 Example Games. All rights reserved.</p>"
+            + body + "</body></html>")
+
+
+def test_takeover_without_edu_signals_never_active():
+    # Even multisource + trusted .edu suffix + structure + substantial copy
+    # must not promote a page with no educational signal.
+    with patch("src.validate.requests.get",
+               return_value=make_response(text=_takeover_html())):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768, multisource=True,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Springfield University")
+    assert res["status"] == "Inaccessible"
+    assert "non-educational-content" in res["reason"]
+    assert res["moved_to"] is None
+
+
+def test_takeover_with_school_name_scores_active():
+    body = ("<p>Play the best games online now. Daily prizes, big winners, "
+            "fast payouts, bonus rewards every hour. " * 20) + "</p>"
+    html = ("<html><head><title>Best Games Online</title>"
+            '<link rel="canonical" href="https://example.edu/">'
+            '<link rel="icon" href="/favicon.ico">'
+            "</head><body><h1>Springfield University Games Night</h1>"
+            '<a href="/contact">Contact</a>'
+            "<p>© 2025 Springfield University. All rights reserved.</p>"
+            + body + "</body></html>")
+    with patch("src.validate.requests.get",
+               return_value=make_response(text=html)):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768, multisource=True,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Springfield University")
+    assert res["status"] == "Active"
+
+
+def test_non_educational_page_tries_exa_discovery():
+    def _fb_moved(domain, school="", iso=""):
+        return {"verified": None, "reason": "exa-discovered",
+                "evidence": ["https://realcollege.edu/"],
+                "candidate": "realcollege.edu"}
+
+    with patch("src.validate.requests.get",
+               return_value=make_response(text=_takeover_html())):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Springfield University",
+                                     exa_fallback_fn=_fb_moved)
+    assert res["status"] == "Inaccessible"
+    assert res["moved_to"] == "realcollege.edu"
