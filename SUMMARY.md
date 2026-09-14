@@ -1,50 +1,50 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-14 13:45 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-14 14:29 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **635** across **55** countries
-- Active: **417** (66%) · Inaccessible: **218** (34%)
-- Pending queue: **395** unvalidated candidates
-- Known registration age: **366** domains (median 22 yrs)
+- Domains tracked: **738** across **60** countries
+- Active: **483** (65%) · Inaccessible: **255** (35%)
+- Pending queue: **295** unvalidated candidates
+- Known registration age: **403** domains (median 21 yrs)
 
 ## Last runs
 
-- Verify (2026-09-14 07:01 UTC): validated 118, +73 Active, re-verified 15, pending left 254
+- Verify (2026-09-14 14:29 UTC): validated 118, +66 Active, re-verified 15, pending left 295
 - Curate (2026-09-14 13:45 UTC): 177 raw candidates, 141 queued, 4 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 217 | 172 | 45 |
-| AU | 64 | 44 | 20 |
-| FR | 59 | 39 | 20 |
-| XX | 48 | 26 | 22 |
-| AM | 30 | 18 | 12 |
+| US | 235 | 188 | 47 |
+| AU | 81 | 58 | 23 |
+| FR | 74 | 49 | 25 |
+| XX | 57 | 30 | 27 |
+| AM | 36 | 21 | 15 |
 | AL | 27 | 16 | 11 |
-| NG | 22 | 15 | 7 |
-| GB | 20 | 11 | 9 |
+| NG | 27 | 19 | 8 |
+| GB | 21 | 11 | 10 |
 | IN | 14 | 10 | 4 |
 | RU | 13 | 7 | 6 |
+| CN | 12 | 5 | 7 |
 | CZ | 12 | 2 | 10 |
-| CN | 10 | 3 | 7 |
+| AT | 9 | 6 | 3 |
+| IR | 9 | 0 | 9 |
 | DE | 8 | 3 | 5 |
-| GH | 8 | 6 | 2 |
-| BR | 6 | 3 | 3 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 382 |
-| `http-403` | 50 |
-| `fetch-error:ConnectionError` | 49 |
-| `low-confidence:http-2xx-html` | 29 |
-| `fetch-error:ConnectTimeout` | 21 |
-| `fetch-error:SSLError` | 11 |
-| `empty-body` | 7 |
+| `http-2xx-html` | 448 |
+| `fetch-error:ConnectionError` | 61 |
+| `http-403` | 56 |
+| `low-confidence:http-2xx-html` | 33 |
+| `fetch-error:ConnectTimeout` | 24 |
+| `fetch-error:SSLError` | 17 |
+| `empty-body` | 8 |
 | `http-503` | 2 |
 | `soft-404/block-page` | 2 |
 | `moved-to:azcu.edu` | 1 |
@@ -53,15 +53,17 @@ _Generated 2026-09-14 13:45 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **635** (100%)
+- Verified in last 30 days: **738** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **24**
+- Moved pointers (old domain → new): **27**
 
 ## Alerts
 
+- ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 2/12 (17%) — check for blocks/stale sources
-- ⚠ `XX`: 48 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `IR`: low Active rate 0/9 (0%) — check for blocks/stale sources
+- ⚠ `XX`: 57 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
