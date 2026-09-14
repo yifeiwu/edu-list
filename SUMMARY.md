@@ -1,18 +1,18 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-14 23:01 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **841** across **61** countries
 - Active: **545** (65%) · Inaccessible: **296** (35%)
-- Pending queue: **325** unvalidated candidates
+- Pending queue: **455** unvalidated candidates
 - Known registration age: **467** domains (median 22 yrs)
 
 ## Last runs
 
 - Verify (2026-09-14 19:40 UTC): validated 118, +63 Active, re-verified 15, pending left 325
-- Curate (2026-09-14 19:06 UTC): 177 raw candidates, 130 queued, 9 re-cited
+- Curate (2026-09-14 23:01 UTC): 163 raw candidates, 130 queued, 2 re-cited
 
 ## Countries (top 15 by size)
 
@@ -46,8 +46,8 @@ _Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.m
 | `fetch-error:SSLError` | 21 |
 | `empty-body` | 9 |
 | `http-503` | 3 |
-| `soft-404/block-page` | 2 |
 | `http-500` | 2 |
+| `soft-404/block-page` | 2 |
 | `social-only/placeholder` | 1 |
 | `moved-to:azcu.edu` | 1 |
 
