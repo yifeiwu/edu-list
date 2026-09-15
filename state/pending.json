@@ -691,7 +691,7 @@
   "domain": "biola.edu",
   "iso2": "US",
   "name": "Biola University",
-  "source": "ipeds:2026-09",
+  "source": "ipeds:2026-09;hipo:2026-09-15",
   "type_hint": "university",
   "url": "https://www.biola.edu/"
  },
@@ -739,7 +739,7 @@
   "domain": "cca.edu",
   "iso2": "US",
   "name": "California College of the Arts",
-  "source": "ipeds:2026-09",
+  "source": "ipeds:2026-09;wikidata:P856",
   "type_hint": "university",
   "url": "www.cca.edu/"
  },
@@ -1730,8 +1730,8 @@
  {
   "domain": "uci.edu",
   "iso2": "US",
-  "name": "University of California-Irvine",
-  "source": "ipeds:2026-09",
+  "name": "University of California, Irvine",
+  "source": "ipeds:2026-09;openalex:page9",
   "type_hint": "university",
   "url": "www.uci.edu/"
  },
@@ -2235,7 +2235,7 @@
   "domain": "bu.edu",
   "iso2": "US",
   "name": "Boston University",
-  "source": "openalex:page8",
+  "source": "openalex:page8;hipo:2026-09-15",
   "type_hint": "university",
   "url": "https://www.bu.edu"
  },
@@ -2838,5 +2838,957 @@
   "source": "ipeds:2026-09",
   "type_hint": "university",
   "url": "https://www.coastline.edu/"
+ },
+ {
+  "domain": "berea.edu",
+  "iso2": "US",
+  "name": "Berea College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://berea.edu"
+ },
+ {
+  "domain": "berklee.edu",
+  "iso2": "US",
+  "name": "Berklee College of Music",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://berklee.edu"
+ },
+ {
+  "domain": "bethanywv.edu",
+  "iso2": "US",
+  "name": "Bethany College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bethanywv.edu"
+ },
+ {
+  "domain": "bethelks.edu",
+  "iso2": "US",
+  "name": "Bethel College (KS)",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bethelks.edu"
+ },
+ {
+  "domain": "bethel.edu",
+  "iso2": "US",
+  "name": "Bethel University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bethel.edu"
+ },
+ {
+  "domain": "bhsu.edu",
+  "iso2": "US",
+  "name": "Black Hills State University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bhsu.edu"
+ },
+ {
+  "domain": "bloomu.edu",
+  "iso2": "US",
+  "name": "Bloomsburg University of Pennsylvania",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bloomu.edu"
+ },
+ {
+  "domain": "bluffton.edu",
+  "iso2": "US",
+  "name": "Bluffton College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bluffton.edu"
+ },
+ {
+  "domain": "bju.edu",
+  "iso2": "US",
+  "name": "Bob Jones University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bju.edu"
+ },
+ {
+  "domain": "boisestate.edu",
+  "iso2": "US",
+  "name": "Boise State University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://boisestate.edu"
+ },
+ {
+  "domain": "bc.edu",
+  "iso2": "US",
+  "name": "Boston College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bc.edu"
+ },
+ {
+  "domain": "bgsp.edu",
+  "iso2": "US",
+  "name": "Boston Graduate School of Psychoanalysis",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bgsp.edu"
+ },
+ {
+  "domain": "bowdoin.edu",
+  "iso2": "US",
+  "name": "Bowdoin College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bowdoin.edu"
+ },
+ {
+  "domain": "bowiestate.edu",
+  "iso2": "US",
+  "name": "Bowie State University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bowiestate.edu"
+ },
+ {
+  "domain": "bgsu.edu",
+  "iso2": "US",
+  "name": "Bowling Green State University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bgsu.edu"
+ },
+ {
+  "domain": "bradley.edu",
+  "iso2": "US",
+  "name": "Bradley University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bradley.edu"
+ },
+ {
+  "domain": "brandeis.edu",
+  "iso2": "US",
+  "name": "Brandeis University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://brandeis.edu"
+ },
+ {
+  "domain": "brenau.edu",
+  "iso2": "US",
+  "name": "Brenau University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://brenau.edu"
+ },
+ {
+  "domain": "briar-cliff.edu",
+  "iso2": "US",
+  "name": "Briar Cliff College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://briar-cliff.edu"
+ },
+ {
+  "domain": "bridgewater.edu",
+  "iso2": "US",
+  "name": "Bridgewater College",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://bridgewater.edu"
+ },
+ {
+  "domain": "byu.edu",
+  "iso2": "US",
+  "name": "Brigham Young University",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://byu.edu"
+ },
+ {
+  "domain": "byui.edu",
+  "iso2": "US",
+  "name": "Brigham Young University - Idaho",
+  "source": "hipo:2026-09-15",
+  "type_hint": "university",
+  "url": "https://byui.edu"
+ },
+ {
+  "domain": "asusystem.edu",
+  "iso2": "US",
+  "name": "Arkansas State University System",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.asusystem.edu/"
+ },
+ {
+  "domain": "emergencyuniversity.com",
+  "iso2": "US",
+  "name": "Emergency University",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.emergencyuniversity.com/"
+ },
+ {
+  "domain": "childrensuniversity.co.uk",
+  "iso2": "GB",
+  "name": "Sheffield Children's University",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.childrensuniversity.co.uk/home/work-with-us/local-cus/sheffield-childrens-university/home/"
+ },
+ {
+  "domain": "university-bank.com",
+  "iso2": "US",
+  "name": "University Bank",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.university-bank.com/"
+ },
+ {
+  "domain": "utec.edu.pe",
+  "iso2": "PE",
+  "name": "Universidad de Ingenier\u00eda y Tecnolog\u00eda",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.utec.edu.pe/"
+ },
+ {
+  "domain": "nahda.edu.sd",
+  "iso2": "SD",
+  "name": "Nahda College",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://nahda.edu.sd/en/"
+ },
+ {
+  "domain": "manipal.edu",
+  "iso2": "IN",
+  "name": "Melaka Manipal Medical College",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "https://manipal.edu/mu/about-us/world-wide-manipal/melaka-manipal-medical-college.html"
+ },
+ {
+  "domain": "oprah.com",
+  "iso2": "US",
+  "name": "Oprah's Angel Network",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.oprah.com/index.html"
+ },
+ {
+  "domain": "rutlish.merton.sch.uk",
+  "iso2": "GB",
+  "name": "Rutlish School",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.rutlish.merton.sch.uk/"
+ },
+ {
+  "domain": "slxy.cn",
+  "iso2": "CN",
+  "name": "Shangluo University",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.slxy.cn/"
+ },
+ {
+  "domain": "sma.org.au",
+  "iso2": "AU",
+  "name": "Sports Medicine Australia",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://sma.org.au/"
+ },
+ {
+  "domain": "extension.umd.edu",
+  "iso2": "US",
+  "name": "University of Maryland Extension",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "https://extension.umd.edu/"
+ },
+ {
+  "domain": "wdu.edu.cn",
+  "iso2": "CN",
+  "name": "Wuhan Donghu University",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://www.wdu.edu.cn/"
+ },
+ {
+  "domain": "iaufb.ac.ir",
+  "iso2": "IR",
+  "name": "Islamic Azad University, Firoozkooh Branch",
+  "source": "ror:api-p10",
+  "type_hint": "university",
+  "url": "http://iaufb.ac.ir/en"
+ },
+ {
+  "domain": "sdu.edu.cn",
+  "iso2": "CN",
+  "name": "Shandong University",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.sdu.edu.cn"
+ },
+ {
+  "domain": "cuhk.edu.hk",
+  "iso2": "HK",
+  "name": "Chinese University of Hong Kong",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "http://www.cuhk.edu.hk/english/index.html"
+ },
+ {
+  "domain": "gatech.edu",
+  "iso2": "US",
+  "name": "Georgia Institute of Technology",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.gatech.edu"
+ },
+ {
+  "domain": "ucalgary.ca",
+  "iso2": "CA",
+  "name": "University of Calgary",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.ucalgary.ca"
+ },
+ {
+  "domain": "pumc.edu.cn",
+  "iso2": "CN",
+  "name": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.pumc.edu.cn"
+ },
+ {
+  "domain": "ntu.edu.sg",
+  "iso2": "SG",
+  "name": "Nanyang Technological University",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.ntu.edu.sg"
+ },
+ {
+  "domain": "leeds.ac.uk",
+  "iso2": "GB",
+  "name": "University of Leeds",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.leeds.ac.uk"
+ },
+ {
+  "domain": "web.ub.edu",
+  "iso2": "ES",
+  "name": "Universitat de Barcelona",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://web.ub.edu"
+ },
+ {
+  "domain": "rwth-aachen.de",
+  "iso2": "DE",
+  "name": "RWTH Aachen University",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/"
+ },
+ {
+  "domain": "gla.ac.uk",
+  "iso2": "GB",
+  "name": "University of Glasgow",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "http://www.gla.ac.uk/"
+ },
+ {
+  "domain": "uiowa.edu",
+  "iso2": "US",
+  "name": "University of Iowa",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://uiowa.edu"
+ },
+ {
+  "domain": "tongji.edu.cn",
+  "iso2": "CN",
+  "name": "Tongji University",
+  "source": "openalex:page9",
+  "type_hint": "university",
+  "url": "https://www.tongji.edu.cn"
+ },
+ {
+  "domain": "attahadi.edu.ly",
+  "iso2": "LY",
+  "name": "Al-Tahadi National Medical University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.attahadi.edu.ly/web/index.php?do=change_lang&lang=ar"
+ },
+ {
+  "domain": "uoa.edu.ly",
+  "iso2": "LY",
+  "name": "University of Ajdabia",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://uoa.edu.ly/ar/page/6/"
+ },
+ {
+  "domain": "srcmujhargram.ac.in",
+  "iso2": "IN",
+  "name": "Sadhu Ramchand Murmu University of Jhargram",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.srcmujhargram.ac.in"
+ },
+ {
+  "domain": "luskin.ucla.edu",
+  "iso2": "US",
+  "name": "UCLA Luskin School of Public Affairs",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://luskin.ucla.edu/"
+ },
+ {
+  "domain": "universidad.claeh.edu.uy",
+  "iso2": "UY",
+  "name": "University Latin American Center for Human Economy",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://universidad.claeh.edu.uy"
+ },
+ {
+  "domain": "gust.edu.kw",
+  "iso2": "KW",
+  "name": "Gulf University for Science and Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.gust.edu.kw/"
+ },
+ {
+  "domain": "csu.edu.ph",
+  "iso2": "PH",
+  "name": "Cagayan State University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.csu.edu.ph/"
+ },
+ {
+  "domain": "iftm.edu.br",
+  "iso2": "BR",
+  "name": "Federal Institute of Tri\u00e2ngulo Mineiro",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.iftm.edu.br"
+ },
+ {
+  "domain": "calmu.edu",
+  "iso2": "US",
+  "name": "California Miramar University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.calmu.edu/"
+ },
+ {
+  "domain": "csub.edu",
+  "iso2": "US",
+  "name": "California State University, Bakersfield",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.csub.edu"
+ },
+ {
+  "domain": "csudh.edu",
+  "iso2": "US",
+  "name": "California State University, Dominguez Hills",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.csudh.edu/"
+ },
+ {
+  "domain": "saintecatherineaix.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Sainte-Catherine de Sienne",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://saintecatherineaix.fr"
+ },
+ {
+  "domain": "lahetraie.arsene76.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge la H\u00eatraie",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://lahetraie.arsene76.fr/"
+ },
+ {
+  "domain": "val-oudon.anjou.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Val d'Oudon",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://val-oudon.anjou.e-lyco.fr"
+ },
+ {
+  "domain": "st-francois-dassise.eu",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Saint-Fran\u00e7ois d'Assise",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "https://www.st-francois-dassise.eu"
+ },
+ {
+  "domain": "pont-rousseau.loire-atlantique.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Pont Rousseau",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://pont-rousseau.loire-atlantique.e-lyco.fr"
+ },
+ {
+  "domain": "llaunay.lamayenne.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Louis Launay",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://llaunay.lamayenne.e-lyco.fr"
+ },
+ {
+  "domain": "saint-gatien.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Saint-Gatien",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "https://saint-gatien.org/"
+ },
+ {
+  "domain": "clg-jprevert.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jacques Pr\u00e9vert",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://clg-jprevert.e-lyco.fr"
+ },
+ {
+  "domain": "jmonnet.anjou.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jean Monnet",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://jmonnet.anjou.e-lyco.fr"
+ },
+ {
+  "domain": "lacoliniere.loire-atlantique.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge La Colini\u00e8re",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://lacoliniere.loire-atlantique.e-lyco.fr"
+ },
+ {
+  "domain": "emmanuel-mounier.ent.auvergnerhonealpes.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Emmanuel Mounier",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://emmanuel-mounier.ent.auvergnerhonealpes.fr"
+ },
+ {
+  "domain": "stpaulbb.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Saint-Paul Bourdon Blanc",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://www.stpaulbb.org"
+ },
+ {
+  "domain": "groupescolairejeannedarc.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Sainte-Jeanne d'Arc",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://www.groupescolairejeannedarc.org"
+ },
+ {
+  "domain": "lyc-ampere.ac-aix-marseille.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e professionnel Amp\u00e8re",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://www.lyc-ampere.ac-aix-marseille.fr"
+ },
+ {
+  "domain": "clg-pbelon.sarthe.e-lyco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Pierre Belon",
+  "source": "fr-annuaire:2026-09-15",
+  "type_hint": "k-12",
+  "url": "http://clg-pbelon.sarthe.e-lyco.fr"
+ },
+ {
+  "domain": "angliss.edu.au",
+  "iso2": "AU",
+  "name": "William Angliss Institute of TAFE",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.angliss.edu.au"
+ },
+ {
+  "domain": "qiba.edu.au",
+  "iso2": "AU",
+  "name": "QIBA Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.qiba.edu.au"
+ },
+ {
+  "domain": "ljbc.wa.edu.au",
+  "iso2": "AU",
+  "name": "The Lake Joondalup Baptist College Inc",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.ljbc.wa.edu.au"
+ },
+ {
+  "domain": "hillsong.com",
+  "iso2": "AU",
+  "name": "Hillsong College Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.hillsong.com/college"
+ },
+ {
+  "domain": "stpeters.sa.edu.au",
+  "iso2": "AU",
+  "name": "The Anglican Church of Australia Collegiate School of Saint Peter",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.stpeters.sa.edu.au"
+ },
+ {
+  "domain": "prescott.sa.edu.au",
+  "iso2": "AU",
+  "name": "Prescott College Southern",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.prescott.sa.edu.au"
+ },
+ {
+  "domain": "actt.edu.au",
+  "iso2": "AU",
+  "name": "Actors College of Theatre and Television Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.actt.edu.au"
+ },
+ {
+  "domain": "mit.edu.au",
+  "iso2": "AU",
+  "name": "Melbourne Institute of Technology Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "http://www.mit.edu.au"
+ },
+ {
+  "domain": "nationaltheatre.org.au",
+  "iso2": "AU",
+  "name": "Australian National Memorial Theatre Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.nationaltheatre.org.au"
+ },
+ {
+  "domain": "basair.edu.au",
+  "iso2": "AU",
+  "name": "Basair Australia Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.basair.edu.au"
+ },
+ {
+  "domain": "sibt.nsw.edu.au",
+  "iso2": "AU",
+  "name": "Sydney Institute of Business and Technology Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.sibt.nsw.edu.au"
+ },
+ {
+  "domain": "qbc.wa.edu.au",
+  "iso2": "AU",
+  "name": "Australian Baptist Education Inc",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.qbc.wa.edu.au"
+ },
+ {
+  "domain": "deakincollege.edu.au",
+  "iso2": "AU",
+  "name": "Melbourne Institute of Business & Technology Pty Ltd",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.deakincollege.edu.au"
+ },
+ {
+  "domain": "fcac.qld.edu.au",
+  "iso2": "AU",
+  "name": "The Corporation of the Synod of the Diocese of Brisbane - Fraser Coast Anglican College",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.fcac.qld.edu.au"
+ },
+ {
+  "domain": "usc.edu.au",
+  "iso2": "AU",
+  "name": "University of the Sunshine Coast",
+  "source": "cricos:2026-09-15",
+  "type_hint": "",
+  "url": "www.usc.edu.au"
+ },
+ {
+  "domain": "vsu.by",
+  "iso2": "BY",
+  "name": "Vitebsk State University named after P. Masherov",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://vsu.by/"
+ },
+ {
+  "domain": "bspu.by",
+  "iso2": "BY",
+  "name": "Belarusian State Pedagogical University named after Maxim Tank",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://bspu.by/"
+ },
+ {
+  "domain": "ggau.by",
+  "iso2": "BY",
+  "name": "Grodno State Agrarian University",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.ggau.by/"
+ },
+ {
+  "domain": "bsuir.by",
+  "iso2": "BY",
+  "name": "Belarusian State University of Informatics and Radioelectronics",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.bsuir.by/"
+ },
+ {
+  "domain": "baa.by",
+  "iso2": "BY",
+  "name": "Belarusian State Academy of Agriculture",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://www.baa.by/"
+ },
+ {
+  "domain": "vstu.by",
+  "iso2": "BY",
+  "name": "Vitebsk State Technological University",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://vstu.by/"
+ },
+ {
+  "domain": "bgam.edu.by",
+  "iso2": "BY",
+  "name": "Belarusian State Academy of Music",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.bgam.edu.by/"
+ },
+ {
+  "domain": "bseu.by",
+  "iso2": "BY",
+  "name": "Belarus State Economic University",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://bseu.by/"
+ },
+ {
+  "domain": "itg.be",
+  "iso2": "BE",
+  "name": "Institute for Tropical Medicine",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://www.itg.be/"
+ },
+ {
+  "domain": "una-europa.eu",
+  "iso2": "BE",
+  "name": "Una Europa",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.una-europa.eu/"
+ },
+ {
+  "domain": "rma.ac.be",
+  "iso2": "BE",
+  "name": "Royal Military Academy",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.rma.ac.be"
+ },
+ {
+  "domain": "eunice-university.eu",
+  "iso2": "BE",
+  "name": "EUNICE - European University for Customised Education",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://eunice-university.eu/"
+ },
+ {
+  "domain": "circle-u.eu",
+  "iso2": "BE",
+  "name": "Circle U. European University alliance",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.circle-u.eu/"
+ },
+ {
+  "domain": "vki.ac.be",
+  "iso2": "BE",
+  "name": "von Karman Institute for Fluid Dynamics",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "https://www.vki.ac.be/"
+ },
+ {
+  "domain": "erasmushogeschool.be",
+  "iso2": "BE",
+  "name": "Erasmus University College Brussels",
+  "source": "deqar:2026-09-15",
+  "type_hint": "university",
+  "url": "http://www.erasmushogeschool.be"
+ },
+ {
+  "domain": "collegeofthedesert.edu",
+  "iso2": "US",
+  "name": "College of the Desert",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.collegeofthedesert.edu/"
+ },
+ {
+  "domain": "disd.edu",
+  "iso2": "US",
+  "name": "Design Institute of San Diego",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.disd.edu/"
+ },
+ {
+  "domain": "drbu.edu",
+  "iso2": "US",
+  "name": "DHARMA REALM BUDDHIST UNIVERSITY",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "https://www.drbu.edu/"
+ },
+ {
+  "domain": "dvc.edu",
+  "iso2": "US",
+  "name": "Diablo Valley College",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "https://www.dvc.edu/"
+ },
+ {
+  "domain": "dominican.edu",
+  "iso2": "US",
+  "name": "Dominican University of California",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "https://www.dominican.edu/"
+ },
+ {
+  "domain": "dspt.edu",
+  "iso2": "US",
+  "name": "Dominican School of Philosophy & Theology",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "https://www.dspt.edu/"
+ },
+ {
+  "domain": "elac.edu",
+  "iso2": "US",
+  "name": "East Los Angeles College",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.elac.edu/"
+ },
+ {
+  "domain": "elcamino.edu",
+  "iso2": "US",
+  "name": "El Camino Community College District",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.elcamino.edu/"
+ },
+ {
+  "domain": "emperors.edu",
+  "iso2": "US",
+  "name": "Emperor's College of Traditional Oriental Medicine",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.emperors.edu/"
+ },
+ {
+  "domain": "evc.edu",
+  "iso2": "US",
+  "name": "Evergreen Valley College",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "https://www.evc.edu/"
+ },
+ {
+  "domain": "fidm.edu",
+  "iso2": "US",
+  "name": "FIDM-Fashion Institute of Design & Merchandising",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.fidm.edu/"
+ },
+ {
+  "domain": "frc.edu",
+  "iso2": "US",
+  "name": "Feather River Community College District",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.frc.edu/"
+ },
+ {
+  "domain": "federico.edu",
+  "iso2": "US",
+  "name": "Federico Beauty Institute",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "federico.edu/"
+ },
+ {
+  "domain": "fielding.edu",
+  "iso2": "US",
+  "name": "Fielding Graduate University",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.fielding.edu/"
+ },
+ {
+  "domain": "fivebranches.edu",
+  "iso2": "US",
+  "name": "Five Branches University",
+  "source": "ipeds:2026-09",
+  "type_hint": "university",
+  "url": "www.fivebranches.edu/"
  }
 ]
