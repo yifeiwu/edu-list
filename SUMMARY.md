@@ -1,69 +1,70 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-15 07:25 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-15 08:05 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **1050** across **67** countries
-- Active: **690** (66%) · Inaccessible: **360** (34%)
-- Pending queue: **491** unvalidated candidates
-- Known registration age: **573** domains (median 23 yrs)
+- Domains tracked: **1155** across **73** countries
+- Active: **746** (65%) · Inaccessible: **409** (35%)
+- Pending queue: **390** unvalidated candidates
+- Known registration age: **631** domains (median 23 yrs)
 
 ## Last runs
 
-- Verify (2026-09-15 01:55 UTC): validated 118, +74 Active, re-verified 15, pending left 374
+- Verify (2026-09-15 08:05 UTC): validated 120, +57 Active, re-verified 15, pending left 390
 - Curate (2026-09-15 07:25 UTC): 179 raw candidates, 117 queued, 5 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 354 | 276 | 78 |
-| AU | 114 | 82 | 32 |
-| FR | 104 | 67 | 37 |
-| XX | 78 | 38 | 40 |
+| US | 381 | 297 | 84 |
+| AU | 130 | 92 | 38 |
+| FR | 119 | 73 | 46 |
+| XX | 88 | 41 | 47 |
 | AT | 41 | 35 | 6 |
 | AM | 36 | 21 | 15 |
 | AL | 28 | 15 | 13 |
 | NG | 27 | 19 | 8 |
-| GB | 22 | 12 | 10 |
-| IN | 19 | 13 | 6 |
-| CN | 17 | 8 | 9 |
+| GB | 26 | 15 | 11 |
+| IN | 23 | 15 | 8 |
+| CN | 20 | 8 | 12 |
+| DE | 16 | 9 | 7 |
+| RU | 16 | 8 | 8 |
 | IR | 15 | 0 | 15 |
-| DE | 14 | 7 | 7 |
-| JP | 14 | 5 | 9 |
-| RU | 14 | 8 | 6 |
+| JP | 15 | 5 | 10 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 655 |
-| `fetch-error:ConnectionError` | 97 |
-| `http-403` | 72 |
-| `low-confidence:http-2xx-html` | 42 |
-| `fetch-error:ConnectTimeout` | 38 |
-| `fetch-error:SSLError` | 25 |
+| `http-2xx-html` | 711 |
+| `fetch-error:ConnectionError` | 109 |
+| `http-403` | 81 |
+| `low-confidence:http-2xx-html` | 52 |
+| `fetch-error:ConnectTimeout` | 42 |
+| `fetch-error:SSLError` | 28 |
 | `empty-body` | 10 |
+| `http-503` | 5 |
 | `fetch-error:ReadTimeout` | 3 |
-| `http-503` | 3 |
-| `social-only/placeholder` | 2 |
+| `social-only/placeholder` | 3 |
+| `http-500` | 3 |
 | `http-405` | 2 |
-| `http-500` | 2 |
 
 ## Freshness
 
-- Verified in last 30 days: **1050** (100%)
+- Verified in last 30 days: **1155** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **39**
+- Moved pointers (old domain → new): **45**
 
 ## Alerts
 
 - ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 2/13 (15%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 0/15 (0%) — check for blocks/stale sources
-- ⚠ `XX`: 78 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `SD`: low Active rate 0/5 (0%) — check for blocks/stale sources
+- ⚠ `XX`: 88 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
