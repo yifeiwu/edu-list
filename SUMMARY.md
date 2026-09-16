@@ -1,67 +1,67 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-16 19:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-16 21:44 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **1879** across **83** countries
-- Active: **1254** (67%) · Inaccessible: **625** (33%)
-- Pending queue: **615** unvalidated candidates
-- Known registration age: **1021** domains (median 24 yrs)
+- Domains tracked: **1986** across **84** countries
+- Active: **1325** (67%) · Inaccessible: **661** (33%)
+- Pending queue: **515** unvalidated candidates
+- Known registration age: **1089** domains (median 24 yrs)
 
 ## Last runs
 
-- Verify (2026-09-16 17:47 UTC): validated 118, +71 Active, re-verified 15, pending left 500
+- Verify (2026-09-16 21:44 UTC): validated 122, +70 Active, re-verified 15, pending left 515
 - Curate (2026-09-16 19:53 UTC): 177 raw candidates, 115 queued, 5 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 662 | 512 | 150 |
-| AU | 212 | 154 | 58 |
-| FR | 208 | 129 | 79 |
+| US | 718 | 546 | 172 |
+| AU | 224 | 165 | 59 |
+| FR | 212 | 132 | 80 |
 | XX | 92 | 41 | 51 |
-| BE | 55 | 41 | 14 |
-| BR | 53 | 27 | 26 |
+| BE | 69 | 51 | 18 |
+| BR | 60 | 30 | 30 |
 | AT | 41 | 35 | 6 |
 | GB | 38 | 26 | 12 |
 | AM | 36 | 21 | 15 |
-| CN | 35 | 13 | 22 |
+| CN | 36 | 13 | 23 |
 | CH | 32 | 22 | 10 |
 | AL | 28 | 15 | 13 |
-| IN | 28 | 19 | 9 |
-| DE | 27 | 19 | 8 |
+| DE | 28 | 19 | 9 |
+| IN | 28 | 20 | 8 |
 | NG | 27 | 19 | 8 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 1219 |
-| `fetch-error:ConnectionError` | 163 |
-| `http-403` | 124 |
-| `low-confidence:http-2xx-html` | 96 |
-| `fetch-error:ConnectTimeout` | 58 |
+| `http-2xx-html` | 1290 |
+| `fetch-error:ConnectionError` | 174 |
+| `http-403` | 129 |
+| `low-confidence:http-2xx-html` | 97 |
+| `fetch-error:ConnectTimeout` | 68 |
 | `fetch-error:SSLError` | 48 |
 | `empty-body` | 16 |
 | `http-500` | 6 |
+| `http-404` | 5 |
 | `http-503` | 5 |
 | `fetch-error:ReadTimeout` | 4 |
-| `http-404` | 4 |
 | `social-only/placeholder` | 3 |
 
 ## Freshness
 
-- Verified in last 30 days: **1879** (100%)
+- Verified in last 30 days: **1986** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **71**
+- Moved pointers (old domain → new): **79**
 
 ## Alerts
 
 - ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `CZ`: low Active rate 2/13 (15%) — check for blocks/stale sources
+- ⚠ `CZ`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 0/16 (0%) — check for blocks/stale sources
 - ⚠ `PH`: 4/13 blocked (403/429/block-page) — suspected bot-block, verify manually
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
