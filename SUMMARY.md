@@ -1,62 +1,62 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-16 22:43 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-17 00:54 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **1986** across **84** countries
-- Active: **1325** (67%) · Inaccessible: **661** (33%)
-- Pending queue: **639** unvalidated candidates
-- Known registration age: **1089** domains (median 24 yrs)
+- Domains tracked: **2094** across **84** countries
+- Active: **1398** (67%) · Inaccessible: **696** (33%)
+- Pending queue: **539** unvalidated candidates
+- Known registration age: **1153** domains (median 24 yrs)
 
 ## Last runs
 
-- Verify (2026-09-16 21:44 UTC): validated 122, +70 Active, re-verified 15, pending left 515
+- Verify (2026-09-17 00:54 UTC): validated 123, +73 Active, re-verified 15, pending left 539
 - Curate (2026-09-16 22:43 UTC): 178 raw candidates, 124 queued, 13 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 718 | 546 | 172 |
-| AU | 224 | 165 | 59 |
-| FR | 212 | 132 | 80 |
+| US | 757 | 577 | 180 |
+| AU | 239 | 176 | 63 |
+| FR | 229 | 140 | 89 |
 | XX | 92 | 41 | 51 |
-| BE | 69 | 51 | 18 |
-| BR | 60 | 30 | 30 |
+| BE | 77 | 56 | 21 |
+| BR | 66 | 34 | 32 |
+| IN | 43 | 29 | 14 |
 | AT | 41 | 35 | 6 |
-| GB | 38 | 26 | 12 |
+| CN | 39 | 14 | 25 |
+| GB | 39 | 27 | 12 |
 | AM | 36 | 21 | 15 |
-| CN | 36 | 13 | 23 |
 | CH | 32 | 22 | 10 |
+| DE | 30 | 20 | 10 |
 | AL | 28 | 15 | 13 |
-| DE | 28 | 19 | 9 |
-| IN | 28 | 20 | 8 |
 | NG | 27 | 19 | 8 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 1290 |
-| `fetch-error:ConnectionError` | 174 |
-| `http-403` | 129 |
-| `low-confidence:http-2xx-html` | 97 |
-| `fetch-error:ConnectTimeout` | 68 |
-| `fetch-error:SSLError` | 48 |
+| `http-2xx-html` | 1367 |
+| `fetch-error:ConnectionError` | 187 |
+| `http-403` | 133 |
+| `low-confidence:http-2xx-html` | 101 |
+| `fetch-error:ConnectTimeout` | 70 |
+| `fetch-error:SSLError` | 50 |
 | `empty-body` | 16 |
-| `http-500` | 6 |
-| `http-404` | 5 |
+| `http-500` | 7 |
+| `http-404` | 6 |
 | `http-503` | 5 |
 | `fetch-error:ReadTimeout` | 4 |
 | `social-only/placeholder` | 3 |
 
 ## Freshness
 
-- Verified in last 30 days: **1986** (100%)
+- Verified in last 30 days: **2094** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-13)
 - Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **79**
+- Moved pointers (old domain → new): **87**
 
 ## Alerts
 
