@@ -134,8 +134,11 @@ def _next_rotation(state: dict, key: str, length: int) -> int:
     return cur
 
 
-def discover_hipo(url, state, per_run, timeout=30):
-    off = _cursor(state, "hipo_offset", 0)
+def discover_hipo(url, state, per_run=0, timeout=30):
+    # Single static bulk file (whole university list in one GET): ingest it
+    # whole every run, no paging cursor. New domains land in the pending
+    # queue (max_pending cap + verify drain pace validation); re-cited
+    # domains are idempotent unions. per_run intentionally ignored.
     try:
         r = _get(url, timeout)
         if r.status_code != 200:
@@ -145,11 +148,9 @@ def discover_hipo(url, state, per_run, timeout=30):
             return []
     except Exception:
         return []
-    chunk = data[off:off + per_run]
-    _advance_circular(state, "hipo_offset", off, len(chunk), len(data))
     out = []
     tag = time.strftime("%Y-%m-%d")
-    for e in chunk:
+    for e in data:
         if not isinstance(e, dict):
             continue
         iso = (e.get("alpha_two_code") or "").upper()
@@ -415,6 +416,9 @@ def discover_osm(url, state, per_run, timeout=60, boxes=None):
     _boxes = boxes or OSM_BOXES
     idx = _next_rotation(state, "osm_idx", len(_boxes))
     label, s, w, n, e = _boxes[idx % len(_boxes)]
+    # Bbox labels are "CC-City": the queried box already places the rows.
+    cc = (label.split("-")[0] if label else "").upper()
+    box_iso = cc if (len(cc) == 2 and cc.isalpha()) else ""
     q = (f'[out:json][timeout:40];(node["amenity"~"school|college|university"]'
          f'["website"]({s},{w},{n},{e});way["amenity"~"school|college|university"]'
          f'["website"]({s},{w},{n},{e}););out tags {min(per_run,200)};')
@@ -442,7 +446,7 @@ def discover_osm(url, state, per_run, timeout=60, boxes=None):
         name = t.get("name", web)
         if web and "." in web:
             kind = t.get("amenity", "school")
-            out.append({"name": name, "url": web, "iso2": "",
+            out.append({"name": name, "url": web, "iso2": box_iso,
                         "type_hint": "k-12" if kind == "school" else "university",
                         "source": f"osm:{label}"})
     return out
@@ -455,6 +459,7 @@ def discover_whed(url, state, per_run, timeout=30):
     # after a "WWW:" label. Cites Global WHED IDs; respects ToS (no bulk copy).
     idx = _next_rotation(state, "whed_idx", len(WHED_COUNTRIES))
     country = WHED_COUNTRIES[idx % len(WHED_COUNTRIES)]
+    country_iso = DEQAR_COUNTRY_ISO.get(country, "")
     try:
         r = _get("https://whed.net/results_institutions.php",
                  timeout, params={"Chp1": country})
@@ -497,7 +502,7 @@ def discover_whed(url, state, per_run, timeout=30):
             nm = re.search(r"<h[12][^>]*>([^<]{4,140})<", d.text)
             if web and "." in web and "whed.net" not in web:
                 out.append({"name": nm.group(1).strip() if nm else gid,
-                            "url": web, "iso2": "",
+                            "url": web, "iso2": country_iso,
                             "type_hint": "university", "source": f"whed:{gid}"})
         except Exception:
             continue

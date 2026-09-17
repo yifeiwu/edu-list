@@ -73,6 +73,7 @@ DEFAULT_SUFFIX_COUNTRY: dict[str, str] = {
     "edu.uy": "UY",
     "edu.ec": "EC",
     "edu.ve": "VE",
+    "fo": "FO",  # Faroe Islands ccTLD (e.g. flsk.fo, wikidata P856).
 }
 
 
@@ -144,13 +145,14 @@ DEQAR_COUNTRY_ISO: dict[str, str] = {
     "Lithuania": "LT", "Luxembourg": "LU", "Malta": "MT", "Mexico": "MX",
     "Moldova": "MD", "Monaco": "MC", "Montenegro": "ME", "Morocco": "MA",
     "Netherlands": "NL", "Nigeria": "NG", "North Macedonia": "MK",
-    "Norway": "NO", "Peru": "PE", "Poland": "PL", "Portugal": "PT",
+    "Norway": "NO", "Peru": "PE", "Philippines": "PH", "Poland": "PL", "Portugal": "PT",
     "Romania": "RO", "Russia": "RU", "Russian Federation": "RU",
-    "San Marino": "SM", "Saudi Arabia": "SA", "Serbia": "RS",
+    "San Marino": "SM", "Saudi Arabia": "SA", "Senegal": "SN", "Serbia": "RS",
     "Slovakia": "SK", "Slovenia": "SI", "South Africa": "ZA",
     "Korea, South": "KR", "South Korea": "KR", "Spain": "ES",
     "Sweden": "SE", "Switzerland": "CH", "Türkiye": "TR", "Turkey": "TR",
     "Ukraine": "UA", "United Kingdom": "GB", "United States": "US",
+    "Vietnam": "VN",
     "Egypt": "EG", "Hong Kong": "HK", "Malaysia": "MY", "Malawi": "MW",
     "Mali": "ML", "Mauritius": "MU", "Mongolia": "MN", "Namibia": "NA",
     "Oman": "OM", "Panama": "PA", "Paraguay": "PY", "Kuwait": "KW",

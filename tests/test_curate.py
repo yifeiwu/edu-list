@@ -155,3 +155,44 @@ def test_suffix_defaults_merged(monkeypatch):
                       buckets={}, pending=pending,
                       deadline=time.time() + 60)
     assert pending[0]["iso2"] == "US"
+
+
+def test_recite_promotes_xx_row_to_candidate_country(monkeypatch):
+    row = {"web_domain": "lagos-sch.ng", "sources": "osm:NG-Lagos",
+           "school_name": "Lagos School"}
+    by = {"lagos-sch.ng": ("XX", row)}
+    buckets: dict = {"XX": [row]}
+    monkeypatch.setattr(curate.discover, "discover_hipo", lambda *a, **k: [
+        {"name": "Lagos School", "url": "https://lagos-sch.ng", "iso2": "NG",
+         "type_hint": "", "source": "hipo:2026-09-14"},
+    ])
+    cfg = {"suffix_country": {}, "blocklist": [], "k12_enabled": True,
+           "run": {"max_pending": 10}}
+    src_cfg = {"sources": [{"id": "hipo", "enabled": True, "per_run": 10,
+                             "url": "u", "timeout_seconds": 1}]}
+    stats = curate.run_curate(cfg=cfg, src_cfg=src_cfg, state={},
+                              by_domain=by, buckets=buckets, pending=[],
+                              deadline=time.time() + 60)
+    assert by["lagos-sch.ng"][0] == "NG"
+    assert buckets["XX"] == []
+    assert buckets["NG"] == [row]
+    assert {"XX", "NG"} <= stats["touched"]
+
+
+def test_recite_keeps_country_when_candidate_xx(monkeypatch):
+    row = {"web_domain": "known.edu", "sources": "hipo:old"}
+    by = {"known.edu": ("US", row)}
+    buckets: dict = {"US": [row]}
+    monkeypatch.setattr(curate.discover, "discover_hipo", lambda *a, **k: [
+        {"name": "Known", "url": "https://known.edu", "iso2": "",
+         "type_hint": "", "source": "hipo:new"},
+    ])
+    cfg = {"suffix_country": {}, "blocklist": [], "k12_enabled": True,
+           "run": {"max_pending": 10}}
+    src_cfg = {"sources": [{"id": "hipo", "enabled": True, "per_run": 10,
+                             "url": "u", "timeout_seconds": 1}]}
+    curate.run_curate(cfg=cfg, src_cfg=src_cfg, state={},
+                      by_domain=by, buckets=buckets, pending=[],
+                      deadline=time.time() + 60)
+    assert by["known.edu"][0] == "US"
+    assert buckets["US"] == [row]

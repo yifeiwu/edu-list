@@ -19,16 +19,19 @@ def test_no_dormant_adapters():
         assert not hasattr(discover, gone), gone
 
 
-def test_hipo_pagination_cursor():
+def test_hipo_full_ingest_ignores_per_run():
     data = [{"name": f"U{i}", "alpha_two_code": "US", "domains": [f"u{i}.edu"]}
             for i in range(5)]
+    data[0]["domains"] = ["u0a.edu", "u0b.edu", "u0c.edu"]  # capped at 2
+    data[4]["alpha_two_code"] = ""
     with patch("src.discover._get", return_value=_resp(json_data=data)):
         st: dict = {"cursors": {}}
         out = discover.discover_hipo("http://x", st, 2)
-        assert len(out) == 2
-        assert st["cursors"]["hipo_offset"] == 2
-        out2 = discover.discover_hipo("http://x", st, 2)
-        assert out2[0]["url"] == "https://u2.edu"
+        # Whole file in one go despite per_run=2; no cursor kept.
+        assert len(out) == 2 + 3 + 1
+        assert out[0]["url"] == "https://u0a.edu"
+        assert "hipo_offset" not in st["cursors"]
+        assert out[-1]["iso2"] == ""
 
 
 def test_ror_honors_per_run_pages():
@@ -100,6 +103,41 @@ def test_osm_single_bbox_and_cursor():
         assert out[0]["source"].startswith("osm:")
         assert st["cursors"]["osm_idx"] == 1
         assert "amenity" in posted["q"]
+
+
+def test_osm_iso2_from_bbox_label():
+    def fake_post(url, data=None, headers=None, timeout=60):
+        r = MagicMock()
+        r.status_code = 200
+        r.json = MagicMock(return_value={"elements": [
+            {"tags": {"amenity": "school", "website": "https://lagos-sch.ng",
+                       "name": "Lagos School"}}]})
+        return r
+    with patch("src.discover.requests.post", side_effect=fake_post):
+        # osm_idx 4 == NG-Lagos: rows inherit the box country, not XX.
+        st: dict = {"cursors": {"osm_idx": 4}}
+        out = discover.discover_osm("http://overpass", st, 10)
+        assert out[0]["iso2"] == "NG"
+        assert out[0]["source"] == "osm:NG-Lagos"
+
+
+def test_whed_iso2_from_rotating_country():
+    list_html = ('<a href="/detail_institution.php?id=1">x</a> IAU-024612 ')
+    detail_html = ('<h1>ENSUP Afrique</h1>'
+                   'WWW:</span> <span><a href="https://ensup-afrique.com">'
+                   'https://ensup-afrique.com</a></span>')
+    def fake(url, timeout=30, params=None, headers=None, stream=False,
+             tries=3, sleep_fn=None):
+        return _resp(text=detail_html if "institutions/" in url or
+                     "detail_institution" in url else list_html)
+    with patch("src.discover._get", side_effect=fake), patch(
+        "src.discover.time.sleep", lambda s: None
+    ):
+        # whed_idx 0 == Senegal: rows inherit the rotation country.
+        st: dict = {"cursors": {"whed_idx": 0}}
+        out = discover.discover_whed("https://whed.net/", st, 5)
+        assert out and out[0]["iso2"] == "SN"
+        assert out[0]["source"] == "whed:IAU-024612"
 
 
 def test_get_retries_transient(monkeypatch):

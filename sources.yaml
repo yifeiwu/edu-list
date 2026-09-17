@@ -1,9 +1,10 @@
-# Source registry. EVERY enabled source is hit once per curate session, each
-# capped by its strict hourly `per_run` and `timeout_seconds`. Curate runs
-# hourly, so per_run values are kept small: ~200 raw candidates/hour across
-# all sources ≈ one old daily run spread over 24 sessions. Per-adapter
-# cursors in state/state.json (offsets/pages/suffix rotation) advance
-# coverage session-to-session.
+# Source registry. EVERY enabled source is hit once per curate session; most
+# are capped by strict hourly `per_run` + `timeout_seconds` (~200 raw
+# candidates/hour across capped sources ≈ one old daily run spread over 24
+# sessions). Per-adapter cursors in state/state.json (offsets/pages/suffix
+# rotation) advance coverage session-to-session. Exception: hipo is one
+# static bulk file ingested whole each run (single GET, no per_run); the
+# pending queue + verify drain pace validation.
 # kind: bulk-json | api-paged | sparql | csv-download | html-limited | overpass
 sources:
   - id: hipo
@@ -11,7 +12,7 @@ sources:
     enabled: true
     url: https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
     license: MIT
-    per_run: 25
+    # No per_run: whole file ingested in one go (see header comment).
     timeout_seconds: 60
   - id: ror
     kind: api-paged

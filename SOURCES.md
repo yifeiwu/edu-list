@@ -5,7 +5,7 @@ with per-row `sources` citations. Honor each upstream's terms:
 
 | Source | What we take | License | Notes |
 |---|---|---|---|
-| Hipo university-domains-list | name, domains, web_pages, country | MIT | Cite `hipo:YYYY-MM-DD`; link repo. |
+| Hipo university-domains-list | name, domains, web_pages, country | MIT | Whole static file ingested each run (single GET, no paging). Cite `hipo:YYYY-MM-DD`; link repo. |
 | ROR (API) | name, website, country | CC0 | Cite `ror:api-pN`. Monthly releases. |
 | OpenAlex Institutions | display_name, homepage_url, country_code, ror | CC0 | Cite `openalex:pageN`. |
 | Wikidata (P856) | label, website, country ISO | CC0 | Cite `wikidata:P856`. Respect QS rate limits. |

@@ -1,10 +1,10 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-14 22:32 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **841** across **61** countries
+- Domains tracked: **841** across **62** countries
 - Active: **545** (65%) · Inaccessible: **296** (35%)
 - Pending queue: **325** unvalidated candidates
 - Known registration age: **467** domains (median 22 yrs)
@@ -18,19 +18,19 @@ _Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.m
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 288 | 228 | 60 |
-| FR | 89 | 58 | 31 |
+| US | 304 | 237 | 67 |
+| FR | 101 | 64 | 37 |
 | AU | 82 | 59 | 23 |
-| XX | 63 | 33 | 30 |
 | AM | 36 | 21 | 15 |
+| NG | 36 | 23 | 13 |
+| IN | 28 | 18 | 10 |
 | AL | 27 | 15 | 12 |
-| NG | 27 | 19 | 8 |
-| GB | 21 | 11 | 10 |
-| IN | 16 | 11 | 5 |
+| GB | 26 | 14 | 12 |
 | CN | 15 | 6 | 9 |
 | IR | 15 | 0 | 15 |
 | CZ | 13 | 2 | 11 |
 | RU | 13 | 7 | 6 |
+| BR | 12 | 6 | 6 |
 | DE | 11 | 6 | 5 |
 | AT | 9 | 6 | 3 |
 
@@ -46,8 +46,8 @@ _Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.m
 | `fetch-error:SSLError` | 21 |
 | `empty-body` | 9 |
 | `http-503` | 3 |
-| `soft-404/block-page` | 2 |
 | `http-500` | 2 |
+| `soft-404/block-page` | 2 |
 | `social-only/placeholder` | 1 |
 | `moved-to:azcu.edu` | 1 |
 
@@ -63,7 +63,6 @@ _Generated 2026-09-14 19:40 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 2/13 (15%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 0/15 (0%) — check for blocks/stale sources
-- ⚠ `XX`: 63 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 

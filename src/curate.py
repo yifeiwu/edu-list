@@ -60,6 +60,13 @@ def _basic(name: str, per_run_default: int, timeout_default: int):
     return _run
 
 
+def _hipo(src: dict, s: dict):
+    # Whole static file in one go (no per_run); queue + verify pace it.
+    return discover.discover_hipo(
+        src.get("url", ""), s,
+        timeout=int(src.get("timeout_seconds") or 30))
+
+
 def _openalex(src: dict, s: dict, mailto: str = ""):
     return discover.discover_openalex(
         src.get("url", ""), s, int(src.get("per_run", 300)),
@@ -93,7 +100,7 @@ def _nz_schools(src: dict, s: dict):
 
 # Untyped callables with mixed arity (openalex takes optional mailto).
 ADAPTERS: dict = {
-    "hipo": _basic("discover_hipo", 300, 30),
+    "hipo": _hipo,
     "ror": _basic("discover_ror", 300, 30),
     "openalex": _openalex,
     "wikidata": _basic("discover_wikidata", 300, 60),
@@ -185,7 +192,7 @@ def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
         if not fn:
             log(f"Discover: {sid} has no adapter, skipping")
             continue
-        log(f"Discover: {sid} (per_run {src.get('per_run')})…")
+        log(f"Discover: {sid} (per_run {src.get('per_run', 'all')})…")
         try:
             cands = _call_adapter(sid, fn, src, state, mailto)
         except SystemExit:
@@ -210,6 +217,17 @@ def run_curate(*, cfg: dict, src_cfg: dict, state: dict,
             if d in by_domain:
                 # Re-citation of a validated row: union sources, no re-queue.
                 iso0, row0 = by_domain[d]
+                if iso0 == "XX" and len(iso) == 2 and iso != "XX":
+                    # Self-heal: a row parked in XX moves now that a
+                    # candidate carries a real source country (OSM bbox,
+                    # fixed adapters). Keeps row content untouched.
+                    buckets[iso0] = [r for r in buckets.get(iso0, [])
+                                     if r.get("web_domain") != d]
+                    buckets.setdefault(iso, []).append(row0)
+                    by_domain[d] = (iso, row0)
+                    touched.add(iso0)
+                    touched.add(iso)
+                    iso0 = iso
                 merged = union_sources(row0.get("sources", ""), c.get("source", ""))
                 if merged != row0.get("sources", ""):
                     row0["sources"] = merged

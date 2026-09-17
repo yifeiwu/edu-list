@@ -74,6 +74,8 @@ def load_state(path: Path) -> dict:
                 # Drop legacy keys from early schema versions.
                 data.pop("next_idx", None)
                 data.pop("per_country_last_discovery", None)
+                # hipo_offset: hipo ingests its whole file each run (no cursor).
+                data.get("cursors", {}).pop("hipo_offset", None)
                 _scrub_stale_reasons(data.get("detail", {}))
                 return data
         except Exception:

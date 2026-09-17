@@ -16,6 +16,12 @@ def test_single_source_of_truth():
         if suffix.count(".") >= 1:
             assert suffix in MULTI_SUFFIXES, suffix
     assert DEQAR_COUNTRY_ISO["Germany"] == "DE"
+    # WHED rotation countries all resolve (OSM/WHED adapters stamp iso2).
+    assert DEQAR_COUNTRY_ISO["Senegal"] == "SN"
+    assert DEQAR_COUNTRY_ISO["Vietnam"] == "VN"
+    assert DEQAR_COUNTRY_ISO["Philippines"] == "PH"
+    # Bare Faroe Islands ccTLD (wikidata P856 rows like flsk.fo).
+    assert merge_suffix_map({})["fo"] == "FO"
 
 
 def test_merge_suffix_map_override_wins():

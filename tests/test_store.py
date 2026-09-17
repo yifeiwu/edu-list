@@ -69,11 +69,13 @@ def test_pending_roundtrip_and_corrupt(tmp_path):
 
 def test_state_drops_legacy_keys(tmp_path):
     p = tmp_path / "state.json"
-    p.write_text('{"cursors": {}, "next_idx": 0, "per_country_last_discovery": {}}',
+    p.write_text('{"cursors": {"hipo_offset": 5}, "next_idx": 0, '
+                 '"per_country_last_discovery": {}}',
                  encoding="utf-8")
     s = store.load_state(p)
     assert "next_idx" not in s
     assert "per_country_last_discovery" not in s
+    assert "hipo_offset" not in s["cursors"]
     assert "moved" in s and "domain_age" in s
     store.save_state(p, s)
     assert "next_idx" not in p.read_text(encoding="utf-8")
