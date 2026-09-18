@@ -8,18 +8,18 @@
 | AM | 36 | 21 | 15 |
 | AR | 1 | 1 | 0 |
 | AT | 41 | 35 | 6 |
-| AU | 332 | 237 | 95 |
+| AU | 346 | 246 | 100 |
 | AZ | 11 | 9 | 2 |
 | BA | 27 | 14 | 13 |
 | BE | 81 | 57 | 24 |
 | BF | 2 | 1 | 1 |
-| BG | 19 | 9 | 10 |
+| BG | 34 | 22 | 12 |
 | BH | 4 | 2 | 2 |
 | BI | 4 | 0 | 4 |
 | BJ | 5 | 3 | 2 |
-| BR | 178 | 90 | 88 |
+| BR | 191 | 94 | 97 |
 | BY | 23 | 12 | 11 |
-| CA | 29 | 22 | 7 |
+| CA | 32 | 23 | 9 |
 | CD | 5 | 1 | 4 |
 | CG | 1 | 1 | 0 |
 | CH | 34 | 24 | 10 |
@@ -36,7 +36,7 @@
 | ES | 7 | 4 | 3 |
 | FI | 1 | 1 | 0 |
 | FO | 1 | 0 | 1 |
-| FR | 326 | 197 | 129 |
+| FR | 340 | 207 | 133 |
 | GB | 59 | 36 | 23 |
 | GH | 8 | 6 | 2 |
 | GN | 1 | 0 | 1 |
@@ -44,7 +44,7 @@
 | HK | 4 | 4 | 0 |
 | HR | 1 | 1 | 0 |
 | ID | 33 | 16 | 17 |
-| IE | 4 | 4 | 0 |
+| IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
 | IN | 56 | 36 | 20 |
 | IR | 18 | 1 | 17 |
@@ -86,7 +86,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1062 | 811 | 251 |
+| US | 1106 | 844 | 262 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VE | 1 | 0 | 1 |
@@ -94,4 +94,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 2824. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 2928. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
