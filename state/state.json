@@ -1965,6 +1965,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "calsouthern.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
     "calstate.edu": {
       "code": 200,
       "confidence": 60,
@@ -1987,8 +1992,8 @@
     },
     "cam.ac.uk": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "cambridgeqld.com": {
       "code": 200,
@@ -2107,8 +2112,8 @@
     },
     "carrollkyschools.gov": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "carrollu.edu": {
       "code": 200,
@@ -2330,6 +2335,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "centralesupelec.fr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "centre.edu": {
       "code": 200,
       "confidence": 60,
@@ -2374,6 +2384,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "cgu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "chaffey.edu": {
       "code": 200,
@@ -3829,6 +3844,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "denvercollegeofnursing.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "denverseminary.edu": {
       "code": 200,
@@ -7960,6 +7980,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "lacollege.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "lafarlede.fr": {
       "code": 503,
       "confidence": 5,
@@ -8080,6 +8105,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "latech.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "latrobe.edu.au": {
       "code": 403,
       "confidence": 5,
@@ -8144,6 +8174,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "lclark.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "lcsc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "le-grand-pressigny.net": {
       "code": 200,
@@ -8230,6 +8270,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "lewisu.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "lexisenglish.com": {
       "code": 200,
       "confidence": 80,
@@ -8250,10 +8295,20 @@
       "confidence": 20,
       "reason": "low-confidence:http-2xx-html"
     },
+    "lhup.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "liberte.moncollege.valdemarne.fr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "liberty.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "liceolocarno.ch": {
       "code": 0,
@@ -8265,6 +8320,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "lincoln.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "lincolntech.edu": {
       "code": 200,
       "confidence": 85,
@@ -8275,6 +8335,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "linfield.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "lipia.id": {
       "code": 200,
       "confidence": 30,
@@ -8284,6 +8349,11 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "liunet.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "liv.ac.uk": {
       "code": 200,
@@ -8320,6 +8390,11 @@
       "confidence": 40,
       "reason": "moved-to:informaconnect.com"
     },
+    "llu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "lmu.de": {
       "code": 200,
       "confidence": 50,
@@ -8335,6 +8410,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
     },
+    "lockhaven.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:commonwealthu.edu"
+    },
     "login.microsoftonline.com": {
       "code": 200,
       "confidence": 20,
@@ -8344,6 +8424,16 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "longwood.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "loras.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "loreto.sa.edu.au": {
       "code": 200,
@@ -8369,6 +8459,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "loyola.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "loyola.vic.edu.au": {
       "code": 403,
@@ -8430,6 +8525,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "lsua.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "lta.org.uk": {
       "code": 200,
       "confidence": 60,
@@ -8455,6 +8555,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "luc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "lukenyauniversity.ac.ke": {
       "code": 0,
       "confidence": 0,
@@ -8469,6 +8574,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "luther.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "luthersem.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "lvc.edu": {
       "code": 200,
@@ -8695,10 +8810,25 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "lynchburg.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "lyndonstate.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "lynn.edu": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "lyon.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "lzu.edu.cn": {
       "code": 0,
@@ -8709,6 +8839,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "macalester.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "macarthur.nsw.edu.au": {
       "code": 200,
@@ -8760,10 +8895,20 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "malone.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "manara.edu.sy": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "manc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "manchester.ac.uk": {
       "code": 200,
@@ -8775,10 +8920,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "manhattan.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "manipal.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "mansfield.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:commonwealthu.edu"
     },
     "manu.edu.mk": {
       "code": 200,
@@ -8820,10 +8975,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "marietta.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "marionmilitary.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "marist.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "maristes83.com": {
       "code": 200,
@@ -8834,6 +8999,31 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "marlboro.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:marlboro.emerson.edu"
+    },
+    "marlboro.emerson.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "marquette.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "marshall.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "marymount.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "maryville.edu": {
       "code": 200,
@@ -8880,6 +9070,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "mbc.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:montanabiblecollege.edu"
+    },
     "mbl.edu": {
       "code": 200,
       "confidence": 90,
@@ -8889,6 +9084,41 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "mc.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "mcad.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mcc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mccc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "mcckc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mccneb.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mcdaniel.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mcdonald.nsw.edu.au": {
       "code": 200,
@@ -8900,6 +9130,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "mcg.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mcgill-toolen.org": {
       "code": 0,
       "confidence": 0,
@@ -8910,10 +9145,25 @@
       "confidence": 75,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure"
     },
+    "mcm.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mcmaster.ca": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "mcneese.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mcw.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mdc.edu": {
       "code": 200,
@@ -8950,6 +9200,31 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "mercer.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mercy.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mercyhurst.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "mercymavericks.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "meredith.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "merici.ca": {
       "code": 200,
       "confidence": 30,
@@ -8965,10 +9240,20 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "messiah.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "metropolitana.edu.br": {
       "code": 200,
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "metrostate.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mfac.edu.au": {
       "code": 200,
@@ -8979,6 +9264,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "mga.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mgs.vic.edu.au": {
       "code": 200,
@@ -8994,6 +9284,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "miamioh.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "microbio.bas.bg": {
       "code": 200,
@@ -9030,10 +9325,35 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "millersville.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "milligan.edu": {
+      "code": 202,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
+    "millikin.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "millsaps.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "mines.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "minotstateu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mirea.ru": {
       "code": 403,
@@ -9044,6 +9364,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "mit.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mit.edu.au": {
       "code": 0,
@@ -9080,6 +9405,21 @@
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+structure"
     },
+    "mmm.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "mnstate.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mnsu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "modern-academy.edu.eg": {
       "code": 200,
       "confidence": 50,
@@ -9099,6 +9439,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:moler.edu"
+    },
+    "molloy.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "monash.edu": {
       "code": 403,
@@ -9120,6 +9465,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "monmouth.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "monmouthcollege.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "monnet-marigny.college.ac-normandie.fr": {
       "code": 200,
       "confidence": 40,
@@ -9130,10 +9485,35 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "montana.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "montanabiblecollege.edu": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix"
+    },
+    "montclair.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "montevallo.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "montgomerycollege.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "montreat.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "moorabbinaviationservices.com.au": {
       "code": 200,
@@ -9150,10 +9530,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "moravian.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "moreheadstate.edu": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "morgan.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "motthavenvillage.com": {
       "code": 200,
@@ -9220,6 +9610,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "mscfs.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "msj.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "msjc.edu": {
       "code": 200,
       "confidence": 60,
@@ -9229,6 +9629,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "msmc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "msmu.edu": {
       "code": 200,
@@ -9240,10 +9645,20 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "msoe.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mspu.by": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "mssc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mssm.edu": {
       "code": 200,
@@ -9254,6 +9669,16 @@
       "code": 200,
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+substantial-content"
+    },
+    "msstate.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mst.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "msu.by": {
       "code": 200,
@@ -9270,10 +9695,45 @@
       "confidence": 20,
       "reason": "low-confidence:http-2xx-html+non-educational-content"
     },
+    "msubillings.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "msudenver.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "msun.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mtech.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mtholyoke.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mtsac.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "mtsu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mtu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mu-sofia.bg": {
       "code": 200,
@@ -9285,10 +9745,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "muc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "muirden.sa.edu.au": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "mum.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "murdoch.edu.au": {
       "code": 200,
@@ -9300,6 +9770,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "mursuky.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "music.ucsb.edu": {
       "code": 200,
       "confidence": 60,
@@ -9310,15 +9785,40 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "muskingum.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "muson.org": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "muw.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "mvsu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mwc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mwsc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mwsu.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "mylambton.ca": {
       "code": 200,
@@ -9389,6 +9889,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "naz.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "nazareth.vic.edu.au": {
       "code": 403,
@@ -9470,6 +9975,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ndu.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ndus.edu": {
       "code": 0,
       "confidence": 0,
@@ -9494,6 +10004,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "nevada.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "new.huji.ac.il": {
       "code": 200,
@@ -9594,6 +10109,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "nl.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "nma.bg": {
       "code": 200,
@@ -9704,6 +10224,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "nrao.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "nsa.bg": {
       "code": 200,
@@ -16242,6 +16767,7 @@
     "deltastate.edu": "2002-03-20",
     "democracyprep.org": "2004-09-29",
     "denison.edu": "1990-03-30",
+    "denvercollegeofnursing.edu": "2017-07-17",
     "denverseminary.edu": "1999-06-22",
     "depaul.edu": "1986-09-02",
     "depauw.edu": "1993-03-12",
@@ -18093,6 +18619,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "lacollege.edu": "1994-03-25",
     "lafarlede.fr": "2009-09-03",
     "lafayette.edu": "1990-07-13",
     "lagrange.edu": "2002-06-04",
@@ -18128,6 +18655,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "latech.edu": "1990-04-25",
     "latrobe.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -18155,6 +18683,8 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "lclark.edu": "1991-06-13",
+    "lcsc.edu": "1994-01-31",
     "le-grand-pressigny.net": "2000-08-02",
     "le-verrier.lycee.ac-normandie.fr": {
       "reg": "",
@@ -18187,6 +18717,7 @@
     "lespannevelles.net": "2015-01-12",
     "letu.edu": "1995-01-04",
     "levininstitute.org": "2007-02-05",
+    "lewisu.edu": "1993-12-14",
     "lexisenglish.com": "2010-11-29",
     "lfc.edu": "1993-01-05",
     "lgt-felix-eboue.eta.ac-guyane.fr": {
@@ -18194,10 +18725,12 @@
       "ts": "2026-09-17"
     },
     "lheath.net": "2004-10-26",
+    "lhup.edu": "1994-12-20",
     "liberte.moncollege.valdemarne.fr": {
       "reg": "",
       "ts": "2026-09-14"
     },
+    "liberty.edu": "1995-02-12",
     "liceolocarno.ch": {
       "reg": "",
       "ts": "2026-09-16"
@@ -18206,8 +18739,11 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "lincoln.edu": "1992-01-03",
     "lincolntech.edu": "2003-07-16",
+    "linfield.edu": "1992-06-17",
     "lipia.id": "2020-11-08",
+    "liunet.edu": "1991-08-05",
     "liv.ac.uk": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18230,17 +18766,21 @@
     },
     "llcc.edu": "2002-01-09",
     "lloydsmaritimeacademy.com": "2002-07-18",
+    "llu.edu": "1993-01-11",
     "lmu.de": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "lmu.edu": "1992-11-23",
     "lockearts.org": "2018-06-27",
+    "lockhaven.edu": "2015-12-18",
     "login.microsoftonline.com": {
       "reg": "",
       "ts": "2026-09-18"
     },
     "logos-centar.com": "2011-05-09",
+    "longwood.edu": "2000-04-28",
+    "loras.edu": "1992-07-23",
     "loreto.sa.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18254,6 +18794,7 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "loyola.edu": "1987-06-22",
     "loyola.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -18286,6 +18827,7 @@
     },
     "lssu.edu": "1994-06-29",
     "lsu.edu": "1987-01-19",
+    "lsua.edu": "1994-02-13",
     "lta.org.uk": "1995-10-13",
     "ltu.bg": {
       "reg": "",
@@ -18300,6 +18842,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "luc.edu": "1991-07-22",
     "lukenyauniversity.ac.ke": "2015-08-27",
     "lumiere.ent.auvergnerhonealpes.fr": {
       "reg": "",
@@ -18309,6 +18852,8 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "luther.edu": "1993-04-26",
+    "luthersem.edu": "1994-03-17",
     "lvc.edu": "1991-09-19",
     "lyc-7mares-maurepas.ac-versailles.fr": {
       "reg": "",
@@ -18411,12 +18956,19 @@
     "lycees-dinan.fr": "2011-03-26",
     "lyceesaintvincent.fr": "2024-03-10",
     "lycoming.edu": "1992-08-25",
+    "lynchburg.edu": "1995-08-23",
+    "lyndonstate.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
     "lynn.edu": "1996-03-14",
+    "lyon.edu": "1994-05-26",
     "lzu.edu.cn": {
       "reg": "",
       "ts": "2026-09-18"
     },
     "maastrichtuniversity.nl": "2007-05-01",
+    "macalester.edu": "1996-04-29",
     "macarthur.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -18445,16 +18997,23 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "malone.edu": "1988-12-22",
     "manara.edu.sy": {
       "reg": "",
       "ts": "2026-09-13"
+    },
+    "manc.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
     },
     "manchester.ac.uk": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "manhalacademy.edu.sd": "2017-04-24",
+    "manhattan.edu": "1996-04-29",
     "manipal.edu": "1999-09-27",
+    "mansfield.edu": "1997-05-08",
     "manu.edu.mk": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18475,12 +19034,22 @@
       "ts": "2026-09-17"
     },
     "marie-rivier.com": "2003-07-29",
+    "marietta.edu": "1994-08-18",
     "marionmilitary.edu": "2002-10-09",
+    "marist.edu": "1989-08-31",
     "maristes83.com": "2000-02-07",
     "maritime.calpoly.edu": {
       "reg": "",
       "ts": "2026-09-15"
     },
+    "marlboro.edu": "1994-11-20",
+    "marlboro.emerson.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
+    "marquette.edu": "1996-06-12",
+    "marshall.edu": "1993-08-24",
+    "marymount.edu": "1994-06-29",
     "mas.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -18500,10 +19069,18 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "mbc.edu": "2025-04-02",
     "mbzuai.ac.ae": {
       "reg": "",
       "ts": "2026-09-13"
     },
+    "mc.edu": "1993-07-21",
+    "mcad.edu": "1991-08-22",
+    "mcc.edu": "1992-05-13",
+    "mccc.edu": "1990-08-06",
+    "mcckc.edu": "2005-10-13",
+    "mccneb.edu": "1992-06-24",
+    "mcdaniel.edu": "2002-05-14",
     "mcdonald.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -18512,9 +19089,16 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "mcg.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
     "mcgill-toolen.org": "2004-09-27",
     "mcgill.ca": "2000-10-11",
+    "mcm.edu": "1996-02-24",
     "mcmaster.ca": "2000-10-20",
+    "mcneese.edu": "1994-06-28",
+    "mcw.edu": "1989-09-21",
     "mdc.edu": "2002-10-08",
     "mdw.ac.at": {
       "reg": "",
@@ -18534,13 +19118,20 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "mercer.edu": "1995-02-06",
+    "mercy.edu": "1994-04-21",
+    "mercyhurst.edu": "1997-11-21",
+    "mercymavericks.edu": "2011-04-06",
+    "meredith.edu": "1992-01-22",
     "merici.ca": "2002-02-15",
     "mermoz.ent.auvergnerhonealpes.fr": {
       "reg": "",
       "ts": "2026-09-16"
     },
     "mesacc.edu": "2006-08-23",
+    "messiah.edu": "1992-02-15",
     "metropolitana.edu.br": "2003-03-25",
+    "metrostate.edu": "1998-12-09",
     "mfac.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -18549,6 +19140,7 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "mga.edu": "2012-12-10",
     "mgs.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18558,6 +19150,7 @@
       "ts": "2026-09-18"
     },
     "mi.edu": "1996-03-05",
+    "miamioh.edu": "2012-06-15",
     "microbio.bas.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -18571,12 +19164,18 @@
     },
     "milaninstitute.edu": "2005-05-05",
     "miles.edu": "1997-09-05",
+    "millersville.edu": "1999-12-03",
+    "milligan.edu": "1996-11-18",
+    "millikin.edu": "1995-01-23",
+    "millsaps.edu": "1992-01-06",
     "mines.edu": "1995-05-19",
+    "minotstateu.edu": "1999-12-02",
     "mirea.ru": {
       "reg": "",
       "ts": "2026-09-15"
     },
     "missouri.edu": "1987-12-22",
+    "mit.edu": "1985-05-23",
     "mit.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18605,6 +19204,9 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "mmm.edu": "1995-06-21",
+    "mnstate.edu": "1999-02-16",
+    "mnsu.edu": "2000-02-09",
     "modern-academy.edu.eg": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18615,6 +19217,7 @@
     },
     "moler.edu": "2025-07-25",
     "moler.org": "2011-10-21",
+    "molloy.edu": "1995-02-09",
     "monash.edu": "2000-02-05",
     "monash.edu.au": {
       "reg": "",
@@ -18628,11 +19231,18 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "monmouth.edu": "1991-03-27",
+    "monmouthcollege.edu": "1997-01-08",
     "monnet-marigny.college.ac-normandie.fr": {
       "reg": "",
       "ts": "2026-09-16"
     },
+    "montana.edu": "1988-09-28",
+    "montanabiblecollege.edu": "2000-09-12",
+    "montclair.edu": "1989-01-18",
     "montevallo.edu": "1994-03-25",
+    "montgomerycollege.edu": "1996-08-28",
+    "montreat.edu": "1994-11-30",
     "moorabbinaviationservices.com.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -18642,7 +19252,9 @@
       "ts": "2026-09-15"
     },
     "moorparkcollege.edu": "2002-01-09",
+    "moravian.edu": "1986-09-29",
     "moreheadstate.edu": "1999-04-27",
+    "morgan.edu": "1991-09-25",
     "motthavenvillage.com": "2024-07-24",
     "mouau.edu.ng": {
       "reg": "",
@@ -18664,15 +19276,28 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "mscfs.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
+    "msj.edu": "1992-09-29",
     "msjc.edu": "2002-01-09",
     "msmary.edu": "1993-04-22",
+    "msmc.edu": "1992-10-26",
     "msmu.edu": "2014-08-13",
     "msnasmetance.cz": "2004-03-30",
+    "msoe.edu": "1992-07-02",
     "mspu.by": {
       "reg": "",
       "ts": "2026-09-15"
     },
+    "mssc.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
     "mssokolovska.cz": "2005-09-02",
+    "msstate.edu": "1988-09-22",
+    "mst.edu": "2007-04-11",
     "msu.by": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18682,16 +19307,28 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "msubillings.edu": "1995-12-18",
+    "msudenver.edu": "2012-06-08",
+    "msun.edu": "1998-06-04",
+    "mtech.edu": "1992-09-23",
+    "mtholyoke.edu": "1991-04-22",
     "mtsac.edu": "1989-10-19",
+    "mtsu.edu": "1989-03-07",
+    "mtu.edu": "1987-05-20",
     "mu-sofia.bg": {
       "reg": "",
       "ts": "2026-09-18"
     },
     "mua.ac.ke": "2011-09-01",
+    "muc.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
     "muirden.sa.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
+    "mum.edu": "1995-09-14",
     "murdoch.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -18700,12 +19337,27 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "mursuky.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
     "music.ucsb.edu": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "musica.ufmg.br": "1996-01-01",
+    "muskingum.edu": "1986-11-05",
     "muson.org": "2012-09-19",
+    "muw.edu": "1992-10-07",
+    "mwc.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
+    "mwsc.edu": {
+      "reg": "",
+      "ts": "2026-09-18"
+    },
+    "mwsu.edu": "2025-04-02",
     "mylambton.ca": "2010-01-15",
     "myport.ac.uk": {
       "reg": "",
@@ -18738,6 +19390,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "naz.edu": "1992-05-05",
     "nazareth.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
@@ -18774,6 +19427,7 @@
     "ndleclosfleuri.com": "2005-09-08",
     "nds67.com": "2016-09-05",
     "ndscs.edu": "2003-07-14",
+    "ndu.edu": "1993-12-13",
     "ndus.edu": "1997-08-21",
     "nec.edu.au": {
       "reg": "",
@@ -18788,6 +19442,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "nevada.edu": "1989-01-27",
     "new.huji.ac.il": {
       "reg": "",
       "ts": "2026-09-16"
@@ -18840,6 +19495,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "nl.edu": "1993-06-25",
     "nma.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -18883,6 +19539,7 @@
     "np.edu": "2015-04-29",
     "npc.edu": "2002-01-10",
     "nps.edu": "2000-08-08",
+    "nrao.edu": "1987-12-17",
     "nsa.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -21539,6 +22196,7 @@
     "callutheran.edu": 0,
     "calmu.edu": 0,
     "calpoly.edu": 0,
+    "calsouthern.edu": 1,
     "calstate.edu": 0,
     "calstatela.edu": 0,
     "caltech.edu": 0,
@@ -21558,7 +22216,7 @@
     "canterburyla.com.au": 1,
     "capella.edu": 0,
     "capellauniversity.edu": 1,
-    "capitalareaiu.gov": 1,
+    "capitalareaiu.gov": 2,
     "captechu.edu": 0,
     "cardiff.ac.uk": 1,
     "cardiffwestchs.cardiff.sch.uk": 0,
@@ -21612,6 +22270,7 @@
     "cegepgarneau.ca": 0,
     "centenary.edu": 0,
     "central.edu": 0,
+    "centralesupelec.fr": 0,
     "centre.edu": 0,
     "centrescolaire-saintmartin.com": 1,
     "cer-saint-flaive.fr": 0,
@@ -21621,12 +22280,13 @@
     "cfk.edu": 0,
     "cggs.act.edu.au": 1,
     "cgs.edu": 1,
+    "cgu.edu": 0,
     "chaffey.edu": 0,
     "champlain.edu": 0,
     "chapman.edu": 0,
     "charles-peguy-bobigny.fr": 0,
     "charleston.edu": 0,
-    "charlestoncountyschools.gov": 1,
+    "charlestoncountyschools.gov": 2,
     "chartercollege.edu": 0,
     "charteroak.edu": 0,
     "chatham.edu": 0,
@@ -21655,7 +22315,7 @@
     "ciucuracao.org": 1,
     "cj-antich.com": 1,
     "cla.nsw.edu.au": 0,
-    "clackesd.gov": 1,
+    "clackesd.gov": 2,
     "clackesd.org": 0,
     "claremontmckenna.edu": 1,
     "clarion.edu": 1,
@@ -21669,7 +22329,7 @@
     "cleveland.edu": 1,
     "clevelandmetroschools.org": 0,
     "clg-adalbert.monbureaunumerique.fr": 1,
-    "clg-aigle-cergy.ac-versailles.fr": 1,
+    "clg-aigle-cergy.ac-versailles.fr": 2,
     "clg-berthelot.sarthe.e-lyco.fr": 0,
     "clg-camus-moulins-les-metz.monbureaunumerique.fr": 1,
     "clg-curie-chatillon.tice.ac-orleans-tours.fr": 0,
@@ -21912,6 +22572,7 @@
     "deltastate.edu": 1,
     "democracyprep.org": 0,
     "denison.edu": 0,
+    "denvercollegeofnursing.edu": 0,
     "denverseminary.edu": 0,
     "depaul.edu": 0,
     "depauw.edu": 0,
@@ -22738,6 +23399,7 @@
     "lacc.edu": 1,
     "laccd.edu": 1,
     "lacoliniere.loire-atlantique.e-lyco.fr": 0,
+    "lacollege.edu": 1,
     "lafarlede.fr": 1,
     "lafayette.edu": 0,
     "lagrange.edu": 0,
@@ -22762,6 +23424,7 @@
     "lasell.edu": 0,
     "lasierra.edu": 0,
     "lasu.edu.ng": 0,
+    "latech.edu": 0,
     "latrobe.edu.au": 2,
     "lattc.edu": 1,
     "lauruscollege.edu": 0,
@@ -22775,6 +23438,8 @@
     "lbwcc.edu": 0,
     "lc-saint-louis.loire-atlantique.e-lyco.fr": 1,
     "lcgs.tas.edu.au": 0,
+    "lclark.edu": 0,
+    "lcsc.edu": 0,
     "le-grand-pressigny.net": 0,
     "le-verrier.lycee.ac-normandie.fr": 0,
     "lecom.edu": 0,
@@ -22792,17 +23457,23 @@
     "lespannevelles.net": 1,
     "letu.edu": 0,
     "levininstitute.org": 1,
+    "lewisu.edu": 1,
     "lexisenglish.com": 0,
     "lfc.edu": 1,
     "lgt-felix-eboue.eta.ac-guyane.fr": 0,
     "lheath.net": 2,
+    "lhup.edu": 1,
     "liberte.moncollege.valdemarne.fr": 1,
+    "liberty.edu": 0,
     "liceolocarno.ch": 1,
     "liebegg.ch": 0,
+    "lincoln.edu": 0,
     "lincolntech.edu": 0,
     "lindenwood.edu": 0,
+    "linfield.edu": 0,
     "lipia.id": 1,
     "lipscomb.edu": 0,
+    "liunet.edu": 1,
     "liv.ac.uk": 1,
     "liverpool.ac.uk": 0,
     "ljbc.wa.edu.au": 0,
@@ -22810,16 +23481,21 @@
     "llb.ac-corse.fr": 0,
     "llcc.edu": 0,
     "lloydsmaritimeacademy.com": 1,
+    "llu.edu": 0,
     "lmu.de": 0,
     "lmu.edu": 0,
     "lockearts.org": 2,
+    "lockhaven.edu": 1,
     "login.microsoftonline.com": 1,
     "logos-centar.com": 0,
+    "longwood.edu": 0,
+    "loras.edu": 0,
     "loreto.sa.edu.au": 0,
     "losmedanos.edu": 0,
     "losrios.edu": 0,
     "louise-michel.cybercolleges42.fr": 1,
     "louislachenal-stlaurentdemure.ent.auvergnerhonealpes.fr": 0,
+    "loyola.edu": 0,
     "loyola.vic.edu.au": 1,
     "lp-larivot.eta.ac-guyane.fr": 0,
     "lp-lyc-metier-chateau-potel-la-ferte-milon.02.ac-amiens.fr": 0,
@@ -22832,14 +23508,18 @@
     "lshtm.ac.uk": 1,
     "lssu.edu": 0,
     "lsu.edu": 0,
+    "lsua.edu": 0,
     "lta.org.uk": 0,
     "ltu.bg": 0,
     "ltu.edu": 0,
     "lu.se": 0,
     "luarasi-univ.edu.al": 0,
+    "luc.edu": 0,
     "lukenyauniversity.ac.ke": 1,
     "lumiere.ent.auvergnerhonealpes.fr": 0,
     "luskin.ucla.edu": 0,
+    "luther.edu": 0,
+    "luthersem.edu": 0,
     "lvc.edu": 0,
     "lyc-7mares-maurepas.ac-versailles.fr": 1,
     "lyc-ajrenoir.paysdelaloire.e-lyco.fr": 0,
@@ -22885,9 +23565,13 @@
     "lycees-dinan.fr": 0,
     "lyceesaintvincent.fr": 1,
     "lycoming.edu": 0,
+    "lynchburg.edu": 0,
+    "lyndonstate.edu": 1,
     "lynn.edu": 1,
+    "lyon.edu": 0,
     "lzu.edu.cn": 1,
     "maastrichtuniversity.nl": 0,
+    "macalester.edu": 0,
     "macarthur.nsw.edu.au": 0,
     "machadosobrinho.com.br": 0,
     "mackenzie-rio.com.br": 1,
@@ -22898,10 +23582,14 @@
     "make_home_page.php": 1,
     "makeup-technicians.com": 1,
     "makeupcollege.com.au": 0,
+    "malone.edu": 0,
     "manara.edu.sy": 0,
+    "manc.edu": 1,
     "manchester.ac.uk": 0,
     "manhalacademy.edu.sd": 1,
+    "manhattan.edu": 0,
     "manipal.edu": 0,
+    "mansfield.edu": 1,
     "manu.edu.mk": 1,
     "mapleinfants.co.uk": 0,
     "mar.mil.br": 1,
@@ -22910,9 +23598,16 @@
     "marianaacademy.com": 0,
     "marie-curie-pignan.mon-ent-occitanie.fr": 1,
     "marie-rivier.com": 1,
+    "marietta.edu": 0,
     "marionmilitary.edu": 0,
+    "marist.edu": 0,
     "maristes83.com": 0,
     "maritime.calpoly.edu": 0,
+    "marlboro.edu": 1,
+    "marlboro.emerson.edu": 0,
+    "marquette.edu": 0,
+    "marshall.edu": 0,
+    "marymount.edu": 0,
     "maryville.edu": 0,
     "marywood.edu": 0,
     "mas.vic.edu.au": 0,
@@ -22922,13 +23617,25 @@
     "masters.edu": 0,
     "matc.edu": 1,
     "mba.zh.ch": 0,
+    "mbc.edu": 1,
     "mbl.edu": 0,
     "mbzuai.ac.ae": 3,
+    "mc.edu": 0,
+    "mcad.edu": 0,
+    "mcc.edu": 0,
+    "mccc.edu": 0,
+    "mcckc.edu": 0,
+    "mccneb.edu": 0,
+    "mcdaniel.edu": 0,
     "mcdonald.nsw.edu.au": 0,
     "mcfe.com.au": 0,
+    "mcg.edu": 1,
     "mcgill-toolen.org": 1,
     "mcgill.ca": 0,
+    "mcm.edu": 0,
     "mcmaster.ca": 0,
+    "mcneese.edu": 0,
+    "mcw.edu": 0,
     "mdc.edu": 0,
     "mdw.ac.at": 0,
     "meduniwien.ac.at": 0,
@@ -22936,15 +23643,24 @@
     "menominee.edu": 1,
     "menzies.vic.edu.au": 0,
     "mercedes.catholic.edu.au": 0,
+    "mercer.edu": 0,
+    "mercy.edu": 0,
+    "mercyhurst.edu": 0,
+    "mercymavericks.edu": 1,
+    "meredith.edu": 0,
     "merici.ca": 1,
     "mermoz.ent.auvergnerhonealpes.fr": 0,
     "mesacc.edu": 1,
+    "messiah.edu": 0,
     "metropolitana.edu.br": 0,
+    "metrostate.edu": 0,
     "mfac.edu.au": 0,
     "mfs.com.au": 0,
+    "mga.edu": 0,
     "mgs.vic.edu.au": 0,
     "mgu.bg": 0,
     "mi.edu": 0,
+    "miamioh.edu": 1,
     "microbio.bas.bg": 1,
     "microcadd.com": 1,
     "middlebury.edu": 0,
@@ -22952,9 +23668,15 @@
     "mil.am": 1,
     "milaninstitute.edu": 1,
     "miles.edu": 0,
+    "millersville.edu": 0,
+    "milligan.edu": 1,
+    "millikin.edu": 0,
+    "millsaps.edu": 0,
     "mines.edu": 0,
+    "minotstateu.edu": 0,
     "mirea.ru": 1,
     "missouri.edu": 1,
+    "mit.edu": 0,
     "mit.edu.au": 1,
     "mitchell.k12.sd.us": 0,
     "mitht.ru": 1,
@@ -22962,21 +23684,34 @@
     "mitso.by": 1,
     "mkhitargosh.com": 1,
     "mkhu.am": 1,
+    "mmm.edu": 1,
+    "mnstate.edu": 0,
+    "mnsu.edu": 0,
     "modern-academy.edu.eg": 0,
     "moerlina.wa.edu.au": 0,
     "moler.edu": 0,
     "moler.org": 1,
+    "molloy.edu": 0,
     "monash.edu": 1,
     "monash.edu.au": 2,
     "monashcollege.edu.au": 1,
     "monivae.com.au": 1,
+    "monmouth.edu": 0,
+    "monmouthcollege.edu": 0,
     "monnet-marigny.college.ac-normandie.fr": 1,
     "monroecollege.edu": 3,
+    "montana.edu": 0,
+    "montanabiblecollege.edu": 0,
+    "montclair.edu": 0,
     "montevallo.edu": 0,
+    "montgomerycollege.edu": 0,
+    "montreat.edu": 0,
     "moorabbinaviationservices.com.au": 1,
     "moore.edu.au": 0,
     "moorparkcollege.edu": 0,
+    "moravian.edu": 0,
     "moreheadstate.edu": 1,
+    "morgan.edu": 0,
     "motthavenvillage.com": 0,
     "mouau.edu.ng": 0,
     "mountcarmeldelhi.com": 1,
@@ -22990,26 +23725,48 @@
     "ms356covo.org": 2,
     "ms447.org": 0,
     "msbcollege.edu": 1,
+    "mscfs.edu": 1,
+    "msj.edu": 0,
     "msjc.edu": 0,
     "msmary.edu": 0,
+    "msmc.edu": 0,
     "msmu.edu": 0,
     "msnasmetance.cz": 2,
+    "msoe.edu": 0,
     "mspu.by": 1,
+    "mssc.edu": 1,
     "mssm.edu": 0,
     "mssokolovska.cz": 2,
+    "msstate.edu": 0,
+    "mst.edu": 0,
     "msu.by": 0,
     "msu.edu": 0,
     "msu.ru": 1,
+    "msubillings.edu": 0,
+    "msudenver.edu": 0,
+    "msun.edu": 0,
+    "mtech.edu": 0,
+    "mtholyoke.edu": 0,
     "mtsac.edu": 0,
+    "mtsu.edu": 0,
+    "mtu.edu": 0,
     "mu-sofia.bg": 0,
     "mua.ac.ke": 0,
+    "muc.edu": 1,
     "muirden.sa.edu.au": 0,
+    "mum.edu": 1,
     "murdoch.edu.au": 0,
     "murdochcollege.edu.au": 0,
+    "mursuky.edu": 1,
     "music.ucsb.edu": 0,
     "musica.ufmg.br": 1,
+    "muskingum.edu": 0,
     "muson.org": 0,
+    "muw.edu": 0,
     "mvsu.edu": 0,
+    "mwc.edu": 1,
+    "mwsc.edu": 1,
+    "mwsu.edu": 1,
     "mylambton.ca": 1,
     "myport.ac.uk": 3,
     "mystep.foundation": 1,
@@ -23024,6 +23781,7 @@
     "naturapolis36.fr": 0,
     "nau.edu": 0,
     "navitasenglish.edu.au": 0,
+    "naz.edu": 0,
     "nazareth.vic.edu.au": 1,
     "nbchs.net": 1,
     "nbs.edu.cn": 2,
@@ -23040,11 +23798,13 @@
     "ndleclosfleuri.com": 0,
     "nds67.com": 0,
     "ndscs.edu": 0,
+    "ndu.edu": 1,
     "ndus.edu": 1,
     "nec.edu.au": 1,
     "negs.nsw.edu.au": 0,
     "nettts.com": 0,
     "neuropathologie.med.uni-muenchen.de": 1,
+    "nevada.edu": 0,
     "new.huji.ac.il": 0,
     "newhaven.edu": 0,
     "newington.nsw.edu.au": 0,
@@ -23065,6 +23825,7 @@
     "njcu.edu": 3,
     "njmu.edu.cn": 1,
     "nju.edu.cn": 1,
+    "nl.edu": 0,
     "nma.bg": 0,
     "nmc.vic.edu.au": 1,
     "nmi.edu": 2,
@@ -23087,6 +23848,7 @@
     "np.edu": 0,
     "npc.edu": 0,
     "nps.edu": 0,
+    "nrao.edu": 1,
     "nsa.bg": 0,
     "nscc.ca": 0,
     "nscc.edu": 0,
@@ -24069,13 +24831,13 @@
     "skipped_service": 5,
     "unmapped": 0
   },
-  "last_run": "2026-09-18T21:29:52+00:00",
+  "last_run": "2026-09-18T22:50:44+00:00",
   "last_verify": {
-    "added_active": 70,
-    "at": "2026-09-18 19:59 UTC",
-    "pending_left": 7899,
+    "added_active": 77,
+    "at": "2026-09-18 22:50 UTC",
+    "pending_left": 7900,
     "reverified": 15,
-    "validated": 119
+    "validated": 117
   },
   "moved": {
     "adventista.edu.br": "uniaene.edu.br",
@@ -24164,7 +24926,11 @@
     "leiden.edu": "universiteitleiden.nl",
     "liv.ac.uk": "liverpool.ac.uk",
     "lloydsmaritimeacademy.com": "informaconnect.com",
+    "lockhaven.edu": "commonwealthu.edu",
     "makeup-technicians.com": "tmt.edu.au",
+    "mansfield.edu": "commonwealthu.edu",
+    "marlboro.edu": "marlboro.emerson.edu",
+    "mbc.edu": "montanabiblecollege.edu",
     "mitht.ru": "mirea.ru",
     "moler.org": "moler.edu",
     "moorabbinaviationservices.com.au": "mas.vic.edu.au",
