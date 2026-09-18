@@ -315,7 +315,7 @@
   "domain": "hpu.edu",
   "iso2": "US",
   "name": "Hawaii Pacific University",
-  "source": "hipo:2026-09-17;hipo:2026-09-18",
+  "source": "hipo:2026-09-17;hipo:2026-09-18;ipeds:2026-09",
   "type_hint": "university",
   "url": "https://hpu.edu"
  },
@@ -634,8 +634,8 @@
  {
   "domain": "lshtm.ac.uk",
   "iso2": "GB",
-  "name": "London School of Hygiene & Tropical Medicine",
-  "source": "openalex:page20",
+  "name": "London School of Hygiene & Tropical Medicine, University of London",
+  "source": "openalex:page20;hipo:2026-09-18",
   "type_hint": "university",
   "url": "http://www.lshtm.ac.uk/"
  },
@@ -5371,7 +5371,7 @@
   "domain": "ucf.edu",
   "iso2": "US",
   "name": "University of Central Florida",
-  "source": "hipo:2026-09-17;hipo:2026-09-18",
+  "source": "hipo:2026-09-17;hipo:2026-09-18;openalex:page27",
   "type_hint": "university",
   "url": "https://ucf.edu"
  },
@@ -5971,7 +5971,7 @@
   "domain": "ou.edu",
   "iso2": "US",
   "name": "University of Oklahoma",
-  "source": "hipo:2026-09-17;hipo:2026-09-18",
+  "source": "hipo:2026-09-17;hipo:2026-09-18;openalex:page27",
   "type_hint": "university",
   "url": "https://ou.edu"
  },
@@ -19275,7 +19275,7 @@
   "domain": "sdu.dk",
   "iso2": "DK",
   "name": "University of Southern Denmark - SDU",
-  "source": "hipo:2026-09-17;hipo:2026-09-18",
+  "source": "hipo:2026-09-17;hipo:2026-09-18;openalex:page27",
   "type_hint": "university",
   "url": "https://sdu.dk"
  },
@@ -27930,8 +27930,8 @@
  {
   "domain": "iisc.ernet.in",
   "iso2": "IN",
-  "name": "Indian Institute of Science",
-  "source": "hipo:2026-09-17;hipo:2026-09-18",
+  "name": "Indian Institute of Science Bangalore",
+  "source": "hipo:2026-09-17;hipo:2026-09-18;openalex:page27",
   "type_hint": "university",
   "url": "https://iisc.ernet.in"
  },
@@ -63190,5 +63190,813 @@
   "source": "hipo:2026-09-18",
   "type_hint": "university",
   "url": "https://lamp.ac.uk"
+ },
+ {
+  "domain": "lancs.ac.uk",
+  "iso2": "GB",
+  "name": "University of Lancaster",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lancs.ac.uk"
+ },
+ {
+  "domain": "lboro.ac.uk",
+  "iso2": "GB",
+  "name": "Loughborough University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lboro.ac.uk"
+ },
+ {
+  "domain": "student.lboro.ac.uk",
+  "iso2": "GB",
+  "name": "Loughborough University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://student.lboro.ac.uk"
+ },
+ {
+  "domain": "lcst.ac",
+  "iso2": "GB",
+  "name": "London College of Science & Technology",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lcst.ac"
+ },
+ {
+  "domain": "le.ac.uk",
+  "iso2": "GB",
+  "name": "University of Leicester",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://le.ac.uk"
+ },
+ {
+  "domain": "lgu.ac.uk",
+  "iso2": "GB",
+  "name": "London Guildhall University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lgu.ac.uk"
+ },
+ {
+  "domain": "limt.co.uk",
+  "iso2": "GB",
+  "name": "London Institute of Management and Technology",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://limt.co.uk"
+ },
+ {
+  "domain": "lincoln.ac.uk",
+  "iso2": "GB",
+  "name": "University of Lincoln",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lincoln.ac.uk"
+ },
+ {
+  "domain": "ljmu.ac.uk",
+  "iso2": "GB",
+  "name": "Liverpool John Moores University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ljmu.ac.uk"
+ },
+ {
+  "domain": "leedsbeckett.ac.uk",
+  "iso2": "GB",
+  "name": "Leeds Beckett University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://leedsbeckett.ac.uk"
+ },
+ {
+  "domain": "london.ac.uk",
+  "iso2": "GB",
+  "name": "University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://london.ac.uk"
+ },
+ {
+  "domain": "londonmet.ac.uk",
+  "iso2": "GB",
+  "name": "London Metropolitan University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://londonmet.ac.uk"
+ },
+ {
+  "domain": "lsbf.org.uk",
+  "iso2": "GB",
+  "name": "London School of Business & Finance",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lsbf.org.uk"
+ },
+ {
+  "domain": "lse.ac.uk",
+  "iso2": "GB",
+  "name": "London School of Economics and Political Science, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://lse.ac.uk"
+ },
+ {
+  "domain": "mbs.ac.uk",
+  "iso2": "GB",
+  "name": "University of Manchester",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://mbs.ac.uk"
+ },
+ {
+  "domain": "mdx.ac.uk",
+  "iso2": "GB",
+  "name": "Middlesex University - London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://mdx.ac.uk"
+ },
+ {
+  "domain": "med.ic.ac.uk",
+  "iso2": "GB",
+  "name": "Imperial College School of Medicine",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://med.ic.ac.uk"
+ },
+ {
+  "domain": "mmu.ac.uk",
+  "iso2": "GB",
+  "name": "The Manchester Metropolitan University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://mmu.ac.uk"
+ },
+ {
+  "domain": "napier.ac.uk",
+  "iso2": "GB",
+  "name": "Edinburgh Napier University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://napier.ac.uk"
+ },
+ {
+  "domain": "newport.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wales, Newport",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://newport.ac.uk"
+ },
+ {
+  "domain": "niu.org.uk",
+  "iso2": "GB",
+  "name": "Newport International University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://niu.org.uk"
+ },
+ {
+  "domain": "northampton.ac.uk",
+  "iso2": "GB",
+  "name": "University of Northampton",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://northampton.ac.uk"
+ },
+ {
+  "domain": "ntu.ac.uk",
+  "iso2": "GB",
+  "name": "Nottingham Trent University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ntu.ac.uk"
+ },
+ {
+  "domain": "open.ac.uk",
+  "iso2": "GB",
+  "name": "Open University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://open.ac.uk"
+ },
+ {
+  "domain": "ou.ac.uk",
+  "iso2": "GB",
+  "name": "Open University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ou.ac.uk"
+ },
+ {
+  "domain": "oxford.ac.uk",
+  "iso2": "GB",
+  "name": "University of Oxford",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://oxford.ac.uk"
+ },
+ {
+  "domain": "paisley.ac.uk",
+  "iso2": "GB",
+  "name": "University of Paisley",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://paisley.ac.uk"
+ },
+ {
+  "domain": "plymouth.ac.uk",
+  "iso2": "GB",
+  "name": "University of Plymouth",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://plymouth.ac.uk"
+ },
+ {
+  "domain": "qmw.ac.uk",
+  "iso2": "GB",
+  "name": "Queen Mary, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://qmw.ac.uk"
+ },
+ {
+  "domain": "qub.ac.uk",
+  "iso2": "GB",
+  "name": "The Queen's University Belfast",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://qub.ac.uk"
+ },
+ {
+  "domain": "ram.ac.uk",
+  "iso2": "GB",
+  "name": "Royal Academy of Music, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ram.ac.uk"
+ },
+ {
+  "domain": "rca.ac.uk",
+  "iso2": "GB",
+  "name": "Royal College of Art",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rca.ac.uk"
+ },
+ {
+  "domain": "network.rca.ac.uk",
+  "iso2": "GB",
+  "name": "Royal College of Art",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://network.rca.ac.uk"
+ },
+ {
+  "domain": "rcm.ac.uk",
+  "iso2": "GB",
+  "name": "Royal College of Music, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rcm.ac.uk"
+ },
+ {
+  "domain": "rdg.ac.uk",
+  "iso2": "GB",
+  "name": "University of Reading",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rdg.ac.uk"
+ },
+ {
+  "domain": "rfhsm.ac.uk",
+  "iso2": "GB",
+  "name": "Royal Free Hospital School of Medicine, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rfhsm.ac.uk"
+ },
+ {
+  "domain": "rgu.ac.uk",
+  "iso2": "GB",
+  "name": "The Robert Gordon University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rgu.ac.uk"
+ },
+ {
+  "domain": "rhbnc.ac.uk",
+  "iso2": "GB",
+  "name": "Royal Holloway and Bedford New College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://rhbnc.ac.uk"
+ },
+ {
+  "domain": "richmond.ac.uk",
+  "iso2": "GB",
+  "name": "Richmond University - The American International University in London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://richmond.ac.uk"
+ },
+ {
+  "domain": "roehampton.ac.uk",
+  "iso2": "GB",
+  "name": "Roehampton University of Surrey",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://roehampton.ac.uk"
+ },
+ {
+  "domain": "salford.ac.uk",
+  "iso2": "GB",
+  "name": "University of Salford",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://salford.ac.uk"
+ },
+ {
+  "domain": "sas.ac.uk",
+  "iso2": "GB",
+  "name": "School of Advanced Study, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sas.ac.uk"
+ },
+ {
+  "domain": "sbu.ac.uk",
+  "iso2": "GB",
+  "name": "South Bank University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sbu.ac.uk"
+ },
+ {
+  "domain": "schillerlondon.ac.uk",
+  "iso2": "GB",
+  "name": "Schiller International University, London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://schillerlondon.ac.uk"
+ },
+ {
+  "domain": "sclondon.ac",
+  "iso2": "GB",
+  "name": "Stratford College London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sclondon.ac"
+ },
+ {
+  "domain": "sghms.ac.uk",
+  "iso2": "GB",
+  "name": "Saint George's Hospital Medical School, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sghms.ac.uk"
+ },
+ {
+  "domain": "shef.ac.uk",
+  "iso2": "GB",
+  "name": "The University of Sheffield",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://shef.ac.uk"
+ },
+ {
+  "domain": "shu.ac.uk",
+  "iso2": "GB",
+  "name": "Sheffield Hallam University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://shu.ac.uk"
+ },
+ {
+  "domain": "smu.ac.uk",
+  "iso2": "GB",
+  "name": "Swansea Metropolitan University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://smu.ac.uk"
+ },
+ {
+  "domain": "soas.ac.uk",
+  "iso2": "GB",
+  "name": "School of Oriental and African Studies, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://soas.ac.uk"
+ },
+ {
+  "domain": "solent.ac.uk",
+  "iso2": "GB",
+  "name": "Southampton Solent University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://solent.ac.uk"
+ },
+ {
+  "domain": "sothebysinstitutelondon.com",
+  "iso2": "GB",
+  "name": "Sotheby\u00b4s Institute of Art - London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sothebysinstitutelondon.com"
+ },
+ {
+  "domain": "soton.ac.uk",
+  "iso2": "GB",
+  "name": "University of Southampton",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://soton.ac.uk"
+ },
+ {
+  "domain": "ssees.ac.uk",
+  "iso2": "GB",
+  "name": "School of Slavonic and East European Studies, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ssees.ac.uk"
+ },
+ {
+  "domain": "staffs.ac.uk",
+  "iso2": "GB",
+  "name": "Staffordshire University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://staffs.ac.uk"
+ },
+ {
+  "domain": "st-andrews.ac.uk",
+  "iso2": "GB",
+  "name": "University of St. Andrews",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://st-andrews.ac.uk"
+ },
+ {
+  "domain": "st-and.ac.uk",
+  "iso2": "GB",
+  "name": "University of St. Andrews",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://st-and.ac.uk"
+ },
+ {
+  "domain": "stir.ac.uk",
+  "iso2": "GB",
+  "name": "University of Stirling",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://stir.ac.uk"
+ },
+ {
+  "domain": "st-patricks.ac.uk",
+  "iso2": "GB",
+  "name": "St.Patrick's International College, London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://st-patricks.ac.uk"
+ },
+ {
+  "domain": "strath.ac.uk",
+  "iso2": "GB",
+  "name": "University of Strathclyde",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://strath.ac.uk"
+ },
+ {
+  "domain": "sunderland.ac.uk",
+  "iso2": "GB",
+  "name": "University of Sunderland",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sunderland.ac.uk"
+ },
+ {
+  "domain": "surrey.ac.uk",
+  "iso2": "GB",
+  "name": "University of Surrey",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://surrey.ac.uk"
+ },
+ {
+  "domain": "sussex.ac.uk",
+  "iso2": "GB",
+  "name": "University of Sussex",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://sussex.ac.uk"
+ },
+ {
+  "domain": "swan.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wales, Swansea",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://swan.ac.uk"
+ },
+ {
+  "domain": "tcm.ac.uk",
+  "iso2": "GB",
+  "name": "Trinity College of Music",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://tcm.ac.uk"
+ },
+ {
+  "domain": "tees.ac.uk",
+  "iso2": "GB",
+  "name": "University of Teesside",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://tees.ac.uk"
+ },
+ {
+  "domain": "trinity-cm.ac.uk",
+  "iso2": "GB",
+  "name": "Trinity College Carmarthen",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://trinity-cm.ac.uk"
+ },
+ {
+  "domain": "tvu.ac.uk",
+  "iso2": "GB",
+  "name": "Thames Valley University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://tvu.ac.uk"
+ },
+ {
+  "domain": "uclan.ac.uk",
+  "iso2": "GB",
+  "name": "University of Central Lancashire",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uclan.ac.uk"
+ },
+ {
+  "domain": "ucs.ac.uk",
+  "iso2": "GB",
+  "name": "University Campus Suffolk",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ucs.ac.uk"
+ },
+ {
+  "domain": "uea.ac.uk",
+  "iso2": "GB",
+  "name": "University of East Anglia",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uea.ac.uk"
+ },
+ {
+  "domain": "uel.ac.uk",
+  "iso2": "GB",
+  "name": "University of East London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uel.ac.uk"
+ },
+ {
+  "domain": "ukc.ac.uk",
+  "iso2": "GB",
+  "name": "University of Kent at Canterbury",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ukc.ac.uk"
+ },
+ {
+  "domain": "ulsop.ac.uk",
+  "iso2": "GB",
+  "name": "School of Pharmacy, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ulsop.ac.uk"
+ },
+ {
+  "domain": "umds.ac.uk",
+  "iso2": "GB",
+  "name": "United Medical and Dental Schools, University of London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://umds.ac.uk"
+ },
+ {
+  "domain": "unl.ac.uk",
+  "iso2": "GB",
+  "name": "University of North London",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://unl.ac.uk"
+ },
+ {
+  "domain": "northumbria.ac.uk",
+  "iso2": "GB",
+  "name": "Northumbria University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://northumbria.ac.uk"
+ },
+ {
+  "domain": "uwcm.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wales College of Medicine",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uwcm.ac.uk"
+ },
+ {
+  "domain": "uwe.ac.uk",
+  "iso2": "GB",
+  "name": "University of the West of England, Bristol",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uwe.ac.uk"
+ },
+ {
+  "domain": "uwic.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wales Institute, Cardiff",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://uwic.ac.uk"
+ },
+ {
+  "domain": "wales.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wales",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://wales.ac.uk"
+ },
+ {
+  "domain": "warnborough.edu",
+  "iso2": "GB",
+  "name": "Warnborough University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://warnborough.edu"
+ },
+ {
+  "domain": "warwick.ac.uk",
+  "iso2": "GB",
+  "name": "University of Warwick",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://warwick.ac.uk"
+ },
+ {
+  "domain": "westminster.ac.uk",
+  "iso2": "GB",
+  "name": "University of Westminster",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://westminster.ac.uk"
+ },
+ {
+  "domain": "williamgilbert.co.uk",
+  "iso2": "GB",
+  "name": "William Gilbert College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://williamgilbert.co.uk"
+ },
+ {
+  "domain": "wimbledon.ac.uk",
+  "iso2": "GB",
+  "name": "Wimbledon School of Art",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://wimbledon.ac.uk"
+ },
+ {
+  "domain": "wlv.ac.uk",
+  "iso2": "GB",
+  "name": "University of Wolverhampton",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://wlv.ac.uk"
+ },
+ {
+  "domain": "worc.ac.uk",
+  "iso2": "GB",
+  "name": "University of Worcester",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://worc.ac.uk"
+ },
+ {
+  "domain": "york.ac.uk",
+  "iso2": "GB",
+  "name": "University of York",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://york.ac.uk"
+ },
+ {
+  "domain": "middlesbro.ac.uk",
+  "iso2": "GB",
+  "name": "Middlesbrough College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://middlesbro.ac.uk"
+ },
+ {
+  "domain": "mbro.ac.uk",
+  "iso2": "GB",
+  "name": "Middlesbrough College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://mbro.ac.uk"
+ },
+ {
+  "domain": "stmarys.ac.uk",
+  "iso2": "GB",
+  "name": "St Mary's University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://stmarys.ac.uk"
+ },
+ {
+  "domain": "leedstrinity.ac.uk",
+  "iso2": "GB",
+  "name": "Leeds Trinity University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://leedstrinity.ac.uk"
+ },
+ {
+  "domain": "eastcoast.ac.uk",
+  "iso2": "GB",
+  "name": "East Coast College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://eastcoast.ac.uk"
+ },
+ {
+  "domain": "swansea.ac.uk",
+  "iso2": "GB",
+  "name": "Swansea University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://swansea.ac.uk"
+ },
+ {
+  "domain": "yorksj.ac.uk",
+  "iso2": "GB",
+  "name": "York St. John University",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://yorksj.ac.uk"
+ },
+ {
+  "domain": "cavc.ac.uk",
+  "iso2": "GB",
+  "name": "Cardiff and Vale College",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://cavc.ac.uk"
+ },
+ {
+  "domain": "claeh.edu.uy",
+  "iso2": "UY",
+  "name": "Insituto Universitario - Centro Latinoamericano de Economia Humana - IU Claeh",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://claeh.edu.uy"
+ },
+ {
+  "domain": "ort.edu.uy",
+  "iso2": "UY",
+  "name": "Universidad ORT Uruguay",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ort.edu.uy"
+ },
+ {
+  "domain": "ucu.edu.uy",
+  "iso2": "UY",
+  "name": "Universidad Cat\u00f3lica del Uruguay",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ucu.edu.uy"
+ },
+ {
+  "domain": "ude.edu.uy",
+  "iso2": "UY",
+  "name": "Universidad de la Empresa (UDE)",
+  "source": "hipo:2026-09-18",
+  "type_hint": "university",
+  "url": "https://ude.edu.uy"
  }
 ]
