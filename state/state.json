@@ -245,6 +245,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "afghanuniversity.edu.af": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "afit.edu": {
       "code": 0,
       "confidence": 0,
@@ -835,6 +840,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "aria.edu.af": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "arizona.edu": {
       "code": 200,
       "confidence": 85,
@@ -1050,6 +1060,11 @@
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "au.edu.af": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "au.edu.az": {
       "code": 200,
       "confidence": 60,
@@ -1059,6 +1074,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "auaf.edu.af": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "aubg.bg": {
       "code": 200,
@@ -1185,6 +1205,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ba.edu.af": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+substantial-content+non-educational-content"
+    },
     "baa.by": {
       "code": 200,
       "confidence": 20,
@@ -1199,6 +1224,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "badakhshan.edu.af": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+substantial-content+non-educational-content"
     },
     "bahiana.edu.br": {
       "code": 200,
@@ -1534,6 +1564,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "bible.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "bijsnigeria.org": {
       "code": 200,
@@ -13890,6 +13925,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "taftu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "talladega.brinkster.net": {
       "code": 0,
       "confidence": 0,
@@ -15015,6 +15055,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "uiu.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "uiuc.edu": {
       "code": 200,
       "confidence": 40,
@@ -16045,6 +16090,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "ursinus.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "us.es": {
       "code": 0,
       "confidence": 0,
@@ -16199,6 +16249,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "usu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "usuhs.mil": {
       "code": 0,
@@ -16385,6 +16440,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "uvsc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uvu.edu": {
       "code": 200,
       "confidence": 90,
@@ -16435,10 +16495,65 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "uwm.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "uwo.ca": {
       "code": 200,
       "confidence": 75,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+substantial-content"
+    },
+    "uwosh.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uwp.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uwplatt.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "uwrf.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uwsa.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "uwsp.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uwstout.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uwsuper.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uww.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uwyo.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "uzh.ch": {
       "code": 200,
@@ -16449,6 +16564,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
+    },
+    "valdosta.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "valenciacollege.edu": {
       "code": 200,
@@ -16465,6 +16585,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "valpo.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "vancouver.wsu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "vanderbilt.edu": {
       "code": 200,
       "confidence": 60,
@@ -16479,6 +16609,26 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content+non-educational-content"
+    },
+    "vassar.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "vccs.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "vcsu.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "vcu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "vdpacollegesangli.org": {
       "code": 0,
@@ -16510,6 +16660,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "vgcc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "vggu.ru": {
       "code": 200,
       "confidence": 30,
@@ -16519,6 +16674,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "vic.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "victor-hugo-volvic.ent.auvergnerhonealpes.fr": {
       "code": 200,
@@ -16539,6 +16699,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "villanova.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "virginia.edu": {
       "code": 200,
@@ -16565,6 +16730,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "vjc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "vki.ac.be": {
       "code": 0,
       "confidence": 0,
@@ -16584,6 +16754,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "vmi.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "vmspd.com": {
       "code": 200,
@@ -16630,6 +16805,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "vsu.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "vszdrav.cz": {
       "code": 200,
       "confidence": 30,
@@ -16639,6 +16819,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "vtc.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:vermontstate.edu"
     },
     "vu.edu.au": {
       "code": 200,
@@ -16665,10 +16850,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "vwc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "wab.edu.pl": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wabash.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "wagner.edu": {
       "code": 200,
@@ -16705,10 +16900,25 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "wallawalla.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "walsallacademy.com": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "walshcollege.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "warren-wilson.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "wartburg.edu": {
       "code": 403,
@@ -16719,6 +16929,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "washcoll.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "washington.edu": {
       "code": 200,
@@ -16745,10 +16960,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "waubonsee.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wayne.edu": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "waynesburg.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "waynescollegeofbeauty.com": {
       "code": 200,
@@ -16765,7 +16990,22 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "wcmo.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wcslc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "wcsu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wcu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -16774,6 +17014,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wcupa.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "wdu.edu.cn": {
       "code": 0,
@@ -16800,6 +17045,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "weber.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "webetab.ac-bordeaux.fr": {
       "code": 200,
       "confidence": 20,
@@ -16809,6 +17059,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "webster.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "welcome.miami.edu": {
       "code": 200,
@@ -16820,10 +17075,25 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "wellesley.edu": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking-linkfarm"
+    },
+    "wells.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wenona.nsw.edu.au": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "wesley.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "wesley.wa.edu.au": {
       "code": 200,
@@ -16860,6 +17130,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "westcoastuniversity.edu": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "soft-404/block-page"
+    },
     "western.edu": {
       "code": 200,
       "confidence": 90,
@@ -16870,6 +17145,16 @@
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "westfield.mass.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "westga.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "westherts.ac.uk": {
       "code": 200,
       "confidence": 60,
@@ -16879,6 +17164,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "westliberty.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "westminster-mo.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:wcmo.edu"
     },
     "westminster.edu": {
       "code": 200,
@@ -16895,10 +17190,30 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "wfu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wgu.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "whatcom.edu": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "wheaton.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "wheatonma.edu": {
+      "code": 404,
+      "confidence": 5,
+      "reason": "http-404"
     },
     "wheelock.edu": {
       "code": 0,
@@ -16910,10 +17225,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "whitman.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "whittier.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "whitworth.edu": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
     "whu.edu.cn": {
       "code": 200,
@@ -16930,10 +17255,40 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "wichita.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "widener.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wilberforce.edu": {
+      "code": 202,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "wileyc.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wilkes.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "willamette.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "williams.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "williamsbaptistuniversity.com": {
       "code": 200,
@@ -16944,6 +17299,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "wilmington.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "wilmu.edu": {
       "code": 200,
@@ -16959,6 +17319,16 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "winona.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "winthrop.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "wisc.edu": {
       "code": 200,
@@ -16980,6 +17350,31 @@
       "confidence": 5,
       "reason": "http-500"
     },
+    "wit.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wittenberg.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wiu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "wjc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "wku.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wlac.edu": {
       "code": 403,
       "confidence": 5,
@@ -16990,17 +17385,67 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "wlsc.wvnet.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "wlu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wm.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "wmc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "wmcc.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "wmich.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wmitchell.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "wmpenn.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wmwoods.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "wne.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wnec.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "wnmu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "wofford.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -17015,6 +17460,21 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "wpi.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "wpunj.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "wright.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wscal.edu": {
       "code": 200,
       "confidence": 60,
@@ -17025,10 +17485,25 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "wtamu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wts.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wu.ac.at": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "wuacc.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "wur.nl": {
       "code": 200,
@@ -17050,10 +17525,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "wvu.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "wvwc.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "wwu.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "www-en.hnu.edu.cn": {
       "code": 200,
@@ -17092,8 +17577,8 @@
     },
     "www5.usp.br": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "wyden.com.br": {
       "code": 200,
@@ -17120,10 +17605,15 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "xula.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "yabatech.edu.ng": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "yafa.am": {
       "code": 200,
@@ -17132,8 +17622,13 @@
     },
     "yale.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ycp.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "yescollege.com.au": {
       "code": 200,
@@ -17170,7 +17665,17 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ysu.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "yti.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "yu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -17355,6 +17860,10 @@
     },
     "adventista.edu.br": "2001-06-27",
     "afa.edu.pl": "2025-10-30",
+    "afghanuniversity.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "afit.edu": "1999-03-02",
     "agilemind.com": "2002-12-18",
     "agnesscott.edu": "1996-06-05",
@@ -17635,6 +18144,10 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "aria.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "arizona.edu": "1986-01-23",
     "arizonaacademy.com": "1999-11-16",
     "arizonaacademyofscience.org": "2003-04-25",
@@ -17730,6 +18243,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "au.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "au.edu.az": {
       "reg": "",
       "ts": "2026-09-15"
@@ -17737,6 +18254,10 @@
     "aua.am": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "auaf.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
     },
     "aubg.bg": {
       "reg": "",
@@ -17790,6 +18311,10 @@
       "ts": "2026-09-15"
     },
     "azwestern.edu": "2002-01-08",
+    "ba.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "baa.by": {
       "reg": "",
       "ts": "2026-09-15"
@@ -17798,6 +18323,10 @@
     "bac.qld.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "badakhshan.edu.af": {
+      "reg": "",
+      "ts": "2026-09-19"
     },
     "bahiana.edu.br": "2007-04-23",
     "bahnhof.com.br": "2004-02-13",
@@ -17934,6 +18463,7 @@
       "ts": "2026-09-15"
     },
     "bhsu.edu": "1994-06-20",
+    "bible.edu": "1995-07-30",
     "bijsnigeria.org": "2021-04-21",
     "billanook.vic.edu.au": {
       "reg": "",
@@ -23094,6 +23624,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "taftu.edu": "1995-11-08",
     "talladega.brinkster.net": {
       "reg": "",
       "ts": "2026-09-18"
@@ -23534,6 +24065,7 @@
     "uio.no": "1999-11-14",
     "uiowa.edu": "1988-03-30",
     "uis.edu": "1995-05-09",
+    "uiu.edu": "1994-09-01",
     "uiuc.edu": "1985-07-18",
     "uiw.edu": "1996-08-27",
     "uiwtx.edu": "1996-04-08",
@@ -24008,6 +24540,7 @@
     },
     "uri.edu": "1989-02-02",
     "urich.edu": "1989-01-05",
+    "ursinus.edu": "1995-05-15",
     "us.es": {
       "reg": "",
       "ts": "2026-09-18"
@@ -24083,6 +24616,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "usu.edu": "1988-06-03",
     "usuhs.mil": {
       "reg": "",
       "ts": "2026-09-19"
@@ -24137,6 +24671,10 @@
     "uva.br": "1996-05-17",
     "uva.nl": "1988-10-12",
     "uvm.edu": "1987-04-14",
+    "uvsc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "uw.edu": "1999-03-05",
     "uwa.edu": "1999-12-22",
     "uwa.edu.au": {
@@ -24152,7 +24690,18 @@
     "uwf.edu": "1990-01-24",
     "uwgb.edu": "1990-08-08",
     "uwlax.edu": "1990-01-31",
+    "uwm.edu": "1989-06-21",
     "uwo.ca": "2000-10-13",
+    "uwosh.edu": "1990-08-20",
+    "uwp.edu": "1986-07-10",
+    "uwplatt.edu": "1989-11-15",
+    "uwrf.edu": "1990-03-21",
+    "uwsa.edu": "1990-11-16",
+    "uwsp.edu": "1992-08-31",
+    "uwstout.edu": "1991-05-13",
+    "uwsuper.edu": "1991-02-01",
+    "uww.edu": "1990-04-26",
+    "uwyo.edu": "1988-06-21",
     "uzh.ch": {
       "reg": "",
       "ts": "2026-09-15"
@@ -24161,18 +24710,28 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "valdosta.edu": "1997-01-24",
     "valenciacollege.edu": "2011-03-22",
     "validate.perfdrive.com": {
       "reg": "",
       "ts": "2026-09-13"
     },
     "valleycollege.edu": "2002-02-12",
+    "valpo.edu": "1992-06-17",
+    "vancouver.wsu.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "vanderbilt.edu": "1987-07-27",
     "vanguard.edu": "1998-08-21",
     "varb.mil.by": {
       "reg": "",
       "ts": "2026-09-15"
     },
+    "vassar.edu": "1990-09-18",
+    "vccs.edu": "1993-02-08",
+    "vcsu.edu": "2000-01-27",
+    "vcu.edu": "1988-11-11",
     "vdpacollegesangli.org": {
       "reg": "",
       "ts": "2026-09-17"
@@ -24191,6 +24750,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "vgcc.edu": "2002-02-04",
     "vggu.ru": {
       "reg": "",
       "ts": "2026-09-13"
@@ -24198,6 +24758,10 @@
     "vgifk.ru": {
       "reg": "",
       "ts": "2026-09-13"
+    },
+    "vic.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
     },
     "victor-hugo-volvic.ent.auvergnerhonealpes.fr": {
       "reg": "",
@@ -24212,6 +24776,7 @@
       "ts": "2026-09-17"
     },
     "villablanche-menton.fr": "2017-06-12",
+    "villanova.edu": "1998-03-19",
     "virginia.edu": "1986-03-19",
     "visioneyeinstitute.com.au": {
       "reg": "",
@@ -24229,6 +24794,10 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "vjc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "vki.ac.be": {
       "reg": "",
       "ts": "2026-09-15"
@@ -24242,6 +24811,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "vmi.edu": "1990-11-07",
     "vmspd.com": "2007-01-18",
     "vmspd.org": "2024-12-13",
     "voorhees.edu": "1996-05-15",
@@ -24260,8 +24830,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "vsu.edu": "1991-05-10",
     "vszdrav.cz": "2005-02-14",
     "vt.edu": "1987-11-18",
+    "vtc.edu": "2001-01-03",
     "vu.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -24279,7 +24851,12 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "vwc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "wab.edu.pl": "2022-02-14",
+    "wabash.edu": "1993-06-07",
     "waifs.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -24294,12 +24871,16 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "wallawalla.edu": "2007-05-02",
     "walsallacademy.com": "2002-10-01",
+    "walshcollege.edu": "1999-07-02",
+    "warren-wilson.edu": "1994-03-15",
     "wartburg.edu": "1994-05-27",
     "warwick.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
     },
+    "washcoll.edu": "1992-12-16",
     "washington.edu": "1986-09-04",
     "washu.edu": "1998-04-29",
     "waterbury.k12.ct.us": {
@@ -24307,18 +24888,27 @@
       "ts": "2026-09-14"
     },
     "wau.edu": "2009-06-11",
+    "waubonsee.edu": "2002-01-28",
     "wayne.edu": "1988-01-29",
+    "waynesburg.edu": "1994-12-21",
     "waynescollegeofbeauty.com": "2019-04-13",
     "waynescollegeofbeautyinc.com": "2016-12-12",
     "wce.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
     },
+    "wcmo.edu": "1993-01-29",
+    "wcslc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "wcsu.edu": "1995-10-30",
+    "wcu.edu": "1990-01-26",
     "wcu.edu.az": {
       "reg": "",
       "ts": "2026-09-15"
     },
+    "wcupa.edu": "1990-09-17",
     "wdu.edu.cn": {
       "reg": "",
       "ts": "2026-09-15"
@@ -24336,6 +24926,7 @@
       "ts": "2026-09-16"
     },
     "webb.edu": "2013-06-13",
+    "weber.edu": "1989-12-20",
     "webetab.ac-bordeaux.fr": {
       "reg": "",
       "ts": "2026-09-16"
@@ -24344,6 +24935,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "webster.edu": "1996-01-28",
     "welcome.miami.edu": {
       "reg": "",
       "ts": "2026-09-16"
@@ -24352,9 +24944,15 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "wellesley.edu": "1986-07-10",
+    "wells.edu": "1993-11-11",
     "wenona.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "wesley.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
     },
     "wesley.wa.edu.au": {
       "reg": "",
@@ -24369,26 +24967,40 @@
     "wesleyseminary.edu": "2006-05-09",
     "westal.edu": "1995-03-31",
     "westbournegrammar.com": "2002-06-17",
+    "westcoastuniversity.edu": "2004-01-28",
     "western.edu": "1995-03-09",
     "westernsydney.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
     },
+    "westfield.mass.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "westga.edu": "1993-07-19",
     "westherts.ac.uk": {
       "reg": "",
       "ts": "2026-09-13"
     },
     "westhillscollege.com": "2000-05-03",
+    "westliberty.edu": "2006-07-07",
+    "westminster-mo.edu": "1996-01-30",
     "westminster.edu": "1993-04-29",
     "westmont.edu": "1991-04-11",
     "westvalley.edu": "1996-10-18",
+    "wfu.edu": "1986-03-03",
+    "wgu.edu": "1997-04-17",
     "whatcom.edu": "2010-09-02",
+    "wheaton.edu": "1991-11-01",
+    "wheatonma.edu": "1992-10-06",
     "wheelock.edu": "1996-05-10",
     "whitehouse-design.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
     },
+    "whitman.edu": "1992-09-24",
     "whittier.edu": "1993-08-19",
+    "whitworth.edu": "1994-01-18",
     "whu.edu.cn": {
       "reg": "",
       "ts": "2026-09-15"
@@ -24398,9 +25010,16 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "wichita.edu": "1997-12-02",
+    "widener.edu": "1990-07-24",
+    "wilberforce.edu": "1991-01-21",
     "wileyc.edu": "1997-07-09",
+    "wilkes.edu": "1991-02-13",
+    "willamette.edu": "1991-06-03",
+    "williams.edu": "1986-09-29",
     "williamsbaptistuniversity.com": "2017-07-14",
     "williamsbu.edu": "2018-06-20",
+    "wilmington.edu": "1993-08-27",
     "win.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -24409,6 +25028,8 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "winona.edu": "2000-01-06",
+    "winthrop.edu": "1992-09-21",
     "wisc.edu": "1985-09-30",
     "wisdom.edu.al": {
       "reg": "",
@@ -24419,22 +25040,66 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "wit.edu": "1991-09-25",
+    "wittenberg.edu": "1989-12-01",
+    "wiu.edu": "1995-01-05",
+    "wjc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "wku.edu": "1986-07-10",
     "wlac.edu": "2002-06-25",
+    "wlsc.wvnet.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "wlu.edu": "1989-11-21",
     "wm.edu": "1988-10-19",
+    "wmc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
     "wmcc.edu": "2008-03-20",
+    "wmich.edu": "1987-12-09",
+    "wmitchell.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "wmpenn.edu": "1993-11-16",
+    "wmwoods.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "wnec.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
+    },
+    "wnmu.edu": "1992-01-23",
+    "wofford.edu": "1990-09-28",
     "woodbury.edu": "1994-10-26",
     "wooster.edu": "1990-04-16",
+    "wpi.edu": "1988-03-22",
+    "wpunj.edu": "1997-08-07",
+    "wright.edu": "1986-03-03",
     "wscal.edu": "2003-05-06",
     "wsu.edu": "1987-04-14",
+    "wtamu.edu": "1992-01-23",
+    "wts.edu": "1995-09-10",
     "wu.ac.at": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "wuacc.edu": {
+      "reg": "",
+      "ts": "2026-09-19"
     },
     "wur.nl": "1998-08-11",
     "wustl.edu": "1987-12-07",
     "wvc.surrey.sch.uk": "2015-07-21",
     "wvm.edu": "2002-01-09",
+    "wvu.edu": "1992-05-28",
     "wvwc.edu": "1994-10-20",
+    "wwu.edu": "1987-04-14",
     "www-en.hnu.edu.cn": {
       "reg": "",
       "ts": "2026-09-13"
@@ -24471,6 +25136,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "xula.edu": "1994-03-24",
     "yabatech.edu.ng": {
       "reg": "",
       "ts": "2026-09-14"
@@ -24480,6 +25146,7 @@
       "ts": "2026-09-14"
     },
     "yale.edu": "1987-03-17",
+    "ycp.edu": "1995-12-06",
     "yescollege.com.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -24497,7 +25164,9 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "ysu.edu": "1989-01-27",
     "yti.edu": "1995-08-24",
+    "yu.edu": "1987-04-04",
     "yvg.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -24580,6 +25249,7 @@
     "advanceenglish.com.au": 0,
     "adventista.edu.br": 1,
     "afa.edu.pl": 1,
+    "afghanuniversity.edu.af": 0,
     "afit.edu": 1,
     "agilemind.com": 0,
     "agnesscott.edu": 0,
@@ -24698,6 +25368,7 @@
     "arcade.now": 0,
     "arcadia.edu": 0,
     "ardestan.iau.ir": 1,
+    "aria.edu.af": 1,
     "arizona.edu": 0,
     "arizonaacademy.com": 1,
     "arizonaacademyofscience.org": 1,
@@ -24741,8 +25412,10 @@
     "attahadi.edu.ly": 0,
     "atu.edu": 0,
     "au.dk": 0,
+    "au.edu.af": 0,
     "au.edu.az": 0,
     "aua.am": 0,
+    "auaf.edu.af": 0,
     "aubg.bg": 1,
     "aubg.edu": 0,
     "auburn.edu": 0,
@@ -24768,9 +25441,11 @@
     "azcu.edu": 1,
     "aztu.edu.az": 0,
     "azwestern.edu": 0,
+    "ba.edu.af": 1,
     "baa.by": 1,
     "babson.edu": 0,
     "bac.qld.edu.au": 0,
+    "badakhshan.edu.af": 1,
     "bahiana.edu.br": 0,
     "bahnhof.com.br": 1,
     "baisbinyominacademy.com": 1,
@@ -24838,6 +25513,7 @@
     "bhclr.edu": 0,
     "bhos.edu.az": 0,
     "bhsu.edu": 0,
+    "bible.edu": 1,
     "bijsnigeria.org": 0,
     "billanook.vic.edu.au": 0,
     "bindelmeercollege.nl": 0,
@@ -27309,6 +27985,7 @@
     "tacomahousing.net": 1,
     "tacomahousing.org": 1,
     "tafeinternational.wa.edu.au": 0,
+    "taftu.edu": 0,
     "talladega.brinkster.net": 1,
     "tamiu.edu": 0,
     "tamu.edu": 0,
@@ -27534,6 +28211,7 @@
     "uio.no": 1,
     "uiowa.edu": 0,
     "uis.edu": 0,
+    "uiu.edu": 0,
     "uiuc.edu": 1,
     "uiw.edu": 0,
     "uiwtx.edu": 1,
@@ -27740,6 +28418,7 @@
     "uq.edu.au": 0,
     "uri.edu": 0,
     "urich.edu": 1,
+    "ursinus.edu": 0,
     "us.es": 1,
     "usafa.af.mil": 1,
     "usafa.edu": 1,
@@ -27771,6 +28450,7 @@
     "ust.edu.al": 0,
     "ust.edu.ph": 0,
     "ustc.edu.cn": 0,
+    "usu.edu": 0,
     "usuhs.mil": 1,
     "ut.ac.ir": 0,
     "ut.edu": 0,
@@ -27808,6 +28488,7 @@
     "uva.br": 0,
     "uva.nl": 0,
     "uvm.edu": 0,
+    "uvsc.edu": 1,
     "uvu.edu": 0,
     "uw.edu": 1,
     "uwa.edu": 0,
@@ -27818,36 +28499,59 @@
     "uwf.edu": 0,
     "uwgb.edu": 0,
     "uwlax.edu": 0,
+    "uwm.edu": 0,
     "uwo.ca": 0,
+    "uwosh.edu": 0,
+    "uwp.edu": 0,
+    "uwplatt.edu": 0,
+    "uwrf.edu": 0,
+    "uwsa.edu": 1,
+    "uwsp.edu": 0,
+    "uwstout.edu": 0,
+    "uwsuper.edu": 0,
+    "uww.edu": 0,
+    "uwyo.edu": 1,
     "uzh.ch": 0,
     "val-oudon.anjou.e-lyco.fr": 1,
+    "valdosta.edu": 0,
     "valenciacollege.edu": 0,
     "validate.perfdrive.com": 2,
     "valleycollege.edu": 0,
+    "valpo.edu": 1,
+    "vancouver.wsu.edu": 0,
     "vanderbilt.edu": 0,
     "vanguard.edu": 0,
     "varb.mil.by": 1,
+    "vassar.edu": 0,
+    "vccs.edu": 0,
+    "vcsu.edu": 1,
+    "vcu.edu": 0,
     "vdpacollegesangli.org": 1,
     "velvatexcollege.com": 1,
     "verechaguine.com": 2,
     "vermontstate.edu": 0,
     "vetmeduni.ac.at": 0,
     "vevey-eps.ch": 0,
+    "vgcc.edu": 0,
     "vggu.ru": 2,
     "vgifk.ru": 0,
+    "vic.edu": 1,
     "victor-hugo-volvic.ent.auvergnerhonealpes.fr": 0,
     "victoriaparkchristianschool.wa.edu.au": 0,
     "victory.nsw.edu.au": 0,
     "villablanche-menton.fr": 0,
+    "villanova.edu": 0,
     "virginia.edu": 0,
     "visioneyeinstitute.com.au": 0,
     "vit.edu.au": 0,
     "viu.ba": 0,
     "vives.be": 1,
+    "vjc.edu": 1,
     "vki.ac.be": 1,
     "vlerick.com": 0,
     "vlgr.ranepa.ru": 0,
     "vlk.ac.at": 1,
+    "vmi.edu": 0,
     "vmspd.com": 1,
     "vmspd.org": 0,
     "voorhees.edu": 0,
@@ -27857,14 +28561,18 @@
     "vstu.by": 0,
     "vsu.am": 0,
     "vsu.by": 0,
+    "vsu.edu": 1,
     "vszdrav.cz": 1,
     "vt.edu": 0,
+    "vtc.edu": 1,
     "vu.edu.au": 0,
     "vu.nl": 0,
     "vub.ac.be": 1,
     "vub.be": 0,
     "vub.edu.ba": 0,
+    "vwc.edu": 1,
     "wab.edu.pl": 0,
+    "wabash.edu": 0,
     "wagner.edu": 0,
     "waifs.edu.au": 0,
     "waifs.wa.edu.au": 1,
@@ -27872,30 +28580,45 @@
     "waketech.edu": 0,
     "waldenu.edu": 0,
     "walford.net.au": 1,
+    "wallawalla.edu": 0,
     "walsallacademy.com": 0,
+    "walshcollege.edu": 0,
+    "warren-wilson.edu": 0,
     "wartburg.edu": 1,
     "warwick.edu.au": 0,
+    "washcoll.edu": 0,
     "washington.edu": 0,
     "washjeff.edu": 4,
     "washu.edu": 0,
     "waterbury.k12.ct.us": 0,
     "wau.edu": 0,
+    "waubonsee.edu": 0,
     "wayne.edu": 1,
+    "waynesburg.edu": 0,
     "waynescollegeofbeauty.com": 1,
     "waynescollegeofbeautyinc.com": 0,
     "wce.edu.au": 0,
+    "wcmo.edu": 0,
+    "wcslc.edu": 1,
     "wcsu.edu": 0,
+    "wcu.edu": 0,
     "wcu.edu.az": 0,
+    "wcupa.edu": 0,
     "wdu.edu.cn": 1,
     "web.mit.edu": 0,
     "web.ub.edu": 1,
     "web.umons.ac.be": 1,
     "webb.edu": 0,
+    "weber.edu": 0,
     "webetab.ac-bordeaux.fr": 1,
     "webster.ac.at": 0,
+    "webster.edu": 0,
     "welcome.miami.edu": 0,
     "welcome.solano.edu": 0,
+    "wellesley.edu": 1,
+    "wells.edu": 0,
     "wenona.nsw.edu.au": 0,
+    "wesley.edu": 1,
     "wesley.wa.edu.au": 0,
     "wesleyan.edu": 0,
     "wesleyancollege.edu": 1,
@@ -27903,45 +28626,88 @@
     "wesleyseminary.edu": 0,
     "westal.edu": 1,
     "westbournegrammar.com": 0,
+    "westcoastuniversity.edu": 1,
     "western.edu": 0,
     "westernsydney.edu.au": 0,
+    "westfield.mass.edu": 1,
+    "westga.edu": 0,
     "westherts.ac.uk": 0,
     "westhillscollege.com": 0,
+    "westliberty.edu": 0,
+    "westminster-mo.edu": 1,
     "westminster.edu": 0,
     "westmont.edu": 0,
     "westvalley.edu": 0,
+    "wfu.edu": 0,
+    "wgu.edu": 0,
     "whatcom.edu": 1,
+    "wheaton.edu": 1,
+    "wheatonma.edu": 1,
     "wheelock.edu": 1,
     "whitehouse-design.edu.au": 0,
+    "whitman.edu": 0,
     "whittier.edu": 0,
+    "whitworth.edu": 0,
     "whu.edu.cn": 1,
     "wi.edu": 0,
     "wic.edu.au": 1,
+    "wichita.edu": 0,
+    "widener.edu": 0,
+    "wilberforce.edu": 1,
     "wileyc.edu": 0,
+    "wilkes.edu": 0,
+    "willamette.edu": 0,
+    "williams.edu": 1,
     "williamsbaptistuniversity.com": 1,
     "williamsbu.edu": 0,
+    "wilmington.edu": 0,
     "wilmu.edu": 0,
     "win.edu.au": 0,
     "wincollege.edu.au": 1,
+    "winona.edu": 0,
+    "winthrop.edu": 0,
     "wisc.edu": 0,
     "wisdom.edu.al": 1,
     "wisdomacademy.sch.id": 1,
     "wisdomuniversity.eu": 2,
+    "wit.edu": 0,
+    "wittenberg.edu": 0,
+    "wiu.edu": 0,
+    "wjc.edu": 1,
+    "wku.edu": 0,
     "wlac.edu": 1,
     "wlc.edu": 0,
+    "wlsc.wvnet.edu": 1,
+    "wlu.edu": 0,
     "wm.edu": 0,
+    "wmc.edu": 1,
     "wmcc.edu": 0,
+    "wmich.edu": 0,
+    "wmitchell.edu": 1,
+    "wmpenn.edu": 0,
+    "wmwoods.edu": 1,
     "wne.edu": 0,
+    "wnec.edu": 1,
+    "wnmu.edu": 0,
+    "wofford.edu": 0,
     "woodbury.edu": 0,
     "wooster.edu": 0,
+    "wpi.edu": 0,
+    "wpunj.edu": 0,
+    "wright.edu": 0,
     "wscal.edu": 0,
     "wsu.edu": 0,
+    "wtamu.edu": 0,
+    "wts.edu": 0,
     "wu.ac.at": 0,
+    "wuacc.edu": 1,
     "wur.nl": 0,
-    "wustl.edu": 1,
+    "wustl.edu": 2,
     "wvc.surrey.sch.uk": 0,
     "wvm.edu": 0,
+    "wvu.edu": 1,
     "wvwc.edu": 0,
+    "wwu.edu": 0,
     "www-en.hnu.edu.cn": 0,
     "www2.oakwood.edu": 0,
     "www2.palomar.edu": 1,
@@ -27954,18 +28720,22 @@
     "xavier.edu": 0,
     "xjtu.edu.cn": 1,
     "xmu.edu.cn": 0,
-    "xn--h1alg0d.xn--b1aew.xn--p1ai": 5,
+    "xn--h1alg0d.xn--b1aew.xn--p1ai": 6,
+    "xula.edu": 0,
     "yabatech.edu.ng": 0,
-    "yafa.am": 1,
+    "yafa.am": 2,
     "yale.edu": 0,
+    "ycp.edu": 0,
     "yescollege.com.au": 0,
     "yhc.edu": 0,
     "yoec.edu": 0,
     "yonsei.ac.kr": 0,
     "yosemite.edu": 0,
-    "ysitc.am": 1,
+    "ysitc.am": 2,
     "ysu.am": 0,
+    "ysu.edu": 0,
     "yti.edu": 0,
+    "yu.edu": 0,
     "yvg.vic.edu.au": 2,
     "ywamcanberra.org": 0,
     "ywamperth.org.au": 0,
@@ -27987,13 +28757,13 @@
     "skipped_service": 5,
     "unmapped": 0
   },
-  "last_run": "2026-09-19T17:05:49+00:00",
+  "last_run": "2026-09-19T18:52:27+00:00",
   "last_verify": {
-    "added_active": 74,
-    "at": "2026-09-19 16:07 UTC",
-    "pending_left": 7899,
+    "added_active": 69,
+    "at": "2026-09-19 18:52 UTC",
+    "pending_left": 7900,
     "reverified": 15,
-    "validated": 118
+    "validated": 116
   },
   "moved": {
     "adventista.edu.br": "uniaene.edu.br",
@@ -28143,9 +28913,11 @@
     "utd.edu": "utdallas.edu",
     "uw.edu": "washington.edu",
     "vmspd.com": "vmspd.org",
+    "vtc.edu": "vermontstate.edu",
     "vub.ac.be": "vub.be",
     "waifs.wa.edu.au": "waifs.edu.au",
     "waynescollegeofbeauty.com": "waynescollegeofbeautyinc.com",
+    "westminster-mo.edu": "wcmo.edu",
     "williamsbaptistuniversity.com": "williamsbu.edu",
     "wustl.edu": "washu.edu",
     "yafa.am": "fineart.ac.am"
