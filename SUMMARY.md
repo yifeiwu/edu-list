@@ -1,29 +1,29 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-19 13:49 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-19 16:07 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **3341** across **91** countries
-- Active: **2256** (68%) · Inaccessible: **1085** (32%)
-- Pending queue: **8000** unvalidated candidates
-- Known registration age: **2039** domains (median 27 yrs)
+- Domains tracked: **3444** across **91** countries
+- Active: **2330** (68%) · Inaccessible: **1114** (32%)
+- Pending queue: **7899** unvalidated candidates
+- Known registration age: **2126** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-19 12:10 UTC): validated 119, +73 Active, re-verified 15, pending left 7900
+- Verify (2026-09-19 16:07 UTC): validated 118, +74 Active, re-verified 15, pending left 7899
 - Curate (2026-09-19 13:49 UTC): 10685 raw candidates, 100 queued, 6 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1519 | 1154 | 365 |
+| US | 1621 | 1228 | 393 |
 | AU | 346 | 246 | 100 |
 | FR | 340 | 207 | 133 |
 | BR | 191 | 94 | 97 |
 | BE | 81 | 57 | 24 |
-| GB | 59 | 36 | 23 |
+| GB | 60 | 36 | 24 |
 | CN | 57 | 16 | 41 |
 | IN | 56 | 36 | 20 |
 | AT | 41 | 35 | 6 |
@@ -38,12 +38,12 @@ _Generated 2026-09-19 13:49 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2255 |
-| `fetch-error:ConnectionError` | 332 |
-| `http-403` | 188 |
+| `http-2xx-html` | 2330 |
+| `fetch-error:ConnectionError` | 342 |
+| `http-403` | 196 |
 | `low-confidence:http-2xx-html` | 137 |
-| `fetch-error:ConnectTimeout` | 110 |
-| `fetch-error:SSLError` | 83 |
+| `fetch-error:ConnectTimeout` | 115 |
+| `fetch-error:SSLError` | 87 |
 | `empty-body` | 24 |
 | `fetch-error:ReadTimeout` | 11 |
 | `http-404` | 9 |
@@ -53,10 +53,10 @@ _Generated 2026-09-19 13:49 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **3341** (100%)
-- Older than 90 days: **0** (oldest check 2026-09-13)
-- Archived chronic failures (re-check paused): **0**
-- Moved pointers (old domain → new): **147**
+- Verified in last 30 days: **3444** (100%)
+- Older than 90 days: **0** (oldest check 2026-09-14)
+- Archived chronic failures (re-check paused): **1**
+- Moved pointers (old domain → new): **153**
 
 ## Alerts
 
