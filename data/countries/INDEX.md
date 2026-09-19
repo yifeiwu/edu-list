@@ -2,12 +2,14 @@
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| AD | 3 | 3 | 0 |
+| AD | 4 | 4 | 0 |
 | AE | 2 | 0 | 2 |
-| AF | 6 | 3 | 3 |
-| AL | 28 | 15 | 13 |
+| AF | 40 | 26 | 14 |
+| AG | 2 | 2 | 0 |
+| AL | 35 | 17 | 18 |
 | AM | 36 | 21 | 15 |
-| AR | 1 | 1 | 0 |
+| AO | 10 | 2 | 8 |
+| AR | 22 | 15 | 7 |
 | AT | 41 | 35 | 6 |
 | AU | 346 | 246 | 100 |
 | AZ | 11 | 9 | 2 |
@@ -32,7 +34,7 @@
 | CZ | 14 | 3 | 11 |
 | DE | 40 | 29 | 11 |
 | DK | 4 | 4 | 0 |
-| DZ | 4 | 2 | 2 |
+| DZ | 32 | 18 | 14 |
 | EG | 15 | 5 | 10 |
 | ES | 7 | 4 | 3 |
 | FI | 1 | 1 | 0 |
@@ -95,4 +97,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 3545. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 3648. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
