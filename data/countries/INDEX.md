@@ -61,7 +61,7 @@
 | MX | 4 | 2 | 2 |
 | MY | 1 | 1 | 0 |
 | NG | 36 | 23 | 13 |
-| NL | 15 | 11 | 4 |
+| NL | 15 | 12 | 3 |
 | NO | 3 | 2 | 1 |
 | NZ | 2 | 2 | 0 |
 | PE | 3 | 2 | 1 |
@@ -86,7 +86,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1312 | 1000 | 312 |
+| US | 1415 | 1080 | 335 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VE | 1 | 0 | 1 |
@@ -94,4 +94,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 3134. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 3237. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
