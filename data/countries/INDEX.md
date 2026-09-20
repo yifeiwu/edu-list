@@ -17,14 +17,15 @@
 | BB | 1 | 0 | 1 |
 | BD | 80 | 52 | 28 |
 | BE | 122 | 71 | 51 |
-| BF | 2 | 1 | 1 |
-| BG | 34 | 22 | 12 |
+| BF | 3 | 1 | 2 |
+| BG | 59 | 33 | 26 |
 | BH | 15 | 7 | 8 |
-| BI | 4 | 0 | 4 |
+| BI | 7 | 1 | 6 |
 | BJ | 8 | 3 | 5 |
 | BM | 1 | 0 | 1 |
+| BN | 3 | 1 | 2 |
 | BO | 31 | 16 | 15 |
-| BR | 299 | 141 | 158 |
+| BR | 343 | 160 | 183 |
 | BS | 1 | 0 | 1 |
 | BT | 1 | 0 | 1 |
 | BW | 10 | 3 | 7 |
@@ -35,6 +36,7 @@
 | CG | 1 | 1 | 0 |
 | CH | 34 | 24 | 10 |
 | CL | 3 | 3 | 0 |
+| CM | 5 | 1 | 4 |
 | CN | 57 | 16 | 41 |
 | CO | 1 | 1 | 0 |
 | CV | 2 | 1 | 1 |
@@ -62,12 +64,13 @@
 | IT | 11 | 7 | 4 |
 | JP | 19 | 5 | 14 |
 | KE | 6 | 5 | 1 |
+| KH | 22 | 13 | 9 |
 | KR | 9 | 6 | 3 |
 | KW | 1 | 0 | 1 |
 | LY | 6 | 6 | 0 |
 | MA | 4 | 1 | 3 |
 | MK | 2 | 0 | 2 |
-| MM | 1 | 1 | 0 |
+| MM | 6 | 3 | 3 |
 | MR | 1 | 0 | 1 |
 | MX | 4 | 2 | 2 |
 | MY | 1 | 1 | 0 |
@@ -97,7 +100,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1716 | 1294 | 422 |
+| US | 1716 | 1293 | 423 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VE | 1 | 0 | 1 |
@@ -105,4 +108,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4170. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 4278. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.

@@ -1,67 +1,69 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-20 18:07 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-20 21:08 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **4170** across **102** countries
-- Active: **2720** (65%) · Inaccessible: **1450** (35%)
-- Pending queue: **8000** unvalidated candidates
-- Known registration age: **2359** domains (median 28 yrs)
+- Domains tracked: **4278** across **105** countries
+- Active: **2767** (65%) · Inaccessible: **1511** (35%)
+- Pending queue: **7900** unvalidated candidates
+- Known registration age: **2412** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-20 17:45 UTC): validated 121, +46 Active, re-verified 15, pending left 7900
+- Verify (2026-09-20 21:08 UTC): validated 123, +48 Active, re-verified 15, pending left 7900
 - Curate (2026-09-20 18:07 UTC): 10660 raw candidates, 100 queued, 4 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1716 | 1294 | 422 |
+| US | 1716 | 1293 | 423 |
 | AU | 374 | 256 | 118 |
+| BR | 343 | 160 | 183 |
 | FR | 340 | 207 | 133 |
-| BR | 299 | 141 | 158 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
 | BD | 80 | 52 | 28 |
 | AT | 73 | 48 | 25 |
 | GB | 60 | 36 | 24 |
+| BG | 59 | 33 | 26 |
 | CN | 57 | 16 | 41 |
 | IN | 56 | 36 | 20 |
 | BY | 48 | 15 | 33 |
 | AM | 44 | 25 | 19 |
 | AF | 40 | 26 | 14 |
-| DE | 40 | 29 | 11 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2720 |
-| `fetch-error:ConnectionError` | 492 |
-| `http-403` | 239 |
+| `http-2xx-html` | 2767 |
+| `fetch-error:ConnectionError` | 515 |
+| `http-403` | 247 |
+| `fetch-error:ConnectTimeout` | 150 |
 | `low-confidence:http-2xx-html` | 149 |
-| `fetch-error:ConnectTimeout` | 144 |
-| `fetch-error:SSLError` | 123 |
+| `fetch-error:SSLError` | 134 |
 | `empty-body` | 29 |
-| `fetch-error:ReadTimeout` | 16 |
-| `http-404` | 12 |
+| `fetch-error:ReadTimeout` | 17 |
+| `http-404` | 13 |
 | `http-500` | 10 |
 | `http-503` | 9 |
 | `social-only/placeholder` | 5 |
 
 ## Freshness
 
-- Verified in last 30 days: **4170** (100%)
+- Verified in last 30 days: **4278** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **196**
+- Moved pointers (old domain → new): **205**
 
 ## Alerts
 
 - ⚠ `AO`: low Active rate 2/10 (20%) — check for blocks/stale sources
+- ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
 - ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
+- ⚠ `CM`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `CN`: low Active rate 16/57 (28%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 1/18 (6%) — check for blocks/stale sources
