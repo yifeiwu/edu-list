@@ -9,7 +9,7 @@
 | AL | 35 | 17 | 18 |
 | AM | 36 | 21 | 15 |
 | AO | 10 | 2 | 8 |
-| AR | 22 | 15 | 7 |
+| AR | 125 | 89 | 36 |
 | AT | 41 | 35 | 6 |
 | AU | 346 | 246 | 100 |
 | AZ | 11 | 9 | 2 |
@@ -97,4 +97,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 3648. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 3751. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
