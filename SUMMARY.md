@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-20 05:54 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-20 10:08 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **3854** across **95** countries
-- Active: **2576** (67%) · Inaccessible: **1278** (33%)
-- Pending queue: **8000** unvalidated candidates
-- Known registration age: **2223** domains (median 28 yrs)
+- Domains tracked: **3958** across **97** countries
+- Active: **2632** (66%) · Inaccessible: **1326** (34%)
+- Pending queue: **7900** unvalidated candidates
+- Known registration age: **2236** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-20 05:22 UTC): validated 118, +43 Active, re-verified 15, pending left 7900
+- Verify (2026-09-20 10:08 UTC): validated 119, +56 Active, re-verified 15, pending left 7900
 - Curate (2026-09-20 05:54 UTC): 10670 raw candidates, 100 queued, 9 re-cited
 
 ## Countries (top 15 by size)
@@ -24,28 +24,28 @@ _Generated 2026-09-20 05:54 UTC. Full per-country table: [data/countries/INDEX.m
 | BR | 191 | 94 | 97 |
 | AR | 126 | 90 | 36 |
 | BE | 81 | 57 | 24 |
+| BD | 80 | 52 | 28 |
 | AT | 73 | 48 | 25 |
 | GB | 60 | 36 | 24 |
 | CN | 57 | 16 | 41 |
 | IN | 56 | 36 | 20 |
 | AM | 44 | 25 | 19 |
+| BY | 44 | 15 | 29 |
 | AF | 40 | 26 | 14 |
 | DE | 40 | 29 | 11 |
-| NG | 36 | 23 | 13 |
-| AL | 35 | 17 | 18 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2576 |
-| `fetch-error:ConnectionError` | 414 |
-| `http-403` | 216 |
+| `http-2xx-html` | 2632 |
+| `fetch-error:ConnectionError` | 433 |
+| `http-403` | 225 |
 | `low-confidence:http-2xx-html` | 145 |
-| `fetch-error:ConnectTimeout` | 130 |
-| `fetch-error:SSLError` | 100 |
-| `empty-body` | 27 |
-| `fetch-error:ReadTimeout` | 14 |
+| `fetch-error:ConnectTimeout` | 135 |
+| `fetch-error:SSLError` | 108 |
+| `empty-body` | 28 |
+| `fetch-error:ReadTimeout` | 15 |
 | `http-404` | 11 |
 | `http-500` | 10 |
 | `http-503` | 9 |
@@ -53,10 +53,10 @@ _Generated 2026-09-20 05:54 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **3854** (100%)
+- Verified in last 30 days: **3958** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **173**
+- Moved pointers (old domain → new): **178**
 
 ## Alerts
 
