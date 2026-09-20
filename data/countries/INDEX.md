@@ -6,25 +6,30 @@
 | AE | 2 | 0 | 2 |
 | AF | 40 | 26 | 14 |
 | AG | 2 | 2 | 0 |
-| AL | 35 | 17 | 18 |
+| AL | 35 | 18 | 17 |
 | AM | 44 | 25 | 19 |
 | AO | 10 | 2 | 8 |
 | AR | 126 | 90 | 36 |
 | AT | 73 | 48 | 25 |
 | AU | 374 | 256 | 118 |
 | AZ | 35 | 20 | 15 |
-| BA | 27 | 14 | 13 |
+| BA | 35 | 19 | 16 |
 | BB | 1 | 0 | 1 |
 | BD | 80 | 52 | 28 |
-| BE | 81 | 57 | 24 |
+| BE | 122 | 71 | 51 |
 | BF | 2 | 1 | 1 |
 | BG | 34 | 22 | 12 |
 | BH | 15 | 7 | 8 |
 | BI | 4 | 0 | 4 |
-| BJ | 5 | 3 | 2 |
-| BR | 191 | 94 | 97 |
+| BJ | 8 | 3 | 5 |
+| BM | 1 | 0 | 1 |
+| BO | 31 | 16 | 15 |
+| BR | 193 | 95 | 98 |
 | BS | 1 | 0 | 1 |
-| BY | 44 | 15 | 29 |
+| BT | 1 | 0 | 1 |
+| BW | 10 | 3 | 7 |
+| BY | 48 | 15 | 33 |
+| BZ | 5 | 2 | 3 |
 | CA | 32 | 23 | 9 |
 | CD | 5 | 1 | 4 |
 | CG | 1 | 1 | 0 |
@@ -100,4 +105,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 3958. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 4064. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
