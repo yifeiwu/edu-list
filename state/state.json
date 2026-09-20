@@ -790,6 +790,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "anhanguera.com": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "anhembi.br": {
       "code": 200,
       "confidence": 85,
@@ -2590,6 +2595,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "candidomendes.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "canisius.edu": {
       "code": 200,
       "confidence": 60,
@@ -2684,6 +2694,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "castelobranco.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "castleton.edu": {
       "code": 200,
@@ -3144,6 +3159,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:cmc.edu"
+    },
+    "claretiano.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "clarion.edu": {
       "code": 200,
@@ -3990,6 +4010,11 @@
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "creupi.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:sou.unipinhal.edu.br"
+    },
     "crk.umn.edu": {
       "code": 200,
       "confidence": 100,
@@ -4439,6 +4464,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:duny.edu"
+    },
+    "dcc.ufmg.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "dcccd.edu": {
       "code": 200,
@@ -5430,6 +5460,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "epm.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "epoka.edu.al": {
       "code": 200,
       "confidence": 90,
@@ -5629,6 +5664,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "estacio.br": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "estef.edu.br": {
       "code": 403,
@@ -5830,6 +5870,11 @@
       "confidence": 40,
       "reason": "moved-to:eynesbury.edu.au"
     },
+    "faap.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "fabelnet.com.br": {
       "code": 200,
       "confidence": 40,
@@ -5934,6 +5979,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "faculdadescuritiba.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "faculdadesdombosco.edu.br": {
       "code": 404,
@@ -6165,6 +6215,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "feituverava.com.br": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
+    },
     "fepar.edu.br": {
       "code": 0,
       "confidence": 0,
@@ -6304,6 +6359,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix"
+    },
+    "fic.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "fidm.edu": {
       "code": 200,
@@ -6570,6 +6630,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "fua.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "fubk.edu.ng": {
       "code": 200,
       "confidence": 85,
@@ -6664,6 +6729,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "furb.rct-sc.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "furg.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "furman.edu": {
       "code": 200,
@@ -7765,6 +7840,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ibirapuera.br": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "ibnesina.edu.af": {
       "code": 0,
       "confidence": 0,
@@ -8015,10 +8095,20 @@
       "confidence": 5,
       "reason": "http-409"
     },
+    "ime.eb.mil.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "immanuel.sa.edu.au": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "impa.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "impactenglish.edu.au": {
       "code": 200,
@@ -8119,6 +8209,11 @@
       "code": 503,
       "confidence": 5,
       "reason": "http-503"
+    },
+    "insper.edu.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "institut-machtens.be": {
       "code": 200,
@@ -8309,6 +8404,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "ita.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "italo.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uniitalo.com.br"
     },
     "itba.edu.ar": {
       "code": 200,
@@ -10430,6 +10535,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "maua.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "mayo.edu": {
       "code": 403,
       "confidence": 5,
@@ -11584,6 +11694,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "newtonpaiva.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "nftc.edu": {
       "code": 0,
@@ -12780,6 +12895,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "pop-to.rnp.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "port.ac.uk": {
       "code": 200,
       "confidence": 100,
@@ -12975,6 +13095,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "puc-rio.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "puc.ac.bd": {
       "code": 200,
       "confidence": 90,
@@ -12984,6 +13109,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "puccamp.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "pucminas.br": {
       "code": 200,
@@ -13009,6 +13139,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "pucsp.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
     "pulf.org": {
       "code": 200,
@@ -13755,6 +13890,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "saojudas.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:usjt.br"
+    },
     "saosalvador.edu.br": {
       "code": 0,
       "confidence": 0,
@@ -14440,6 +14580,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "smarcos.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "smccd.edu": {
       "code": 200,
       "confidence": 90,
@@ -14570,6 +14715,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sou.unipinhal.edu.br": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix"
+    },
     "southalabama.edu": {
       "code": 200,
       "confidence": 90,
@@ -14664,6 +14814,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sp.senac.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "space.bas.bg": {
       "code": 0,
@@ -14819,6 +14974,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "stcecilia.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "stcl.edu": {
       "code": 0,
@@ -15680,6 +15840,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "toledo.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:unitoledo.br"
+    },
     "tolworthinf.greenschoolsonline.co.uk": {
       "code": 0,
       "confidence": 0,
@@ -16345,6 +16510,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "ucb.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ucb.catolica.edu.br"
+    },
+    "ucb.catolica.edu.br": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "ucb.edu.bh": {
       "code": 200,
       "confidence": 90,
@@ -16419,6 +16594,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ucg.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "uch.edu.ar": {
       "code": 200,
@@ -16520,7 +16700,17 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ucp.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "ucp.edu.ar": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "ucpel.tche.br": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
@@ -16529,6 +16719,21 @@
       "code": 200,
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "ucs.tche.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ucsal.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "ucsal.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ucsb.edu": {
       "code": 200,
@@ -16625,6 +16830,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure"
     },
+    "udesc.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "udmercy.edu": {
       "code": 200,
       "confidence": 90,
@@ -16645,25 +16855,95 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "uece.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uefs.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "uel.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "uem.br": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uema.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "uenf.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "uepb.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uepg.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "uerj.br": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "uern.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "uesb.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "uesc.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "uesiglo21.edu.ar": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "uespi.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "uestc.edu.cn": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ufabc.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ufac.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ufal.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ufar.am": {
       "code": 200,
@@ -16674,6 +16954,21 @@
       "code": 202,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
+    "ufba.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ufc.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "ufcg.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "ufcspa.edu.br": {
       "code": 200,
@@ -16695,10 +16990,25 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "ufgd.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ufjf.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ufl.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ufla.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "uflo.edu.ar": {
       "code": 200,
@@ -16710,17 +17020,47 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "ufma.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "ufmg.br": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "ufms.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ufmt.br": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "ufop.br": {
+      "code": 404,
+      "confidence": 5,
+      "reason": "http-404"
+    },
+    "ufpa.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ufpb.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ufpe.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ufpel.tche.br": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -16750,20 +17090,70 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "ufrpe.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ufrrj.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "ufs.br": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
+    },
+    "ufsc.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ufscar.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ufsia.ac.be": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ufsj.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "ufsm.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uft-plovdiv.bg": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "uftm.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ufu.br": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ufv.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "ufvjm.edu.br": {
+      "code": 445,
+      "confidence": 5,
+      "reason": "http-445"
     },
     "uga.edu": {
       "code": 200,
@@ -16779,6 +17169,11 @@
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "ugf.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ugf.edu": {
       "code": 0,
@@ -17055,6 +17450,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "umc.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "umc.edu": {
       "code": 200,
       "confidence": 90,
@@ -17235,6 +17635,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "unaerp.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "unahur.edu.ar": {
       "code": 200,
       "confidence": 90,
@@ -17254,6 +17659,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "unama.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "unau.edu.ar": {
       "code": 200,
@@ -17370,6 +17780,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "uneb.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "unec.edu.az": {
       "code": 403,
       "confidence": 5,
@@ -17379,6 +17794,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "unesc.rct-sc.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unesp.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "unf.edu": {
       "code": 200,
@@ -17390,10 +17815,15 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "ung.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "ung.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ungs.edu.ar": {
       "code": 403,
@@ -17442,8 +17872,8 @@
     },
     "uni-heidelberg.de": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uni-jena.de": {
       "code": 200,
@@ -17472,8 +17902,8 @@
     },
     "uni-potsdam.de": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uni-ruse.bg": {
       "code": 200,
@@ -17512,8 +17942,8 @@
     },
     "uniacc.cl": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "uniaene.edu.br": {
       "code": 200,
@@ -17524,6 +17954,26 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "uniara.com.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uniara.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unib.br": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ibirapuera.br"
+    },
+    "uniban.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "moved-to:anhanguera.com"
     },
     "unibas.ch": {
       "code": 200,
@@ -17550,6 +18000,16 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "unibosco.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unibrasil.com.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "unibu.org": {
       "code": 200,
       "confidence": 5,
@@ -17559,6 +18019,16 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "unicap.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unicastelo.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "unicatolicaquixada.edu.br": {
       "code": 0,
@@ -17590,6 +18060,26 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "unicid.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "unicruz.tche.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unicsul.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "unidavi.rct-sc.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uniderp.br": {
       "code": 403,
       "confidence": 5,
@@ -17602,8 +18092,18 @@
     },
     "uniel.edu.al": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "unifacs.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "unifap.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "unifapce.edu.br": {
       "code": 200,
@@ -17615,6 +18115,21 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "unifei.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "unifenas.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "unifeso.edu.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "unifi.it": {
       "code": 200,
       "confidence": 60,
@@ -17624,6 +18139,11 @@
       "code": 200,
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "unifor.br": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "unifranz.edu.bo": {
       "code": 200,
@@ -17640,6 +18160,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
     },
+    "uniitalo.com.br": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "unijipa.edu.br": {
       "code": 0,
       "confidence": 0,
@@ -17652,8 +18177,8 @@
     },
     "unileoben.ac.at": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "unimelb.edu": {
       "code": 0,
@@ -17672,8 +18197,8 @@
     },
     "unimi.it": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "unimoron.edu.ar": {
       "code": 200,
@@ -17757,8 +18282,8 @@
     },
     "unishk.edu.al": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "unisq.edu.au": {
       "code": 200,
@@ -17789,6 +18314,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "unitoledo.br": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
     },
     "unity.edu.au": {
       "code": 200,
@@ -20735,6 +21265,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "anhanguera.com": "2005-03-09",
     "anhembi.br": "1996-05-02",
     "anibt.edu.au": {
       "reg": "",
@@ -21602,6 +22133,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "candidomendes.br": "1996-07-31",
     "canisius.edu": "1991-12-05",
     "canningcollege.wa.edu.au": {
       "reg": "",
@@ -21636,6 +22168,7 @@
     "carrollu.edu": "2008-06-12",
     "carthage.edu": "1993-03-19",
     "case.edu": "1998-06-25",
+    "castelobranco.br": "1996-02-14",
     "castleton.edu": "1998-10-10",
     "cathedral.qld.edu.au": {
       "reg": "",
@@ -21795,6 +22328,7 @@
     "clackesd.gov": "2024-09-24",
     "clackesd.org": "2009-09-23",
     "claremontmckenna.edu": "1999-03-12",
+    "claretiano.edu.br": "2001-05-17",
     "clarion.edu": "1992-05-18",
     "clarke.edu": "1993-01-05",
     "clarkson.edu": "1986-11-21",
@@ -22209,6 +22743,7 @@
     },
     "crc.edu": "2009-06-11",
     "creighton.edu": "1991-03-26",
+    "creupi.br": "1999-05-11",
     "crk.umn.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -22382,6 +22917,7 @@
     "dbq.edu": "1994-07-23",
     "dbu.edu": "1993-07-07",
     "dc.edu": "1994-08-25",
+    "dcc.ufmg.br": "1996-01-01",
     "dcccd.edu": "1992-03-13",
     "dcumyanmar.com": "2018-09-19",
     "ddu.ac.in": "2005-07-22",
@@ -22831,6 +23367,7 @@
       "ts": "2026-09-16"
     },
     "epl67.fr": "2007-04-16",
+    "epm.br": "1996-01-01",
     "epoka.edu.al": {
       "reg": "",
       "ts": "2026-09-13"
@@ -22919,6 +23456,7 @@
     },
     "esperancegsp.org": "2008-02-14",
     "est.edu.br": "2006-09-21",
+    "estacio.br": "1996-03-04",
     "estef.edu.br": "2005-06-01",
     "estin.dz": {
       "reg": "",
@@ -23022,6 +23560,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "faap.br": "1996-09-20",
     "fabelnet.com.br": "2003-11-05",
     "faberj.edu.br": "2010-10-20",
     "fabes.com.br": "2023-03-09",
@@ -23046,6 +23585,7 @@
     "faculdadenovaroma.com.br": "2006-02-17",
     "faculdadeparaiso.edu.br": "2007-06-26",
     "faculdadeprojecao.edu.br": "2008-05-02",
+    "faculdadescuritiba.br": "2000-06-06",
     "faculdadesdombosco.edu.br": "2006-02-16",
     "fae.edu": "2001-10-30",
     "fafil.com.br": "2003-10-17",
@@ -23119,6 +23659,7 @@
       "ts": "2026-09-20"
     },
     "federico.edu": "2003-05-28",
+    "feituverava.com.br": "2001-07-02",
     "fepar.edu.br": "2001-02-06",
     "fermat.entmip.fr": {
       "reg": "",
@@ -23204,6 +23745,7 @@
       "ts": "2026-09-20"
     },
     "fibrapara.edu.br": "2003-10-23",
+    "fic.br": "1999-04-29",
     "fidm.edu": "1998-08-14",
     "fielding.edu": "1991-12-15",
     "filadelfia.com.br": "1999-03-12",
@@ -23305,6 +23847,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "fua.br": "1996-01-01",
     "fubk.edu.ng": {
       "reg": "",
       "ts": "2026-09-13"
@@ -23372,6 +23915,8 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "furb.rct-sc.br": "1996-01-01",
+    "furg.br": "1996-01-01",
     "furman.edu": "1993-08-20",
     "fusl.ac.be": {
       "reg": "",
@@ -23922,6 +24467,7 @@
       "ts": "2026-09-20"
     },
     "ibc.edu": "2021-11-05",
+    "ibirapuera.br": "2000-08-29",
     "ibnesina.edu.af": {
       "reg": "",
       "ts": "2026-09-19"
@@ -24050,10 +24596,12 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "ime.eb.mil.br": "1995-11-14",
     "immanuel.sa.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
+    "impa.br": "1996-01-01",
     "impactenglish.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -24100,6 +24648,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "insper.edu.br": "2010-01-22",
     "institut-machtens.be": {
       "reg": "",
       "ts": "2026-09-16"
@@ -24206,6 +24755,8 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "ita.br": "2000-04-14",
+    "italo.br": "2000-03-24",
     "itba.edu.ar": {
       "reg": "",
       "ts": "2026-09-19"
@@ -25200,6 +25751,7 @@
     "massbay.edu": "2002-01-09",
     "masters.edu": "1995-03-05",
     "matc.edu": "1991-03-20",
+    "maua.br": "1996-12-02",
     "mayo.edu": "1988-03-24",
     "mba.zh.ch": {
       "reg": "",
@@ -25692,6 +26244,7 @@
     },
     "newpaltz.edu": "1990-04-30",
     "newschoolarch.edu": "1997-05-06",
+    "newtonpaiva.br": "1996-09-27",
     "nftc.edu": {
       "reg": "",
       "ts": "2026-09-18"
@@ -26179,6 +26732,7 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "pop-to.rnp.br": "1996-01-01",
     "port.ac.uk": {
       "reg": "",
       "ts": "2026-09-13"
@@ -26275,11 +26829,13 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "puc-rio.br": "1996-01-01",
     "puc.ac.bd": {
       "reg": "",
       "ts": "2026-09-20"
     },
     "puc.edu": "1991-09-19",
+    "puccamp.br": "1996-01-01",
     "pucminas.br": "1996-06-02",
     "pucp.edu.pe": {
       "reg": "",
@@ -26288,6 +26844,7 @@
     "pucpr.br": "1996-01-01",
     "pucrs.br": "1996-01-01",
     "pucschools.org": "2004-06-24",
+    "pucsp.br": "1996-01-01",
     "pulf.org": "2006-05-09",
     "pumc.edu.cn": {
       "reg": "",
@@ -26569,6 +27126,7 @@
     "sans.edu": "2005-12-02",
     "santamarcelina.edu.br": "2012-02-10",
     "santamaria.sch.id": "2016-06-03",
+    "saojudas.br": "1997-01-07",
     "saosalvador.edu.br": "2002-08-15",
     "sapc.edu": {
       "reg": "",
@@ -26873,6 +27431,7 @@
       "ts": "2026-09-18"
     },
     "smabomgresik.sch.id": "2017-12-20",
+    "smarcos.br": "1996-01-01",
     "smcks.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -26921,6 +27480,7 @@
     "sonoma.edu": "1989-05-22",
     "sorbonne-universite.fr": "2011-01-12",
     "sou.edu": "1997-04-10",
+    "sou.unipinhal.edu.br": "2005-05-23",
     "southalabama.edu": "1998-03-06",
     "southampton.ac.uk": {
       "reg": "",
@@ -26958,6 +27518,7 @@
     "southwestcenter.org": "1999-05-19",
     "southwestern.edu": "1995-06-19",
     "southwesterncc.edu": "2002-02-19",
+    "sp.senac.br": "1996-11-19",
     "space.bas.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -27037,6 +27598,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "stcecilia.br": "1995-09-20",
     "stcl.edu": "1994-08-15",
     "stcloudstate.edu": "1997-05-29",
     "stdominics.sa.edu.au": {
@@ -27421,6 +27983,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "toledo.br": "1997-09-02",
     "tolworthinf.greenschoolsonline.co.uk": {
       "reg": "",
       "ts": "2026-09-13"
@@ -27741,6 +28304,8 @@
       "ts": "2026-09-13"
     },
     "ucasal.net": "1999-09-09",
+    "ucb.br": "1995-08-14",
+    "ucb.catolica.edu.br": "2005-06-30",
     "ucb.edu.bh": {
       "reg": "",
       "ts": "2026-09-20"
@@ -27789,6 +28354,7 @@
       "ts": "2026-09-20"
     },
     "ucf.edu": "1986-10-27",
+    "ucg.br": "1995-11-28",
     "uch.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -27838,11 +28404,16 @@
     },
     "uconn.edu": "1987-08-18",
     "ucop.edu": "1987-04-30",
+    "ucp.br": "1996-01-01",
     "ucp.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ucpel.tche.br": "1996-01-01",
     "ucr.edu": "1987-08-04",
+    "ucs.tche.br": "1996-01-01",
+    "ucsal.br": "1996-10-11",
+    "ucsal.edu.br": "2017-12-01",
     "ucsb.edu": "1987-04-27",
     "ucsc.edu": "1987-01-29",
     "ucsd.edu": "1985-12-09",
@@ -27889,6 +28460,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "udesc.br": "1996-01-01",
     "udmercy.edu": "1993-01-12",
     "uds.edu.gh": {
       "reg": "",
@@ -27899,16 +28471,30 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "uece.br": "1996-01-01",
+    "uefs.br": "1996-07-01",
+    "uel.br": "1995-06-08",
     "uem.br": "1995-06-12",
+    "uema.br": "1997-10-02",
+    "uenf.br": "1996-01-01",
+    "uepb.edu.br": "2005-02-24",
+    "uepg.br": "1996-06-13",
     "uerj.br": "1996-01-01",
+    "uern.br": "1999-12-20",
+    "uesb.br": "1997-01-18",
+    "uesc.br": "1999-01-05",
     "uesiglo21.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "uespi.br": "1997-11-13",
     "uestc.edu.cn": {
       "reg": "",
       "ts": "2026-09-16"
     },
+    "ufabc.edu.br": "2006-02-22",
+    "ufac.br": "1998-07-30",
+    "ufal.br": "1996-01-01",
     "ufar.am": {
       "reg": "",
       "ts": "2026-09-20"
@@ -27917,11 +28503,17 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ufba.br": "1996-01-01",
+    "ufc.br": "1996-01-01",
+    "ufcg.edu.br": "2002-07-18",
     "ufcspa.edu.br": "2008-04-02",
     "ufes.br": "1996-01-01",
     "uff.br": "1996-01-01",
     "ufg.br": "1996-01-01",
+    "ufgd.edu.br": "2006-03-07",
+    "ufjf.br": "1996-01-01",
     "ufl.edu": "1986-03-25",
+    "ufla.br": "1996-02-13",
     "uflo.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -27930,23 +28522,39 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ufma.br": "1996-01-01",
     "ufmg.br": "1996-01-01",
+    "ufms.br": "1996-01-01",
     "ufmt.br": "1996-01-01",
+    "ufop.br": "1996-01-01",
+    "ufpa.br": "1996-01-01",
+    "ufpb.br": "1996-01-01",
     "ufpe.br": "1996-01-01",
+    "ufpel.tche.br": "1996-01-01",
     "ufpi.br": "1996-10-11",
     "ufpr.br": "1996-01-01",
     "ufrgs.br": "1996-01-01",
     "ufrj.br": "1996-01-01",
     "ufrn.br": "1996-01-01",
+    "ufrpe.br": "1995-10-20",
+    "ufrrj.br": "1996-01-01",
+    "ufs.br": "1995-10-09",
+    "ufsc.br": "1996-01-01",
+    "ufscar.br": "1996-01-01",
     "ufsia.ac.be": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ufsj.edu.br": "2003-03-28",
+    "ufsm.br": "1996-01-01",
     "uft-plovdiv.bg": {
       "reg": "",
       "ts": "2026-09-18"
     },
+    "uftm.edu.br": "2004-08-24",
     "ufu.br": "1996-04-23",
+    "ufv.br": "1996-01-01",
+    "ufvjm.edu.br": "2005-10-10",
     "uga.edu": "1988-03-14",
     "ugd.edu.ar": {
       "reg": "",
@@ -27956,6 +28564,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "ugf.br": "1996-06-02",
     "ugf.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -28094,6 +28703,7 @@
       "ts": "2026-09-19"
     },
     "umbc.edu": "1988-08-12",
+    "umc.br": "1996-07-30",
     "umc.edu.dz": {
       "reg": "",
       "ts": "2026-09-19"
@@ -28185,6 +28795,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "unaerp.br": "1996-01-01",
     "unahur.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -28201,6 +28812,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "unama.br": "1995-10-30",
     "unau.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -28263,6 +28875,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "uneb.br": "1998-06-19",
     "unec.edu.az": {
       "reg": "",
       "ts": "2026-09-15"
@@ -28271,11 +28884,14 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "unesc.rct-sc.br": "1996-01-01",
+    "unesp.br": "1996-01-01",
     "unf.edu": "1990-08-10",
     "unf.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ung.br": "1996-12-27",
     "ung.edu": "2012-05-10",
     "ungs.edu.ar": {
       "reg": "",
@@ -28369,6 +28985,10 @@
     },
     "uniaene.edu.br": "2024-12-13",
     "unianhanguera.edu.br": "2001-09-18",
+    "uniara.com.br": "1997-12-06",
+    "uniara.edu.br": "2002-12-12",
+    "unib.br": "1996-03-01",
+    "uniban.br": "1996-03-08",
     "unibas.ch": {
       "reg": "",
       "ts": "2026-09-18"
@@ -28386,8 +29006,12 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "unibosco.br": "1996-07-16",
+    "unibrasil.com.br": "1999-08-30",
     "unibu.org": "2023-12-18",
     "unicamp.br": "1996-01-01",
+    "unicap.br": "1996-01-01",
+    "unicastelo.br": "1998-04-22",
     "unicatolicaquixada.edu.br": "2016-06-13",
     "unicen.edu.ar": {
       "reg": "",
@@ -28399,14 +29023,23 @@
     },
     "unicesumar.edu.br": "2013-04-15",
     "unichristus.edu.br": "2011-06-14",
+    "unicid.br": "1996-01-04",
+    "unicruz.tche.br": "1996-01-01",
+    "unicsul.br": "1999-04-07",
+    "unidavi.rct-sc.br": "1996-01-01",
     "uniderp.br": "1997-05-01",
     "uniderp.com.br": "2016-03-11",
     "uniel.edu.al": {
       "reg": "",
       "ts": "2026-09-13"
     },
+    "unifacs.br": "1998-02-26",
+    "unifap.br": "1999-10-28",
     "unifapce.edu.br": "2020-05-29",
     "unifasc.com.br": "2023-11-14",
+    "unifei.edu.br": "2002-01-10",
+    "unifenas.br": "1995-08-09",
+    "unifeso.edu.br": "2006-11-16",
     "unifi.it": {
       "reg": "",
       "ts": "2026-09-16"
@@ -28415,6 +29048,7 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "unifor.br": "1996-01-01",
     "unifranz.edu.bo": {
       "reg": "",
       "ts": "2026-09-20"
@@ -28424,6 +29058,7 @@
       "ts": "2026-09-17"
     },
     "unigran.br": "1998-02-17",
+    "uniitalo.com.br": "2006-10-19",
     "unijipa.edu.br": "2007-07-13",
     "unikuljis.edu.bo": {
       "reg": "",
@@ -28517,6 +29152,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "unitoledo.br": "2000-03-27",
     "unity.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -29888,6 +30524,7 @@
     "andrews.edu": 0,
     "angelo.edu": 0,
     "angliss.edu.au": 0,
+    "anhanguera.com": 1,
     "anhembi.br": 0,
     "anibt.edu.au": 0,
     "anibt.vic.edu.au": 1,
@@ -30248,6 +30885,7 @@
     "campuspouille.fr": 0,
     "campusterresdelaube.fr": 0,
     "canberra.edu.au": 0,
+    "candidomendes.br": 1,
     "canisius.edu": 0,
     "canningcollege.wa.edu.au": 0,
     "canterburyla.com.au": 1,
@@ -30267,6 +30905,7 @@
     "carrollu.edu": 0,
     "carthage.edu": 0,
     "case.edu": 0,
+    "castelobranco.br": 1,
     "castleton.edu": 1,
     "cathedral.qld.edu.au": 0,
     "catholic.edu": 0,
@@ -30359,6 +30998,7 @@
     "clackesd.gov": 2,
     "clackesd.org": 0,
     "claremontmckenna.edu": 1,
+    "claretiano.edu.br": 0,
     "clarion.edu": 1,
     "clarke.edu": 0,
     "clarkson.edu": 0,
@@ -30528,6 +31168,7 @@
     "cqu.edu.cn": 0,
     "crc.edu": 0,
     "creighton.edu": 0,
+    "creupi.br": 1,
     "crk.umn.edu": 0,
     "csbeautyschools.com": 0,
     "csbsju.edu": 0,
@@ -30618,6 +31259,7 @@
     "dbq.edu": 0,
     "dbu.edu": 0,
     "dc.edu": 1,
+    "dcc.ufmg.br": 0,
     "dcccd.edu": 1,
     "dcumyanmar.com": 0,
     "ddu.ac.in": 0,
@@ -30816,6 +31458,7 @@
     "epl.nimes.educagri.fr": 0,
     "epl.pt": 1,
     "epl67.fr": 0,
+    "epm.br": 1,
     "epoka.edu.al": 0,
     "epsaa.fr": 0,
     "epse.be": 1,
@@ -30856,6 +31499,7 @@
     "espam-formationuc.org": 1,
     "esperancegsp.org": 1,
     "est.edu.br": 1,
+    "estacio.br": 0,
     "estef.edu.br": 1,
     "estin.dz": 2,
     "esu.edu": 0,
@@ -30896,6 +31540,7 @@
     "extension.umd.edu": 0,
     "eynesbury.edu.au": 0,
     "eynesbury.navitas.com": 1,
+    "faap.br": 1,
     "fabelnet.com.br": 1,
     "faberj.edu.br": 0,
     "fabes.com.br": 1,
@@ -30917,6 +31562,7 @@
     "faculdadenovaroma.com.br": 1,
     "faculdadeparaiso.edu.br": 1,
     "faculdadeprojecao.edu.br": 1,
+    "faculdadescuritiba.br": 1,
     "faculdadesdombosco.edu.br": 1,
     "fae.edu": 0,
     "fafil.com.br": 1,
@@ -30963,6 +31609,7 @@
     "fecilcam.br": 0,
     "federation.edu.au": 0,
     "federico.edu": 0,
+    "feituverava.com.br": 0,
     "fepar.edu.br": 1,
     "fermat.entmip.fr": 1,
     "ferris.edu": 0,
@@ -30991,6 +31638,7 @@
     "fhw.at": 1,
     "fhwn.ac.at": 0,
     "fibrapara.edu.br": 0,
+    "fic.br": 1,
     "fidm.edu": 1,
     "fielding.edu": 0,
     "filadelfia.com.br": 1,
@@ -31044,6 +31692,7 @@
     "fssc.edu.ph": 0,
     "fsu.edu": 0,
     "fu-berlin.de": 1,
+    "fua.br": 1,
     "fubk.edu.ng": 0,
     "fucam.ac.be": 1,
     "fud.edu.ng": 0,
@@ -31063,6 +31712,8 @@
     "fuotuoke.edu.ng": 2,
     "fuoye.edu.ng": 2,
     "fupre.edu.ng": 0,
+    "furb.rct-sc.br": 1,
+    "furg.br": 0,
     "furman.edu": 0,
     "fusl.ac.be": 1,
     "futa.edu.ng": 2,
@@ -31283,6 +31934,7 @@
     "iauzah.ac.ir": 1,
     "ibaisuniv.edu.bd": 1,
     "ibc.edu": 0,
+    "ibirapuera.br": 0,
     "ibnesina.edu.af": 1,
     "ibt.edu": 0,
     "ibu.edu.ba": 0,
@@ -31333,7 +31985,9 @@
     "imb.by": 0,
     "imc-krems.ac.at": 0,
     "imc.edu.au": 1,
+    "ime.eb.mil.br": 1,
     "immanuel.sa.edu.au": 1,
+    "impa.br": 0,
     "impactenglish.edu.au": 0,
     "imperial.ac.uk": 0,
     "imperial.edu": 0,
@@ -31354,6 +32008,7 @@
     "insas.be": 0,
     "insp.bi": 2,
     "insp.gov.bi": 2,
+    "insper.edu.br": 1,
     "institut-machtens.be": 0,
     "institutemvd.by": 1,
     "institution-saintemarthe-notredame.fr": 0,
@@ -31392,6 +32047,8 @@
     "ist.ac.at": 0,
     "isu.edu": 0,
     "iswa.wa.edu.au": 0,
+    "ita.br": 1,
+    "italo.br": 1,
     "itba.edu.ar": 0,
     "itg.be": 0,
     "ithaca.edu": 0,
@@ -31816,6 +32473,7 @@
     "massbay.edu": 0,
     "masters.edu": 0,
     "matc.edu": 1,
+    "maua.br": 0,
     "mayo.edu": 1,
     "mba.zh.ch": 0,
     "mbc.edu": 1,
@@ -32047,6 +32705,7 @@
     "newington.nsw.edu.au": 0,
     "newpaltz.edu": 0,
     "newschoolarch.edu": 0,
+    "newtonpaiva.br": 1,
     "nftc.edu": 1,
     "ng-university.org": 0,
     "ngs.nsw.edu.au": 0,
@@ -32286,6 +32945,7 @@
     "polyu.edu.hk": 0,
     "pomona.edu": 0,
     "pont-rousseau.loire-atlantique.e-lyco.fr": 0,
+    "pop-to.rnp.br": 1,
     "port.ac.uk": 0,
     "portal.estacio.br": 0,
     "portal.ufrrj.br": 0,
@@ -32325,13 +32985,16 @@
     "pu.edu.af": 0,
     "pu.edu.bd": 0,
     "pub.ac.bd": 0,
+    "puc-rio.br": 0,
     "puc.ac.bd": 0,
     "puc.edu": 1,
+    "puccamp.br": 1,
     "pucminas.br": 0,
     "pucp.edu.pe": 1,
     "pucpr.br": 0,
     "pucrs.br": 0,
     "pucschools.org": 0,
+    "pucsp.br": 0,
     "pulf.org": 0,
     "pumc.edu.cn": 0,
     "pupr.edu": 0,
@@ -32481,6 +33144,7 @@
     "sans.edu": 0,
     "santamarcelina.edu.br": 1,
     "santamaria.sch.id": 0,
+    "saojudas.br": 1,
     "saosalvador.edu.br": 1,
     "sapc.edu": 1,
     "sarahlawrence.edu": 0,
@@ -32618,6 +33282,7 @@
     "sma.org.au": 1,
     "sma1.pppkpetra.or.id": 1,
     "smabomgresik.sch.id": 0,
+    "smarcos.br": 1,
     "smccd.edu": 0,
     "smcks.edu": 1,
     "smcm.edu": 0,
@@ -32644,6 +33309,7 @@
     "sonoma.edu": 1,
     "sorbonne-universite.fr": 0,
     "sou.edu": 0,
+    "sou.unipinhal.edu.br": 0,
     "southalabama.edu": 0,
     "southampton.ac.uk": 0,
     "southark.edu": 0,
@@ -32663,6 +33329,7 @@
     "southwestcenter.org": 0,
     "southwestern.edu": 0,
     "southwesterncc.edu": 0,
+    "sp.senac.br": 1,
     "space.bas.bg": 1,
     "spatiss.com": 1,
     "spcollege.edu": 0,
@@ -32694,6 +33361,7 @@
     "statetechmo.edu": 0,
     "stbernard.k12.la.us": 1,
     "stbrigids.wa.edu.au": 0,
+    "stcecilia.br": 1,
     "stcl.edu": 1,
     "stcloudstate.edu": 0,
     "stdominics.sa.edu.au": 0,
@@ -32866,6 +33534,7 @@
     "tnstate.edu": 0,
     "tntech.edu": 0,
     "tohoku.ac.jp": 1,
+    "toledo.br": 1,
     "tolworthinf.greenschoolsonline.co.uk": 2,
     "tolworthj.kingston.sch.uk": 2,
     "tomerdebora.fr": 0,
@@ -32999,6 +33668,8 @@
     "ucao-uub.com": 0,
     "ucas.ac.cn": 0,
     "ucasal.net": 1,
+    "ucb.br": 1,
+    "ucb.catolica.edu.br": 0,
     "ucb.edu.bh": 0,
     "ucb.edu.bo": 0,
     "ucbcba.edu.bo": 1,
@@ -33014,6 +33685,7 @@
     "ucema.edu.ar": 0,
     "uces.edu.ar": 0,
     "ucf.edu": 0,
+    "ucg.br": 1,
     "uch.edu.ar": 0,
     "uchastings.edu": 1,
     "uchaswv.edu": 1,
@@ -33034,8 +33706,13 @@
     "ucongres.edu.ar": 1,
     "uconn.edu": 0,
     "ucop.edu": 0,
+    "ucp.br": 0,
     "ucp.edu.ar": 1,
+    "ucpel.tche.br": 1,
     "ucr.edu": 0,
+    "ucs.tche.br": 1,
+    "ucsal.br": 1,
+    "ucsal.edu.br": 1,
     "ucsb.edu": 0,
     "ucsc.edu": 1,
     "ucsd.edu": 0,
@@ -33055,37 +33732,75 @@
     "udelosandes.edu.bo": 0,
     "udemm.edu.ar": 0,
     "udesa.edu.ar": 0,
+    "udesc.br": 0,
     "udmercy.edu": 0,
     "uds.edu.gh": 0,
     "ue-germany.com": 0,
     "uean.edu.ar": 1,
+    "uece.br": 0,
+    "uefs.br": 1,
+    "uel.br": 0,
     "uem.br": 0,
+    "uema.br": 1,
+    "uenf.br": 0,
+    "uepb.edu.br": 0,
+    "uepg.br": 0,
     "uerj.br": 1,
+    "uern.br": 1,
+    "uesb.br": 1,
+    "uesc.br": 0,
     "uesiglo21.edu.ar": 1,
+    "uespi.br": 1,
     "uestc.edu.cn": 1,
+    "ufabc.edu.br": 0,
+    "ufac.br": 0,
+    "ufal.br": 0,
     "ufar.am": 1,
     "ufasta.edu.ar": 1,
+    "ufba.br": 1,
+    "ufc.br": 0,
+    "ufcg.edu.br": 1,
     "ufcspa.edu.br": 0,
     "ufes.br": 0,
     "uff.br": 0,
     "ufg.br": 0,
+    "ufgd.edu.br": 0,
+    "ufjf.br": 0,
     "ufl.edu": 0,
+    "ufla.br": 0,
     "uflo.edu.ar": 1,
     "uflouniversidad.edu.ar": 0,
+    "ufma.br": 1,
     "ufmg.br": 0,
+    "ufms.br": 1,
     "ufmt.br": 1,
+    "ufop.br": 1,
+    "ufpa.br": 0,
+    "ufpb.br": 0,
     "ufpe.br": 1,
+    "ufpel.tche.br": 1,
     "ufpi.br": 0,
     "ufpr.br": 0,
     "ufrgs.br": 1,
     "ufrj.br": 0,
     "ufrn.br": 0,
+    "ufrpe.br": 1,
+    "ufrrj.br": 1,
+    "ufs.br": 0,
+    "ufsc.br": 0,
+    "ufscar.br": 0,
     "ufsia.ac.be": 1,
+    "ufsj.edu.br": 1,
+    "ufsm.br": 0,
     "uft-plovdiv.bg": 0,
+    "uftm.edu.br": 0,
     "ufu.br": 0,
+    "ufv.br": 0,
+    "ufvjm.edu.br": 1,
     "uga.edu": 0,
     "ugd.edu.ar": 0,
     "ugent.be": 0,
+    "ugf.br": 1,
     "ugf.edu": 1,
     "ugr.edu.ar": 0,
     "ugr.es": 0,
@@ -33141,6 +33856,7 @@
     "umb.edu.al": 0,
     "umbb.dz": 1,
     "umbc.edu": 0,
+    "umc.br": 0,
     "umc.edu": 0,
     "umc.edu.dz": 0,
     "umd.edu": 0,
@@ -33177,10 +33893,12 @@
     "una.edu": 0,
     "una.edu.ar": 0,
     "unab.edu.ar": 0,
+    "unaerp.br": 1,
     "unahur.edu.ar": 0,
     "unaj.edu.ar": 1,
     "unam.edu.ar": 0,
     "unam.mx": 0,
+    "unama.br": 1,
     "unau.edu.ar": 0,
     "unb.br": 0,
     "unbi.ba": 0,
@@ -33204,10 +33922,14 @@
     "undelta.edu.ar": 0,
     "une.edu": 0,
     "une.edu.au": 2,
+    "uneb.br": 0,
     "unec.edu.az": 1,
     "uner.edu.ar": 0,
+    "unesc.rct-sc.br": 1,
+    "unesp.br": 0,
     "unf.edu": 0,
     "unf.edu.ar": 1,
+    "ung.br": 1,
     "ung.edu": 0,
     "ungs.edu.ar": 1,
     "unh.edu": 0,
@@ -33235,34 +33957,53 @@
     "uniacc.cl": 0,
     "uniaene.edu.br": 0,
     "unianhanguera.edu.br": 1,
+    "uniara.com.br": 0,
+    "uniara.edu.br": 1,
+    "unib.br": 1,
+    "uniban.br": 1,
     "unibas.ch": 0,
     "unibe.ch": 0,
     "unibl.org": 0,
     "unibo.edu.ar": 1,
     "unibo.it": 0,
-    "unibu.org": 1,
+    "unibosco.br": 1,
+    "unibrasil.com.br": 0,
+    "unibu.org": 2,
     "unicamp.br": 0,
+    "unicap.br": 1,
+    "unicastelo.br": 1,
     "unicatolicaquixada.edu.br": 1,
     "unicen.edu.ar": 0,
     "unicen.edu.bo": 0,
     "unicesumar.edu.br": 1,
-    "uniceub.br": 3,
+    "uniceub.br": 4,
     "unichristus.edu.br": 0,
+    "unicid.br": 1,
+    "unicruz.tche.br": 1,
+    "unicsul.br": 1,
+    "unidavi.rct-sc.br": 1,
     "uniderp.br": 1,
     "uniderp.com.br": 1,
     "uniel.edu.al": 0,
+    "unifacs.br": 0,
+    "unifap.br": 0,
     "unifapce.edu.br": 0,
     "unifasc.com.br": 1,
+    "unifei.edu.br": 1,
+    "unifenas.br": 1,
+    "unifeso.edu.br": 0,
     "unifi.it": 0,
     "unifirst.ru": 0,
+    "unifor.br": 0,
     "unifranz.edu.bo": 0,
     "unige.ch": 0,
     "unigran.br": 1,
+    "uniitalo.com.br": 0,
     "unijipa.edu.br": 1,
     "unikuljis.edu.bo": 1,
     "unileoben.ac.at": 0,
     "unimelb.edu": 1,
-    "unimelb.edu.au": 2,
+    "unimelb.edu.au": 3,
     "unimetroangola.com": 1,
     "unimi.it": 0,
     "unimoron.edu.ar": 0,
@@ -33270,13 +34011,13 @@
     "uninove.br": 0,
     "uninter.com": 0,
     "union.edu": 0,
-    "unipavaresia.edu.al": 2,
+    "unipavaresia.edu.al": 3,
     "unipd.it": 0,
     "unipe.edu.ar": 0,
     "unipi.it": 0,
     "uniplandf.edu.br": 0,
-    "unireald.edu.al": 2,
-    "uniroma1.it": 1,
+    "unireald.edu.al": 3,
+    "uniroma1.it": 2,
     "unisa.br": 0,
     "unisa.edu.au": 1,
     "unisba.edu.br": 0,
@@ -33288,6 +34029,7 @@
     "unitech-mo.ru": 0,
     "unitir.edu.al": 0,
     "unito.it": 0,
+    "unitoledo.br": 0,
     "unity.edu.au": 0,
     "uniube.br": 0,
     "univ-alger.dz": 1,
@@ -33806,11 +34548,11 @@
     "skipped_service": 8,
     "unmapped": 0
   },
-  "last_run": "2026-09-20T14:39:23+00:00",
+  "last_run": "2026-09-20T17:45:27+00:00",
   "last_verify": {
-    "added_active": 41,
-    "at": "2026-09-20 14:26 UTC",
-    "pending_left": 7899,
+    "added_active": 46,
+    "at": "2026-09-20 17:45 UTC",
+    "pending_left": 7900,
     "reverified": 15,
     "validated": 121
   },
@@ -33851,6 +34593,7 @@
     "cofc.edu": "charleston.edu",
     "collegesaintstanislas.org": "college-saintstanislas.org",
     "cord.edu": "concordiacollege.edu",
+    "creupi.br": "sou.unipinhal.edu.br",
     "csufresno.edu": "fresnostate.edu",
     "csum.edu": "maritime.calpoly.edu",
     "cua.edu": "catholic.edu",
@@ -33900,6 +34643,7 @@
     "indiana.edu": "bloomington.iu.edu",
     "indstate.edu": "indianastate.edu",
     "insp.bi": "insp.gov.bi",
+    "italo.br": "uniitalo.com.br",
     "itscm2.be": "itscm.be",
     "iub.edu": "bloomington.iu.edu",
     "iupuc.edu": "columbus.iu.edu",
@@ -33948,6 +34692,7 @@
     "rcsi-mub.com": "rcsi.com",
     "rhul.ac.uk": "royalholloway.ac.uk",
     "saintremi.fr": "groupefresc.com",
+    "saojudas.br": "usjt.br",
     "sccbellinzona.ch": "sccbellinzona.ti.ch",
     "selu.edu": "southeastern.edu",
     "seu.ac.bd": "seu.edu.bd",
@@ -33960,11 +34705,13 @@
     "syr.edu": "syracuse.edu",
     "tacomahousing.net": "tacomahousing.org",
     "tamuc.edu": "etamu.edu",
+    "toledo.br": "unitoledo.br",
     "tsc.nsw.edu.au": "scots.college",
     "tuwien.ac.at": "tuwien.at",
     "txstate.edu": "txst.edu",
     "uams.be": "antwerpmanagementschool.be",
     "ucan.edu": "ucan.co.ao",
+    "ucb.br": "ucb.catolica.edu.br",
     "ucdenver.edu": "cudenver.edu",
     "uchastings.edu": "uclawsf.edu",
     "uflo.edu.ar": "uflouniversidad.edu.ar",
@@ -33978,6 +34725,8 @@
     "uncu.edu.ar": "uncuyo.edu.ar",
     "uni-duesseldorf.de": "hhu.de",
     "uni-klu.ac.at": "aau.at",
+    "unib.br": "ibirapuera.br",
+    "uniban.br": "anhanguera.com",
     "uniderp.br": "uniderp.com.br",
     "unisa.edu.au": "adelaide.edu.au",
     "univerzitetpim.com": "herofi.io",

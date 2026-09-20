@@ -24,7 +24,7 @@
 | BJ | 8 | 3 | 5 |
 | BM | 1 | 0 | 1 |
 | BO | 31 | 16 | 15 |
-| BR | 193 | 95 | 98 |
+| BR | 299 | 141 | 158 |
 | BS | 1 | 0 | 1 |
 | BT | 1 | 0 | 1 |
 | BW | 10 | 3 | 7 |
@@ -105,4 +105,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4064. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 4170. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
