@@ -7,20 +7,21 @@
 | AF | 40 | 26 | 14 |
 | AG | 2 | 2 | 0 |
 | AL | 35 | 17 | 18 |
-| AM | 36 | 21 | 15 |
+| AM | 44 | 25 | 19 |
 | AO | 10 | 2 | 8 |
-| AR | 125 | 89 | 36 |
-| AT | 41 | 35 | 6 |
-| AU | 346 | 246 | 100 |
-| AZ | 11 | 9 | 2 |
+| AR | 126 | 90 | 36 |
+| AT | 73 | 48 | 25 |
+| AU | 374 | 256 | 118 |
+| AZ | 35 | 20 | 15 |
 | BA | 27 | 14 | 13 |
 | BE | 81 | 57 | 24 |
 | BF | 2 | 1 | 1 |
 | BG | 34 | 22 | 12 |
-| BH | 4 | 2 | 2 |
+| BH | 13 | 6 | 7 |
 | BI | 4 | 0 | 4 |
 | BJ | 5 | 3 | 2 |
 | BR | 191 | 94 | 97 |
+| BS | 1 | 0 | 1 |
 | BY | 23 | 12 | 11 |
 | CA | 32 | 23 | 9 |
 | CD | 5 | 1 | 4 |
@@ -97,4 +98,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 3751. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 3854. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
