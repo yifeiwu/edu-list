@@ -1,6 +1,6 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-20 23:16 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-21 10:31 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
@@ -12,7 +12,7 @@ _Generated 2026-09-20 23:16 UTC. Full per-country table: [data/countries/INDEX.m
 ## Last runs
 
 - Verify (2026-09-20 21:08 UTC): validated 123, +48 Active, re-verified 15, pending left 7900
-- Curate (2026-09-20 21:17 UTC): 10689 raw candidates, 100 queued, 5 re-cited
+- Curate (2026-09-21 10:31 UTC): 10659 raw candidates, 0 queued, 2533 re-cited
 
 ## Countries (top 15 by size)
 

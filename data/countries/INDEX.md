@@ -108,4 +108,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4278. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`.
+Total domains: 4278. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
