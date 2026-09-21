@@ -31,15 +31,16 @@
 | BW | 10 | 3 | 7 |
 | BY | 48 | 15 | 33 |
 | BZ | 5 | 2 | 3 |
-| CA | 133 | 72 | 61 |
+| CA | 174 | 95 | 79 |
 | CD | 5 | 1 | 4 |
+| CF | 1 | 0 | 1 |
 | CG | 1 | 1 | 0 |
 | CH | 34 | 24 | 10 |
-| CL | 3 | 3 | 0 |
+| CL | 62 | 30 | 32 |
 | CM | 10 | 4 | 6 |
 | CN | 57 | 16 | 41 |
 | CO | 1 | 1 | 0 |
-| CV | 2 | 1 | 1 |
+| CV | 3 | 1 | 2 |
 | CW | 1 | 0 | 1 |
 | CZ | 14 | 3 | 11 |
 | DE | 40 | 29 | 11 |
@@ -67,6 +68,7 @@
 | KH | 22 | 13 | 9 |
 | KR | 9 | 6 | 3 |
 | KW | 1 | 0 | 1 |
+| KY | 2 | 2 | 0 |
 | LY | 6 | 6 | 0 |
 | MA | 4 | 1 | 3 |
 | MK | 2 | 0 | 2 |
@@ -93,7 +95,7 @@
 | SG | 2 | 2 | 0 |
 | SN | 2 | 1 | 1 |
 | SY | 1 | 1 | 0 |
-| TD | 1 | 1 | 0 |
+| TD | 2 | 1 | 1 |
 | TH | 1 | 0 | 1 |
 | TO | 1 | 0 | 1 |
 | TW | 3 | 0 | 3 |
@@ -108,4 +110,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4384. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 4489. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
