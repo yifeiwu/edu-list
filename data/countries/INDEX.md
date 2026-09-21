@@ -36,9 +36,9 @@
 | CF | 1 | 0 | 1 |
 | CG | 1 | 1 | 0 |
 | CH | 34 | 24 | 10 |
-| CL | 62 | 30 | 32 |
+| CL | 65 | 32 | 33 |
 | CM | 10 | 4 | 6 |
-| CN | 57 | 16 | 41 |
+| CN | 155 | 25 | 130 |
 | CO | 1 | 1 | 0 |
 | CV | 3 | 1 | 2 |
 | CW | 1 | 0 | 1 |
@@ -110,4 +110,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4489. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 4590. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
