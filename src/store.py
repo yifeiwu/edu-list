@@ -1,12 +1,15 @@
 """Per-country CSV store + run state.
 
-CSV schema: school_name,web_domain,type,last_visited,status,sources,years_registered
+CSV schema: school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language
 - web_domain: canonical registrable host, sorted within each file.
 - sources: ';'-separated union of citations, first-seen order.
 - status: Active | Inaccessible (non-2xx always Inaccessible).
 - last_visited: YYYY-MM-DD of last check (new or re-verify, UTC).
 - years_registered: whole years since domain registration (RDAP/WHOIS),
   "" when unknown. Informational only — never gates status.
+- confidence/reason: last validation score (0-100) + diagnostic code.
+- final_domain: landing host after redirects (== web_domain when direct).
+- language: homepage <html lang> (lowercased BCP47, "" when unknown).
 
 Internal quality tracking (NOT in CSV) lives in state/state.json:
   failures: {domain: consecutive Inaccessible count}
@@ -23,7 +26,8 @@ import tempfile
 from pathlib import Path
 
 FIELDS = ["school_name", "web_domain", "type", "last_visited", "status",
-          "sources", "years_registered"]
+          "sources", "years_registered", "confidence", "reason",
+          "final_domain", "language"]
 VALID_STATUS = {"Active", "Inaccessible"}
 VALID_TYPES = {"k-12", "university/college", "other"}
 
@@ -191,7 +195,7 @@ def write_index(index_path: Path, buckets: dict[str, list[dict]]) -> None:
         a = sum(1 for r in rows if r.get("status") == "Active")
         lines.append(f"| {iso} | {len(rows)} | {a} | {len(rows) - a} |")
     total = sum(len(v) for v in buckets.values())
-    lines += ["", f"Total domains: {total}. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered`."]
+    lines += ["", f"Total domains: {total}. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`."]
     _atomic_write_text(index_path, "\n".join(lines) + "\n")
 
 

@@ -270,6 +270,20 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             years = None
         return "" if years is None else str(years)
 
+    def _row_extra(res: dict, domain: str) -> dict:
+        """New CSV columns from a validation result (stored as text).
+
+        Mirrors `store.FIELDS` tail: confidence, reason, final_domain,
+        language. Missing keys (e.g. Exa-rescue paths without local HTML)
+        fall back to "" (language) or the checked domain (final_domain).
+        """
+        return {
+            "confidence": str(res.get("confidence", "")),
+            "reason": str(res.get("reason", "")),
+            "final_domain": str(res.get("final_domain", "") or domain),
+            "language": str(res.get("language", "")),
+        }
+
     def _record_new(domain, name, iso, type_hint, source):
         """Validate + write a row for a not-yet-known domain."""
         nonlocal validated, added
@@ -284,7 +298,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
                "type": classify_type(name or "", domain, type_hint or ""),
                "last_visited": today_iso(), "status": status,
                "sources": source,
-               "years_registered": age}
+               "years_registered": age,
+               **_row_extra(res, domain)}
         buckets.setdefault(iso, []).append(row)
         by_domain[domain] = (iso, row)
         touched.add(iso)
@@ -384,6 +399,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         reason = str(res.get("reason", "") or "")
         if not reason.startswith("moved-"):
             reason = f"moved-to:{target}"
+        row.update(_row_extra(res, d))
+        row["reason"] = reason  # pointer reason, not the raw fetch reason
         failures[d] = {"confidence": res.get("confidence", 0),
                        "reason": reason,
                        "code": res.get("code", 0)}
@@ -459,6 +476,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             else:
                 row["last_visited"] = today_iso()
                 row["status"] = status
+                row.update(_row_extra(res, d))
                 if not row.get("years_registered"):
                     row["years_registered"] = _age(d)
                 failures[d] = {"confidence": res.get("confidence", 0),

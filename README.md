@@ -12,7 +12,7 @@ totals, last runs, top countries, signals, freshness).
 plus `data/countries/INDEX.md`:
 
 ```
-school_name,web_domain,type,last_visited,status,sources,years_registered
+school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language
 ```
 
 * `web_domain`: canonical registrable domain (lowercased, no `www`, punycode).
@@ -28,6 +28,13 @@ school_name,web_domain,type,last_visited,status,sources,years_registered
 * `years_registered`: whole years since domain registration (RDAP, port-43
   fallback for `.edu`/`.uk`), `""` when unknown. Informational — never gates
   `status`.
+* `confidence`: last validation score `0–100` (Active needs ≥ 50 + HTTP 2xx).
+* `reason`: diagnostic code for the last check (`http-2xx-html`,
+  `http-403`, `parking`, `moved-to:<domain>…`), `""` before first check.
+* `final_domain`: landing host after redirects (`== web_domain` when the
+  domain answers directly).
+* `language`: homepage `<html lang>` (lowercased BCP47, e.g. `fr`, `pt-br`),
+  `""` when absent or the fetch failed before HTML.
 
 ## How it works (two pipelines)
 
@@ -41,7 +48,7 @@ session-to-session. New domains go to the
 pending queue (`state/pending.json`); already-known domains just get their
 `sources` column unioned. No website fetching.
 
-**Verify** (`src/verify.py`, hourly at :30 UTC) — the safe half.
+**Verify** (`src/verify.py`, every 30 min at :15/:45 UTC) — the safe half.
 Hits each school website **once** (homepage-only `GET`, 10s timeout,
 descriptive UA, 0.4s delay). Hosts are spread worldwide, so no single party
 sees meaningful load. Per run: drain pending FIFO first, then re-verify —
@@ -102,8 +109,8 @@ Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|w
 ## Config
 
 * `config.yaml`: `run.*` budgets + archive policy + suffix→country map +
-  blocklist; `verify.*` caps for the verify pipeline (hourly scale — websites
-  are hit once each, distributed).
+  blocklist; `verify.*` caps for the verify pipeline (half-hourly scale —
+  websites are hit once each, distributed).
 * `sources.yaml`: registry (id, kind, url, license, per_run). Rotation order =
   file order. Set `enabled: false` to skip; K-12 ids honor `k12_enabled`.
 * Replace `YOUR_USER`/`you@example.com` in `config.yaml` UA so operators can
@@ -112,11 +119,11 @@ Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|w
 ## Free-tier budget (public repo)
 
 Public repos get unlimited minutes on standard runners: curate runs **hourly**
-at :00 (~5–15 min, strict per-source caps) and verify **hourly** at :30
-(~10–25 min, ~125 validations/run). Caps exist to respect upstream
+at :00 (~5–15 min, strict per-source caps) and verify **every 30 min** at
+:15/:45 (~10–25 min, ~125 validations/run). Caps exist to respect upstream
 politeness (Wikidata, Overpass for curate; per-site delay for verify), not
 minutes. Artifacts kept 14 days. On a private Free plan the same setup would
-far exceed the 2,000-min/month quota (24 + 24 short runs/day), so staying
+far exceed the 2,000-min/month quota (24 + 48 short runs/day), so staying
 public matters.
 
 ## Licenses & attribution

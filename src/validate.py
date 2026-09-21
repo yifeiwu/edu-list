@@ -102,6 +102,24 @@ def _visible(html: str) -> tuple[str, str, str]:
     return title, h1, (title + " " + h1).strip()
 
 
+LANG_RE = re.compile(
+    r'<html[^>]*\blang=["\']?([a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})?)'
+    r'(?:["\'\s>/]|$)',
+    re.I)
+
+
+def _page_lang(html: str) -> str:
+    """Homepage language from the <html lang> attribute (lowercased BCP47).
+
+    Only the document head is scanned (the tag precedes all content).
+    Returns "" when absent — published as the `language` CSV column.
+    """
+    m = LANG_RE.search((html or "")[:2000])
+    if not m:
+        return ""
+    return m.group(1).lower()
+
+
 def _moved_to(domain: str, final_host: str | None) -> str | None:
     """Registrable host the site moved to, or None if effectively same site.
 
@@ -304,6 +322,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
 
     headers = {"User-Agent": user_agent, "Accept": "text/html,*/*",
                "Accept-Language": "en;q=0.8"}
+    lang = ""  # homepage language; parsed once HTML is available below
     try:
         parts = urlparse.urlparse(url if "://" in url else "https://" + url)
         host = parts.hostname or domain
@@ -319,12 +338,12 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             return fb
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "bad-url", "code": 0, "final_domain": domain,
-                "moved_to": None}
+                "moved_to": None, "language": lang}
 
     if is_social_or_builder(domain):
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "social-only/placeholder", "code": 0,
-                "final_domain": domain, "moved_to": None}
+                "final_domain": domain, "moved_to": None, "language": lang}
     # Single immediate retry for transient transport failures
     # (ConnectionError/Timeout, e.g. reset, DNS blip, read timeout).
     # SSLError is NOT transient (strict TLS) and HTTP error statuses are
@@ -355,7 +374,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                     return fb
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": local_reason, "code": 0,
-                        "final_domain": domain, "moved_to": None}
+                        "final_domain": domain, "moved_to": None, "language": lang}
             _backoff()
             continue
         except requests.RequestException as e:
@@ -371,7 +390,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 0,
                     "reason": local_reason, "code": 0,
-                    "final_domain": domain, "moved_to": None}
+                    "final_domain": domain, "moved_to": None, "language": lang}
         except Exception as e:  # noqa: BLE001 - boundary guard
             _polite()
             kind = type(e).__name__
@@ -385,7 +404,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 0,
                     "reason": local_reason, "code": 0,
-                    "final_domain": domain, "moved_to": None}
+                    "final_domain": domain, "moved_to": None, "language": lang}
     if ssl_error is not None:
         # Strict TLS: broken/expired/self-signed chains are Inaccessible.
         # Legitimate institutions serve valid TLS; unverified fetches risk
@@ -410,7 +429,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                     return fb
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": "fetch-error:SSLError", "code": 0,
-                        "final_domain": domain, "moved_to": None}
+                        "final_domain": domain, "moved_to": None, "language": lang}
             except requests.RequestException as e2:
                 _polite()
                 local_reason = f"fetch-error:{type(e2).__name__}"
@@ -423,7 +442,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                     return fb
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": local_reason,
-                        "code": 0, "final_domain": domain, "moved_to": None}
+                        "code": 0, "final_domain": domain, "moved_to": None, "language": lang}
             except Exception as e2:  # noqa: BLE001 - boundary guard
                 _polite()
                 local_reason = f"fetch-error:{type(e2).__name__}"
@@ -436,7 +455,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                     return fb
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": local_reason,
-                        "code": 0, "final_domain": domain, "moved_to": None}
+                        "code": 0, "final_domain": domain, "moved_to": None, "language": lang}
         else:
             fb = _apply_exa_fallback(domain, school_name, country_iso,
                                      exa_fallback_fn,
@@ -448,7 +467,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 0,
                     "reason": f"fetch-error:{ssl_kind}",
-                    "code": 0, "final_domain": domain, "moved_to": None}
+                    "code": 0, "final_domain": domain, "moved_to": None, "language": lang}
     if g is None:
         fb = _apply_exa_fallback(domain, school_name, country_iso,
                                  exa_fallback_fn,
@@ -459,7 +478,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             return fb
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "fetch-error:ConnectionError", "code": 0,
-                "final_domain": domain, "moved_to": None}
+                "final_domain": domain, "moved_to": None, "language": lang}
     # Fetch chain done: g is a real response from here on.
     try:
         code = g.status_code
@@ -473,7 +492,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 # HTTP redirect chain already found the new home — chase it.
                 return {"status": "Inaccessible", "confidence": 5,
                         "reason": f"http-{code}", "code": code,
-                        "final_domain": final_host, "moved_to": moved}
+                        "final_domain": final_host, "moved_to": moved, "language": lang}
             fb = _apply_exa_fallback(domain, school_name, country_iso,
                                      exa_fallback_fn,
                                      local_reason=f"http-{code}",
@@ -484,20 +503,21 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 5,
                     "reason": f"http-{code}", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
         if "html" not in ctype.lower():
             _polite()
             return {"status": "Inaccessible", "confidence": 5,
                     "reason": f"non-html:{ctype[:40]}", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
         # Redirect landing on a social/parked host is not the school's site.
         if moved and is_social_or_builder(moved):
             _polite()
             return {"status": "Inaccessible", "confidence": 5,
                     "reason": f"moved-to-social:{moved}", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
         full_text = _read_limited(g, FULL_SCAN_MAX)
         html = full_text[:max_bytes] if full_text else ""
+        lang = _page_lang(html)
         _polite()
     finally:
         try:
@@ -509,7 +529,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         if moved:
             return {"status": "Inaccessible", "confidence": 5,
                     "reason": "empty-body", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
         fb = _apply_exa_fallback(domain, school_name, country_iso,
                                  exa_fallback_fn, local_reason="empty-body",
                                  local_code=code, local_final=final_host,
@@ -518,7 +538,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             return fb
         return {"status": "Inaccessible", "confidence": 5,
                 "reason": "empty-body", "code": code,
-                "final_domain": final_host, "moved_to": moved}
+                "final_domain": final_host, "moved_to": moved, "language": lang}
 
     # Meta-refresh hop to another host: same as an HTTP move (requests does
     # not follow these). Don't score the placeholder page as the school.
@@ -529,13 +549,13 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             if is_social_or_builder(target):
                 return {"status": "Inaccessible", "confidence": 5,
                         "reason": f"moved-to-social:{target}", "code": code,
-                        "final_domain": final_host, "moved_to": target}
+                        "final_domain": final_host, "moved_to": target, "language": lang}
             exa_v = _consult_exa(domain, target, school_name, country_iso,
                                  exa_verify_fn)
             suffix = _exa_suffix(exa_v)
             out: dict = {"status": "Inaccessible", "confidence": 10,
                          "reason": f"moved-meta:{target}{suffix}", "code": code,
-                         "final_domain": final_host, "moved_to": target}
+                         "final_domain": final_host, "moved_to": target, "language": lang}
             if exa_v is not None:
                 out["exa"] = exa_v
             return out
@@ -549,7 +569,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             if moved:
                 return {"status": "Inaccessible", "confidence": 10,
                         "reason": "soft-404/block-page", "code": code,
-                        "final_domain": final_host, "moved_to": moved}
+                        "final_domain": final_host, "moved_to": moved, "language": lang}
             fb = _apply_exa_fallback(domain, school_name, country_iso,
                                      exa_fallback_fn,
                                      local_reason="soft-404/block-page",
@@ -560,13 +580,13 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 10,
                     "reason": "soft-404/block-page", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
     for rx in PARKING_RE_C:
         if rx.search(vlow) or rx.search(low[:4000]):
             if moved:
                 return {"status": "Inaccessible", "confidence": 10,
                         "reason": "parking", "code": code,
-                        "final_domain": final_host, "moved_to": moved}
+                        "final_domain": final_host, "moved_to": moved, "language": lang}
             # Parked: never rescue same-domain, but Exa may know the real home.
             fb = _apply_exa_fallback(domain, school_name, country_iso,
                                      exa_fallback_fn, local_reason="parking",
@@ -578,7 +598,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return fb
             return {"status": "Inaccessible", "confidence": 10,
                     "reason": "parking", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
     # Parking heuristic: almost all text is links + lots of external refs.
     # Exempted when title/H1 already declares an educational institution —
     # real portals open with link-heavy navs too (e.g. 115 words / 41 links
@@ -592,7 +612,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         if moved:
             return {"status": "Inaccessible", "confidence": 10,
                     "reason": "parking-linkfarm", "code": code,
-                    "final_domain": final_host, "moved_to": moved}
+                    "final_domain": final_host, "moved_to": moved, "language": lang}
         # Linkfarm: never rescue same-domain, but Exa may know the real home.
         fb = _apply_exa_fallback(domain, school_name, country_iso,
                                  exa_fallback_fn,
@@ -604,7 +624,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             return fb
         return {"status": "Inaccessible", "confidence": 10,
                 "reason": "parking-linkfarm", "code": code,
-                "final_domain": final_host, "moved_to": moved}
+                "final_domain": final_host, "moved_to": moved, "language": lang}
 
     conf, reasons = 20, ["http-2xx-html"]  # reachable baseline
     if multisource:
@@ -695,7 +715,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         out_svc: dict = {
             "status": "Inaccessible", "confidence": conf,
             "reason": "low-confidence:" + "+".join(reasons), "code": code,
-            "final_domain": final_host, "moved_to": moved}
+            "final_domain": final_host, "moved_to": moved, "language": lang}
         if (exa_move_verdict or exa_target_verdict) is not None:
             out_svc["exa"] = exa_move_verdict or exa_target_verdict
         return out_svc
@@ -711,7 +731,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             reasons.append(suffix.lstrip("+"))
         out_mv: dict = {"status": "Inaccessible", "confidence": conf,
                         "reason": "+".join(reasons), "code": code,
-                        "final_domain": final_host, "moved_to": moved}
+                        "final_domain": final_host, "moved_to": moved, "language": lang}
         if exa_move_verdict is not None:
             out_mv["exa"] = exa_move_verdict
         return out_mv
@@ -760,7 +780,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
     if conf >= active_threshold:
         return {"status": "Active", "confidence": conf,
                 "reason": "+".join(reasons), "code": code,
-                "final_domain": final_host, "moved_to": moved}
+                "final_domain": final_host, "moved_to": moved, "language": lang}
     low_reason = "low-confidence:" + "+".join(reasons)
     fb = _apply_exa_fallback(domain, school_name, country_iso,
                              exa_fallback_fn, local_reason=low_reason,
@@ -770,4 +790,4 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         return fb
     return {"status": "Inaccessible", "confidence": conf,
             "reason": low_reason, "code": code,
-            "final_domain": final_host, "moved_to": moved}
+            "final_domain": final_host, "moved_to": moved, "language": lang}

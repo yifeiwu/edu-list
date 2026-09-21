@@ -328,3 +328,49 @@ def test_non_educational_page_tries_exa_discovery():
                                      exa_fallback_fn=_fb_moved)
     assert res["status"] == "Inaccessible"
     assert res["moved_to"] == "realcollege.edu"
+
+
+def test_page_lang_extraction():
+    assert validate._page_lang('<html lang="fr"><head>') == "fr"
+    assert validate._page_lang('<HTML LANG="en-US"><head>') == "en-us"
+    assert validate._page_lang("<html><head>") == ""
+    assert validate._page_lang("") == ""
+    assert validate._page_lang('<html lang="toolongtag">') == ""
+
+
+def test_result_carries_language_and_final_domain():
+    html = ('<html lang="pt-BR"><head><title>Universidade Exemplo - '
+            "Admissions</title>"
+            '<link rel="canonical" href="https://example.edu/">'
+            '<link rel="icon" href="/favicon.ico"></head><body>'
+            "<h1>Bem-vindo a Universidade Exemplo</h1>"
+            "<p>Admissions, academics, faculties, campus life for students.</p>"
+            '<a href="/admissions">Admissions</a>'
+            '<a href="/contact">Contact</a></body></html>')
+    with patch("src.validate.requests.get",
+               return_value=make_response(text=html)):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768, multisource=True,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     school_name="Universidade Exemplo")
+    assert res["language"] == "pt-br"
+    assert res["final_domain"] == "example.edu"
+
+
+def test_result_shape_invariants():
+    # Every path returns the full column set (language "" pre-HTML).
+    with patch("src.validate.requests.get",
+               return_value=make_response(status=403, text="forbidden")):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep)
+    assert res["language"] == ""
+    assert res["final_domain"] == "example.edu"
+    with patch("src.validate.requests.get",
+               return_value=_ok()):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep)
+    for key in ("status", "confidence", "reason", "code",
+                "final_domain", "moved_to", "language"):
+        assert key in res, key

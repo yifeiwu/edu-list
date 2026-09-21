@@ -1,12 +1,12 @@
 name: Verify (validate websites)
 
 # Rate-limit-safe half: hits each school website ONCE (homepage only, polite
-# UA + delay, hosts spread worldwide), so it runs hourly with a small cap
-# (~125 validations/run ≈ one old twice-daily budget spread over 24 runs).
-# Drains state/pending.json first, then re-verifies oldest rows.
+# UA + delay, hosts spread worldwide), so it runs every 30 minutes with a
+# small cap (~125 validations/run ≈ one old twice-daily budget spread over
+# 48 runs). Drains state/pending.json first, then re-verifies oldest rows.
 on:
   schedule:
-    - cron: "30 * * * *"   # hourly at :30 UTC (curate runs at :00, staggered)
+    - cron: "15,45 * * * *"   # every 30 min at :15/:45 UTC (curate runs at :00, staggered)
   workflow_dispatch:
     inputs:
       limit:

@@ -24,10 +24,10 @@ run:
 verify:
   # Overrides for `run.*` above (verify.py falls back to `run.*` when a key
   # is missing here). Values differ intentionally: verify hits each website
-  # once (homepage only, distributed hosts), so it runs hourly with a small
-  # cap. ~125 validations/run x 24 ≈ the old twice-daily 1500 x 2 budget
-  # spread over the day, fitting the 25-min budget (0.4s politeness + 10s
-  # timeout worst-case, deadline guard still truncates slow runs).
+  # once (homepage only, distributed hosts), so it runs every 30 min with a
+  # small cap. ~125 validations/run x 48 ≈ the old twice-daily 1500 x 2
+  # budget spread over the day, fitting the 25-min budget (0.4s politeness +
+  # 10s timeout worst-case, deadline guard still truncates slow runs).
   max_validations: 125
   max_new_per_run: 100
   verify_batch_no_new: 60

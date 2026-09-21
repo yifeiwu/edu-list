@@ -14,7 +14,9 @@ def test_atomic_write_and_roundtrip(tmp_path):
     buckets = {"US": [{"school_name": "A", "web_domain": "b.edu",
                        "type": "university/college", "last_visited": "2026-09-12",
                        "status": "Active", "sources": "hipo:x",
-                       "years_registered": "10"},
+                       "years_registered": "10", "confidence": "85",
+                       "reason": "http-2xx-html", "final_domain": "b.edu",
+                       "language": "en"},
                       {"school_name": "B", "web_domain": "a.edu",
                        "type": "other", "last_visited": "2026-09-12",
                        "status": "Inaccessible", "sources": "ror:x",
@@ -23,6 +25,11 @@ def test_atomic_write_and_roundtrip(tmp_path):
     by, buck = store.load_all(d)
     assert [r["web_domain"] for r in buck["US"]] == ["a.edu", "b.edu"]
     assert by["a.edu"][0] == "US"
+    assert by["b.edu"][1]["confidence"] == "85"
+    assert by["b.edu"][1]["language"] == "en"
+    # Rows predating the new columns load with "" defaults.
+    assert by["a.edu"][1]["confidence"] == ""
+    assert by["a.edu"][1]["final_domain"] == ""
     # No temp files leaked.
     assert list(d.glob(".tmp-*")) == []
 
@@ -41,6 +48,11 @@ def test_load_all_validates_schema(tmp_path):
     assert "b.edu" not in by  # invalid status dropped
     assert by["t.edu"][1]["type"] == "other"  # normalized
     assert by["dd.edu"][1]["last_visited"] == "2000-01-01"
+    # Pre-column rows get "" for the new fields.
+    assert by["g.edu"][1]["confidence"] == ""
+    assert by["g.edu"][1]["reason"] == ""
+    assert by["g.edu"][1]["final_domain"] == ""
+    assert by["g.edu"][1]["language"] == ""
 
 
 def test_purge_blocklisted(tmp_path):

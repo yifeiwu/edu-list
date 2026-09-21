@@ -149,10 +149,10 @@ def write_summary(summary_path: Path, buckets: dict[str, list[dict]],
     L += ["", "## Pipelines", "",
           "- Curate hourly at :00 UTC (`src/curate.py`): upstream discovery → "
           "`state/pending.json`.",
-          "- Verify hourly at :30 UTC (`src/verify.py`): homepage "
+          "- Verify every 30 min at :15/:45 UTC (`src/verify.py`): homepage "
           "checks + registration age → `data/countries/*.csv`.",
           "- Schema: `school_name,web_domain,type,last_visited,status,sources,"
-          "years_registered`.",
+          "years_registered,confidence,reason,final_domain,language`.",
           "- `status` is Active only on final HTTP 2xx + HTML + confidence "
           "with valid TLS; any non-2xx or TLS error is Inaccessible. "
           "`years_registered` is informational "

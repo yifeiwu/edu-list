@@ -7,7 +7,7 @@ name: Curate (discover)
 # Writes state/pending.json + re-cited sources; no validation.
 on:
   schedule:
-    - cron: "0 * * * *"   # hourly at :00 UTC (verify runs at :30, staggered)
+    - cron: "0 * * * *"   # hourly at :00 UTC (verify runs at :15/:45, staggered)
   workflow_dispatch:
     inputs:
       source:

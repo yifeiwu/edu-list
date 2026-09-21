@@ -19,12 +19,13 @@ def _cfg(**over):
 
 
 def _patch_validate(monkeypatch, reason="http-2xx-html+edu-keywords+structure",
-                    conf=80, code=200, moved=None):
+                    conf=80, code=200, moved=None, lang=""):
     def fake(url, domain, iso, timeout, ua, max_bytes, multisource=False,
              politeness=0, active_threshold=50, sleep_fn=None, **kw):
         status = "Active" if conf >= active_threshold and 200 <= code < 300 else "Inaccessible"
         return {"status": status, "confidence": conf, "reason": reason,
-                "code": code, "final_domain": domain, "moved_to": moved}
+                "code": code, "final_domain": domain, "moved_to": moved,
+                "language": lang}
     monkeypatch.setattr(verify, "validate_site", fake)
     monkeypatch.setattr(verify, "_domain_age", lambda d, timeout=8, cache=None: 10)
 
@@ -187,3 +188,26 @@ def test_move_chain_loop_safe(monkeypatch):
     verify.run_verify(cfg=cfg, state=state, by_domain=by, buckets=buckets,
                       pending=pending, deadline=time.time() + 60)
     assert set(by) == {"a.edu", "b.edu"}
+
+
+def test_new_and_reverify_rows_carry_extra_columns(monkeypatch):
+    _patch_validate(monkeypatch, lang="fr")
+    cfg = _cfg()
+    state: dict = {"detail": {}, "failures": {}, "moved": {}, "domain_age": {}}
+    row = {"school_name": "Old", "web_domain": "old.edu", "type": "other",
+           "last_visited": "2000-01-01", "status": "Active", "sources": "s",
+           "years_registered": ""}
+    by = {"old.edu": ("US", row)}
+    buckets: dict = {"US": [row]}
+    pending = [{"name": "A", "url": "https://a.edu", "domain": "a.edu",
+                "iso2": "US", "type_hint": "", "source": "hipo:x"}]
+    verify.run_verify(cfg=cfg, state=state, by_domain=by, buckets=buckets,
+                      pending=pending, deadline=time.time() + 60)
+    new = by["a.edu"][1]
+    assert new["confidence"] == "80"
+    assert new["reason"] == "http-2xx-html+edu-keywords+structure"
+    assert new["final_domain"] == "a.edu"
+    assert new["language"] == "fr"
+    # Re-verified existing row refreshed too.
+    assert by["old.edu"][1]["confidence"] == "80"
+    assert by["old.edu"][1]["language"] == "fr"
