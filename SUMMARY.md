@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-22 14:29 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-22 17:48 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **4997** across **108** countries
-- Active: **2988** (60%) · Inaccessible: **2009** (40%)
-- Pending queue: **7657** unvalidated candidates
-- Known registration age: **2573** domains (median 28 yrs)
+- Domains tracked: **5103** across **111** countries
+- Active: **3046** (60%) · Inaccessible: **2057** (40%)
+- Pending queue: **7556** unvalidated candidates
+- Known registration age: **2604** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-22 12:56 UTC): validated 119, +62 Active, re-verified 15, pending left 7602
+- Verify (2026-09-22 17:48 UTC): validated 121, +58 Active, re-verified 15, pending left 7556
 - Curate (2026-09-22 14:29 UTC): 10672 raw candidates, 55 queued, 8 re-cited
 
 ## Countries (top 15 by size)
@@ -38,14 +38,14 @@ _Generated 2026-09-22 14:29 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2988 |
-| `fetch-error:ConnectionError` | 828 |
-| `http-403` | 279 |
-| `fetch-error:ConnectTimeout` | 203 |
-| `low-confidence:http-2xx-html` | 168 |
-| `fetch-error:SSLError` | 163 |
+| `http-2xx-html` | 3046 |
+| `fetch-error:ConnectionError` | 846 |
+| `http-403` | 283 |
+| `fetch-error:ConnectTimeout` | 213 |
+| `low-confidence:http-2xx-html` | 172 |
+| `fetch-error:SSLError` | 166 |
 | `empty-body` | 34 |
-| `fetch-error:ReadTimeout` | 22 |
+| `fetch-error:ReadTimeout` | 24 |
 | `http-404` | 18 |
 | `http-500` | 12 |
 | `http-503` | 9 |
@@ -53,18 +53,18 @@ _Generated 2026-09-22 14:29 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **4997** (100%)
+- Verified in last 30 days: **5103** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **230**
+- Moved pointers (old domain → new): **237**
 
 ## Alerts
 
 - ⚠ `AO`: low Active rate 2/10 (20%) — check for blocks/stale sources
 - ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
-- ⚠ `CZ`: low Active rate 3/14 (21%) — check for blocks/stale sources
-- ⚠ `IR`: low Active rate 1/18 (6%) — check for blocks/stale sources
+- ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
+- ⚠ `IR`: low Active rate 1/19 (5%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 5/19 (26%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 

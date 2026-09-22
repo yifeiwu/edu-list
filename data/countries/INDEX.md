@@ -36,16 +36,19 @@
 | CF | 1 | 0 | 1 |
 | CG | 2 | 1 | 1 |
 | CH | 34 | 24 | 10 |
+| CI | 3 | 0 | 3 |
 | CL | 65 | 32 | 33 |
 | CM | 10 | 4 | 6 |
 | CN | 415 | 53 | 362 |
 | CO | 105 | 59 | 46 |
-| CR | 29 | 15 | 14 |
+| CR | 32 | 16 | 16 |
+| CU | 13 | 2 | 11 |
 | CV | 3 | 1 | 2 |
 | CW | 1 | 0 | 1 |
-| CZ | 14 | 3 | 11 |
+| CY | 17 | 12 | 5 |
+| CZ | 44 | 22 | 22 |
 | DE | 40 | 29 | 11 |
-| DK | 4 | 4 | 0 |
+| DK | 30 | 17 | 13 |
 | DZ | 32 | 18 | 14 |
 | EG | 15 | 5 | 10 |
 | ES | 7 | 4 | 3 |
@@ -57,12 +60,12 @@
 | GN | 1 | 0 | 1 |
 | GR | 5 | 3 | 2 |
 | HK | 4 | 4 | 0 |
-| HR | 1 | 1 | 0 |
+| HR | 12 | 10 | 2 |
 | ID | 33 | 16 | 17 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
 | IN | 56 | 36 | 20 |
-| IR | 18 | 1 | 17 |
+| IR | 19 | 1 | 18 |
 | IT | 11 | 7 | 4 |
 | JP | 19 | 5 | 14 |
 | KE | 6 | 5 | 1 |
@@ -83,7 +86,7 @@
 | NZ | 2 | 2 | 0 |
 | PE | 3 | 2 | 1 |
 | PH | 17 | 8 | 9 |
-| PL | 5 | 3 | 2 |
+| PL | 7 | 5 | 2 |
 | PT | 11 | 7 | 4 |
 | QA | 5 | 2 | 3 |
 | RO | 2 | 2 | 0 |
@@ -111,4 +114,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 4997. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 5103. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
