@@ -54,14 +54,19 @@
 | DO | 26 | 21 | 5 |
 | DZ | 32 | 18 | 14 |
 | EC | 44 | 22 | 22 |
-| EG | 34 | 10 | 24 |
+| EE | 12 | 9 | 3 |
+| EG | 54 | 20 | 34 |
+| ER | 1 | 0 | 1 |
 | ES | 7 | 4 | 3 |
-| FI | 1 | 1 | 0 |
-| FO | 1 | 0 | 1 |
+| ET | 31 | 13 | 18 |
+| FI | 9 | 5 | 4 |
+| FJ | 4 | 2 | 2 |
+| FO | 2 | 1 | 1 |
 | FR | 340 | 208 | 132 |
 | GB | 60 | 36 | 24 |
 | GH | 8 | 6 | 2 |
 | GN | 1 | 0 | 1 |
+| GQ | 1 | 0 | 1 |
 | GR | 5 | 3 | 2 |
 | HK | 4 | 4 | 0 |
 | HR | 12 | 10 | 2 |
@@ -102,6 +107,7 @@
 | SE | 8 | 7 | 1 |
 | SG | 2 | 2 | 0 |
 | SN | 2 | 1 | 1 |
+| SV | 25 | 15 | 10 |
 | SY | 1 | 1 | 0 |
 | TD | 2 | 1 | 1 |
 | TH | 1 | 0 | 1 |
@@ -118,4 +124,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 5205. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 5308. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
