@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-22 09:16 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-22 12:56 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **4893** across **107** countries
-- Active: **2926** (60%) · Inaccessible: **1967** (40%)
-- Pending queue: **7702** unvalidated candidates
-- Known registration age: **2559** domains (median 28 yrs)
+- Domains tracked: **4997** across **108** countries
+- Active: **2988** (60%) · Inaccessible: **2009** (40%)
+- Pending queue: **7602** unvalidated candidates
+- Known registration age: **2573** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-22 07:53 UTC): validated 116, +21 Active, re-verified 15, pending left 7651
+- Verify (2026-09-22 12:56 UTC): validated 119, +62 Active, re-verified 15, pending left 7602
 - Curate (2026-09-22 09:16 UTC): 10678 raw candidates, 51 queued, 11 re-cited
 
 ## Countries (top 15 by size)
@@ -26,43 +26,42 @@ _Generated 2026-09-22 09:16 UTC. Full per-country table: [data/countries/INDEX.m
 | CA | 174 | 95 | 79 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
+| CO | 105 | 59 | 46 |
 | BD | 80 | 52 | 28 |
 | AT | 73 | 48 | 25 |
 | CL | 65 | 32 | 33 |
 | GB | 60 | 36 | 24 |
 | BG | 59 | 33 | 26 |
 | IN | 56 | 36 | 20 |
-| BY | 48 | 15 | 33 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2926 |
-| `fetch-error:ConnectionError` | 816 |
-| `http-403` | 272 |
-| `fetch-error:ConnectTimeout` | 196 |
-| `low-confidence:http-2xx-html` | 166 |
-| `fetch-error:SSLError` | 156 |
+| `http-2xx-html` | 2988 |
+| `fetch-error:ConnectionError` | 828 |
+| `http-403` | 279 |
+| `fetch-error:ConnectTimeout` | 203 |
+| `low-confidence:http-2xx-html` | 168 |
+| `fetch-error:SSLError` | 163 |
 | `empty-body` | 34 |
 | `fetch-error:ReadTimeout` | 22 |
 | `http-404` | 18 |
-| `http-500` | 11 |
+| `http-500` | 12 |
 | `http-503` | 9 |
 | `social-only/placeholder` | 5 |
 
 ## Freshness
 
-- Verified in last 30 days: **4893** (100%)
+- Verified in last 30 days: **4997** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **225**
+- Moved pointers (old domain → new): **230**
 
 ## Alerts
 
 - ⚠ `AO`: low Active rate 2/10 (20%) — check for blocks/stale sources
 - ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
-- ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 1/18 (6%) — check for blocks/stale sources
