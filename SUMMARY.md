@@ -1,28 +1,28 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-22 18:37 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-22 20:37 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **5103** across **111** countries
-- Active: **3046** (60%) · Inaccessible: **2057** (40%)
-- Pending queue: **7612** unvalidated candidates
-- Known registration age: **2604** domains (median 28 yrs)
+- Domains tracked: **5205** across **115** countries
+- Active: **3101** (60%) · Inaccessible: **2104** (40%)
+- Pending queue: **7511** unvalidated candidates
+- Known registration age: **2644** domains (median 27 yrs)
 
 ## Last runs
 
-- Verify (2026-09-22 17:48 UTC): validated 121, +58 Active, re-verified 15, pending left 7556
+- Verify (2026-09-22 20:37 UTC): validated 117, +55 Active, re-verified 15, pending left 7511
 - Curate (2026-09-22 18:37 UTC): 10686 raw candidates, 56 queued, 13 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1718 | 1294 | 424 |
+| US | 1720 | 1296 | 424 |
 | CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
 | BR | 343 | 160 | 183 |
-| FR | 340 | 207 | 133 |
+| FR | 340 | 208 | 132 |
 | CA | 174 | 95 | 79 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
@@ -38,14 +38,14 @@ _Generated 2026-09-22 18:37 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3046 |
-| `fetch-error:ConnectionError` | 846 |
-| `http-403` | 283 |
-| `fetch-error:ConnectTimeout` | 213 |
-| `low-confidence:http-2xx-html` | 172 |
-| `fetch-error:SSLError` | 166 |
+| `http-2xx-html` | 3101 |
+| `fetch-error:ConnectionError` | 870 |
+| `http-403` | 285 |
+| `fetch-error:ConnectTimeout` | 222 |
+| `low-confidence:http-2xx-html` | 174 |
+| `fetch-error:SSLError` | 172 |
 | `empty-body` | 34 |
-| `fetch-error:ReadTimeout` | 24 |
+| `fetch-error:ReadTimeout` | 25 |
 | `http-404` | 18 |
 | `http-500` | 12 |
 | `http-503` | 9 |
@@ -53,10 +53,10 @@ _Generated 2026-09-22 18:37 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **5103** (100%)
+- Verified in last 30 days: **5205** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **237**
+- Moved pointers (old domain → new): **239**
 
 ## Alerts
 
@@ -64,6 +64,7 @@ _Generated 2026-09-22 18:37 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
+- ⚠ `EG`: low Active rate 10/34 (29%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 1/19 (5%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 5/19 (26%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources

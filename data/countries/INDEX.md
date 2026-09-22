@@ -7,7 +7,7 @@
 | AF | 40 | 26 | 14 |
 | AG | 2 | 2 | 0 |
 | AL | 35 | 18 | 17 |
-| AM | 44 | 25 | 19 |
+| AM | 44 | 24 | 20 |
 | AO | 10 | 2 | 8 |
 | AR | 126 | 90 | 36 |
 | AT | 73 | 48 | 25 |
@@ -48,13 +48,17 @@
 | CY | 17 | 12 | 5 |
 | CZ | 44 | 22 | 22 |
 | DE | 40 | 29 | 11 |
-| DK | 30 | 17 | 13 |
+| DJ | 1 | 1 | 0 |
+| DK | 37 | 20 | 17 |
+| DM | 3 | 1 | 2 |
+| DO | 26 | 21 | 5 |
 | DZ | 32 | 18 | 14 |
-| EG | 15 | 5 | 10 |
+| EC | 44 | 22 | 22 |
+| EG | 34 | 10 | 24 |
 | ES | 7 | 4 | 3 |
 | FI | 1 | 1 | 0 |
 | FO | 1 | 0 | 1 |
-| FR | 340 | 207 | 133 |
+| FR | 340 | 208 | 132 |
 | GB | 60 | 36 | 24 |
 | GH | 8 | 6 | 2 |
 | GN | 1 | 0 | 1 |
@@ -106,7 +110,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1718 | 1294 | 424 |
+| US | 1720 | 1296 | 424 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VE | 1 | 0 | 1 |
@@ -114,4 +118,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 5103. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 5205. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
