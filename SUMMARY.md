@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-22 03:57 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-22 07:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **4792** across **107** countries
-- Active: **2905** (61%) · Inaccessible: **1887** (39%)
-- Pending queue: **7751** unvalidated candidates
-- Known registration age: **2554** domains (median 28 yrs)
+- Domains tracked: **4893** across **107** countries
+- Active: **2926** (60%) · Inaccessible: **1967** (40%)
+- Pending queue: **7651** unvalidated candidates
+- Known registration age: **2559** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-22 02:05 UTC): validated 115, +11 Active, re-verified 15, pending left 7699
+- Verify (2026-09-22 07:53 UTC): validated 116, +21 Active, re-verified 15, pending left 7651
 - Curate (2026-09-22 03:57 UTC): 10687 raw candidates, 52 queued, 3046 re-cited
 
 ## Countries (top 15 by size)
@@ -19,8 +19,8 @@ _Generated 2026-09-22 03:57 UTC. Full per-country table: [data/countries/INDEX.m
 | country | total | Active | Inaccessible |
 |---|---|---|---|
 | US | 1718 | 1294 | 424 |
+| CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
-| CN | 355 | 47 | 308 |
 | BR | 343 | 160 | 183 |
 | FR | 340 | 207 | 133 |
 | CA | 174 | 95 | 79 |
@@ -38,32 +38,32 @@ _Generated 2026-09-22 03:57 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 2905 |
-| `fetch-error:ConnectionError` | 767 |
-| `http-403` | 267 |
-| `fetch-error:ConnectTimeout` | 187 |
-| `low-confidence:http-2xx-html` | 159 |
-| `fetch-error:SSLError` | 151 |
-| `empty-body` | 33 |
-| `fetch-error:ReadTimeout` | 21 |
+| `http-2xx-html` | 2926 |
+| `fetch-error:ConnectionError` | 816 |
+| `http-403` | 272 |
+| `fetch-error:ConnectTimeout` | 196 |
+| `low-confidence:http-2xx-html` | 166 |
+| `fetch-error:SSLError` | 156 |
+| `empty-body` | 34 |
+| `fetch-error:ReadTimeout` | 22 |
 | `http-404` | 18 |
-| `http-500` | 10 |
+| `http-500` | 11 |
 | `http-503` | 9 |
 | `social-only/placeholder` | 5 |
 
 ## Freshness
 
-- Verified in last 30 days: **4792** (100%)
+- Verified in last 30 days: **4893** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **224**
+- Moved pointers (old domain → new): **225**
 
 ## Alerts
 
 - ⚠ `AO`: low Active rate 2/10 (20%) — check for blocks/stale sources
 - ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
 - ⚠ `CD`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `CN`: low Active rate 47/355 (13%) — check for blocks/stale sources
+- ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CZ`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 1/18 (6%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 5/19 (26%) — check for blocks/stale sources
