@@ -13635,6 +13635,21 @@
       "confidence": 5,
       "reason": "empty-body"
     },
+    "nwu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nxmc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nxu.edu.cn": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "nycu.edu.tw": {
       "code": 0,
       "confidence": 0,
@@ -13885,6 +13900,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "ouc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "owu.edu": {
       "code": 200,
       "confidence": 90,
@@ -14134,6 +14154,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content"
+    },
+    "peizheng.com.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "pembroke.edu": {
       "code": 0,
@@ -14735,6 +14760,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "pzhu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "qbc.wa.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -14744,6 +14774,31 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "qdu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "qfnu.edu.cn": {
+      "code": 502,
+      "confidence": 5,
+      "reason": "http-502"
+    },
+    "qhnu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "qhrtvu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "qhu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "qiba.edu.au": {
       "code": 200,
@@ -14800,10 +14855,20 @@
       "confidence": 40,
       "reason": "moved-to:qu.edu"
     },
+    "qust.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "qut.edu.au": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "qzu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "radford.edu": {
       "code": 200,
@@ -15165,6 +15230,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ruc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "ruet.ac.bd": {
       "code": 200,
       "confidence": 90,
@@ -15465,6 +15535,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "sandau.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sandiego.edu": {
       "code": 200,
       "confidence": 75,
@@ -15472,8 +15547,8 @@
     },
     "sans.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "santamarcelina.edu.br": {
       "code": 403,
@@ -15484,6 +15559,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sanxiau.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "saojudas.br": {
       "code": 200,
@@ -15527,8 +15607,8 @@
     },
     "sautech.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "savanaart.yolasite.com": {
       "code": 200,
@@ -15541,6 +15621,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sbg.ac.at": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sbs.edu.cn": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -15570,6 +15655,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "scau.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "sccbellinzona.ch": {
       "code": 200,
       "confidence": 40,
@@ -15584,6 +15674,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "sccu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "scei.com.au": {
       "code": 0,
@@ -15635,6 +15730,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "scnu.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "sco.edu": {
       "code": 200,
       "confidence": 60,
@@ -15672,8 +15772,8 @@
     },
     "scottsdalecc.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "scranton.edu": {
       "code": 200,
@@ -15701,9 +15801,9 @@
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "scu.edu.cn": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:ConnectionError"
+      "code": 202,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "scuhs.edu": {
       "code": 200,
@@ -15715,10 +15815,40 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "sdada.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sdau.edu.cn": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "sdcc.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "sdie.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sdju.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sdmu.edu.cn": {
+      "code": 502,
+      "confidence": 5,
+      "reason": "http-502"
+    },
+    "sdnu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "sdsmt.edu": {
       "code": 200,
@@ -15745,6 +15875,26 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix"
     },
+    "sdufe.edu.cn": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "sdust.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sdut.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sdutcm.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sea-english.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -15762,8 +15912,8 @@
     },
     "seark.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "seas.upenn.edu": {
       "code": 200,
@@ -15920,6 +16070,21 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "sgu.edu.cn": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
+    "sh-sipopolytechnic.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shanghaitech.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "shawnee.edu": {
       "code": 200,
       "confidence": 90,
@@ -15929,6 +16094,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "shcc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "sheffield.ac.uk": {
       "code": 200,
@@ -15955,6 +16125,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "shfu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shift.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shinstitute.org": {
       "code": 200,
       "confidence": 50,
@@ -15964,6 +16144,21 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "shisu.edu.cn": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "shmtu.edu.cn": {
+      "code": 502,
+      "confidence": 5,
+      "reason": "http-502"
+    },
+    "shmu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "shorter.edu": {
       "code": 200,
@@ -15975,10 +16170,40 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "shouhua.net.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shsmu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shspu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shsu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "shtdu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shtu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shtvu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "shu-bg.net": {
       "code": 0,
@@ -15995,7 +16220,27 @@
       "confidence": 0,
       "reason": "fetch-error:ReadTimeout"
     },
+    "shu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shufe.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shutcm.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shxx.whu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shzu.edu.cn": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -16009,6 +16254,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "sicau.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sicnu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "sifc.edu": {
       "code": 0,
@@ -16054,6 +16309,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "sisu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "sitcm.edu.au": {
       "code": 200,
@@ -16154,6 +16414,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sjzu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "skc.edu": {
       "code": 200,
@@ -16260,6 +16525,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "smmu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sms.edu": {
       "code": 200,
       "confidence": 85,
@@ -16296,6 +16566,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "snie.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "snnu.edu.cn": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -16930,6 +17205,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "stu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "stu.edu.sd": {
       "code": 0,
       "confidence": 0,
@@ -17030,6 +17310,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "sues.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "suffolk.edu": {
       "code": 200,
       "confidence": 90,
@@ -17105,6 +17390,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "sustc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "suu.edu": {
       "code": 200,
       "confidence": 90,
@@ -17135,6 +17425,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
+    "swau.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "swc.tc": {
       "code": 200,
       "confidence": 20,
@@ -17144,6 +17439,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "swfc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "swin.edu.au": {
       "code": 200,
@@ -17155,15 +17455,35 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "swjtu.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "swmed.edu": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "swnu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "swpu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "swri.edu": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "swsm.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "swt.edu": {
       "code": 0,
@@ -17175,20 +17495,70 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "swufe.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "swun.edu.cn": {
+      "code": 412,
+      "confidence": 5,
+      "reason": "http-412"
+    },
+    "swupl.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "swust.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "swuyc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sxau.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sxu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "sxu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "sydney.edu.au": {
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "syict.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sylvacampus.org": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "syphu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sypu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "syr.edu": {
       "code": 200,
@@ -17205,6 +17575,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "sytu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "syu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "szit.edu.cn": {
       "code": 0,
       "confidence": 0,
@@ -17214,6 +17594,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "szu.edu.cn": {
+      "code": 488,
+      "confidence": 5,
+      "reason": "http-488"
     },
     "tabor.edu": {
       "code": 200,
@@ -17460,6 +17845,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "tijmu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tintern.vic.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -17469,6 +17859,36 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "tjarts.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tjcu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tjmu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tjnu.edu.cn": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "tjpu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tjrtvu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tjsl.edu": {
       "code": 200,
@@ -17484,6 +17904,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "tjufe.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "tjut.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tlc.edu.qa": {
       "code": 0,
@@ -17504,6 +17934,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "tmmu.edu.cn": {
+      "code": 404,
+      "confidence": 5,
+      "reason": "http-404"
     },
     "tmss.org.uk": {
       "code": 200,
@@ -17725,6 +18160,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ttmc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ReadTimeout"
+    },
     "ttu.ac.ke": {
       "code": 200,
       "confidence": 60,
@@ -17879,6 +18319,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "tyut.edu.cn": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "tzc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "u-aizu.ac.jp": {
       "code": 200,
@@ -19150,6 +19600,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uheeyc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uhsa.ag": {
       "code": 200,
       "confidence": 90,
@@ -19159,6 +19614,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uibe.edu.cn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "uibk.ac.at": {
       "code": 200,
@@ -19256,6 +19716,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uj.edu.pl": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ujn.edu.cn": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -19469,6 +19934,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "umcollege.com": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking"
     },
     "umd.edu": {
       "code": 200,
@@ -21540,6 +22010,11 @@
       "confidence": 40,
       "reason": "moved-to:unisc.edu.au"
     },
+    "usc.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "usca.edu": {
       "code": 200,
       "confidence": 90,
@@ -21680,6 +22155,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "usst.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ust-lodja.org": {
       "code": 0,
       "confidence": 0,
@@ -21705,6 +22185,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "ustb.edu.cn": {
+      "code": 400,
+      "confidence": 5,
+      "reason": "http-400"
+    },
     "ustboniface.mb.ca": {
       "code": 0,
       "confidence": 0,
@@ -21714,6 +22199,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ustc.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ustc.edu.cn"
     },
     "ustc.edu.cn": {
       "code": 200,
@@ -21885,6 +22375,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "utibet.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "utica.edu": {
       "code": 200,
       "confidence": 90,
@@ -22044,6 +22539,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uvu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "uw.edu": {
       "code": 200,
@@ -29997,6 +30497,18 @@
       "ts": "2026-09-17"
     },
     "nwscc.edu": "2002-02-11",
+    "nwu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "nxmc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "nxu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "nycu.edu.tw": {
       "reg": "",
       "ts": "2026-09-17"
@@ -30086,6 +30598,10 @@
     "oswego.edu": "1987-11-09",
     "otterbein.edu": "1995-05-27",
     "ou.edu": "1995-10-09",
+    "ouc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "owu.edu": "1991-12-23",
     "ox.ac.uk": {
       "reg": "",
@@ -30182,6 +30698,10 @@
     "pdx.edu": "1987-04-15",
     "peace.edu": "1994-11-30",
     "pedevropska.cz": "1999-10-21",
+    "peizheng.com.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "pembroke.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -30460,6 +30980,10 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "pzhu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "qbc.wa.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
@@ -30467,6 +30991,26 @@
     "qcve.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "qdu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "qfnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "qhnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "qhrtvu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "qhu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "qiba.edu.au": {
       "reg": "",
@@ -30497,9 +31041,17 @@
     "questu.ca": "2003-05-09",
     "quincy.edu": "1994-01-18",
     "quinnipiac.edu": "1994-12-17",
+    "qust.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "qut.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "qzu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "radford.edu": "1998-05-05",
     "ramapo.edu": "1991-05-07",
@@ -30627,6 +31179,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ruc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "ruet.ac.bd": {
       "reg": "",
       "ts": "2026-09-20"
@@ -30738,10 +31294,18 @@
     },
     "samford.edu": "1993-12-05",
     "samskritabharati.in": "2005-02-16",
+    "sandau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sandiego.edu": "2000-10-20",
     "sans.edu": "2005-12-02",
     "santamarcelina.edu.br": "2012-02-10",
     "santamaria.sch.id": "2016-06-03",
+    "sanxiau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "saojudas.br": "1997-01-07",
     "saosalvador.edu.br": "2002-08-15",
     "sapc.edu": {
@@ -30769,6 +31333,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "sbs.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sbta.com.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -30780,6 +31348,10 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "scau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sccbellinzona.ch": {
       "reg": "",
       "ts": "2026-09-16"
@@ -30789,6 +31361,10 @@
       "ts": "2026-09-16"
     },
     "scccd.edu": "2005-01-06",
+    "sccu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "scei.com.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -30819,6 +31395,10 @@
     "scm.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "scnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "sco.edu": "1996-01-06",
     "scotch.sa.edu.au": {
@@ -30859,7 +31439,31 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "sdada.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sdcc.edu": "2005-04-01",
+    "sdie.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdju.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sdsmt.edu": "1991-08-25",
     "sdstate.edu": "1991-12-12",
     "sdsu.edu": "1986-07-10",
@@ -30870,6 +31474,22 @@
     "sdu.edu.cn": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "sdufe.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdust.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdut.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sdutcm.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "sea-english.edu.au": {
       "reg": "",
@@ -30943,8 +31563,21 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "sgu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sh-sipopolytechnic.com": "2026-02-04",
+    "shanghaitech.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shawnee.edu": "1991-01-21",
     "shc.edu": "1994-11-03",
+    "shcc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sheffield.ac.uk": {
       "reg": "",
       "ts": "2026-09-16"
@@ -30953,20 +31586,80 @@
     "sheltonstate.edu": "2002-01-08",
     "shepherd.edu": "1998-09-29",
     "sheridancollege.ca": "2003-05-14",
+    "shfu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shift.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shinstitute.org": "2014-03-09",
     "ship.edu": "1992-02-17",
+    "shisu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shmtu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shorter.edu": "1995-12-12",
     "shortercollege.edu": "2013-11-11",
+    "shouhua.net.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shsmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shspu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shsu.edu": "1991-03-13",
+    "shtdu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shtu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shtvu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shu-bg.net": "1999-09-15",
     "shu.bg": {
       "reg": "",
       "ts": "2026-09-18"
     },
     "shu.edu": "1991-05-02",
+    "shu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shufe.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "shutcm.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "shxx.whu.edu.cn": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "shzu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "sia.wa.edu.au": {
       "reg": "",
@@ -30975,6 +31668,14 @@
     "sibt.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "sicau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sicnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "sifc.edu": {
       "reg": "",
@@ -30997,6 +31698,10 @@
       "ts": "2026-09-14"
     },
     "sisd.org": "2002-04-09",
+    "sisu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sitcm.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -31037,6 +31742,10 @@
     },
     "sju.edu": "1986-05-08",
     "sjvc.edu": "2002-01-08",
+    "sjzu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "skc.edu": "1994-12-15",
     "skidmore.edu": "1989-05-16",
     "skku.edu": "2000-06-21",
@@ -31075,6 +31784,10 @@
     "smith.edu": "1987-08-18",
     "smkn1kotabekasi.sch.id": "2009-07-15",
     "smkn4sby.sch.id": "2026-06-03",
+    "smmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sms.edu": "2008-08-06",
     "smsu.edu": "2008-12-02",
     "smtafe.wa.edu.au": {
@@ -31088,6 +31801,10 @@
     "snie.edu.cn": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "snnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "snu.ac.kr": {
       "reg": "",
@@ -31354,6 +32071,10 @@
     "stthomas.edu": "1990-09-12",
     "stthomasu.ca": "2000-11-24",
     "stu.edu": "1995-07-31",
+    "stu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "stu.edu.sd": "2021-12-16",
     "stuartholme.com": "2000-10-18",
     "student.42.us.org": {
@@ -31419,6 +32140,10 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "sues.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "suffolk.edu": "1995-08-01",
     "sulross.edu": "1994-08-12",
     "sum.ba": {
@@ -31447,6 +32172,10 @@
     "surabayaeuropeanschool.com": "2002-06-14",
     "susqu.edu": "1990-10-16",
     "sust.edu": "1999-06-04",
+    "sustc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "suu.edu": "1990-02-12",
     "sve-mo.ba": {
       "reg": "",
@@ -31462,11 +32191,19 @@
       "ts": "2026-09-19"
     },
     "swarthmore.edu": "1987-06-22",
+    "swau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "swc.tc": {
       "reg": "",
       "ts": "2026-09-18"
     },
     "swccd.edu": "2005-06-01",
+    "swfc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "swin.edu.au": {
       "reg": "",
       "ts": "2026-09-20"
@@ -31475,8 +32212,24 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "swjtu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "swmed.edu": "1992-05-25",
+    "swnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "swpu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "swri.edu": "1988-01-28",
+    "swsm.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "swt.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -31485,17 +32238,65 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "swufe.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "swun.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "swupl.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "swust.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "swuyc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sxau.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sxu.edu": "1993-12-07",
+    "sxu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sydney.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
     },
+    "syict.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "sylvacampus.org": "2022-04-07",
+    "syphu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "sypu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "syr.edu": "1986-09-02",
     "syracuse.edu": "1997-01-30",
     "sysu.edu.cn": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "sytu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "syu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "szit.edu.cn": {
       "reg": "",
@@ -31504,6 +32305,10 @@
     "szu.edu.af": {
       "reg": "",
       "ts": "2026-09-19"
+    },
+    "szu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "tabor.edu": "1994-07-23",
     "tacomahousing.net": "2013-05-06",
@@ -31601,6 +32406,10 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "tijmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "tintern.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -31609,11 +32418,43 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "tjarts.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjcu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjnu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjpu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjrtvu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "tjsl.edu": "1995-11-14",
     "tju.edu": "1991-05-29",
     "tju.edu.cn": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "tjufe.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tjut.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "tlc.edu.qa": {
       "reg": "",
@@ -31627,6 +32468,10 @@
     "tmi.ac.ir": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "tmmu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "tmss.org.uk": "2017-07-12",
     "tmt.edu.au": {
@@ -31720,6 +32565,10 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "ttmc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "ttu.ac.ke": "2016-10-10",
     "ttu.edu": "1988-09-16",
     "ttuhsc.edu": "1994-06-06",
@@ -31794,6 +32643,14 @@
     "tyndale.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "tyut.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
+    "tzc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "u-aizu.ac.jp": {
       "reg": "",
@@ -32413,11 +33270,19 @@
       "ts": "2026-09-16"
     },
     "uhd.edu": "2000-07-17",
+    "uheeyc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "uhsa.ag": {
       "reg": "",
       "ts": "2026-09-19"
     },
     "uib.no": "1999-11-14",
+    "uibe.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "uibk.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
@@ -32459,6 +33324,10 @@
     },
     "uj.edu": "2013-09-19",
     "uj.edu.pl": "1995-01-01",
+    "ujn.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "ujso.cl": {
       "reg": "",
       "ts": "2026-09-21"
@@ -32577,6 +33446,7 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "umcollege.com": "2012-08-03",
     "umd.edu": "1985-07-31",
     "umdearborn.edu": "2009-05-21",
     "ume.cl": {
@@ -33660,6 +34530,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "usc.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "usca.edu": "2001-01-24",
     "usd.edu": "1986-07-10",
     "usel.am": {
@@ -33720,6 +34594,10 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "usst.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "ust-lodja.org": {
       "reg": "",
       "ts": "2026-09-14"
@@ -33740,11 +34618,16 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "ustb.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "ustboniface.mb.ca": "2000-11-27",
     "ustc.ac.bd": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ustc.edu": "1997-01-14",
     "ustc.edu.cn": {
       "reg": "",
       "ts": "2026-09-15"
@@ -33818,6 +34701,10 @@
     },
     "uth.edu": "1998-12-21",
     "uti.edu": "2003-04-21",
+    "utibet.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
+    },
     "utica.edu": "1999-02-10",
     "utk.edu": "1987-06-04",
     "utm.edu": "1993-11-01",
@@ -33880,6 +34767,10 @@
     "uvsc.edu": {
       "reg": "",
       "ts": "2026-09-19"
+    },
+    "uvu.edu.cn": {
+      "reg": "",
+      "ts": "2026-09-22"
     },
     "uw.edu": "1999-03-05",
     "uwa.edu": "1999-12-22",
@@ -37215,6 +38106,9 @@
     "nwnu.edu.cn": 1,
     "nwpu.edu.cn": 1,
     "nwscc.edu": 2,
+    "nwu.edu.cn": 1,
+    "nxmc.edu.cn": 1,
+    "nxu.edu.cn": 1,
     "nycu.edu.tw": 1,
     "nyit.edu": 0,
     "nyit.edu.bh": 1,
@@ -37265,6 +38159,7 @@
     "oswego.edu": 0,
     "otterbein.edu": 0,
     "ou.edu": 0,
+    "ouc.edu.cn": 1,
     "owu.edu": 0,
     "ox.ac.uk": 2,
     "oxy.edu": 0,
@@ -37315,6 +38210,7 @@
     "pdx.edu": 0,
     "peace.edu": 0,
     "pedevropska.cz": 2,
+    "peizheng.com.cn": 1,
     "pembroke.edu": 1,
     "pembroke.sa.edu.au": 0,
     "pennwest.edu": 0,
@@ -37435,8 +38331,14 @@
     "pwu.com": 1,
     "pxl.be": 0,
     "pymblelc.nsw.edu.au": 0,
+    "pzhu.edu.cn": 1,
     "qbc.wa.edu.au": 0,
     "qcve.edu.au": 0,
+    "qdu.edu.cn": 1,
+    "qfnu.edu.cn": 1,
+    "qhnu.edu.cn": 1,
+    "qhrtvu.edu.cn": 1,
+    "qhu.edu.cn": 1,
     "qiba.edu.au": 0,
     "qmul.ac.uk": 1,
     "qsb.com.au": 1,
@@ -37448,7 +38350,9 @@
     "questu.ca": 0,
     "quincy.edu": 0,
     "quinnipiac.edu": 1,
+    "qust.edu.cn": 1,
     "qut.edu.au": 1,
+    "qzu.edu.cn": 1,
     "radford.edu": 0,
     "ramapo.edu": 0,
     "rance-promsoc.be": 1,
@@ -37521,6 +38425,7 @@
     "ru.nl": 0,
     "rua.edu.kh": 0,
     "rub.edu.bt": 1,
+    "ruc.edu.cn": 1,
     "ruet.ac.bd": 0,
     "rufa.edu.kh": 0,
     "rug.ac.be": 1,
@@ -37573,7 +38478,7 @@
     "saintmarys.edu": 0,
     "saintpierrecalais.fr": 0,
     "saintremi.fr": 1,
-    "saintterezameduni.com": 1,
+    "saintterezameduni.com": 2,
     "sait.ca": 0,
     "salam.edu.af": 0,
     "salisbury.edu": 0,
@@ -37581,10 +38486,12 @@
     "salvador.edu.ar": 1,
     "samford.edu": 0,
     "samskritabharati.in": 0,
+    "sandau.edu.cn": 1,
     "sandiego.edu": 0,
     "sans.edu": 0,
     "santamarcelina.edu.br": 1,
     "santamaria.sch.id": 0,
+    "sanxiau.edu.cn": 1,
     "saojudas.br": 1,
     "saosalvador.edu.br": 1,
     "sapc.edu": 1,
@@ -37597,14 +38504,17 @@
     "savanaart.yolasite.com": 1,
     "sbc.edu": 0,
     "sbg.ac.at": 1,
+    "sbs.edu.cn": 1,
     "sbta.com.au": 0,
     "sbu.edu": 0,
     "sbuniv.edu": 0,
     "sc.edu": 0,
     "scar.utoronto.ca": 1,
+    "scau.edu.cn": 0,
     "sccbellinzona.ch": 1,
     "sccbellinzona.ti.ch": 1,
     "scccd.edu": 1,
+    "sccu.edu.cn": 1,
     "scei.com.au": 1,
     "scesa.al": 2,
     "scgs.qld.edu.au": 0,
@@ -37615,28 +38525,39 @@
     "sciencesdelaterre.ens-lyon.fr": 0,
     "sckans.edu": 0,
     "scm.vic.edu.au": 0,
+    "scnu.edu.cn": 0,
     "sco.edu": 0,
     "scotch.sa.edu.au": 0,
     "scotch.vic.edu.au": 1,
     "scotch.wa.edu.au": 0,
     "scots.college": 0,
     "scotsallsaints.nsw.edu.au": 0,
-    "scotspgc.qld.edu.au": 1,
+    "scotspgc.qld.edu.au": 2,
     "scottsdalecc.edu": 0,
     "scranton.edu": 0,
     "scripps.edu": 0,
     "sct.edu": 1,
     "scu.edu": 0,
     "scu.edu.au": 0,
-    "scu.edu.cn": 1,
+    "scu.edu.cn": 2,
     "scuhs.edu": 0,
     "scut.edu.cn": 1,
+    "sdada.edu.cn": 0,
+    "sdau.edu.cn": 0,
     "sdcc.edu": 0,
+    "sdie.edu.cn": 1,
+    "sdju.edu.cn": 1,
+    "sdmu.edu.cn": 1,
+    "sdnu.edu.cn": 1,
     "sdsmt.edu": 0,
     "sdstate.edu": 0,
     "sdsu.edu": 0,
     "sdu.edu.az": 0,
     "sdu.edu.cn": 0,
+    "sdufe.edu.cn": 1,
+    "sdust.edu.cn": 1,
+    "sdut.edu.cn": 1,
+    "sdutcm.edu.cn": 1,
     "sea-english.edu.au": 0,
     "seamester.com": 0,
     "searcybeautycollege.com": 0,
@@ -37672,24 +38593,45 @@
     "sfsu.edu": 0,
     "sfu.ca": 0,
     "sgscc.edu.au": 0,
+    "sgu.edu.cn": 0,
+    "sh-sipopolytechnic.com": 1,
+    "shanghaitech.edu.cn": 0,
     "shawnee.edu": 0,
     "shc.edu": 0,
+    "shcc.edu.cn": 1,
     "sheffield.ac.uk": 0,
     "sheldoncollege.com": 0,
     "sheltonstate.edu": 0,
     "shepherd.edu": 0,
     "sheridancollege.ca": 0,
+    "shfu.edu.cn": 1,
+    "shift.edu.cn": 1,
     "shinstitute.org": 0,
     "ship.edu": 0,
+    "shisu.edu.cn": 0,
+    "shmtu.edu.cn": 1,
+    "shmu.edu.cn": 1,
     "shorter.edu": 0,
     "shortercollege.edu": 0,
+    "shouhua.net.cn": 1,
+    "shsmu.edu.cn": 1,
+    "shspu.edu.cn": 1,
     "shsu.edu": 0,
+    "shtdu.edu.cn": 1,
+    "shtu.edu.cn": 1,
+    "shtvu.edu.cn": 1,
     "shu-bg.net": 1,
     "shu.bg": 0,
     "shu.edu": 1,
+    "shu.edu.cn": 1,
+    "shufe.edu.cn": 1,
+    "shutcm.edu.cn": 1,
     "shxx.whu.edu.cn": 2,
+    "shzu.edu.cn": 1,
     "sia.wa.edu.au": 1,
     "sibt.nsw.edu.au": 0,
+    "sicau.edu.cn": 1,
+    "sicnu.edu.cn": 1,
     "sifc.edu": 1,
     "siit.nsw.edu.au": 0,
     "simmons.edu": 0,
@@ -37699,6 +38641,7 @@
     "sion.escap.fr": 0,
     "sirjan.iau.ir": 2,
     "sisd.org": 0,
+    "sisu.edu.cn": 1,
     "sitcm.edu.au": 0,
     "site.ac-aix-marseille.fr": 1,
     "site.ac-martinique.fr": 1,
@@ -37719,6 +38662,7 @@
     "sjtu.edu.cn": 2,
     "sju.edu": 0,
     "sjvc.edu": 0,
+    "sjzu.edu.cn": 1,
     "skc.edu": 0,
     "skidmore.edu": 0,
     "skku.edu": 0,
@@ -37740,6 +38684,7 @@
     "smith.edu": 0,
     "smkn1kotabekasi.sch.id": 0,
     "smkn4sby.sch.id": 0,
+    "smmu.edu.cn": 1,
     "sms.edu": 0,
     "smsu.edu": 0,
     "smtafe.wa.edu.au": 1,
@@ -37748,6 +38693,7 @@
     "smumn.edu": 0,
     "snhu.edu": 0,
     "snie.edu.cn": 1,
+    "snnu.edu.cn": 1,
     "snu.ac.kr": 0,
     "snu.edu": 0,
     "soavoshk.cz": 2,
@@ -37874,6 +38820,7 @@
     "stthomas.edu": 0,
     "stthomasu.ca": 1,
     "stu.edu": 0,
+    "stu.edu.cn": 1,
     "stu.edu.sd": 1,
     "stuartholme.com": 0,
     "student.42.us.org": 3,
@@ -37894,6 +38841,7 @@
     "subr.edu": 1,
     "suc.edu.gh": 2,
     "suda.edu.cn": 1,
+    "sues.edu.cn": 1,
     "suffolk.edu": 0,
     "sullivan.edu": 0,
     "sulross.edu": 0,
@@ -37909,28 +38857,48 @@
     "surabayaeuropeanschool.com": 0,
     "susqu.edu": 0,
     "sust.edu": 1,
+    "sustc.edu.cn": 1,
     "suu.edu": 0,
     "sve-mo.ba": 1,
     "svst.edu.ph": 0,
     "svsu.edu": 0,
     "swac.edu": 1,
     "swarthmore.edu": 1,
+    "swau.edu.cn": 1,
     "swc.tc": 1,
     "swccd.edu": 0,
+    "swfc.edu.cn": 1,
     "swin.edu.au": 1,
     "swinburne.edu.au": 0,
+    "swjtu.edu.cn": 0,
     "swmed.edu": 1,
+    "swnu.edu.cn": 1,
+    "swpu.edu.cn": 1,
     "swri.edu": 2,
+    "swsm.cn": 1,
     "swt.edu": 1,
     "swu.bg": 0,
+    "swufe.edu.cn": 1,
+    "swun.edu.cn": 1,
+    "swupl.edu.cn": 1,
+    "swust.edu.cn": 1,
+    "swuyc.edu.cn": 1,
+    "sxau.edu.cn": 1,
     "sxu.edu": 0,
+    "sxu.edu.cn": 1,
     "sydney.edu.au": 0,
+    "syict.edu.cn": 1,
     "sylvacampus.org": 0,
+    "syphu.edu.cn": 1,
+    "sypu.edu.cn": 1,
     "syr.edu": 1,
     "syracuse.edu": 0,
     "sysu.edu.cn": 0,
+    "sytu.edu.cn": 1,
+    "syu.edu.cn": 1,
     "szit.edu.cn": 2,
     "szu.edu.af": 0,
+    "szu.edu.cn": 1,
     "tabor.edu": 0,
     "tacomahousing.net": 1,
     "tacomahousing.org": 1,
@@ -37980,15 +38948,25 @@
     "thunderbird.edu": 1,
     "tiesnq.com.au": 0,
     "tiffin.edu": 0,
+    "tijmu.edu.cn": 1,
     "tintern.vic.edu.au": 0,
     "titech.ac.jp": 1,
+    "tjarts.edu.cn": 1,
+    "tjcu.edu.cn": 1,
+    "tjmu.edu.cn": 1,
+    "tjnu.edu.cn": 1,
+    "tjpu.edu.cn": 1,
+    "tjrtvu.edu.cn": 1,
     "tjsl.edu": 0,
     "tju.edu": 1,
     "tju.edu.cn": 0,
+    "tjufe.edu.cn": 0,
+    "tjut.edu.cn": 1,
     "tlc.edu.qa": 1,
     "tlu.edu": 0,
     "tme.edu.au": 0,
     "tmi.ac.ir": 2,
+    "tmmu.edu.cn": 1,
     "tmss.org.uk": 0,
     "tmt.edu.au": 0,
     "tnstate.edu": 0,
@@ -38033,6 +39011,7 @@
     "tsu.edu": 0,
     "tsufl.edu": 1,
     "tsukuba.ac.jp": 1,
+    "ttmc.edu.cn": 1,
     "ttu.ac.ke": 0,
     "ttu.edu": 0,
     "ttuhsc.edu": 0,
@@ -38064,6 +39043,8 @@
     "txst.edu": 0,
     "txstate.edu": 1,
     "tyndale.edu.au": 0,
+    "tyut.edu.cn": 1,
+    "tzc.edu.cn": 1,
     "u-aizu.ac.jp": 0,
     "u-bordeaux.fr": 0,
     "u-paris.fr": 1,
@@ -38318,8 +39299,10 @@
     "uh.edu": 0,
     "uhasselt.be": 0,
     "uhd.edu": 0,
+    "uheeyc.edu.cn": 1,
     "uhsa.ag": 0,
     "uib.no": 0,
+    "uibe.edu.cn": 0,
     "uibk.ac.at": 0,
     "uic.edu": 1,
     "uidaho.edu": 0,
@@ -38340,6 +39323,7 @@
     "uj.ac.za": 1,
     "uj.edu": 0,
     "uj.edu.pl": 0,
+    "ujn.edu.cn": 0,
     "ujso.cl": 1,
     "uka-rdc.org": 2,
     "ukings.ns.ca": 1,
@@ -38382,6 +39366,7 @@
     "umc.edu": 0,
     "umc.edu.dz": 0,
     "umce.cl": 1,
+    "umcollege.com": 1,
     "umd.edu": 0,
     "umdearborn.edu": 1,
     "ume.cl": 1,
@@ -38796,6 +39781,7 @@
     "usc.br": 1,
     "usc.edu": 0,
     "usc.edu.au": 1,
+    "usc.edu.cn": 1,
     "usca.edu": 0,
     "uscga.edu": 0,
     "usd.edu": 0,
@@ -38824,13 +39810,16 @@
     "uspt.edu.ar": 0,
     "usq.edu.au": 2,
     "uss.cl": 1,
+    "usst.edu.cn": 1,
     "ust-lodja.org": 2,
     "ust.cl": 0,
     "ust.edu.al": 0,
     "ust.edu.ph": 0,
     "ustanne.ednet.ns.ca": 1,
+    "ustb.edu.cn": 1,
     "ustboniface.mb.ca": 1,
     "ustc.ac.bd": 0,
+    "ustc.edu": 1,
     "ustc.edu.cn": 0,
     "usthb.dz": 1,
     "ustpaul.ca": 0,
@@ -38865,6 +39854,7 @@
     "utfsm.cl": 1,
     "uth.edu": 1,
     "uti.edu": 0,
+    "utibet.edu.cn": 1,
     "utica.edu": 0,
     "utk.edu": 0,
     "utm.edu": 1,
@@ -38897,6 +39887,7 @@
     "uvm.edu": 0,
     "uvsc.edu": 1,
     "uvu.edu": 0,
+    "uvu.edu.cn": 1,
     "uw.edu": 1,
     "uwa.edu": 0,
     "uwa.edu.au": 0,
@@ -39192,13 +40183,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-21T23:55:30+00:00",
+  "last_run": "2026-09-22T02:05:07+00:00",
   "last_verify": {
-    "added_active": 12,
-    "at": "2026-09-21 23:48 UTC",
-    "pending_left": 7731,
+    "added_active": 11,
+    "at": "2026-09-22 02:05 UTC",
+    "pending_left": 7699,
     "reverified": 15,
-    "validated": 117
+    "validated": 115
   },
   "moved": {
     "adventista.edu.br": "uniaene.edu.br",
@@ -39403,6 +40394,7 @@
     "usc.br": "unisagrado.edu.br",
     "usc.edu.au": "unisc.edu.au",
     "usq.edu.au": "unisq.edu.au",
+    "ustc.edu": "ustc.edu.cn",
     "usu.br": "usu.edu.br",
     "usudbury.com": "usudbury.ca",
     "usyd.edu.au": "sydney.edu.au",
