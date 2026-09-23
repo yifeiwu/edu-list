@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-23 20:01 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-23 21:36 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **5750** across **126** countries
-- Active: **3311** (58%) · Inaccessible: **2439** (42%)
-- Pending queue: **7310** unvalidated candidates
-- Known registration age: **2921** domains (median 28 yrs)
+- Domains tracked: **5865** across **126** countries
+- Active: **3357** (57%) · Inaccessible: **2508** (43%)
+- Pending queue: **7210** unvalidated candidates
+- Known registration age: **2925** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-23 18:00 UTC): validated 125, +37 Active, re-verified 7, pending left 7251
+- Verify (2026-09-23 21:36 UTC): validated 125, +46 Active, re-verified 10, pending left 7210
 - Curate (2026-09-23 20:01 UTC): 10701 raw candidates, 59 queued, 38 re-cited
 
 ## Countries (top 15 by size)
@@ -23,8 +23,8 @@ _Generated 2026-09-23 20:01 UTC. Full per-country table: [data/countries/INDEX.m
 | CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
 | BR | 343 | 160 | 183 |
+| DE | 262 | 108 | 154 |
 | CA | 174 | 95 | 79 |
-| DE | 147 | 62 | 85 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
 | CO | 105 | 59 | 46 |
@@ -38,25 +38,25 @@ _Generated 2026-09-23 20:01 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3311 |
-| `fetch-error:ConnectionError` | 1046 |
-| `http-403` | 296 |
-| `fetch-error:ConnectTimeout` | 259 |
-| `fetch-error:SSLError` | 213 |
-| `low-confidence:http-2xx-html` | 180 |
+| `http-2xx-html` | 3357 |
+| `fetch-error:ConnectionError` | 1072 |
+| `http-403` | 299 |
+| `fetch-error:ConnectTimeout` | 265 |
+| `fetch-error:SSLError` | 228 |
+| `low-confidence:http-2xx-html` | 181 |
 | `empty-body` | 39 |
 | `fetch-error:ReadTimeout` | 29 |
-| `http-404` | 20 |
+| `http-404` | 21 |
 | `http-500` | 14 |
 | `http-503` | 9 |
 | `parking-linkfarm` | 7 |
 
 ## Freshness
 
-- Verified in last 30 days: **5750** (100%)
+- Verified in last 30 days: **5865** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **287**
+- Moved pointers (old domain → new): **303**
 
 ## Alerts
 

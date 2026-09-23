@@ -3635,6 +3635,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "cheaphotelguide.com": {
+      "code": 200,
+      "confidence": 30,
+      "reason": "low-confidence:http-2xx-html+structure+non-educational-content"
+    },
     "chesapeake.edu": {
       "code": 200,
       "confidence": 60,
@@ -4579,6 +4584,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "constructor.university": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "cookman.edu": {
       "code": 200,
@@ -8450,12 +8460,77 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "fh-offenburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "fh-ooe.at": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "fh-oow.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-osnabrueck.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hs-osnabrueck.de"
+    },
+    "fh-ottersberg.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hks-ottersberg.de"
+    },
+    "fh-pforzheim.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-potsdam.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "fh-regensburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-reutlingen.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "fh-riedlingen.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:mobile-university.de"
+    },
+    "fh-rosenheim.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-rottenburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "fh-sbg.ac.at": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-schmalkalden.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "fh-schwaebischhall.de": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -8470,20 +8545,80 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "fh-stralsund.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hochschule-stralsund.de"
+    },
+    "fh-telekom-leipzig.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "fh-trier.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hochschule-trier.de"
+    },
     "fh-vie.ac.at": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "fh-wedel.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "fh-weihenstephan.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-weingarten.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "fh-wels.at": {
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:fh-ooe.at"
     },
+    "fh-westkueste.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "fh-wien.ac.at": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "fh-wiesbaden.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "fh-wolfenbuettel.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-worms.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:hs-worms.de"
+    },
+    "fh-wuerzburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fh-zwickau.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:whz.de"
     },
     "fhdw.bib.de": {
       "code": 0,
@@ -8515,15 +8650,50 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "fhoebb.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "fhs-mannheim.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fhs-moritzburg.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:cheaphotelguide.com"
+    },
     "fhsu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "fht-stuttgart.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fhtw-berlin.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "fhv.at": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "fhvr.berlin.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "fhw-berlin.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "fhw.at": {
       "code": 200,
@@ -8534,6 +8704,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "fhwt.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "fibrapara.edu.br": {
       "code": 200,
@@ -8699,6 +8874,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "fom.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "fomicgroup.cm": {
       "code": 0,
@@ -9710,6 +9890,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "h-da.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "h2.de": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "ha.be": {
       "code": 200,
       "confidence": 40,
@@ -9784,6 +9974,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "hanseuni.de": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "haramaya.edu.et": {
       "code": 0,
@@ -9904,6 +10099,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "hcu-hamburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "hdm-stuttgart.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "hdpu.edu.cn": {
       "code": 0,
@@ -10045,6 +10250,11 @@
       "confidence": 20,
       "reason": "low-confidence:http-2xx-html+non-educational-content"
     },
+    "hertie-school.org": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "hesston.edu": {
       "code": 200,
       "confidence": 90,
@@ -10056,6 +10266,26 @@
       "reason": "fetch-error:ConnectionError"
     },
     "heuet.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "hfb.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "hfg-gmuend.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hfp.mhn.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "hfph.mwn.de": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -10079,6 +10309,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "hhl.de": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "hhrtu.com": {
       "code": 0,
@@ -10135,6 +10370,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "himh.de": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "moved-to:himh.geo.io"
+    },
+    "himh.geo.io": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "hiram.edu": {
       "code": 403,
       "confidence": 5,
@@ -10150,10 +10395,20 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "hjs.uni-heidelberg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "hkkk.fi": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "hks-ottersberg.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "hku.hk": {
       "code": 200,
@@ -10216,6 +10471,16 @@
       "reason": "moved-to:h-brs.de"
     },
     "hochschule-burgenland.at": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "hochschule-stralsund.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "hochschule-trier.de": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
@@ -10350,7 +10615,47 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "hs-albsig.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hs-anhalt.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "hs-bremen.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hs-bremerhaven.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hs-coburg.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "hs-duesseldorf.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hs-esslingen.de": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "hs-fulda.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "hs-harz.de": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -10359,6 +10664,16 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "hs-magdeburg.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:h2.de"
+    },
+    "hs-mittweida.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "hs-nb.de": {
       "code": 200,
@@ -10369,6 +10684,31 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:hnu.de"
+    },
+    "hs-osnabrueck.de": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "hs-ulm.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:thu.de"
+    },
+    "hs-wismar.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hs-worms.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "hs-zigr.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "hsbi.de": {
       "code": 200,
@@ -10404,6 +10744,31 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "htw-berlin.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "htw-dresden.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "htw-saarland.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "htwk-leipzig.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "htwm.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "hu-berlin.de": {
       "code": 200,
@@ -10490,6 +10855,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "hwp-hamburg.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "hws.edu": {
       "code": 200,
       "confidence": 90,
@@ -10514,6 +10884,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
+    "i-u.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "iaa.sa.edu.au": {
       "code": 200,
@@ -10824,6 +11199,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:ingenioer.au.dk"
+    },
+    "ihi-zittau.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:tu-dresden.de"
     },
     "ihk.dk": {
       "code": 0,
@@ -11230,6 +11610,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "international.fh-aalen.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "internationalstudents.sa.edu.au": {
       "code": 0,
       "confidence": 0,
@@ -11400,6 +11785,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ism-dortmund.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "ismcm-cesti.fr": {
       "code": 200,
       "confidence": 40,
@@ -11419,6 +11809,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+substantial-content+non-educational-content"
+    },
+    "isnm.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "iso.fr": {
       "code": 200,
@@ -11690,6 +12085,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "jacobs-university.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:constructor.university"
+    },
     "jamiahamdard.edu": {
       "code": 0,
       "confidence": 0,
@@ -11797,8 +12197,8 @@
     },
     "jiit.ac.in": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "jju.edu.et": {
       "code": 200,
@@ -12105,6 +12505,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
+    "karlshochschule.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "karnataka.gov.in": {
       "code": 0,
       "confidence": 0,
@@ -12119,6 +12524,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kath-fh-nord.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kcau.ac.ke": {
       "code": 200,
@@ -12137,8 +12547,8 @@
     },
     "kcl.ac.uk": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "kctcs.edu": {
       "code": 200,
@@ -12240,10 +12650,30 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "kfb-berlin.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "kfbl.edu.ba": {
       "code": 200,
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+trusted-suffix+non-educational-content"
+    },
+    "kfh-freiburg.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:kh-freiburg.de"
+    },
+    "kfh-mainz.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:kh-mz.de"
+    },
+    "kfhnw.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "kfr.ch": {
       "code": 200,
@@ -12259,6 +12689,21 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "kh-berlin.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kh-freiburg.de": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "kh-mz.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "khayming.com": {
       "code": 0,
@@ -12299,6 +12744,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "khsa.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ki.se": {
       "code": 200,
@@ -12430,6 +12880,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ksfh.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ksstadelhofen.ch": {
       "code": 200,
       "confidence": 40,
@@ -12454,6 +12909,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ku-eichstaett.de": {
+      "code": 404,
+      "confidence": 5,
+      "reason": "http-404"
     },
     "ku-linz.at": {
       "code": 200,
@@ -12529,6 +12989,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "kunstakademie-duesseldorf.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "kunstakademiet.dk": {
       "code": 200,
@@ -14125,10 +14590,20 @@
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+structure"
     },
+    "merkur-fh.org": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking"
+    },
     "mermoz.ent.auvergnerhonealpes.fr": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "merz-akademie.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mesacc.edu": {
       "code": 403,
@@ -14170,6 +14645,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "mfh-iserlohn.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mfs.com.au": {
       "code": 200,
       "confidence": 50,
@@ -14194,6 +14674,21 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mh-hannover.de": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:mhh.de"
+    },
+    "mh-trossingen.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "mhh.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "mi.edu": {
       "code": 200,
@@ -14374,6 +14869,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mobile-university.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "modern-academy.edu.eg": {
       "code": 200,
@@ -14765,6 +15265,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "mu-luebeck.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mu-pleven.bg": {
       "code": 200,
       "confidence": 80,
@@ -14864,6 +15369,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "muthesius.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "muw.edu": {
       "code": 200,
@@ -15585,6 +16095,11 @@
       "confidence": 40,
       "reason": "moved-to:tartuh.ee"
     },
+    "nordakademie.de": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+substantial-content"
+    },
     "normandale.edu": {
       "code": 200,
       "confidence": 60,
@@ -16175,6 +16690,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ostfalia.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "osu.cz": {
       "code": 200,
       "confidence": 90,
@@ -16299,6 +16819,11 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "paderborn.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "padrechico.org.br": {
       "code": 200,
@@ -16550,6 +17075,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "pfh-goettingen.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "pfw.edu": {
       "code": 200,
       "confidence": 90,
@@ -16565,10 +17095,35 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ph-erfurt.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "ph-freiburg.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ph-gmuend.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "ph-heidelberg.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ph-kaernten.ac.at": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ph-karlsruhe.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "ph-noe.ac.at": {
       "code": 200,
@@ -16604,6 +17159,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:pulf.org"
+    },
+    "philtheol-augustin.de": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "phoenix.edu": {
       "code": 200,
@@ -19795,6 +20355,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "student.hs-anhalt.de": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
+    },
     "student.karazin.ua": {
       "code": 0,
       "confidence": 0,
@@ -20524,6 +21089,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content"
+    },
+    "thu.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "thunderbird.edu": {
       "code": 0,
@@ -27885,6 +28455,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "whz.de": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "wi.edu": {
       "code": 200,
       "confidence": 60,
@@ -30563,6 +31138,7 @@
     "chbeautycollege.com": "2002-07-29",
     "chdaschools.com": "2010-01-05",
     "chdf-lamastre.fr": "2017-06-01",
+    "cheaphotelguide.com": "2023-08-24",
     "chesapeake.edu": "1993-07-21",
     "chethanaspecialschool.com": "2021-04-22",
     "cheyney.edu": "1994-05-20",
@@ -31018,6 +31594,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "constructor.university": "2022-05-05",
     "cookman.edu": "1990-11-02",
     "cooper.edu": "1987-04-23",
     "coppin.edu": "1998-03-19",
@@ -32867,13 +33444,65 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "fh-offenburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fh-ooe.at": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "fh-oow.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-osnabrueck.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-ottersberg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-pforzheim.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-potsdam.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-regensburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-reutlingen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-riedlingen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-rosenheim.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-rottenburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fh-sbg.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "fh-schmalkalden.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-schwaebischhall.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fh-steyr.at": {
       "reg": "",
@@ -32883,17 +33512,65 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "fh-stralsund.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-telekom-leipzig.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-trier.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fh-vie.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "fh-wedel.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-weihenstephan.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-weingarten.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fh-wels.at": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "fh-westkueste.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fh-wien.ac.at": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "fh-wiesbaden.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-wolfenbuettel.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-worms.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-wuerzburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fh-zwickau.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fhdw.bib.de": {
       "reg": "",
@@ -32916,10 +33593,38 @@
       "ts": "2026-09-23"
     },
     "fho.edu.br": "2005-05-24",
+    "fhoebb.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fhs-mannheim.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fhs-moritzburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fhsu.edu": "1993-03-19",
+    "fht-stuttgart.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fhtw-berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "fhv.at": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "fhvr.berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "fhw-berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fhw.at": {
       "reg": "",
@@ -32928,6 +33633,10 @@
     "fhwn.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "fhwt.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fibrapara.edu.br": "2003-10-23",
     "fic.br": "1999-04-29",
@@ -32992,6 +33701,10 @@
     "focus.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "fom.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "fomicgroup.cm": "2022-12-15",
     "fontbonne.edu": "1995-03-14",
@@ -33550,6 +34263,14 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "h-da.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "h2.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "ha.be": {
       "reg": "",
       "ts": "2026-09-20"
@@ -33581,6 +34302,10 @@
     "hamptonu.edu": "1990-01-22",
     "hangtuah.ac.id": "2000-09-27",
     "hanover.edu": "1992-09-25",
+    "hanseuni.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "haramaya.edu.et": {
       "reg": "",
       "ts": "2026-09-22"
@@ -33626,6 +34351,14 @@
       "ts": "2026-09-21"
     },
     "hc.edu": "2022-10-12",
+    "hcu-hamburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hdm-stuttgart.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hdpu.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
@@ -33714,11 +34447,28 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "hertie-school.org": "2003-08-12",
     "hesston.edu": "1994-04-21",
     "hetaodaxue.com": "2005-03-15",
     "heuet.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "hfb.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hfg-gmuend.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hfp.mhn.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hfph.mwn.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "hfut.edu.cn": {
       "reg": "",
@@ -33732,6 +34482,10 @@
     "hhit.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "hhl.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "hhrtu.com": "2023-08-24",
     "hhs.dk": {
@@ -33762,6 +34516,14 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "himh.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "himh.geo.io": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hiram.edu": "1990-09-19",
     "hiroshima-u.ac.jp": {
       "reg": "",
@@ -33771,7 +34533,15 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "hjs.uni-heidelberg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hkkk.fi": "2010-03-21",
+    "hks-ottersberg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hku.hk": {
       "reg": "",
       "ts": "2026-09-15"
@@ -33817,6 +34587,14 @@
     "hochschule-burgenland.at": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "hochschule-stralsund.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hochschule-trier.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "hofstra.edu": "1991-03-20",
     "hogent.be": {
@@ -33886,11 +34664,51 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "hs-albsig.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-anhalt.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-bremen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-bremerhaven.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-coburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hs-duesseldorf.de": {
       "reg": "",
       "ts": "2026-09-23"
     },
+    "hs-esslingen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-fulda.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-harz.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hs-kl.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-magdeburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-mittweida.de": {
       "reg": "",
       "ts": "2026-09-23"
     },
@@ -33899,6 +34717,26 @@
       "ts": "2026-09-23"
     },
     "hs-neu-ulm.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-osnabrueck.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-ulm.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-wismar.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-worms.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "hs-zigr.de": {
       "reg": "",
       "ts": "2026-09-23"
     },
@@ -33923,6 +34761,26 @@
     "hti.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "htw-berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "htw-dresden.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "htw-saarland.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "htwk-leipzig.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "htwm.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "hu-berlin.de": {
       "reg": "",
@@ -33965,6 +34823,10 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "hwp-hamburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "hws.edu": "1994-06-25",
     "hzau.edu.cn": {
       "reg": "",
@@ -33981,6 +34843,10 @@
     "i-med.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "i-u.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "iaa.sa.edu.au": {
       "reg": "",
@@ -34155,6 +35021,10 @@
     "iha.dk": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "ihi-zittau.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "ihk.dk": {
       "reg": "",
@@ -34352,6 +35222,10 @@
       "ts": "2026-09-13"
     },
     "international.espm.br": "1996-12-06",
+    "international.fh-aalen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "internationalstudents.sa.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -34439,6 +35313,10 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "ism-dortmund.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "ismcm-cesti.fr": "2008-10-11",
     "ismg-boke.com": {
       "reg": "",
@@ -34449,6 +35327,10 @@
       "ts": "2026-09-22"
     },
     "ismra.fr": "2015-06-05",
+    "isnm.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "iso.fr": "1997-08-03",
     "ispcmw.rimed.cu": {
       "reg": "",
@@ -34594,6 +35476,10 @@
     "ivc.edu": "2002-01-08",
     "ivyschool.sch.id": "2010-02-12",
     "iwp.edu": "1997-03-11",
+    "jacobs-university.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "jamiahamdard.edu": "2001-01-26",
     "javeriana.edu.co": {
       "reg": "",
@@ -34811,6 +35697,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "karlshochschule.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "karnataka.gov.in": "2003-08-31",
     "karwan.edu.af": {
       "reg": "",
@@ -34819,6 +35709,10 @@
     "kateb.edu.af": {
       "reg": "",
       "ts": "2026-09-19"
+    },
+    "kath-fh-nord.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "kcau.ac.ke": "2022-04-06",
     "kcb.be": {
@@ -34868,9 +35762,25 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "kfb-berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "kfbl.edu.ba": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "kfh-freiburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "kfh-mainz.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "kfhnw.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "kfr.ch": {
       "reg": "",
@@ -34883,6 +35793,18 @@
     "kfunigraz.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "kh-berlin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "kh-freiburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "kh-mz.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "khayming.com": {
       "reg": "",
@@ -34912,6 +35834,10 @@
     "khs-linz.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "khsa.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "ki.se": {
       "reg": "",
@@ -34986,6 +35912,10 @@
       "ts": "2026-09-16"
     },
     "kse.org.ua": "2006-09-28",
+    "ksfh.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "ksstadelhofen.ch": {
       "reg": "",
       "ts": "2026-09-16"
@@ -35002,6 +35932,10 @@
     "kth.se": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "ku-eichstaett.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "ku-linz.at": {
       "reg": "",
@@ -35051,6 +35985,10 @@
     },
     "kumc.edu": "1994-11-16",
     "kumsa.net": "2007-03-05",
+    "kunstakademie-duesseldorf.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "kunstakademiet.dk": {
       "reg": "",
       "ts": "2026-09-22"
@@ -35751,9 +36689,14 @@
     "mercymavericks.edu": "2011-04-06",
     "meredith.edu": "1992-01-22",
     "merici.ca": "2002-02-15",
+    "merkur-fh.org": "2023-03-16",
     "mermoz.ent.auvergnerhonealpes.fr": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "merz-akademie.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "mesacc.edu": "2006-08-23",
     "messiah.edu": "1992-02-15",
@@ -35768,6 +36711,10 @@
     "mfac.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "mfh-iserlohn.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "mfs.com.au": {
       "reg": "",
@@ -35785,6 +36732,18 @@
     "mgu.bg": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "mh-hannover.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "mh-trossingen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "mhh.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "mi.edu": "1996-03-05",
     "miami.edu": "1987-07-23",
@@ -35870,6 +36829,10 @@
     "mmm.edu": "1995-06-21",
     "mnstate.edu": "1999-02-16",
     "mnsu.edu": "2000-02-09",
+    "mobile-university.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "modern-academy.edu.eg": {
       "reg": "",
       "ts": "2026-09-15"
@@ -36026,6 +36989,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "mu-luebeck.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "mu-pleven.bg": {
       "reg": "",
       "ts": "2026-09-20"
@@ -36087,6 +37054,10 @@
     "must.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "muthesius.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "muw.edu": "1992-10-07",
     "mwc.edu": {
@@ -36451,6 +37422,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "nordakademie.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "normandale.edu": "2002-01-15",
     "northampton.edu": "1999-06-19",
     "northcentralcollege.edu": "1996-07-12",
@@ -36695,6 +37670,10 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "ostfalia.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "osu.cz": "1997-07-04",
     "osu.edu": "1989-10-06",
     "oswego.edu": "1987-11-09",
@@ -36750,6 +37729,10 @@
     "pacificenglishschool.com": "2008-09-19",
     "pacificenglishstudy.com": "2020-05-19",
     "pacificu.edu": "1994-11-06",
+    "paderborn.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "padrechico.org.br": "1998-03-19",
     "paideia.org": "1999-07-14",
     "paier.edu": "2018-07-30",
@@ -36852,6 +37835,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "pfh-goettingen.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "pfw.edu": "2017-10-13",
     "pgauguin.loire-atlantique.e-lyco.fr": {
       "reg": "",
@@ -36861,9 +37848,29 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "ph-erfurt.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "ph-freiburg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "ph-gmuend.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
+    "ph-heidelberg.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "ph-kaernten.ac.at": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "ph-karlsruhe.de": {
+      "reg": "",
+      "ts": "2026-09-23"
     },
     "ph-noe.ac.at": {
       "reg": "",
@@ -36887,6 +37894,10 @@
     },
     "philau.edu": "1998-06-05",
     "phillips.edu": "1996-02-18",
+    "philtheol-augustin.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "phoenix.edu": "1997-08-28",
     "phoenixcollege.edu": "2002-01-16",
     "phsc.edu": "2013-12-19",
@@ -38324,6 +39335,10 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "student.hs-anhalt.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "student.karazin.ua": {
       "reg": "",
       "ts": "2026-09-13"
@@ -38726,6 +39741,10 @@
     },
     "thomasmore.edu": "1994-11-02",
     "thtrebinje.com": "2015-04-30",
+    "thu.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "thunderbird.edu": "1999-10-08",
     "tiaa.edu.ge": {
       "reg": "",
@@ -42427,6 +43446,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "whz.de": {
+      "reg": "",
+      "ts": "2026-09-23"
+    },
     "wi.edu": "2009-01-27",
     "wic.edu.au": {
       "reg": "",
@@ -43627,6 +44650,7 @@
     "chbeautycollege.com": 0,
     "chdaschools.com": 1,
     "chdf-lamastre.fr": 1,
+    "cheaphotelguide.com": 1,
     "chesapeake.edu": 0,
     "chethanaspecialschool.com": 0,
     "cheyney.edu": 0,
@@ -43816,6 +44840,7 @@
     "conservatoriodeltolima.edu.co": 0,
     "conservatory.am": 0,
     "conservatory.az": 1,
+    "constructor.university": 0,
     "cookman.edu": 0,
     "cooper.edu": 0,
     "coppin.edu": 0,
@@ -44590,23 +45615,56 @@
     "fh-nordhausen.de": 1,
     "fh-nuernberg.de": 1,
     "fh-nuertingen.de": 1,
+    "fh-offenburg.de": 1,
     "fh-ooe.at": 0,
+    "fh-oow.de": 1,
+    "fh-osnabrueck.de": 1,
+    "fh-ottersberg.de": 1,
+    "fh-pforzheim.de": 1,
+    "fh-potsdam.de": 0,
+    "fh-regensburg.de": 1,
+    "fh-reutlingen.de": 1,
+    "fh-riedlingen.de": 1,
+    "fh-rosenheim.de": 1,
+    "fh-rottenburg.de": 1,
     "fh-sbg.ac.at": 1,
+    "fh-schmalkalden.de": 1,
+    "fh-schwaebischhall.de": 1,
     "fh-steyr.at": 1,
     "fh-stpoelten.ac.at": 1,
+    "fh-stralsund.de": 1,
+    "fh-telekom-leipzig.de": 1,
+    "fh-trier.de": 1,
     "fh-vie.ac.at": 0,
+    "fh-wedel.de": 0,
+    "fh-weihenstephan.de": 1,
+    "fh-weingarten.de": 1,
     "fh-wels.at": 1,
+    "fh-westkueste.de": 0,
     "fh-wien.ac.at": 0,
+    "fh-wiesbaden.de": 1,
+    "fh-wolfenbuettel.de": 1,
+    "fh-worms.de": 1,
+    "fh-wuerzburg.de": 1,
+    "fh-zwickau.de": 1,
     "fhdw.bib.de": 1,
     "fhdw.de": 0,
     "fhkt.de": 1,
     "fhm-mittelstand.de": 1,
     "fhnon.de": 1,
     "fho.edu.br": 0,
+    "fhoebb.de": 1,
+    "fhs-mannheim.de": 1,
+    "fhs-moritzburg.de": 1,
     "fhsu.edu": 0,
+    "fht-stuttgart.de": 1,
+    "fhtw-berlin.de": 1,
     "fhv.at": 0,
+    "fhvr.berlin.de": 1,
+    "fhw-berlin.de": 1,
     "fhw.at": 1,
     "fhwn.ac.at": 0,
+    "fhwt.de": 1,
     "fibrapara.edu.br": 0,
     "fic.br": 1,
     "fidm.edu": 1,
@@ -44640,6 +45698,7 @@
     "fmuniv.edu": 0,
     "fnu.ac.fj": 0,
     "focus.edu.au": 0,
+    "fom.de": 0,
     "fomicgroup.cm": 1,
     "fontbonne.edu": 0,
     "fordham.edu": 0,
@@ -44842,6 +45901,8 @@
     "gzsums.edu.cn": 1,
     "gzu.edu.cn": 1,
     "h-brs.de": 0,
+    "h-da.de": 0,
+    "h2.de": 0,
     "ha.be": 1,
     "hachinohe-ct.ac.jp": 1,
     "hagerstowncc.edu": 0,
@@ -44857,6 +45918,7 @@
     "hamptonu.edu": 0,
     "hangtuah.ac.id": 1,
     "hanover.edu": 0,
+    "hanseuni.de": 1,
     "haramaya.edu.et": 1,
     "harding.edu": 0,
     "harford.edu": 0,
@@ -44881,6 +45943,8 @@
     "hbu.edu": 1,
     "hbu.edu.cn": 0,
     "hc.edu": 0,
+    "hcu-hamburg.de": 1,
+    "hdm-stuttgart.de": 0,
     "hdpu.edu.cn": 1,
     "he-spaak.be": 1,
     "headmasters.com.au": 1,
@@ -44909,13 +45973,19 @@
     "henu.edu.cn": 1,
     "herofi.io": 1,
     "hers.be": 1,
+    "hertie-school.org": 1,
     "hesston.edu": 0,
     "hetaodaxue.com": 1,
     "heuet.edu.cn": 1,
+    "hfb.de": 1,
+    "hfg-gmuend.de": 0,
+    "hfp.mhn.de": 1,
+    "hfph.mwn.de": 1,
     "hfut.edu.cn": 1,
     "hha.dk": 1,
     "hhin.org": 2,
     "hhit.edu.cn": 1,
+    "hhl.de": 0,
     "hhrtu.com": 1,
     "hhs.dk": 1,
     "hhstu.edu.cn": 1,
@@ -44927,10 +45997,14 @@
     "hillsong.com": 0,
     "hilltopbeautyschool.com": 0,
     "hilo.hawaii.edu": 0,
+    "himh.de": 1,
+    "himh.geo.io": 1,
     "hiram.edu": 1,
     "hiroshima-u.ac.jp": 1,
     "hit.edu.cn": 1,
+    "hjs.uni-heidelberg.de": 1,
     "hkkk.fi": 1,
+    "hks-ottersberg.de": 0,
     "hku.hk": 0,
     "hlaflru.edu.cn": 1,
     "hljcu.edu.cn": 1,
@@ -44944,6 +46018,8 @@
     "hnu.edu.cn": 1,
     "hochschule-bonn-rhein-sieg.de": 1,
     "hochschule-burgenland.at": 0,
+    "hochschule-stralsund.de": 0,
+    "hochschule-trier.de": 0,
     "hofstra.edu": 0,
     "hogent.be": 0,
     "hollins.edu": 0,
@@ -44970,10 +46046,25 @@
     "hrbnu.edu.cn": 1,
     "hrbucea.edu.cn": 1,
     "hrbust.edu.cn": 0,
+    "hs-albsig.de": 0,
+    "hs-anhalt.de": 0,
+    "hs-bremen.de": 0,
+    "hs-bremerhaven.de": 0,
+    "hs-coburg.de": 0,
     "hs-duesseldorf.de": 0,
+    "hs-esslingen.de": 0,
+    "hs-fulda.de": 0,
+    "hs-harz.de": 0,
     "hs-kl.de": 0,
+    "hs-magdeburg.de": 1,
+    "hs-mittweida.de": 1,
     "hs-nb.de": 0,
     "hs-neu-ulm.de": 1,
+    "hs-osnabrueck.de": 0,
+    "hs-ulm.de": 1,
+    "hs-wismar.de": 0,
+    "hs-worms.de": 0,
+    "hs-zigr.de": 1,
     "hsbi.de": 0,
     "hsc.colorado.edu": 1,
     "hsc.edu": 0,
@@ -44981,6 +46072,11 @@
     "hstu.ac.bd": 0,
     "hsu.edu": 0,
     "hti.edu.eg": 0,
+    "htw-berlin.de": 0,
+    "htw-dresden.de": 0,
+    "htw-saarland.de": 1,
+    "htwk-leipzig.de": 0,
+    "htwm.de": 1,
     "hu-berlin.de": 0,
     "hu.edu.af": 0,
     "hu.edu.et": 0,
@@ -44998,11 +46094,13 @@
     "hut.fi": 1,
     "hutchins.tas.edu.au": 0,
     "hvtc.edu.vn": 0,
+    "hwp-hamburg.de": 1,
     "hws.edu": 0,
     "hzau.edu.cn": 1,
     "hzs.be": 0,
     "hzu.edu.cn": 1,
     "i-med.ac.at": 1,
+    "i-u.de": 1,
     "iaa.sa.edu.au": 0,
     "iad-arts.be": 0,
     "iaf.inrs.ca": 1,
@@ -45065,6 +46163,7 @@
     "iggs.qld.edu.au": 0,
     "igumo.ru": 0,
     "iha.dk": 1,
+    "ihi-zittau.de": 1,
     "ihk.dk": 1,
     "iiau.ac.ir": 1,
     "iibt.edu.au": 1,
@@ -45146,6 +46245,7 @@
     "internat-sourdun.fr": 0,
     "international.cit.edu.au": 2,
     "international.espm.br": 0,
+    "international.fh-aalen.de": 1,
     "internationalstudents.sa.edu.au": 1,
     "inun.edu.ar": 1,
     "iona.edu": 0,
@@ -45180,10 +46280,12 @@
     "isfce.org": 0,
     "isi.edu": 0,
     "isim.univ-montp2.fr": 1,
+    "ism-dortmund.de": 1,
     "ismcm-cesti.fr": 1,
     "ismg-boke.com": 1,
     "ismm.edu.cu": 1,
     "ismra.fr": 1,
+    "isnm.de": 1,
     "iso.fr": 1,
     "ispcmw.rimed.cu": 1,
     "issy.com": 1,
@@ -45238,6 +46340,7 @@
     "ivc.edu": 0,
     "ivyschool.sch.id": 0,
     "iwp.edu": 0,
+    "jacobs-university.de": 1,
     "jamiahamdard.edu": 1,
     "javeriana.edu.co": 0,
     "jayadevacardiology.com": 0,
@@ -45291,7 +46394,7 @@
     "juniata.edu": 1,
     "juniv.edu": 0,
     "jussieu.fr": 1,
-    "justomwale.net": 1,
+    "justomwale.net": 2,
     "jut.edu.cn": 1,
     "jutcm.com": 1,
     "juvenat.com": 0,
@@ -45321,9 +46424,11 @@
     "karazin.ua": 0,
     "karch.dk": 1,
     "kardan.edu.af": 0,
-    "karnataka.gov.in": 1,
+    "karlshochschule.de": 0,
+    "karnataka.gov.in": 2,
     "karwan.edu.af": 0,
     "kateb.edu.af": 0,
+    "kath-fh-nord.de": 1,
     "kcau.ac.ke": 0,
     "kcb.be": 0,
     "kccs.org": 0,
@@ -45348,18 +46453,26 @@
     "ketchum.edu": 0,
     "kettering.edu": 0,
     "keu.edu.af": 0,
+    "kfb-berlin.de": 1,
     "kfbl.edu.ba": 1,
+    "kfh-freiburg.de": 1,
+    "kfh-mainz.de": 1,
+    "kfhnw.de": 1,
     "kfr.ch": 1,
     "kfs.edu.eg": 1,
     "kfunigraz.ac.at": 1,
+    "kh-berlin.de": 0,
+    "kh-freiburg.de": 0,
+    "kh-mz.de": 0,
     "khayming.com": 1,
     "khazar.org": 0,
     "khk.be": 1,
     "khleuven.be": 1,
     "khlim.be": 1,
-    "khoiau.ac.ir": 1,
-    "khorramabad.iau.ir": 1,
+    "khoiau.ac.ir": 2,
+    "khorramabad.iau.ir": 2,
     "khs-linz.ac.at": 1,
+    "khsa.de": 0,
     "ki.se": 0,
     "kii.gov.by": 1,
     "king.edu": 0,
@@ -45386,11 +46499,13 @@
     "krb.nsw.edu.au": 0,
     "ksalpenquai.lu.ch": 0,
     "kse.org.ua": 1,
+    "ksfh.de": 1,
     "ksstadelhofen.ch": 1,
     "ksu.edu": 1,
     "ksu.edu.sa": 0,
     "kth-linz.ac.at": 1,
     "kth.se": 0,
+    "ku-eichstaett.de": 1,
     "ku-linz.at": 0,
     "ku.ac.bd": 0,
     "ku.ac.ke": 1,
@@ -45406,6 +46521,7 @@
     "kuleuven.be": 0,
     "kumc.edu": 0,
     "kumsa.net": 1,
+    "kunstakademie-duesseldorf.de": 0,
     "kunstakademiet.dk": 0,
     "kuttabalfatih.com": 0,
     "kutztown.edu": 0,
@@ -45725,7 +46841,9 @@
     "mercymavericks.edu": 1,
     "meredith.edu": 0,
     "merici.ca": 1,
+    "merkur-fh.org": 1,
     "mermoz.ent.auvergnerhonealpes.fr": 0,
+    "merz-akademie.de": 0,
     "mesacc.edu": 1,
     "messiah.edu": 0,
     "meteofrance.fr": 0,
@@ -45734,11 +46852,15 @@
     "metrostate.edu": 0,
     "metrouni.edu.bd": 0,
     "mfac.edu.au": 0,
+    "mfh-iserlohn.de": 1,
     "mfs.com.au": 0,
     "mga.edu": 0,
     "mgpu.gomel.by": 1,
     "mgs.vic.edu.au": 0,
     "mgu.bg": 0,
+    "mh-hannover.de": 1,
+    "mh-trossingen.de": 1,
+    "mhh.de": 0,
     "mi.edu": 0,
     "miami.edu": 0,
     "miamioh.edu": 1,
@@ -45775,6 +46897,7 @@
     "mmm.edu": 1,
     "mnstate.edu": 0,
     "mnsu.edu": 0,
+    "mobile-university.de": 0,
     "modern-academy.edu.eg": 0,
     "moerlina.wa.edu.au": 0,
     "moler.edu": 0,
@@ -45853,6 +46976,7 @@
     "mtsu.edu": 0,
     "mtu.edu": 0,
     "mtu.edu.et": 1,
+    "mu-luebeck.de": 1,
     "mu-pleven.bg": 0,
     "mu-plovdiv.bg": 0,
     "mu-sofia.bg": 0,
@@ -45873,6 +46997,7 @@
     "muskingum.edu": 0,
     "muson.org": 0,
     "must.edu.eg": 0,
+    "muthesius.de": 1,
     "muw.edu": 0,
     "mvsu.edu": 0,
     "mwc.edu": 1,
@@ -46017,6 +47142,7 @@
     "nocccd.edu": 0,
     "nodak.edu": 1,
     "nooruse.ee": 1,
+    "nordakademie.de": 0,
     "normandale.edu": 0,
     "northampton.edu": 0,
     "northcentralcollege.edu": 1,
@@ -46135,6 +47261,7 @@
     "ort-france.fr": 0,
     "oru.edu": 0,
     "osaka-u.ac.jp": 2,
+    "ostfalia.de": 0,
     "osu.cz": 0,
     "osu.edu": 2,
     "oswego.edu": 0,
@@ -46160,6 +47287,7 @@
     "pacificenglishschool.com": 1,
     "pacificenglishstudy.com": 1,
     "pacificu.edu": 0,
+    "paderborn.de": 0,
     "padrechico.org.br": 0,
     "paideia.org": 0,
     "paier.edu": 1,
@@ -46210,10 +47338,16 @@
     "perbanas.ac.id": 1,
     "peru.edu": 0,
     "petitelande-reze.loire-atlantique.e-lyco.fr": 0,
+    "pfh-goettingen.de": 1,
     "pfw.edu": 0,
     "pgauguin.loire-atlantique.e-lyco.fr": 0,
     "ph-burgenland.at": 0,
+    "ph-erfurt.de": 1,
+    "ph-freiburg.de": 0,
+    "ph-gmuend.de": 0,
+    "ph-heidelberg.de": 0,
     "ph-kaernten.ac.at": 0,
+    "ph-karlsruhe.de": 1,
     "ph-noe.ac.at": 0,
     "ph-ooe.at": 0,
     "ph-vorarlberg.ac.at": 0,
@@ -46221,6 +47355,7 @@
     "phdl.at": 0,
     "philau.edu": 1,
     "phillips.edu": 1,
+    "philtheol-augustin.de": 0,
     "phoenix.edu": 0,
     "phoenixcollege.edu": 0,
     "phsc.edu": 0,
@@ -46859,6 +47994,7 @@
     "student.42.fr": 1,
     "student.42.us.org": 3,
     "student.eit.edu.au": 2,
+    "student.hs-anhalt.de": 0,
     "student.karazin.ua": 3,
     "student.lamk.fi": 1,
     "student.laurea.fi": 1,
@@ -47005,6 +48141,7 @@
     "thomasmore.be": 0,
     "thomasmore.edu": 0,
     "thtrebinje.com": 1,
+    "thu.de": 0,
     "thunderbird.edu": 1,
     "tiaa.edu.ge": 1,
     "tiesnq.com.au": 0,
@@ -48477,6 +49614,7 @@
     "whtu.edu.cn": 1,
     "whu.edu.cn": 1,
     "whut.edu.cn": 1,
+    "whz.de": 0,
     "wi.edu": 0,
     "wic.edu.au": 1,
     "wichita.edu": 0,
@@ -48662,12 +49800,12 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-23T20:01:28+00:00",
+  "last_run": "2026-09-23T21:36:45+00:00",
   "last_verify": {
-    "added_active": 37,
-    "at": "2026-09-23 18:00 UTC",
-    "pending_left": 7251,
-    "reverified": 7,
+    "added_active": 46,
+    "at": "2026-09-23 21:36 UTC",
+    "pending_left": 7210,
+    "reverified": 10,
     "validated": 125
   },
   "moved": {
@@ -48761,10 +49899,18 @@
     "fh-luebeck.de": "th-luebeck.de",
     "fh-muenchen.de": "hm.edu",
     "fh-nb.de": "hs-nb.de",
+    "fh-osnabrueck.de": "hs-osnabrueck.de",
+    "fh-ottersberg.de": "hks-ottersberg.de",
+    "fh-riedlingen.de": "mobile-university.de",
     "fh-steyr.at": "fh-ooe.at",
+    "fh-stralsund.de": "hochschule-stralsund.de",
+    "fh-trier.de": "hochschule-trier.de",
     "fh-wels.at": "fh-ooe.at",
+    "fh-worms.de": "hs-worms.de",
+    "fh-zwickau.de": "whz.de",
     "fhkt.de": "p2-1.afp24.net",
     "fhm-mittelstand.de": "fh-mittelstand.de",
+    "fhs-moritzburg.de": "cheaphotelguide.com",
     "fhw.at": "fh-wien.ac.at",
     "fidm.edu": "asufidm.asu.edu",
     "gac.edu": "gustavus.edu",
@@ -48777,10 +49923,13 @@
     "hbu.edu": "hc.edu",
     "hec.fr": "hec.edu",
     "hha.dk": "bss.au.dk",
+    "himh.de": "himh.geo.io",
     "hochschule-bonn-rhein-sieg.de": "h-brs.de",
     "hospitalitaliano.edu.ar": "instituto.hospitalitaliano.org.ar",
     "hqgc.net": "global.dyrsxm.cc",
+    "hs-magdeburg.de": "h2.de",
     "hs-neu-ulm.de": "hnu.de",
+    "hs-ulm.de": "thu.de",
     "hsc.unt.edu": "unthealth.edu",
     "icat.edu.au": "thefashioninstitute.com.au",
     "ici.edu": "globaluniversity.edu",
@@ -48788,6 +49937,7 @@
     "ieps-marche.be": "eafc-marche.be",
     "ifp.fr": "ifpenergiesnouvelles.fr",
     "iha.dk": "ingenioer.au.dk",
+    "ihi-zittau.de": "tu-dresden.de",
     "ilsc.com.au": "ilsc.com",
     "ilstu.edu": "illinoisstate.edu",
     "imati.cnr.it": "make_home_page.php",
@@ -48802,12 +49952,15 @@
     "iupui.edu": "indianapolis.iu.edu",
     "ius.edu": "southeast.iu.edu",
     "iusb.edu": "southbend.iu.edu",
+    "jacobs-university.de": "constructor.university",
     "jfku.edu": "law.nu.edu",
     "jju.edu.et": "technobros.au",
     "kantiolten.ch": "kantiolten.so.ch",
     "kaplan.edu": "kaplan.com",
     "keller.edu": "devry.edu",
     "kentalis.com": "kentalisinternational.org",
+    "kfh-freiburg.de": "kh-freiburg.de",
+    "kfh-mainz.de": "kh-mz.de",
     "khk.be": "thomasmore.be",
     "khoiau.ac.ir": "khorramabad.iau.ir",
     "kiropraktorhogskolan.se": "nimm.se",
@@ -48823,6 +49976,7 @@
     "marlboro.edu": "marlboro.emerson.edu",
     "mbc.edu": "montanabiblecollege.edu",
     "meduniversity-plovdiv.bg": "mu-plovdiv.bg",
+    "mh-hannover.de": "mhh.de",
     "mines-ales.fr": "imt-mines-ales.fr",
     "mitht.ru": "mirea.ru",
     "moler.org": "moler.edu",

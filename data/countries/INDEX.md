@@ -47,7 +47,7 @@
 | CW | 1 | 0 | 1 |
 | CY | 17 | 12 | 5 |
 | CZ | 44 | 22 | 22 |
-| DE | 147 | 62 | 85 |
+| DE | 262 | 108 | 154 |
 | DJ | 1 | 1 | 0 |
 | DK | 37 | 20 | 17 |
 | DM | 3 | 1 | 2 |
@@ -129,4 +129,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 5750. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 5865. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
