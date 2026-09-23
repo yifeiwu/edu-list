@@ -1,28 +1,28 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-23 00:09 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-23 01:57 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **5308** across **121** countries
-- Active: **3155** (59%) · Inaccessible: **2153** (41%)
-- Pending queue: **7503** unvalidated candidates
-- Known registration age: **2657** domains (median 27 yrs)
+- Domains tracked: **5416** across **121** countries
+- Active: **3194** (59%) · Inaccessible: **2222** (41%)
+- Pending queue: **7403** unvalidated candidates
+- Known registration age: **2739** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-22 23:23 UTC): validated 118, +54 Active, re-verified 15, pending left 7456
+- Verify (2026-09-23 01:57 UTC): validated 123, +39 Active, re-verified 15, pending left 7403
 - Curate (2026-09-23 00:09 UTC): 10701 raw candidates, 47 queued, 3574 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1720 | 1296 | 424 |
+| US | 1721 | 1297 | 424 |
+| FR | 416 | 236 | 180 |
 | CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
 | BR | 343 | 160 | 183 |
-| FR | 340 | 208 | 132 |
 | CA | 174 | 95 | 79 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
@@ -38,25 +38,25 @@ _Generated 2026-09-23 00:09 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3155 |
-| `fetch-error:ConnectionError` | 899 |
-| `http-403` | 290 |
-| `fetch-error:ConnectTimeout` | 227 |
-| `fetch-error:SSLError` | 178 |
-| `low-confidence:http-2xx-html` | 174 |
-| `empty-body` | 35 |
-| `fetch-error:ReadTimeout` | 25 |
+| `http-2xx-html` | 3194 |
+| `fetch-error:ConnectionError` | 936 |
+| `http-403` | 291 |
+| `fetch-error:ConnectTimeout` | 232 |
+| `fetch-error:SSLError` | 189 |
+| `low-confidence:http-2xx-html` | 176 |
+| `empty-body` | 36 |
+| `fetch-error:ReadTimeout` | 28 |
 | `http-404` | 18 |
-| `http-500` | 12 |
+| `http-500` | 13 |
 | `http-503` | 9 |
 | `social-only/placeholder` | 5 |
 
 ## Freshness
 
-- Verified in last 30 days: **5308** (100%)
+- Verified in last 30 days: **5416** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **242**
+- Moved pointers (old domain → new): **250**
 
 ## Alerts
 
