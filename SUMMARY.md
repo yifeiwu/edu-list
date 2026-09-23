@@ -1,25 +1,25 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-23 05:39 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-23 07:54 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **5416** across **121** countries
-- Active: **3194** (59%) · Inaccessible: **2222** (41%)
-- Pending queue: **7456** unvalidated candidates
-- Known registration age: **2739** domains (median 28 yrs)
+- Domains tracked: **5524** across **121** countries
+- Active: **3234** (59%) · Inaccessible: **2290** (41%)
+- Pending queue: **7354** unvalidated candidates
+- Known registration age: **2828** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-23 01:57 UTC): validated 123, +39 Active, re-verified 15, pending left 7403
+- Verify (2026-09-23 07:54 UTC): validated 123, +40 Active, re-verified 15, pending left 7354
 - Curate (2026-09-23 05:39 UTC): 10685 raw candidates, 53 queued, 28 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1721 | 1297 | 424 |
-| FR | 416 | 236 | 180 |
+| US | 1724 | 1300 | 424 |
+| FR | 521 | 273 | 248 |
 | CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
 | BR | 343 | 160 | 183 |
@@ -38,25 +38,25 @@ _Generated 2026-09-23 05:39 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3194 |
-| `fetch-error:ConnectionError` | 936 |
-| `http-403` | 291 |
-| `fetch-error:ConnectTimeout` | 232 |
-| `fetch-error:SSLError` | 189 |
-| `low-confidence:http-2xx-html` | 176 |
+| `http-2xx-html` | 3234 |
+| `fetch-error:ConnectionError` | 977 |
+| `http-403` | 293 |
+| `fetch-error:ConnectTimeout` | 241 |
+| `fetch-error:SSLError` | 192 |
+| `low-confidence:http-2xx-html` | 179 |
 | `empty-body` | 36 |
-| `fetch-error:ReadTimeout` | 28 |
+| `fetch-error:ReadTimeout` | 29 |
 | `http-404` | 18 |
-| `http-500` | 13 |
+| `http-500` | 14 |
 | `http-503` | 9 |
 | `social-only/placeholder` | 5 |
 
 ## Freshness
 
-- Verified in last 30 days: **5416** (100%)
+- Verified in last 30 days: **5524** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **250**
+- Moved pointers (old domain → new): **258**
 
 ## Alerts
 
