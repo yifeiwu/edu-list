@@ -86,7 +86,7 @@
 | ID | 33 | 16 | 17 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
-| IN | 114 | 52 | 62 |
+| IN | 216 | 105 | 111 |
 | IR | 19 | 1 | 18 |
 | IS | 10 | 6 | 4 |
 | IT | 11 | 7 | 4 |
@@ -110,6 +110,7 @@
 | PE | 3 | 2 | 1 |
 | PF | 1 | 0 | 1 |
 | PH | 17 | 8 | 9 |
+| PK | 1 | 1 | 0 |
 | PL | 7 | 5 | 2 |
 | PT | 11 | 7 | 4 |
 | QA | 5 | 2 | 3 |
@@ -140,4 +141,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 6179. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 6282. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
