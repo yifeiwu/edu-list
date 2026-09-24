@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-24 22:06 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-24 22:33 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **6384** across **138** countries
-- Active: **3611** (57%) · Inaccessible: **2773** (43%)
-- Pending queue: **7049** unvalidated candidates
-- Known registration age: **3210** domains (median 27 yrs)
+- Domains tracked: **6487** across **138** countries
+- Active: **3661** (56%) · Inaccessible: **2826** (44%)
+- Pending queue: **6949** unvalidated candidates
+- Known registration age: **3303** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-24 19:22 UTC): validated 117, +42 Active, re-verified 15, pending left 6987
+- Verify (2026-09-24 22:33 UTC): validated 118, +50 Active, re-verified 15, pending left 6949
 - Curate (2026-09-24 22:06 UTC): 10699 raw candidates, 62 queued, 24 re-cited
 
 ## Countries (top 15 by size)
@@ -20,11 +20,11 @@ _Generated 2026-09-24 22:06 UTC. Full per-country table: [data/countries/INDEX.m
 |---|---|---|---|
 | US | 1726 | 1302 | 424 |
 | FR | 619 | 308 | 311 |
+| IN | 421 | 197 | 224 |
 | CN | 415 | 53 | 362 |
 | AU | 374 | 256 | 118 |
 | DE | 346 | 155 | 191 |
 | BR | 343 | 160 | 183 |
-| IN | 318 | 147 | 171 |
 | CA | 174 | 95 | 79 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
@@ -38,25 +38,25 @@ _Generated 2026-09-24 22:06 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3611 |
-| `fetch-error:ConnectionError` | 1183 |
-| `http-403` | 315 |
-| `fetch-error:ConnectTimeout` | 309 |
-| `fetch-error:SSLError` | 254 |
-| `low-confidence:http-2xx-html` | 193 |
-| `empty-body` | 48 |
-| `fetch-error:ReadTimeout` | 31 |
+| `http-2xx-html` | 3661 |
+| `fetch-error:ConnectionError` | 1205 |
+| `fetch-error:ConnectTimeout` | 320 |
+| `http-403` | 318 |
+| `fetch-error:SSLError` | 262 |
+| `low-confidence:http-2xx-html` | 195 |
+| `empty-body` | 50 |
+| `fetch-error:ReadTimeout` | 32 |
 | `http-404` | 23 |
-| `http-500` | 15 |
+| `http-500` | 16 |
 | `parking-linkfarm` | 11 |
 | `http-503` | 10 |
 
 ## Freshness
 
-- Verified in last 30 days: **6384** (100%)
+- Verified in last 30 days: **6487** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **331**
+- Moved pointers (old domain → new): **334**
 
 ## Alerts
 
