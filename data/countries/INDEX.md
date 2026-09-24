@@ -10,7 +10,7 @@
 | AM | 44 | 24 | 20 |
 | AO | 10 | 2 | 8 |
 | AR | 126 | 90 | 36 |
-| AT | 73 | 48 | 25 |
+| AT | 73 | 47 | 26 |
 | AU | 374 | 256 | 118 |
 | AZ | 35 | 20 | 15 |
 | BA | 35 | 19 | 16 |
@@ -82,12 +82,13 @@
 | HN | 10 | 9 | 1 |
 | HR | 12 | 10 | 2 |
 | HT | 7 | 3 | 4 |
-| HU | 3 | 1 | 2 |
+| HU | 39 | 16 | 23 |
 | ID | 33 | 16 | 17 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
-| IN | 56 | 36 | 20 |
+| IN | 114 | 52 | 62 |
 | IR | 19 | 1 | 18 |
+| IS | 10 | 6 | 4 |
 | IT | 11 | 7 | 4 |
 | JP | 19 | 5 | 14 |
 | KE | 6 | 4 | 2 |
@@ -139,4 +140,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 6075. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 6179. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

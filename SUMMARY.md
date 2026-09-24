@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-24 09:07 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-24 10:09 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **6075** across **136** countries
-- Active: **3480** (57%) · Inaccessible: **2595** (43%)
-- Pending queue: **7168** unvalidated candidates
-- Known registration age: **2961** domains (median 28 yrs)
+- Domains tracked: **6179** across **137** countries
+- Active: **3516** (57%) · Inaccessible: **2663** (43%)
+- Pending queue: **7068** unvalidated candidates
+- Known registration age: **3025** domains (median 27 yrs)
 
 ## Last runs
 
-- Verify (2026-09-24 04:53 UTC): validated 118, +59 Active, re-verified 15, pending left 7115
+- Verify (2026-09-24 10:09 UTC): validated 119, +37 Active, re-verified 15, pending left 7068
 - Curate (2026-09-24 09:07 UTC): 10700 raw candidates, 53 queued, 35 re-cited
 
 ## Countries (top 15 by size)
@@ -27,36 +27,36 @@ _Generated 2026-09-24 09:07 UTC. Full per-country table: [data/countries/INDEX.m
 | CA | 174 | 95 | 79 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
+| IN | 114 | 52 | 62 |
 | CO | 105 | 59 | 46 |
 | BD | 80 | 52 | 28 |
-| AT | 73 | 48 | 25 |
+| AT | 73 | 47 | 26 |
 | CL | 65 | 32 | 33 |
 | GB | 60 | 36 | 24 |
-| BG | 59 | 33 | 26 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3480 |
-| `fetch-error:ConnectionError` | 1108 |
-| `http-403` | 307 |
-| `fetch-error:ConnectTimeout` | 278 |
-| `fetch-error:SSLError` | 233 |
-| `low-confidence:http-2xx-html` | 182 |
-| `empty-body` | 39 |
-| `fetch-error:ReadTimeout` | 29 |
-| `http-404` | 22 |
+| `http-2xx-html` | 3516 |
+| `fetch-error:ConnectionError` | 1135 |
+| `http-403` | 310 |
+| `fetch-error:ConnectTimeout` | 287 |
+| `fetch-error:SSLError` | 244 |
+| `low-confidence:http-2xx-html` | 186 |
+| `empty-body` | 42 |
+| `fetch-error:ReadTimeout` | 30 |
+| `http-404` | 23 |
 | `http-500` | 15 |
-| `http-503` | 9 |
+| `http-503` | 10 |
 | `parking-linkfarm` | 9 |
 
 ## Freshness
 
-- Verified in last 30 days: **6075** (100%)
+- Verified in last 30 days: **6179** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **321**
+- Moved pointers (old domain → new): **326**
 
 ## Alerts
 
