@@ -47,7 +47,7 @@
 | CW | 1 | 0 | 1 |
 | CY | 17 | 12 | 5 |
 | CZ | 44 | 22 | 22 |
-| DE | 262 | 108 | 154 |
+| DE | 346 | 155 | 191 |
 | DJ | 1 | 1 | 0 |
 | DK | 37 | 20 | 17 |
 | DM | 3 | 1 | 2 |
@@ -62,12 +62,12 @@
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 619 | 308 | 311 |
+| FR | 619 | 309 | 310 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
 | GE | 14 | 7 | 7 |
 | GF | 1 | 0 | 1 |
-| GH | 8 | 6 | 2 |
+| GH | 30 | 21 | 9 |
 | GM | 3 | 2 | 1 |
 | GN | 1 | 0 | 1 |
 | GQ | 1 | 0 | 1 |
@@ -121,7 +121,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1725 | 1301 | 424 |
+| US | 1726 | 1302 | 424 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VE | 1 | 0 | 1 |
@@ -129,4 +129,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 5865. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 5972. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
