@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-24 03:48 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-24 04:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **5972** across **126** countries
-- Active: **3421** (57%) · Inaccessible: **2551** (43%)
-- Pending queue: **7215** unvalidated candidates
-- Known registration age: **2930** domains (median 28 yrs)
+- Domains tracked: **6075** across **136** countries
+- Active: **3480** (57%) · Inaccessible: **2595** (43%)
+- Pending queue: **7115** unvalidated candidates
+- Known registration age: **2961** domains (median 28 yrs)
 
 ## Last runs
 
-- Verify (2026-09-24 00:10 UTC): validated 122, +63 Active, re-verified 15, pending left 7161
+- Verify (2026-09-24 04:53 UTC): validated 118, +59 Active, re-verified 15, pending left 7115
 - Curate (2026-09-24 03:48 UTC): 10699 raw candidates, 54 queued, 4174 re-cited
 
 ## Countries (top 15 by size)
@@ -38,25 +38,25 @@ _Generated 2026-09-24 03:48 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3421 |
-| `fetch-error:ConnectionError` | 1087 |
-| `http-403` | 302 |
-| `fetch-error:ConnectTimeout` | 274 |
-| `fetch-error:SSLError` | 230 |
-| `low-confidence:http-2xx-html` | 180 |
+| `http-2xx-html` | 3480 |
+| `fetch-error:ConnectionError` | 1108 |
+| `http-403` | 307 |
+| `fetch-error:ConnectTimeout` | 278 |
+| `fetch-error:SSLError` | 233 |
+| `low-confidence:http-2xx-html` | 182 |
 | `empty-body` | 39 |
 | `fetch-error:ReadTimeout` | 29 |
-| `http-404` | 21 |
-| `http-500` | 14 |
+| `http-404` | 22 |
+| `http-500` | 15 |
 | `http-503` | 9 |
 | `parking-linkfarm` | 9 |
 
 ## Freshness
 
-- Verified in last 30 days: **5972** (100%)
+- Verified in last 30 days: **6075** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **316**
+- Moved pointers (old domain → new): **321**
 
 ## Alerts
 
@@ -64,9 +64,11 @@ _Generated 2026-09-24 03:48 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `BI`: low Active rate 1/7 (14%) — check for blocks/stale sources
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
+- ⚠ `GN`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `IR`: low Active rate 1/19 (5%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 5/19 (26%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
+- ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
 ## Pipelines
 

@@ -65,15 +65,24 @@
 | FR | 619 | 309 | 310 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
+| GD | 1 | 1 | 0 |
 | GE | 14 | 7 | 7 |
 | GF | 1 | 0 | 1 |
-| GH | 30 | 21 | 9 |
+| GH | 35 | 26 | 9 |
+| GL | 2 | 1 | 1 |
 | GM | 3 | 2 | 1 |
-| GN | 1 | 0 | 1 |
+| GN | 5 | 1 | 4 |
+| GP | 1 | 1 | 0 |
 | GQ | 1 | 0 | 1 |
-| GR | 5 | 3 | 2 |
-| HK | 4 | 4 | 0 |
+| GR | 38 | 24 | 14 |
+| GT | 11 | 7 | 4 |
+| GU | 1 | 1 | 0 |
+| GY | 4 | 3 | 1 |
+| HK | 20 | 8 | 12 |
+| HN | 10 | 9 | 1 |
 | HR | 12 | 10 | 2 |
+| HT | 7 | 3 | 4 |
+| HU | 3 | 1 | 2 |
 | ID | 33 | 16 | 17 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
@@ -124,9 +133,10 @@
 | US | 1726 | 1302 | 424 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
+| VA | 5 | 1 | 4 |
 | VE | 1 | 0 | 1 |
 | VN | 4 | 3 | 1 |
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 5972. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 6075. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
