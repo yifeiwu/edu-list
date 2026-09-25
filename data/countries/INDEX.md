@@ -25,7 +25,7 @@
 | BM | 1 | 0 | 1 |
 | BN | 3 | 1 | 2 |
 | BO | 31 | 16 | 15 |
-| BR | 343 | 160 | 183 |
+| BR | 343 | 161 | 182 |
 | BS | 1 | 0 | 1 |
 | BT | 1 | 0 | 1 |
 | BW | 10 | 3 | 7 |
@@ -83,10 +83,10 @@
 | HR | 12 | 10 | 2 |
 | HT | 7 | 3 | 4 |
 | HU | 39 | 16 | 23 |
-| ID | 33 | 16 | 17 |
+| ID | 100 | 59 | 41 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
-| IN | 421 | 197 | 224 |
+| IN | 457 | 207 | 250 |
 | IR | 19 | 1 | 18 |
 | IS | 10 | 6 | 4 |
 | IT | 11 | 7 | 4 |
@@ -132,7 +132,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1726 | 1302 | 424 |
+| US | 1726 | 1301 | 425 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -141,4 +141,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 6487. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 6590. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
