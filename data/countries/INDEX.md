@@ -83,7 +83,7 @@
 | HR | 12 | 10 | 2 |
 | HT | 7 | 3 | 4 |
 | HU | 39 | 16 | 23 |
-| ID | 100 | 59 | 41 |
+| ID | 200 | 115 | 85 |
 | IE | 5 | 4 | 1 |
 | IL | 3 | 3 | 0 |
 | IN | 457 | 207 | 250 |
@@ -141,4 +141,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 6590. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 6690. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
