@@ -22,8 +22,8 @@
     },
     "4cd.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "a-aarhus.dk": {
       "code": 200,
@@ -87,8 +87,8 @@
     },
     "aau.at": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "aau.dk": {
       "code": 200,
@@ -168,7 +168,7 @@
     "academedu.org": {
       "code": 0,
       "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "reason": "fetch-error:ConnectionError"
     },
     "academia.cl": {
       "code": 0,
@@ -272,8 +272,8 @@
     },
     "acu.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "acu.edu.au": {
       "code": 403,
@@ -322,8 +322,8 @@
     },
     "adelphi.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "adeshuniversity.ac.in": {
       "code": 200,
@@ -427,8 +427,8 @@
     },
     "agnesscott.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "agnesvarda.loire-atlantique.e-lyco.fr": {
       "code": 200,
@@ -647,8 +647,8 @@
     },
     "airwaysaviation.com": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
     },
     "airwork.com.au": {
       "code": 200,
@@ -24840,7 +24840,47 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "shibaura-it.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "shift.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shiga-med.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shiga-u.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "shikoku-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shimane-med.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shimane-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shimonoseki-cu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shinshu-u.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -24855,6 +24895,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "shirayuri.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "shirazu.ac.ir": {
       "code": 0,
       "confidence": 0,
@@ -24864,6 +24909,16 @@
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "shitennoji.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "shizuoka.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "shmtu.edu.cn": {
       "code": 502,
@@ -24885,10 +24940,30 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "shodai.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shoin.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shokei-gakuen.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shomal.ac.ir": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "shonan-it.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "shorter.edu": {
       "code": 200,
@@ -24900,7 +24975,22 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "shotoku.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "shouhua.net.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "showa-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shoyaku.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -24960,10 +25050,35 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "shuchiin.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "shudo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shufe.edu.cn": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "shujitsu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shukutoku.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shumei-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "shutcm.edu.cn": {
       "code": 0,
@@ -25085,6 +25200,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "sit.ac.jp": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking-linkfarm"
+    },
     "sitcm.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -25114,6 +25234,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "siu.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
     "siu.edu": {
       "code": 200,
@@ -25280,6 +25405,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "slcn.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "slu.cz": {
       "code": 200,
       "confidence": 40,
@@ -25435,6 +25565,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "soai.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "soauniversity.ac.in": {
       "code": 200,
       "confidence": 40,
@@ -25460,6 +25595,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "soka.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "soken.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "somaiya.edu": {
       "code": 200,
       "confidence": 100,
@@ -25480,10 +25625,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "sonoda-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "sonoma.edu": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "sophia.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "soran.edu.iq": {
       "code": 200,
@@ -25690,6 +25845,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "spu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "spu.ba": {
       "code": 200,
       "confidence": 90,
@@ -25824,6 +25984,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "ssu.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ssus.ac.in": {
       "code": 200,
@@ -26410,6 +26575,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sugino.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "sugiyama-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "suh-edu.com": {
       "code": 0,
       "confidence": 0,
@@ -26430,6 +26605,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "suma.kobe-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "summitqueens.com": {
       "code": 200,
       "confidence": 60,
@@ -26441,6 +26621,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "sums.ac.ir": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "sun.ac.jp": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -26505,6 +26690,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "surugadai.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "susqu.edu": {
       "code": 200,
       "confidence": 90,
@@ -26525,6 +26715,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sut.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sutech.ac.ir": {
       "code": 200,
       "confidence": 90,
@@ -26534,6 +26729,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "suzuka-iu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "suzuka-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "svbpuctm.org": {
       "code": 0,
@@ -26649,6 +26854,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "swu.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
     "swu.bg": {
       "code": 200,
@@ -26770,6 +26980,16 @@
       "confidence": 5,
       "reason": "http-488"
     },
+    "t-komazawa.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "t-kougei.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "tabari.ac.ir": {
       "code": 0,
       "confidence": 0,
@@ -26789,6 +27009,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ReadTimeout"
+    },
+    "tachibana-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tacomahousing.net": {
       "code": 200,
@@ -26810,6 +27035,31 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "tais.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "takachiho.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "takamatsu-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "takara-univ.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "takushoku-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "talladega.brinkster.net": {
       "code": 0,
       "confidence": 0,
@@ -26819,6 +27069,16 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "tamabi.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
+    "tamagawa.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "tamiluniversity.ac.in": {
       "code": 200,
@@ -26895,6 +27155,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "tbgu.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "tbs.edu": {
       "code": 200,
       "confidence": 60,
@@ -26945,6 +27210,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "tcue.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tdc.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "teak.fi": {
       "code": 0,
       "confidence": 0,
@@ -26980,6 +27255,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "teikyo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "telkomuniversity.ac.id": {
       "code": 200,
       "confidence": 90,
@@ -27005,6 +27285,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "tenri-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "teologi.dk": {
       "code": 200,
       "confidence": 80,
@@ -27014,6 +27299,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "termnet.co.jp": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+structure+non-educational-content"
     },
     "tesc.edu": {
       "code": 0,
@@ -27025,7 +27315,22 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "teu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "tezu.ernet.in": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tezuka-gu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tezukayama-u.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -27046,6 +27351,11 @@
       "reason": "fetch-error:ConnectTimeout"
     },
     "tfh-wildau.de": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tfu.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -27230,6 +27540,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "timis.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tintern.vic.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -27244,6 +27559,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "tiu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tjarts.edu.cn": {
       "code": 0,
@@ -27310,6 +27630,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "tku.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tlc.edu.qa": {
       "code": 0,
       "confidence": 0,
@@ -27330,6 +27655,11 @@
       "confidence": 5,
       "reason": "empty-body"
     },
+    "tmd.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tme.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -27339,6 +27669,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "tmit.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tmmu.edu.cn": {
       "code": 404,
@@ -27390,10 +27725,110 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "toho-music.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "toho-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tohoku-gakuin.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "tohoku-pharm.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tohoku.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "tohomusic.ac.jp": {
+      "code": 429,
+      "confidence": 5,
+      "reason": "http-429"
+    },
+    "tohtech.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tohwa-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "toin.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "tojo.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokai.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokaigakuen-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "tokaijoshi-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokiwa.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokoha-u.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "tokushima-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokuyama-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokyo-kasei.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokyo-med.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tokyo-ondai.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "tokyo-u-fish.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "toledo.br": {
       "code": 200,
@@ -27425,6 +27860,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "tonichi-kokusai-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "toorakcollege.vic.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -27439,6 +27879,21 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "tosho-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tottori-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "toua-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "toulouse.dominicains.com": {
       "code": 200,
@@ -27464,6 +27919,41 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "toyaku.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "toyama-mpu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "toyama-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "toyo.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "toyoeiwa.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "toyogakuen-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "toyota-ti.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tpu.fi": {
       "code": 0,
@@ -27625,6 +28115,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "tsuda.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tsufl.edu": {
       "code": 0,
       "confidence": 0,
@@ -27634,6 +28129,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "tsuru.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ttmc.edu.cn": {
       "code": 0,
@@ -50417,12 +50917,48 @@
       "ts": "2026-09-22"
     },
     "shh.fi": "1991-01-01",
+    "shibaura-it.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shift.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
     },
+    "shiga-med.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shiga-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shikoku-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shimane-med.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shimane-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shimonoseki-cu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shinshu-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shinstitute.org": "2014-03-09",
     "ship.edu": "1992-02-17",
+    "shirayuri.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shirazu.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -50430,6 +50966,14 @@
     "shisu.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "shitennoji.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shizuoka.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "shmtu.edu.cn": {
       "reg": "",
@@ -50444,15 +50988,43 @@
       "ts": "2026-09-22"
     },
     "shobhituniversity.ac.in": "2007-01-03",
+    "shodai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shoin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shokei-gakuen.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shomal.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
     },
+    "shonan-it.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shorter.edu": "1995-12-12",
     "shortercollege.edu": "2013-11-11",
+    "shotoku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shouhua.net.cn": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "showa-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shoyaku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "shridharuniversity.ac.in": "2009-07-27",
     "shsmu.edu.cn": {
@@ -50486,9 +51058,29 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "shuchiin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shudo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "shufe.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "shujitsu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shukutoku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "shumei-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "shutcm.edu.cn": {
       "reg": "",
@@ -50565,6 +51157,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "sit.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "sitcm.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -50585,6 +51181,10 @@
     "siu-heidelberg.de": {
       "reg": "",
       "ts": "2026-09-23"
+    },
+    "siu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "siu.edu": "1989-01-27",
     "siu.edu.bd": {
@@ -50644,6 +51244,10 @@
     "slc.qld.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "slcn.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "slu.cz": "1994-05-19",
     "slu.edu": "1989-04-13",
@@ -50708,6 +51312,10 @@
     },
     "snu.edu": "1994-10-20",
     "soa.ac.in": "2007-07-20",
+    "soai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "soauniversity.ac.in": "2007-08-03",
     "soavoshk.cz": "1999-10-01",
     "soc.tas.edu.au": {
@@ -50718,6 +51326,14 @@
     "sohag-univ.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "soka.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "soken.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "somerset.qld.edu.au": {
       "reg": "",
@@ -50731,7 +51347,15 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "sonoda-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "sonoma.edu": "1989-05-22",
+    "sophia.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "soran.edu.iq": {
       "reg": "",
       "ts": "2026-09-25"
@@ -50821,6 +51445,10 @@
     "sports-etudes-college-corneille.fr": "2023-01-13",
     "springarbor.edu": "2022-04-18",
     "spsoa-ub.cz": "2011-10-13",
+    "spu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "spu.ba": {
       "reg": "",
       "ts": "2026-09-20"
@@ -50886,6 +51514,10 @@
     "ssu.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "ssu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "ssus.ac.in": "2008-06-19",
     "ssvv.up.nic.in": "2004-12-23",
@@ -51177,11 +51809,23 @@
       "ts": "2026-09-22"
     },
     "suffolk.edu": "1995-08-01",
+    "sugino.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "sugiyama-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "suh-edu.com": "2009-12-26",
     "sulross.edu": "1994-08-12",
     "sum.ba": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "suma.kobe-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "summitqueens.com": "2008-11-12",
     "summitunivofla.edu": {
@@ -51191,6 +51835,10 @@
     "sums.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "sun.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "suncoastcc.qld.edu.au": {
       "reg": "",
@@ -51212,6 +51860,10 @@
       "ts": "2026-09-18"
     },
     "surabayaeuropeanschool.com": "2002-06-14",
+    "surugadai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "susqu.edu": "1990-10-16",
     "sust.edu": "1999-06-04",
     "sustc.edu.cn": {
@@ -51222,11 +51874,23 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "sut.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "sutech.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
     },
     "suu.edu": "1990-02-12",
+    "suzuka-iu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "suzuka-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "svbpuctm.org": {
       "reg": "",
       "ts": "2026-09-24"
@@ -51294,6 +51958,10 @@
     "swt.edu": {
       "reg": "",
       "ts": "2026-09-19"
+    },
+    "swu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "swu.bg": {
       "reg": "",
@@ -51379,6 +52047,14 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "t-komazawa.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "t-kougei.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tabari.ac.ir": {
       "reg": "",
       "ts": "2026-09-22"
@@ -51392,6 +52068,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "tachibana-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tacomahousing.net": "2013-05-06",
     "tacomahousing.org": "2000-12-29",
     "tafeinternational.wa.edu.au": {
@@ -51399,6 +52079,26 @@
       "ts": "2026-09-13"
     },
     "taftu.edu": "1995-11-08",
+    "tais.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "takachiho.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "takamatsu-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "takara-univ.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "takushoku-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "talladega.brinkster.net": {
       "reg": "",
       "ts": "2026-09-18"
@@ -51406,6 +52106,14 @@
     "taltech.ee": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "tamabi.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tamagawa.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "tamiluniversity.ac.in": "2005-07-07",
     "tamiu.edu": "1995-01-30",
@@ -51434,6 +52142,10 @@
     },
     "tauedu.org": "2011-03-31",
     "tayloru.edu": "1991-03-27",
+    "tbgu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tbs.edu": "1996-05-30",
     "tbzmed.ac.ir": {
       "reg": "",
@@ -51453,6 +52165,14 @@
       "ts": "2026-09-25"
     },
     "tcu.edu": "1990-06-19",
+    "tcue.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tdc.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "teak.fi": "1991-01-01",
     "technikum-wien.at": {
       "reg": "",
@@ -51475,6 +52195,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "teikyo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "telkomuniversity.ac.id": "2012-09-07",
     "teluguuniversity.ac.in": "2004-01-06",
     "teluq.uquebec.ca": {
@@ -51486,14 +52210,34 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "tenri-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "teologi.dk": {
       "reg": "",
       "ts": "2026-09-22"
     },
     "teologica.br": "1997-10-23",
+    "termnet.co.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tesc.edu": "1991-05-13",
     "tesu.edu": "2015-12-22",
+    "teu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tezu.ernet.in": "2005-02-19",
+    "tezuka-gu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tezukayama-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tfbern.ch": {
       "reg": "",
       "ts": "2026-09-16"
@@ -51509,6 +52253,10 @@
     "tfh-wildau.de": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "tfu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "th-brandenburg.de": {
       "reg": "",
@@ -51617,6 +52365,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "timis.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tintern.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -51625,6 +52377,10 @@
     "titech.ac.jp": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "tiu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "tjarts.edu.cn": {
       "reg": "",
@@ -51672,6 +52428,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "tku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tlc.edu.qa": {
       "reg": "",
       "ts": "2026-09-17"
@@ -51682,6 +52442,10 @@
       "ts": "2026-09-22"
     },
     "tmbu.org": "2002-09-06",
+    "tmd.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tme.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -51689,6 +52453,10 @@
     "tmi.ac.ir": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "tmit.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "tmmu.edu.cn": {
       "reg": "",
@@ -51712,9 +52480,89 @@
     },
     "tnstate.edu": "1993-07-13",
     "tntech.edu": "1992-09-09",
+    "toho-music.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toho-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tohoku-gakuin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tohoku-pharm.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tohoku.ac.jp": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "tohomusic.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tohtech.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tohwa-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tojo.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokaigakuen-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokaijoshi-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokiwa.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokoha-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokushima-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokuyama-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokyo-kasei.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokyo-med.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokyo-ondai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tokyo-u-fish.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "toledo.br": "1997-09-02",
     "tolworthinf.greenschoolsonline.co.uk": {
@@ -51728,12 +52576,28 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "tonichi-kokusai-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "toorakcollege.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "toronto.edu": "1986-05-08",
     "torontomu.ca": "2022-01-29",
+    "tosho-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "tottori-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toua-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "toulouse.dominicains.com": {
       "reg": "",
       "ts": "2026-09-13"
@@ -51744,6 +52608,34 @@
     },
     "toursainte.fr": "2008-09-30",
     "towson.edu": "1988-05-19",
+    "toyaku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyama-mpu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyama-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyo.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyoeiwa.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyogakuen-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "toyota-ti.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tpu.fi": "1991-01-01",
     "tradoc.mil.al": {
       "reg": "",
@@ -51807,6 +52699,10 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "tsuda.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "tsufl.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -51814,6 +52710,10 @@
     "tsukuba.ac.jp": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "tsuru.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "ttmc.edu.cn": {
       "reg": "",
@@ -56892,7 +57792,7 @@
     "ac-paris.fr": 1,
     "ac.ac.cy": 0,
     "ac.edu.au": 1,
-    "academedu.org": 1,
+    "academedu.org": 2,
     "academia.cl": 1,
     "academies.edu.au": 0,
     "academies.nsw.edu.au": 1,
@@ -56900,18 +57800,18 @@
     "acadiau.ca": 0,
     "acah.edu.au": 0,
     "accit.nsw.edu.au": 0,
-    "acck.edu": 1,
+    "acck.edu": 2,
     "ace.vic.edu.au": 0,
     "acfe.edu.au": 1,
     "acg.gr": 1,
     "acighana.org": 1,
     "acmg.net": 1,
     "acmt.ac.ir": 1,
-    "acofi.edu": 1,
+    "acofi.edu": 2,
     "acpe.edu.au": 0,
     "acs.edu.au": 0,
     "act.edu": 0,
-    "actc-mn.org": 1,
+    "actc-mn.org": 2,
     "actt.edu.au": 1,
     "acu.edu": 0,
     "acu.edu.au": 2,
@@ -56939,10 +57839,10 @@
     "aefs.edu.al": 1,
     "aegean.gr": 1,
     "aeu.edu.kh": 0,
-    "afa.edu.pl": 1,
+    "afa.edu.pl": 2,
     "afeka.ac.il": 0,
     "afghanuniversity.edu.af": 0,
-    "afit.edu": 1,
+    "afit.edu": 2,
     "agilemind.com": 0,
     "agnesscott.edu": 0,
     "agnesvarda.loire-atlantique.e-lyco.fr": 0,
@@ -56970,7 +57870,7 @@
     "ahtcm.edu.cn": 1,
     "ahu.edu": 0,
     "ahu.edu.cn": 1,
-    "aiau.ac.ir": 1,
+    "aiau.ac.ir": 2,
     "aic.edu": 0,
     "aic.edu.au": 0,
     "aichi-edu.ac.jp": 1,
@@ -56999,7 +57899,7 @@
     "aitt.vic.edu.au": 1,
     "aiu.edu.gm": 0,
     "aiub.edu": 0,
-    "ajt-chaussy.fr": 1,
+    "ajt-chaussy.fr": 2,
     "ajums.ac.ir": 1,
     "akad.de": 0,
     "akademiaearteve.edu.al": 1,
@@ -61827,19 +62727,37 @@
     "sheridancollege.ca": 0,
     "shfu.edu.cn": 1,
     "shh.fi": 1,
+    "shibaura-it.ac.jp": 1,
     "shift.edu.cn": 1,
+    "shiga-med.ac.jp": 1,
+    "shiga-u.ac.jp": 0,
+    "shikoku-u.ac.jp": 1,
+    "shimane-med.ac.jp": 1,
+    "shimane-u.ac.jp": 1,
+    "shimonoseki-cu.ac.jp": 1,
+    "shinshu-u.ac.jp": 1,
     "shinstitute.org": 0,
     "ship.edu": 0,
+    "shirayuri.ac.jp": 1,
     "shirazu.ac.ir": 1,
     "shisu.edu.cn": 0,
+    "shitennoji.ac.jp": 0,
+    "shizuoka.ac.jp": 1,
     "shmtu.edu.cn": 1,
     "shmu.ac.ir": 0,
     "shmu.edu.cn": 1,
     "shobhituniversity.ac.in": 0,
+    "shodai.ac.jp": 1,
+    "shoin.ac.jp": 1,
+    "shokei-gakuen.ac.jp": 1,
     "shomal.ac.ir": 0,
+    "shonan-it.ac.jp": 0,
     "shorter.edu": 0,
     "shortercollege.edu": 0,
+    "shotoku.ac.jp": 0,
     "shouhua.net.cn": 1,
+    "showa-u.ac.jp": 1,
+    "shoyaku.ac.jp": 1,
     "shridharuniversity.ac.in": 0,
     "shsmu.edu.cn": 1,
     "shspu.edu.cn": 1,
@@ -61851,7 +62769,12 @@
     "shu.bg": 0,
     "shu.edu": 1,
     "shu.edu.cn": 1,
+    "shuchiin.ac.jp": 0,
+    "shudo-u.ac.jp": 1,
     "shufe.edu.cn": 1,
+    "shujitsu.ac.jp": 1,
+    "shukutoku.ac.jp": 1,
+    "shumei-u.ac.jp": 0,
     "shutcm.edu.cn": 1,
     "shxx.whu.edu.cn": 2,
     "shzu.edu.cn": 1,
@@ -61876,12 +62799,14 @@
     "sisekaitse.ee": 0,
     "sissa.it": 0,
     "sisu.edu.cn": 1,
+    "sit.ac.jp": 1,
     "sitcm.edu.au": 0,
     "site.ac-aix-marseille.fr": 1,
     "site.ac-martinique.fr": 1,
     "sites.google.com": 1,
     "sittingbull.edu": 0,
     "siu-heidelberg.de": 1,
+    "siu.ac.jp": 0,
     "siu.edu": 0,
     "siu.edu.bd": 0,
     "siu.edu.in": 1,
@@ -61915,6 +62840,7 @@
     "slbsrsv.ac.in": 0,
     "slc.edu": 1,
     "slc.qld.edu.au": 0,
+    "slcn.ac.jp": 1,
     "slu.cz": 1,
     "slu.edu": 0,
     "slxy.cn": 1,
@@ -61946,16 +62872,21 @@
     "snu.ac.kr": 0,
     "snu.edu": 0,
     "soa.ac.in": 0,
+    "soai.ac.jp": 0,
     "soauniversity.ac.in": 1,
     "soavoshk.cz": 2,
     "soc.tas.edu.au": 0,
     "sofia.edu": 0,
     "sohag-univ.edu.eg": 0,
+    "soka.ac.jp": 1,
+    "soken.ac.jp": 1,
     "somaiya.edu": 0,
     "somerset.qld.edu.au": 0,
     "somerville.qld.edu.au": 0,
     "sonatamusiccenter.com": 1,
+    "sonoda-u.ac.jp": 0,
     "sonoma.edu": 1,
+    "sophia.ac.jp": 1,
     "soran.edu.iq": 0,
     "sorbon.fr": 0,
     "sorbonne-universite.fr": 0,
@@ -61997,6 +62928,7 @@
     "sports-etudes-college-corneille.fr": 1,
     "springarbor.edu": 0,
     "spsoa-ub.cz": 0,
+    "spu.ac.jp": 1,
     "spu.ba": 0,
     "spu.edu": 1,
     "spuniv.org": 1,
@@ -62024,6 +62956,7 @@
     "ssst.edu.ba": 0,
     "sssup.it": 1,
     "ssu.ac.ir": 1,
+    "ssu.ac.jp": 0,
     "ssus.ac.in": 0,
     "ssvv.up.nic.in": 1,
     "st-francois-dassise.eu": 1,
@@ -62141,13 +63074,17 @@
     "sues.edu.cn": 1,
     "suez.edu.eg": 1,
     "suffolk.edu": 0,
+    "sugino.ac.jp": 1,
+    "sugiyama-u.ac.jp": 1,
     "suh-edu.com": 1,
     "sullivan.edu": 0,
     "sulross.edu": 0,
     "sum.ba": 0,
+    "suma.kobe-wu.ac.jp": 1,
     "summitqueens.com": 0,
     "summitunivofla.edu": 1,
     "sums.ac.ir": 0,
+    "sun.ac.jp": 0,
     "suncoastcc.qld.edu.au": 0,
     "sunycentral.edu": 1,
     "sunyit.edu": 1,
@@ -62160,12 +63097,16 @@
     "supernovageracao.com.br": 0,
     "surabaya.telkomuniversity.ac.id": 0,
     "surabayaeuropeanschool.com": 0,
+    "surugadai.ac.jp": 1,
     "susqu.edu": 0,
     "sust.edu": 1,
     "sustc.edu.cn": 1,
     "sut.ac.ir": 0,
+    "sut.ac.jp": 1,
     "sutech.ac.ir": 0,
     "suu.edu": 0,
+    "suzuka-iu.ac.jp": 1,
+    "suzuka-u.ac.jp": 1,
     "svbpuctm.org": 1,
     "sve-mo.ba": 1,
     "svimstpt.ap.nic.in": 1,
@@ -62189,6 +63130,7 @@
     "swri.edu": 2,
     "swsm.cn": 1,
     "swt.edu": 1,
+    "swu.ac.jp": 0,
     "swu.bg": 0,
     "swufe.edu.cn": 1,
     "swun.edu.cn": 1,
@@ -62213,16 +63155,26 @@
     "szit.edu.cn": 2,
     "szu.edu.af": 0,
     "szu.edu.cn": 1,
+    "t-komazawa.ac.jp": 1,
+    "t-kougei.ac.jp": 1,
     "tabari.ac.ir": 1,
     "tabor.edu": 0,
     "tabriziau.ac.ir": 0,
     "tabrizu.ac.ir": 1,
+    "tachibana-u.ac.jp": 1,
     "tacomahousing.net": 1,
     "tacomahousing.org": 1,
     "tafeinternational.wa.edu.au": 0,
     "taftu.edu": 0,
+    "tais.ac.jp": 0,
+    "takachiho.ac.jp": 1,
+    "takamatsu-u.ac.jp": 1,
+    "takara-univ.ac.jp": 1,
+    "takushoku-u.ac.jp": 1,
     "talladega.brinkster.net": 1,
     "taltech.ee": 0,
+    "tamabi.ac.jp": 0,
+    "tamagawa.ac.jp": 1,
     "tamiluniversity.ac.in": 0,
     "tamiu.edu": 0,
     "tamu.edu": 0,
@@ -62238,6 +63190,7 @@
     "tau.ac.il": 0,
     "tauedu.org": 0,
     "tayloru.edu": 1,
+    "tbgu.ac.jp": 0,
     "tbs.edu": 0,
     "tbzmed.ac.ir": 1,
     "tccd.edu": 0,
@@ -62248,6 +63201,8 @@
     "tcr.edu": 0,
     "tct.ac.ir": 0,
     "tcu.edu": 0,
+    "tcue.ac.jp": 1,
+    "tdc.ac.jp": 0,
     "teak.fi": 1,
     "technikum-wien.at": 0,
     "technion.ac.il": 0,
@@ -62255,20 +63210,27 @@
     "techtitute.com": 0,
     "tedi.vic.edu.au": 0,
     "teh-lavasan.pnu.ac.ir": 1,
+    "teikyo-u.ac.jp": 1,
     "telkomuniversity.ac.id": 0,
     "teluguuniversity.ac.in": 1,
     "teluq.uquebec.ca": 0,
     "temple.edu": 0,
     "tenison.adl.catholic.edu.au": 1,
+    "tenri-u.ac.jp": 1,
     "teologi.dk": 0,
     "teologica.br": 0,
+    "termnet.co.jp": 1,
     "tesc.edu": 1,
     "tesu.edu": 0,
+    "teu.ac.jp": 1,
     "tezu.ernet.in": 1,
+    "tezuka-gu.ac.jp": 1,
+    "tezukayama-u.ac.jp": 1,
     "tfbern.ch": 0,
     "tfh-berlin.de": 1,
     "tfh-bochum.de": 1,
     "tfh-wildau.de": 1,
+    "tfu.ac.jp": 1,
     "th-brandenburg.de": 0,
     "th-deg.de": 0,
     "th-koeln.de": 0,
@@ -62305,9 +63267,11 @@
     "tiffinprague.cz": 1,
     "tiho-hannover.de": 0,
     "tijmu.edu.cn": 1,
+    "timis.ac.jp": 1,
     "tintern.vic.edu.au": 0,
     "tiss.edu": 1,
     "titech.ac.jp": 1,
+    "tiu.ac.jp": 1,
     "tjarts.edu.cn": 1,
     "tjcu.edu.cn": 1,
     "tjmu.edu.cn": 1,
@@ -62321,12 +63285,15 @@
     "tjut.edu.cn": 1,
     "tkbf.hu": 0,
     "tktk.ee": 0,
+    "tku.ac.jp": 1,
     "tlc.edu.qa": 1,
     "tlu.edu": 0,
     "tlu.ee": 0,
     "tmbu.org": 1,
+    "tmd.ac.jp": 1,
     "tme.edu.au": 0,
     "tmi.ac.ir": 2,
+    "tmit.ac.jp": 1,
     "tmmu.edu.cn": 1,
     "tmss.org.uk": 0,
     "tmt.edu.au": 0,
@@ -62337,21 +63304,52 @@
     "tnmmu.ac.in": 1,
     "tnstate.edu": 0,
     "tntech.edu": 0,
+    "toho-music.ac.jp": 0,
+    "toho-u.ac.jp": 1,
+    "tohoku-gakuin.ac.jp": 0,
+    "tohoku-pharm.ac.jp": 1,
     "tohoku.ac.jp": 2,
+    "tohomusic.ac.jp": 1,
+    "tohtech.ac.jp": 1,
+    "tohwa-u.ac.jp": 1,
+    "toin.ac.jp": 0,
+    "tojo.ac.jp": 1,
+    "tokai.ac.jp": 1,
+    "tokaigakuen-u.ac.jp": 1,
+    "tokaijoshi-u.ac.jp": 1,
+    "tokiwa.ac.jp": 1,
+    "tokoha-u.ac.jp": 0,
+    "tokushima-u.ac.jp": 1,
+    "tokuyama-u.ac.jp": 1,
+    "tokyo-kasei.ac.jp": 1,
+    "tokyo-med.ac.jp": 1,
+    "tokyo-ondai.ac.jp": 0,
+    "tokyo-u-fish.ac.jp": 1,
     "toledo.br": 1,
     "tolworthinf.greenschoolsonline.co.uk": 2,
     "tolworthj.kingston.sch.uk": 2,
     "tomerdebora.fr": 0,
     "tonbridge-school.co.uk": 0,
     "tongji.edu.cn": 1,
+    "tonichi-kokusai-u.ac.jp": 1,
     "toorakcollege.vic.edu.au": 0,
     "toronto.edu": 1,
     "torontomu.ca": 0,
+    "tosho-u.ac.jp": 1,
+    "tottori-u.ac.jp": 1,
+    "toua-u.ac.jp": 1,
     "toulouse.dominicains.com": 0,
     "tourism.edu.az": 1,
     "touro.edu": 0,
     "toursainte.fr": 0,
     "towson.edu": 0,
+    "toyaku.ac.jp": 1,
+    "toyama-mpu.ac.jp": 1,
+    "toyama-u.ac.jp": 1,
+    "toyo.ac.jp": 0,
+    "toyoeiwa.ac.jp": 1,
+    "toyogakuen-u.ac.jp": 1,
+    "toyota-ti.ac.jp": 1,
     "tpu.fi": 1,
     "tradoc.mil.al": 2,
     "transy.edu": 0,
@@ -62384,8 +63382,10 @@
     "tstc.edu": 0,
     "tsu.edu": 0,
     "tsu.edu.ge": 1,
+    "tsuda.ac.jp": 1,
     "tsufl.edu": 1,
     "tsukuba.ac.jp": 1,
+    "tsuru.ac.jp": 0,
     "ttmc.edu.cn": 1,
     "ttu.ac.ke": 0,
     "ttu.edu": 0,
@@ -64378,13 +65378,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-26T19:37:53+00:00",
+  "last_run": "2026-09-26T19:59:23+00:00",
   "last_verify": {
-    "added_active": 27,
-    "at": "2026-09-26 16:54 UTC",
-    "pending_left": 6408,
+    "added_active": 23,
+    "at": "2026-09-26 19:59 UTC",
+    "pending_left": 6421,
     "reverified": 15,
-    "validated": 116
+    "validated": 115
   },
   "moved": {
     "adventista.edu.br": "uniaene.edu.br",
