@@ -1222,8 +1222,8 @@
     },
     "anhembi.br": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "anibt.edu.au": {
       "code": 200,
@@ -1387,8 +1387,8 @@
     },
     "apus.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "aquinas.edu": {
       "code": 200,
@@ -1452,13 +1452,13 @@
     },
     "arizona.edu": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "arizonaacademy.com": {
-      "code": 200,
-      "confidence": 40,
-      "reason": "low-confidence:http-2xx-html+edu-keywords"
+      "code": 404,
+      "confidence": 5,
+      "reason": "http-404"
     },
     "arizonaacademyofscience.org": {
       "code": 200,
@@ -1471,9 +1471,9 @@
       "reason": "moved-to:azcu.edu"
     },
     "armedin.am": {
-      "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "armmed.am": {
       "code": 200,
@@ -1653,7 +1653,7 @@
     "asipc.am": {
       "code": 0,
       "confidence": 0,
-      "reason": "fetch-error:ConnectionError"
+      "reason": "fetch-error:SSLError"
     },
     "asoiu.edu.az": {
       "code": 200,
@@ -1712,8 +1712,8 @@
     },
     "asu.edu": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "asu.edu.bh": {
       "code": 403,
@@ -1732,8 +1732,8 @@
     },
     "asue.am": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "asufidm.asu.edu": {
       "code": 200,
@@ -1742,8 +1742,8 @@
     },
     "asurams.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "asusystem.edu": {
       "code": 200,
@@ -1757,8 +1757,8 @@
     },
     "atc.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ateliers-stluc.be": {
       "code": 200,
@@ -1882,8 +1882,8 @@
     },
     "aua.am": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "aua.gr": {
       "code": 200,
@@ -16080,6 +16080,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kokugakuin.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kokushikan.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kolegjiprofesional.edu.al": {
       "code": 0,
       "confidence": 0,
@@ -16090,15 +16100,50 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "komazawa-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "konan-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "konan-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "korea-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "korea.ac.kr": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "koriyama-kgc.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "koshien.ac.jp": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "kottakkalayurvedacollege.ac.in": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "koyasan-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "koyauniversity.org": {
       "code": 200,
@@ -16109,6 +16154,16 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "kpu-m.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kpu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "krb.nsw.edu.au": {
       "code": 200,
@@ -16140,6 +16195,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kshosen.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kslu.ac.in": {
       "code": 0,
       "confidence": 0,
@@ -16154,6 +16214,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ksu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ksu.edu": {
       "code": 200,
@@ -16174,6 +16239,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ktokai-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ktu.edu.gh": {
       "code": 200,
@@ -16245,10 +16315,25 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "kufs.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kug.ac.at": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kuins.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kuis.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kukinfo.com": {
       "code": 200,
@@ -16264,6 +16349,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kumagaku.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kumamoto-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kumaununiversity.org": {
       "code": 200,
@@ -16285,6 +16380,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kunitachi.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kunstakademie-duesseldorf.de": {
       "code": 200,
       "confidence": 90,
@@ -16294,6 +16394,36 @@
       "code": 200,
       "confidence": 70,
       "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
+    "kure-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kurume-it.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kurume-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kusa.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kushiro-pu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kusw.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "kut.ac.ir": {
       "code": 200,
@@ -16335,15 +16465,30 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kwansei.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kwantlen.bc.ca": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "kwassui.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
     "kway.com.au": {
       "code": 404,
       "confidence": 5,
       "reason": "http-404"
+    },
+    "kwc-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kws.nsw.edu.au": {
       "code": 200,
@@ -16355,12 +16500,92 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "kwuc.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kyokyo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyorin-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyoritsu-ph.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyoritsu-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyoto-art.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyoto-phu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyoto-seika.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kyoto-su.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kyoto-u.ac.jp": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
+    "kyoto-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyotogakuen-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyu-dent.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "kyukyo-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "kyushu-id.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyushu-ns.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "kyushu-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyutech.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -17720,6 +17945,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "marianna-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "marie-curie-pignan.mon-ent-occitanie.fr": {
       "code": 0,
       "confidence": 0,
@@ -17824,6 +18054,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "matsuyama-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mau.ac.ir": {
       "code": 0,
@@ -17985,6 +18220,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "mdu.ac.jp": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
     "mdu.edu.az": {
       "code": 200,
       "confidence": 90,
@@ -18039,6 +18279,46 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "meiji-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "meiji.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "meijigakuin.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "meijo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "meikai.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "meio-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "meisei-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mejiro.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mekong.edu.kh": {
       "code": 200,
@@ -18140,6 +18420,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "metro-hs.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "metro-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "metropolia.fi": {
       "code": 0,
       "confidence": 0,
@@ -18205,6 +18495,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "mgu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "mgu.bg": {
       "code": 200,
       "confidence": 90,
@@ -18260,6 +18555,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "mie-chukyo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mie-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "mif.hu": {
       "code": 0,
       "confidence": 0,
@@ -18299,6 +18604,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "mimasaka.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "mines-ales.fr": {
       "code": 200,
@@ -18394,6 +18704,31 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "miyakyo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "miyasankei-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "miyazaki-med.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "miyazaki-mu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "miyazaki-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "mjpru.ac.in": {
       "code": 200,
@@ -18605,6 +18940,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "morioka-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "most.gov.mm": {
       "code": 0,
       "confidence": 0,
@@ -18674,6 +19014,11 @@
       "code": 200,
       "confidence": 70,
       "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
+    "mpu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mq.edu.au": {
       "code": 200,
@@ -18955,6 +19300,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "mukogawa-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mum.edu": {
       "code": 0,
       "confidence": 0,
@@ -18985,7 +19335,37 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "muroran-it.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mursuky.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "musabi.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "musashi-tech.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "musashi.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "musashino-music.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "musashino-wu.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -19060,6 +19440,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "my-pharm.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "mylambton.ca": {
       "code": 200,
       "confidence": 10,
@@ -19084,6 +19469,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "myu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "na.edu": {
       "code": 200,
@@ -19115,15 +19505,55 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "nagano.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nagaokaut.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "nagarjunauniversity.ac.in": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
     },
+    "nagasaki-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nagasakipu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "nagauniv.org.in": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "nagoya-cu.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "nagoya-ku.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "nagoya-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nagoya-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "nagpur-university.com": {
       "code": 200,
@@ -19150,6 +19580,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "nakamura-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "nalandaopenuniversity.info": {
       "code": 0,
       "confidence": 0,
@@ -19165,15 +19600,60 @@
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+trusted-suffix"
     },
+    "nankyudai.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "nanzan-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "napavalley.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "nara-edu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nara-su.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "nara-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "nara-wu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "naramed-u.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "narauc.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "narotama.ac.id": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "naruto-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "nas.edu.au": {
       "code": 200,
@@ -19231,6 +19711,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "nbu.ac.in": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "nbu.ac.jp": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -19365,6 +19850,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ndmc.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ndri.nic.in": {
       "code": 0,
       "confidence": 0,
@@ -19380,10 +19870,20 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ndsu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ndsu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ndu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ndu.edu": {
       "code": 0,
@@ -45029,6 +45529,14 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kokugakuin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kokushikan.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kolegjiprofesional.edu.al": {
       "reg": "",
       "ts": "2026-09-13"
@@ -45037,10 +45545,46 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "komazawa-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "konan-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "konan-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "korea-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "korea.ac.kr": "1993-08-01",
+    "koriyama-kgc.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "koshien.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kottakkalayurvedacollege.ac.in": "2009-12-18",
+    "koyasan-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "koyauniversity.org": "2006-06-18",
     "kppcs.org": "2006-10-15",
+    "kpu-m.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kpu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "krb.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -45056,6 +45600,10 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "kshosen.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kslu.ac.in": "2009-07-29",
     "ksstadelhofen.ch": {
       "reg": "",
@@ -45064,6 +45612,10 @@
     "kstu.edu.gh": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "ksu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "ksu.edu": "1987-07-28",
     "ksu.edu.sa": {
@@ -45077,6 +45629,10 @@
     "kth.se": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "ktokai-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "ktu.edu.gh": {
       "reg": "",
@@ -45122,9 +45678,21 @@
       "ts": "2026-09-20"
     },
     "kufos.ac.in": "2011-06-22",
+    "kufs.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kug.ac.at": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "kuins.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kuis.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "kukinfo.com": "2006-05-26",
     "kulak.kuleuven.be": {
@@ -45135,6 +45703,14 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "kumagaku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kumamoto-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kumaununiversity.org": "2022-11-21",
     "kumc.edu": "1994-11-16",
     "kums.ac.ir": {
@@ -45142,6 +45718,10 @@
       "ts": "2026-09-25"
     },
     "kumsa.net": "2007-03-05",
+    "kunitachi.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kunstakademie-duesseldorf.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -45149,6 +45729,30 @@
     "kunstakademiet.dk": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "kure-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kurume-it.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kurume-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kusa.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kushiro-pu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kusw.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "kut.ac.ir": {
       "reg": "",
@@ -45167,23 +45771,99 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "kwansei.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kwantlen.bc.ca": "2000-10-20",
+    "kwassui.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kway.com.au": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "kwc-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "kws.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "kwu.edu": "1994-03-31",
+    "kwuc.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyokyo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyorin-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoritsu-ph.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoritsu-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoto-art.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoto-phu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoto-seika.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyoto-su.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kyoto-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-14"
     },
+    "kyoto-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyotogakuen-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyu-dent.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyukyo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyushu-id.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "kyushu-ns.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "kyushu-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "kyutech.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "kzoo.edu": "1989-04-05",
     "la-cerisaie.moncollege.valdemarne.fr": {
@@ -45804,6 +46484,10 @@
       "ts": "2026-09-20"
     },
     "marianaacademy.com": "2021-02-09",
+    "marianna-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "marie-curie-pignan.mon-ent-occitanie.fr": {
       "reg": "",
       "ts": "2026-09-17"
@@ -45844,6 +46528,10 @@
     "massbay.edu": "2002-01-09",
     "masters.edu": "1995-03-05",
     "matc.edu": "1991-03-20",
+    "matsuyama-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mau.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -45908,6 +46596,10 @@
       "ts": "2026-09-19"
     },
     "mdsuajmer.ac.in": "2010-10-05",
+    "mdu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mdu.edu.az": {
       "reg": "",
       "ts": "2026-09-20"
@@ -45946,6 +46638,38 @@
       "ts": "2026-09-20"
     },
     "meia.edu.cv": "2024-06-13",
+    "meiji-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meiji.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meijigakuin.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meijo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meikai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meio-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "meisei-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "mejiro.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mekong.edu.kh": {
       "reg": "",
       "ts": "2026-09-20"
@@ -45984,6 +46708,14 @@
     "mesacc.edu": "2006-08-23",
     "messiah.edu": "1992-02-15",
     "meteofrance.fr": "2004-04-22",
+    "metro-hs.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "metro-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "metropolia.fi": "2009-04-01",
     "metropolitana.edu.br": "2003-03-25",
     "metrostate.edu": "1998-12-09",
@@ -46015,6 +46747,10 @@
     },
     "mgsubikaner.ac.in": "2010-03-17",
     "mgu.ac.in": "2010-05-26",
+    "mgu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mgu.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -46041,6 +46777,14 @@
     "microcadd.com": "1998-09-16",
     "middlebury.edu": "1989-04-11",
     "middlesexcc.edu": "2002-01-09",
+    "mie-chukyo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "mie-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mif.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -46055,6 +46799,10 @@
     "milligan.edu": "1996-11-18",
     "millikin.edu": "1995-01-23",
     "millsaps.edu": "1992-01-06",
+    "mimasaka.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mines-ales.fr": "2009-05-25",
     "mines.edu": "1995-05-19",
     "mines.u-nancy.fr": {
@@ -46112,6 +46860,26 @@
     "miuegypt.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "miyakyo-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "miyasankei-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "miyazaki-med.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "miyazaki-mu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "miyazaki-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "mjpru.ac.in": "2004-12-21",
     "mkhitargosh.com": {
@@ -46199,6 +46967,10 @@
     "moravian.edu": "1986-09-29",
     "moreheadstate.edu": "1999-04-27",
     "morgan.edu": "1991-09-25",
+    "morioka-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "most.gov.mm": {
       "reg": "",
       "ts": "2026-09-20"
@@ -46224,6 +46996,10 @@
     "mppcvv.org": "2019-12-09",
     "mpsaz.org": "1998-09-29",
     "mpu-prague.cz": "2026-08-16",
+    "mpu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mq.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -46363,6 +47139,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "mukogawa-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mum.edu": "1995-09-14",
     "mums.ac.ir": {
       "reg": "",
@@ -46381,9 +47161,33 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "muroran-it.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mursuky.edu": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "musabi.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "musashi-tech.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "musashi.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "musashino-music.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "musashino-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
     },
     "music.ucsb.edu": {
       "reg": "",
@@ -46422,6 +47226,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "my-pharm.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "mylambton.ca": "2010-01-15",
     "mylaurier.ca": "2000-11-10",
     "myport.ac.uk": {
@@ -46430,6 +47238,10 @@
     },
     "myseneca.ca": "2000-11-08",
     "mystep.foundation": "2018-06-21",
+    "myu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "na.edu": "2013-10-22",
     "naa.edu.az": {
       "reg": "",
@@ -46445,8 +47257,40 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "nagano.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nagaokaut.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nagarjunauniversity.ac.in": "2003-04-24",
+    "nagasaki-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nagasakipu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nagauniv.org.in": "2026-02-18",
+    "nagoya-cu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nagoya-ku.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nagoya-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nagoya-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nagpur-university.com": "2003-04-26",
     "nahda.edu.sd": "2013-08-28",
     "nahrainuniv.edu.iq": {
@@ -46458,6 +47302,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "nakamura-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nalandaopenuniversity.info": "2020-12-18",
     "nancy.archi.fr": {
       "reg": "",
@@ -46467,8 +47315,44 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "nankyudai.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nanzan-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "napavalley.edu": "2002-01-10",
+    "nara-edu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nara-su.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nara-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "nara-wu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "naramed-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
+    "narauc.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "narotama.ac.id": "2009-11-26",
+    "naruto-u.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nas.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -46499,6 +47383,10 @@
       "ts": "2026-09-13"
     },
     "nbu.ac.in": "2004-01-31",
+    "nbu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "nbu.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -46569,10 +47457,22 @@
       "ts": "2026-09-16"
     },
     "ndleclosfleuri.com": "2005-09-08",
+    "ndmc.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "ndri.nic.in": "2004-12-23",
     "nds67.com": "2016-09-05",
     "ndscs.edu": "2003-07-14",
+    "ndsu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "ndsu.edu": "1999-09-20",
+    "ndu.ac.jp": {
+      "reg": "",
+      "ts": "2026-09-26"
+    },
     "ndu.edu": "1993-12-13",
     "ndu.edu.az": {
       "reg": "",
@@ -55337,14 +56237,14 @@
     "arcade.now": 0,
     "arcadia.edu": 0,
     "ardabil.iau.ir": 1,
-    "ardestan.iau.ir": 1,
+    "ardestan.iau.ir": 2,
     "aria.edu.af": 1,
     "ariel.ac.il": 0,
     "arizona.edu": 0,
-    "arizonaacademy.com": 1,
+    "arizonaacademy.com": 2,
     "arizonaacademyofscience.org": 1,
-    "arizonachristian.edu": 1,
-    "armedin.am": 0,
+    "arizonachristian.edu": 2,
+    "armedin.am": 1,
     "armmed.am": 0,
     "armstrong.edu": 1,
     "arq.ufmg.br": 1,
@@ -55380,7 +56280,7 @@
     "ashoka.edu.in": 1,
     "ashtoncollege.com": 1,
     "asia-u.ac.jp": 1,
-    "asipc.am": 1,
+    "asipc.am": 2,
     "asoiu.edu.az": 0,
     "aspete.gr": 1,
     "assamuniversity.nic.in": 1,
@@ -55414,7 +56314,7 @@
     "atlantida.edu.ar": 0,
     "atmajaya.ac.id": 1,
     "atomi.ac.jp": 1,
-    "atrium-paca.fr": 1,
+    "atrium-paca.fr": 2,
     "ats.dk": 1,
     "atsu.edu.ge": 0,
     "attahadi.edu.ly": 0,
@@ -58266,25 +59166,39 @@
     "kogakkan-u.ac.jp": 1,
     "kogakuin.ac.jp": 1,
     "koka.ac.jp": 1,
+    "kokugakuin.ac.jp": 1,
+    "kokushikan.ac.jp": 1,
     "kolegjiprofesional.edu.al": 2,
     "komar.edu.iq": 1,
+    "komazawa-u.ac.jp": 1,
+    "konan-u.ac.jp": 1,
+    "konan-wu.ac.jp": 1,
+    "korea-u.ac.jp": 1,
     "korea.ac.kr": 0,
+    "koriyama-kgc.ac.jp": 1,
+    "koshien.ac.jp": 1,
     "kottakkalayurvedacollege.ac.in": 0,
+    "koyasan-u.ac.jp": 0,
     "koyauniversity.org": 0,
     "kppcs.org": 0,
+    "kpu-m.ac.jp": 1,
+    "kpu.ac.jp": 1,
     "krb.nsw.edu.au": 0,
     "krishnauniversity.ac.in": 1,
     "ksalpenquai.lu.ch": 0,
     "ksdsu.edu.in": 1,
     "kse.org.ua": 1,
     "ksfh.de": 1,
+    "kshosen.ac.jp": 1,
     "kslu.ac.in": 1,
     "ksstadelhofen.ch": 1,
     "kstu.edu.gh": 0,
+    "ksu.ac.jp": 1,
     "ksu.edu": 1,
     "ksu.edu.sa": 0,
     "kth-linz.ac.at": 1,
     "kth.se": 0,
+    "ktokai-u.ac.jp": 1,
     "ktu.edu.gh": 0,
     "ku-eichstaett.de": 1,
     "ku-linz.at": 0,
@@ -58299,16 +59213,28 @@
     "kud.ac.in": 0,
     "kuet.ac.bd": 0,
     "kufos.ac.in": 0,
+    "kufs.ac.jp": 1,
     "kug.ac.at": 0,
+    "kuins.ac.jp": 0,
+    "kuis.ac.jp": 1,
     "kukinfo.com": 1,
     "kulak.kuleuven.be": 0,
     "kuleuven.be": 0,
+    "kumagaku.ac.jp": 1,
+    "kumamoto-u.ac.jp": 1,
     "kumaununiversity.org": 1,
     "kumc.edu": 0,
     "kums.ac.ir": 0,
     "kumsa.net": 1,
+    "kunitachi.ac.jp": 1,
     "kunstakademie-duesseldorf.de": 0,
     "kunstakademiet.dk": 0,
+    "kure-u.ac.jp": 1,
+    "kurume-it.ac.jp": 1,
+    "kurume-u.ac.jp": 1,
+    "kusa.ac.jp": 1,
+    "kushiro-pu.ac.jp": 1,
+    "kusw.ac.jp": 0,
     "kut.ac.ir": 0,
     "kuttabalfatih.com": 0,
     "kutztown.edu": 0,
@@ -58317,12 +59243,31 @@
     "kuwarangal.com": 1,
     "kvl.dk": 1,
     "kvsector8rkpuram.org": 2,
+    "kwansei.ac.jp": 1,
     "kwantlen.bc.ca": 1,
+    "kwassui.ac.jp": 0,
     "kway.com.au": 1,
+    "kwc-u.ac.jp": 1,
     "kws.nsw.edu.au": 0,
     "kwu.edu": 0,
+    "kwuc.ac.jp": 0,
+    "kyokyo-u.ac.jp": 1,
+    "kyorin-u.ac.jp": 1,
+    "kyoritsu-ph.ac.jp": 1,
+    "kyoritsu-wu.ac.jp": 1,
+    "kyoto-art.ac.jp": 1,
+    "kyoto-phu.ac.jp": 1,
+    "kyoto-seika.ac.jp": 0,
+    "kyoto-su.ac.jp": 1,
     "kyoto-u.ac.jp": 0,
+    "kyoto-wu.ac.jp": 1,
+    "kyotogakuen-u.ac.jp": 1,
+    "kyu-dent.ac.jp": 0,
+    "kyukyo-u.ac.jp": 0,
+    "kyushu-id.ac.jp": 1,
+    "kyushu-ns.ac.jp": 1,
     "kyushu-u.ac.jp": 1,
+    "kyutech.ac.jp": 1,
     "kzoo.edu": 0,
     "la-cerisaie.moncollege.valdemarne.fr": 1,
     "la-combraille-marcillat.ent.auvergnerhonealpes.fr": 0,
@@ -58594,6 +59539,7 @@
     "marash.qld.edu.au": 0,
     "marcusoldham.vic.edu.au": 0,
     "marianaacademy.com": 0,
+    "marianna-u.ac.jp": 1,
     "marie-curie-pignan.mon-ent-occitanie.fr": 1,
     "marie-rivier.com": 1,
     "marietta.edu": 0,
@@ -58615,6 +59561,7 @@
     "massbay.edu": 0,
     "masters.edu": 0,
     "matc.edu": 1,
+    "matsuyama-u.ac.jp": 1,
     "mau.ac.ir": 1,
     "maua.br": 0,
     "may.ie": 1,
@@ -58647,6 +59594,7 @@
     "mdc.edu": 0,
     "mdp.edu.ar": 0,
     "mdsuajmer.ac.in": 0,
+    "mdu.ac.jp": 0,
     "mdu.edu.az": 0,
     "mdurohtak.com": 0,
     "mdw.ac.at": 0,
@@ -58658,6 +59606,14 @@
     "meduniwien.ac.at": 0,
     "meduniwien.at": 1,
     "meia.edu.cv": 0,
+    "meiji-u.ac.jp": 0,
+    "meiji.ac.jp": 1,
+    "meijigakuin.ac.jp": 1,
+    "meijo-u.ac.jp": 1,
+    "meikai.ac.jp": 0,
+    "meio-u.ac.jp": 1,
+    "meisei-u.ac.jp": 1,
+    "mejiro.ac.jp": 1,
     "mekong.edu.kh": 0,
     "memphis.edu": 0,
     "mendelu.cz": 0,
@@ -58678,6 +59634,8 @@
     "mesacc.edu": 1,
     "messiah.edu": 0,
     "meteofrance.fr": 0,
+    "metro-hs.ac.jp": 1,
+    "metro-u.ac.jp": 1,
     "metropolia.fi": 1,
     "metropolitana.edu.br": 0,
     "metrostate.edu": 0,
@@ -58691,6 +59649,7 @@
     "mgs.vic.edu.au": 0,
     "mgsubikaner.ac.in": 0,
     "mgu.ac.in": 1,
+    "mgu.ac.jp": 1,
     "mgu.bg": 0,
     "mh-hannover.de": 1,
     "mh-trossingen.de": 1,
@@ -58702,6 +59661,8 @@
     "microcadd.com": 1,
     "middlebury.edu": 0,
     "middlesexcc.edu": 1,
+    "mie-chukyo-u.ac.jp": 1,
+    "mie-u.ac.jp": 1,
     "mif.hu": 1,
     "mil.am": 2,
     "milaninstitute.edu": 1,
@@ -58710,6 +59671,7 @@
     "milligan.edu": 1,
     "millikin.edu": 0,
     "millsaps.edu": 0,
+    "mimasaka.ac.jp": 1,
     "mines-ales.fr": 1,
     "mines.edu": 0,
     "mines.u-nancy.fr": 1,
@@ -58729,6 +59691,11 @@
     "miu.ac.ir": 0,
     "miu.by": 1,
     "miuegypt.edu.eg": 1,
+    "miyakyo-u.ac.jp": 1,
+    "miyasankei-u.ac.jp": 1,
+    "miyazaki-med.ac.jp": 1,
+    "miyazaki-mu.ac.jp": 1,
+    "miyazaki-u.ac.jp": 1,
     "mjpru.ac.in": 1,
     "mkhitargosh.com": 2,
     "mkhu.am": 2,
@@ -58771,6 +59738,7 @@
     "moravian.edu": 0,
     "moreheadstate.edu": 2,
     "morgan.edu": 0,
+    "morioka-u.ac.jp": 0,
     "most.gov.mm": 1,
     "motthavenvillage.com": 0,
     "mouau.edu.ng": 0,
@@ -58785,6 +59753,7 @@
     "mppcvv.org": 2,
     "mpsaz.org": 0,
     "mpu-prague.cz": 0,
+    "mpu.ac.jp": 1,
     "mq.edu.au": 0,
     "mrs.umn.edu": 0,
     "ms356covo.org": 2,
@@ -58841,13 +59810,20 @@
     "mui.ac.ir": 0,
     "muirden.sa.edu.au": 0,
     "muk.ac.ir": 0,
+    "mukogawa-u.ac.jp": 1,
     "mum.edu": 1,
     "mums.ac.ir": 1,
     "muni.cz": 0,
     "muq.ac.ir": 1,
     "murdoch.edu.au": 0,
     "murdochcollege.edu.au": 0,
+    "muroran-it.ac.jp": 0,
     "mursuky.edu": 1,
+    "musabi.ac.jp": 1,
+    "musashi-tech.ac.jp": 1,
+    "musashi.ac.jp": 1,
+    "musashino-music.ac.jp": 0,
+    "musashino-wu.ac.jp": 1,
     "music.ucsb.edu": 0,
     "musica.ufmg.br": 1,
     "musicacademy.edu.az": 0,
@@ -58862,29 +59838,49 @@
     "mwsc.edu": 1,
     "mwsu.edu": 1,
     "mwu.edu.et": 0,
+    "my-pharm.ac.jp": 1,
     "mylambton.ca": 1,
     "mylaurier.ca": 1,
     "myport.ac.uk": 3,
     "myseneca.ca": 1,
     "mystep.foundation": 2,
+    "myu.ac.jp": 1,
     "na.edu": 0,
     "naa.edu.az": 1,
     "naabi.org": 1,
     "naba.it": 0,
     "nacc.edu": 0,
     "nagano-nurs.ac.jp": 0,
+    "nagano.ac.jp": 1,
+    "nagaokaut.ac.jp": 1,
     "nagarjunauniversity.ac.in": 1,
+    "nagasaki-u.ac.jp": 1,
+    "nagasakipu.ac.jp": 1,
     "nagauniv.org.in": 1,
+    "nagoya-cu.ac.jp": 0,
+    "nagoya-ku.ac.jp": 0,
+    "nagoya-u.ac.jp": 1,
+    "nagoya-wu.ac.jp": 1,
     "nagpur-university.com": 1,
     "nahda.edu.sd": 0,
     "nahrainuniv.edu.iq": 0,
     "nait.ca": 0,
     "najafabad-uast.ac.ir": 1,
+    "nakamura-u.ac.jp": 1,
     "nalandaopenuniversity.info": 1,
     "nancy.archi.fr": 1,
     "nankai.edu.cn": 1,
+    "nankyudai.ac.jp": 0,
+    "nanzan-u.ac.jp": 1,
     "napavalley.edu": 0,
+    "nara-edu.ac.jp": 1,
+    "nara-su.ac.jp": 1,
+    "nara-u.ac.jp": 0,
+    "nara-wu.ac.jp": 1,
+    "naramed-u.ac.jp": 0,
+    "narauc.ac.jp": 1,
     "narotama.ac.id": 0,
+    "naruto-u.ac.jp": 1,
     "nas.edu.au": 0,
     "natfiz.bg": 0,
     "nationaltheatre.org.au": 0,
@@ -58897,6 +59893,7 @@
     "nbchs.net": 1,
     "nbs.edu.cn": 2,
     "nbu.ac.in": 0,
+    "nbu.ac.jp": 0,
     "nbu.bg": 0,
     "nbu.edu.cn": 1,
     "nbut.edu.cn": 1,
@@ -58923,10 +59920,13 @@
     "ndd-dk.com": 0,
     "ndlb.eu": 0,
     "ndleclosfleuri.com": 0,
+    "ndmc.ac.jp": 1,
     "ndri.nic.in": 1,
     "nds67.com": 0,
     "ndscs.edu": 0,
+    "ndsu.ac.jp": 1,
     "ndsu.edu": 0,
+    "ndu.ac.jp": 1,
     "ndu.edu": 1,
     "ndu.edu.az": 0,
     "nduat.nic.in": 1,
@@ -62368,11 +63368,11 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-26T07:48:18+00:00",
+  "last_run": "2026-09-26T12:36:36+00:00",
   "last_verify": {
-    "added_active": 16,
-    "at": "2026-09-26 07:48 UTC",
-    "pending_left": 6553,
+    "added_active": 20,
+    "at": "2026-09-26 12:36 UTC",
+    "pending_left": 6453,
     "reverified": 15,
     "validated": 115
   },
