@@ -92,7 +92,7 @@
 | IS | 10 | 6 | 4 |
 | IT | 96 | 45 | 51 |
 | JM | 3 | 2 | 1 |
-| JP | 30 | 7 | 23 |
+| JP | 130 | 30 | 100 |
 | KE | 6 | 4 | 2 |
 | KH | 22 | 13 | 9 |
 | KR | 9 | 6 | 3 |
@@ -143,4 +143,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 7106. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 7206. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

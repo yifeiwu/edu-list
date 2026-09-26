@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-26 01:17 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-26 02:07 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **7106** across **140** countries
-- Active: **3942** (55%) · Inaccessible: **3164** (45%)
-- Pending queue: **6696** unvalidated candidates
+- Domains tracked: **7206** across **140** countries
+- Active: **3965** (55%) · Inaccessible: **3241** (45%)
+- Pending queue: **6596** unvalidated candidates
 - Known registration age: **3539** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-25 23:42 UTC): validated 117, +43 Active, re-verified 15, pending left 6635
+- Verify (2026-09-26 02:07 UTC): validated 115, +23 Active, re-verified 15, pending left 6596
 - Curate (2026-09-26 01:16 UTC): 10700 raw candidates, 61 queued, 5282 re-cited
 
 ## Countries (top 15 by size)
@@ -28,21 +28,21 @@ _Generated 2026-09-26 01:17 UTC. Full per-country table: [data/countries/INDEX.m
 | ID | 224 | 129 | 95 |
 | IR | 212 | 69 | 143 |
 | CA | 174 | 95 | 79 |
+| JP | 130 | 30 | 100 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
 | CO | 105 | 59 | 46 |
 | IT | 96 | 45 | 51 |
-| BD | 80 | 52 | 28 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 3942 |
-| `fetch-error:ConnectionError` | 1315 |
+| `http-2xx-html` | 3965 |
+| `fetch-error:ConnectionError` | 1385 |
+| `fetch-error:ConnectTimeout` | 387 |
 | `http-403` | 382 |
-| `fetch-error:ConnectTimeout` | 381 |
-| `fetch-error:SSLError` | 309 |
+| `fetch-error:SSLError` | 310 |
 | `low-confidence:http-2xx-html` | 210 |
 | `empty-body` | 55 |
 | `fetch-error:ReadTimeout` | 41 |
@@ -53,7 +53,7 @@ _Generated 2026-09-26 01:17 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **7106** (100%)
+- Verified in last 30 days: **7206** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-14)
 - Archived chronic failures (re-check paused): **2**
 - Moved pointers (old domain → new): **354**
@@ -65,7 +65,7 @@ _Generated 2026-09-26 01:17 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `JP`: low Active rate 7/30 (23%) — check for blocks/stale sources
+- ⚠ `JP`: low Active rate 30/130 (23%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
