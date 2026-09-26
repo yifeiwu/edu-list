@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-26 22:30 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-26 22:56 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **7607** across **140** countries
-- Active: **4050** (53%) · Inaccessible: **3557** (47%)
-- Pending queue: **6492** unvalidated candidates
-- Known registration age: **3539** domains (median 26 yrs)
+- Domains tracked: **7709** across **142** countries
+- Active: **4085** (53%) · Inaccessible: **3624** (47%)
+- Pending queue: **6392** unvalidated candidates
+- Known registration age: **3542** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-26 19:59 UTC): validated 115, +23 Active, re-verified 15, pending left 6421
+- Verify (2026-09-26 22:56 UTC): validated 117, +35 Active, re-verified 15, pending left 6392
 - Curate (2026-09-26 22:30 UTC): 10697 raw candidates, 71 queued, 20 re-cited
 
 ## Countries (top 15 by size)
@@ -20,7 +20,7 @@ _Generated 2026-09-26 22:30 UTC. Full per-country table: [data/countries/INDEX.m
 |---|---|---|---|
 | US | 1726 | 1301 | 425 |
 | FR | 619 | 308 | 311 |
-| JP | 531 | 116 | 415 |
+| JP | 577 | 125 | 452 |
 | IN | 457 | 207 | 250 |
 | CN | 415 | 53 | 362 |
 | AU | 375 | 256 | 119 |
@@ -38,25 +38,25 @@ _Generated 2026-09-26 22:30 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 4050 |
-| `fetch-error:ConnectionError` | 1648 |
-| `fetch-error:ConnectTimeout` | 429 |
-| `http-403` | 383 |
-| `fetch-error:SSLError` | 315 |
-| `low-confidence:http-2xx-html` | 209 |
+| `http-2xx-html` | 4085 |
+| `fetch-error:ConnectionError` | 1690 |
+| `fetch-error:ConnectTimeout` | 438 |
+| `http-403` | 387 |
+| `fetch-error:SSLError` | 320 |
+| `low-confidence:http-2xx-html` | 211 |
 | `empty-body` | 55 |
-| `fetch-error:ReadTimeout` | 41 |
-| `http-404` | 24 |
+| `fetch-error:ReadTimeout` | 42 |
+| `http-404` | 25 |
 | `http-500` | 16 |
 | `parking-linkfarm` | 12 |
-| `parking` | 11 |
+| `http-503` | 11 |
 
 ## Freshness
 
-- Verified in last 30 days: **7607** (100%)
+- Verified in last 30 days: **7709** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **357**
+- Moved pointers (old domain → new): **359**
 
 ## Alerts
 
@@ -65,7 +65,7 @@ _Generated 2026-09-26 22:30 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `CN`: low Active rate 53/415 (13%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `JP`: low Active rate 116/531 (22%) — check for blocks/stale sources
+- ⚠ `JP`: low Active rate 125/577 (22%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
