@@ -95,13 +95,19 @@
 | JO | 29 | 15 | 14 |
 | JP | 577 | 125 | 452 |
 | KE | 54 | 36 | 18 |
+| KG | 15 | 6 | 9 |
 | KH | 22 | 13 | 9 |
 | KP | 1 | 0 | 1 |
-| KR | 260 | 65 | 195 |
-| KW | 1 | 0 | 1 |
+| KR | 278 | 73 | 205 |
+| KW | 8 | 3 | 5 |
 | KY | 2 | 2 | 0 |
 | KZ | 30 | 11 | 19 |
-| LY | 6 | 6 | 0 |
+| LA | 2 | 1 | 1 |
+| LB | 25 | 15 | 10 |
+| LR | 1 | 1 | 0 |
+| LS | 1 | 1 | 0 |
+| LV | 26 | 8 | 18 |
+| LY | 12 | 10 | 2 |
 | MA | 4 | 1 | 3 |
 | MK | 2 | 0 | 2 |
 | MM | 6 | 3 | 3 |
@@ -143,7 +149,8 @@
 | VA | 5 | 1 | 4 |
 | VE | 1 | 0 | 1 |
 | VN | 4 | 3 | 1 |
+| XK | 5 | 2 | 3 |
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8013. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8119. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
