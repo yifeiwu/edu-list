@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-27 01:43 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-27 07:18 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **7810** across **143** countries
-- Active: **4129** (53%) · Inaccessible: **3681** (47%)
-- Pending queue: **6360** unvalidated candidates
-- Known registration age: **3609** domains (median 26 yrs)
+- Domains tracked: **7912** across **143** countries
+- Active: **4156** (53%) · Inaccessible: **3756** (47%)
+- Pending queue: **6260** unvalidated candidates
+- Known registration age: **3700** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-27 01:43 UTC): validated 116, +45 Active, re-verified 15, pending left 6360
+- Verify (2026-09-27 07:18 UTC): validated 117, +27 Active, re-verified 15, pending left 6260
 - Curate (2026-09-27 01:10 UTC): 10699 raw candidates, 68 queued, 5871 re-cited
 
 ## Countries (top 15 by size)
@@ -29,34 +29,34 @@ _Generated 2026-09-27 01:43 UTC. Full per-country table: [data/countries/INDEX.m
 | ID | 224 | 129 | 95 |
 | IR | 212 | 69 | 143 |
 | CA | 174 | 95 | 79 |
+| KR | 159 | 45 | 114 |
 | AR | 126 | 90 | 36 |
 | BE | 122 | 71 | 51 |
 | CO | 105 | 59 | 46 |
-| IT | 96 | 45 | 51 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 4129 |
-| `fetch-error:ConnectionError` | 1710 |
-| `fetch-error:ConnectTimeout` | 443 |
-| `http-403` | 389 |
-| `fetch-error:SSLError` | 338 |
-| `low-confidence:http-2xx-html` | 218 |
-| `empty-body` | 56 |
-| `fetch-error:ReadTimeout` | 44 |
+| `http-2xx-html` | 4156 |
+| `fetch-error:ConnectionError` | 1733 |
+| `fetch-error:ConnectTimeout` | 459 |
+| `http-403` | 391 |
+| `fetch-error:SSLError` | 349 |
+| `low-confidence:http-2xx-html` | 228 |
+| `empty-body` | 64 |
+| `fetch-error:ReadTimeout` | 45 |
 | `http-404` | 26 |
 | `http-500` | 16 |
-| `parking-linkfarm` | 12 |
+| `parking-linkfarm` | 13 |
 | `http-503` | 11 |
 
 ## Freshness
 
-- Verified in last 30 days: **7810** (100%)
+- Verified in last 30 days: **7912** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **360**
+- Moved pointers (old domain → new): **363**
 
 ## Alerts
 
@@ -66,6 +66,7 @@ _Generated 2026-09-27 01:43 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `CU`: low Active rate 2/13 (15%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 125/577 (22%) — check for blocks/stale sources
+- ⚠ `KR`: low Active rate 45/159 (28%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
