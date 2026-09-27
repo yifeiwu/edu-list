@@ -86,7 +86,7 @@
 | ID | 224 | 129 | 95 |
 | IE | 35 | 18 | 17 |
 | IL | 25 | 17 | 8 |
-| IN | 457 | 207 | 250 |
+| IN | 458 | 208 | 250 |
 | IQ | 47 | 21 | 26 |
 | IR | 212 | 69 | 143 |
 | IS | 10 | 6 | 4 |
@@ -94,12 +94,13 @@
 | JM | 3 | 2 | 1 |
 | JO | 29 | 15 | 14 |
 | JP | 577 | 125 | 452 |
-| KE | 6 | 4 | 2 |
+| KE | 54 | 36 | 18 |
 | KH | 22 | 13 | 9 |
-| KR | 9 | 6 | 3 |
+| KP | 1 | 0 | 1 |
+| KR | 57 | 18 | 39 |
 | KW | 1 | 0 | 1 |
 | KY | 2 | 2 | 0 |
-| KZ | 27 | 11 | 16 |
+| KZ | 30 | 11 | 19 |
 | LY | 6 | 6 | 0 |
 | MA | 4 | 1 | 3 |
 | MK | 2 | 0 | 2 |
@@ -113,7 +114,7 @@
 | NZ | 2 | 2 | 0 |
 | PE | 3 | 2 | 1 |
 | PF | 1 | 0 | 1 |
-| PH | 17 | 8 | 9 |
+| PH | 17 | 7 | 10 |
 | PK | 1 | 1 | 0 |
 | PL | 7 | 5 | 2 |
 | PT | 11 | 7 | 4 |
@@ -145,4 +146,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 7709. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 7810. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
