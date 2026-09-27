@@ -430,6 +430,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "afa.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "afa.edu.pl": {
       "code": 0,
       "confidence": 0,
@@ -2896,6 +2901,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "bhu.edu.cn": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "bible.ac.kr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -13485,6 +13495,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "hytu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "hyupsung.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -14274,6 +14289,11 @@
       "code": 200,
       "confidence": 5,
       "reason": "empty-body"
+    },
+    "ikw.ac.kr": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking-linkfarm"
     },
     "ilam.ac.ir": {
       "code": 200,
@@ -16085,6 +16105,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kafna.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "kagawa-u.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -16355,6 +16380,11 @@
       "confidence": 5,
       "reason": "moved-to:kazerun.iau.ir"
     },
+    "kau.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
     "kau.edu": {
       "code": 0,
       "confidence": 0,
@@ -16410,6 +16440,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "kbtus.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "kbu.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -16455,6 +16490,11 @@
       "confidence": 10,
       "reason": "parking-linkfarm"
     },
+    "kcu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "kcua.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -16479,6 +16519,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "kduniv.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "kean.edu": {
       "code": 200,
@@ -16725,6 +16770,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "khu.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "khuisf.ac.ir": {
       "code": 0,
       "confidence": 0,
@@ -16835,10 +16885,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kiu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "kiui.ac.jp": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "kkot.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "kl.ac.at": {
       "code": 200,
@@ -16860,6 +16920,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kma.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "kmaritime.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -16869,6 +16934,11 @@
       "code": 200,
       "confidence": 75,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure"
+    },
+    "kmou.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "kms.ac.jp": {
       "code": 0,
@@ -16924,6 +16994,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "knsu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "kntu.ac.ir": {
       "code": 200,
@@ -17080,6 +17155,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kongju.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "konkuk.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -17105,10 +17185,20 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "koreatech.ac.kr": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "koriyama-kgc.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "kornu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "koshien.ac.jp": {
       "code": 403,
@@ -17150,12 +17240,22 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kpu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
     "krb.nsw.edu.au": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "krishnauniversity.ac.in": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ks.ac.kr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
@@ -17475,6 +17575,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "kw.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kwandong.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -17489,6 +17594,16 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "kwangshin.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kwangwoon.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kwansei.ac.jp": {
       "code": 0,
@@ -17520,6 +17635,11 @@
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "kwu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "kwu.edu": {
       "code": 200,
       "confidence": 90,
@@ -17536,6 +17656,16 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "kyokyo-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyonggi.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "kyongju.ac.kr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -17599,6 +17729,36 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "kyunghee.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "kyungil.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyungnam.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyungpook.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "kyungsung.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "kyungwon.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "kyushu-id.ac.jp": {
       "code": 0,
@@ -19240,6 +19400,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "mcu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mcw.edu": {
       "code": 200,
       "confidence": 90,
@@ -19685,6 +19850,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "miryang.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "missouri.edu": {
       "code": 403,
       "confidence": 5,
@@ -19780,6 +19950,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
+    "mju.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "mkhitargosh.com": {
       "code": 0,
       "confidence": 0,
@@ -19824,6 +19999,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "mmu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "mmust.ac.ke": {
       "code": 200,
@@ -19879,6 +20059,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mokpo.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "mokwon.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "moler.edu": {
       "code": 200,
@@ -20280,6 +20470,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "mtu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
     "mtu.edu": {
       "code": 200,
       "confidence": 90,
@@ -20535,6 +20730,11 @@
       "confidence": 40,
       "reason": "moved-to:students.wlu.ca"
     },
+    "myongji.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "myport.ac.uk": {
       "code": 0,
       "confidence": 0,
@@ -20675,6 +20875,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "nambu.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
+    "namseoul.net": {
+      "code": 200,
+      "confidence": 20,
+      "reason": "low-confidence:http-2xx-html"
+    },
     "nancy.archi.fr": {
       "code": 0,
       "confidence": 0,
@@ -20769,6 +20979,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "navy.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "nawrozuniversity.com": {
       "code": 200,
@@ -21870,6 +22085,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "nsu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:namseoul.net"
+    },
     "nsu.edu": {
       "code": 200,
       "confidence": 90,
@@ -21989,6 +22209,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "nuch.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "nudt.edu.cn": {
       "code": 0,
@@ -22755,6 +22980,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "paichai.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "paideia.org": {
       "code": 200,
       "confidence": 60,
@@ -22954,6 +23184,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "pcu.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "pdeu.ac.in": {
       "code": 200,
@@ -23255,6 +23490,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "pknu.ac.kr": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "pku.edu.cn": {
       "code": 200,
       "confidence": 60,
@@ -23369,6 +23609,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "police.ac.kr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+multi-source+trusted-suffix"
     },
     "poligran.edu.co": {
       "code": 200,
@@ -23554,6 +23799,16 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "postech.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "postech.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "pote.hu": {
       "code": 0,
@@ -23775,6 +24030,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "ptu.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
+    "ptuniv.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "pu-kumamoto.ac.jp": {
       "code": 200,
       "confidence": 90,
@@ -23885,6 +24150,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "pufs.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "pukyong.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "pul.it": {
       "code": 0,
       "confidence": 0,
@@ -23930,6 +24205,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "pusan-e.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "pusan.ac.kr": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "pusavarsity.org.in": {
       "code": 0,
       "confidence": 0,
@@ -23965,6 +24250,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "puts.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "puv.fi": {
       "code": 200,
       "confidence": 40,
@@ -23979,6 +24269,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "pwc.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "pwit.ac.ir": {
       "code": 0,
@@ -25050,6 +25345,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "samchok.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "samford.edu": {
       "code": 200,
       "confidence": 60,
@@ -25076,6 +25376,16 @@
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure"
     },
     "sangha.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "sangji.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+substantial-content+non-educational-content"
+    },
+    "sangmyung.ac.kr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
@@ -25310,6 +25620,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "sch.ac.kr": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "schillerparis.com": {
       "code": 200,
       "confidence": 60,
@@ -25369,6 +25684,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "scnu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "scnu.edu.cn": {
       "code": 200,
@@ -25446,6 +25766,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "scu.ac.ir": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
+    "scu.ac.kr": {
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
@@ -25630,6 +25955,11 @@
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "sehan.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "seian.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -25664,6 +25994,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "sejong.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sek.edu": {
       "code": 200,
@@ -25750,6 +26085,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "semyung.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "sendaidaigaku.jp": {
       "code": 200,
       "confidence": 80,
@@ -25776,6 +26116,31 @@
       "reason": "fetch-error:ConnectionError"
     },
     "senzoku.ac.jp": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+multi-source+trusted-suffix"
+    },
+    "seokyeong.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "seonam.ac.kr": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "seoul-e.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "seoultech.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "seowon.ac.kr": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+multi-source+trusted-suffix"
@@ -25894,6 +26259,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "sgu.ac.kr": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking-linkfarm"
     },
     "sgu.edu": {
       "code": 200,
@@ -26061,6 +26431,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "shimonoseki-cu.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "shinhan.ac.kr": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -26325,6 +26700,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "silla.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "simhapuriuniv.ac.in": {
       "code": 0,
       "confidence": 0,
@@ -26490,6 +26870,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sjs.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "sjsu.edu": {
       "code": 200,
       "confidence": 60,
@@ -26525,10 +26910,20 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "skhu.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
     "skidmore.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "skku.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
     "skku.edu": {
       "code": 200,
@@ -26559,6 +26954,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "skuniv.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
     "skuniv.ap.nic.in": {
       "code": 0,
@@ -26690,6 +27090,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "smu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "smu.ca": {
       "code": 200,
       "confidence": 100,
@@ -26745,6 +27150,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "snue.ac.kr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
+    "snut.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "soa.ac.in": {
       "code": 200,
       "confidence": 60,
@@ -26774,6 +27189,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sogang.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "sohag-univ.edu.eg": {
       "code": 200,
@@ -26810,6 +27230,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "songwon.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sonoda-u.ac.jp": {
       "code": 200,
       "confidence": 90,
@@ -26819,6 +27244,16 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "sookmyung.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "soongsil.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "sophia.ac.jp": {
       "code": 0,
@@ -27176,6 +27611,11 @@
       "reason": "fetch-error:ConnectTimeout"
     },
     "ssu.ac.jp": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ssu.ac.kr": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -27590,6 +28030,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "stu.ac.kr": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "stu.edu": {
       "code": 200,
       "confidence": 90,
@@ -27825,10 +28270,30 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sunchon.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "suncoastcc.qld.edu.au": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "sungkyul.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "sungshin.ac.kr": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
+    "sunmoon.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
     "sunycentral.edu": {
       "code": 0,
@@ -27924,6 +28389,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "suwon.ac.kr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
+    "suwoncatholic.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "suzuka-iu.ac.jp": {
       "code": 0,
@@ -28055,6 +28530,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
+    "swu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "swu.bg": {
       "code": 200,
       "confidence": 90,
@@ -28145,6 +28625,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "syu.ac.kr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "syu.edu.cn": {
       "code": 0,
       "confidence": 0,
@@ -28219,6 +28704,26 @@
       "code": 200,
       "confidence": 30,
       "reason": "low-confidence:http-2xx-html+substantial-content"
+    },
+    "taegu-e.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "taegu.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "taejon.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "taeshin.ac.kr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tafeinternational.wa.edu.au": {
       "code": 200,
@@ -31042,8 +31547,8 @@
     },
     "uds.edu.gh": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ue-germany.com": {
       "code": 200,
@@ -31282,8 +31787,8 @@
     },
     "ufl.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "ufla.br": {
       "code": 200,
@@ -31627,8 +32132,8 @@
     },
     "uib.no": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uibe.edu.cn": {
       "code": 200,
@@ -31672,8 +32177,8 @@
     },
     "uinjkt.ac.id": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "uio.no": {
       "code": 200,
@@ -31682,8 +32187,8 @@
     },
     "uiowa.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uir.ac.id": {
       "code": 200,
@@ -31877,8 +32382,8 @@
     },
     "ula.edu.mx": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ulab.edu.bd": {
       "code": 200,
@@ -39810,6 +40315,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "afa.ac.kr": "1997-04-27",
     "afa.edu.pl": "2025-10-30",
     "afeka.ac.il": {
       "reg": "",
@@ -41114,6 +41620,7 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "bible.ac.kr": "1998-09-06",
     "bible.edu": "1995-07-30",
     "bifrost.is": "1996-09-06",
     "bihe.org": "2001-04-21",
@@ -46493,6 +47000,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "hytu.ac.kr": "1999-06-06",
     "hyupsung.ac.kr": "1996-11-07",
     "hzau.edu.cn": {
       "reg": "",
@@ -46918,6 +47426,7 @@
       "ts": "2026-09-25"
     },
     "iksvv.com": "2025-08-29",
+    "ikw.ac.kr": "2002-05-29",
     "ilam.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -47858,6 +48367,7 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "kafna.ac.kr": "2014-11-17",
     "kagawa-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48010,6 +48520,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "kau.ac.kr": "2005-08-04",
     "kau.edu": "2000-09-08",
     "kau.kz": {
       "reg": "",
@@ -48048,6 +48559,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kbtus.ac.kr": "1997-03-25",
     "kbu.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48069,6 +48581,7 @@
     },
     "kct.ac.in": "2003-08-31",
     "kctcs.edu": "2002-01-11",
+    "kcu.ac.kr": "1996-07-18",
     "kcua.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48083,6 +48596,7 @@
     },
     "kdischool.ac.kr": "1997-08-24",
     "kdu.ac.kr": "1997-12-03",
+    "kduniv.ac.kr": "2014-05-07",
     "kee.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -48228,6 +48742,7 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "khu.ac.kr": "2000-03-27",
     "khuisf.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -48297,10 +48812,12 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kiu.ac.kr": "2001-06-04",
     "kiui.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kkot.ac.kr": "2000-06-12",
     "kl.ac.at": {
       "reg": "",
       "ts": "2026-09-14"
@@ -48314,8 +48831,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "kma.ac.kr": "1995-03-09",
     "kmaritime.ac.kr": "1997-06-24",
     "kmbs.ua": "2008-12-09",
+    "kmou.ac.kr": "2012-11-29",
     "kms.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48351,6 +48870,7 @@
     },
     "knou.ac.kr": "1997-06-24",
     "knox.edu": "1993-08-11",
+    "knsu.ac.kr": "2003-02-05",
     "kntu.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -48463,6 +48983,7 @@
       "ts": "2026-09-26"
     },
     "kongju-e.ac.kr": "1996-04-02",
+    "kongju.ac.kr": "1997-06-24",
     "konkuk.ac.kr": "1997-06-24",
     "konyang.ac.kr": "1996-09-06",
     "kookmin.ac.kr": "1993-07-25",
@@ -48471,10 +48992,12 @@
       "ts": "2026-09-26"
     },
     "korea.ac.kr": "1993-08-01",
+    "koreatech.ac.kr": "2010-12-13",
     "koriyama-kgc.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kornu.ac.kr": "2000-12-18",
     "koshien.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48495,11 +49018,13 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kpu.ac.kr": "1998-11-06",
     "krb.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
     },
     "krishnauniversity.ac.in": "2009-01-07",
+    "ks.ac.kr": "2000-02-01",
     "ksalpenquai.lu.ch": {
       "reg": "",
       "ts": "2026-09-16"
@@ -48695,6 +49220,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "kw.ac.kr": "2002-11-04",
     "kwandong.ac.kr": {
       "reg": "",
       "ts": "2026-09-27"
@@ -48704,6 +49230,8 @@
       "ts": "2026-09-27"
     },
     "kwangju.ac.kr": "1994-09-26",
+    "kwangshin.ac.kr": "1999-04-16",
+    "kwangwoon.ac.kr": "1996-01-22",
     "kwansei.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -48725,6 +49253,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "kwu.ac.kr": "1997-03-19",
     "kwu.edu": "1994-03-31",
     "kwuc.ac.jp": {
       "reg": "",
@@ -48737,6 +49266,11 @@
     "kyokyo-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "kyonggi.ac.kr": "1997-01-26",
+    "kyongju.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
     },
     "kyorin-u.ac.jp": {
       "reg": "",
@@ -48786,6 +49320,12 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "kyunghee.ac.kr": "1993-08-16",
+    "kyungil.ac.kr": "1997-01-03",
+    "kyungnam.ac.kr": "1995-03-26",
+    "kyungpook.ac.kr": "1994-09-06",
+    "kyungsung.ac.kr": "1994-04-16",
+    "kyungwon.ac.kr": "2021-11-14",
     "kyushu-id.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -49528,6 +50068,7 @@
     "mcmaster.ca": "2000-10-20",
     "mcneese.edu": "1994-06-28",
     "mcu.ac.in": "2002-06-19",
+    "mcu.ac.kr": "2000-02-14",
     "mcw.edu": "1989-09-21",
     "mdc.edu": "2002-10-08",
     "mdp.edu.ar": {
@@ -49761,6 +50302,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "miryang.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
     "missouri.edu": "1987-12-22",
     "mist.ac.bd": {
       "reg": "",
@@ -49825,6 +50370,7 @@
       "ts": "2026-09-26"
     },
     "mjpru.ac.in": "2004-12-21",
+    "mju.ac.kr": "1999-09-28",
     "mkhitargosh.com": {
       "reg": "",
       "ts": "2026-09-14"
@@ -49840,6 +50386,7 @@
     "mmarau.ac.ke": "2013-02-25",
     "mmm.edu": "1995-06-21",
     "mmu.ac.ke": "2008-12-16",
+    "mmu.ac.kr": "1997-04-07",
     "mmust.ac.ke": "2007-01-21",
     "mnit.ac.in": "2003-05-20",
     "mnnit.ac.in": "2003-05-19",
@@ -49866,6 +50413,8 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "mokpo.ac.kr": "1994-02-14",
+    "mokwon.ac.kr": "1994-11-01",
     "moler.edu": "2025-07-25",
     "moler.org": "2011-10-21",
     "molloy.edu": "1995-02-09",
@@ -50027,6 +50576,7 @@
     "mtroyal.ca": "2000-10-23",
     "mtsac.edu": "1989-10-19",
     "mtsu.edu": "1989-03-07",
+    "mtu.ac.kr": "2008-01-31",
     "mtu.edu": "1987-05-20",
     "mtu.edu.et": {
       "reg": "",
@@ -50185,6 +50735,7 @@
     },
     "mylambton.ca": "2010-01-15",
     "mylaurier.ca": "2000-11-10",
+    "myongji.ac.kr": "1994-04-16",
     "myport.ac.uk": {
       "reg": "",
       "ts": "2026-09-13"
@@ -50264,6 +50815,8 @@
       "ts": "2026-09-26"
     },
     "nalandaopenuniversity.info": "2020-12-18",
+    "nambu.ac.kr": "1999-04-05",
+    "namseoul.net": "2000-08-02",
     "nancy.archi.fr": {
       "reg": "",
       "ts": "2026-09-23"
@@ -50328,6 +50881,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "navy.ac.kr": "1997-04-20",
     "nawrozuniversity.com": "2022-06-12",
     "naz.edu": "1992-05-05",
     "nazareth.vic.edu.au": {
@@ -50855,6 +51409,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "nsu.ac.kr": "1995-04-20",
     "nsu.edu": "1990-06-07",
     "nsula.edu": "1992-07-09",
     "nsuok.edu": "1995-07-07",
@@ -50924,6 +51479,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "nuch.ac.kr": "2000-03-19",
     "nudt.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
@@ -51332,6 +51888,7 @@
     },
     "padmavatiwomen-univ.org": "2022-05-04",
     "padrechico.org.br": "1998-03-19",
+    "paichai.ac.kr": "1993-08-11",
     "paideia.org": "1999-07-14",
     "paier.edu": "2018-07-30",
     "pakartiluhur.ac.id": "2023-03-01",
@@ -51409,6 +51966,7 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "pcu.ac.kr": "2000-09-19",
     "pdeu.ac.in": "2021-02-16",
     "pdkv.ac.in": "2009-01-09",
     "pdpu.ac.in": "2007-04-23",
@@ -51556,6 +52114,7 @@
     "pittstate.edu": "1993-05-25",
     "pitzer.edu": "1993-06-01",
     "piu.ac.ke": "2012-06-11",
+    "pknu.ac.kr": "1989-12-31",
     "pku.edu.cn": {
       "reg": "",
       "ts": "2026-09-13"
@@ -51611,6 +52170,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "police.ac.kr": "1997-11-19",
     "poligran.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
@@ -51690,6 +52250,8 @@
     "porterchester.edu": "2010-10-07",
     "portervillecollege.edu": "2002-01-08",
     "post.edu": "2004-11-23",
+    "postech.ac.kr": "1993-07-22",
+    "postech.edu": "1999-03-16",
     "pote.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -51812,6 +52374,11 @@
       "ts": "2026-09-23"
     },
     "ptu.ac.in": "2004-03-17",
+    "ptu.ac.kr": "2004-06-01",
+    "ptuniv.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
     "pu-kumamoto.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -51870,6 +52437,8 @@
       "reg": "",
       "ts": "2026-09-27"
     },
+    "pufs.ac.kr": "1993-08-12",
+    "pukyong.ac.kr": "2000-08-21",
     "pul.it": {
       "reg": "",
       "ts": "2026-09-25"
@@ -51888,6 +52457,11 @@
       "ts": "2026-09-19"
     },
     "purdueglobal.edu": "2018-02-20",
+    "pusan-e.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
+    "pusan.ac.kr": "1997-06-24",
     "pusavarsity.org.in": "2026-01-15",
     "pusc.it": {
       "reg": "",
@@ -51907,12 +52481,17 @@
       "ts": "2026-09-25"
     },
     "puterabatam.ac.id": "2005-05-18",
+    "puts.ac.kr": "2013-12-29",
     "puv.fi": "1991-01-01",
     "pv-ma.bg": {
       "reg": "",
       "ts": "2026-09-20"
     },
     "pvamu.edu": "1988-02-17",
+    "pwc.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
     "pwit.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -52412,6 +52991,10 @@
       "ts": "2026-09-19"
     },
     "sambalpuruniversitypgc.in": "2020-01-17",
+    "samchok.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
     "samford.edu": "1993-12-05",
     "samk.fi": "2002-09-23",
     "samskritabharati.in": "2005-02-16",
@@ -52421,6 +53004,8 @@
     },
     "sandiego.edu": "2000-10-20",
     "sangha.ac.kr": "1999-07-16",
+    "sangji.ac.kr": "1997-10-20",
+    "sangmyung.ac.kr": "1997-06-24",
     "sangu.edu.ge": {
       "reg": "",
       "ts": "2026-09-23"
@@ -52551,6 +53136,7 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "sch.ac.kr": "1995-08-22",
     "schillerparis.com": "2021-12-27",
     "schillerstrasbourg.com": "2018-11-14",
     "schoolofartsgent.be": {
@@ -52578,6 +53164,7 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "scnu.ac.kr": "2006-02-09",
     "scnu.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
@@ -52617,6 +53204,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "scu.ac.kr": "2000-02-02",
     "scu.edu": "1989-02-19",
     "scu.edu.au": {
       "reg": "",
@@ -52721,6 +53309,7 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "sehan.ac.kr": "2012-03-12",
     "seian.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -52749,6 +53338,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "sejong.ac.kr": "1996-12-05",
     "sek.edu": "1996-10-03",
     "sek.net": "1996-10-21",
     "seku.ac.ke": {
@@ -52783,6 +53373,7 @@
     },
     "semo.edu": "1991-05-22",
     "semutwinwiin.com": "2026-07-26",
+    "semyung.ac.kr": "1995-10-05",
     "sendaidaigaku.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -52801,6 +53392,11 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "seokyeong.ac.kr": "1997-06-24",
+    "seonam.ac.kr": "2021-11-25",
+    "seoul-e.ac.kr": "1996-05-05",
+    "seoultech.ac.kr": "2007-10-10",
+    "seowon.ac.kr": "1997-06-24",
     "seresc.net": "1996-04-10",
     "ses.ac.ir": {
       "reg": "",
@@ -52863,6 +53459,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "sgu.ac.kr": "2023-12-19",
     "sgu.edu": "1996-07-12",
     "sgu.edu.cn": {
       "reg": "",
@@ -52963,6 +53560,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "shinhan.ac.kr": "2013-04-10",
     "shinshu-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -53141,6 +53739,7 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "silla.ac.kr": "1998-01-14",
     "simhapuriuniv.ac.in": {
       "reg": "",
       "ts": "2026-09-24"
@@ -53218,6 +53817,7 @@
     },
     "sjdlc.com": "2025-07-07",
     "sjeccd.edu": "2006-07-12",
+    "sjs.ac.kr": "2003-05-16",
     "sjsu.edu": "1993-12-20",
     "sjsv.nic.in": "2004-12-23",
     "sjtu.edu.cn": {
@@ -53231,7 +53831,9 @@
       "ts": "2026-09-22"
     },
     "skc.edu": "1994-12-15",
+    "skhu.ac.kr": "1997-06-24",
     "skidmore.edu": "1989-05-16",
+    "skku.ac.kr": "1993-08-10",
     "skku.edu": "2000-06-21",
     "skmu.edu.in": {
       "reg": "",
@@ -53247,6 +53849,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "skuniv.ac.kr": "2000-03-07",
     "skuniv.ap.nic.in": "2004-12-23",
     "skylinecollege.edu": "2002-03-13",
     "sl.psu.edu": {
@@ -53299,6 +53902,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "smu.ac.kr": "2001-05-20",
     "smu.ca": "2001-02-05",
     "smu.edu": "1987-08-31",
     "smu.edu.in": "2007-07-19",
@@ -53325,6 +53929,8 @@
       "ts": "2026-09-14"
     },
     "snu.edu": "1994-10-20",
+    "snue.ac.kr": "2000-12-08",
+    "snut.ac.kr": "1998-12-03",
     "soa.ac.in": "2007-07-20",
     "soai.ac.jp": {
       "reg": "",
@@ -53337,6 +53943,7 @@
       "ts": "2026-09-14"
     },
     "sofia.edu": "2012-03-07",
+    "sogang.ac.kr": "1993-07-26",
     "sohag-univ.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
@@ -53361,11 +53968,14 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "songwon.ac.kr": "1999-05-13",
     "sonoda-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
     },
     "sonoma.edu": "1989-05-22",
+    "sookmyung.ac.kr": "1994-09-08",
+    "soongsil.ac.kr": "1994-10-17",
     "sophia.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -53537,6 +54147,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "ssu.ac.kr": "1999-08-18",
     "ssus.ac.in": "2008-06-19",
     "ssvv.up.nic.in": "2004-12-23",
     "st-francois-dassise.eu": {
@@ -53705,6 +54316,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "stu.ac.kr": "1997-09-08",
     "stu.edu": "1995-07-31",
     "stu.edu.cn": {
       "reg": "",
@@ -53859,10 +54471,14 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "sunchon.ac.kr": "1997-06-24",
     "suncoastcc.qld.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
+    "sungkyul.ac.kr": "1996-05-29",
+    "sungshin.ac.kr": "1993-08-22",
+    "sunmoon.ac.kr": "1995-04-10",
     "sunycentral.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -53902,6 +54518,8 @@
       "ts": "2026-09-25"
     },
     "suu.edu": "1990-02-12",
+    "suwon.ac.kr": "1996-10-10",
+    "suwoncatholic.ac.kr": "2000-02-28",
     "suzuka-iu.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -53982,6 +54600,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "swu.ac.kr": "1995-09-06",
     "swu.bg": {
       "reg": "",
       "ts": "2026-09-18"
@@ -54042,6 +54661,7 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "syu.ac.kr": "1996-08-12",
     "syu.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
@@ -54093,6 +54713,19 @@
     },
     "tacomahousing.net": "2013-05-06",
     "tacomahousing.org": "2000-12-29",
+    "taegu-e.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
+    "taegu.ac.kr": "1994-08-01",
+    "taejon.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
+    "taeshin.ac.kr": {
+      "reg": "",
+      "ts": "2026-09-27"
+    },
     "tafeinternational.wa.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -60107,6 +60740,7 @@
     "aefs.edu.al": 1,
     "aegean.gr": 1,
     "aeu.edu.kh": 0,
+    "afa.ac.kr": 1,
     "afa.edu.pl": 2,
     "afeka.ac.il": 0,
     "afghanuniversity.edu.af": 0,
@@ -60601,6 +61235,7 @@
     "bht-berlin.de": 0,
     "bhu.ac.in": 0,
     "bhu.edu.cn": 1,
+    "bible.ac.kr": 1,
     "bible.edu": 1,
     "bifrost.is": 0,
     "bihe.org": 1,
@@ -62718,6 +63353,7 @@
     "hyogo-dai.ac.jp": 1,
     "hyogo-u.ac.jp": 1,
     "hyrcania.ac.ir": 1,
+    "hytu.ac.kr": 1,
     "hyupsung.ac.kr": 1,
     "hzau.edu.cn": 1,
     "hzs.be": 0,
@@ -62876,6 +63512,7 @@
     "iki.bas.bg": 0,
     "ikiu.ac.ir": 1,
     "iksvv.com": 1,
+    "ikw.ac.kr": 1,
     "ilam.ac.ir": 0,
     "ili.ac.in": 0,
     "iliauni.edu.ge": 1,
@@ -63238,6 +63875,7 @@
     "kabianga.ac.ke": 1,
     "kaboora.edu.af": 1,
     "kabuli.edu.af": 1,
+    "kafna.ac.kr": 1,
     "kagawa-u.ac.jp": 1,
     "kagoshima-u.ac.jp": 1,
     "kaist.ac.kr": 1,
@@ -63292,6 +63930,7 @@
     "kateb.edu.af": 0,
     "kath-fh-nord.de": 1,
     "kau.ac.ir": 1,
+    "kau.ac.kr": 1,
     "kau.edu": 1,
     "kau.kz": 0,
     "kaums.ac.ir": 1,
@@ -63303,6 +63942,7 @@
     "kazntu.kz": 1,
     "kaznu.kz": 1,
     "kbtu.kz": 1,
+    "kbtus.ac.kr": 1,
     "kbu.ac.jp": 1,
     "kc.edu.gh": 0,
     "kca.ac.ke": 1,
@@ -63312,11 +63952,13 @@
     "kcl.ac.uk": 0,
     "kct.ac.in": 0,
     "kctcs.edu": 1,
+    "kcu.ac.kr": 1,
     "kcua.ac.jp": 1,
     "kdcnet.ac.jp": 1,
     "kdg.be": 0,
     "kdischool.ac.kr": 0,
     "kdu.ac.kr": 1,
+    "kduniv.ac.kr": 0,
     "kean.edu": 0,
     "kee.hu": 1,
     "keene.edu": 0,
@@ -63366,6 +64008,7 @@
     "khorramabad.iau.ir": 2,
     "khs-linz.ac.at": 1,
     "khsa.de": 0,
+    "khu.ac.kr": 0,
     "khuisf.ac.ir": 1,
     "ki.se": 0,
     "kii.gov.by": 1,
@@ -63388,13 +64031,17 @@
     "kitami-it.ac.jp": 1,
     "kitasato-u.ac.jp": 1,
     "kiu.ac.jp": 1,
+    "kiu.ac.kr": 1,
     "kiui.ac.jp": 0,
+    "kkot.ac.kr": 0,
     "kl.ac.at": 0,
     "kloster-benediktbeuern.de": 0,
     "klyuniv.ac.in": 0,
     "km.isfpnu.ac.ir": 1,
+    "kma.ac.kr": 1,
     "kmaritime.ac.kr": 1,
     "kmbs.ua": 0,
+    "kmou.ac.kr": 1,
     "kms.ac.jp": 1,
     "kmtc.ac.ke": 0,
     "kmu.ac.ir": 1,
@@ -63406,6 +64053,7 @@
     "knightsbridgeuniversity.com": 1,
     "knou.ac.kr": 1,
     "knox.edu": 0,
+    "knsu.ac.kr": 1,
     "kntu.ac.ir": 0,
     "knua.ac.kr": 1,
     "knue.ac.kr": 1,
@@ -63437,12 +64085,15 @@
     "konan-u.ac.jp": 1,
     "konan-wu.ac.jp": 1,
     "kongju-e.ac.kr": 1,
+    "kongju.ac.kr": 1,
     "konkuk.ac.kr": 1,
     "konyang.ac.kr": 1,
     "kookmin.ac.kr": 0,
     "korea-u.ac.jp": 1,
     "korea.ac.kr": 0,
+    "koreatech.ac.kr": 1,
     "koriyama-kgc.ac.jp": 1,
+    "kornu.ac.kr": 1,
     "koshien.ac.jp": 1,
     "kosin.ac.kr": 1,
     "kottakkalayurvedacollege.ac.in": 0,
@@ -63451,8 +64102,10 @@
     "kppcs.org": 0,
     "kpu-m.ac.jp": 1,
     "kpu.ac.jp": 1,
+    "kpu.ac.kr": 1,
     "krb.nsw.edu.au": 0,
     "krishnauniversity.ac.in": 1,
+    "ks.ac.kr": 1,
     "ksalpenquai.lu.ch": 0,
     "ksdsu.edu.in": 1,
     "kse.org.ua": 1,
@@ -63516,19 +64169,25 @@
     "kuwarangal.com": 1,
     "kvl.dk": 1,
     "kvsector8rkpuram.org": 2,
+    "kw.ac.kr": 1,
     "kwandong.ac.kr": 1,
     "kwangju-e.ac.kr": 1,
     "kwangju.ac.kr": 1,
+    "kwangshin.ac.kr": 1,
+    "kwangwoon.ac.kr": 1,
     "kwansei.ac.jp": 1,
     "kwantlen.bc.ca": 1,
     "kwassui.ac.jp": 0,
     "kway.com.au": 1,
     "kwc-u.ac.jp": 1,
     "kws.nsw.edu.au": 0,
+    "kwu.ac.kr": 1,
     "kwu.edu": 0,
     "kwuc.ac.jp": 0,
     "kwust.ac.ke": 0,
     "kyokyo-u.ac.jp": 1,
+    "kyonggi.ac.kr": 1,
+    "kyongju.ac.kr": 1,
     "kyorin-u.ac.jp": 1,
     "kyoritsu-ph.ac.jp": 1,
     "kyoritsu-wu.ac.jp": 1,
@@ -63541,6 +64200,12 @@
     "kyotogakuen-u.ac.jp": 1,
     "kyu-dent.ac.jp": 0,
     "kyukyo-u.ac.jp": 0,
+    "kyunghee.ac.kr": 1,
+    "kyungil.ac.kr": 1,
+    "kyungnam.ac.kr": 1,
+    "kyungpook.ac.kr": 1,
+    "kyungsung.ac.kr": 1,
+    "kyungwon.ac.kr": 1,
     "kyushu-id.ac.jp": 1,
     "kyushu-ns.ac.jp": 1,
     "kyushu-u.ac.jp": 1,
@@ -63869,6 +64534,7 @@
     "mcmaster.ca": 0,
     "mcneese.edu": 0,
     "mcu.ac.in": 0,
+    "mcu.ac.kr": 1,
     "mcw.edu": 0,
     "mdc.edu": 0,
     "mdp.edu.ar": 0,
@@ -63958,6 +64624,7 @@
     "minia.edu.eg": 1,
     "minotstateu.edu": 0,
     "mirea.ru": 1,
+    "miryang.ac.kr": 1,
     "missouri.edu": 1,
     "mist.ac.bd": 1,
     "mit.edu": 0,
@@ -63977,6 +64644,7 @@
     "miyazaki-mu.ac.jp": 1,
     "miyazaki-u.ac.jp": 1,
     "mjpru.ac.in": 1,
+    "mju.ac.kr": 0,
     "mkhitargosh.com": 2,
     "mkhu.am": 2,
     "mku.ac.ke": 0,
@@ -63986,6 +64654,7 @@
     "mmarau.ac.ke": 0,
     "mmm.edu": 1,
     "mmu.ac.ke": 1,
+    "mmu.ac.kr": 1,
     "mmust.ac.ke": 0,
     "mnit.ac.in": 0,
     "mnnit.ac.in": 0,
@@ -63997,6 +64666,8 @@
     "moerlina.wa.edu.au": 0,
     "moestopo.ac.id": 0,
     "mofidu.ac.ir": 0,
+    "mokpo.ac.kr": 1,
+    "mokwon.ac.kr": 1,
     "moler.edu": 0,
     "moler.org": 1,
     "molloy.edu": 0,
@@ -64077,6 +64748,7 @@
     "mtroyal.ca": 0,
     "mtsac.edu": 0,
     "mtsu.edu": 0,
+    "mtu.ac.kr": 1,
     "mtu.edu": 0,
     "mtu.edu.et": 1,
     "mtu.ie": 0,
@@ -64128,6 +64800,7 @@
     "my-pharm.ac.jp": 1,
     "mylambton.ca": 1,
     "mylaurier.ca": 1,
+    "myongji.ac.kr": 1,
     "myport.ac.uk": 3,
     "myseneca.ca": 1,
     "mystep.foundation": 2,
@@ -64156,6 +64829,8 @@
     "najafabad-uast.ac.ir": 1,
     "nakamura-u.ac.jp": 1,
     "nalandaopenuniversity.info": 1,
+    "nambu.ac.kr": 0,
+    "namseoul.net": 1,
     "nancy.archi.fr": 1,
     "nankai.edu.cn": 1,
     "nankyudai.ac.jp": 0,
@@ -64175,6 +64850,7 @@
     "naturapolis36.fr": 0,
     "nau.edu": 0,
     "navitasenglish.edu.au": 0,
+    "navy.ac.kr": 1,
     "nawrozuniversity.com": 1,
     "naz.edu": 0,
     "nazareth.vic.edu.au": 1,
@@ -64395,6 +65071,7 @@
     "nsmc.edu.cn": 1,
     "nstu.edu.bd": 0,
     "nsu.ac.jp": 0,
+    "nsu.ac.kr": 1,
     "nsu.edu": 0,
     "nsula.edu": 0,
     "nsuok.edu": 0,
@@ -64419,6 +65096,7 @@
     "nub.ac.bd": 0,
     "nubl.org": 1,
     "nucba.ac.jp": 1,
+    "nuch.ac.kr": 1,
     "nudt.edu.cn": 1,
     "nufs.nakanishi.ac.jp": 1,
     "nui.ie": 0,
@@ -64572,6 +65250,7 @@
     "paderborn.de": 0,
     "padmavatiwomen-univ.org": 1,
     "padrechico.org.br": 0,
+    "paichai.ac.kr": 1,
     "paideia.org": 0,
     "paier.edu": 1,
     "pakartiluhur.ac.id": 1,
@@ -64612,6 +65291,7 @@
     "pcsedu.org": 0,
     "pct.edu": 0,
     "pct.edu.au": 0,
+    "pcu.ac.kr": 0,
     "pdeu.ac.in": 0,
     "pdkv.ac.in": 0,
     "pdpu.ac.in": 0,
@@ -64672,6 +65352,7 @@
     "pittstate.edu": 0,
     "pitzer.edu": 1,
     "piu.ac.ke": 1,
+    "pknu.ac.kr": 1,
     "pku.edu.cn": 0,
     "platt.edu": 0,
     "plattsburgh.edu": 0,
@@ -64695,6 +65376,7 @@
     "polban.ac.id": 0,
     "poli.edu.co": 1,
     "poliba.it": 1,
+    "police.ac.kr": 0,
     "poligran.edu.co": 1,
     "polimi.it": 0,
     "polines.ac.id": 1,
@@ -64732,6 +65414,8 @@
     "porterchester.edu": 0,
     "portervillecollege.edu": 0,
     "post.edu": 0,
+    "postech.ac.kr": 0,
+    "postech.edu": 1,
     "pote.hu": 1,
     "potsdam.edu": 0,
     "ppke.hu": 0,
@@ -64776,6 +65460,8 @@
     "pth-muenster.de": 1,
     "pthv.de": 1,
     "ptu.ac.in": 0,
+    "ptu.ac.kr": 0,
+    "ptuniv.ac.kr": 1,
     "pu-kumamoto.ac.jp": 0,
     "pu-toyama.ac.jp": 1,
     "pu.ac.ke": 0,
@@ -64798,6 +65484,8 @@
     "pucschools.org": 0,
     "pucsp.br": 0,
     "puea.ac.ke": 0,
+    "pufs.ac.kr": 1,
+    "pukyong.ac.kr": 1,
     "pul.it": 1,
     "pulf.org": 0,
     "pumc.edu.cn": 0,
@@ -64807,6 +65495,8 @@
     "purdue.edu": 0,
     "purduecal.edu": 1,
     "purdueglobal.edu": 0,
+    "pusan-e.ac.kr": 1,
+    "pusan.ac.kr": 1,
     "pusavarsity.org.in": 1,
     "pusc.it": 0,
     "pust.ac.bd": 0,
@@ -64814,9 +65504,11 @@
     "pust.urbe.it": 1,
     "put.ac.ir": 0,
     "puterabatam.ac.id": 1,
+    "puts.ac.kr": 1,
     "puv.fi": 1,
     "pv-ma.bg": 1,
     "pvamu.edu": 0,
+    "pwc.ac.kr": 1,
     "pwit.ac.ir": 1,
     "pwu.com": 1,
     "pxl.be": 0,
@@ -65031,12 +65723,15 @@
     "salonsuccessacademy.com": 1,
     "salvador.edu.ar": 1,
     "sambalpuruniversitypgc.in": 0,
+    "samchok.ac.kr": 1,
     "samford.edu": 0,
     "samk.fi": 0,
     "samskritabharati.in": 0,
     "sandau.edu.cn": 1,
     "sandiego.edu": 0,
     "sangha.ac.kr": 1,
+    "sangji.ac.kr": 1,
+    "sangmyung.ac.kr": 1,
     "sangu.edu.ge": 0,
     "sangu.ge": 1,
     "sanmartin.edu.co": 1,
@@ -65083,6 +65778,7 @@
     "scei.com.au": 1,
     "scesa.al": 2,
     "scgs.qld.edu.au": 0,
+    "sch.ac.kr": 1,
     "schillerparis.com": 0,
     "schillerstrasbourg.com": 1,
     "schoolofartsgent.be": 0,
@@ -65095,6 +65791,7 @@
     "sciencespo.fr": 0,
     "sckans.edu": 0,
     "scm.vic.edu.au": 0,
+    "scnu.ac.kr": 1,
     "scnu.edu.cn": 0,
     "sco.edu": 0,
     "scotch.sa.edu.au": 0,
@@ -65111,6 +65808,7 @@
     "sct.edu": 1,
     "sctimst.ker.nic.in": 1,
     "scu.ac.ir": 1,
+    "scu.ac.kr": 1,
     "scu.edu": 0,
     "scu.edu.au": 0,
     "scu.edu.cn": 2,
@@ -65147,6 +65845,7 @@
     "seattleu.edu": 0,
     "sec.ac.bd": 1,
     "secta.us": 0,
+    "sehan.ac.kr": 1,
     "seian.ac.jp": 1,
     "seigakuin-univ.ac.jp": 0,
     "seijo.ac.jp": 1,
@@ -65154,6 +65853,7 @@
     "seinan-gu.ac.jp": 1,
     "seisen-u.ac.jp": 0,
     "seiwa-u.ac.jp": 1,
+    "sejong.ac.kr": 0,
     "sek.edu": 1,
     "sek.net": 0,
     "seku.ac.ke": 0,
@@ -65171,12 +65871,18 @@
     "semo.edu": 0,
     "sempreceub.com": 3,
     "semutwinwiin.com": 1,
+    "semyung.ac.kr": 1,
     "sendaidaigaku.jp": 0,
     "senecacollege.ca": 1,
     "senecapolytechnic.ca": 0,
     "senghor.lycee.ac-normandie.fr": 0,
     "senshu-u.ac.jp": 1,
     "senzoku.ac.jp": 0,
+    "seokyeong.ac.kr": 1,
+    "seonam.ac.kr": 1,
+    "seoul-e.ac.kr": 1,
+    "seoultech.ac.kr": 0,
+    "seowon.ac.kr": 0,
     "seresc.net": 0,
     "ses.ac.ir": 1,
     "setsunan.ac.jp": 1,
@@ -65200,6 +65906,7 @@
     "sgscc.edu.au": 0,
     "sgu.ac.id": 0,
     "sgu.ac.jp": 1,
+    "sgu.ac.kr": 1,
     "sgu.edu": 0,
     "sgu.edu.cn": 0,
     "sgu.ernet.in": 1,
@@ -65234,6 +65941,7 @@
     "shimane-med.ac.jp": 1,
     "shimane-u.ac.jp": 1,
     "shimonoseki-cu.ac.jp": 1,
+    "shinhan.ac.kr": 1,
     "shinshu-u.ac.jp": 1,
     "shinstitute.org": 0,
     "ship.edu": 0,
@@ -65286,6 +65994,7 @@
     "sifc.edu": 1,
     "sigu7.jussieu.fr": 1,
     "siit.nsw.edu.au": 0,
+    "silla.ac.kr": 0,
     "simhapuriuniv.ac.in": 1,
     "simmons.edu": 0,
     "simons-rock.edu": 0,
@@ -65319,6 +66028,7 @@
     "sjdlc.com": 1,
     "sjeccd.edu": 0,
     "sjrstate.edu": 0,
+    "sjs.ac.kr": 0,
     "sjsu.edu": 0,
     "sjsv.nic.in": 1,
     "sjtu.edu.cn": 2,
@@ -65326,13 +66036,16 @@
     "sjvc.edu": 0,
     "sjzu.edu.cn": 1,
     "skc.edu": 0,
+    "skhu.ac.kr": 1,
     "skidmore.edu": 0,
+    "skku.ac.kr": 0,
     "skku.edu": 0,
     "skmu.edu.in": 1,
     "sksm.edu": 1,
     "sku.ac.ir": 0,
     "skuastkashmir.ac.in": 0,
     "skums.ac.ir": 0,
+    "skuniv.ac.kr": 0,
     "skuniv.ap.nic.in": 1,
     "skylinecollege.edu": 0,
     "sl.psu.edu": 0,
@@ -65359,6 +66072,7 @@
     "sms.edu": 0,
     "smsu.edu": 0,
     "smtafe.wa.edu.au": 1,
+    "smu.ac.kr": 1,
     "smu.ca": 0,
     "smu.edu": 0,
     "smu.edu.in": 0,
@@ -65370,12 +66084,15 @@
     "sns.it": 1,
     "snu.ac.kr": 0,
     "snu.edu": 0,
+    "snue.ac.kr": 1,
+    "snut.ac.kr": 1,
     "soa.ac.in": 0,
     "soai.ac.jp": 0,
     "soauniversity.ac.in": 1,
     "soavoshk.cz": 2,
     "soc.tas.edu.au": 0,
     "sofia.edu": 0,
+    "sogang.ac.kr": 1,
     "sohag-univ.edu.eg": 0,
     "soka.ac.jp": 1,
     "soken.ac.jp": 1,
@@ -65383,8 +66100,11 @@
     "somerset.qld.edu.au": 0,
     "somerville.qld.edu.au": 0,
     "sonatamusiccenter.com": 1,
+    "songwon.ac.kr": 1,
     "sonoda-u.ac.jp": 0,
     "sonoma.edu": 1,
+    "sookmyung.ac.kr": 1,
+    "soongsil.ac.kr": 1,
     "sophia.ac.jp": 1,
     "soran.edu.iq": 0,
     "sorbon.fr": 0,
@@ -65457,6 +66177,7 @@
     "sssup.it": 1,
     "ssu.ac.ir": 1,
     "ssu.ac.jp": 0,
+    "ssu.ac.kr": 0,
     "ssus.ac.in": 0,
     "ssvv.up.nic.in": 1,
     "st-francois-dassise.eu": 1,
@@ -65539,6 +66260,7 @@
     "stthomas.edu": 0,
     "stthomasu.ca": 1,
     "sttu.ac.ir": 1,
+    "stu.ac.kr": 1,
     "stu.edu": 0,
     "stu.edu.cn": 1,
     "stu.edu.gh": 0,
@@ -65586,7 +66308,11 @@
     "summitunivofla.edu": 1,
     "sums.ac.ir": 0,
     "sun.ac.jp": 0,
+    "sunchon.ac.kr": 1,
     "suncoastcc.qld.edu.au": 0,
+    "sungkyul.ac.kr": 1,
+    "sungshin.ac.kr": 1,
+    "sunmoon.ac.kr": 0,
     "sunycentral.edu": 1,
     "sunyit.edu": 1,
     "sunymaritime.edu": 0,
@@ -65606,6 +66332,8 @@
     "sut.ac.jp": 1,
     "sutech.ac.ir": 0,
     "suu.edu": 0,
+    "suwon.ac.kr": 0,
+    "suwoncatholic.ac.kr": 1,
     "suzuka-iu.ac.jp": 1,
     "suzuka-u.ac.jp": 1,
     "svbpuctm.org": 1,
@@ -65632,6 +66360,7 @@
     "swsm.cn": 1,
     "swt.edu": 1,
     "swu.ac.jp": 0,
+    "swu.ac.kr": 1,
     "swu.bg": 0,
     "swufe.edu.cn": 1,
     "swun.edu.cn": 1,
@@ -65650,6 +66379,7 @@
     "syracuse.edu": 0,
     "sysu.edu.cn": 0,
     "sytu.edu.cn": 1,
+    "syu.ac.kr": 0,
     "syu.edu.cn": 1,
     "sze.hu": 1,
     "szie.hu": 1,
@@ -65665,6 +66395,10 @@
     "tachibana-u.ac.jp": 1,
     "tacomahousing.net": 1,
     "tacomahousing.org": 1,
+    "taegu-e.ac.kr": 1,
+    "taegu.ac.kr": 1,
+    "taejon.ac.kr": 1,
+    "taeshin.ac.kr": 1,
     "tafeinternational.wa.edu.au": 0,
     "taftu.edu": 0,
     "tais.ac.jp": 0,
@@ -66183,7 +66917,7 @@
     "ucsal.edu.br": 1,
     "ucsb.edu": 0,
     "ucsc.cl": 0,
-    "ucsc.edu": 1,
+    "ucsc.edu": 2,
     "ucsd.edu": 0,
     "ucsd.edu.do": 0,
     "ucse.edu.ar": 0,
@@ -66349,7 +67083,7 @@
     "uib.no": 0,
     "uibe.edu.cn": 0,
     "uibk.ac.at": 0,
-    "uic.edu": 1,
+    "uic.edu": 2,
     "uidaho.edu": 0,
     "uier-edu.am": 2,
     "uii.ac.id": 1,
@@ -66394,7 +67128,7 @@
     "uku.fi": 1,
     "ukwms.ac.id": 0,
     "uky.edu": 0,
-    "ul-memphis.iamempowered.com": 1,
+    "ul-memphis.iamempowered.com": 2,
     "ul.ie": 0,
     "ula.edu.mx": 0,
     "ulab.edu.bd": 0,
@@ -66467,7 +67201,7 @@
     "umh.ac.be": 1,
     "umi-mdn.edu": 1,
     "umi.ac.id": 0,
-    "umich.edu": 2,
+    "umich.edu": 3,
     "umit-tirol.at": 0,
     "umit.at": 1,
     "umj.ac.id": 1,
@@ -67945,13 +68679,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-27T07:47:10+00:00",
+  "last_run": "2026-09-27T13:13:14+00:00",
   "last_verify": {
-    "added_active": 27,
-    "at": "2026-09-27 07:18 UTC",
-    "pending_left": 6260,
+    "added_active": 20,
+    "at": "2026-09-27 13:13 UTC",
+    "pending_left": 6220,
     "reverified": 15,
-    "validated": 117
+    "validated": 116
   },
   "moved": {
     "adventista.edu.br": "uniaene.edu.br",
@@ -68168,6 +68902,7 @@
     "nommensen.org": "bmkgungaran.com",
     "nooruse.ee": "tartuh.ee",
     "northeastmaritime.com": "nmi.edu",
+    "nsu.ac.kr": "namseoul.net",
     "nuigalway.ie": "universityofgalway.ie",
     "num.edu.kh": "numuniversity.com",
     "nvit.bc.ca": "nvit.ca",

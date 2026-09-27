@@ -97,7 +97,7 @@
 | KE | 54 | 36 | 18 |
 | KH | 22 | 13 | 9 |
 | KP | 1 | 0 | 1 |
-| KR | 159 | 45 | 114 |
+| KR | 260 | 65 | 195 |
 | KW | 1 | 0 | 1 |
 | KY | 2 | 2 | 0 |
 | KZ | 30 | 11 | 19 |
@@ -146,4 +146,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 7912. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8013. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
