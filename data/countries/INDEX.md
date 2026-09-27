@@ -62,7 +62,7 @@
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 619 | 308 | 311 |
+| FR | 619 | 309 | 310 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
 | GD | 1 | 1 | 0 |
@@ -104,16 +104,22 @@
 | KZ | 30 | 11 | 19 |
 | LA | 2 | 1 | 1 |
 | LB | 25 | 15 | 10 |
+| LI | 2 | 2 | 0 |
 | LR | 1 | 1 | 0 |
 | LS | 1 | 1 | 0 |
+| LT | 20 | 9 | 11 |
+| LU | 2 | 0 | 2 |
 | LV | 26 | 8 | 18 |
-| LY | 12 | 10 | 2 |
+| LY | 17 | 13 | 4 |
 | MA | 4 | 1 | 3 |
-| MK | 2 | 0 | 2 |
+| MG | 6 | 1 | 5 |
+| MK | 10 | 5 | 5 |
 | MM | 6 | 3 | 3 |
+| MO | 4 | 2 | 2 |
 | MR | 1 | 0 | 1 |
+| MW | 8 | 3 | 5 |
 | MX | 4 | 2 | 2 |
-| MY | 1 | 1 | 0 |
+| MY | 49 | 18 | 31 |
 | NG | 36 | 22 | 14 |
 | NL | 15 | 12 | 3 |
 | NO | 3 | 2 | 1 |
@@ -143,7 +149,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1726 | 1301 | 425 |
+| US | 1727 | 1302 | 425 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -153,4 +159,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8119. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8223. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

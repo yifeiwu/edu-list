@@ -1,25 +1,25 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-27 18:09 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-27 20:33 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **8119** across **150** countries
-- Active: **4225** (52%) · Inaccessible: **3894** (48%)
-- Pending queue: **6255** unvalidated candidates
-- Known registration age: **3854** domains (median 26 yrs)
+- Domains tracked: **8223** across **156** countries
+- Active: **4269** (52%) · Inaccessible: **3954** (48%)
+- Pending queue: **6154** unvalidated candidates
+- Known registration age: **3868** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-27 17:52 UTC): validated 121, +49 Active, re-verified 15, pending left 6182
+- Verify (2026-09-27 20:33 UTC): validated 119, +43 Active, re-verified 15, pending left 6154
 - Curate (2026-09-27 18:09 UTC): 10700 raw candidates, 73 queued, 23 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1726 | 1301 | 425 |
-| FR | 619 | 308 | 311 |
+| US | 1727 | 1302 | 425 |
+| FR | 619 | 309 | 310 |
 | JP | 577 | 125 | 452 |
 | IN | 458 | 208 | 250 |
 | CN | 415 | 53 | 362 |
@@ -38,25 +38,25 @@ _Generated 2026-09-27 18:09 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 4225 |
-| `fetch-error:ConnectionError` | 1782 |
-| `fetch-error:ConnectTimeout` | 481 |
-| `http-403` | 402 |
-| `fetch-error:SSLError` | 368 |
-| `low-confidence:http-2xx-html` | 249 |
-| `empty-body` | 69 |
+| `http-2xx-html` | 4269 |
+| `fetch-error:ConnectionError` | 1815 |
+| `fetch-error:ConnectTimeout` | 482 |
+| `http-403` | 406 |
+| `fetch-error:SSLError` | 378 |
+| `low-confidence:http-2xx-html` | 253 |
+| `empty-body` | 70 |
 | `fetch-error:ReadTimeout` | 45 |
 | `http-404` | 26 |
-| `http-500` | 16 |
+| `http-500` | 18 |
 | `parking-linkfarm` | 15 |
-| `http-503` | 11 |
+| `http-503` | 12 |
 
 ## Freshness
 
-- Verified in last 30 days: **8119** (100%)
+- Verified in last 30 days: **8223** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **370**
+- Moved pointers (old domain → new): **374**
 
 ## Alerts
 
@@ -67,6 +67,7 @@ _Generated 2026-09-27 18:09 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `GN`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 125/577 (22%) — check for blocks/stale sources
 - ⚠ `KR`: low Active rate 73/278 (26%) — check for blocks/stale sources
+- ⚠ `MG`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
