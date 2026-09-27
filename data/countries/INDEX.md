@@ -114,12 +114,14 @@
 | MA | 4 | 1 | 3 |
 | MG | 6 | 1 | 5 |
 | MK | 10 | 5 | 5 |
+| ML | 1 | 1 | 0 |
 | MM | 6 | 3 | 3 |
 | MO | 4 | 2 | 2 |
 | MR | 1 | 0 | 1 |
+| MV | 3 | 2 | 1 |
 | MW | 8 | 3 | 5 |
 | MX | 4 | 2 | 2 |
-| MY | 49 | 18 | 31 |
+| MY | 145 | 54 | 91 |
 | NG | 36 | 22 | 14 |
 | NL | 15 | 12 | 3 |
 | NO | 3 | 2 | 1 |
@@ -159,4 +161,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8223. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8323. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
