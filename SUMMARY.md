@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-28 00:24 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-28 02:09 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **8323** across **158** countries
-- Active: **4308** (52%) · Inaccessible: **4015** (48%)
-- Pending queue: **6162** unvalidated candidates
-- Known registration age: **3869** domains (median 26 yrs)
+- Domains tracked: **8430** across **160** countries
+- Active: **4351** (52%) · Inaccessible: **4079** (48%)
+- Pending queue: **6062** unvalidated candidates
+- Known registration age: **3875** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-27 23:31 UTC): validated 115, +39 Active, re-verified 15, pending left 6114
+- Verify (2026-09-28 02:09 UTC): validated 122, +43 Active, re-verified 15, pending left 6062
 - Curate (2026-09-28 00:24 UTC): 10692 raw candidates, 48 queued, 6483 re-cited
 
 ## Countries (top 15 by size)
@@ -38,25 +38,25 @@ _Generated 2026-09-28 00:24 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 4308 |
-| `fetch-error:ConnectionError` | 1854 |
-| `fetch-error:ConnectTimeout` | 487 |
-| `http-403` | 413 |
-| `fetch-error:SSLError` | 381 |
-| `low-confidence:http-2xx-html` | 255 |
-| `empty-body` | 72 |
-| `fetch-error:ReadTimeout` | 46 |
-| `http-404` | 26 |
+| `http-2xx-html` | 4351 |
+| `fetch-error:ConnectionError` | 1887 |
+| `fetch-error:ConnectTimeout` | 498 |
+| `http-403` | 415 |
+| `fetch-error:SSLError` | 386 |
+| `low-confidence:http-2xx-html` | 258 |
+| `empty-body` | 73 |
+| `fetch-error:ReadTimeout` | 47 |
+| `http-404` | 27 |
 | `http-500` | 18 |
 | `parking-linkfarm` | 15 |
 | `http-503` | 12 |
 
 ## Freshness
 
-- Verified in last 30 days: **8323** (100%)
+- Verified in last 30 days: **8430** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **374**
+- Moved pointers (old domain → new): **381**
 
 ## Alerts
 
