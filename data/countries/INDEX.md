@@ -111,7 +111,7 @@
 | LU | 2 | 0 | 2 |
 | LV | 26 | 8 | 18 |
 | LY | 17 | 13 | 4 |
-| MA | 12 | 5 | 7 |
+| MA | 35 | 11 | 24 |
 | MD | 12 | 5 | 7 |
 | ME | 1 | 0 | 1 |
 | MG | 6 | 1 | 5 |
@@ -128,10 +128,15 @@
 | MW | 8 | 3 | 5 |
 | MX | 174 | 77 | 97 |
 | MY | 145 | 54 | 91 |
+| MZ | 8 | 6 | 2 |
+| NA | 5 | 1 | 4 |
+| NC | 1 | 0 | 1 |
 | NG | 36 | 22 | 14 |
-| NL | 15 | 12 | 3 |
+| NI | 5 | 3 | 2 |
+| NL | 57 | 35 | 22 |
 | NO | 3 | 2 | 1 |
-| NZ | 2 | 2 | 0 |
+| NP | 9 | 5 | 4 |
+| NZ | 15 | 8 | 7 |
 | PE | 3 | 2 | 1 |
 | PF | 1 | 0 | 1 |
 | PH | 17 | 7 | 10 |
@@ -157,7 +162,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1727 | 1302 | 425 |
+| US | 1728 | 1303 | 425 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -167,4 +172,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8535. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8642. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
