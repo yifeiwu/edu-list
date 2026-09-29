@@ -144,7 +144,7 @@
 | PE | 69 | 37 | 32 |
 | PF | 1 | 0 | 1 |
 | PG | 5 | 3 | 2 |
-| PH | 20 | 7 | 13 |
+| PH | 122 | 55 | 67 |
 | PK | 137 | 82 | 55 |
 | PL | 7 | 5 | 2 |
 | PS | 16 | 8 | 8 |
@@ -179,4 +179,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9052. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9154. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
