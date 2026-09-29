@@ -11,7 +11,7 @@
 | AO | 10 | 2 | 8 |
 | AR | 126 | 90 | 36 |
 | AT | 73 | 47 | 26 |
-| AU | 375 | 256 | 119 |
+| AU | 375 | 257 | 118 |
 | AZ | 35 | 20 | 15 |
 | BA | 35 | 19 | 16 |
 | BB | 1 | 0 | 1 |
@@ -39,7 +39,7 @@
 | CI | 3 | 0 | 3 |
 | CL | 65 | 32 | 33 |
 | CM | 10 | 4 | 6 |
-| CN | 415 | 53 | 362 |
+| CN | 415 | 52 | 363 |
 | CO | 105 | 59 | 46 |
 | CR | 32 | 16 | 16 |
 | CU | 13 | 2 | 11 |
@@ -140,14 +140,16 @@
 | NU | 1 | 1 | 0 |
 | NZ | 15 | 8 | 7 |
 | OM | 10 | 5 | 5 |
-| PA | 3 | 1 | 2 |
-| PE | 3 | 2 | 1 |
+| PA | 18 | 8 | 10 |
+| PE | 69 | 37 | 32 |
 | PF | 1 | 0 | 1 |
-| PH | 17 | 7 | 10 |
+| PG | 5 | 3 | 2 |
+| PH | 20 | 7 | 13 |
 | PK | 137 | 82 | 55 |
 | PL | 7 | 5 | 2 |
 | PS | 16 | 8 | 8 |
 | PT | 11 | 7 | 4 |
+| PY | 14 | 9 | 5 |
 | QA | 5 | 2 | 3 |
 | RO | 2 | 2 | 0 |
 | RS | 1 | 1 | 0 |
@@ -167,7 +169,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1728 | 1302 | 426 |
+| US | 1729 | 1300 | 429 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -177,4 +179,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8948. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9052. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
