@@ -132,16 +132,18 @@
 | NA | 5 | 1 | 4 |
 | NC | 1 | 0 | 1 |
 | NE | 1 | 0 | 1 |
-| NG | 125 | 63 | 62 |
+| NG | 143 | 76 | 67 |
 | NI | 17 | 7 | 10 |
 | NL | 57 | 35 | 22 |
-| NO | 3 | 2 | 1 |
+| NO | 23 | 11 | 12 |
 | NP | 9 | 5 | 4 |
+| NU | 1 | 1 | 0 |
 | NZ | 15 | 8 | 7 |
+| OM | 10 | 5 | 5 |
 | PE | 3 | 2 | 1 |
 | PF | 1 | 0 | 1 |
 | PH | 17 | 7 | 10 |
-| PK | 1 | 1 | 0 |
+| PK | 55 | 34 | 21 |
 | PL | 7 | 5 | 2 |
 | PT | 11 | 7 | 4 |
 | QA | 5 | 2 | 3 |
@@ -173,4 +175,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8744. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8847. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
