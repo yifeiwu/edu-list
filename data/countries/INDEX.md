@@ -140,11 +140,13 @@
 | NU | 1 | 1 | 0 |
 | NZ | 15 | 8 | 7 |
 | OM | 10 | 5 | 5 |
+| PA | 3 | 1 | 2 |
 | PE | 3 | 2 | 1 |
 | PF | 1 | 0 | 1 |
 | PH | 17 | 7 | 10 |
-| PK | 55 | 34 | 21 |
+| PK | 137 | 82 | 55 |
 | PL | 7 | 5 | 2 |
+| PS | 16 | 8 | 8 |
 | PT | 11 | 7 | 4 |
 | QA | 5 | 2 | 3 |
 | RO | 2 | 2 | 0 |
@@ -175,4 +177,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 8847. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 8948. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
