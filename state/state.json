@@ -9330,6 +9330,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "edu.sravni.ru": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
     "educagri27.fr": {
       "code": 200,
       "confidence": 50,
@@ -12726,6 +12731,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "fzu.edu.cn": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "g.nsu.ru": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
@@ -18092,8 +18102,8 @@
     },
     "ivanhoegirls.vic.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ivanovo.ac.ru": {
       "code": 200,
@@ -18222,8 +18232,8 @@
     },
     "jayadevacardiology.com": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 20,
+      "reason": "low-confidence:http-2xx-html+non-educational-content"
     },
     "jbc.edu": {
       "code": 200,
@@ -18442,8 +18452,8 @@
     },
     "jmcacademy.edu.au": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "jmi.nic.in": {
       "code": 0,
@@ -18717,8 +18727,8 @@
     },
     "juvenat.com": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "juw.edu.pk": {
       "code": 200,
@@ -18932,8 +18942,8 @@
     },
     "kangan.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "kangnam.ac.kr": {
       "code": 200,
@@ -19582,8 +19592,8 @@
     },
     "ki.se": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "kias.edu.my": {
       "code": 200,
@@ -20634,6 +20644,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:adrianavaldessoprano.com"
+    },
+    "kuzstu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "kvl.dk": {
       "code": 200,
@@ -21895,6 +21910,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "lunn.sci-nnov.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "lus.ac.bd": {
       "code": 403,
       "confidence": 5,
@@ -22240,6 +22260,11 @@
       "confidence": 10,
       "reason": "parking"
     },
+    "madi.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "madonnauniversity.edu.ng": {
       "code": 200,
       "confidence": 90,
@@ -22455,6 +22480,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "margu.mari.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "marianaacademy.com": {
       "code": 200,
       "confidence": 50,
@@ -22520,6 +22550,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "marstu.mari.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "maryam.edu.af": {
       "code": 200,
       "confidence": 90,
@@ -22574,6 +22609,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "masu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "matc.edu": {
       "code": 0,
@@ -22790,7 +22830,22 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "mechnik.spb.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "med.sgu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "medilam.hbi.ir": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "medin.nsc.ru": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -22970,6 +23025,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "mesi.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:edu.sravni.ru"
+    },
     "messiah.edu": {
       "code": 200,
       "confidence": 90,
@@ -23035,6 +23095,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "mgavm.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "mgimo.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
     "mgkvp.ac.in": {
       "code": 0,
       "confidence": 0,
@@ -23045,10 +23115,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "mgri-rggru.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "mgs.vic.edu.au": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mgsu.norna.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mgsubikaner.ac.in": {
       "code": 200,
@@ -23069,6 +23149,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "mgul.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "mh-hannover.de": {
       "code": 200,
@@ -23130,10 +23215,25 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "miet.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mif.hu": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "miigaik.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "miit.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+structure+non-educational-content"
     },
     "miit.unikl.edu.my": {
       "code": 200,
@@ -23210,6 +23310,21 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "miom.org": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
+    "mipt.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
+    "mirbis.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "mirea.ru": {
       "code": 403,
       "confidence": 5,
@@ -23219,6 +23334,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "misis.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "missouri.edu": {
       "code": 403,
@@ -23284,6 +23404,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "miu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "miuegypt.edu.eg": {
       "code": 403,
@@ -23359,6 +23484,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "mma.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "mmarau.ac.ke": {
       "code": 200,
@@ -23600,6 +23730,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "mosconsv.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "mosgu.ru": {
       "code": 200,
       "confidence": 90,
@@ -23660,6 +23795,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "mpei.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "mpgu.su": {
       "code": 200,
       "confidence": 40,
@@ -23700,6 +23840,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "mrsu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "mruni.eu": {
       "code": 200,
       "confidence": 90,
@@ -23716,6 +23861,11 @@
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
     "msa.eun.eg": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "msaab.ru": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
@@ -23739,6 +23889,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "msiu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "msj.edu": {
       "code": 200,
@@ -23810,6 +23965,21 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "msta.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mstu.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "mstuca.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "msu.by": {
       "code": 200,
       "confidence": 75,
@@ -23855,6 +24025,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "msuc.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "msudenver.edu": {
       "code": 200,
       "confidence": 90,
@@ -23864,6 +24039,16 @@
       "code": 200,
       "confidence": 70,
       "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
+    "msuee.ru": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
+    "msuie.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "msuiit.edu.ph": {
       "code": 403,
@@ -23950,6 +24135,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "mtuci.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
     "mu-luebeck.de": {
       "code": 0,
       "confidence": 0,
@@ -24020,10 +24210,20 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "muctr.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "muet.edu.pk": {
       "code": 400,
       "confidence": 5,
       "reason": "http-400"
+    },
+    "muh.ru": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
     },
     "mui.ac.ir": {
       "code": 200,
@@ -24295,6 +24495,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "n-nov.mednet.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "na.edu": {
       "code": 200,
       "confidence": 90,
@@ -24535,6 +24740,11 @@
       "confidence": 40,
       "reason": "moved-to:pontoto4d.com"
     },
+    "nayanova.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "naz.edu": {
       "code": 200,
       "confidence": 90,
@@ -24634,6 +24844,11 @@
       "code": 200,
       "confidence": 85,
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "ncstu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ncsu.edu": {
       "code": 202,
@@ -24815,6 +25030,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "neic.nsk.su": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "neijtc.edu.cn": {
       "code": 0,
       "confidence": 0,
@@ -24829,6 +25049,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "nes.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "nettts.com": {
       "code": 200,
@@ -24949,6 +25174,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "ngasu.sci-nnov.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ngs.nsw.edu.au": {
       "code": 200,
@@ -25084,6 +25314,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "nilc.spb.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "nileu.edu.eg": {
       "code": 0,
@@ -25510,6 +25745,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "nntu.sci-nnov.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "noah-495.cloudflareaccess.com": {
       "code": 200,
       "confidence": 20,
@@ -25615,6 +25855,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "nosu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "notredame.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -25680,6 +25925,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "novsu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "np.edu": {
       "code": 200,
       "confidence": 90,
@@ -25720,6 +25970,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "nsau.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "nscad.ns.ca": {
       "code": 0,
       "confidence": 0,
@@ -25740,10 +25995,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "nsmu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "nstu.edu.bd": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "nstu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "nsu.ac.jp": {
       "code": 200,
@@ -25764,6 +26029,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ReadTimeout"
+    },
+    "nsu.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "nsuk.edu.ng": {
       "code": 200,
@@ -26054,6 +26324,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "nwpi.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "nwpu.edu.cn": {
       "code": 412,
@@ -26400,6 +26675,31 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "omgau.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "omgtu.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "omgups.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "omsk-osma.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "omsk.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "omu.ac.jp": {
       "code": 200,
       "confidence": 85,
@@ -26489,6 +26789,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "orun.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "oryxschool.qa": {
       "code": 200,
@@ -26594,6 +26899,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "osu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "osustech.edu.ng": {
       "code": 0,
@@ -27245,6 +27555,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "pfu.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "pfw.edu": {
       "code": 200,
       "confidence": 90,
@@ -27269,6 +27584,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "pglu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "pgu.ac.ir": {
       "code": 200,
@@ -27379,6 +27699,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "phystech.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "piau.ac.ir": {
       "code": 0,
@@ -27625,6 +27950,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "pnzgu.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "po.edu.pl": {
       "code": 200,
       "confidence": 60,
@@ -27849,6 +28179,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "pomorsu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "pondiuni.org": {
       "code": 200,
@@ -28115,6 +28450,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "psfa.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "psgtech.edu": {
       "code": 0,
       "confidence": 0,
@@ -28124,6 +28464,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "psma.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "psmza.edu.my": {
       "code": 0,
@@ -28135,10 +28480,20 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "pspu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "pstu.ac.bd": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "pstu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "psu-online.edu.ph": {
       "code": 0,
@@ -28169,6 +28524,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "psu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "psuca.edu": {
       "code": 403,
@@ -28800,6 +29160,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "rah.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "rainbowcastle.org": {
       "code": 200,
       "confidence": 5,
@@ -28930,6 +29295,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "rea.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "rectorat-uh2c.ac.ma": {
       "code": 0,
       "confidence": 0,
@@ -29024,6 +29394,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:rh-koeln.de"
+    },
+    "rgata.yaroslavl.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "rgtu.net": {
       "code": 0,
@@ -29320,6 +29695,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "rshu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "rsi.edu": {
       "code": 200,
       "confidence": 85,
@@ -29330,15 +29710,40 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "rsmu.da.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "rsmu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "rstc.edu": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "rsu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "rsuh.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "rsuniversity.com": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
+    "rsute.ru": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+structure+substantial-content"
     },
     "rtu.ac.in": {
       "code": 403,
@@ -29451,6 +29856,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ruraluniversity-chitrakoot.org": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "rusoil.net": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
@@ -29775,6 +30185,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "sakhgu.sakhalin.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sakushin-u.ac.jp": {
       "code": 200,
       "confidence": 90,
@@ -29825,6 +30240,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "samiit.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "samk.fi": {
       "code": 200,
       "confidence": 90,
@@ -29834,6 +30254,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "samsmu.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
     },
     "sanbeda.edu.ph": {
       "code": 200,
@@ -29921,6 +30346,11 @@
       "reason": "moved-to:usjt.br"
     },
     "saosalvador.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "sapanet.ru": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
@@ -30750,6 +31180,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "sgap.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "sgau.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:vavilovsar.ru"
+    },
     "sggw.waw.pl": {
       "code": 0,
       "confidence": 0,
@@ -30759,6 +31199,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "sgma.info": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "sgma.kz": {
       "code": 403,
@@ -30804,6 +31249,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "sgu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sguc.ac.jp": {
       "code": 200,
@@ -31135,6 +31585,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "shu.smolensk.su": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "shuchiin.ac.jp": {
       "code": 200,
       "confidence": 80,
@@ -31194,6 +31649,11 @@
       "code": 200,
       "confidence": 70,
       "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
+    "sibsiu.kemerovo.su": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "sibt.nsw.edu.au": {
       "code": 200,
@@ -31640,6 +32100,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "smolny-un.spb.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sms.edu": {
       "code": 200,
       "confidence": 85,
@@ -31654,6 +32119,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "smtu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "smu.ac.kr": {
       "code": 0,
@@ -31994,6 +32464,41 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "spbau.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "spbgasu.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "spbgau.spb.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "spbguki.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "spbiir.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "spbstu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "spbtei.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "spcollege.edu": {
       "code": 200,
@@ -45490,6 +45995,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "vavilovsar.ru": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "vbspu.ac.in": {
       "code": 0,
       "confidence": 0,
@@ -52743,6 +53253,10 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "edu.sravni.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "educagri27.fr": "2010-02-11",
     "education.am": {
       "reg": "",
@@ -54541,6 +55055,10 @@
     "fzu.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "g.nsu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "gabriel-peri.mon-ent-occitanie.fr": {
       "reg": "",
@@ -59072,6 +59590,10 @@
     "kuva.fi": "1991-01-01",
     "kuvempu.ac.in": "2004-06-02",
     "kuwarangal.com": "2000-02-22",
+    "kuzstu.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "kvl.dk": {
       "reg": "",
       "ts": "2026-09-22"
@@ -59711,6 +60233,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "lunn.sci-nnov.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "lus.ac.bd": {
       "reg": "",
       "ts": "2026-09-20"
@@ -59867,6 +60393,10 @@
       "ts": "2026-09-15"
     },
     "madenatalelem.com": "2023-04-30",
+    "madi.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "madonnauniversity.edu.ng": "2010-09-03",
     "magadhuniversity.org": "2009-03-10",
     "mahendradatta.org": {
@@ -59979,6 +60509,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "margu.mari.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "marianaacademy.com": "2021-02-09",
     "marianna-u.ac.jp": {
       "reg": "",
@@ -60004,6 +60538,10 @@
     },
     "marquette.edu": "1996-06-12",
     "marshall.edu": "1993-08-24",
+    "marstu.mari.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "maryam.edu.af": {
       "reg": "",
       "ts": "2026-09-19"
@@ -60028,6 +60566,10 @@
       "ts": "2026-09-28"
     },
     "masters.edu": "1995-03-05",
+    "masu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "matc.edu": "1991-03-20",
     "matci.ac.ma": {
       "reg": "",
@@ -60127,9 +60669,21 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "mechnik.spb.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "med.sgu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "medilam.hbi.ir": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "medin.nsc.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "mediu.edu.my": {
       "reg": "",
@@ -60229,6 +60783,10 @@
       "ts": "2026-09-23"
     },
     "mesacc.edu": "2006-08-23",
+    "mesi.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "messiah.edu": "1992-02-15",
     "meteofrance.fr": "2004-04-22",
     "metro-hs.ac.jp": {
@@ -60263,14 +60821,30 @@
       "ts": "2026-09-17"
     },
     "mga.edu": "2012-12-10",
+    "mgavm.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "mgimo.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mgkvp.ac.in": "2007-09-24",
     "mgpu.gomel.by": {
       "reg": "",
       "ts": "2026-09-20"
     },
+    "mgri-rggru.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mgs.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "mgsu.norna.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "mgsubikaner.ac.in": "2010-03-17",
     "mgu.ac.in": "2010-05-26",
@@ -60281,6 +60855,10 @@
     "mgu.bg": {
       "reg": "",
       "ts": "2026-09-18"
+    },
+    "mgul.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "mh-hannover.de": {
       "reg": "",
@@ -60312,9 +60890,21 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "miet.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mif.hu": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "miigaik.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "miit.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "miit.unikl.edu.my": {
       "reg": "",
@@ -60349,6 +60939,15 @@
       "ts": "2026-09-22"
     },
     "minotstateu.edu": "1999-12-02",
+    "miom.org": "2018-09-20",
+    "mipt.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "mirbis.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mirea.ru": {
       "reg": "",
       "ts": "2026-09-15"
@@ -60356,6 +60955,10 @@
     "miryang.ac.kr": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "misis.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "missouri.edu": "1987-12-22",
     "mist.ac.bd": {
@@ -60400,6 +61003,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "miu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "miuegypt.edu.eg": {
       "reg": "",
       "ts": "2026-09-22"
@@ -60442,6 +61049,10 @@
       "ts": "2026-09-29"
     },
     "mlsu.ac.in": "2007-10-24",
+    "mma.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mmarau.ac.ke": "2013-02-25",
     "mmm.edu": "1995-06-21",
     "mmsu.edu.ph": {
@@ -60543,6 +61154,10 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "mosconsv.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mosgu.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -60572,6 +61187,10 @@
       "ts": "2026-09-24"
     },
     "mpc.edu": "1996-09-12",
+    "mpei.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mpgu.su": {
       "reg": "",
       "ts": "2026-09-30"
@@ -60592,6 +61211,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "mrsu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "mruni.eu": {
       "reg": "",
       "ts": "2026-09-27"
@@ -60601,6 +61224,10 @@
     "msa.eun.eg": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "msaab.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "msbcollege.edu": {
       "reg": "",
@@ -60617,6 +61244,10 @@
     "mshdiau.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "msiu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "msj.edu": "1992-09-29",
     "msjc.edu": "2002-01-09",
@@ -60640,6 +61271,18 @@
     "mssokolovska.cz": "2005-09-02",
     "msstate.edu": "1988-09-22",
     "mst.edu": "2007-04-11",
+    "msta.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "mstu.edu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "mstuca.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "msu.by": {
       "reg": "",
       "ts": "2026-09-15"
@@ -60667,10 +61310,22 @@
     },
     "msubaroda.ac.in": "2003-02-28",
     "msubillings.edu": "1995-12-18",
+    "msuc.edu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "msudenver.edu": "2012-06-08",
     "msue.edu.mn": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "msuee.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "msuie.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "msuiit.edu.ph": {
       "reg": "",
@@ -60709,6 +61364,10 @@
     "mtu.ie": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "mtuci.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "mu-luebeck.de": {
       "reg": "",
@@ -60757,9 +61416,17 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "muctr.edu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "muet.edu.pk": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "muh.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "mui.ac.ir": {
       "reg": "",
@@ -60931,6 +61598,10 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "n-nov.mednet.com": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "na.edu": "2013-10-22",
     "naa.edu.az": {
       "reg": "",
@@ -61069,6 +61740,7 @@
     },
     "navy.ac.kr": "1997-04-20",
     "nawrozuniversity.com": "2022-06-12",
+    "nayanova.edu": "1998-11-09",
     "naz.edu": "1992-05-05",
     "nazareth.vic.edu.au": {
       "reg": "",
@@ -61127,6 +61799,10 @@
     "ncl.ac.uk": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "ncstu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "ncsu.edu": "1987-04-16",
     "nctu.edu.eg": {
@@ -61217,6 +61893,10 @@
       "ts": "2026-09-17"
     },
     "nehu.ac.in": "2003-10-31",
+    "neic.nsk.su": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "neijtc.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
@@ -61225,6 +61905,10 @@
     "nenu.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "nes.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "nettts.com": "1997-12-26",
     "neu.edu": "1993-03-24",
@@ -61292,6 +61976,10 @@
       "ts": "2026-09-18"
     },
     "ng-university.org": "2012-02-07",
+    "ngasu.sci-nnov.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "ngs.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -61357,6 +62045,10 @@
     "nilai.edu.my": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "nilc.spb.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "nileu.edu.eg": {
       "reg": "",
@@ -61544,6 +62236,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "nntu.sci-nnov.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "noah-495.cloudflareaccess.com": {
       "reg": "",
       "ts": "2026-09-13"
@@ -61586,6 +62282,10 @@
       "ts": "2026-09-20"
     },
     "norwich.edu": "1992-07-09",
+    "nosu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "notredame.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -61617,6 +62317,10 @@
       "ts": "2026-09-30"
     },
     "novenauniversity.edu.ng": "2009-01-13",
+    "novsu.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "np.edu": "2015-04-29",
     "npc.edu": "2002-01-10",
     "npcts.edu": {
@@ -61637,6 +62341,10 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "nsau.edu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "nscad.ns.ca": "2000-10-04",
     "nscc.ca": "2002-03-12",
     "nscc.edu": "2002-04-08",
@@ -61644,9 +62352,17 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "nsmu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "nstu.edu.bd": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "nstu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "nsu.ac.jp": {
       "reg": "",
@@ -61657,6 +62373,10 @@
     "nsu.edu.np": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "nsu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "nsuk.edu.ng": "2010-09-17",
     "nsula.edu": "1992-07-09",
@@ -61820,6 +62540,10 @@
     "nwnu.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "nwpi.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "nwpu.edu.cn": {
       "reg": "",
@@ -62001,6 +62725,26 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "omgau.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "omgtu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "omgups.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "omsk-osma.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "omsk.edu": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "omu.ac.jp": {
       "reg": "",
       "ts": "2026-09-15"
@@ -62040,6 +62784,10 @@
     },
     "ort-france.fr": "2017-05-31",
     "oru.edu": "1994-12-14",
+    "orun.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "oryxschool.qa": {
       "reg": "",
       "ts": "2026-09-30"
@@ -62112,6 +62860,10 @@
     },
     "osu.cz": "1997-07-04",
     "osu.edu": "1989-10-06",
+    "osu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "osustech.edu.ng": {
       "reg": "",
       "ts": "2026-09-28"
@@ -62411,6 +63163,10 @@
       "reg": "",
       "ts": "2026-09-23"
     },
+    "pfu.edu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "pfw.edu": "2017-10-13",
     "pg.edu.pl": "2012-10-05",
     "pg.gda.pl": {
@@ -62422,6 +63178,10 @@
       "ts": "2026-09-14"
     },
     "pgimer.nic.in": "2004-12-23",
+    "pglu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "pgu.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -62495,6 +63255,7 @@
     "phoenix.edu": "1997-08-28",
     "phoenixcollege.edu": "2002-01-16",
     "phsc.edu": "2013-12-19",
+    "phystech.edu": "2000-02-09",
     "piau.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -62621,6 +63382,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "pnzgu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "po.edu.pl": {
       "reg": "",
       "ts": "2026-09-30"
@@ -62744,6 +63509,10 @@
     },
     "polyunwana.net": "2009-08-17",
     "pomona.edu": "1993-06-01",
+    "pomorsu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "pondiuni.org": "2000-05-30",
     "pont-rousseau.loire-atlantique.e-lyco.fr": {
       "reg": "",
@@ -62878,10 +63647,18 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "psfa.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "psgtech.edu": "1998-01-08",
     "psis.edu.my": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "psma.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "psmza.edu.my": {
       "reg": "",
@@ -62891,9 +63668,17 @@
       "reg": "",
       "ts": "2026-09-27"
     },
+    "pspu.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "pstu.ac.bd": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "pstu.ac.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "psu-online.edu.ph": {
       "reg": "",
@@ -62915,6 +63700,10 @@
     "psu.palawan.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "psu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "psuca.edu": "1996-03-12",
     "psut.edu.jo": {
@@ -63306,6 +64095,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "rah.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rainbowcastle.org": "2003-09-06",
     "rajacuanok1.com": "2026-08-31",
     "rakuno.ac.jp": {
@@ -63370,6 +64163,10 @@
       "ts": "2026-09-25"
     },
     "rdunijbpin.org": "2001-12-14",
+    "rea.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rectorat-uh2c.ac.ma": {
       "reg": "",
       "ts": "2026-09-28"
@@ -63421,6 +64218,10 @@
     "rfh-koeln.de": {
       "reg": "",
       "ts": "2026-09-23"
+    },
+    "rgata.yaroslavl.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "rgtu.net": "2025-08-06",
     "rgu.ac.in": "2008-11-27",
@@ -63530,10 +64331,34 @@
     "rrc.mb.ca": "2000-09-28",
     "rrcc.edu": "2002-02-21",
     "rs.gov.br": "1996-09-06",
+    "rshu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rsi.edu": "2020-07-17",
     "rsm.nl": "1997-03-26",
+    "rsmu.da.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "rsmu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rstc.edu": "2008-03-13",
+    "rsu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "rsuh.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rsuniversity.com": "2019-04-06",
+    "rsute.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "rtu.ac.in": "2006-08-14",
     "rtu.edu.ph": {
       "reg": "",
@@ -63608,6 +64433,7 @@
       "ts": "2026-09-20"
     },
     "ruraluniversity-chitrakoot.org": "2020-12-18",
+    "rusoil.net": "1998-11-24",
     "rutgers.edu": "1985-04-25",
     "rutlish.merton.sch.uk": "2003-03-04",
     "rvac.com.au": {
@@ -63741,6 +64567,10 @@
       "reg": "",
       "ts": "2026-09-27"
     },
+    "sakhgu.sakhalin.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sakushin-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -63766,8 +64596,16 @@
       "ts": "2026-09-27"
     },
     "samford.edu": "1993-12-05",
+    "samiit.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "samk.fi": "2002-09-23",
     "samskritabharati.in": "2005-02-16",
+    "samsmu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sanbeda.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
@@ -63807,6 +64645,10 @@
     },
     "saojudas.br": "1997-01-07",
     "saosalvador.edu.br": "2002-08-15",
+    "sapanet.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sapc.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -64239,6 +65081,14 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "sgap.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "sgau.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sggw.waw.pl": {
       "reg": "",
       "ts": "2026-09-30"
@@ -64247,6 +65097,7 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "sgma.info": "2006-03-13",
     "sgma.kz": {
       "reg": "",
       "ts": "2026-09-26"
@@ -64268,6 +65119,10 @@
       "ts": "2026-09-22"
     },
     "sgu.ernet.in": "2005-02-19",
+    "sgu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sguc.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -64472,6 +65327,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "shu.smolensk.su": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "shuchiin.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -64514,6 +65373,10 @@
     },
     "siba.fi": "1991-01-01",
     "sibiu.ro": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "sibsiu.kemerovo.su": {
       "reg": "",
       "ts": "2026-09-30"
     },
@@ -64727,11 +65590,19 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "smolny-un.spb.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "sms.edu": "2008-08-06",
     "smsu.edu": "2008-12-02",
     "smtafe.wa.edu.au": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "smtu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "smu.ac.kr": "2001-05-20",
     "smu.ca": "2001-02-05",
@@ -64886,6 +65757,34 @@
     "spatiss.com": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "spbau.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbgasu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbgau.spb.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbguki.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbiir.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbstu.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
+    "spbtei.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
     },
     "spcollege.edu": "2001-10-16",
     "spencercollege.edu.au": {
@@ -72506,6 +73405,10 @@
       "ts": "2026-09-15"
     },
     "vassar.edu": "1990-09-18",
+    "vavilovsar.ru": {
+      "reg": "",
+      "ts": "2026-09-30"
+    },
     "vbspu.ac.in": "2008-01-08",
     "vbu.co.in": "2026-01-28",
     "vcc.ca": "2001-02-21",
@@ -75594,6 +76497,7 @@
     "edouard-herriot.moncollege.valdemarne.fr": 2,
     "edu.asahikawa-nct.ac.jp": 1,
     "edu.edhec.com": 1,
+    "edu.sravni.ru": 0,
     "educagri27.fr": 0,
     "education.am": 0,
     "education.gouv.fr": 2,
@@ -76274,6 +77178,7 @@
     "fwu.ac.jp": 1,
     "fwu.edu.pk": 1,
     "fzu.edu.cn": 1,
+    "g.nsu.ru": 1,
     "gabriel-peri.mon-ent-occitanie.fr": 2,
     "gac.edu": 1,
     "gachon.ac.kr": 1,
@@ -77372,10 +78277,10 @@
     "jasu.edu.kg": 1,
     "javeriana.edu.co": 0,
     "jayabaya.ac.id": 0,
-    "jayadevacardiology.com": 0,
+    "jayadevacardiology.com": 1,
     "jbc.edu": 0,
     "jbu.edu": 1,
-    "jbvatelot.org": 1,
+    "jbvatelot.org": 2,
     "jci.edu.cn": 1,
     "jcsu.edu": 0,
     "jct.ac.il": 0,
@@ -77389,7 +78294,7 @@
     "jejunu.ac.kr": 1,
     "jeonju.ac.kr": 1,
     "jerashun.edu.jo": 1,
-    "jessamine.k12.ky.us.schools.bz": 1,
+    "jessamine.k12.ky.us.schools.bz": 2,
     "jessup.edu": 0,
     "jesus.ac.kr": 0,
     "jewell.edu": 0,
@@ -77604,8 +78509,8 @@
     "kennedy.edu.ar": 0,
     "kennesaw.edu": 0,
     "kent.edu": 1,
-    "kentalis.com": 1,
-    "kentalisinternational.org": 1,
+    "kentalis.com": 2,
+    "kentalisinternational.org": 2,
     "kenyon.edu": 0,
     "keralauniversity.ac.in": 0,
     "kerryetb.ie": 0,
@@ -77855,6 +78760,7 @@
     "kuva.fi": 1,
     "kuvempu.ac.in": 1,
     "kuwarangal.com": 1,
+    "kuzstu.ac.ru": 1,
     "kvl.dk": 1,
     "kvsector8rkpuram.org": 2,
     "kw.ac.kr": 1,
@@ -77899,7 +78805,7 @@
     "kyungwon.ac.kr": 1,
     "kyushu-id.ac.jp": 1,
     "kyushu-ns.ac.jp": 1,
-    "kyushu-u.ac.jp": 1,
+    "kyushu-u.ac.jp": 2,
     "kyutech.ac.jp": 1,
     "kzoo.edu": 0,
     "la-cerisaie.moncollege.valdemarne.fr": 1,
@@ -78107,6 +79013,7 @@
     "lums.ac.ir": 0,
     "lums.edu.pk": 0,
     "lumsa.it": 0,
+    "lunn.sci-nnov.ru": 1,
     "lus.ac.bd": 1,
     "luskin.ucla.edu": 0,
     "lut.fi": 0,
@@ -78176,6 +79083,7 @@
     "mackenzie.br": 0,
     "mackillop.vic.edu.au": 0,
     "madenatalelem.com": 1,
+    "madi.ru": 0,
     "madonnauniversity.edu.ng": 0,
     "magadhuniversity.org": 1,
     "mahendradatta.org": 1,
@@ -78219,6 +79127,7 @@
     "maranatha.edu": 0,
     "marash.qld.edu.au": 0,
     "marcusoldham.vic.edu.au": 0,
+    "margu.mari.ru": 1,
     "marianaacademy.com": 0,
     "marianna-u.ac.jp": 1,
     "marie-curie-pignan.mon-ent-occitanie.fr": 1,
@@ -78232,6 +79141,7 @@
     "marlboro.emerson.edu": 0,
     "marquette.edu": 0,
     "marshall.edu": 0,
+    "marstu.mari.ru": 1,
     "maryam.edu.af": 0,
     "marymount.edu": 0,
     "maryville.edu": 0,
@@ -78243,6 +79153,7 @@
     "massbay.edu": 0,
     "massey.ac.nz": 0,
     "masters.edu": 0,
+    "masu.ru": 1,
     "matc.edu": 1,
     "matci.ac.ma": 1,
     "matnu.edu.lb": 1,
@@ -78286,7 +79197,10 @@
     "mdu.edu.az": 0,
     "mdurohtak.com": 0,
     "mdw.ac.at": 0,
+    "mechnik.spb.ru": 1,
+    "med.sgu.ru": 1,
     "medilam.hbi.ir": 1,
+    "medin.nsc.ru": 1,
     "mediu.edu.my": 0,
     "medsab.ac.ir": 0,
     "meduni-graz.at": 1,
@@ -78322,6 +79236,7 @@
     "mermoz.ent.auvergnerhonealpes.fr": 0,
     "merz-akademie.de": 0,
     "mesacc.edu": 1,
+    "mesi.ru": 1,
     "messiah.edu": 0,
     "meteofrance.fr": 0,
     "metro-hs.ac.jp": 1,
@@ -78335,13 +79250,18 @@
     "mfh-iserlohn.de": 1,
     "mfs.com.au": 0,
     "mga.edu": 0,
+    "mgavm.ru": 0,
+    "mgimo.ru": 1,
     "mgkvp.ac.in": 1,
     "mgpu.gomel.by": 1,
+    "mgri-rggru.ru": 1,
     "mgs.vic.edu.au": 0,
+    "mgsu.norna.ru": 1,
     "mgsubikaner.ac.in": 0,
     "mgu.ac.in": 1,
     "mgu.ac.jp": 1,
     "mgu.bg": 0,
+    "mgul.ac.ru": 1,
     "mh-hannover.de": 1,
     "mh-trossingen.de": 1,
     "mhh.de": 0,
@@ -78354,7 +79274,10 @@
     "middlesexcc.edu": 1,
     "mie-chukyo-u.ac.jp": 1,
     "mie-u.ac.jp": 1,
+    "miet.ru": 0,
     "mif.hu": 1,
+    "miigaik.ru": 1,
+    "miit.ru": 1,
     "miit.unikl.edu.my": 0,
     "mil.am": 2,
     "mil.lv": 1,
@@ -78370,8 +79293,12 @@
     "mines.u-nancy.fr": 1,
     "minia.edu.eg": 1,
     "minotstateu.edu": 0,
+    "miom.org": 1,
+    "mipt.ru": 1,
+    "mirbis.ru": 0,
     "mirea.ru": 2,
     "miryang.ac.kr": 1,
+    "misis.ru": 0,
     "missouri.edu": 1,
     "mist.ac.bd": 1,
     "mit.edu": 0,
@@ -78385,6 +79312,7 @@
     "miu.ac.ir": 0,
     "miu.by": 1,
     "miu.edu.pk": 0,
+    "miu.ru": 1,
     "miuegypt.edu.eg": 1,
     "miyakyo-u.ac.jp": 1,
     "miyasankei-u.ac.jp": 1,
@@ -78400,6 +79328,7 @@
     "mkv2.mah.nic.in": 1,
     "mlqu.edu.ph": 1,
     "mlsu.ac.in": 1,
+    "mma.ru": 1,
     "mmarau.ac.ke": 0,
     "mmm.edu": 1,
     "mmsu.edu.ph": 1,
@@ -78448,6 +79377,7 @@
     "moreheadstate.edu": 2,
     "morgan.edu": 0,
     "morioka-u.ac.jp": 0,
+    "mosconsv.ru": 0,
     "mosgu.ru": 0,
     "most.gov.mm": 1,
     "motolinia.com.mx": 0,
@@ -78460,6 +79390,7 @@
     "mozarteum.br": 1,
     "mpbou.org": 1,
     "mpc.edu": 0,
+    "mpei.ac.ru": 1,
     "mpgu.su": 1,
     "mpkv.mah.nic.in": 1,
     "mppcvv.org": 2,
@@ -78468,14 +79399,17 @@
     "mpu.ac.jp": 1,
     "mq.edu.au": 0,
     "mrs.umn.edu": 0,
+    "mrsu.ru": 0,
     "mruni.eu": 0,
     "ms356covo.org": 2,
     "ms447.org": 0,
     "msa.eun.eg": 1,
+    "msaab.ru": 1,
     "msbcollege.edu": 2,
     "mscfs.edu": 1,
     "mseuf.edu.ph": 0,
     "mshdiau.ac.ir": 1,
+    "msiu.ru": 1,
     "msj.edu": 0,
     "msjc.edu": 0,
     "mslu.by": 1,
@@ -78490,6 +79424,9 @@
     "mssokolovska.cz": 2,
     "msstate.edu": 0,
     "mst.edu": 0,
+    "msta.ac.ru": 1,
+    "mstu.edu.ru": 1,
+    "mstuca.ru": 1,
     "msu.by": 0,
     "msu.edu": 0,
     "msu.edu.my": 0,
@@ -78499,8 +79436,11 @@
     "msuac.edu.mn": 1,
     "msubaroda.ac.in": 0,
     "msubillings.edu": 0,
+    "msuc.edu.ru": 1,
     "msudenver.edu": 0,
     "msue.edu.mn": 0,
+    "msuee.ru": 0,
+    "msuie.ru": 1,
     "msuiit.edu.ph": 1,
     "msumain.edu.ph": 0,
     "msun.edu": 0,
@@ -78518,6 +79458,7 @@
     "mtu.edu": 0,
     "mtu.edu.et": 1,
     "mtu.ie": 0,
+    "mtuci.ru": 1,
     "mu-luebeck.de": 1,
     "mu-pleven.bg": 0,
     "mu-plovdiv.bg": 0,
@@ -78532,7 +79473,9 @@
     "mubas.ac.mw": 0,
     "muc.edu": 1,
     "muc.edu.iq": 0,
+    "muctr.edu.ru": 1,
     "muet.edu.pk": 1,
+    "muh.ru": 0,
     "mui.ac.ir": 0,
     "muirden.sa.edu.au": 0,
     "muk.ac.ir": 0,
@@ -78587,6 +79530,7 @@
     "myu.ac.jp": 1,
     "mzuni.ac.mw": 1,
     "n-fukushi.ac.jp": 1,
+    "n-nov.mednet.com": 1,
     "na.edu": 0,
     "naa.edu.az": 1,
     "naabi.org": 1,
@@ -78635,6 +79579,7 @@
     "navitasenglish.edu.au": 0,
     "navy.ac.kr": 1,
     "nawrozuniversity.com": 1,
+    "nayanova.edu": 0,
     "naz.edu": 0,
     "nazareth.vic.edu.au": 2,
     "nbchs.net": 1,
@@ -78655,6 +79600,7 @@
     "ncipd.org": 2,
     "ncirl.ie": 0,
     "ncl.ac.uk": 0,
+    "ncstu.ru": 1,
     "ncsu.edu": 1,
     "nctu.edu.eg": 2,
     "ncu.edu.cn": 1,
@@ -78691,9 +79637,11 @@
     "nefu.edu.cn": 1,
     "negs.nsw.edu.au": 0,
     "nehu.ac.in": 0,
+    "neic.nsk.su": 1,
     "neijtc.edu.cn": 1,
     "neit.edu": 0,
     "nenu.edu.cn": 1,
+    "nes.ru": 0,
     "nettts.com": 0,
     "neu.edu": 1,
     "neu.edu.cn": 0,
@@ -78718,6 +79666,7 @@
     "newworld.ac": 1,
     "nftc.edu": 1,
     "ng-university.org": 0,
+    "ngasu.sci-nnov.ru": 1,
     "ngs.nsw.edu.au": 0,
     "ngu.ac.in": 0,
     "ngu.ac.jp": 1,
@@ -78745,6 +79694,7 @@
     "niigata-u.ac.jp": 1,
     "niigataum.ac.jp": 0,
     "nilai.edu.my": 0,
+    "nilc.spb.ru": 1,
     "nileu.edu.eg": 1,
     "nimhans.kar.nic.in": 1,
     "nimm.se": 0,
@@ -78830,6 +79780,7 @@
     "nmu.ac.in": 0,
     "nmu.edu": 0,
     "nnc.edu": 1,
+    "nntu.sci-nnov.ru": 1,
     "noah-495.cloudflareaccess.com": 2,
     "noah.edu.gr": 2,
     "noblenetwork.org": 2,
@@ -78851,6 +79802,7 @@
     "northwestern.edu": 0,
     "norton.edu.kh": 1,
     "norwich.edu": 0,
+    "nosu.ru": 0,
     "notredame.ac.jp": 1,
     "notredamecollege.edu": 1,
     "notredameduvieuxcours.org": 0,
@@ -78864,6 +79816,7 @@
     "novainstitute.net.au": 1,
     "novasbe.unl.pt": 0,
     "novenauniversity.edu.ng": 1,
+    "novsu.ac.ru": 1,
     "np.edu": 0,
     "npc.edu": 0,
     "npcts.edu": 1,
@@ -78872,15 +79825,19 @@
     "ns2.uni-ak.ac.at": 1,
     "nsa.bg": 0,
     "nsac.ns.ca": 1,
+    "nsau.edu.ru": 1,
     "nscad.ns.ca": 1,
     "nscc.ca": 0,
     "nscc.edu": 0,
     "nsmc.edu.cn": 1,
+    "nsmu.ru": 0,
     "nstu.edu.bd": 0,
+    "nstu.ru": 0,
     "nsu.ac.jp": 0,
     "nsu.ac.kr": 1,
     "nsu.edu": 0,
     "nsu.edu.np": 1,
+    "nsu.ru": 1,
     "nsuk.edu.ng": 0,
     "nsula.edu": 0,
     "nsuok.edu": 0,
@@ -78939,6 +79896,7 @@
     "nwic.edu": 0,
     "nwmissouri.edu": 0,
     "nwnu.edu.cn": 1,
+    "nwpi.ru": 1,
     "nwpu.edu.cn": 1,
     "nwscc.edu": 2,
     "nwu.edu.cn": 1,
@@ -79008,6 +79966,11 @@
     "olshalice.catholic.edu.au": 0,
     "olympia.edu.my": 1,
     "omancollege.edu.om": 1,
+    "omgau.ru": 1,
+    "omgtu.ru": 1,
+    "omgups.ru": 1,
+    "omsk-osma.ru": 0,
+    "omsk.edu": 1,
     "omu.ac.jp": 0,
     "omu.edu.ly": 0,
     "ontariotechu.ca": 0,
@@ -79026,6 +79989,7 @@
     "orkhon.edu.mn": 0,
     "ort-france.fr": 0,
     "oru.edu": 0,
+    "orun.ru": 1,
     "oryxschool.qa": 0,
     "osaka-cu.ac.jp": 1,
     "osaka-dent.ac.jp": 1,
@@ -79047,6 +80011,7 @@
     "osu.ac.jp": 1,
     "osu.cz": 0,
     "osu.edu": 2,
+    "osu.ru": 0,
     "osustech.edu.ng": 1,
     "oswego.edu": 0,
     "otago.ac.nz": 1,
@@ -79177,11 +80142,13 @@
     "petra.ac.id": 0,
     "petrsu.ru": 0,
     "pfh-goettingen.de": 1,
+    "pfu.edu.ru": 1,
     "pfw.edu": 0,
     "pg.edu.pl": 0,
     "pg.gda.pl": 1,
     "pgauguin.loire-atlantique.e-lyco.fr": 0,
     "pgimer.nic.in": 1,
+    "pglu.ru": 1,
     "pgu.ac.ir": 0,
     "ph-burgenland.at": 0,
     "ph-erfurt.de": 1,
@@ -79204,6 +80171,7 @@
     "phoenix.edu": 0,
     "phoenixcollege.edu": 0,
     "phsc.edu": 0,
+    "phystech.edu": 1,
     "piau.ac.ir": 1,
     "pib.edu": 0,
     "pickenstech.org": 0,
@@ -79253,6 +80221,7 @@
     "pnumanila.com.ph": 1,
     "pnut.ac.ir": 1,
     "pnw.edu": 0,
+    "pnzgu.ru": 1,
     "po.edu.pl": 0,
     "po.opole.pl": 1,
     "pointloma.edu": 0,
@@ -79298,6 +80267,7 @@
     "polyu.edu.hk": 0,
     "polyunwana.net": 1,
     "pomona.edu": 0,
+    "pomorsu.ru": 1,
     "pondiuni.org": 0,
     "pont-rousseau.loire-atlantique.e-lyco.fr": 0,
     "pontoto4d.com": 1,
@@ -79351,17 +80321,22 @@
     "psa.edu.my": 1,
     "psas.edu.my": 1,
     "psc.edu.au": 0,
+    "psfa.ru": 1,
     "psgtech.edu": 1,
     "psis.edu.my": 1,
+    "psma.ru": 1,
     "psmza.edu.my": 1,
     "psp.edu.my": 1,
+    "pspu.ac.ru": 1,
     "pstu.ac.bd": 0,
+    "pstu.ac.ru": 1,
     "psu-online.edu.ph": 1,
     "psu.by": 0,
     "psu.edu": 0,
     "psu.edu.ph": 0,
     "psu.kz": 0,
     "psu.palawan.edu.ph": 0,
+    "psu.ru": 1,
     "psuca.edu": 1,
     "psut.edu.jo": 0,
     "psy.lv": 1,
@@ -79488,6 +80463,7 @@
     "radford.edu": 0,
     "raffles-university.edu.my": 0,
     "raghebisf.ac.ir": 0,
+    "rah.ru": 1,
     "rainbowcastle.org": 1,
     "rajacuanok1.com": 1,
     "rakuno.ac.jp": 1,
@@ -79514,6 +80490,7 @@
     "rcsi.com": 0,
     "rcsi.ie": 1,
     "rdunijbpin.org": 0,
+    "rea.ru": 0,
     "rectorat-uh2c.ac.ma": 1,
     "redcross.ac.jp": 0,
     "redeemer.ca": 0,
@@ -79533,6 +80510,7 @@
     "reitaku-u.ac.jp": 1,
     "resita.extensii.ubbcluj.ro": 0,
     "rfh-koeln.de": 1,
+    "rgata.yaroslavl.ru": 1,
     "rgtu.net": 1,
     "rgu.ac.in": 0,
     "rh-koeln.de": 0,
@@ -79592,10 +80570,16 @@
     "rrc.mb.ca": 1,
     "rrcc.edu": 0,
     "rs.gov.br": 0,
+    "rshu.ru": 0,
     "rsi.edu": 0,
     "rsm.nl": 0,
+    "rsmu.da.ru": 1,
+    "rsmu.ru": 0,
     "rstc.edu": 2,
+    "rsu.ru": 1,
+    "rsuh.ru": 0,
     "rsuniversity.com": 0,
+    "rsute.ru": 0,
     "rtu.ac.in": 1,
     "rtu.edu.ph": 0,
     "rtu.lv": 1,
@@ -79619,6 +80603,7 @@
     "run.edu.ng": 1,
     "rupp.edu.kh": 0,
     "ruraluniversity-chitrakoot.org": 1,
+    "rusoil.net": 1,
     "rutgers.edu": 0,
     "rutlish.merton.sch.uk": 0,
     "rvac.com.au": 0,
@@ -79683,6 +80668,7 @@
     "saitama-med.ac.jp": 0,
     "saitama-u.ac.jp": 1,
     "saito.edu.my": 0,
+    "sakhgu.sakhalin.ru": 1,
     "sakushin-u.ac.jp": 0,
     "salam.edu.af": 0,
     "salemuniversity.edu.ng": 0,
@@ -79693,8 +80679,10 @@
     "sambalpuruniversitypgc.in": 0,
     "samchok.ac.kr": 1,
     "samford.edu": 0,
+    "samiit.ru": 1,
     "samk.fi": 0,
     "samskritabharati.in": 0,
+    "samsmu.ru": 1,
     "sanbeda.edu.ph": 0,
     "sandau.edu.cn": 1,
     "sandiego.edu": 0,
@@ -79713,6 +80701,7 @@
     "sanxiau.edu.cn": 1,
     "saojudas.br": 1,
     "saosalvador.edu.br": 1,
+    "sapanet.ru": 1,
     "sapc.edu": 1,
     "sapmed.ac.jp": 1,
     "sapporo-u.ac.jp": 0,
@@ -79878,8 +80867,11 @@
     "sfu.ca": 0,
     "sg-u.ac.jp": 1,
     "sg.inter.edu": 0,
+    "sgap.ru": 1,
+    "sgau.ru": 1,
     "sggw.waw.pl": 1,
     "sgh.waw.pl": 0,
+    "sgma.info": 0,
     "sgma.kz": 1,
     "sgpgi.ac.in": 1,
     "sgscc.edu.au": 0,
@@ -79889,6 +80881,7 @@
     "sgu.edu": 0,
     "sgu.edu.cn": 0,
     "sgu.ernet.in": 1,
+    "sgu.ru": 0,
     "sguc.ac.jp": 0,
     "sh-sipopolytechnic.com": 1,
     "shahed.ac.ir": 0,
@@ -79955,6 +80948,7 @@
     "shu.bg": 0,
     "shu.edu": 1,
     "shu.edu.cn": 1,
+    "shu.smolensk.su": 1,
     "shuchiin.ac.jp": 0,
     "shudo-u.ac.jp": 1,
     "shufe.edu.cn": 1,
@@ -79967,6 +80961,7 @@
     "sia.wa.edu.au": 1,
     "siba.fi": 1,
     "sibiu.ro": 0,
+    "sibsiu.kemerovo.su": 1,
     "sibt.nsw.edu.au": 0,
     "sicau.edu.cn": 1,
     "sicnu.edu.cn": 1,
@@ -80056,9 +81051,11 @@
     "smkn1kotabekasi.sch.id": 0,
     "smkn4sby.sch.id": 0,
     "smmu.edu.cn": 1,
+    "smolny-un.spb.ru": 1,
     "sms.edu": 0,
     "smsu.edu": 0,
     "smtafe.wa.edu.au": 1,
+    "smtu.ru": 0,
     "smu.ac.kr": 1,
     "smu.ca": 0,
     "smu.edu": 0,
@@ -80127,6 +81124,13 @@
     "spa.ac.in": 0,
     "space.bas.bg": 1,
     "spatiss.com": 2,
+    "spbau.ru": 0,
+    "spbgasu.ru": 0,
+    "spbgau.spb.ru": 1,
+    "spbguki.ru": 1,
+    "spbiir.ru": 1,
+    "spbstu.ru": 0,
+    "spbtei.ru": 1,
     "spcollege.edu": 0,
     "spencercollege.edu.au": 0,
     "spiritus.ch": 0,
@@ -82826,6 +83830,7 @@
     "vanguard.edu": 0,
     "varb.mil.by": 2,
     "vassar.edu": 0,
+    "vavilovsar.ru": 0,
     "vbspu.ac.in": 1,
     "vbu.co.in": 1,
     "vcc.ca": 0,
@@ -83325,13 +84330,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-30T18:54:26+00:00",
+  "last_run": "2026-09-30T22:26:15+00:00",
   "last_verify": {
     "added_active": 29,
-    "at": "2026-09-30 18:24 UTC",
-    "pending_left": 5540,
+    "at": "2026-09-30 22:26 UTC",
+    "pending_left": 5498,
     "reverified": 15,
-    "validated": 119
+    "validated": 117
   },
   "moved": {
     "admu.edu.ph": "ateneo.edu",
@@ -83565,6 +84570,7 @@
     "marlboro.edu": "marlboro.emerson.edu",
     "mbc.edu": "montanabiblecollege.edu",
     "meduniversity-plovdiv.bg": "mu-plovdiv.bg",
+    "mesi.ru": "edu.sravni.ru",
     "mh-hannover.de": "mhh.de",
     "mines-ales.fr": "imt-mines-ales.fr",
     "mitht.ru": "mirea.ru",
@@ -83633,6 +84639,7 @@
     "semgu.kz": "shakarim.university",
     "senecacollege.ca": "senecapolytechnic.ca",
     "seu.ac.bd": "seu.edu.bd",
+    "sgau.ru": "vavilovsar.ru",
     "shannoncollege.com": "universityofgalway.ie",
     "slc.edu": "sarahlawrence.edu",
     "soauniversity.ac.in": "soa.ac.in",
