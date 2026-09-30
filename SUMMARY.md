@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-09-30 13:25 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-09-30 18:24 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **9481** across **178** countries
-- Active: **4864** (51%) · Inaccessible: **4617** (49%)
-- Pending queue: **5641** unvalidated candidates
-- Known registration age: **4145** domains (median 26 yrs)
+- Domains tracked: **9585** across **178** countries
+- Active: **4894** (51%) · Inaccessible: **4691** (49%)
+- Pending queue: **5540** unvalidated candidates
+- Known registration age: **4150** domains (median 26 yrs)
 
 ## Last runs
 
-- Verify (2026-09-30 12:50 UTC): validated 121, +58 Active, re-verified 15, pending left 5581
+- Verify (2026-09-30 18:24 UTC): validated 119, +29 Active, re-verified 15, pending left 5540
 - Curate (2026-09-30 13:25 UTC): 10698 raw candidates, 60 queued, 28 re-cited
 
 ## Countries (top 15 by size)
@@ -19,7 +19,7 @@ _Generated 2026-09-30 13:25 UTC. Full per-country table: [data/countries/INDEX.m
 | country | total | Active | Inaccessible |
 |---|---|---|---|
 | US | 1729 | 1300 | 429 |
-| FR | 619 | 310 | 309 |
+| FR | 619 | 311 | 308 |
 | JP | 577 | 125 | 452 |
 | IN | 458 | 208 | 250 |
 | CN | 415 | 52 | 363 |
@@ -38,25 +38,25 @@ _Generated 2026-09-30 13:25 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 4866 |
-| `fetch-error:ConnectionError` | 2114 |
-| `fetch-error:ConnectTimeout` | 565 |
-| `http-403` | 477 |
-| `fetch-error:SSLError` | 445 |
-| `low-confidence:http-2xx-html` | 282 |
+| `http-2xx-html` | 4896 |
+| `fetch-error:ConnectionError` | 2148 |
+| `fetch-error:ConnectTimeout` | 585 |
+| `http-403` | 478 |
+| `fetch-error:SSLError` | 456 |
+| `low-confidence:http-2xx-html` | 287 |
 | `empty-body` | 91 |
 | `fetch-error:ReadTimeout` | 51 |
 | `http-404` | 32 |
 | `http-500` | 20 |
 | `parking-linkfarm` | 15 |
-| `http-503` | 14 |
+| `http-503` | 13 |
 
 ## Freshness
 
-- Verified in last 30 days: **9481** (100%)
+- Verified in last 30 days: **9585** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **437**
+- Moved pointers (old domain → new): **441**
 
 ## Alerts
 

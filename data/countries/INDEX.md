@@ -62,7 +62,7 @@
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 619 | 310 | 309 |
+| FR | 619 | 311 | 308 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
 | GD | 1 | 1 | 0 |
@@ -155,7 +155,7 @@
 | RE | 1 | 1 | 0 |
 | RO | 69 | 38 | 31 |
 | RS | 1 | 1 | 0 |
-| RU | 27 | 11 | 16 |
+| RU | 131 | 40 | 91 |
 | RW | 1 | 1 | 0 |
 | SA | 1 | 1 | 0 |
 | SD | 6 | 1 | 5 |
@@ -181,4 +181,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9481. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9585. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
