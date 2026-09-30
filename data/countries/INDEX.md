@@ -29,7 +29,7 @@
 | BS | 1 | 0 | 1 |
 | BT | 1 | 0 | 1 |
 | BW | 10 | 3 | 7 |
-| BY | 48 | 15 | 33 |
+| BY | 48 | 16 | 32 |
 | BZ | 5 | 2 | 3 |
 | CA | 174 | 95 | 79 |
 | CD | 16 | 5 | 11 |
@@ -144,9 +144,9 @@
 | PE | 69 | 37 | 32 |
 | PF | 1 | 0 | 1 |
 | PG | 5 | 3 | 2 |
-| PH | 122 | 55 | 67 |
+| PH | 131 | 60 | 71 |
 | PK | 137 | 82 | 55 |
-| PL | 7 | 5 | 2 |
+| PL | 108 | 50 | 58 |
 | PS | 16 | 8 | 8 |
 | PT | 11 | 7 | 4 |
 | PY | 14 | 9 | 5 |
@@ -179,4 +179,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9154. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9264. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
