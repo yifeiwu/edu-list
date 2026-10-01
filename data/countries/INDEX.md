@@ -57,7 +57,7 @@
 | EE | 12 | 9 | 3 |
 | EG | 54 | 20 | 34 |
 | ER | 1 | 0 | 1 |
-| ES | 7 | 4 | 3 |
+| ES | 96 | 49 | 47 |
 | ET | 31 | 13 | 18 |
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
@@ -107,6 +107,7 @@
 | LB | 25 | 15 | 10 |
 | LC | 1 | 1 | 0 |
 | LI | 2 | 2 | 0 |
+| LK | 5 | 3 | 2 |
 | LR | 1 | 1 | 0 |
 | LS | 1 | 1 | 0 |
 | LT | 20 | 9 | 11 |
@@ -170,6 +171,7 @@
 | SM | 1 | 1 | 0 |
 | SN | 12 | 6 | 6 |
 | SO | 18 | 9 | 9 |
+| SS | 2 | 0 | 2 |
 | SV | 25 | 15 | 10 |
 | SY | 1 | 1 | 0 |
 | TD | 2 | 1 | 1 |
@@ -179,7 +181,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1729 | 1300 | 429 |
+| US | 1732 | 1301 | 431 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -188,7 +190,7 @@
 | VN | 4 | 3 | 1 |
 | WS | 1 | 0 | 1 |
 | XK | 5 | 2 | 3 |
-| ZA | 26 | 11 | 15 |
+| ZA | 34 | 16 | 18 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9996. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 10103. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

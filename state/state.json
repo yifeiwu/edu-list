@@ -265,6 +265,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "accimt.ac.lk": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "accit.nsw.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -889,6 +894,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "aisct.org": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "aisectuniversity.ac.in": {
       "code": 0,
@@ -3230,6 +3240,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "barcelonagse.eu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "bard.edu": {
       "code": 200,
       "confidence": 60,
@@ -3354,6 +3369,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content"
+    },
+    "bbu.ac.lk": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "bbu.edu.az": {
       "code": 200,
@@ -3855,6 +3875,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content+non-educational-content"
     },
+    "bircham.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "birjand.ac.ir": {
       "code": 200,
       "confidence": 90,
@@ -4204,6 +4229,11 @@
       "code": 404,
       "confidence": 5,
       "reason": "http-404"
+    },
+    "bpu.ac.lk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "bpums.ac.ir": {
       "code": 0,
@@ -5640,6 +5670,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "ceu.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ceu.hu": {
       "code": 0,
       "confidence": 0,
@@ -6469,6 +6504,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "cmb.ac.lk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "cmc.edu": {
       "code": 200,
@@ -8475,6 +8515,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "deusto.es": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "devinci.fr": {
       "code": 200,
       "confidence": 90,
@@ -9660,6 +9705,16 @@
       "confidence": 5,
       "reason": "moved-to:odisee.be"
     },
+    "ehu.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ehu.eus": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "eia.edu.co": {
       "code": 200,
       "confidence": 100,
@@ -10750,6 +10805,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "esic.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "esiea.fr": {
       "code": 200,
       "confidence": 100,
@@ -10799,6 +10859,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "esn.ac.lk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "esp.ce.gov.br": {
       "code": 403,
@@ -11537,8 +11602,8 @@
     },
     "fcac.qld.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "fcat.com.br": {
       "code": 0,
@@ -12097,8 +12162,8 @@
     },
     "fh-wien.ac.at": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "fh-wiesbaden.de": {
       "code": 0,
@@ -12232,8 +12297,8 @@
     },
     "fielding.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "filadelfia.com.br": {
       "code": 200,
@@ -12306,9 +12371,9 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "fivebranches.edu": {
-      "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "fjau.edu.cn": {
       "code": 0,
@@ -12337,8 +12402,8 @@
     },
     "flightone.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "flinders.edu.au": {
       "code": 200,
@@ -12567,8 +12632,8 @@
     },
     "fresnostate.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "fri.icfre.gov.in": {
       "code": 200,
@@ -12702,8 +12767,8 @@
     },
     "fudan.edu.cn": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "fudutsinma.edu.ng": {
       "code": 200,
@@ -13365,6 +13430,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+structure+substantial-content"
     },
+    "global-business-school.org": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "global.dyrsxm.cc": {
       "code": 200,
       "confidence": 50,
@@ -13749,6 +13819,11 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "gsyc.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "gti.spb.ru": {
       "code": 0,
@@ -16215,6 +16290,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ie.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "iecc.edu": {
       "code": 200,
       "confidence": 90,
@@ -18335,6 +18415,11 @@
       "confidence": 40,
       "reason": "moved-to:southbend.iu.edu"
     },
+    "iuse.edu.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "iusikkim.edu.in": {
       "code": 200,
       "confidence": 90,
@@ -18944,6 +19029,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "juba.edu.sd": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "juc.edu": {
       "code": 200,
@@ -21459,6 +21549,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "lasalleuniversities.net": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "lasc.edu": {
       "code": 403,
@@ -24270,6 +24365,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
+    "msa.ac.za": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "msa.eun.eg": {
       "code": 0,
       "confidence": 0,
@@ -24675,10 +24775,20 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "mundragon.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "muni.cz": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "muni.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "muq.ac.ir": {
       "code": 0,
@@ -24799,6 +24909,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "mut.ac.za": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mut.edu.lb": {
       "code": 0,
@@ -30780,6 +30895,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "salleurl.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "salonsuccessacademy.com": {
       "code": 202,
       "confidence": 5,
@@ -31124,6 +31244,11 @@
       "code": 200,
       "confidence": 5,
       "reason": "empty-body"
+    },
+    "schillermadrid.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "schillerparis.com": {
       "code": 200,
@@ -32745,6 +32870,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "smu.ac.za": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "smu.ca": {
       "code": 200,
       "confidence": 100,
@@ -33224,6 +33354,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "spu.ac.za": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "spu.ba": {
       "code": 200,
@@ -36700,6 +36835,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ua.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ua.pt": {
       "code": 403,
       "confidence": 5,
@@ -36749,6 +36889,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "uab.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uab.cat"
     },
     "uab.ro": {
       "code": 200,
@@ -36950,6 +37095,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uah.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "uahb.sn": {
       "code": 200,
       "confidence": 90,
@@ -37014,6 +37164,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ualm.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ualr.edu": {
       "code": 200,
@@ -37345,6 +37500,16 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "uax.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uax.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uax.com"
+    },
     "uazuay.edu.ec": {
       "code": 200,
       "confidence": 100,
@@ -37384,6 +37549,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ub.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "ub.ro": {
       "code": 200,
@@ -37505,6 +37675,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ubu.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ubuea.cm": {
       "code": 200,
       "confidence": 90,
@@ -37540,6 +37715,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "uc3m.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
     "uca.ac.cr": {
       "code": 200,
       "confidence": 80,
@@ -37564,6 +37744,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uca.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ucaazo.edu.ec": {
       "code": 0,
@@ -37609,6 +37794,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ucam.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "ucan.co.ao": {
       "code": 403,
@@ -37669,6 +37859,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "ucavila.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ucb.br": {
       "code": 200,
@@ -37890,6 +38085,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "uchceu.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "uchicago.edu": {
       "code": 200,
       "confidence": 90,
@@ -37964,6 +38164,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uclm.es": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "uclouvain.be": {
       "code": 200,
@@ -38044,6 +38249,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uco.es": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
     },
     "uco.fr": {
       "code": 0,
@@ -38260,6 +38470,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
+    "ucv.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "ucy.ac.cy": {
       "code": 403,
       "confidence": 5,
@@ -38316,6 +38531,16 @@
       "reason": "http-2xx-html+multi-source+edu-keywords"
     },
     "udc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "udc.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:udc.gal"
+    },
+    "udc.gal": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -38445,6 +38670,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "udg.edu": {
+      "code": 500,
+      "confidence": 5,
+      "reason": "http-500"
+    },
+    "udg.es": {
+      "code": 500,
+      "confidence": 5,
+      "reason": "moved-to:udg.edu"
+    },
     "udg.mx": {
       "code": 200,
       "confidence": 90,
@@ -38466,6 +38701,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "udl.edu.pe": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "udl.es": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -38609,6 +38849,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uem.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:universidadeuropea.com"
     },
     "uem.mz": {
       "code": 200,
@@ -39020,6 +39265,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ufv.es": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "ufvjm.edu.br": {
       "code": 445,
       "confidence": 5,
@@ -39215,6 +39465,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uhu.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ui.ac.id": {
       "code": 200,
       "confidence": 90,
@@ -39240,6 +39495,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "uia.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "uia.mx": {
       "code": 0,
       "confidence": 0,
@@ -39249,6 +39509,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "uib.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "uib.kz": {
       "code": 0,
@@ -39279,6 +39544,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "uic.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uic.globe.com.ph": {
       "code": 0,
@@ -39324,6 +39594,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "uimp.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "uindy.edu": {
       "code": 200,
@@ -39460,6 +39735,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "ujaen.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ujat.mx": {
       "code": 200,
       "confidence": 80,
@@ -39479,6 +39759,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uji.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ujmd.edu.sv": {
       "code": 200,
@@ -39785,10 +40070,25 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "ull.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ulm.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uloyola.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ulpgc.es": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "uls.edu.sv": {
       "code": 0,
@@ -39880,6 +40180,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "um.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "um.si": {
       "code": 200,
       "confidence": 90,
@@ -39926,6 +40231,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "uma.edu.sv": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "uma.es": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -40165,6 +40475,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "umh.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "umi-mdn.edu": {
       "code": 0,
       "confidence": 0,
@@ -40329,6 +40644,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ump.ac.za": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ump.edu.my": {
       "code": 0,
@@ -40735,6 +41055,21 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "unav.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "unav.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:unav.edu"
+    },
+    "unavarra.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "unb.br": {
       "code": 200,
       "confidence": 80,
@@ -40749,6 +41084,11 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "unbeg.edu.sd": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "unbi.ba": {
       "code": 200,
@@ -40920,6 +41260,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "uneatlantico.es": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "uneb.br": {
       "code": 200,
       "confidence": 80,
@@ -40934,6 +41279,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uned.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "unefa.edu.do": {
       "code": 200,
@@ -40991,6 +41341,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "unev-rd.edu.do": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "unex.es": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -41505,10 +41860,20 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uniaam.uia.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uniacc.cl": {
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "uniactiva.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+multi-source+substantial-content"
     },
     "uniaene.edu.br": {
       "code": 200,
@@ -41546,6 +41911,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uniara.edu.br": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "uniara.uia.es": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -41774,6 +42144,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "unican.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "unicap.br": {
       "code": 0,
@@ -42165,6 +42540,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "unileon.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "unilib.neva.ru": {
       "code": 0,
       "confidence": 0,
@@ -42430,6 +42810,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "uniovi.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "unip-objetivo.br": {
       "code": 200,
       "confidence": 70,
@@ -42599,6 +42984,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "unirioja.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "uniroma1.it": {
       "code": 0,
@@ -43640,6 +44030,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "universidadatlantico.org": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uneatlantico.es"
+    },
     "universidadbrauliocarrillo.com": {
       "code": 0,
       "confidence": 0,
@@ -43669,6 +44064,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
+    },
+    "universidadeuropea.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "universidadlaconcordia.edu.mx": {
       "code": 200,
@@ -43896,6 +44296,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "unizambeze.ac.mz": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "unizar.es": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -44139,6 +44544,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "unnet.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "unnoba.edu.ar": {
       "code": 200,
@@ -44700,6 +45110,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uoc.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "uoc.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uoc.gr": {
       "code": 200,
       "confidence": 90,
@@ -45140,6 +45560,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "upc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "upc.edu.pe": {
       "code": 200,
       "confidence": 90,
@@ -45159,6 +45584,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "upco.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "upct.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "upd.edu.ph": {
       "code": 200,
@@ -45224,6 +45659,16 @@
       "code": 202,
       "confidence": 5,
       "reason": "empty-body"
+    },
+    "upf.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "upf.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:upf.edu"
     },
     "upf.pf": {
       "code": 0,
@@ -45315,6 +45760,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "upm.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "upm.moldnet.md": {
       "code": 0,
       "confidence": 0,
@@ -45374,6 +45824,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "upo.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "upol.cz": {
       "code": 200,
@@ -45495,6 +45950,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "upsa.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "upsb.edu.pe": {
       "code": 200,
       "confidence": 40,
@@ -45544,6 +46004,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "upv.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "uq.edu.au": {
       "code": 200,
@@ -45655,10 +46120,20 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "urjc.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "url.edu.gt": {
       "code": 404,
       "confidence": 5,
       "reason": "http-404"
+    },
+    "url.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "urmh.edu.mx": {
       "code": 0,
@@ -45694,6 +46169,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "urv.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "us.edu.pl": {
       "code": 200,
@@ -45769,6 +46249,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "usal.es": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "usalesiana.edu.bo": {
       "code": 200,
@@ -45899,6 +46384,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "usc.es": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "usc.gal": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "usca.edu": {
       "code": 200,
@@ -46985,6 +47480,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "uva.es": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
+    },
     "uva.nl": {
       "code": 200,
       "confidence": 90,
@@ -47034,6 +47534,26 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "uvic.cat": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "uvic.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uvic.cat"
+    },
+    "uvigo.es": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uvigo.gal"
+    },
+    "uvigo.gal": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uvipro.cl": {
       "code": 0,
@@ -47604,6 +48124,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "villanueva.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
     },
     "vilniustech.lt": {
       "code": 200,
@@ -48770,6 +49295,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "wits.ac.za": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "wittenberg.edu": {
       "code": 200,
       "confidence": 90,
@@ -49069,6 +49599,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:TooManyRedirects"
+    },
+    "wsu.ac.za": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "wsu.edu": {
       "code": 200,
@@ -50128,6 +50663,10 @@
       "reg": "",
       "ts": "2026-09-17"
     },
+    "accimt.ac.lk": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "accit.nsw.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -50494,6 +51033,7 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "aisct.org": "2006-04-14",
     "aisectuniversity.ac.in": "2009-09-16",
     "aisegypt.com": "2003-07-29",
     "aistedaab.ro": {
@@ -51784,6 +52324,10 @@
       "ts": "2026-09-29"
     },
     "baraodemaua.br": "1998-09-24",
+    "barcelonagse.eu": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "bard.edu": "1990-10-10",
     "barry.edu": "1988-10-21",
     "barstow.edu": "2003-02-28",
@@ -51847,6 +52391,10 @@
       "ts": "2026-09-15"
     },
     "bbsp.co.uk": "2011-07-28",
+    "bbu.ac.lk": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "bbu.edu.az": {
       "reg": "",
       "ts": "2026-09-20"
@@ -52076,6 +52624,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "bircham.edu": "2000-08-22",
     "birjand.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -52278,6 +52827,10 @@
     },
     "bpkihs.edu": "1999-02-27",
     "bpu.ac.kr": "2004-07-22",
+    "bpu.ac.lk": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "bpums.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -52969,6 +53522,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "ceu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ceu.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -53411,6 +53968,10 @@
     "clsu.edu.ph": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "cmb.ac.lk": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "cmc.edu": "2006-03-08",
     "cmi.vic.edu.au": {
@@ -54382,6 +54943,10 @@
     "deshbhagatuniversity.in": "2012-08-28",
     "desu.edu": "1995-10-25",
     "deu.ac.kr": "2002-08-20",
+    "deusto.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "devinci.fr": "2006-02-08",
     "dewaslot.vip": "2026-07-26",
     "deylaman.ac.ir": {
@@ -55008,6 +55573,14 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ehu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ehu.eus": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "eia.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
@@ -55511,6 +56084,10 @@
       "ts": "2026-09-30"
     },
     "esiae.fr": "2017-01-22",
+    "esic.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "esiea.fr": "1995-09-27",
     "esiee.fr": "1994-12-31",
     "esigelec.fr": "1994-12-31",
@@ -55527,6 +56104,10 @@
     "esmbenin.com": "2026-01-03",
     "esme.fr": "1996-03-06",
     "esmer-benin.org": "2015-06-25",
+    "esn.ac.lk": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "esp.ce.gov.br": "1996-05-27",
     "espam-formationuc.org": {
       "reg": "",
@@ -56969,6 +57550,7 @@
       "ts": "2026-09-15"
     },
     "glamarchives.gov.uk": "2011-11-24",
+    "global-business-school.org": "2011-03-16",
     "global.dyrsxm.cc": {
       "reg": "",
       "ts": "2026-09-21"
@@ -57154,6 +57736,10 @@
       "ts": "2026-09-21"
     },
     "gsw.edu": "1998-03-23",
+    "gsyc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "gti.spb.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -58620,6 +59206,7 @@
       "ts": "2026-09-25"
     },
     "idi.edu": "2000-05-08",
+    "ie.edu": "1998-07-24",
     "ieeu.udm.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -59817,6 +60404,10 @@
       "ts": "2026-09-20"
     },
     "iusb.edu": "1995-04-25",
+    "iuse.edu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "iusikkim.edu.in": "2007-05-18",
     "iusm.edu.ar": {
       "reg": "",
@@ -60131,6 +60722,10 @@
       "ts": "2026-09-26"
     },
     "ju.edu.sa": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "juba.edu.sd": {
       "reg": "",
       "ts": "2026-10-01"
     },
@@ -61615,6 +62210,7 @@
       "ts": "2026-09-22"
     },
     "lasallesaintantoine.fr": "2017-11-29",
+    "lasalleuniversities.net": "2002-05-28",
     "lasc.edu": "2002-01-18",
     "lasell.edu": "1995-08-17",
     "lasierra.edu": "1992-10-16",
@@ -63043,6 +63639,10 @@
     },
     "ms356covo.org": "2016-09-26",
     "ms447.org": "2007-06-25",
+    "msa.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "msa.eun.eg": {
       "reg": "",
       "ts": "2026-09-22"
@@ -63279,7 +63879,15 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "mundragon.edu": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "muni.cz": "1995-08-25",
+    "muni.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "muq.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -63363,6 +63971,10 @@
     "must.edu.my": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "mut.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "mut.edu.lb": {
       "reg": "",
@@ -66507,6 +67119,7 @@
     },
     "salemuniversity.edu.ng": "2009-11-23",
     "salisbury.edu": "2000-01-07",
+    "salleurl.edu": "1997-05-16",
     "salonsuccessacademy.com": "2006-03-01",
     "salu.edu.pk": {
       "reg": "",
@@ -66687,6 +67300,10 @@
       "ts": "2026-09-17"
     },
     "sch.ac.kr": "1995-08-22",
+    "schillermadrid.edu": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "schillerparis.com": "2021-12-27",
     "schillerstrasbourg.com": "2018-11-14",
     "schoolofartsgent.be": {
@@ -67555,6 +68172,10 @@
       "ts": "2026-09-30"
     },
     "smu.ac.kr": "2001-05-20",
+    "smu.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "smu.ca": "2001-02-05",
     "smu.edu": "1987-08-31",
     "smu.edu.in": "2007-07-19",
@@ -67793,6 +68414,10 @@
     "spu.ac.ke": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "spu.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "spu.ba": {
       "reg": "",
@@ -69810,6 +70435,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "ua.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ua.pt": {
       "reg": "",
       "ts": "2026-09-30"
@@ -69846,6 +70475,10 @@
     "uab.edu.bo": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "uab.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uab.ro": {
       "reg": "",
@@ -69986,6 +70619,10 @@
       "ts": "2026-09-28"
     },
     "uah.edu": "1988-06-08",
+    "uah.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uahb.sn": {
       "reg": "",
       "ts": "2026-10-01"
@@ -70025,6 +70662,10 @@
     "ualg.pt": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "ualm.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ualr.edu": "1991-06-05",
     "uam.ac.id": "2022-03-08",
@@ -70235,6 +70876,11 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "uax.com": "1999-01-24",
+    "uax.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uazuay.edu.ec": "2011-04-16",
     "ub.ac.id": "2009-01-21",
     "ub.bw": {
@@ -70260,6 +70906,10 @@
     "ub.edu.pl": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "ub.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ub.ro": {
       "reg": "",
@@ -70324,6 +70974,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "ubu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ubuea.cm": "2010-12-15",
     "uc-bcf.edu.ph": {
       "reg": "",
@@ -70346,6 +71000,10 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "uc3m.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uca.ac.cr": {
       "reg": "",
       "ts": "2026-09-22"
@@ -70362,6 +71020,10 @@
     "uca.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uca.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ucaazo.edu.ec": {
       "reg": "",
@@ -70393,6 +71055,7 @@
       "reg": "",
       "ts": "2026-09-28"
     },
+    "ucam.edu": "1998-07-07",
     "ucan.co.ao": {
       "reg": "",
       "ts": "2026-09-19"
@@ -70428,6 +71091,10 @@
     "ucauca.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "ucavila.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ucb.br": "1995-08-14",
     "ucb.catolica.edu.br": "2005-06-30",
@@ -70572,6 +71239,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "uchceu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uchicago.edu": "1991-11-22",
     "uchile.cl": {
       "reg": "",
@@ -70616,6 +71287,10 @@
     "ucll.be": {
       "reg": "",
       "ts": "2026-09-16"
+    },
+    "uclm.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uclouvain.be": {
       "reg": "",
@@ -70664,6 +71339,10 @@
     "uco.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uco.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uco.fr": "1996-11-06",
     "ucol.mx": {
@@ -70789,6 +71468,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "ucv.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ucy.ac.cy": {
       "reg": "",
       "ts": "2026-09-22"
@@ -70822,6 +71505,11 @@
       "ts": "2026-10-01"
     },
     "udc.edu": "1995-08-02",
+    "udc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "udc.gal": "2014-07-23",
     "udca.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
@@ -70913,6 +71601,11 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "udg.edu": "1997-05-29",
+    "udg.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "udg.mx": {
       "reg": "",
       "ts": "2026-09-28"
@@ -70932,6 +71625,10 @@
     "udl.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "udl.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "udla.mx": {
       "reg": "",
@@ -71015,6 +71712,10 @@
     "ueh.edu.ht": "2006-07-02",
     "uel.br": "1995-06-08",
     "uem.br": "1995-06-12",
+    "uem.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uem.mz": {
       "reg": "",
       "ts": "2026-09-28"
@@ -71199,6 +71900,10 @@
     "ufu.br": "1996-04-23",
     "ufv.br": "1996-01-01",
     "ufv.ca": "2001-05-11",
+    "ufv.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ufvjm.edu.br": "2005-10-10",
     "ug.edu.ec": "2011-04-16",
     "ug.edu.gh": {
@@ -71319,6 +72024,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "uhu.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ui.ac.id": "1995-01-01",
     "ui.ac.ir": {
       "reg": "",
@@ -71333,11 +72042,19 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "uia.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uia.mx": {
       "reg": "",
       "ts": "2026-09-28"
     },
     "uiah.fi": "2010-03-21",
+    "uib.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uib.kz": {
       "reg": "",
       "ts": "2026-09-26"
@@ -71355,6 +72072,10 @@
     "uic.edu.mx": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "uic.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uic.globe.com.ph": {
       "reg": "",
@@ -71380,6 +72101,10 @@
       "ts": "2026-09-28"
     },
     "uiliria.org": "2004-03-03",
+    "uimp.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uindy.edu": "1992-07-21",
     "uinjkt.ac.id": "2002-02-19",
     "uinternacional.pt": {
@@ -71443,6 +72168,10 @@
     },
     "uj.edu": "2013-09-19",
     "uj.edu.pl": "1995-01-01",
+    "ujaen.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ujat.mx": {
       "reg": "",
       "ts": "2026-09-28"
@@ -71453,6 +72182,10 @@
       "ts": "2026-09-28"
     },
     "ujep.cz": "1996-10-06",
+    "uji.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ujmd.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
@@ -71640,7 +72373,19 @@
       "ts": "2026-09-27"
     },
     "ulk.ac.rw": "2012-12-31",
+    "ull.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ulm.edu": "1999-04-27",
+    "uloyola.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ulpgc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uls.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
@@ -71707,6 +72452,10 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "um.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "um.si": "2010-10-20",
     "um1ygn.edu.mm": {
       "reg": "",
@@ -71743,6 +72492,10 @@
     "uma.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uma.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uma.pt": {
       "reg": "",
@@ -71882,6 +72635,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "umh.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "umi-mdn.edu": {
       "reg": "",
       "ts": "2026-09-25"
@@ -71974,6 +72731,10 @@
     "ump.ac.ma": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "ump.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ump.edu.my": {
       "reg": "",
@@ -72229,9 +72990,22 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "unav.edu": "1998-03-24",
+    "unav.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "unavarra.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unb.br": "1996-01-01",
     "unb.ca": "2000-10-31",
     "unbc.ca": "2000-10-01",
+    "unbeg.edu.sd": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unbi.ba": {
       "reg": "",
       "ts": "2026-09-17"
@@ -72329,6 +73103,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "uneatlantico.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uneb.br": "1998-06-19",
     "unec.edu.az": {
       "reg": "",
@@ -72337,6 +73115,10 @@
     "uned.ac.cr": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uned.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unefa.edu.do": {
       "reg": "",
@@ -72367,6 +73149,10 @@
     "unev-rd.edu.do": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "unex.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unf.edu": "1990-08-10",
     "unf.edu.ar": {
@@ -72731,10 +73517,15 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "uniaam.uia.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uniacc.cl": {
       "reg": "",
       "ts": "2026-09-13"
     },
+    "uniactiva.com": "2024-03-23",
     "uniaene.edu.br": "2024-12-13",
     "uniag.sk": {
       "reg": "",
@@ -72755,6 +73546,10 @@
     "unianhanguera.edu.br": "2001-09-18",
     "uniara.com.br": "1997-12-06",
     "uniara.edu.br": "2002-12-12",
+    "uniara.uia.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uniatlantico.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
@@ -72895,6 +73690,10 @@
     "unicampus.it": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "unican.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unicap.br": "1996-01-01",
     "unicaribe.edu.do": {
@@ -73084,6 +73883,10 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "unileon.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unilib.neva.ru": {
       "reg": "",
       "ts": "2026-10-01"
@@ -73236,6 +74039,10 @@
       "ts": "2026-09-22"
     },
     "uniosun.edu.ng": "2009-10-15",
+    "uniovi.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unip-objetivo.br": "1997-03-06",
     "unipa.it": {
       "reg": "",
@@ -73333,6 +74140,10 @@
       "ts": "2026-09-22"
     },
     "unirio.br": "1998-07-15",
+    "unirioja.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uniroma1.it": {
       "reg": "",
       "ts": "2026-09-14"
@@ -73844,6 +74655,7 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "universidadatlantico.org": "2023-01-25",
     "universidadbrauliocarrillo.com": {
       "reg": "",
       "ts": "2026-09-22"
@@ -73865,6 +74677,7 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "universidadeuropea.com": "2001-08-29",
     "universidadlaconcordia.edu.mx": {
       "reg": "",
       "ts": "2026-09-28"
@@ -73979,6 +74792,10 @@
     "unizambeze.ac.mz": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "unizar.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unizd.hr": {
       "reg": "",
@@ -74109,6 +74926,10 @@
       "ts": "2026-09-20"
     },
     "unnes.ac.id": "2002-03-08",
+    "unnet.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unnoba.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -74425,6 +75246,11 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "uoc.edu": "2001-01-22",
+    "uoc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uoc.gr": {
       "reg": "",
       "ts": "2026-09-24"
@@ -74695,6 +75521,7 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "upc.edu": "2001-03-29",
     "upc.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
@@ -74707,6 +75534,14 @@
     "upci.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "upco.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "upct.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "upd.edu.ph": {
       "reg": "",
@@ -74743,6 +75578,11 @@
     "upeu.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "upf.edu": "1999-02-16",
+    "upf.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "upf.pf": {
       "reg": "",
@@ -74804,6 +75644,10 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "upm.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "upm.moldnet.md": {
       "reg": "",
       "ts": "2026-09-28"
@@ -74829,6 +75673,10 @@
     },
     "upnvj.ac.id": "1999-10-07",
     "upnyk.ac.id": "1996-12-15",
+    "upo.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "upol.cz": "1995-11-28",
     "upoli.edu.ni": {
       "reg": "",
@@ -74877,6 +75725,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "upsa.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "upsb.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
@@ -74910,6 +75762,10 @@
     "upv.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "upv.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uq.edu.au": {
       "reg": "",
@@ -74966,9 +75822,17 @@
     "uri.br": "1998-05-18",
     "uri.edu": "1989-02-02",
     "urich.edu": "1989-01-05",
+    "urjc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "url.edu.gt": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "url.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "urmh.edu.mx": {
       "reg": "",
@@ -74994,6 +75858,10 @@
     "urural.edu.gt": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "urv.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "us.edu.pl": "1995-12-29",
     "us.es": {
@@ -75045,6 +75913,10 @@
     "usaintlouis.be": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "usal.es": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "usalesiana.edu.bo": {
       "reg": "",
@@ -75135,6 +76007,11 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "usc.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "usc.gal": "2014-11-28",
     "usca.edu": "2001-01-24",
     "uscon.ru": {
       "reg": "",
@@ -75710,6 +76587,10 @@
     },
     "uva.br": "1996-05-17",
     "uva.ce.gov.br": "1996-05-27",
+    "uva.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uva.nl": "1988-10-12",
     "uvanet.br": "1997-03-07",
     "uvas.edu.pk": {
@@ -75738,6 +76619,19 @@
     },
     "uvh.nl": "1995-07-30",
     "uvic.ca": "2000-10-02",
+    "uvic.cat": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "uvic.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "uvigo.es": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "uvigo.gal": "2014-07-23",
     "uvipro.cl": {
       "reg": "",
       "ts": "2026-09-21"
@@ -76010,6 +76904,7 @@
     "vikramuniversity.org": "2022-11-30",
     "villablanche-menton.fr": "2017-06-12",
     "villanova.edu": "1998-03-19",
+    "villanueva.edu": "1998-03-18",
     "vilniustech.lt": {
       "reg": "",
       "ts": "2026-09-27"
@@ -76569,6 +77464,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "wits.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "wittenberg.edu": "1989-12-01",
     "wittenborg.eu": {
       "reg": "",
@@ -76684,6 +77583,10 @@
     "wsps.waw.pl": "2016-01-21",
     "wsptwpwaw.edu.pl": "2026-08-30",
     "wsu.ac.kr": "2002-11-13",
+    "wsu.ac.za": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "wsu.edu": "1987-04-14",
     "wsu.edu.et": {
       "reg": "",
@@ -77300,6 +78203,7 @@
     "academy.mia.by": 1,
     "acadiau.ca": 0,
     "acah.edu.au": 0,
+    "accimt.ac.lk": 1,
     "accit.nsw.edu.au": 0,
     "acck.edu": 2,
     "ace.vic.edu.au": 0,
@@ -77425,6 +78329,7 @@
     "airgoldcoast.com.au": 0,
     "airwaysaviation.com": 0,
     "airwork.com.au": 0,
+    "aisct.org": 1,
     "aisectuniversity.ac.in": 1,
     "aisegypt.com": 0,
     "aistedaab.ro": 1,
@@ -77893,6 +78798,7 @@
     "bankurauniv.com": 1,
     "baqai.edu.pk": 0,
     "baraodemaua.br": 0,
+    "barcelonagse.eu": 1,
     "bard.edu": 0,
     "barnard.edu": 0,
     "barry.edu": 0,
@@ -77918,6 +78824,7 @@
     "bbauindia.org": 1,
     "bbc.edu": 1,
     "bbsp.co.uk": 1,
+    "bbu.ac.lk": 1,
     "bbu.edu.az": 0,
     "bbu.edu.kh": 0,
     "bc.edu": 0,
@@ -78018,6 +78925,7 @@
     "biola.edu": 0,
     "biolabet3.com": 2,
     "biolabet4.co": 1,
+    "bircham.edu": 0,
     "birjand.ac.ir": 0,
     "birmingham.ac.uk": 0,
     "birtbpl.ac.in": 1,
@@ -78088,6 +78996,7 @@
     "bpitindia.in": 1,
     "bpkihs.edu": 0,
     "bpu.ac.kr": 1,
+    "bpu.ac.lk": 0,
     "bpums.ac.ir": 1,
     "bput.org": 0,
     "brabu.net": 1,
@@ -78375,6 +79284,7 @@
     "ceu.edu": 0,
     "ceu.edu.mx": 1,
     "ceu.edu.ph": 1,
+    "ceu.es": 0,
     "ceu.hu": 1,
     "ceunix.com.mx": 1,
     "ceux.mx": 1,
@@ -78541,6 +79451,7 @@
     "clovisadult.cusd.com": 0,
     "clpccd.edu": 1,
     "clsu.edu.ph": 0,
+    "cmb.ac.lk": 0,
     "cmc.edu": 0,
     "cmi.vic.edu.au": 0,
     "cmich.edu": 0,
@@ -78942,6 +79853,7 @@
     "deshbhagatuniversity.in": 0,
     "desu.edu": 0,
     "deu.ac.kr": 0,
+    "deusto.es": 1,
     "devinci.fr": 0,
     "devry.edu": 0,
     "dewaslot.vip": 1,
@@ -79179,6 +80091,8 @@
     "ehime-u.ac.jp": 1,
     "ehs-dresden.de": 0,
     "ehsal.be": 1,
+    "ehu.es": 1,
+    "ehu.eus": 1,
     "eia.edu.co": 0,
     "eichi-u.ac.jp": 1,
     "eidoseducation.org": 0,
@@ -79397,6 +80311,7 @@
     "esgae.org": 0,
     "eshte.pt": 1,
     "esiae.fr": 1,
+    "esic.es": 1,
     "esiea.fr": 0,
     "esiee.fr": 0,
     "esigelec.fr": 0,
@@ -79407,6 +80322,7 @@
     "esmbenin.com": 0,
     "esme.fr": 0,
     "esmer-benin.org": 0,
+    "esn.ac.lk": 0,
     "esp.ce.gov.br": 1,
     "espam-formationuc.org": 1,
     "espci.fr": 1,
@@ -79495,7 +80411,7 @@
     "faberj.edu.br": 0,
     "fabes.com.br": 1,
     "faccar.com.br": 0,
-    "facebook.com": 1,
+    "facebook.com": 2,
     "facensa.edu.br": 1,
     "faceres.com.br": 0,
     "facinter.br": 1,
@@ -79692,7 +80608,7 @@
     "fhwt.de": 1,
     "fibrapara.edu.br": 0,
     "fic.br": 1,
-    "fidm.edu": 1,
+    "fidm.edu": 2,
     "fielding.edu": 0,
     "filadelfia.com.br": 1,
     "filmacademy.hu": 1,
@@ -79708,7 +80624,7 @@
     "fitfd.edu.pk": 1,
     "fits.edu.br": 1,
     "fiu.edu": 0,
-    "fivebranches.edu": 0,
+    "fivebranches.edu": 1,
     "fjau.edu.cn": 1,
     "fjmu.edu.cn": 1,
     "fjnu.edu.cn": 1,
@@ -79755,7 +80671,7 @@
     "francois-rabelais.anjou.e-lyco.fr": 0,
     "franklin.edu": 1,
     "frayluca.edu.mx": 1,
-    "frc.edu": 1,
+    "frc.edu": 2,
     "frederick.ac.cy": 0,
     "frederick.edu": 0,
     "fredonia.edu": 1,
@@ -79920,6 +80836,7 @@
     "gkvharidwar.org": 1,
     "gla.ac.uk": 0,
     "glamarchives.gov.uk": 1,
+    "global-business-school.org": 0,
     "global.dyrsxm.cc": 0,
     "global.edu.pk": 0,
     "global.hokudai.ac.jp": 2,
@@ -79997,6 +80914,7 @@
     "gsu.unibel.by": 1,
     "gsut.edu.cn": 1,
     "gsw.edu": 0,
+    "gsyc.es": 1,
     "gti.spb.ru": 1,
     "gtu.ac.in": 0,
     "gtu.edu": 1,
@@ -80490,6 +81408,7 @@
     "icuzambia.net": 2,
     "idc.ac.il": 1,
     "idi.edu": 0,
+    "ie.edu": 0,
     "iecc.edu": 0,
     "ieeu.udm.ru": 1,
     "iefem.bas.bg": 0,
@@ -80914,6 +81833,7 @@
     "ius.edu": 1,
     "ius.edu.ba": 0,
     "iusb.edu": 1,
+    "iuse.edu.es": 1,
     "iusikkim.edu.in": 0,
     "iusm.edu.ar": 1,
     "iusspavia.it": 0,
@@ -81036,6 +81956,7 @@
     "ju.edu.et": 1,
     "ju.edu.jo": 1,
     "ju.edu.sa": 0,
+    "juba.edu.sd": 1,
     "juc.edu": 0,
     "judson.edu": 1,
     "juen.ac.jp": 1,
@@ -81539,6 +82460,7 @@
     "lasalle.edu": 0,
     "lasalle.edu.co": 0,
     "lasallesaintantoine.fr": 0,
+    "lasalleuniversities.net": 0,
     "lasc.edu": 1,
     "lasell.edu": 0,
     "lasierra.edu": 0,
@@ -82101,6 +83023,7 @@
     "mruni.eu": 0,
     "ms356covo.org": 2,
     "ms447.org": 0,
+    "msa.ac.za": 1,
     "msa.eun.eg": 1,
     "msaab.ru": 1,
     "msbcollege.edu": 2,
@@ -82182,7 +83105,9 @@
     "mul.edu.pk": 0,
     "mum.edu": 1,
     "mums.ac.ir": 1,
+    "mundragon.edu": 1,
     "muni.cz": 0,
+    "muni.es": 1,
     "muq.ac.ir": 1,
     "murdoch.edu.au": 0,
     "murdochcollege.edu.au": 0,
@@ -82207,6 +83132,7 @@
     "must.edu.mn": 0,
     "must.edu.mo": 1,
     "must.edu.my": 0,
+    "mut.ac.za": 0,
     "mut.edu.lb": 1,
     "mutah.edu.jo": 0,
     "muthesius.de": 1,
@@ -83403,6 +84329,7 @@
     "salam.edu.af": 0,
     "salemuniversity.edu.ng": 0,
     "salisbury.edu": 0,
+    "salleurl.edu": 0,
     "salonsuccessacademy.com": 1,
     "salu.edu.pk": 0,
     "salvador.edu.ar": 1,
@@ -83472,6 +84399,7 @@
     "scesa.al": 3,
     "scgs.qld.edu.au": 0,
     "sch.ac.kr": 1,
+    "schillermadrid.edu": 1,
     "schillerparis.com": 0,
     "schillerstrasbourg.com": 1,
     "schoolofartsgent.be": 0,
@@ -83796,6 +84724,7 @@
     "smtafe.wa.edu.au": 1,
     "smtu.ru": 0,
     "smu.ac.kr": 1,
+    "smu.ac.za": 0,
     "smu.ca": 0,
     "smu.edu": 0,
     "smu.edu.in": 0,
@@ -83892,6 +84821,7 @@
     "spsoa-ub.cz": 0,
     "spu.ac.jp": 1,
     "spu.ac.ke": 0,
+    "spu.ac.za": 0,
     "spu.ba": 0,
     "spu.edu": 1,
     "spu.edu.ph": 1,
@@ -84587,6 +85517,7 @@
     "ua.ac.be": 1,
     "ua.edu": 0,
     "ua.edu.ph": 0,
+    "ua.es": 1,
     "ua.pt": 1,
     "uaa.alaska.edu": 0,
     "uaa.edu.py": 0,
@@ -84597,6 +85528,7 @@
     "uab.cat": 0,
     "uab.edu": 0,
     "uab.edu.bo": 1,
+    "uab.es": 1,
     "uab.ro": 0,
     "uabc.mx": 1,
     "uabcs.mx": 0,
@@ -84637,6 +85569,7 @@
     "uagrm.edu.bo": 0,
     "uagro.mx": 0,
     "uah.edu": 0,
+    "uah.es": 0,
     "uahb.sn": 0,
     "uaht.edu": 0,
     "uahurtado.cl": 0,
@@ -84650,6 +85583,7 @@
     "ual.mx": 1,
     "ualberta.ca": 2,
     "ualg.pt": 0,
+    "ualm.es": 0,
     "ualr.edu": 0,
     "uam.ac.id": 0,
     "uam.edu.co": 1,
@@ -84716,6 +85650,8 @@
     "uau.ac.in": 0,
     "uauim.ro": 0,
     "uav.ro": 0,
+    "uax.com": 0,
+    "uax.es": 1,
     "uazuay.edu.ec": 0,
     "ub.ac.id": 1,
     "ub.bw": 0,
@@ -84724,6 +85660,7 @@
     "ub.edu.bz": 0,
     "ub.edu.ph": 0,
     "ub.edu.pl": 0,
+    "ub.es": 1,
     "ub.ro": 0,
     "uba.ar": 0,
     "ubac.edu.mx": 1,
@@ -84748,6 +85685,7 @@
     "ubp.edu.ar": 0,
     "ubritanica.cl": 1,
     "ubt.edu.al": 0,
+    "ubu.es": 1,
     "ubuea.cm": 0,
     "uc-bcf.edu.ph": 0,
     "uc.cl": 0,
@@ -84755,11 +85693,13 @@
     "uc.edu.kh": 0,
     "uc.edu.py": 1,
     "uc.pt": 1,
+    "uc3m.es": 1,
     "uca.ac.cr": 0,
     "uca.edu": 0,
     "uca.edu.ar": 0,
     "uca.edu.ni": 1,
     "uca.edu.sv": 0,
+    "uca.es": 0,
     "ucaazo.edu.ec": 1,
     "ucacue.edu.ec": 0,
     "ucad.edu.sv": 0,
@@ -84769,6 +85709,7 @@
     "ucalgary.ca": 0,
     "ucalp.edu.ar": 0,
     "ucam.ac.ma": 1,
+    "ucam.edu": 0,
     "ucan.co.ao": 1,
     "ucan.edu": 1,
     "ucao-uub.com": 0,
@@ -84781,6 +85722,7 @@
     "ucatolica.edu.co": 1,
     "ucatolicamz.edu.co": 1,
     "ucauca.edu.co": 1,
+    "ucavila.es": 0,
     "ucb.br": 1,
     "ucb.catolica.edu.br": 0,
     "ucb.edu.bh": 0,
@@ -84825,6 +85767,7 @@
     "uch.edu.pe": 0,
     "uchastings.edu": 1,
     "uchaswv.edu": 1,
+    "uchceu.es": 0,
     "uchicago.edu": 0,
     "uchile.cl": 0,
     "uci.ac.cr": 1,
@@ -84840,6 +85783,7 @@
     "uclawsf.edu": 0,
     "uclive.ac.nz": 1,
     "ucll.be": 0,
+    "uclm.es": 1,
     "uclouvain.be": 0,
     "uclv.edu.cu": 1,
     "ucly.fr": 0,
@@ -84856,6 +85800,7 @@
     "ucnh.org": 1,
     "uco.edu": 4,
     "uco.edu.co": 0,
+    "uco.es": 0,
     "uco.fr": 1,
     "ucol.mx": 1,
     "ucom.edu.py": 0,
@@ -84899,6 +85844,7 @@
     "ucv.cl": 1,
     "ucv.edu.pe": 0,
     "ucv.edu.ph": 0,
+    "ucv.es": 0,
     "ucy.ac.cy": 1,
     "ucyt.edu.ni": 0,
     "ud.edu.sa": 1,
@@ -84911,6 +85857,8 @@
     "udayton.edu": 0,
     "udb.sn": 0,
     "udc.edu": 0,
+    "udc.es": 1,
+    "udc.gal": 0,
     "udca.edu.co": 1,
     "udch.edu.pe": 0,
     "udea.edu.co": 0,
@@ -84936,11 +85884,14 @@
     "udesc.br": 0,
     "udesmontagnes.org": 1,
     "udg.co.cu": 1,
+    "udg.edu": 1,
+    "udg.es": 1,
     "udg.mx": 0,
     "udh.edu.pe": 1,
     "udi.edu": 1,
     "udistrital.edu.co": 0,
     "udl.edu.pe": 1,
+    "udl.es": 1,
     "udla.mx": 1,
     "udlap.mx": 1,
     "udm.edu.my": 1,
@@ -84969,6 +85920,7 @@
     "ueh.edu.ht": 0,
     "uel.br": 0,
     "uem.br": 0,
+    "uem.es": 1,
     "uem.mz": 0,
     "uem.ro": 1,
     "uema.br": 1,
@@ -85051,6 +86003,7 @@
     "ufu.br": 0,
     "ufv.br": 0,
     "ufv.ca": 0,
+    "ufv.es": 0,
     "ufvjm.edu.br": 1,
     "ug.edu.ec": 0,
     "ug.edu.gh": 0,
@@ -85090,19 +86043,23 @@
     "uhp-nancy.fr": 1,
     "uhs.ac.kr": 1,
     "uhsa.ag": 0,
+    "uhu.es": 0,
     "ui.ac.id": 0,
     "ui.ac.ir": 0,
     "ui.edu.ng": 0,
     "ui.phinma.edu.ph": 0,
     "uia.ac.cr": 1,
+    "uia.es": 0,
     "uia.mx": 1,
     "uiah.fi": 1,
+    "uib.es": 1,
     "uib.kz": 1,
     "uib.no": 0,
     "uibe.edu.cn": 0,
     "uibk.ac.at": 0,
     "uic.edu": 2,
     "uic.edu.mx": 1,
+    "uic.es": 0,
     "uic.globe.com.ph": 1,
     "uidaho.edu": 0,
     "uier-edu.am": 2,
@@ -85112,6 +86069,7 @@
     "uika-bogor.ac.id": 0,
     "uileon.edu.mx": 1,
     "uiliria.org": 1,
+    "uimp.es": 0,
     "uindy.edu": 0,
     "uinjkt.ac.id": 0,
     "uinternacional.pt": 0,
@@ -85139,10 +86097,12 @@
     "uj.ac.za": 1,
     "uj.edu": 0,
     "uj.edu.pl": 0,
+    "ujaen.es": 0,
     "ujat.mx": 0,
     "ujcv.edu.hn": 0,
     "ujed.mx": 0,
     "ujep.cz": 0,
+    "uji.es": 1,
     "ujmd.edu.sv": 0,
     "ujn.edu.cn": 0,
     "ujnk.org": 1,
@@ -85204,7 +86164,10 @@
     "ulisboa.pt": 0,
     "ulivingstonia.com": 1,
     "ulk.ac.rw": 0,
+    "ull.es": 0,
     "ulm.edu": 0,
+    "uloyola.es": 0,
+    "ulpgc.es": 1,
     "uls.edu.sv": 1,
     "ulsa.edu.mx": 1,
     "ulsab.edu.mx": 0,
@@ -85223,6 +86186,7 @@
     "um.edu.mo": 1,
     "um.edu.mt": 0,
     "um.edu.my": 0,
+    "um.es": 0,
     "um.si": 0,
     "um1ygn.edu.mm": 1,
     "um5a.ac.ma": 1,
@@ -85233,6 +86197,7 @@
     "uma.co.ao": 1,
     "uma.edu.py": 0,
     "uma.edu.sv": 1,
+    "uma.es": 1,
     "uma.pt": 0,
     "umad.edu.mx": 0,
     "umag.cl": 0,
@@ -85280,6 +86245,7 @@
     "umftgm.ro": 1,
     "umg.edu.gt": 0,
     "umh.ac.be": 1,
+    "umh.es": 0,
     "umi-mdn.edu": 1,
     "umi.ac.id": 0,
     "umi.edu.mx": 1,
@@ -85313,6 +86279,7 @@
     "umontpellier.fr": 0,
     "umontreal.ca": 0,
     "ump.ac.ma": 1,
+    "ump.ac.za": 1,
     "ump.edu.my": 1,
     "umpi.maine.edu": 1,
     "umr.edu": 1,
@@ -85394,9 +86361,13 @@
     "unatc.ro": 1,
     "unau.edu.ar": 0,
     "unaula.edu.co": 0,
+    "unav.edu": 0,
+    "unav.es": 1,
+    "unavarra.es": 1,
     "unb.br": 0,
     "unb.ca": 0,
     "unbc.ca": 0,
+    "unbeg.edu.sd": 1,
     "unbi.ba": 0,
     "unbosque.edu.co": 1,
     "unbsj.ca": 1,
@@ -85431,9 +86402,11 @@
     "une.edu.mx": 1,
     "une.edu.pe": 0,
     "une.edu.py": 1,
+    "uneatlantico.es": 0,
     "uneb.br": 0,
     "unec.edu.az": 2,
     "uned.ac.cr": 0,
+    "uned.es": 0,
     "unefa.edu.do": 0,
     "unej.ac.id": 0,
     "unem.edu": 0,
@@ -85446,6 +86419,7 @@
     "unesco-ihe.org": 1,
     "unesp.br": 0,
     "unev-rd.edu.do": 1,
+    "unex.es": 1,
     "unf.edu": 0,
     "unf.edu.ar": 1,
     "unfa.cl": 1,
@@ -85548,7 +86522,9 @@
     "uni.udm.ru": 1,
     "uni.wroc.pl": 1,
     "unia.ao": 0,
+    "uniaam.uia.es": 1,
     "uniacc.cl": 0,
+    "uniactiva.com": 0,
     "uniaene.edu.br": 0,
     "uniag.sk": 0,
     "uniamazonia.edu.co": 1,
@@ -85557,6 +86533,7 @@
     "unianhanguera.edu.br": 1,
     "uniara.com.br": 0,
     "uniara.edu.br": 1,
+    "uniara.uia.es": 1,
     "uniatlantico.edu.co": 0,
     "unib.ac.id": 0,
     "unib.br": 1,
@@ -85602,6 +86579,7 @@
     "unicam.it": 1,
     "unicamp.br": 0,
     "unicampus.it": 1,
+    "unican.es": 1,
     "unicap.br": 1,
     "unicaribe.edu.do": 0,
     "unicartagena.edu.co": 1,
@@ -85680,6 +86658,7 @@
     "unilak.ac.id": 1,
     "unile.it": 1,
     "unileoben.ac.at": 0,
+    "unileon.es": 0,
     "unilib.neva.ru": 1,
     "unilibre.edu.co": 0,
     "unilim.fr": 0,
@@ -85733,6 +86712,7 @@
     "union.edu": 0,
     "unios.hr": 0,
     "uniosun.edu.ng": 0,
+    "uniovi.es": 0,
     "unip-objetivo.br": 0,
     "unipa.it": 0,
     "unipamplona.edu.co": 0,
@@ -85767,6 +86747,7 @@
     "uniremhos.edu.do": 0,
     "uniri.hr": 0,
     "unirio.br": 1,
+    "unirioja.es": 1,
     "uniroma1.it": 2,
     "uniroma2.eu": 1,
     "uniroma3.it": 0,
@@ -85975,12 +86956,14 @@
     "universidad-policial.edu.ar": 0,
     "universidad.claeh.edu.uy": 0,
     "universidadarcis.cl": 0,
+    "universidadatlantico.org": 1,
     "universidadbrauliocarrillo.com": 1,
     "universidadcatolica.edu.py": 0,
     "universidadcentral.com": 1,
     "universidaddeleon.edu.mx": 0,
     "universidade-autonoma.pt": 1,
     "universidademetodista.ao": 1,
+    "universidadeuropea.com": 0,
     "universidadlaconcordia.edu.mx": 0,
     "universidadmotolinia.edu.mx": 1,
     "universidadnotarial.edu.ar": 0,
@@ -86027,6 +87010,7 @@
     "uniyar.ac.ru": 1,
     "uniza.sk": 0,
     "unizambeze.ac.mz": 0,
+    "unizar.es": 0,
     "unizd.hr": 1,
     "unizg.hr": 0,
     "unizik.edu.ng": 1,
@@ -86075,6 +87059,7 @@
     "unn.edu.ng": 0,
     "unne.edu.ar": 1,
     "unnes.ac.id": 0,
+    "unnet.es": 0,
     "unnoba.edu.ar": 0,
     "uno-r.edu.ph": 0,
     "uno.edu": 1,
@@ -86187,6 +87172,8 @@
     "uobabylon.edu.iq": 1,
     "uobaghdad.edu.iq": 0,
     "uobasrah.edu.iq": 0,
+    "uoc.edu": 1,
+    "uoc.es": 1,
     "uoc.gr": 0,
     "uod.ac": 1,
     "uod.edu.do": 1,
@@ -86275,10 +87262,13 @@
     "upb.edu.ph": 0,
     "upb.pitt.edu": 0,
     "upc-rdc.cd": 1,
+    "upc.edu": 0,
     "upc.edu.pe": 0,
     "upce.cz": 0,
     "upch.edu.pe": 1,
     "upci.edu.pe": 0,
+    "upco.es": 1,
+    "upct.es": 0,
     "upd.edu.ph": 0,
     "upds.edu.bo": 1,
     "upe.br": 1,
@@ -86292,6 +87282,8 @@
     "upesh.edu": 1,
     "upet.ro": 0,
     "upeu.edu.pe": 1,
+    "upf.edu": 0,
+    "upf.es": 1,
     "upf.pf": 1,
     "upf.tche.br": 1,
     "upg-ploiesti.ro": 0,
@@ -86310,6 +87302,7 @@
     "upm.ac.ma": 1,
     "upm.edu.my": 0,
     "upm.edu.ph": 1,
+    "upm.es": 0,
     "upm.moldnet.md": 1,
     "upm.ro": 0,
     "upmc.com": 0,
@@ -86322,6 +87315,7 @@
     "upnorte.edu.pe": 1,
     "upnvj.ac.id": 0,
     "upnyk.ac.id": 0,
+    "upo.es": 0,
     "upol.cz": 0,
     "upoli.edu.ni": 1,
     "uponic.edu.ni": 1,
@@ -86346,6 +87340,7 @@
     "ups.edu.ec": 0,
     "ups.urbe.it": 1,
     "upsa.edu.bo": 0,
+    "upsa.es": 0,
     "upsb.edu.pe": 1,
     "upsi.edu.my": 0,
     "upsjb.edu.pe": 0,
@@ -86356,6 +87351,7 @@
     "uptc.edu.co": 1,
     "uptu.ac.in": 1,
     "upv.edu.ph": 1,
+    "upv.es": 0,
     "uq.edu.au": 0,
     "uqac.ca": 0,
     "uqam.ca": 0,
@@ -86378,7 +87374,9 @@
     "uri.br": 1,
     "uri.edu": 0,
     "urich.edu": 1,
+    "urjc.es": 1,
     "url.edu.gt": 1,
+    "url.es": 1,
     "urmh.edu.mx": 1,
     "urmia.ac.ir": 0,
     "urosario.edu.co": 0,
@@ -86386,6 +87384,7 @@
     "urse.edu.mx": 0,
     "ursinus.edu": 0,
     "urural.edu.gt": 0,
+    "urv.es": 1,
     "us.edu.pl": 0,
     "us.es": 1,
     "usa.edu.ph": 0,
@@ -86401,6 +87400,7 @@
     "usafa.edu": 1,
     "usaim.edu": 0,
     "usaintlouis.be": 1,
+    "usal.es": 0,
     "usalesiana.edu.bo": 0,
     "usam.ac.cr": 0,
     "usam.edu.sv": 0,
@@ -86427,6 +87427,8 @@
     "usc.edu.au": 2,
     "usc.edu.cn": 1,
     "usc.edu.ph": 0,
+    "usc.es": 1,
+    "usc.gal": 1,
     "usca.edu": 0,
     "uscga.edu": 0,
     "uscon.ru": 1,
@@ -86644,6 +87646,7 @@
     "uv.mx": 0,
     "uva.br": 0,
     "uva.ce.gov.br": 0,
+    "uva.es": 0,
     "uva.nl": 0,
     "uvanet.br": 1,
     "uvas.edu.pk": 0,
@@ -86654,6 +87657,10 @@
     "uvg1.net": 1,
     "uvh.nl": 0,
     "uvic.ca": 0,
+    "uvic.cat": 0,
+    "uvic.es": 1,
+    "uvigo.es": 1,
+    "uvigo.gal": 0,
     "uvipro.cl": 1,
     "uvm.cl": 0,
     "uvm.edu": 0,
@@ -86768,6 +87775,7 @@
     "vikramuniversity.org": 1,
     "villablanche-menton.fr": 0,
     "villanova.edu": 0,
+    "villanueva.edu": 0,
     "vilniustech.lt": 0,
     "vinayakamissions.com": 1,
     "virginia.edu": 0,
@@ -87001,6 +88009,7 @@
     "wisnuwardhana.ac.id": 0,
     "wit.edu": 0,
     "wit.ie": 1,
+    "wits.ac.za": 0,
     "wittenberg.edu": 0,
     "wittenborg.eu": 0,
     "wiu.edu": 0,
@@ -87061,6 +88070,7 @@
     "wsps.waw.pl": 1,
     "wsptwpwaw.edu.pl": 1,
     "wsu.ac.kr": 1,
+    "wsu.ac.za": 0,
     "wsu.edu": 0,
     "wsu.edu.et": 1,
     "wsub.waw.pl": 1,
@@ -87255,13 +88265,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-10-01T16:10:25+00:00",
+  "last_run": "2026-10-01T20:37:42+00:00",
   "last_verify": {
-    "added_active": 59,
-    "at": "2026-10-01 15:35 UTC",
-    "pending_left": 5393,
+    "added_active": 55,
+    "at": "2026-10-01 20:37 UTC",
+    "pending_left": 5335,
     "reverified": 15,
-    "validated": 119
+    "validated": 122
   },
   "moved": {
     "admu.edu.ph": "ateneo.edu",
@@ -87610,8 +88620,10 @@
     "txstate.edu": "txst.edu",
     "u-cergy.fr": "cyu.fr",
     "uaaan.mx": "uaaan.edu.mx",
+    "uab.es": "uab.cat",
     "uams.be": "antwerpmanagementschool.be",
     "uan.mx": "uan.edu.mx",
+    "uax.es": "uax.com",
     "uc.edu.py": "universidadcatolica.edu.py",
     "ucan.edu": "ucan.co.ao",
     "ucapanama.org": "rajacuanok1.com",
@@ -87620,8 +88632,11 @@
     "uchastings.edu": "uclawsf.edu",
     "uclive.ac.nz": "outlook.office365.com",
     "ucnh.org": "angkasa168.org",
+    "udc.es": "udc.gal",
     "udem.edu.co": "udemedellin.edu.co",
+    "udg.es": "udg.edu",
     "udo.edu": "tu-dortmund.de",
+    "uem.es": "universidadeuropea.com",
     "uem.ro": "resita.extensii.ubbcluj.ro",
     "uflo.edu.ar": "uflouniversidad.edu.ar",
     "uhb.fr": "univ-rennes2.fr",
@@ -87638,6 +88653,7 @@
     "un.mx": "cel.edu.mx",
     "unadeca.ac.cr": "unadecacr.com",
     "unarte.ro": "unarte.org",
+    "unav.es": "unav.edu",
     "uncc.edu": "charlotte.edu",
     "uncu.edu.ar": "uncuyo.edu.ar",
     "uni-duesseldorf.de": "hhu.de",
@@ -87663,6 +88679,7 @@
     "univ-paris13.fr": "univ-spn.fr",
     "univ-rennes1.fr": "univ-rennes.fr",
     "univas.edu.mx": "universidadvasconcelos.edu.mx",
+    "universidadatlantico.org": "uneatlantico.es",
     "universitekongo.org": "vicomulsow.com",
     "univerzitetpim.com": "herofi.io",
     "unochapeco.edu.br": "uno.edu.br",
@@ -87671,6 +88688,7 @@
     "uoit.ca": "ontariotechu.ca",
     "uor-rdc.net": "uor.ac",
     "uowmail.edu.au": "outlook.cloud.microsoft",
+    "upf.es": "upf.edu",
     "upmc.edu": "upmc.com",
     "uportu.pt": "upt.pt",
     "usab.ro": "bestonlinecasino.com",
@@ -87688,6 +88706,8 @@
     "utp.edu.pl": "pbs.edu.pl",
     "utt.ro": "dentfix.ro",
     "uvanet.br": "uva.ce.gov.br",
+    "uvic.es": "uvic.cat",
+    "uvigo.es": "uvigo.gal",
     "uvmnet.edu": "uvm.mx",
     "uw.edu": "washington.edu",
     "uws.edu.au": "westernsydney.edu.au",
