@@ -13605,6 +13605,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "guap.ru": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "gubkin.ru": {
       "code": 0,
       "confidence": 0,
@@ -15537,8 +15542,8 @@
     },
     "iastate.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "iatc.am": {
       "code": 200,
@@ -16217,8 +16222,8 @@
     },
     "iipsindia.org": {
       "code": 200,
-      "confidence": 40,
-      "reason": "low-confidence:http-2xx-html+structure+substantial-content"
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+structure+substantial-content"
     },
     "iisc.ac.in": {
       "code": 200,
@@ -16782,8 +16787,8 @@
     },
     "institution.ndromo41.fr": {
       "code": 200,
-      "confidence": 40,
-      "reason": "low-confidence:http-2xx-html+edu-keywords"
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+edu-keywords"
     },
     "institutlallemand.be": {
       "code": 200,
@@ -16897,8 +16902,8 @@
     },
     "iona.edu": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "ionio.gr": {
       "code": 200,
@@ -17161,9 +17166,9 @@
       "reason": "fetch-error:ConnectionError"
     },
     "iptrisakti.ac.id": {
-      "code": 403,
-      "confidence": 5,
-      "reason": "http-403"
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "ipu.ac.in": {
       "code": 200,
@@ -30225,6 +30230,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "samara.university": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ssau.ru"
+    },
     "sambalpuruniversitypgc.in": {
       "code": 200,
       "confidence": 80,
@@ -32500,10 +32510,25 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "spbu.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "spbuwc.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "spcollege.edu": {
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "spcpa.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "spencercollege.edu.au": {
       "code": 200,
@@ -32524,6 +32549,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "spmi.edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "spnu.ac.ir": {
       "code": 0,
@@ -32549,6 +32579,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "spsmma.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "spsoa-ub.cz": {
       "code": 200,
@@ -32670,6 +32705,21 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "ssaa.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
+    "ssaba.smr.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ssau.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ssbt.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -32690,10 +32740,20 @@
       "confidence": 40,
       "reason": "moved-to:sse.army.gr"
     },
+    "ssea.runnet.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "sseriga.edu.lv": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "sseu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ssgmce.org": {
       "code": 200,
@@ -32705,6 +32765,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ssmu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "ssst.edu.ba": {
       "code": 200,
       "confidence": 60,
@@ -32714,6 +32779,21 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "ssttu.samara.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sstu-edu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "sstu.samara.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ssu.ac.ir": {
       "code": 0,
@@ -32739,6 +32819,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ssu.komi.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ssu.samara.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ssuet.edu.pk": {
       "code": 403,
@@ -32795,6 +32885,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "stankin.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "stanleycollege.edu.au": {
       "code": 200,
       "confidence": 85,
@@ -32814,6 +32909,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "stavsu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "stb.iau.ir": {
       "code": 403,
@@ -33195,6 +33295,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "stu.lipetsk.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "stu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "stuartholme.com": {
       "code": 200,
       "confidence": 50,
@@ -33359,6 +33469,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "suai.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:guap.ru"
     },
     "subr.edu": {
       "code": 0,
@@ -33550,6 +33665,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "surgu.wsnet.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "surugadai.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -33579,6 +33699,16 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "sut.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "sutd.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sutech.ac.ir": {
       "code": 200,
@@ -33814,6 +33944,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "synergy.ru": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
     },
     "syphu.edu.cn": {
       "code": 0,
@@ -34080,6 +34215,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "tart.spb.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tartuh.ee": {
       "code": 200,
       "confidence": 60,
@@ -34340,6 +34480,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "tgpi.ttn.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "tgsha.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "th-brandenburg.de": {
       "code": 200,
       "confidence": 60,
@@ -34374,6 +34524,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "theatrins-yar.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "theatromunicipal.org.br": {
       "code": 200,
@@ -34545,6 +34700,11 @@
       "confidence": 40,
       "reason": "moved-to:tilburguniversity.edu"
     },
+    "timacad.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "timis.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -34654,6 +34814,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "tltsu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "tlu.edu": {
       "code": 200,
@@ -34930,6 +35095,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "touro.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "toursainte.fr": {
       "code": 200,
       "confidence": 50,
@@ -34984,6 +35154,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "tpu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "tradoc.mil.al": {
       "code": 0,
@@ -35125,10 +35300,30 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "tsma.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tsmu.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "tsogu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "tspu.edu.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:tspu.ru"
+    },
+    "tspu.ru": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "tss.qld.edu.au": {
       "code": 403,
@@ -35140,6 +35335,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "tstu.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
+    "tstu.tver.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "tsu.edu": {
       "code": 200,
       "confidence": 90,
@@ -35149,6 +35354,21 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "tsu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "tsu.tula.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "tsuab.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "tsuda.ac.jp": {
       "code": 0,
@@ -35170,6 +35390,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "tsure.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "tsuru.ac.jp": {
       "code": 200,
       "confidence": 90,
@@ -35179,6 +35404,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "ttc.ryazan.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ttmc.edu.cn": {
       "code": 0,
@@ -35225,10 +35455,20 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "tu-bryansk.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "tu-bs.de": {
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:tu-braunschweig.de"
+    },
+    "tu-chel.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "tu-chemnitz.de": {
       "code": 200,
@@ -35490,6 +35730,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "tusur.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "tut.ac.jp": {
       "code": 200,
       "confidence": 80,
@@ -35499,6 +35744,11 @@
       "code": 500,
       "confidence": 5,
       "reason": "moved-to:tuni.fi"
+    },
+    "tuvsu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "tuwien.ac.at": {
       "code": 200,
@@ -36189,6 +36439,11 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "uapa.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uapar.edu": {
       "code": 0,
@@ -37555,6 +37810,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "uef.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "uefs.br": {
       "code": 0,
       "confidence": 0,
@@ -38005,6 +38265,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "ugatu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ugb.edu.sv": {
       "code": 200,
       "confidence": 90,
@@ -38060,7 +38325,17 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ugrasu.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "ugs.ed.ao": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "ugsha.ru": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -38239,6 +38514,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "uii.sever.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "uika-bogor.ac.id": {
       "code": 200,
@@ -38724,6 +39004,21 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "ulspu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ulstu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "ulsu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ulusiada.pt": {
       "code": 0,
@@ -39980,6 +40275,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "uni-dubna.ru": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+multi-source"
+    },
     "uni-due.de": {
       "code": 200,
       "confidence": 50,
@@ -40275,6 +40575,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uni-vologda.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "uni-vt.bg": {
       "code": 0,
       "confidence": 0,
@@ -40349,6 +40654,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "uni.udm.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "uni.wroc.pl": {
       "code": 200,
@@ -41009,6 +41319,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "unilib.neva.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "unilibre.edu.co": {
       "code": 200,
@@ -42395,6 +42710,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "univer.omsk.su": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "univermed-cdgm.ro": {
       "code": 0,
       "confidence": 0,
@@ -42545,6 +42865,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "university.tversu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "universitycanadawest.ca": {
       "code": 0,
       "confidence": 0,
@@ -42649,6 +42974,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uniyar.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "unizambeze.ac.mz": {
       "code": 200,
@@ -42869,6 +43199,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "unn.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "unn.edu.ng": {
       "code": 200,
@@ -44320,6 +44655,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "urc.ac.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "urc.edu.ph": {
       "code": 0,
       "confidence": 0,
@@ -44339,6 +44679,11 @@
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "urfu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uri.br": {
       "code": 0,
@@ -44414,6 +44759,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "usaaa.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "usab-tm.ro": {
       "code": 403,
@@ -44510,6 +44860,11 @@
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
+    "usart.ru": {
+      "code": 200,
+      "confidence": 70,
+      "reason": "http-2xx-html+multi-source+structure+substantial-content"
+    },
     "usask.ca": {
       "code": 200,
       "confidence": 90,
@@ -44595,6 +44950,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "uscon.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "usd.ac.id": {
       "code": 200,
       "confidence": 90,
@@ -44654,6 +45014,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "usfea.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "usfq.edu.ec": {
       "code": 0,
@@ -44745,6 +45110,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "usla.ru": {
+      "code": 202,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
     "usls.edu": {
       "code": 0,
       "confidence": 0,
@@ -44809,6 +45179,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "usmga.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+structure+substantial-content+non-educational-content"
     },
     "usmma.edu": {
       "code": 0,
@@ -45025,6 +45400,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "usu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "usudbury.ca": {
       "code": 200,
       "confidence": 60,
@@ -45034,6 +45414,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:usudbury.ca"
+    },
+    "usue.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "usuhs.mil": {
       "code": 0,
@@ -45425,6 +45810,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "utmn.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "utn.edu.ar": {
       "code": 200,
       "confidence": 90,
@@ -45644,6 +46034,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "uvauga.ru": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "uvb.edu.mx": {
       "code": 200,
@@ -46120,6 +46515,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "vfrta.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "vfu.bg": {
       "code": 200,
       "confidence": 80,
@@ -46129,6 +46529,16 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:vetuni.cz"
+    },
+    "vgafk.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "vgasa.ru": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+substantial-content+non-educational-content"
     },
     "vgcc.edu": {
       "code": 200,
@@ -46146,6 +46556,11 @@
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "vgmu.vitebsk.by": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "vgta.vrn.ru": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -46189,6 +46604,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "vieup.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "vignanuniversity.org": {
       "code": 0,
@@ -46315,6 +46735,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "vlsu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "vmi.edu": {
       "code": 200,
       "confidence": 90,
@@ -46350,15 +46775,30 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "voenmeh.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "volgogradstatemedicaluniversity.in": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "volsu.ru": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+substantial-content"
+    },
     "voorhees.edu": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "vorstu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "vos-kh.cz": {
       "code": 0,
@@ -46379,6 +46819,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "vsau.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "vsavm.com": {
       "code": 403,
@@ -46410,6 +46855,16 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "vsgaki.burnet.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "vsgtu.eastsib.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "vshte.ru": {
       "code": 200,
       "confidence": 60,
@@ -46420,10 +46875,30 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "vsma.info": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "vsp.cz": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "vspu.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "vspu.kirov.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "vspu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "vssut.ac.in": {
       "code": 200,
@@ -46434,6 +46909,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "vstu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "vstu.vitebsk.by": {
       "code": 0,
@@ -46454,6 +46934,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "vsu.ru": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "vszdrav.cz": {
       "code": 200,
@@ -46534,6 +47019,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:wgtn.ac.nz"
+    },
+    "vvsu.ru": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "vvu.edu.gh": {
       "code": 200,
@@ -48050,6 +48540,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "yma.ac.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "ynau.edu.cn": {
       "code": 200,
       "confidence": 80,
@@ -48130,6 +48625,16 @@
       "confidence": 5,
       "reason": "empty-body"
     },
+    "yspu.yar.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
+    "ystu.yar.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ysu.ac.kr": {
       "code": 200,
       "confidence": 90,
@@ -48149,6 +48654,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+substantial-content+non-educational-content"
+    },
+    "ysu.ru": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "ytet.edu.cn": {
       "code": 0,
@@ -55513,6 +56023,10 @@
     "guangztc.edu.cn": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "guap.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "gubkin.ru": {
       "reg": "",
@@ -64590,6 +65104,7 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "samara.university": "2015-10-12",
     "sambalpuruniversitypgc.in": "2020-01-17",
     "samchok.ac.kr": {
       "reg": "",
@@ -65786,7 +66301,19 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "spbu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "spbuwc.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "spcollege.edu": "2001-10-16",
+    "spcpa.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "spencercollege.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -65800,6 +66327,10 @@
       "ts": "2026-09-30"
     },
     "spm.sch.id": "2014-06-25",
+    "spmi.edu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "spnu.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -65814,6 +66345,7 @@
     },
     "sports-etudes-college-corneille.fr": "2023-01-13",
     "springarbor.edu": "2022-04-18",
+    "spsmma.com": "2018-04-08",
     "spsoa-ub.cz": "2011-10-13",
     "spu.ac.jp": {
       "reg": "",
@@ -65871,6 +66403,18 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ssaa.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ssaba.smr.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ssau.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ssbt.edu.au": {
       "reg": "",
       "ts": "2026-09-16"
@@ -65884,14 +66428,26 @@
       "reg": "",
       "ts": "2026-09-24"
     },
+    "ssea.runnet.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "sseriga.edu.lv": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "sseu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ssgmce.org": "2026-02-08",
     "ssms.edu.pk": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "ssmu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ssst.edu.ba": {
       "reg": "",
@@ -65900,6 +66456,18 @@
     "sssup.it": {
       "reg": "",
       "ts": "2026-09-25"
+    },
+    "ssttu.samara.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "sstu-edu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "sstu.samara.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ssu.ac.ir": {
       "reg": "",
@@ -65914,6 +66482,14 @@
     "ssu.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "ssu.komi.com": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ssu.samara.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ssuet.edu.pk": {
       "reg": "",
@@ -65944,6 +66520,10 @@
     },
     "stan.ac.id": "1999-07-23",
     "stanford.edu": "1985-10-04",
+    "stankin.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "stanleycollege.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -65951,6 +66531,10 @@
     "stanselmbx.org": "2000-08-30",
     "starkstate.edu": "2002-01-09",
     "statetechmo.edu": "2014-01-31",
+    "stavsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "stb.iau.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -66107,6 +66691,14 @@
       "ts": "2026-09-24"
     },
     "stu.edu.sd": "2021-12-16",
+    "stu.lipetsk.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "stu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "stuartholme.com": "2000-10-18",
     "stud.vilniustech.lt": {
       "reg": "",
@@ -66227,6 +66819,10 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "suai.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "subr.edu": "1992-08-06",
     "suc.edu.gh": {
       "reg": "",
@@ -66320,6 +66916,10 @@
       "ts": "2026-09-18"
     },
     "surabayaeuropeanschool.com": "2002-06-14",
+    "surgu.wsnet.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "surugadai.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -66337,6 +66937,14 @@
     "sut.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "sut.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "sutd.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "sutech.ac.ir": {
       "reg": "",
@@ -66484,6 +67092,10 @@
       "ts": "2026-09-22"
     },
     "sylvacampus.org": "2022-04-07",
+    "synergy.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "syphu.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
@@ -66642,6 +67254,10 @@
     },
     "tarkioalumni.org": "2000-10-27",
     "tarleton.edu": "1991-11-19",
+    "tart.spb.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tartuh.ee": {
       "reg": "",
       "ts": "2026-09-22"
@@ -66793,6 +67409,14 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "tgpi.ttn.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tgsha.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "th-brandenburg.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -66818,6 +67442,10 @@
       "ts": "2026-09-13"
     },
     "theasbestosinstitute.com": "2009-05-12",
+    "theatrins-yar.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "theatromunicipal.org.br": "2013-09-20",
     "theconservatory.org": "1999-05-24",
     "thefashioninstitute.com.au": {
@@ -66911,6 +67539,10 @@
     },
     "tilburguniversity.edu": "2010-07-26",
     "tilburguniversity.nl": "2000-04-12",
+    "timacad.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "timis.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -66989,6 +67621,10 @@
     "tlc.edu.qa": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "tltsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "tlu.edu": "2000-08-03",
     "tlu.ee": {
@@ -67164,6 +67800,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "touro.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "toursainte.fr": "2008-09-30",
     "towson.edu": "1988-05-19",
     "toyaku.ac.jp": {
@@ -67199,6 +67839,10 @@
       "ts": "2026-09-27"
     },
     "tpu.fi": "1991-01-01",
+    "tpu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tradoc.mil.al": {
       "reg": "",
       "ts": "2026-09-13"
@@ -67258,16 +67902,52 @@
       "reg": "",
       "ts": "2026-09-13"
     },
+    "tsma.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tsmu.edu": "2000-06-02",
+    "tsogu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tspu.edu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tspu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tss.qld.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
     },
     "tstc.edu": "1992-03-09",
+    "tstu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tstu.tver.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tsu.edu": "1987-07-23",
     "tsu.edu.ge": {
       "reg": "",
       "ts": "2026-09-23"
+    },
+    "tsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tsu.tula.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "tsuab.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "tsuda.ac.jp": {
       "reg": "",
@@ -67282,6 +67962,10 @@
       "ts": "2026-09-17"
     },
     "tsuniversity.edu.ng": "2012-10-18",
+    "tsure.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tsuru.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -67289,6 +67973,10 @@
     "tsurumi-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "ttc.ryazan.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ttmc.edu.cn": {
       "reg": "",
@@ -67317,9 +68005,17 @@
       "reg": "",
       "ts": "2026-09-24"
     },
+    "tu-bryansk.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tu-bs.de": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "tu-chel.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "tu-chemnitz.de": {
       "reg": "",
@@ -67486,11 +68182,19 @@
       "ts": "2026-09-25"
     },
     "tuskegee.edu": "2002-12-02",
+    "tusur.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tut.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
     },
     "tut.fi": "1991-01-01",
+    "tuvsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "tuwien.ac.at": {
       "reg": "",
       "ts": "2026-09-15"
@@ -67931,6 +68635,10 @@
     "uapa.edu.do": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uapa.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uapar.edu": "1998-03-13",
     "uapnet.edu.bo": {
@@ -68773,6 +69481,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "uef.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uefs.br": "1996-07-01",
     "ueh.edu.ht": "2006-07-02",
     "uel.br": "1995-06-08",
@@ -68965,6 +69677,10 @@
       "ts": "2026-09-30"
     },
     "uganc.org": "2021-05-11",
+    "ugatu.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ugb.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
@@ -69003,9 +69719,17 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "ugrasu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ugs.ed.ao": {
       "reg": "",
       "ts": "2026-09-19"
+    },
+    "ugsha.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ugto.mx": {
       "reg": "",
@@ -69108,6 +69832,10 @@
       "ts": "2026-09-29"
     },
     "uii.ac.id": "1995-05-18",
+    "uii.sever.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uika-bogor.ac.id": "1999-05-25",
     "uileon.edu.mx": {
       "reg": "",
@@ -69379,6 +70107,18 @@
       "ts": "2026-09-28"
     },
     "ulsan.ac.kr": "1994-04-16",
+    "ulspu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ulstu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ulsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ulusiada.pt": {
       "reg": "",
       "ts": "2026-09-30"
@@ -70128,6 +70868,10 @@
       "reg": "",
       "ts": "2026-09-24"
     },
+    "uni-dubna.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uni-due.de": {
       "reg": "",
       "ts": "2026-09-24"
@@ -70355,6 +71099,10 @@
       "reg": "",
       "ts": "2026-09-24"
     },
+    "uni-vologda.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uni-vt.bg": {
       "reg": "",
       "ts": "2026-09-20"
@@ -70408,6 +71156,10 @@
     "uni.torun.pl": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "uni.udm.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uni.wroc.pl": {
       "reg": "",
@@ -70761,6 +71513,10 @@
     "unileoben.ac.at": {
       "reg": "",
       "ts": "2026-09-14"
+    },
+    "unilib.neva.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unilibre.edu.co": {
       "reg": "",
@@ -71453,6 +72209,10 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "univer.omsk.su": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "univermed-cdgm.ro": {
       "reg": "",
       "ts": "2026-09-30"
@@ -71537,6 +72297,10 @@
     },
     "university-bank.com": "1995-09-12",
     "university.kg": "2006-02-07",
+    "university.tversu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "universitycanadawest.ca": "2004-05-25",
     "universityliberia.org": "2020-05-13",
     "universityofbohol.com": "2012-05-13",
@@ -71587,6 +72351,10 @@
     "uniwa.gr": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "uniyar.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "unizambeze.ac.mz": {
       "reg": "",
@@ -71707,6 +72475,10 @@
       "ts": "2026-09-25"
     },
     "unmul.ac.id": "2001-07-09",
+    "unn.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "unn.edu.ng": "2009-05-13",
     "unne.edu.ar": {
       "reg": "",
@@ -72527,6 +73299,10 @@
       "ts": "2026-09-28"
     },
     "urbaniana.edu": "1999-11-09",
+    "urc.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "urc.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
@@ -72534,6 +73310,10 @@
     "urca.br": "1997-10-16",
     "urcamp.tche.br": "1996-01-01",
     "uregina.ca": "2000-10-19",
+    "urfu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "uri.br": "1998-05-18",
     "uri.edu": "1989-02-02",
     "urich.edu": "1989-01-05",
@@ -72578,6 +73358,10 @@
     "usa.edu.pk": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "usaaa.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "usab-tm.ro": {
       "reg": "",
@@ -72646,6 +73430,10 @@
     },
     "usao.edu": "1992-02-21",
     "usap.edu": "2013-11-05",
+    "usart.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usask.ca": "2000-10-13",
     "usat.edu.pe": {
       "reg": "",
@@ -72698,6 +73486,10 @@
       "ts": "2026-09-29"
     },
     "usca.edu": "2001-01-24",
+    "uscon.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usd.ac.id": "1997-12-05",
     "usd.edu": "1986-07-10",
     "usek.edu.lb": "2018-12-20",
@@ -72725,6 +73517,10 @@
     },
     "usf.edu": "1986-09-29",
     "usfca.edu": "1990-11-02",
+    "usfea.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usfq.edu.ec": "2011-04-16",
     "usfx.edu.bo": {
       "reg": "",
@@ -72767,6 +73563,10 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "usla.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usls.edu": {
       "reg": "",
       "ts": "2026-09-29"
@@ -72806,6 +73606,10 @@
     "usmf.md": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "usmga.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "usmma.edu": "1995-01-12",
     "usmp.edu.pe": {
@@ -72931,8 +73735,16 @@
     "usu.br": "1997-07-02",
     "usu.edu": "1988-06-03",
     "usu.edu.br": "2017-04-04",
+    "usu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usudbury.ca": "2002-12-03",
     "usudbury.com": "1998-02-17",
+    "usue.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "usuhs.mil": {
       "reg": "",
       "ts": "2026-09-19"
@@ -73137,6 +73949,10 @@
     },
     "utmachala.edu.ec": "2011-04-16",
     "utmb.edu": "1992-06-01",
+    "utmn.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "utn.edu.ar": {
       "reg": "",
       "ts": "2026-09-20"
@@ -73245,6 +74061,10 @@
     "uvas.edu.pk": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "uvauga.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "uvb.edu.mx": {
       "reg": "",
@@ -73460,11 +74280,23 @@
       "reg": "",
       "ts": "2026-09-16"
     },
+    "vfrta.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vfu.bg": {
       "reg": "",
       "ts": "2026-09-20"
     },
     "vfu.cz": "1996-11-03",
+    "vgafk.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "vgasa.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vgcc.edu": "2002-02-04",
     "vggu.ru": {
       "reg": "",
@@ -73477,6 +74309,10 @@
     "vgmu.vitebsk.by": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "vgta.vrn.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "vgtu.lt": {
       "reg": "",
@@ -73504,6 +74340,10 @@
       "ts": "2026-09-21"
     },
     "vidyasagar.ac.in": "2004-12-31",
+    "vieup.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vignanuniversity.org": "2009-03-17",
     "vikramuniversity.org": "2022-11-30",
     "villablanche-menton.fr": "2017-06-12",
@@ -73568,6 +74408,10 @@
       "reg": "",
       "ts": "2026-09-14"
     },
+    "vlsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vmi.edu": "1990-11-07",
     "vmou.ac.in": "2007-06-27",
     "vmrfdu.edu.in": "2020-11-25",
@@ -73581,8 +74425,20 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "voenmeh.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "volgogradstatemedicaluniversity.in": "2025-03-08",
+    "volsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "voorhees.edu": "1996-05-15",
+    "vorstu.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vos-kh.cz": "1998-03-17",
     "vosis.cz": "2016-03-08",
     "vpu.lt": {
@@ -73593,22 +74449,54 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "vsau.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vsavm.com": "2024-02-04",
     "vsb.cz": "1995-11-05",
     "vscht.cz": "1996-12-28",
     "vsci.cz": "2006-10-10",
     "vse.cz": "1996-08-25",
     "vseip.com": "2017-05-18",
+    "vsgaki.burnet.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "vsgtu.eastsib.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vshte.ru": {
       "reg": "",
       "ts": "2026-09-30"
     },
     "vslib.cz": "1996-11-17",
+    "vsma.info": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vsp.cz": "2003-12-02",
+    "vspu.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "vspu.kirov.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "vspu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vssut.ac.in": "2011-10-27",
     "vstu.by": {
       "reg": "",
       "ts": "2026-09-15"
+    },
+    "vstu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "vstu.vitebsk.by": {
       "reg": "",
@@ -73623,6 +74511,10 @@
       "ts": "2026-09-15"
     },
     "vsu.edu": "1991-05-10",
+    "vsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "vszdrav.cz": "2005-02-14",
     "vt.edu": "1987-11-18",
     "vtc.edu": "2001-01-03",
@@ -73665,6 +74557,10 @@
     "vuw.ac.nz": {
       "reg": "",
       "ts": "2026-09-28"
+    },
+    "vvsu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "vvu.edu.gh": {
       "reg": "",
@@ -74390,6 +75286,10 @@
       "ts": "2026-09-26"
     },
     "yizhuan.com": "2002-03-25",
+    "yma.ac.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ynau.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
@@ -74435,6 +75335,14 @@
       "ts": "2026-09-20"
     },
     "ysparmaruniversity.org": "2023-09-29",
+    "yspu.yar.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
+    "ystu.yar.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
+    },
     "ysu.ac.kr": "1998-08-25",
     "ysu.am": {
       "reg": "",
@@ -74444,6 +75352,10 @@
     "ysu.edu.cn": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "ysu.ru": {
+      "reg": "",
+      "ts": "2026-10-01"
     },
     "ytet.edu.cn": {
       "reg": "",
@@ -77352,6 +78264,7 @@
     "gu.nic.in": 1,
     "gu.se": 0,
     "guangztc.edu.cn": 1,
+    "guap.ru": 0,
     "gubkin.ru": 1,
     "guc.ac.bw": 0,
     "guc.co.bw": 1,
@@ -77756,7 +78669,7 @@
     "iauctb.ac.ir": 1,
     "iaud.ac.ir": 2,
     "iauf.ac.ir": 2,
-    "iaufb.ac.ir": 1,
+    "iaufb.ac.ir": 2,
     "iauh.ac.ir": 1,
     "iauk.ac.ir": 1,
     "iaukb.ir": 1,
@@ -77799,7 +78712,7 @@
     "icae.edu.au": 0,
     "icahn.mssm.edu": 0,
     "icam.fr": 0,
-    "icat.edu.au": 1,
+    "icat.edu.au": 2,
     "icb.edu.mn": 1,
     "icc.ac.jp": 1,
     "iccbxl.be": 1,
@@ -77874,7 +78787,7 @@
     "iiitvadodara.ac.in": 1,
     "iilm.edu": 0,
     "iimtrichy.ac.in": 0,
-    "iipsindia.org": 1,
+    "iipsindia.org": 0,
     "iisc.ac.in": 0,
     "iisc.ernet.in": 1,
     "iit.com.na": 1,
@@ -77916,7 +78829,7 @@
     "ilsc.com.au": 1,
     "ilstu.edu": 1,
     "imagineeducation.com.au": 1,
-    "imaiph.com": 1,
+    "imaiph.com": 2,
     "imamreza.ac.ir": 0,
     "imati.cnr.it": 1,
     "imau.edu.cn": 1,
@@ -77961,7 +78874,7 @@
     "ineps-mlz.be": 1,
     "info.kma.lt": 1,
     "informaconnect.com": 0,
-    "informatics.edu.ph": 1,
+    "informatics.edu.ph": 2,
     "ingenioer.au.dk": 0,
     "inha.ac.kr": 0,
     "inha.uz": 0,
@@ -77985,9 +78898,9 @@
     "insper.edu.br": 1,
     "instedt.edu.my": 0,
     "institut-machtens.be": 0,
-    "institutemvd.by": 1,
+    "institutemvd.by": 2,
     "institution-saintemarthe-notredame.fr": 0,
-    "institution.ndromo41.fr": 1,
+    "institution.ndromo41.fr": 0,
     "institutlallemand.be": 0,
     "instituto.hospitalitaliano.org.ar": 1,
     "institutoembelleze.com": 2,
@@ -78047,7 +78960,7 @@
     "ipleiria.pt": 0,
     "ipm.edu.mo": 0,
     "ipn.edu.mx": 1,
-    "ipp.by": 1,
+    "ipp.by": 2,
     "ipp.pt": 1,
     "ippm.edu.my": 1,
     "ipportalegre.pt": 0,
@@ -78063,7 +78976,7 @@
     "ipteknik.edu.my": 1,
     "iptho.edu.my": 1,
     "iptips.edu.my": 1,
-    "iptrisakti.ac.id": 1,
+    "iptrisakti.ac.id": 0,
     "ipu.ac.in": 0,
     "ipu.ac.jp": 1,
     "ipvc.pt": 1,
@@ -78113,7 +79026,7 @@
     "isma.indi.ru": 1,
     "ismcm-cesti.fr": 1,
     "ismdhanbad.ac.in": 1,
-    "ismg-boke.com": 1,
+    "ismg-boke.com": 2,
     "ismm.edu.cu": 1,
     "ismra.fr": 1,
     "isnm.de": 1,
@@ -80676,6 +81589,7 @@
     "salonsuccessacademy.com": 1,
     "salu.edu.pk": 0,
     "salvador.edu.ar": 1,
+    "samara.university": 1,
     "sambalpuruniversitypgc.in": 0,
     "samchok.ac.kr": 1,
     "samford.edu": 0,
@@ -81131,16 +82045,21 @@
     "spbiir.ru": 1,
     "spbstu.ru": 0,
     "spbtei.ru": 1,
+    "spbu.ru": 0,
+    "spbuwc.ru": 1,
     "spcollege.edu": 0,
+    "spcpa.ru": 1,
     "spencercollege.edu.au": 0,
     "spiritus.ch": 0,
     "spiruharet.ro": 0,
     "spm.sch.id": 0,
+    "spmi.edu.ru": 1,
     "spnu.ac.ir": 1,
     "sportacadem.ru": 3,
     "sportedu.by": 2,
     "sports-etudes-college-corneille.fr": 1,
     "springarbor.edu": 0,
+    "spsmma.com": 1,
     "spsoa-ub.cz": 0,
     "spu.ac.jp": 1,
     "spu.ac.ke": 0,
@@ -81165,20 +82084,31 @@
     "srttu.edu": 1,
     "sru.edu": 0,
     "sru.edu.kh": 1,
+    "ssaa.ru": 1,
+    "ssaba.smr.ru": 1,
+    "ssau.ru": 0,
     "ssbt.edu.au": 0,
     "ssc.ac.kr": 0,
     "sse.army.gr": 0,
     "sse.gr": 1,
+    "ssea.runnet.ru": 1,
     "sseriga.edu.lv": 1,
+    "sseu.ru": 0,
     "ssgmce.org": 1,
     "ssms.edu.pk": 1,
+    "ssmu.ru": 0,
     "ssst.edu.ba": 0,
     "sssup.it": 1,
+    "ssttu.samara.ru": 1,
+    "sstu-edu.ru": 1,
+    "sstu.samara.ru": 1,
     "ssu.ac.ir": 1,
     "ssu.ac.jp": 0,
     "ssu.ac.kr": 0,
     "ssu.edu.ng": 0,
     "ssu.edu.ph": 0,
+    "ssu.komi.com": 1,
+    "ssu.samara.ru": 1,
     "ssuet.edu.pk": 1,
     "ssus.ac.in": 0,
     "ssvv.up.nic.in": 1,
@@ -81190,10 +82120,12 @@
     "stamforduniversity.edu.bd": 0,
     "stan.ac.id": 1,
     "stanford.edu": 0,
+    "stankin.ru": 0,
     "stanleycollege.edu.au": 0,
     "stanselmbx.org": 0,
     "starkstate.edu": 0,
     "statetechmo.edu": 0,
+    "stavsu.ru": 1,
     "stb.iau.ir": 1,
     "stbernard.k12.la.us": 2,
     "stbrigids.wa.edu.au": 0,
@@ -81270,6 +82202,8 @@
     "stu.edu.cn": 1,
     "stu.edu.gh": 0,
     "stu.edu.sd": 2,
+    "stu.lipetsk.ru": 0,
+    "stu.ru": 0,
     "stuartholme.com": 0,
     "stud.vilniustech.lt": 1,
     "studbocconi.it": 1,
@@ -81303,6 +82237,7 @@
     "su.se": 0,
     "su.shorter.edu": 1,
     "suagm.edu": 1,
+    "suai.ru": 1,
     "subr.edu": 1,
     "suc.edu.gh": 2,
     "suc.edu.om": 1,
@@ -81341,12 +82276,15 @@
     "suptelecom.net.ma": 1,
     "surabaya.telkomuniversity.ac.id": 0,
     "surabayaeuropeanschool.com": 0,
+    "surgu.wsnet.ru": 1,
     "surugadai.ac.jp": 1,
     "susqu.edu": 0,
     "sust.edu": 1,
     "sustc.edu.cn": 1,
     "sut.ac.ir": 0,
     "sut.ac.jp": 1,
+    "sut.ru": 0,
+    "sutd.ru": 0,
     "sutech.ac.ir": 0,
     "suu.edu": 0,
     "suwon.ac.kr": 0,
@@ -81394,6 +82332,7 @@
     "sydney.edu.au": 0,
     "syict.edu.cn": 1,
     "sylvacampus.org": 0,
+    "synergy.ru": 1,
     "syphu.edu.cn": 1,
     "sypu.edu.cn": 1,
     "syr.edu": 1,
@@ -81447,6 +82386,7 @@
     "tarc.edu.my": 0,
     "tarkioalumni.org": 0,
     "tarleton.edu": 0,
+    "tart.spb.ru": 1,
     "tartuh.ee": 0,
     "taschool.qld.edu.au": 0,
     "tasued.edu.ng": 1,
@@ -81499,6 +82439,8 @@
     "tfh-bochum.de": 1,
     "tfh-wildau.de": 1,
     "tfu.ac.jp": 1,
+    "tgpi.ttn.ru": 1,
+    "tgsha.ru": 1,
     "th-brandenburg.de": 0,
     "th-deg.de": 0,
     "th-koeln.de": 0,
@@ -81506,6 +82448,7 @@
     "tha.de": 0,
     "thchur.ch": 0,
     "theasbestosinstitute.com": 0,
+    "theatrins-yar.ru": 0,
     "theatromunicipal.org.br": 1,
     "theconservatory.org": 1,
     "thefashioninstitute.com.au": 2,
@@ -81540,6 +82483,7 @@
     "tijmu.edu.cn": 1,
     "tilburguniversity.edu": 0,
     "tilburguniversity.nl": 1,
+    "timacad.ru": 0,
     "timis.ac.jp": 1,
     "tintern.vic.edu.au": 0,
     "tip.edu.pk": 0,
@@ -81562,6 +82506,7 @@
     "tktk.ee": 0,
     "tku.ac.jp": 1,
     "tlc.edu.qa": 1,
+    "tltsu.ru": 0,
     "tlu.edu": 0,
     "tlu.ee": 0,
     "tmbu.org": 1,
@@ -81617,6 +82562,7 @@
     "toulouse.dominicains.com": 0,
     "tourism.edu.az": 1,
     "touro.edu": 0,
+    "touro.ru": 0,
     "toursainte.fr": 0,
     "towson.edu": 0,
     "toyaku.ac.jp": 1,
@@ -81628,6 +82574,7 @@
     "toyota-ti.ac.jp": 1,
     "tpmcollege.edu.my": 1,
     "tpu.fi": 1,
+    "tpu.ru": 0,
     "tradoc.mil.al": 3,
     "transy.edu": 0,
     "trenholmstate.edu": 0,
@@ -81656,17 +82603,28 @@
     "tshmc.org": 1,
     "tsi.lv": 0,
     "tsinghua.edu.cn": 3,
+    "tsma.ru": 1,
     "tsmu.edu": 0,
+    "tsogu.ru": 1,
+    "tspu.edu.ru": 1,
+    "tspu.ru": 0,
     "tss.qld.edu.au": 2,
     "tstc.edu": 0,
+    "tstu.ru": 1,
+    "tstu.tver.ru": 0,
     "tsu.edu": 0,
     "tsu.edu.ge": 1,
+    "tsu.ru": 0,
+    "tsu.tula.ru": 1,
+    "tsuab.ru": 0,
     "tsuda.ac.jp": 1,
     "tsufl.edu": 1,
     "tsukuba.ac.jp": 1,
     "tsuniversity.edu.ng": 0,
+    "tsure.ru": 1,
     "tsuru.ac.jp": 0,
     "tsurumi-u.ac.jp": 1,
+    "ttc.ryazan.ru": 1,
     "ttmc.edu.cn": 1,
     "ttu.ac.ke": 0,
     "ttu.edu": 0,
@@ -81676,7 +82634,9 @@
     "ttuhsc.edu": 0,
     "tu-berlin.de": 1,
     "tu-braunschweig.de": 0,
+    "tu-bryansk.ru": 1,
     "tu-bs.de": 1,
+    "tu-chel.ac.ru": 1,
     "tu-chemnitz.de": 0,
     "tu-clausthal.de": 1,
     "tu-cottbus.de": 1,
@@ -81729,8 +82689,10 @@
     "tus.ie": 0,
     "tusculum.edu": 4,
     "tuskegee.edu": 0,
+    "tusur.ru": 0,
     "tut.ac.jp": 0,
     "tut.fi": 1,
+    "tuvsu.ru": 1,
     "tuwien.ac.at": 2,
     "tuwien.at": 0,
     "tvuni.in": 1,
@@ -81869,6 +82831,7 @@
     "uap.edu.ph": 1,
     "uap.edu.py": 1,
     "uapa.edu.do": 0,
+    "uapa.ru": 0,
     "uapar.edu": 1,
     "uapnet.edu.bo": 1,
     "uaptc.edu": 0,
@@ -82142,6 +83105,7 @@
     "uece.br": 0,
     "uees.edu.ec": 0,
     "uees.edu.sv": 1,
+    "uef.ru": 1,
     "uefs.br": 1,
     "ueh.edu.ht": 0,
     "uel.br": 0,
@@ -82232,6 +83196,7 @@
     "uga.edu": 0,
     "ugal.ro": 1,
     "uganc.org": 1,
+    "ugatu.ac.ru": 1,
     "ugb.edu.sv": 0,
     "ugd.edu.ar": 0,
     "ugd.edu.mk": 0,
@@ -82243,7 +83208,9 @@
     "ugr.edu.ar": 0,
     "ugr.es": 0,
     "ugrancolombia.edu.co": 1,
+    "ugrasu.ru": 0,
     "ugs.ed.ao": 1,
+    "ugsha.ru": 1,
     "ugto.mx": 1,
     "uh.cu": 0,
     "uh.edu": 0,
@@ -82279,6 +83246,7 @@
     "uier-edu.am": 2,
     "uigv.edu.pe": 0,
     "uii.ac.id": 1,
+    "uii.sever.ru": 1,
     "uika-bogor.ac.id": 0,
     "uileon.edu.mx": 1,
     "uiliria.org": 1,
@@ -82376,6 +83344,9 @@
     "ulsab.edu.mx": 0,
     "ulsac.edu.mx": 1,
     "ulsan.ac.kr": 1,
+    "ulspu.ru": 1,
+    "ulstu.ru": 0,
+    "ulsu.ru": 0,
     "ulusiada.pt": 1,
     "ulusofona.pt": 0,
     "um-rdc.org": 1,
@@ -82627,6 +83598,7 @@
     "uni-bielefeld.de": 0,
     "uni-bonn.de": 0,
     "uni-bremen.de": 0,
+    "uni-dubna.ru": 0,
     "uni-due.de": 0,
     "uni-duesseldorf.de": 1,
     "uni-duisburg-essen.de": 1,
@@ -82686,6 +83658,7 @@
     "uni-tuebingen.de": 0,
     "uni-ulm.de": 0,
     "uni-vechta.de": 0,
+    "uni-vologda.ac.ru": 1,
     "uni-vt.bg": 1,
     "uni-weimar.de": 0,
     "uni-wh.de": 0,
@@ -82701,6 +83674,7 @@
     "uni.opole.pl": 0,
     "uni.pt": 1,
     "uni.torun.pl": 1,
+    "uni.udm.ru": 1,
     "uni.wroc.pl": 1,
     "unia.ao": 0,
     "uniacc.cl": 0,
@@ -82833,6 +83807,7 @@
     "unilak.ac.id": 1,
     "unile.it": 1,
     "unileoben.ac.at": 0,
+    "unilib.neva.ru": 1,
     "unilibre.edu.co": 0,
     "unilim.fr": 0,
     "unilink.it": 0,
@@ -83110,6 +84085,7 @@
     "univcb.ro": 0,
     "univchapultepec.edu.mx": 1,
     "unive.it": 0,
+    "univer.omsk.su": 1,
     "univermed-cdgm.ro": 1,
     "universiapolis.ma": 0,
     "universidad-policial.edu.ar": 0,
@@ -83140,6 +84116,7 @@
     "universitetipolis.edu.al": 0,
     "university-bank.com": 0,
     "university.kg": 1,
+    "university.tversu.ru": 1,
     "universitycanadawest.ca": 1,
     "universityliberia.org": 0,
     "universityofbohol.com": 0,
@@ -83161,6 +84138,7 @@
     "univr.it": 1,
     "univsul.org": 1,
     "uniwa.gr": 0,
+    "uniyar.ac.ru": 1,
     "unizambeze.ac.mz": 0,
     "unizd.hr": 1,
     "unizg.hr": 0,
@@ -83205,6 +84183,7 @@
     "unmuhjember.ac.id": 1,
     "unmuhmataram.com": 1,
     "unmul.ac.id": 0,
+    "unn.ac.ru": 1,
     "unn.edu.ng": 0,
     "unne.edu.ar": 1,
     "unnes.ac.id": 0,
@@ -83495,10 +84474,12 @@
     "ur.mx": 1,
     "uraccan.edu.ni": 1,
     "urbaniana.edu": 1,
+    "urc.ac.ru": 0,
     "urc.edu.ph": 1,
     "urca.br": 0,
     "urcamp.tche.br": 1,
     "uregina.ca": 0,
+    "urfu.ru": 0,
     "uri.br": 1,
     "uri.edu": 0,
     "urich.edu": 1,
@@ -83514,6 +84495,7 @@
     "us.es": 1,
     "usa.edu.ph": 0,
     "usa.edu.pk": 1,
+    "usaaa.ru": 0,
     "usab-tm.ro": 1,
     "usab.ro": 1,
     "usac.edu.gt": 0,
@@ -83533,6 +84515,7 @@
     "usantotomas.edu.co": 0,
     "usao.edu": 0,
     "usap.edu": 0,
+    "usart.ru": 0,
     "usask.ca": 0,
     "usat.edu.pe": 1,
     "usat.ms": 1,
@@ -83550,6 +84533,7 @@
     "usc.edu.ph": 0,
     "usca.edu": 0,
     "uscga.edu": 0,
+    "uscon.ru": 1,
     "usd.ac.id": 0,
     "usd.edu": 0,
     "usek.edu.lb": 0,
@@ -83562,6 +84546,7 @@
     "usf.com.mx": 0,
     "usf.edu": 0,
     "usfca.edu": 0,
+    "usfea.ru": 1,
     "usfq.edu.ec": 1,
     "usfx.edu.bo": 1,
     "usfx.info": 1,
@@ -83580,6 +84565,7 @@
     "usjr.edu.ph": 1,
     "usjt.br": 0,
     "usl.edu": 1,
+    "usla.ru": 1,
     "usls.edu": 1,
     "usm.ac.id": 1,
     "usm.cl": 0,
@@ -83593,6 +84579,7 @@
     "usma.edu": 1,
     "usmba.ac.ma": 1,
     "usmf.md": 1,
+    "usmga.ru": 1,
     "usmma.edu": 1,
     "usmp.edu.pe": 1,
     "usna.edu": 0,
@@ -83636,8 +84623,10 @@
     "usu.br": 1,
     "usu.edu": 0,
     "usu.edu.br": 0,
+    "usu.ru": 1,
     "usudbury.ca": 0,
     "usudbury.com": 1,
+    "usue.ru": 1,
     "usuhs.mil": 1,
     "usurcolombia.com": 0,
     "usv.ro": 0,
@@ -83716,6 +84705,7 @@
     "utm.utoronto.ca": 0,
     "utmachala.edu.ec": 0,
     "utmb.edu": 0,
+    "utmn.ru": 0,
     "utn.edu.ar": 0,
     "utn.edu.ec": 0,
     "utneza.edu.mx": 1,
@@ -83760,6 +84750,7 @@
     "uva.nl": 0,
     "uvanet.br": 1,
     "uvas.edu.pk": 0,
+    "uvauga.ru": 1,
     "uvb.edu.mx": 0,
     "uveritas.ac.cr": 1,
     "uvg.edu.gt": 0,
@@ -83855,12 +84846,16 @@
     "vetmeduni.ac.at": 0,
     "vetuni.cz": 1,
     "vevey-eps.ch": 0,
+    "vfrta.ru": 1,
     "vfu.bg": 0,
     "vfu.cz": 1,
+    "vgafk.ru": 0,
+    "vgasa.ru": 1,
     "vgcc.edu": 0,
     "vggu.ru": 3,
     "vgifk.ru": 0,
     "vgmu.vitebsk.by": 1,
+    "vgta.vrn.ru": 1,
     "vgtu.lt": 1,
     "vic.edu": 1,
     "vicomulsow.com": 1,
@@ -83869,6 +84864,7 @@
     "victory.nsw.edu.au": 0,
     "vicu.utoronto.ca": 0,
     "vidyasagar.ac.in": 0,
+    "vieup.ru": 1,
     "vignanuniversity.org": 1,
     "vikramuniversity.org": 1,
     "villablanche-menton.fr": 0,
@@ -83894,6 +84890,7 @@
     "vlerick.com": 0,
     "vlgr.ranepa.ru": 0,
     "vlk.ac.at": 2,
+    "vlsu.ru": 1,
     "vmi.edu": 0,
     "vmou.ac.in": 0,
     "vmrfdu.edu.in": 0,
@@ -83901,27 +84898,39 @@
     "vmspd.org": 0,
     "vmuf.edu.ph": 0,
     "vnitnagpur.ac.in": 1,
+    "voenmeh.ru": 0,
     "volgogradstatemedicaluniversity.in": 0,
+    "volsu.ru": 0,
     "voorhees.edu": 0,
+    "vorstu.ac.ru": 1,
     "vos-kh.cz": 3,
     "vosis.cz": 3,
     "vpu.lt": 1,
     "vru.ac.ir": 1,
+    "vsau.ru": 1,
     "vsavm.com": 1,
     "vsb.cz": 1,
     "vscht.cz": 0,
     "vsci.cz": 1,
     "vse.cz": 0,
     "vseip.com": 1,
+    "vsgaki.burnet.ru": 1,
+    "vsgtu.eastsib.ru": 0,
     "vshte.ru": 0,
     "vslib.cz": 1,
+    "vsma.info": 1,
     "vsp.cz": 1,
+    "vspu.ac.ru": 1,
+    "vspu.kirov.ru": 1,
+    "vspu.ru": 0,
     "vssut.ac.in": 0,
     "vstu.by": 0,
+    "vstu.ru": 0,
     "vstu.vitebsk.by": 1,
     "vsu.am": 0,
     "vsu.by": 0,
     "vsu.edu": 1,
+    "vsu.ru": 0,
     "vszdrav.cz": 2,
     "vt.edu": 0,
     "vtc.edu": 1,
@@ -83938,6 +84947,7 @@
     "vut.cz": 0,
     "vutbr.cz": 1,
     "vuw.ac.nz": 1,
+    "vvsu.ru": 0,
     "vvu.edu.gh": 0,
     "vwc.edu": 1,
     "wab.edu.pl": 0,
@@ -84241,6 +85251,7 @@
     "ygu.ac.jp": 1,
     "yhc.edu": 0,
     "yizhuan.com": 1,
+    "yma.ac.ru": 1,
     "ynau.edu.cn": 0,
     "ynnu.edu.cn": 1,
     "ynu.ac.jp": 1,
@@ -84257,10 +85268,13 @@
     "ysitc.am": 2,
     "ysmu.am": 0,
     "ysparmaruniversity.org": 1,
+    "yspu.yar.ru": 1,
+    "ystu.yar.ru": 1,
     "ysu.ac.kr": 0,
     "ysu.am": 0,
     "ysu.edu": 0,
     "ysu.edu.cn": 1,
+    "ysu.ru": 1,
     "ytet.edu.cn": 1,
     "yti.edu": 0,
     "ytnc.edu.cn": 1,
@@ -84330,11 +85344,11 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-09-30T22:51:48+00:00",
+  "last_run": "2026-10-01T01:28:43+00:00",
   "last_verify": {
-    "added_active": 29,
-    "at": "2026-09-30 22:26 UTC",
-    "pending_left": 5498,
+    "added_active": 38,
+    "at": "2026-10-01 01:28 UTC",
+    "pending_left": 5469,
     "reverified": 15,
     "validated": 117
   },
@@ -84631,6 +85645,7 @@
     "ryerson.ca": "torontomu.ca",
     "sabi.eu.com": "liga367slot.co",
     "saintremi.fr": "groupefresc.com",
+    "samara.university": "ssau.ru",
     "sangu.ge": "sangu.edu.ge",
     "saojudas.br": "usjt.br",
     "sccbellinzona.ch": "sccbellinzona.ti.ch",
@@ -84650,6 +85665,7 @@
     "stikesrsanwarmedika.ac.id": "uam.ac.id",
     "striveprep.org": "rmp.org",
     "su.lt": "sa.vu.lt",
+    "suai.ru": "guap.ru",
     "sve-mo.ba": "sum.ba",
     "swc.tc": "arcade.now",
     "swin.edu.au": "swinburne.edu.au",
@@ -84666,6 +85682,7 @@
     "toronto.edu": "utoronto.ca",
     "tripurauniv.in": "tripurauniv.ac.in",
     "tsc.nsw.edu.au": "scots.college",
+    "tspu.edu.ru": "tspu.ru",
     "ttu.ee": "taltech.ee",
     "tu-bs.de": "tu-braunschweig.de",
     "tut.fi": "tuni.fi",

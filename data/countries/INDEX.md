@@ -62,7 +62,7 @@
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 619 | 311 | 308 |
+| FR | 619 | 312 | 307 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
 | GD | 1 | 1 | 0 |
@@ -83,10 +83,10 @@
 | HR | 12 | 10 | 2 |
 | HT | 7 | 3 | 4 |
 | HU | 39 | 16 | 23 |
-| ID | 224 | 129 | 95 |
+| ID | 224 | 130 | 94 |
 | IE | 35 | 18 | 17 |
 | IL | 25 | 17 | 8 |
-| IN | 458 | 207 | 251 |
+| IN | 458 | 208 | 250 |
 | IQ | 47 | 21 | 26 |
 | IR | 212 | 69 | 143 |
 | IS | 10 | 6 | 4 |
@@ -155,7 +155,7 @@
 | RE | 1 | 1 | 0 |
 | RO | 69 | 38 | 31 |
 | RS | 1 | 1 | 0 |
-| RU | 233 | 69 | 164 |
+| RU | 335 | 107 | 228 |
 | RW | 1 | 1 | 0 |
 | SA | 1 | 1 | 0 |
 | SD | 6 | 1 | 5 |
@@ -181,4 +181,4 @@
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9687. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9789. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
