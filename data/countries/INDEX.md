@@ -97,6 +97,7 @@
 | KE | 54 | 36 | 18 |
 | KG | 15 | 6 | 9 |
 | KH | 22 | 13 | 9 |
+| KN | 4 | 1 | 3 |
 | KP | 1 | 0 | 1 |
 | KR | 278 | 73 | 205 |
 | KW | 8 | 3 | 5 |
@@ -104,6 +105,7 @@
 | KZ | 30 | 11 | 19 |
 | LA | 2 | 1 | 1 |
 | LB | 25 | 15 | 10 |
+| LC | 1 | 1 | 0 |
 | LI | 2 | 2 | 0 |
 | LR | 1 | 1 | 0 |
 | LS | 1 | 1 | 0 |
@@ -154,14 +156,15 @@
 | QA | 9 | 6 | 3 |
 | RE | 1 | 1 | 0 |
 | RO | 69 | 38 | 31 |
-| RS | 1 | 1 | 0 |
-| RU | 335 | 107 | 228 |
-| RW | 1 | 1 | 0 |
-| SA | 1 | 1 | 0 |
+| RS | 11 | 9 | 2 |
+| RU | 336 | 108 | 228 |
+| RW | 12 | 4 | 8 |
+| SA | 63 | 27 | 36 |
 | SD | 6 | 1 | 5 |
 | SE | 8 | 7 | 1 |
 | SG | 2 | 2 | 0 |
-| SN | 2 | 1 | 1 |
+| SM | 1 | 1 | 0 |
+| SN | 12 | 6 | 6 |
 | SV | 25 | 15 | 10 |
 | SY | 1 | 1 | 0 |
 | TD | 2 | 1 | 1 |
@@ -175,10 +178,12 @@
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
+| VC | 2 | 1 | 1 |
 | VE | 1 | 0 | 1 |
 | VN | 4 | 3 | 1 |
+| WS | 1 | 0 | 1 |
 | XK | 5 | 2 | 3 |
 | ZA | 3 | 1 | 2 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9789. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9892. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
