@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-01 08:32 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-01 15:35 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **9892** across **183** countries
-- Active: **5010** (51%) · Inaccessible: **4882** (49%)
-- Pending queue: **5493** unvalidated candidates
-- Known registration age: **4172** domains (median 26 yrs)
+- Domains tracked: **9996** across **188** countries
+- Active: **5069** (51%) · Inaccessible: **4927** (49%)
+- Pending queue: **5393** unvalidated candidates
+- Known registration age: **4210** domains (median 25 yrs)
 
 ## Last runs
 
-- Verify (2026-10-01 07:57 UTC): validated 118, +47 Active, re-verified 15, pending left 5434
+- Verify (2026-10-01 15:35 UTC): validated 119, +59 Active, re-verified 15, pending left 5393
 - Curate (2026-10-01 08:32 UTC): 10690 raw candidates, 59 queued, 22 re-cited
 
 ## Countries (top 15 by size)
@@ -38,25 +38,25 @@ _Generated 2026-10-01 08:32 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 5012 |
-| `fetch-error:ConnectionError` | 2254 |
-| `fetch-error:ConnectTimeout` | 612 |
-| `http-403` | 488 |
-| `fetch-error:SSLError` | 482 |
-| `low-confidence:http-2xx-html` | 297 |
-| `empty-body` | 94 |
-| `fetch-error:ReadTimeout` | 51 |
+| `http-2xx-html` | 5071 |
+| `fetch-error:ConnectionError` | 2266 |
+| `fetch-error:ConnectTimeout` | 620 |
+| `http-403` | 492 |
+| `fetch-error:SSLError` | 487 |
+| `low-confidence:http-2xx-html` | 300 |
+| `empty-body` | 96 |
+| `fetch-error:ReadTimeout` | 53 |
 | `http-404` | 32 |
-| `http-500` | 20 |
-| `parking-linkfarm` | 15 |
-| `http-503` | 13 |
+| `http-500` | 21 |
+| `parking-linkfarm` | 16 |
+| `parking` | 14 |
 
 ## Freshness
 
-- Verified in last 30 days: **9892** (100%)
+- Verified in last 30 days: **9996** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **450**
+- Moved pointers (old domain → new): **456**
 
 ## Alerts
 

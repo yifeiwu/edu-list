@@ -156,15 +156,20 @@
 | QA | 9 | 6 | 3 |
 | RE | 1 | 1 | 0 |
 | RO | 69 | 38 | 31 |
-| RS | 11 | 9 | 2 |
+| RS | 16 | 12 | 4 |
 | RU | 336 | 108 | 228 |
 | RW | 12 | 4 | 8 |
 | SA | 63 | 27 | 36 |
+| SC | 2 | 2 | 0 |
 | SD | 6 | 1 | 5 |
 | SE | 8 | 7 | 1 |
-| SG | 2 | 2 | 0 |
+| SG | 18 | 14 | 4 |
+| SI | 4 | 3 | 1 |
+| SK | 32 | 20 | 12 |
+| SL | 4 | 0 | 4 |
 | SM | 1 | 1 | 0 |
 | SN | 12 | 6 | 6 |
+| SO | 18 | 9 | 9 |
 | SV | 25 | 15 | 10 |
 | SY | 1 | 1 | 0 |
 | TD | 2 | 1 | 1 |
@@ -183,7 +188,7 @@
 | VN | 4 | 3 | 1 |
 | WS | 1 | 0 | 1 |
 | XK | 5 | 2 | 3 |
-| ZA | 3 | 1 | 2 |
+| ZA | 26 | 11 | 15 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 9892. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 9996. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
