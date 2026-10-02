@@ -35,7 +35,7 @@
 | CD | 16 | 5 | 11 |
 | CF | 1 | 0 | 1 |
 | CG | 2 | 1 | 1 |
-| CH | 34 | 24 | 10 |
+| CH | 46 | 29 | 17 |
 | CI | 3 | 0 | 3 |
 | CL | 65 | 32 | 33 |
 | CM | 10 | 4 | 6 |
@@ -62,7 +62,7 @@
 | FI | 40 | 15 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 619 | 312 | 307 |
+| FR | 619 | 313 | 306 |
 | GA | 1 | 0 | 1 |
 | GB | 60 | 36 | 24 |
 | GD | 1 | 1 | 0 |
@@ -107,7 +107,7 @@
 | LB | 25 | 15 | 10 |
 | LC | 1 | 1 | 0 |
 | LI | 2 | 2 | 0 |
-| LK | 5 | 3 | 2 |
+| LK | 28 | 15 | 13 |
 | LR | 1 | 1 | 0 |
 | LS | 1 | 1 | 0 |
 | LT | 20 | 9 | 11 |
@@ -162,8 +162,8 @@
 | RW | 12 | 4 | 8 |
 | SA | 63 | 27 | 36 |
 | SC | 2 | 2 | 0 |
-| SD | 6 | 1 | 5 |
-| SE | 8 | 7 | 1 |
+| SD | 43 | 17 | 26 |
+| SE | 40 | 30 | 10 |
 | SG | 18 | 14 | 4 |
 | SI | 4 | 3 | 1 |
 | SK | 32 | 20 | 12 |
@@ -171,9 +171,11 @@
 | SM | 1 | 1 | 0 |
 | SN | 12 | 6 | 6 |
 | SO | 18 | 9 | 9 |
+| SR | 1 | 1 | 0 |
 | SS | 2 | 0 | 2 |
 | SV | 25 | 15 | 10 |
 | SY | 1 | 1 | 0 |
+| SZ | 1 | 0 | 1 |
 | TD | 2 | 1 | 1 |
 | TH | 1 | 0 | 1 |
 | TO | 1 | 0 | 1 |
@@ -181,7 +183,7 @@
 | TZ | 1 | 1 | 0 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
-| US | 1732 | 1301 | 431 |
+| US | 1733 | 1302 | 431 |
 | UY | 1 | 1 | 0 |
 | UZ | 1 | 1 | 0 |
 | VA | 5 | 1 | 4 |
@@ -193,4 +195,4 @@
 | ZA | 34 | 16 | 18 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 10103. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 10210. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

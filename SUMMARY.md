@@ -1,25 +1,25 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-01 21:39 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-02 00:21 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **10103** across **190** countries
-- Active: **5123** (51%) · Inaccessible: **4980** (49%)
-- Pending queue: **5394** unvalidated candidates
-- Known registration age: **4230** domains (median 25 yrs)
+- Domains tracked: **10210** across **192** countries
+- Active: **5182** (51%) · Inaccessible: **5028** (49%)
+- Pending queue: **5294** unvalidated candidates
+- Known registration age: **4267** domains (median 25 yrs)
 
 ## Last runs
 
-- Verify (2026-10-01 20:37 UTC): validated 122, +55 Active, re-verified 15, pending left 5335
+- Verify (2026-10-02 00:21 UTC): validated 122, +58 Active, re-verified 15, pending left 5294
 - Curate (2026-10-01 21:39 UTC): 10689 raw candidates, 59 queued, 22 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1732 | 1301 | 431 |
-| FR | 619 | 312 | 307 |
+| US | 1733 | 1302 | 431 |
+| FR | 619 | 313 | 306 |
 | JP | 577 | 125 | 452 |
 | IN | 458 | 208 | 250 |
 | CN | 415 | 52 | 363 |
@@ -38,25 +38,25 @@ _Generated 2026-10-01 21:39 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 5125 |
-| `fetch-error:ConnectionError` | 2289 |
-| `fetch-error:ConnectTimeout` | 626 |
-| `http-403` | 498 |
-| `fetch-error:SSLError` | 493 |
-| `low-confidence:http-2xx-html` | 301 |
-| `empty-body` | 96 |
-| `fetch-error:ReadTimeout` | 53 |
+| `http-2xx-html` | 5184 |
+| `fetch-error:ConnectionError` | 2310 |
+| `fetch-error:ConnectTimeout` | 628 |
+| `http-403` | 502 |
+| `fetch-error:SSLError` | 497 |
+| `low-confidence:http-2xx-html` | 305 |
+| `empty-body` | 98 |
+| `fetch-error:ReadTimeout` | 54 |
 | `http-404` | 32 |
-| `http-500` | 22 |
+| `http-500` | 23 |
 | `parking-linkfarm` | 16 |
 | `parking` | 14 |
 
 ## Freshness
 
-- Verified in last 30 days: **10103** (100%)
+- Verified in last 30 days: **10210** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **466**
+- Moved pointers (old domain → new): **474**
 
 ## Alerts
 
@@ -69,7 +69,6 @@ _Generated 2026-10-01 21:39 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `KR`: low Active rate 73/278 (26%) — check for blocks/stale sources
 - ⚠ `MG`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `NA`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `SD`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
 ## Pipelines
