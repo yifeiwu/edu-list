@@ -86,7 +86,7 @@
 | ID | 224 | 130 | 94 |
 | IE | 35 | 18 | 17 |
 | IL | 25 | 17 | 8 |
-| IN | 458 | 208 | 250 |
+| IN | 459 | 209 | 250 |
 | IQ | 47 | 21 | 26 |
 | IR | 212 | 69 | 143 |
 | IS | 10 | 6 | 4 |
@@ -177,9 +177,13 @@
 | SY | 16 | 9 | 7 |
 | SZ | 1 | 0 | 1 |
 | TD | 2 | 1 | 1 |
-| TH | 21 | 10 | 11 |
+| TG | 1 | 0 | 1 |
+| TH | 69 | 39 | 30 |
 | TJ | 3 | 1 | 2 |
+| TN | 19 | 7 | 12 |
 | TO | 1 | 0 | 1 |
+| TR | 28 | 21 | 7 |
+| TT | 4 | 3 | 1 |
 | TW | 85 | 9 | 76 |
 | TZ | 24 | 13 | 11 |
 | UA | 4 | 2 | 2 |
@@ -196,4 +200,4 @@
 | ZA | 34 | 16 | 18 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 10419. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 10520. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
