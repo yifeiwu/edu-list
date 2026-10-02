@@ -177,10 +177,11 @@
 | SY | 16 | 9 | 7 |
 | SZ | 1 | 0 | 1 |
 | TD | 2 | 1 | 1 |
-| TH | 1 | 0 | 1 |
+| TH | 21 | 10 | 11 |
+| TJ | 3 | 1 | 2 |
 | TO | 1 | 0 | 1 |
-| TW | 27 | 4 | 23 |
-| TZ | 1 | 1 | 0 |
+| TW | 85 | 9 | 76 |
+| TZ | 24 | 13 | 11 |
 | UA | 4 | 2 | 2 |
 | UG | 1 | 1 | 0 |
 | US | 1733 | 1303 | 430 |
@@ -195,4 +196,4 @@
 | ZA | 34 | 16 | 18 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 10315. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 10419. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
