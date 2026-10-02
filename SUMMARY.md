@@ -1,29 +1,29 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-02 01:23 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-02 05:50 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **10210** across **192** countries
-- Active: **5182** (51%) · Inaccessible: **5028** (49%)
-- Pending queue: **5353** unvalidated candidates
-- Known registration age: **4267** domains (median 25 yrs)
+- Domains tracked: **10315** across **192** countries
+- Active: **5232** (51%) · Inaccessible: **5083** (49%)
+- Pending queue: **5252** unvalidated candidates
+- Known registration age: **4280** domains (median 25 yrs)
 
 ## Last runs
 
-- Verify (2026-10-02 00:21 UTC): validated 122, +58 Active, re-verified 15, pending left 5294
+- Verify (2026-10-02 05:50 UTC): validated 120, +47 Active, re-verified 15, pending left 5252
 - Curate (2026-10-02 01:23 UTC): 10696 raw candidates, 59 queued, 8284 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 1733 | 1302 | 431 |
-| FR | 619 | 313 | 306 |
+| US | 1733 | 1303 | 430 |
+| FR | 619 | 314 | 305 |
 | JP | 577 | 125 | 452 |
 | IN | 458 | 208 | 250 |
 | CN | 415 | 52 | 363 |
-| AU | 375 | 257 | 118 |
+| AU | 375 | 258 | 117 |
 | DE | 346 | 155 | 191 |
 | BR | 343 | 161 | 182 |
 | RU | 336 | 108 | 228 |
@@ -38,25 +38,25 @@ _Generated 2026-10-02 01:23 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 5184 |
-| `fetch-error:ConnectionError` | 2310 |
-| `fetch-error:ConnectTimeout` | 628 |
-| `http-403` | 502 |
-| `fetch-error:SSLError` | 497 |
-| `low-confidence:http-2xx-html` | 305 |
+| `http-2xx-html` | 5234 |
+| `fetch-error:ConnectionError` | 2343 |
+| `fetch-error:ConnectTimeout` | 633 |
+| `http-403` | 503 |
+| `fetch-error:SSLError` | 500 |
+| `low-confidence:http-2xx-html` | 307 |
 | `empty-body` | 98 |
 | `fetch-error:ReadTimeout` | 54 |
-| `http-404` | 32 |
+| `http-404` | 33 |
 | `http-500` | 23 |
-| `parking-linkfarm` | 16 |
+| `parking-linkfarm` | 17 |
 | `parking` | 14 |
 
 ## Freshness
 
-- Verified in last 30 days: **10210** (100%)
+- Verified in last 30 days: **10315** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **474**
+- Moved pointers (old domain → new): **483**
 
 ## Alerts
 
@@ -69,6 +69,7 @@ _Generated 2026-10-02 01:23 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `KR`: low Active rate 73/278 (26%) — check for blocks/stale sources
 - ⚠ `MG`: low Active rate 1/6 (17%) — check for blocks/stale sources
 - ⚠ `NA`: low Active rate 1/5 (20%) — check for blocks/stale sources
+- ⚠ `TW`: low Active rate 4/27 (15%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 1/5 (20%) — check for blocks/stale sources
 
 ## Pipelines
