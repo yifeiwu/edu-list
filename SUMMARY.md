@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-03 12:19 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-03 15:24 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **10942** across **200** countries
-- Active: **5523** (50%) · Inaccessible: **5419** (50%)
-- Pending queue: **4973** unvalidated candidates
-- Known registration age: **4419** domains (median 25 yrs)
+- Domains tracked: **11044** across **202** countries
+- Active: **5567** (50%) · Inaccessible: **5477** (50%)
+- Pending queue: **4873** unvalidated candidates
+- Known registration age: **4441** domains (median 25 yrs)
 
 ## Last runs
 
-- Verify (2026-10-03 11:47 UTC): validated 122, +50 Active, re-verified 15, pending left 4911
+- Verify (2026-10-03 15:24 UTC): validated 117, +44 Active, re-verified 15, pending left 4873
 - Curate (2026-10-03 12:19 UTC): 10688 raw candidates, 62 queued, 23 re-cited
 
 ## Countries (top 15 by size)
@@ -38,14 +38,14 @@ _Generated 2026-10-03 12:19 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 5525 |
-| `fetch-error:ConnectionError` | 2490 |
-| `fetch-error:ConnectTimeout` | 667 |
-| `http-403` | 547 |
-| `fetch-error:SSLError` | 538 |
-| `low-confidence:http-2xx-html` | 330 |
-| `empty-body` | 106 |
-| `fetch-error:ReadTimeout` | 59 |
+| `http-2xx-html` | 5569 |
+| `fetch-error:ConnectionError` | 2516 |
+| `fetch-error:ConnectTimeout` | 674 |
+| `http-403` | 549 |
+| `fetch-error:SSLError` | 543 |
+| `low-confidence:http-2xx-html` | 342 |
+| `empty-body` | 108 |
+| `fetch-error:ReadTimeout` | 60 |
 | `http-404` | 33 |
 | `http-500` | 23 |
 | `parking-linkfarm` | 18 |
@@ -53,10 +53,10 @@ _Generated 2026-10-03 12:19 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **10942** (100%)
+- Verified in last 30 days: **11044** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **515**
+- Moved pointers (old domain → new): **517**
 
 ## Alerts
 

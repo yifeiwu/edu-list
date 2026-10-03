@@ -196,11 +196,13 @@
 | UZ | 26 | 12 | 14 |
 | VA | 5 | 1 | 4 |
 | VC | 2 | 1 | 1 |
-| VE | 4 | 2 | 2 |
-| VN | 4 | 3 | 1 |
+| VE | 38 | 16 | 22 |
+| VG | 1 | 1 | 0 |
+| VN | 51 | 23 | 28 |
 | WS | 1 | 0 | 1 |
 | XK | 5 | 2 | 3 |
+| YE | 14 | 5 | 9 |
 | ZA | 34 | 16 | 18 |
-| ZM | 3 | 1 | 2 |
+| ZM | 9 | 5 | 4 |
 
-Total domains: 10942. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 11044. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
