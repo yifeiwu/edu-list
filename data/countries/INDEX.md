@@ -148,7 +148,7 @@
 | PE | 69 | 37 | 32 |
 | PF | 1 | 0 | 1 |
 | PG | 5 | 3 | 2 |
-| PH | 131 | 60 | 71 |
+| PH | 131 | 61 | 70 |
 | PK | 137 | 82 | 55 |
 | PL | 154 | 66 | 88 |
 | PR | 24 | 14 | 10 |
@@ -185,13 +185,13 @@
 | TM | 1 | 0 | 1 |
 | TN | 19 | 7 | 12 |
 | TO | 1 | 0 | 1 |
-| TR | 105 | 70 | 35 |
+| TR | 189 | 130 | 59 |
 | TT | 4 | 3 | 1 |
 | TW | 85 | 9 | 76 |
 | TZ | 24 | 13 | 11 |
 | UA | 83 | 29 | 54 |
 | UG | 18 | 14 | 4 |
-| US | 1733 | 1303 | 430 |
+| US | 1733 | 1304 | 429 |
 | UY | 9 | 6 | 3 |
 | UZ | 26 | 12 | 14 |
 | VA | 5 | 1 | 4 |
@@ -203,6 +203,7 @@
 | XK | 5 | 2 | 3 |
 | YE | 14 | 5 | 9 |
 | ZA | 34 | 16 | 18 |
-| ZM | 9 | 5 | 4 |
+| ZM | 10 | 6 | 4 |
+| ZW | 15 | 13 | 2 |
 
-Total domains: 11044. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 11144. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
