@@ -7691,7 +7691,7 @@
   "domain": "roanestate.edu",
   "iso2": "US",
   "name": "Roane State Community College",
-  "source": "hipo:2026-09-19;hipo:2026-09-20;hipo:2026-09-21;hipo:2026-09-22;hipo:2026-09-23;hipo:2026-09-24;hipo:2026-09-25;hipo:2026-09-26;hipo:2026-09-27;hipo:2026-09-28;hipo:2026-09-29;hipo:2026-09-30;hipo:2026-10-01;hipo:2026-10-02;hipo:2026-10-03",
+  "source": "hipo:2026-09-19;hipo:2026-09-20;hipo:2026-09-21;hipo:2026-09-22;hipo:2026-09-23;hipo:2026-09-24;hipo:2026-09-25;hipo:2026-09-26;hipo:2026-09-27;hipo:2026-09-28;hipo:2026-09-29;hipo:2026-09-30;hipo:2026-10-01;hipo:2026-10-02;hipo:2026-10-03;ipeds:2026-10",
   "type_hint": "university",
   "url": "https://roanestate.edu"
  },
@@ -13819,7 +13819,7 @@
   "domain": "lyc-camille-see.ac-paris.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e Camille S\u00e9e",
-  "source": "fr-annuaire:2026-09-21",
+  "source": "fr-annuaire:2026-09-21;fr-annuaire:2026-10-03",
   "type_hint": "k-12",
   "url": "https://lyc-camille-see.ac-paris.fr"
  },
@@ -13827,7 +13827,7 @@
   "domain": "lyceesmarcelsembat.wordpress.com",
   "iso2": "FR",
   "name": "Lyc\u00e9e Marcel Sembat",
-  "source": "fr-annuaire:2026-09-21",
+  "source": "fr-annuaire:2026-09-21;fr-annuaire:2026-10-03",
   "type_hint": "k-12",
   "url": "https://lyceesmarcelsembat.wordpress.com/"
  },
@@ -16147,7 +16147,7 @@
   "domain": "amtech.edu.au",
   "iso2": "AU",
   "name": "Amtech Institute Pty Ltd",
-  "source": "cricos:2026-09-22",
+  "source": "cricos:2026-09-22;cricos:2026-10-03",
   "type_hint": "",
   "url": "www.amtech.edu.au"
  },
@@ -16155,7 +16155,7 @@
   "domain": "stc.wa.edu.ai",
   "iso2": "AU",
   "name": "Superior Technical College Pty Ltd",
-  "source": "cricos:2026-09-22",
+  "source": "cricos:2026-09-22;cricos:2026-10-03",
   "type_hint": "",
   "url": "www.stc.wa.edu.ai"
  },
@@ -18618,8 +18618,8 @@
  {
   "domain": "inp-toulouse.fr",
   "iso2": "FR",
-  "name": "National Polytechnic Institute of Toulouse",
-  "source": "deqar:2026-09-23",
+  "name": "Institut National Polytechnique de Toulouse",
+  "source": "deqar:2026-09-23;openalex:page100",
   "type_hint": "university",
   "url": "http://www.inp-toulouse.fr/"
  },
@@ -21643,7 +21643,7 @@
   "domain": "narxoz.kz",
   "iso2": "KZ",
   "name": "Narkhoz University",
-  "source": "wikidata:P856",
+  "source": "wikidata:P856;deqar:2026-10-03",
   "type_hint": "university",
   "url": "http://www.narxoz.kz"
  },
@@ -24467,7 +24467,7 @@
   "domain": "saintpierresaintpaul.fr",
   "iso2": "FR",
   "name": "Coll\u00e8ge priv\u00e9 Saint-Pierre Saint-Paul",
-  "source": "fr-annuaire:2026-09-26",
+  "source": "fr-annuaire:2026-09-26;fr-annuaire:2026-10-03",
   "type_hint": "k-12",
   "url": "http://www.saintpierresaintpaul.fr/"
  },
@@ -39622,5 +39622,477 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.leeuniversity.edu/"
+ },
+ {
+  "domain": "epau-alger.edu.dz",
+  "iso2": "DZ",
+  "name": "\u00c9cole Polytechnique d'Architecture et d'Urbanisme",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.epau-alger.edu.dz/#"
+ },
+ {
+  "domain": "esaa.dz",
+  "iso2": "DZ",
+  "name": "\u00c9cole Sup\u00e9rieure Alg\u00e9rienne des Affaires",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "https://www.esaa.dz/"
+ },
+ {
+  "domain": "esb.edu.dz",
+  "iso2": "DZ",
+  "name": "\u00c9cole Sup\u00e9rieure de Banque",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.esb.edu.dz/"
+ },
+ {
+  "domain": "esm.dz",
+  "iso2": "DZ",
+  "name": "\u00c9cole Sup\u00e9rieure de la Magistrature",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.esm.dz/"
+ },
+ {
+  "domain": "isckinshasa.org",
+  "iso2": "CD",
+  "name": "Institut Sup\u00e9rieur de Commerce de Kinshasa",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.isckinshasa.org/"
+ },
+ {
+  "domain": "ispm.ac.mz",
+  "iso2": "MZ",
+  "name": "Instituto Superior Polit\u00e9cnico de Manica",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.ispm.ac.mz/"
+ },
+ {
+  "domain": "uofb.edu.sd",
+  "iso2": "SD",
+  "name": "University of Bakhtalruda",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.uofb.edu.sd/"
+ },
+ {
+  "domain": "esj.ac.mz",
+  "iso2": "MZ",
+  "name": "Escola Superior de Jornalismo",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.esj.ac.mz/"
+ },
+ {
+  "domain": "enssea.dz",
+  "iso2": "DZ",
+  "name": "National Higher School of Statistics and Applied Economy",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.enssea.dz"
+ },
+ {
+  "domain": "siu-sd.com",
+  "iso2": "SD",
+  "name": "Sudan International University",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.siu-sd.com/"
+ },
+ {
+  "domain": "isarc.edu.mz",
+  "iso2": "MZ",
+  "name": "Instituto Superior de Artes e Cultura",
+  "source": "ror:api-p103",
+  "type_hint": "university",
+  "url": "http://www.isarc.edu.mz"
+ },
+ {
+  "domain": "xjmu.edu.cn",
+  "iso2": "CN",
+  "name": "Xinjiang Medical University",
+  "source": "openalex:page100",
+  "type_hint": "university",
+  "url": "https://xjmu.edu.cn"
+ },
+ {
+  "domain": "glut.edu.cn",
+  "iso2": "CN",
+  "name": "Guilin University of Technology",
+  "source": "openalex:page100",
+  "type_hint": "university",
+  "url": "https://glut.edu.cn"
+ },
+ {
+  "domain": "lzjtu.edu.cn",
+  "iso2": "CN",
+  "name": "Lanzhou Jiaotong University",
+  "source": "openalex:page100",
+  "type_hint": "university",
+  "url": "https://lzjtu.edu.cn"
+ },
+ {
+  "domain": "english.btbu.edu.cn",
+  "iso2": "CN",
+  "name": "Beijing Technology and Business University",
+  "source": "openalex:page100",
+  "type_hint": "university",
+  "url": "http://english.btbu.edu.cn/"
+ },
+ {
+  "domain": "english.csuft.edu.cn",
+  "iso2": "CN",
+  "name": "Central South University of Forestry and Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://english.csuft.edu.cn/"
+ },
+ {
+  "domain": "bzau.org",
+  "iso2": "CN",
+  "name": "Zhongnanhai Amateur University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.bzau.org"
+ },
+ {
+  "domain": "wjgcdx.com",
+  "iso2": "CN",
+  "name": "Chinese People's Armed Police Force Engineering University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.wjgcdx.com"
+ },
+ {
+  "domain": "aeu.edu.cn",
+  "iso2": "CN",
+  "name": "PLAGF Engineering University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.aeu.edu.cn"
+ },
+ {
+  "domain": "eei.edu.cn",
+  "iso2": "CN",
+  "name": "PLA Electronic Engineering Institute",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.eei.edu.cn/"
+ },
+ {
+  "domain": "afeu.cn",
+  "iso2": "CN",
+  "name": "Air Force Engineering University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.afeu.cn/"
+ },
+ {
+  "domain": "cavtc.edu.cn",
+  "iso2": "CN",
+  "name": "Changsha Aeronautical Vacational and Technical College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.cavtc.edu.cn/"
+ },
+ {
+  "domain": "cucn.edu.cn",
+  "iso2": "CN",
+  "name": "Communication University of China, Nanjing",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.cucn.edu.cn"
+ },
+ {
+  "domain": "iput.ac.jp",
+  "iso2": "JP",
+  "name": "International Professional University of Technology in Osaka",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.iput.ac.jp/osaka/english/"
+ },
+ {
+  "domain": "wuhues.com",
+  "iso2": "CN",
+  "name": "Wuhan University of Engineering Science",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.wuhues.com/"
+ },
+ {
+  "domain": "cbead.cn",
+  "iso2": "CN",
+  "name": "China Business Executives Academy",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.cbead.cn"
+ },
+ {
+  "domain": "deped.gov.ph",
+  "iso2": "PH",
+  "name": "Schools Division Office of Bataan",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.deped.gov.ph/sdo-bataan/"
+ },
+ {
+  "domain": "castella.mon-ent-occitanie.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Pyr\u00e8ne",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "https://castella.mon-ent-occitanie.fr"
+ },
+ {
+  "domain": "lppcevenol.com",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e professionnel priv\u00e9 c\u00e9venol",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.lppcevenol.com"
+ },
+ {
+  "domain": "collegesaintgilles.com",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Saint-Gilles",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.collegesaintgilles.com"
+ },
+ {
+  "domain": "college-les-freres-le-nain-laon.02.ac-amiens.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Les Fr\u00e8res Le Nain",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "https://college-les-freres-le-nain-laon.02.ac-amiens.fr/"
+ },
+ {
+  "domain": "cadenelle.com",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent La Cadenelle",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.cadenelle.com"
+ },
+ {
+  "domain": "fondation-donbosco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Don Bosco",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.fondation-donbosco.fr"
+ },
+ {
+  "domain": "clg-hautesrayes-conflans.ac-versailles.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Les Hautes Rayes",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "https://clg-hautesrayes-conflans.ac-versailles.fr/"
+ },
+ {
+  "domain": "lyc-mayer.monbureaunumerique.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent F\u00e9lix Mayer",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://lyc-mayer.monbureaunumerique.fr"
+ },
+ {
+  "domain": "albanais.ent.auvergnerhonealpes.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e g\u00e9n\u00e9ral et technologique de l'Albanais",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "https://albanais.ent.auvergnerhonealpes.fr/"
+ },
+ {
+  "domain": "lpohdb.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Honor\u00e9 de Balzac",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://lpohdb.fr"
+ },
+ {
+  "domain": "clg-jaures-laciotat.ac-aix-marseille.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jean Jaur\u00e8s",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.clg-jaures-laciotat.ac-aix-marseille.fr"
+ },
+ {
+  "domain": "lyc-daumier.ac-aix-marseille.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Honor\u00e9 Daumier",
+  "source": "fr-annuaire:2026-10-03",
+  "type_hint": "k-12",
+  "url": "http://www.lyc-daumier.ac-aix-marseille.fr/"
+ },
+ {
+  "domain": "zhgu.edu.kz",
+  "iso2": "KZ",
+  "name": "West Kazakhstan Agricultural and Technical University named after Zhangir Khan",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.zhgu.edu.kz"
+ },
+ {
+  "domain": "aogu.kz",
+  "iso2": "KZ",
+  "name": "Atyrau Oil and Gas Institute",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://aogu.kz/?lang=en"
+ },
+ {
+  "domain": "asu.edu.kz",
+  "iso2": "KZ",
+  "name": "Atyrau State University named after Kh.Dosmukhamedov",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "https://asu.edu.kz"
+ },
+ {
+  "domain": "api.kz",
+  "iso2": "KZ",
+  "name": "Arkalyk State Pedagogical Institute named after Y. Altynsarin",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.api.kz"
+ },
+ {
+  "domain": "arsu.kz",
+  "iso2": "KZ",
+  "name": "K. Zhubanov Aktobe Regional State University",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.arsu.kz"
+ },
+ {
+  "domain": "amu.kz",
+  "iso2": "KZ",
+  "name": "Medical University of Astana",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.amu.kz/en/"
+ },
+ {
+  "domain": "kazutb.kz",
+  "iso2": "KZ",
+  "name": "Kazakh University of Technology and Business",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://kazutb.kz/en/"
+ },
+ {
+  "domain": "kazmuno.kz",
+  "iso2": "KZ",
+  "name": "Kazakh Medical University of Continuing Education",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.kazmuno.kz"
+ },
+ {
+  "domain": "iitu.kz",
+  "iso2": "KZ",
+  "name": "International University of Information Technologies",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.iitu.kz"
+ },
+ {
+  "domain": "mok.kz",
+  "iso2": "KZ",
+  "name": "International Educational Corporation",
+  "source": "deqar:2026-10-03",
+  "type_hint": "university",
+  "url": "http://www.mok.kz"
+ },
+ {
+  "domain": "tcatnorthwest.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology Northwest",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.tcatnorthwest.edu/"
+ },
+ {
+  "domain": "tcathenrycarroll.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Henry/Carroll",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.tcathenrycarroll.edu/"
+ },
+ {
+  "domain": "tcatpulaski.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Pulaski",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.tcatpulaski.edu/"
+ },
+ {
+  "domain": "tcatcrump.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Crump",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.tcatcrump.edu/"
+ },
+ {
+  "domain": "tcatshelbyville.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Shelbyville",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.tcatshelbyville.edu/"
+ },
+ {
+  "domain": "tcatoneida.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Oneida-Huntsville",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://tcatoneida.edu/"
+ },
+ {
+  "domain": "tcatuppercumberland.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Upper Cumberland",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "tcatuppercumberland.edu/"
+ },
+ {
+  "domain": "tcatmcminnville.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-McMinnville",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "tcatmcminnville.edu/"
+ },
+ {
+  "domain": "tcatjackson.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Jackson",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.tcatjackson.edu/"
+ },
+ {
+  "domain": "tcatknoxville.edu",
+  "iso2": "US",
+  "name": "Tennessee College of Applied Technology-Knoxville",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.tcatknoxville.edu/"
  }
 ]
