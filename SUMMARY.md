@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-03 00:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-03 05:56 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **10729** across **200** countries
-- Active: **5428** (51%) · Inaccessible: **5301** (49%)
-- Pending queue: **5053** unvalidated candidates
-- Known registration age: **4385** domains (median 25 yrs)
+- Domains tracked: **10835** across **200** countries
+- Active: **5474** (51%) · Inaccessible: **5361** (49%)
+- Pending queue: **4953** unvalidated candidates
+- Known registration age: **4392** domains (median 25 yrs)
 
 ## Last runs
 
-- Verify (2026-10-03 00:53 UTC): validated 120, +43 Active, re-verified 15, pending left 5053
+- Verify (2026-10-03 05:56 UTC): validated 121, +46 Active, re-verified 15, pending left 4953
 - Curate (2026-10-03 00:15 UTC): 10691 raw candidates, 49 queued, 8682 re-cited
 
 ## Countries (top 15 by size)
@@ -32,19 +32,19 @@ _Generated 2026-10-03 00:53 UTC. Full per-country table: [data/countries/INDEX.m
 | IR | 212 | 69 | 143 |
 | CA | 174 | 95 | 79 |
 | MX | 174 | 77 | 97 |
-| PL | 154 | 66 | 88 |
+| GB | 163 | 81 | 82 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 5430 |
-| `fetch-error:ConnectionError` | 2445 |
-| `fetch-error:ConnectTimeout` | 653 |
-| `http-403` | 528 |
-| `fetch-error:SSLError` | 527 |
-| `low-confidence:http-2xx-html` | 323 |
-| `empty-body` | 104 |
+| `http-2xx-html` | 5476 |
+| `fetch-error:ConnectionError` | 2469 |
+| `fetch-error:ConnectTimeout` | 659 |
+| `http-403` | 542 |
+| `fetch-error:SSLError` | 530 |
+| `low-confidence:http-2xx-html` | 326 |
+| `empty-body` | 105 |
 | `fetch-error:ReadTimeout` | 57 |
 | `http-404` | 33 |
 | `http-500` | 23 |
@@ -53,10 +53,10 @@ _Generated 2026-10-03 00:53 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **10729** (100%)
+- Verified in last 30 days: **10835** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-15)
 - Archived chronic failures (re-check paused): **2**
-- Moved pointers (old domain → new): **498**
+- Moved pointers (old domain → new): **507**
 
 ## Alerts
 

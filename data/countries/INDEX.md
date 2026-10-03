@@ -3,7 +3,7 @@
 | country | total | Active | Inaccessible |
 |---|---|---|---|
 | AD | 4 | 4 | 0 |
-| AE | 35 | 18 | 17 |
+| AE | 38 | 19 | 19 |
 | AF | 40 | 26 | 14 |
 | AG | 2 | 2 | 0 |
 | AL | 35 | 18 | 17 |
@@ -65,7 +65,7 @@
 | FO | 2 | 1 | 1 |
 | FR | 619 | 314 | 305 |
 | GA | 1 | 0 | 1 |
-| GB | 60 | 36 | 24 |
+| GB | 163 | 81 | 82 |
 | GD | 1 | 1 | 0 |
 | GE | 14 | 7 | 7 |
 | GF | 1 | 0 | 1 |
@@ -203,4 +203,4 @@
 | ZA | 34 | 16 | 18 |
 | ZM | 3 | 1 | 2 |
 
-Total domains: 10729. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 10835. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
