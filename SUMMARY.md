@@ -1,29 +1,29 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-04 23:02 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-04 23:39 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **11756** across **203** countries
-- Active: **6111** (52%) · Inaccessible: **5645** (48%)
-- Pending queue: **4603** unvalidated candidates
-- Known registration age: **4938** domains (median 25 yrs)
+- Domains tracked: **11856** across **203** countries
+- Active: **6188** (52%) · Inaccessible: **5668** (48%)
+- Pending queue: **4503** unvalidated candidates
+- Known registration age: **5030** domains (median 24 yrs)
 
 ## Last runs
 
-- Verify (2026-10-04 20:31 UTC): validated 116, +78 Active, re-verified 15, pending left 4540
+- Verify (2026-10-04 23:39 UTC): validated 115, +76 Active, re-verified 15, pending left 4503
 - Curate (2026-10-04 23:02 UTC): 10686 raw candidates, 63 queued, 35 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 2345 | 1770 | 575 |
+| US | 2445 | 1846 | 599 |
 | FR | 619 | 313 | 306 |
 | JP | 577 | 125 | 452 |
 | IN | 459 | 209 | 250 |
 | CN | 415 | 52 | 363 |
-| AU | 375 | 258 | 117 |
+| AU | 375 | 259 | 116 |
 | DE | 346 | 155 | 191 |
 | BR | 343 | 161 | 182 |
 | RU | 336 | 108 | 228 |
@@ -38,12 +38,12 @@ _Generated 2026-10-04 23:02 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 6113 |
-| `fetch-error:ConnectionError` | 2595 |
-| `fetch-error:ConnectTimeout` | 688 |
-| `http-403` | 571 |
-| `fetch-error:SSLError` | 559 |
-| `low-confidence:http-2xx-html` | 344 |
+| `http-2xx-html` | 6190 |
+| `fetch-error:ConnectionError` | 2605 |
+| `fetch-error:ConnectTimeout` | 690 |
+| `http-403` | 580 |
+| `fetch-error:SSLError` | 560 |
+| `low-confidence:http-2xx-html` | 345 |
 | `empty-body` | 122 |
 | `fetch-error:ReadTimeout` | 61 |
 | `http-404` | 35 |
@@ -53,7 +53,7 @@ _Generated 2026-10-04 23:02 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **11756** (100%)
+- Verified in last 30 days: **11856** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **2**
 - Moved pointers (old domain → new): **531**

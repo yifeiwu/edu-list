@@ -11,7 +11,7 @@
 | AO | 10 | 2 | 8 |
 | AR | 126 | 90 | 36 |
 | AT | 73 | 47 | 26 |
-| AU | 375 | 258 | 117 |
+| AU | 375 | 259 | 116 |
 | AZ | 35 | 20 | 15 |
 | BA | 35 | 19 | 16 |
 | BB | 1 | 0 | 1 |
@@ -191,7 +191,7 @@
 | TZ | 24 | 13 | 11 |
 | UA | 83 | 29 | 54 |
 | UG | 18 | 14 | 4 |
-| US | 2345 | 1770 | 575 |
+| US | 2445 | 1846 | 599 |
 | UY | 9 | 6 | 3 |
 | UZ | 26 | 12 | 14 |
 | VA | 5 | 1 | 4 |
@@ -206,4 +206,4 @@
 | ZM | 10 | 6 | 4 |
 | ZW | 15 | 13 | 2 |
 
-Total domains: 11756. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 11856. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
