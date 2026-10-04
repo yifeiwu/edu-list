@@ -163,7 +163,7 @@
 | RW | 12 | 4 | 8 |
 | SA | 63 | 27 | 36 |
 | SC | 2 | 2 | 0 |
-| SD | 43 | 17 | 26 |
+| SD | 43 | 18 | 25 |
 | SE | 40 | 30 | 10 |
 | SG | 18 | 14 | 4 |
 | SI | 4 | 3 | 1 |
@@ -191,7 +191,7 @@
 | TZ | 24 | 13 | 11 |
 | UA | 83 | 29 | 54 |
 | UG | 18 | 14 | 4 |
-| US | 2037 | 1530 | 507 |
+| US | 2141 | 1613 | 528 |
 | UY | 9 | 6 | 3 |
 | UZ | 26 | 12 | 14 |
 | VA | 5 | 1 | 4 |
@@ -206,4 +206,4 @@
 | ZM | 10 | 6 | 4 |
 | ZW | 15 | 13 | 2 |
 
-Total domains: 11448. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 11552. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
