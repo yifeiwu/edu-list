@@ -191,7 +191,7 @@
 | TZ | 24 | 13 | 11 |
 | UA | 83 | 29 | 54 |
 | UG | 18 | 14 | 4 |
-| US | 1834 | 1381 | 453 |
+| US | 1937 | 1448 | 489 |
 | UY | 9 | 6 | 3 |
 | UZ | 26 | 12 | 14 |
 | VA | 5 | 1 | 4 |
@@ -206,4 +206,4 @@
 | ZM | 10 | 6 | 4 |
 | ZW | 15 | 13 | 2 |
 
-Total domains: 11245. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 11348. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
