@@ -547,7 +547,7 @@
   "domain": "bluefieldstate.edu",
   "iso2": "US",
   "name": "Bluefield State College",
-  "source": "hipo:2026-09-20;hipo:2026-09-21;hipo:2026-09-22;hipo:2026-09-23;hipo:2026-09-24;hipo:2026-09-25;hipo:2026-09-26;hipo:2026-09-27;hipo:2026-09-28;hipo:2026-09-29;hipo:2026-09-30;hipo:2026-10-01;hipo:2026-10-02;hipo:2026-10-03;hipo:2026-10-04;hipo:2026-10-05",
+  "source": "hipo:2026-09-20;hipo:2026-09-21;hipo:2026-09-22;hipo:2026-09-23;hipo:2026-09-24;hipo:2026-09-25;hipo:2026-09-26;hipo:2026-09-27;hipo:2026-09-28;hipo:2026-09-29;hipo:2026-09-30;hipo:2026-10-01;hipo:2026-10-02;hipo:2026-10-03;hipo:2026-10-04;hipo:2026-10-05;ror:api-p115",
   "type_hint": "university",
   "url": "https://bluefieldstate.edu"
  },
@@ -8579,7 +8579,7 @@
   "domain": "rasmussen.edu",
   "iso2": "US",
   "name": "Rasmussen University-Minnesota",
-  "source": "ipeds:2026-09",
+  "source": "ipeds:2026-09;ror:api-p115",
   "type_hint": "university",
   "url": "https://rasmussen.edu/"
  },
@@ -15763,7 +15763,7 @@
   "domain": "lyc-cassin-gonesse.ac-versailles.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e Ren\u00e9 Cassin",
-  "source": "fr-annuaire:2026-09-26",
+  "source": "fr-annuaire:2026-09-26;fr-annuaire:2026-10-05",
   "type_hint": "k-12",
   "url": "https://lyc-cassin-gonesse.ac-versailles.fr/"
  },
@@ -19523,7 +19523,7 @@
   "domain": "nju.edu.tw",
   "iso2": "TW",
   "name": "Nan Jeon University of Science and Technology",
-  "source": "ror:api-p80",
+  "source": "ror:api-p80;wikidata:P856",
   "type_hint": "university",
   "url": "http://www.nju.edu.tw"
  },
@@ -23978,8 +23978,8 @@
  {
   "domain": "st-michel.fr",
   "iso2": "FR",
-  "name": "Coll\u00e8ge priv\u00e9 Saint-Michel",
-  "source": "fr-annuaire:2026-09-30",
+  "name": "Lyc\u00e9e g\u00e9n\u00e9ral et technologique priv\u00e9 Saint-Michel",
+  "source": "fr-annuaire:2026-09-30;fr-annuaire:2026-10-05",
   "type_hint": "k-12",
   "url": "https://www.st-michel.fr/formations/college"
  },
@@ -26507,7 +26507,7 @@
   "domain": "mtaloy.edu",
   "iso2": "US",
   "name": "Mount Aloysius College",
-  "source": "ipeds:2026-10",
+  "source": "ipeds:2026-10;ror:api-p115",
   "type_hint": "university",
   "url": "www.mtaloy.edu/"
  },
@@ -29603,7 +29603,7 @@
   "domain": "olympic.edu",
   "iso2": "US",
   "name": "Olympic College",
-  "source": "ror:api-p102",
+  "source": "ror:api-p102;ipeds:2026-10",
   "type_hint": "university",
   "url": "http://www.olympic.edu/"
  },
@@ -30723,7 +30723,7 @@
   "domain": "versailles971.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e Polyvalent Versailles Saint-Joseph de Cluny",
-  "source": "fr-annuaire:2026-10-03",
+  "source": "fr-annuaire:2026-10-03;fr-annuaire:2026-10-05",
   "type_hint": "k-12",
   "url": "http://www.versailles971.fr/"
  },
@@ -35318,5 +35318,477 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.diversinstitute.edu/"
+ },
+ {
+  "domain": "cim.edu",
+  "iso2": "US",
+  "name": "Cleveland Institute of Music",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.cim.edu/"
+ },
+ {
+  "domain": "phc.edu",
+  "iso2": "US",
+  "name": "Patrick Henry College",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "https://www.phc.edu/"
+ },
+ {
+  "domain": "bostonconservatory.edu",
+  "iso2": "US",
+  "name": "Boston Conservatory",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.bostonconservatory.edu/"
+ },
+ {
+  "domain": "cogswell.edu",
+  "iso2": "US",
+  "name": "Cogswell Polytechnical College",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.cogswell.edu/"
+ },
+ {
+  "domain": "bpc.edu",
+  "iso2": "US",
+  "name": "Brewton-Parker College",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.bpc.edu/"
+ },
+ {
+  "domain": "community.mitchell.edu",
+  "iso2": "US",
+  "name": "Mitchell College",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "https://community.mitchell.edu/"
+ },
+ {
+  "domain": "brooks.edu",
+  "iso2": "US",
+  "name": "Brooks Institute",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.brooks.edu/"
+ },
+ {
+  "domain": "pmc.edu",
+  "iso2": "US",
+  "name": "Pine Manor College",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.pmc.edu/"
+ },
+ {
+  "domain": "montereylaw.edu",
+  "iso2": "US",
+  "name": "Monterey College of Law",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.montereylaw.edu/"
+ },
+ {
+  "domain": "cabarruscollege.edu",
+  "iso2": "US",
+  "name": "Cabarrus College of Health Sciences",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.cabarruscollege.edu/"
+ },
+ {
+  "domain": "cihs.edu",
+  "iso2": "US",
+  "name": "California Institute for Human Science",
+  "source": "ror:api-p115",
+  "type_hint": "university",
+  "url": "http://www.cihs.edu/"
+ },
+ {
+  "domain": "uft.edu.br",
+  "iso2": "BR",
+  "name": "Universidade Federal do Tocantins",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "https://www.uft.edu.br/"
+ },
+ {
+  "domain": "kul.pl",
+  "iso2": "PL",
+  "name": "John Paul II Catholic University of Lublin",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "https://www.kul.pl"
+ },
+ {
+  "domain": "hebtu.edu.cn",
+  "iso2": "CN",
+  "name": "Hebei Normal University",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "https://www.hebtu.edu.cn"
+ },
+ {
+  "domain": "oslomet.no",
+  "iso2": "NO",
+  "name": "OsloMet \u2013 Oslo Metropolitan University",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "https://www.oslomet.no"
+ },
+ {
+  "domain": "hjgcdx.cn",
+  "iso2": "CN",
+  "name": "Naval University of Engineering",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "http://www.hjgcdx.cn/"
+ },
+ {
+  "domain": "en.ktu.edu",
+  "iso2": "LT",
+  "name": "Kaunas University of Technology",
+  "source": "openalex:page113",
+  "type_hint": "university",
+  "url": "https://en.ktu.edu"
+ },
+ {
+  "domain": "unn.edu.cn",
+  "iso2": "CN",
+  "name": "Nanning University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://unn.edu.cn/"
+ },
+ {
+  "domain": "en.juwp.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangxi University of Water Resources and Electric Power",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://en.juwp.edu.cn"
+ },
+ {
+  "domain": "juwp.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangxi University of Water Resources and Electric Power",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.juwp.edu.cn"
+ },
+ {
+  "domain": "nut.edu.cn",
+  "iso2": "CN",
+  "name": "Nanchang Institute of Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.nut.edu.cn/"
+ },
+ {
+  "domain": "ntac.edu.cn",
+  "iso2": "CN",
+  "name": "Nantong College of Science and Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ntac.edu.cn/"
+ },
+ {
+  "domain": "ntvu.edu.cn",
+  "iso2": "CN",
+  "name": "Nantong Vocational University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ntvu.edu.cn/"
+ },
+ {
+  "domain": "ntsc.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Shipping College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ntsc.edu.cn/"
+ },
+ {
+  "domain": "nynu.edu.cn",
+  "iso2": "CN",
+  "name": "Nanyang Normal University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.nynu.edu.cn/"
+ },
+ {
+  "domain": "nyist.edu.cn",
+  "iso2": "CN",
+  "name": "Nanyang Institute of Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.nyist.edu.cn"
+ },
+ {
+  "domain": "hcccm.edu.cn",
+  "iso2": "CN",
+  "name": "Henan College of Classical Chinese Medicine",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.hcccm.edu.cn/"
+ },
+ {
+  "domain": "lyc-villon-mureaux.ac-versailles.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Fran\u00e7ois Villon",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://lyc-villon-mureaux.ac-versailles.fr/"
+ },
+ {
+  "domain": "lyceejeanneantide.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e rural priv\u00e9 Jeanne Antide",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://www.lyceejeanneantide.fr/"
+ },
+ {
+  "domain": "lyceecachincherbourg.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e professionnel Ing\u00e9nieur Cachin",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://lyceecachincherbourg.fr/"
+ },
+ {
+  "domain": "lyc-descartes-montigny.ac-versailles.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Descartes",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://lyc-descartes-montigny.ac-versailles.fr/"
+ },
+ {
+  "domain": "clg-fort-courcouronnes.ac-versailles.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Paul Fort",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://clg-fort-courcouronnes.ac-versailles.fr/"
+ },
+ {
+  "domain": "lyc-timbaud-bretigny.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Jean Pierre Timbaud",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "http://www.lyc-timbaud-bretigny.fr/"
+ },
+ {
+  "domain": "la-vallee-verte.mon-ent-occitanie.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge la Vall\u00e9e Verte",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://la-vallee-verte.mon-ent-occitanie.fr/"
+ },
+ {
+  "domain": "roger-ruel-saint-didier.ent.auvergnerhonealpes.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Roger Ruel",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://roger-ruel-saint-didier.ent.auvergnerhonealpes.fr/"
+ },
+ {
+  "domain": "jules-verne.lycee.ac-normandie.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Jules Verne",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://jules-verne.lycee.ac-normandie.fr/"
+ },
+ {
+  "domain": "zola-cherbourg-en-cotentin.college.ac-normandie.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge \u00c9mile Zola",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "https://zola-cherbourg-en-cotentin.college.ac-normandie.fr/"
+ },
+ {
+  "domain": "jeanlecanuet.arsene76.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jean Lecanuet",
+  "source": "fr-annuaire:2026-10-05",
+  "type_hint": "k-12",
+  "url": "http://jeanlecanuet.arsene76.fr/"
+ },
+ {
+  "domain": "dancefactory.com.au",
+  "iso2": "AU",
+  "name": "Dance Factory Pty Ltd",
+  "source": "cricos:2026-10-05",
+  "type_hint": "",
+  "url": "www.dancefactory.com.au"
+ },
+ {
+  "domain": "fpm.me",
+  "iso2": "ME",
+  "name": "Faculty of Business Management in Bar",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.fpm.me/"
+ },
+ {
+  "domain": "univerzitetadriatik.com",
+  "iso2": "ME",
+  "name": "Adriatik University Bar",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "https://www.univerzitetadriatik.com/"
+ },
+ {
+  "domain": "fcjk.me",
+  "iso2": "ME",
+  "name": "Faculty of Montenegrin Language and Literature",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.fcjk.me/en/"
+ },
+ {
+  "domain": "unimediteran.net",
+  "iso2": "ME",
+  "name": "Mediterranean University",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://unimediteran.net/index.php/en/"
+ },
+ {
+  "domain": "fdes.me",
+  "iso2": "ME",
+  "name": "Faculty of Administrative and European Studies",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.fdes.me/?lang=en#"
+ },
+ {
+  "domain": "udg.edu.me",
+  "iso2": "ME",
+  "name": "University of Donja Gorica",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "https://www.udg.edu.me/en/"
+ },
+ {
+  "domain": "ucg.ac.me",
+  "iso2": "ME",
+  "name": "University of Montenegro",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "https://www.ucg.ac.me/"
+ },
+ {
+  "domain": "pfbar.me",
+  "iso2": "ME",
+  "name": "Maritime Faculty Bar",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.pfbar.me/"
+ },
+ {
+  "domain": "fskl-cg.me",
+  "iso2": "ME",
+  "name": "Faculty of Transport, Communications and Logistics",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.fskl-cg.me/me"
+ },
+ {
+  "domain": "fm-hn.com",
+  "iso2": "ME",
+  "name": "Faculty of Management, Herceg Novi",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "https://www.fm-hn.com/"
+ },
+ {
+  "domain": "hecmontenegro.com",
+  "iso2": "ME",
+  "name": "HEC Faculty for International Management in Tourism and Hotel Industry",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://hecmontenegro.com/education/index.php"
+ },
+ {
+  "domain": "univh2c.ma",
+  "iso2": "MA",
+  "name": "Hassan II University of Casablanca",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "https://www.univh2c.ma/"
+ },
+ {
+  "domain": "centrale-casablanca.ma",
+  "iso2": "MA",
+  "name": "Ecole Centrale Casablanca",
+  "source": "deqar:2026-10-05",
+  "type_hint": "university",
+  "url": "http://www.centrale-casablanca.ma/fr/lecole"
+ },
+ {
+  "domain": "5733-bjscollege.wpnet.stylenet.com",
+  "iso2": "US",
+  "name": "BJ's Beauty & Barber College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "5733-bjscollege.wpnet.stylenet.com/"
+ },
+ {
+  "domain": "northseattle.edu",
+  "iso2": "US",
+  "name": "North Seattle College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.northseattle.edu/"
+ },
+ {
+  "domain": "northwestu.edu",
+  "iso2": "US",
+  "name": "Northwest University",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.northwestu.edu/"
+ },
+ {
+  "domain": "perrytech.edu",
+  "iso2": "US",
+  "name": "Perry Technical Institute",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.perrytech.edu/"
+ },
+ {
+  "domain": "pencol.edu",
+  "iso2": "US",
+  "name": "Peninsula College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.pencol.edu/"
+ },
+ {
+  "domain": "pugetsound.edu",
+  "iso2": "US",
+  "name": "University of Puget Sound",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.pugetsound.edu/"
+ },
+ {
+  "domain": "southseattle.edu",
+  "iso2": "US",
+  "name": "South Seattle College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "southseattle.edu/"
  }
 ]
