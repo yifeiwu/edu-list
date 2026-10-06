@@ -155,6 +155,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "abac.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "abai.university": {
       "code": 200,
       "confidence": 50,
@@ -251,6 +256,11 @@
       "reason": "http-403"
     },
     "ac-besancon.fr": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
+    "ac-bordeaux.fr": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
@@ -589,6 +599,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "adrian.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "adrianavaldessoprano.com": {
       "code": 200,
@@ -1875,6 +1890,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "amsterdam.tech": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "amti.hit.bg": {
       "code": 0,
       "confidence": 0,
@@ -2094,6 +2114,16 @@
       "code": 200,
       "confidence": 100,
       "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure"
+    },
+    "ankarabilim.edu.tr": {
+      "code": 200,
+      "confidence": 10,
+      "reason": "parking-linkfarm"
+    },
+    "ankaramedipol.edu.tr": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "annamalaiuniversity.ac.in": {
       "code": 200,
@@ -2359,6 +2389,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ara.ac.nz": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "arabou-lb.edu.lb": {
       "code": 0,
@@ -2769,6 +2804,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "asmildkloster.dk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "asmu.ru": {
       "code": 403,
@@ -4085,6 +4125,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "baypath.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "baysideenglish.vic.edu.au": {
       "code": 200,
       "confidence": 60,
@@ -4374,6 +4419,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "berkeleycollege.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "berklee.edu": {
       "code": 200,
@@ -5740,6 +5790,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "btc.ac.uk": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ReadTimeout"
+    },
     "btc.ctc.edu": {
       "code": 0,
       "confidence": 0,
@@ -6285,6 +6340,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "camk.edu.pl": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "camosun.bc.ca": {
       "code": 200,
       "confidence": 90,
@@ -6344,6 +6404,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "campusvfx.com": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "canadacollege.edu": {
       "code": 200,
@@ -6414,6 +6479,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:capella.edu"
+    },
+    "capital.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "capitalareaiu.gov": {
       "code": 0,
@@ -7854,6 +7924,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "cityuniversity.edu.pk": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "ciu.edu.tr": {
       "code": 200,
@@ -10030,6 +10105,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "cusit.edu.pk": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:cityuniversity.edu.pk"
+    },
     "cuslm.ca": {
       "code": 0,
       "confidence": 0,
@@ -10076,6 +10156,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "cutb.edu.co": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
+    "cuw.edu": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
@@ -10415,6 +10500,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "davidsondavie.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "davietjal.org": {
       "code": 200,
       "confidence": 90,
@@ -10700,6 +10790,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "delval.edu": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "democracyprep.org": {
       "code": 200,
       "confidence": 60,
@@ -10804,6 +10899,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "dewv.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "deylaman.ac.ir": {
       "code": 0,
@@ -11030,6 +11130,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "dkit.ie": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "dkut.ac.ke": {
       "code": 0,
       "confidence": 0,
@@ -11184,6 +11289,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:dolphininstitute.ac.in"
+    },
+    "dom.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "domalberto.edu.br": {
       "code": 200,
@@ -11379,6 +11489,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "dsdt.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "dshs-koeln.de": {
       "code": 200,
@@ -11594,6 +11709,11 @@
       "code": 200,
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
+    "duytan.edu.vn": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "duzce.edu.tr": {
       "code": 0,
@@ -11934,6 +12054,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "eckerd.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ecla.de": {
       "code": 0,
@@ -12295,6 +12420,11 @@
       "confidence": 5,
       "reason": "moved-to:odisee.be"
     },
+    "ehtp.ac.ma": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "ehu.es": {
       "code": 0,
       "confidence": 0,
@@ -12329,6 +12459,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "eigsi.fr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "eiilmuniversity.ac.in": {
       "code": 0,
@@ -12669,6 +12804,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix"
+    },
+    "en.syau.edu.cn": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
     "en.ufsc.br": {
       "code": 200,
@@ -13550,6 +13690,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "esmad.ipp.pt": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "esmbenin.com": {
       "code": 200,
       "confidence": 50,
@@ -14209,6 +14354,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "fairfield.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "fairmontstate.edu": {
       "code": 200,
@@ -15065,6 +15215,11 @@
       "confidence": 40,
       "reason": "moved-to:fhnw.ch"
     },
+    "fhda.edu": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "fhdw.bib.de": {
       "code": 0,
       "confidence": 0,
@@ -15364,6 +15519,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
+    },
+    "floridauniversitaria.es": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "flsk.fo": {
       "code": 0,
@@ -16035,6 +16195,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "g.fmarion.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "g.nsu.ru": {
       "code": 403,
       "confidence": 5,
@@ -16119,6 +16284,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
+    },
+    "gandakiuniversity.edu.np": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "gandhara.edu.pk": {
       "code": 200,
@@ -16399,6 +16569,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "georgefox.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "georges-gironde.anjou.e-lyco.fr": {
       "code": 200,
@@ -16750,6 +16925,16 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "gnihm.ac.in": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
+    "gnit.ac.in": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "gntc.edu": {
       "code": 200,
       "confidence": 90,
@@ -16830,6 +17015,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "gordon.ac.il": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "gordontafe.edu.au": {
       "code": 200,
       "confidence": 40,
@@ -16895,6 +17085,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "gpu.edu.np": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "gpwu.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -16919,6 +17114,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "grandview.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "grayson.edu": {
       "code": 200,
@@ -16965,10 +17165,20 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "greensboro.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "greenviewpublicschool.in": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "greenville.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
     },
     "greenvilleclubfitness.com": {
       "code": 200,
@@ -17760,6 +17970,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
+    "hanuniversity.com": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "hanyang.ac.kr": {
       "code": 200,
       "confidence": 90,
@@ -18349,6 +18564,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "hesperides.edu.es": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "hesston.edu": {
       "code": 200,
@@ -20430,6 +20650,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "idti.edu": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure"
+    },
     "idu.edu.tr": {
       "code": 200,
       "confidence": 70,
@@ -20505,6 +20730,21 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "ieu.edu.tr": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "if-pan.edu.pl": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "if-pan.krakow.pl": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:if-pan.edu.pl"
+    },
     "ifcad.net": {
       "code": 200,
       "confidence": 60,
@@ -20534,6 +20774,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:itmo.ru"
+    },
+    "ifmparis.fr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ifp.fr": {
       "code": 200,
@@ -22150,6 +22395,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "ist-hochschule.de": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "ist.ac.at": {
       "code": 200,
       "confidence": 90,
@@ -23270,10 +23520,20 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "jiscollege.ac.in": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "jissen.ac.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "jisuniversity.ac.in": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "jiu.ac.jp": {
       "code": 0,
@@ -26480,6 +26740,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "lamar.mx": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "lamar.org.mx": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:lamar.mx"
+    },
     "lamarcc.edu": {
       "code": 307,
       "confidence": 5,
@@ -27369,6 +27639,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "lmunet.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ln.edu.hk": {
       "code": 200,
@@ -29765,6 +30040,16 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "miva.edu.ng": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "miva.university": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:miva.edu.ng"
+    },
     "miyakyo-u.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -31130,6 +31415,11 @@
       "confidence": 40,
       "reason": "moved-to:lagoscitypolytechnic.edu.ng"
     },
+    "mymtu.ie": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "myongji.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -31609,6 +31899,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "ncl-coll.ac.uk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "ncl.ac.uk": {
       "code": 200,
@@ -32390,6 +32685,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "nit.ac.in": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "nit.ac.ir": {
       "code": 200,
       "confidence": 90,
@@ -32744,6 +33044,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "nmc.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "nmc.vic.edu.au": {
       "code": 0,
@@ -33465,6 +33770,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "nu.edu.kz": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "nu.edu.ph": {
       "code": 403,
       "confidence": 5,
@@ -33995,6 +34305,11 @@
       "confidence": 40,
       "reason": "moved-to:ohsu.edu"
     },
+    "oglethorpe.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "ogr.iu.edu.tr": {
       "code": 200,
       "confidence": 60,
@@ -34190,6 +34505,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
+    "olivetcollege.edu": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:uolivet.edu"
+    },
     "ollusa.edu": {
       "code": 200,
       "confidence": 90,
@@ -34249,6 +34569,16 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "omu.edu.tr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "oneonta.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ontariotechu.ca": {
       "code": 200,
@@ -34474,6 +34804,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "ostimteknik.edu.tr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "osu.ac.jp": {
       "code": 0,
@@ -34945,6 +35280,11 @@
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+structure"
     },
+    "paris-sorbonne.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
+    },
     "paris.ensam.fr": {
       "code": 0,
       "confidence": 0,
@@ -34964,6 +35304,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "parisnanterre.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "park.edu": {
       "code": 200,
@@ -37170,6 +37515,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "queens.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
     "queensu.ca": {
       "code": 200,
       "confidence": 90,
@@ -38310,6 +38660,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "runshaw.ac.uk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "rupp.edu.kh": {
       "code": 200,
       "confidence": 90,
@@ -39270,6 +39625,11 @@
       "confidence": 5,
       "reason": "empty-body"
     },
+    "schiller.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "schillerlondon.ac.uk": {
       "code": 0,
       "confidence": 0,
@@ -39617,8 +39977,8 @@
     },
     "sea-english.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "seamester.com": {
       "code": 200,
@@ -40227,13 +40587,13 @@
     },
     "sheffield.ac.uk": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sheldoncollege.com": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "sheltonstate.edu": {
       "code": 200,
@@ -40782,8 +41142,8 @@
     },
     "sitcm.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "site.ac-aix-marseille.fr": {
       "code": 200,
@@ -41280,6 +41640,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "snow.edu": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "sns.it": {
       "code": 0,
       "confidence": 0,
@@ -41309,6 +41674,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
+    },
+    "snuniv.ac.in": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "snut.ac.kr": {
       "code": 0,
@@ -41775,6 +42145,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
+    "spjain.org": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "spm.sch.id": {
       "code": 200,
       "confidence": 60,
@@ -41992,8 +42367,8 @@
     },
     "ssbt.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ssc.ac.kr": {
       "code": 200,
@@ -42195,6 +42570,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "stallions.abac.edu": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "stamford.edu": {
       "code": 200,
       "confidence": 90,
@@ -42332,8 +42712,8 @@
     },
     "steinerseminar.net.au": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "stella-blandy.ecollege.haute-garonne.fr": {
       "code": 200,
@@ -42387,13 +42767,18 @@
     },
     "stfrancis.edu": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "stfx.ca": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "stgc.uwa.edu.au": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "sthildas.wa.edu.au": {
       "code": 200,
@@ -42477,8 +42862,8 @@
     },
     "stkate.edu": {
       "code": 200,
-      "confidence": 85,
-      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "stkipsurya.ac.id": {
       "code": 0,
@@ -43146,6 +43531,11 @@
       "reason": "fetch-error:ConnectTimeout"
     },
     "sunway.edu.my": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "suny.oneonta.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -44150,6 +44540,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "tcioe.edu.np": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
+    },
     "tcl.edu": {
       "code": 403,
       "confidence": 5,
@@ -44244,6 +44639,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "tecmilenio.mx": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "tedi.vic.edu.au": {
       "code": 200,
@@ -44534,6 +44934,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "thk.edu.tr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "thm.de": {
       "code": 200,
@@ -46110,6 +46515,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "u-bourgogne.fr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:ube.fr"
+    },
     "u-bunkyo.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -46154,6 +46564,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "u-pec.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "u-pem.fr": {
       "code": 0,
@@ -46925,6 +47340,11 @@
       "confidence": 40,
       "reason": "moved-to:uax.com"
     },
+    "uaysen.cl": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "uazuay.edu.ec": {
       "code": 200,
       "confidence": 100,
@@ -47019,6 +47439,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "ube.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "ubfc.fr": {
       "code": 200,
@@ -48445,6 +48870,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "uenp.edu.br": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+    },
     "uep.educ.ph": {
       "code": 200,
       "confidence": 40,
@@ -48534,6 +48964,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "uf3ceu.es": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "ufabc.edu.br": {
       "code": 200,
@@ -50250,6 +50685,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "umlp.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "umm.ac.id": {
       "code": 403,
       "confidence": 5,
@@ -50291,6 +50731,11 @@
       "reason": "fetch-error:ConnectionError"
     },
     "umng.edu.co": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "umo.edu": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
@@ -50479,6 +50924,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "umwestern.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "umy.ac.id": {
       "code": 403,
@@ -52510,6 +52960,11 @@
       "confidence": 40,
       "reason": "moved-to:portal.unimes.br"
     },
+    "unimes.fr": {
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
+    },
     "unimet.edu.ve": {
       "code": 200,
       "confidence": 90,
@@ -53385,6 +53840,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "univ-fcomte.fr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:umlp.fr"
+    },
     "univ-fianar.mg": {
       "code": 0,
       "confidence": 0,
@@ -53404,6 +53864,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
+    },
+    "univ-jfc.fr": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "univ-jijel.dz": {
       "code": 200,
@@ -53599,6 +54064,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:SSLError"
+    },
+    "univ-paris-diderot.fr": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:u-paris.fr"
     },
     "univ-paris1.fr": {
       "code": 200,
@@ -53970,6 +54440,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "universidadean.edu.co": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "universidademetodista.ao": {
       "code": 200,
       "confidence": 40,
@@ -54149,6 +54624,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "univesp.br": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "univet.hu": {
       "code": 200,
@@ -55235,6 +55715,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "uolivet.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
     "uom.ac.mu": {
       "code": 200,
       "confidence": 90,
@@ -55745,6 +56230,11 @@
       "confidence": 5,
       "reason": "http-403"
     },
+    "uplearnbusinessschool.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
+    },
     "upm.ac.ma": {
       "code": 403,
       "confidence": 5,
@@ -55784,6 +56274,11 @@
       "code": 200,
       "confidence": 40,
       "reason": "moved-to:upmc.com"
+    },
+    "upmf-grenoble.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "upmin.edu.ph": {
       "code": 403,
@@ -56605,6 +57100,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "usj.es": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "usjc.uwaterloo.ca": {
       "code": 0,
       "confidence": 0,
@@ -56719,6 +57219,11 @@
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "usms.edu.pk": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "usmtu.edu.ua": {
       "code": 0,
@@ -58060,6 +58565,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "vanarts.com": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "vancouver.wsu.edu": {
       "code": 200,
       "confidence": 90,
@@ -58255,6 +58765,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "vfs.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "vfu.bg": {
       "code": 200,
       "confidence": 80,
@@ -58351,6 +58866,11 @@
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "vicu.utoronto.ca": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "videndjurs.dk": {
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
@@ -58879,6 +59399,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "vvsaz.org": {
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "vvsu.ru": {
       "code": 200,
@@ -59500,6 +60025,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "westminsteru.edu": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
     "westmont.edu": {
       "code": 200,
       "confidence": 90,
@@ -60104,6 +60634,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
+    },
+    "wsc.ac.uk": {
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "wscal.edu": {
       "code": 200,
@@ -61442,6 +61977,7 @@
     "aauekpoma.edu.ng": "2009-05-13",
     "aauj.edu": "1996-11-07",
     "aauni.edu": "2008-05-19",
+    "abac.edu": "2002-02-06",
     "abai.university": "2025-11-24",
     "abasyn.edu.pk": {
       "reg": "",
@@ -61497,6 +62033,7 @@
     },
     "abuad.edu.ng": "2009-11-09",
     "ac-besancon.fr": "1997-03-09",
+    "ac-bordeaux.fr": "1995-11-09",
     "ac-mayotte.fr": "2000-11-06",
     "ac-nice.fr": "1996-02-14",
     "ac-orleans-tours.fr": "1997-11-25",
@@ -61685,6 +62222,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "adrian.edu": "1994-07-25",
     "adrianavaldessoprano.com": "2025-10-12",
     "adrians.edu": "2010-12-14",
     "adsu.edu.ng": "2016-11-07",
@@ -62383,6 +62921,7 @@
     },
     "amridgeuniversity.edu": "2008-01-31",
     "amrita.edu": "1998-08-14",
+    "amsterdam.tech": "2023-02-17",
     "amti.hit.bg": {
       "reg": "",
       "ts": "2026-09-20"
@@ -62498,6 +63037,14 @@
     "ankara.edu.tr": {
       "reg": "",
       "ts": "2026-10-02"
+    },
+    "ankarabilim.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
+    "ankaramedipol.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "annamalaiuniversity.ac.in": "2002-12-06",
     "annauniv.edu": "1998-05-22",
@@ -62647,6 +63194,10 @@
     "ar.wroc.pl": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "ara.ac.nz": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "arabou-lb.edu.lb": "2014-08-14",
     "arabou.edu.sa": {
@@ -62897,6 +63448,10 @@
     },
     "asmarya.edu.ly": "2005-12-05",
     "asmi.edu.kg": "2012-05-29",
+    "asmildkloster.dk": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "asmu.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -63605,6 +64160,7 @@
     },
     "baycollege.edu": "2002-01-08",
     "baylor.edu": "1989-05-18",
+    "baypath.edu": "1995-02-16",
     "baysideenglish.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-17"
@@ -63729,6 +64285,7 @@
     "bergen.edu": "2002-01-10",
     "berkeley.edu": "1985-04-24",
     "berkeleycitycollege.edu": "2006-06-20",
+    "berkeleycollege.edu": "1998-08-12",
     "berklee.edu": "1992-10-16",
     "berkshirecc.edu": "2002-01-09",
     "berlin.bard.edu": {
@@ -64458,6 +65015,10 @@
       "ts": "2026-09-15"
     },
     "bsum.edu.ng": "2010-12-04",
+    "btc.ac.uk": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "btc.ctc.edu": {
       "reg": "",
       "ts": "2026-10-05"
@@ -64744,6 +65305,7 @@
     "cambridgeqld.com": "2004-12-28",
     "camdencc.edu": "1995-10-02",
     "cameron.edu": "1993-02-19",
+    "camk.edu.pl": "1995-01-01",
     "camosun.bc.ca": "2000-10-11",
     "campbell.edu": "1992-01-17",
     "campbellsville.edu": "2002-06-13",
@@ -64768,6 +65330,7 @@
     },
     "campuspouille.fr": "2023-03-13",
     "campusterresdelaube.fr": "2022-05-05",
+    "campusvfx.com": "2018-03-20",
     "canadacollege.edu": "2002-03-18",
     "canberra.edu.au": {
       "reg": "",
@@ -64800,6 +65363,7 @@
     "capecod.edu": "2002-03-25",
     "capella.edu": "1999-02-10",
     "capellauniversity.edu": "1999-03-19",
+    "capital.edu": "1992-09-21",
     "capitalareaiu.gov": "2024-09-04",
     "captechu.edu": "2014-06-12",
     "cardiff.ac.uk": {
@@ -65460,6 +66024,10 @@
     "cityuniversity.edu.bd": {
       "reg": "",
       "ts": "2026-09-20"
+    },
+    "cityuniversity.edu.pk": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "ciu.edu.tr": {
       "reg": "",
@@ -66489,6 +67057,10 @@
       "ts": "2026-09-20"
     },
     "cusat.ac.in": "2003-02-28",
+    "cusit.edu.pk": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "cuslm.ca": "2000-10-18",
     "cust.edu.cn": {
       "reg": "",
@@ -66526,6 +67098,7 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "cuw.edu": "1993-12-21",
     "cuyamaca.edu": "2002-01-18",
     "cuz.ac.zw": {
       "reg": "",
@@ -66698,6 +67271,7 @@
       "reg": "",
       "ts": "2026-10-04"
     },
+    "davidsondavie.edu": "2020-12-15",
     "daviscollege.edu": "2002-04-04",
     "davpushpanjali.com": "2006-02-23",
     "davuniversity.org": "2012-06-07",
@@ -66817,6 +67391,7 @@
     "delta.edu": "1992-09-22",
     "deltacollege.edu": "2002-01-18",
     "deltastate.edu": "2002-03-20",
+    "delval.edu": "2006-12-04",
     "democracyprep.org": "2004-09-29",
     "dendai.ac.jp": {
       "reg": "",
@@ -66861,6 +67436,7 @@
     },
     "devinci.fr": "2006-02-08",
     "dewaslot.vip": "2026-07-26",
+    "dewv.edu": "2010-02-22",
     "deylaman.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -66998,6 +67574,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "dkit.ie": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "dkut.ac.ke": {
       "reg": "",
       "ts": "2026-09-27"
@@ -67098,6 +67678,7 @@
     },
     "dolphininstitute.ac.in": "2024-11-12",
     "dolphininstitute.in": "2010-04-15",
+    "dom.edu": "1997-04-16",
     "domalberto.edu.br": "2006-02-07",
     "domeinwebshop.nl": "2010-02-09",
     "dominican.edu": "1994-08-10",
@@ -67179,6 +67760,7 @@
       "ts": "2026-09-22"
     },
     "dscc.edu": "2002-01-09",
+    "dsdt.edu": "2018-01-05",
     "dshs-koeln.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -67308,6 +67890,10 @@
     "duth.gr": {
       "reg": "",
       "ts": "2026-09-24"
+    },
+    "duytan.edu.vn": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "duzce.edu.tr": {
       "reg": "",
@@ -67469,6 +68055,7 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "eckerd.edu": "1992-02-20",
     "ecla.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -67666,6 +68253,10 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ehtp.ac.ma": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "ehu.es": {
       "reg": "",
       "ts": "2026-10-01"
@@ -67685,6 +68276,7 @@
     },
     "eidoseducation.org": "2009-09-08",
     "eieonline.com": "2026-04-07",
+    "eigsi.fr": "1997-11-18",
     "eiilmuniversity.ac.in": {
       "reg": "",
       "ts": "2026-09-24"
@@ -67851,6 +68443,10 @@
     "en.shxy.edu.cn": {
       "reg": "",
       "ts": "2026-09-17"
+    },
+    "en.syau.edu.cn": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "en.ufsc.br": "1996-01-01",
     "en.uw.edu.pl": {
@@ -68253,6 +68849,10 @@
       "ts": "2026-09-23"
     },
     "esmac.com.br": "2002-04-11",
+    "esmad.ipp.pt": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "esmbenin.com": "2026-01-03",
     "esme.fr": "1996-03-06",
     "esmer-benin.org": "2015-06-25",
@@ -68538,6 +69138,7 @@
     "fafire.br": "1997-09-24",
     "fagammon.edu.br": "2006-07-19",
     "fainor.com.br": "2000-10-27",
+    "fairfield.edu": "1992-06-03",
     "fairmontstate.edu": "2003-11-19",
     "fakultetkozmetologije.com": {
       "reg": "",
@@ -69084,6 +69685,7 @@
       "reg": "",
       "ts": "2026-10-02"
     },
+    "fhda.edu": "1992-02-05",
     "fhdw.bib.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -69256,6 +69858,10 @@
     "floridacareercollege.edu": "2017-01-29",
     "floridacollege.edu": "2001-02-06",
     "floridaschoolofmassage.com": "2000-02-18",
+    "floridauniversitaria.es": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "flsk.fo": {
       "reg": "",
       "ts": "2026-09-13"
@@ -69635,6 +70241,10 @@
       "reg": "",
       "ts": "2026-09-21"
     },
+    "g.fmarion.edu": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "g.nsu.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -69676,6 +70286,10 @@
     "galileo.edu": "2001-01-11",
     "gallaudet.edu": "1987-12-14",
     "gallus.pl": "2000-12-12",
+    "gandakiuniversity.edu.np": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "gandhara.edu.pk": {
       "reg": "",
       "ts": "2026-09-29"
@@ -69843,6 +70457,7 @@
       "reg": "",
       "ts": "2026-09-18"
     },
+    "georgefox.edu": "1996-04-22",
     "georges-gironde.anjou.e-lyco.fr": {
       "reg": "",
       "ts": "2026-09-16"
@@ -70014,6 +70629,8 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "gnihm.ac.in": "2006-05-12",
+    "gnit.ac.in": "2014-10-16",
     "gntc.edu": "2009-04-21",
     "gntech.ac.kr": "2010-09-28",
     "gnu.ac.kr": "2005-10-30",
@@ -70048,6 +70665,10 @@
       "reg": "",
       "ts": "2026-10-02"
     },
+    "gordon.ac.il": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "gordontafe.edu.au": {
       "reg": "",
       "ts": "2026-09-13"
@@ -70076,6 +70697,10 @@
       "ts": "2026-09-30"
     },
     "gptc.edu": "2011-07-15",
+    "gpu.edu.np": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "gpwu.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -70087,6 +70712,7 @@
       "ts": "2026-09-13"
     },
     "gram.edu": "1993-11-02",
+    "grandview.edu": "1998-11-03",
     "grayson.edu": "1995-08-17",
     "grcc.edu": "2002-01-15",
     "gre.ac.uk": {
@@ -70105,7 +70731,9 @@
     "greenheartmed.org": "2025-08-14",
     "greenleaf.edu": "1996-02-05",
     "greenriver.edu": "2002-02-01",
+    "greensboro.edu": "2011-07-18",
     "greenviewpublicschool.in": "2012-01-14",
+    "greenville.edu": "1995-01-17",
     "greenvilleclubfitness.com": "2017-05-09",
     "greenwayschool.org": "2009-03-04",
     "greenwichcollege.com.au": {
@@ -70529,6 +71157,7 @@
     },
     "hanshin.ac.kr": "2021-01-06",
     "hansung.ac.kr": "1995-09-26",
+    "hanuniversity.com": "2002-05-24",
     "hanyang.ac.kr": "1994-03-06",
     "hanze.nl": "1993-11-15",
     "hanzhong.ac.kr": {
@@ -70865,6 +71494,10 @@
     "hes-so.ch": {
       "reg": "",
       "ts": "2026-10-02"
+    },
+    "hesperides.edu.es": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "hesston.edu": "1994-04-21",
     "hetaodaxue.com": "2005-03-15",
@@ -72152,6 +72785,7 @@
       "ts": "2026-09-25"
     },
     "idi.edu": "2000-05-08",
+    "idti.edu": "2003-04-17",
     "idu.edu.tr": {
       "reg": "",
       "ts": "2026-10-05"
@@ -72195,6 +72829,15 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "ieu.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
+    "if-pan.edu.pl": "2026-04-10",
+    "if-pan.krakow.pl": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "ifcad.net": "2015-03-05",
     "ifdtung.if.ua": "2020-06-03",
     "ifg.com.pl": "2025-10-04",
@@ -72204,6 +72847,7 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "ifmparis.fr": "2018-12-18",
     "ifp.fr": "1994-12-31",
     "ifpenergiesnouvelles.fr": "2010-02-05",
     "ifslearning.ac.uk": {
@@ -73088,6 +73732,10 @@
     },
     "iss.nl": "1994-12-20",
     "issy.com": "1996-04-25",
+    "ist-hochschule.de": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "ist.ac.at": {
       "reg": "",
       "ts": "2026-09-14"
@@ -73712,10 +74360,12 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "jiscollege.ac.in": "2006-05-12",
     "jissen.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
     },
+    "jisuniversity.ac.in": "2015-03-31",
     "jiu.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -75573,6 +76223,14 @@
       "ts": "2026-09-15"
     },
     "lamar.edu": "1990-04-25",
+    "lamar.mx": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
+    "lamar.org.mx": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "lamarcc.edu": "2002-03-18",
     "lamarpa.edu": "1997-02-04",
     "lambtoncollege.ca": "2003-04-07",
@@ -75987,6 +76645,7 @@
     },
     "lmu.edu": "1992-11-23",
     "lmu.edu.ng": "2011-09-01",
+    "lmunet.edu": "1996-09-25",
     "ln.edu.hk": {
       "reg": "",
       "ts": "2026-09-24"
@@ -77217,6 +77876,8 @@
       "reg": "",
       "ts": "2026-10-02"
     },
+    "miva.edu.ng": "2023-06-23",
+    "miva.university": "2022-01-27",
     "miyakyo-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -77921,6 +78582,10 @@
     "mylambton.ca": "2010-01-15",
     "mylaurier.ca": "2000-11-10",
     "mylcp.net": "2007-11-03",
+    "mymtu.ie": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "myongji.ac.kr": "1994-04-16",
     "myport.ac.uk": {
       "reg": "",
@@ -78196,6 +78861,10 @@
     "ncktc.edu": {
       "reg": "",
       "ts": "2026-10-04"
+    },
+    "ncl-coll.ac.uk": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "ncl.ac.uk": {
       "reg": "",
@@ -78616,6 +79285,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "nit.ac.in": "2006-05-15",
     "nit.ac.ir": {
       "reg": "",
       "ts": "2026-09-25"
@@ -78779,6 +79449,7 @@
       "reg": "",
       "ts": "2026-09-19"
     },
+    "nmc.edu": "1991-08-21",
     "nmc.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -79151,6 +79822,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "nu.edu.kz": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "nu.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
@@ -79422,6 +80097,7 @@
     },
     "ogeecheetech.edu": "2003-05-22",
     "ogi.edu": "1989-11-08",
+    "oglethorpe.edu": "1995-08-09",
     "ogr.iu.edu.tr": {
       "reg": "",
       "ts": "2026-10-03"
@@ -79527,6 +80203,7 @@
     },
     "olemiss.edu": "1988-10-19",
     "olivet.edu": "1993-01-11",
+    "olivetcollege.edu": "2000-03-02",
     "ollusa.edu": "1993-08-20",
     "olmeca.edu.mx": {
       "reg": "",
@@ -79569,6 +80246,11 @@
       "ts": "2026-09-15"
     },
     "omu.edu.ly": "2005-08-06",
+    "omu.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
+    "oneonta.edu": "1990-04-30",
     "ontariotechu.ca": "2018-10-30",
     "ontariotechu.net": "2018-10-30",
     "onu.edu": "1990-06-14",
@@ -79700,6 +80382,10 @@
     "ostfalia.de": {
       "reg": "",
       "ts": "2026-09-23"
+    },
+    "ostimteknik.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "osu.ac.jp": {
       "reg": "",
@@ -79933,6 +80619,7 @@
     "paramadina.ac.id": "1998-08-21",
     "pardeerand.edu": "2022-02-07",
     "parikramaschoolofmusic.com": "2010-06-03",
+    "paris-sorbonne.fr": "2005-01-31",
     "paris.ensam.fr": {
       "reg": "",
       "ts": "2026-09-23"
@@ -79943,6 +80630,7 @@
       "ts": "2026-09-23"
     },
     "parisjc.edu": "2003-10-17",
+    "parisnanterre.fr": "2016-06-16",
     "park.education": "2020-03-05",
     "parkidiomas.com.br": "2000-11-29",
     "parkland.edu": "2002-01-08",
@@ -81158,6 +81846,7 @@
       "reg": "",
       "ts": "2026-10-03"
     },
+    "queens.edu": "1992-01-17",
     "queensu.ca": "2000-10-06",
     "queensuniversity.edu.bd": {
       "reg": "",
@@ -81704,6 +82393,10 @@
       "ts": "2026-09-25"
     },
     "run.edu.ng": "2009-05-13",
+    "runshaw.ac.uk": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "rupp.edu.kh": {
       "reg": "",
       "ts": "2026-09-20"
@@ -82136,6 +82829,7 @@
       "ts": "2026-09-17"
     },
     "sch.ac.kr": "1995-08-22",
+    "schiller.edu": "1995-09-12",
     "schillerlondon.ac.uk": {
       "reg": "",
       "ts": "2026-10-03"
@@ -83181,6 +83875,7 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "snow.edu": "1990-10-31",
     "sns.it": {
       "reg": "",
       "ts": "2026-09-25"
@@ -83199,6 +83894,7 @@
       "ts": "2026-10-03"
     },
     "snue.ac.kr": "2000-12-08",
+    "snuniv.ac.in": "2018-03-06",
     "snut.ac.kr": "1998-12-03",
     "soa.ac.in": "2007-07-20",
     "soai.ac.jp": {
@@ -83423,6 +84119,7 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "spjain.org": "2005-07-20",
     "spm.sch.id": "2014-06-25",
     "spmi.edu.ru": {
       "reg": "",
@@ -83657,6 +84354,10 @@
       "reg": "",
       "ts": "2026-09-15"
     },
+    "stallions.abac.edu": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "stamford.edu": "1997-02-25",
     "stamforduniversity.edu.bd": {
       "reg": "",
@@ -83744,6 +84445,10 @@
     "stevenscollege.edu": "2002-01-31",
     "stfrancis.edu": "1996-01-29",
     "stfx.ca": "2000-09-20",
+    "stgc.uwa.edu.au": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "sthildas.wa.edu.au": {
       "reg": "",
       "ts": "2026-09-14"
@@ -84166,6 +84871,10 @@
     "sunway.edu.my": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "suny.oneonta.edu": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "sunyacc.edu": "1993-03-24",
     "sunybroome.edu": "1992-08-20",
@@ -84690,6 +85399,10 @@
       "reg": "",
       "ts": "2026-10-04"
     },
+    "tcioe.edu.np": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "tcl.edu": "2002-01-09",
     "tcm.ac.uk": {
       "reg": "",
@@ -84739,6 +85452,10 @@
       "ts": "2026-09-22"
     },
     "techtitute.com": "2017-07-09",
+    "tecmilenio.mx": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "tedi.vic.edu.au": {
       "reg": "",
       "ts": "2026-09-18"
@@ -84905,6 +85622,10 @@
       "ts": "2026-09-14"
     },
     "thiqaruni.org": "2008-06-04",
+    "thk.edu.tr": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "thm.de": {
       "reg": "",
       "ts": "2026-09-23"
@@ -85851,6 +86572,7 @@
     },
     "u-bordeaux.fr": "2008-12-15",
     "u-bordeaux2.fr": "1994-12-31",
+    "u-bourgogne.fr": "1994-12-31",
     "u-bunkyo.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -85869,6 +86591,7 @@
     "u-paris.fr": "2016-05-12",
     "u-paris10.fr": "1994-12-31",
     "u-paris2.fr": "1994-12-31",
+    "u-pec.fr": "2009-10-26",
     "u-pem.fr": "2013-02-18",
     "u-picardie.fr": "1994-12-31",
     "u-psud.fr": "1995-04-17",
@@ -86367,6 +87090,10 @@
       "reg": "",
       "ts": "2026-10-01"
     },
+    "uaysen.cl": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "uazuay.edu.ec": "2011-04-16",
     "ub.ac.id": "2009-01-21",
     "ub.bw": {
@@ -86422,6 +87149,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "ube.fr": "2006-08-29",
     "ubfc.fr": "2012-12-13",
     "ubhara.ac.id": "2009-11-04",
     "ubharajaya.ac.id": "2000-03-22",
@@ -87318,6 +88046,7 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "uenp.edu.br": "2007-09-04",
     "uep.educ.ph": {
       "reg": "",
       "ts": "2026-09-29"
@@ -87368,6 +88097,10 @@
     "uexternado.edu.co": {
       "reg": "",
       "ts": "2026-09-22"
+    },
+    "uf3ceu.es": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "ufabc.edu.br": "2006-02-22",
     "ufac.br": "1998-07-30",
@@ -88358,6 +89091,7 @@
       "reg": "",
       "ts": "2026-09-28"
     },
+    "umlp.fr": "2024-10-15",
     "umm.ac.id": "1997-01-15",
     "umm.edu.mx": {
       "reg": "",
@@ -88385,6 +89119,7 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "umo.edu": "2013-12-19",
     "umoar.edu.sv": {
       "reg": "",
       "ts": "2026-09-22"
@@ -88490,6 +89225,7 @@
       "reg": "",
       "ts": "2026-10-01"
     },
+    "umwestern.edu": "2001-02-08",
     "umy.ac.id": "1999-01-04",
     "umyu.edu.ng": "2009-05-28",
     "umz.ac.ir": {
@@ -89738,6 +90474,7 @@
     },
     "unimep.br": "1996-08-27",
     "unimes.com.br": "2008-08-19",
+    "unimes.fr": "2003-06-16",
     "unimet.edu.ve": {
       "reg": "",
       "ts": "2026-10-03"
@@ -90231,6 +90968,7 @@
       "ts": "2026-09-19"
     },
     "univ-evry.fr": "1994-12-31",
+    "univ-fcomte.fr": "1995-10-17",
     "univ-fianar.mg": "2009-06-18",
     "univ-grenoble-alpes.fr": "2012-09-18",
     "univ-guelma.dz": {
@@ -90241,6 +90979,7 @@
       "reg": "",
       "ts": "2026-09-28"
     },
+    "univ-jfc.fr": "2002-07-08",
     "univ-jijel.dz": {
       "reg": "",
       "ts": "2026-09-19"
@@ -90316,6 +91055,7 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "univ-paris-diderot.fr": "2006-10-17",
     "univ-paris1.fr": "1994-12-31",
     "univ-paris12.fr": "1998-10-06",
     "univ-paris13.fr": "1994-12-31",
@@ -90498,6 +91238,10 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "universidadean.edu.co": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "universidademetodista.ao": {
       "reg": "",
       "ts": "2026-09-19"
@@ -90570,6 +91314,7 @@
     "universum-ks.org": "2005-06-09",
     "univerzitetpim.com": "2007-06-18",
     "univerzitetps.com": "2006-05-08",
+    "univesp.br": "2013-04-30",
     "univet.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -91192,6 +91937,7 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "uolivet.edu": "2023-06-20",
     "uom.ac.mu": "1996-07-29",
     "uom.edu.mx": {
       "reg": "",
@@ -91505,6 +92251,7 @@
       "reg": "",
       "ts": "2026-09-29"
     },
+    "uplearnbusinessschool.com": "2026-03-23",
     "upm.ac.ma": {
       "reg": "",
       "ts": "2026-09-28"
@@ -91529,6 +92276,7 @@
       "reg": "",
       "ts": "2026-09-30"
     },
+    "upmf-grenoble.fr": "1996-12-11",
     "upmin.edu.ph": {
       "reg": "",
       "ts": "2026-09-29"
@@ -91980,6 +92728,10 @@
       "reg": "",
       "ts": "2026-09-27"
     },
+    "usj.es": {
+      "reg": "",
+      "ts": "2026-10-06"
+    },
     "usjc.uwaterloo.ca": {
       "reg": "",
       "ts": "2026-09-21"
@@ -92053,6 +92805,10 @@
     "usmp.edu.pe": {
       "reg": "",
       "ts": "2026-09-29"
+    },
+    "usms.edu.pk": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "usmtu.edu.ua": {
       "reg": "",
@@ -92755,6 +93511,7 @@
     "valleycollege.edu": "2002-02-12",
     "valpo.edu": "1992-06-17",
     "vamk.fi": "2008-08-07",
+    "vanarts.com": "1998-12-24",
     "vancouver.wsu.edu": {
       "reg": "",
       "ts": "2026-09-19"
@@ -92836,6 +93593,7 @@
       "reg": "",
       "ts": "2026-10-01"
     },
+    "vfs.edu": "2009-10-26",
     "vfu.bg": {
       "reg": "",
       "ts": "2026-09-20"
@@ -92900,6 +93658,10 @@
     "vicu.utoronto.ca": {
       "reg": "",
       "ts": "2026-09-21"
+    },
+    "videndjurs.dk": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "vidyasagar.ac.in": "2004-12-31",
     "vieup.ru": {
@@ -93180,6 +93942,7 @@
       "ts": "2026-09-28"
     },
     "vvc.edu": "2002-08-16",
+    "vvsaz.org": "2003-08-18",
     "vvsu.ru": {
       "reg": "",
       "ts": "2026-10-01"
@@ -93472,6 +94235,7 @@
       "reg": "",
       "ts": "2026-09-27"
     },
+    "westminsteru.edu": "2023-01-12",
     "westmont.edu": "1991-04-11",
     "westshore.edu": "2002-02-26",
     "westtexas.tstc.edu": {
@@ -93721,6 +94485,10 @@
     "wsb.toi.tarnow.pl": {
       "reg": "",
       "ts": "2026-09-30"
+    },
+    "wsc.ac.uk": {
+      "reg": "",
+      "ts": "2026-10-06"
     },
     "wscal.edu": "2003-05-06",
     "wscc.edu": "1993-07-07",
@@ -94501,6 +95269,7 @@
     "aauekpoma.edu.ng": 0,
     "aauj.edu": 1,
     "aauni.edu": 0,
+    "abac.edu": 0,
     "abai.university": 0,
     "abasyn.edu.pk": 0,
     "abbotsleigh.nsw.edu.au": 0,
@@ -94521,6 +95290,7 @@
     "abuad.edu.ng": 0,
     "ac-aix-marseille.fr": 1,
     "ac-besancon.fr": 1,
+    "ac-bordeaux.fr": 1,
     "ac-creteil.fr": 1,
     "ac-mayotte.fr": 1,
     "ac-nice.fr": 2,
@@ -94588,6 +95358,7 @@
     "admu.edu.ph": 1,
     "adnu.edu.ph": 1,
     "adpu.edu.az": 1,
+    "adrian.edu": 0,
     "adrianavaldessoprano.com": 1,
     "adrians.edu": 0,
     "adsu.edu.ng": 0,
@@ -94845,6 +95616,7 @@
     "ampa.edu.au": 0,
     "amridgeuniversity.edu": 0,
     "amrita.edu": 0,
+    "amsterdam.tech": 1,
     "amti.hit.bg": 1,
     "amtuni.com": 1,
     "amu.ac.in": 1,
@@ -94889,6 +95661,8 @@
     "anibt.edu.au": 0,
     "anibt.vic.edu.au": 1,
     "ankara.edu.tr": 0,
+    "ankarabilim.edu.tr": 1,
+    "ankaramedipol.edu.tr": 1,
     "annamalaiuniversity.ac.in": 0,
     "annauniv.edu": 0,
     "annauniv.edu.in": 1,
@@ -94942,6 +95716,7 @@
     "ar.lublin.pl": 1,
     "ar.szczecin.pl": 0,
     "ar.wroc.pl": 1,
+    "ara.ac.nz": 0,
     "arabou-lb.edu.lb": 1,
     "arabou.edu.sa": 1,
     "arakmu.ac.ir": 0,
@@ -95024,6 +95799,7 @@
     "asipc.am": 2,
     "asmarya.edu.ly": 0,
     "asmi.edu.kg": 0,
+    "asmildkloster.dk": 0,
     "asmu.ru": 1,
     "asnuntuck.edu": 1,
     "asoiu.edu.az": 0,
@@ -95287,6 +96063,7 @@
     "bayburt.edu.tr": 0,
     "baycollege.edu": 0,
     "baylor.edu": 0,
+    "baypath.edu": 0,
     "baysideenglish.vic.edu.au": 0,
     "bazeuniversity.edu.ng": 0,
     "bbauindia.org": 1,
@@ -95345,6 +96122,7 @@
     "bergen.edu": 0,
     "berkeley.edu": 0,
     "berkeleycitycollege.edu": 0,
+    "berkeleycollege.edu": 0,
     "berklee.edu": 0,
     "berkshirecc.edu": 0,
     "berlin.bard.edu": 0,
@@ -95618,6 +96396,7 @@
     "bsu.kg": 0,
     "bsuir.by": 2,
     "bsum.edu.ng": 0,
+    "btc.ac.uk": 1,
     "btc.ctc.edu": 1,
     "btc.qld.edu.au": 0,
     "bth.se": 0,
@@ -95727,6 +96506,7 @@
     "cambridgeqld.com": 1,
     "camdencc.edu": 0,
     "cameron.edu": 0,
+    "camk.edu.pl": 0,
     "camosun.bc.ca": 0,
     "campbell.edu": 0,
     "campbellsville.edu": 0,
@@ -95739,6 +96519,7 @@
     "campusleon.ugto.mx": 1,
     "campuspouille.fr": 0,
     "campusterresdelaube.fr": 0,
+    "campusvfx.com": 0,
     "canadacollege.edu": 0,
     "canberra.edu.au": 0,
     "candidomendes.br": 1,
@@ -95753,6 +96534,7 @@
     "capecod.edu": 0,
     "capella.edu": 0,
     "capellauniversity.edu": 1,
+    "capital.edu": 0,
     "capitalareaiu.gov": 2,
     "captechu.edu": 0,
     "cardiff.ac.uk": 1,
@@ -96041,6 +96823,7 @@
     "cityu.edu.hk": 0,
     "cityu.gr": 0,
     "cityuniversity.edu.bd": 1,
+    "cityuniversity.edu.pk": 0,
     "ciu.edu.tr": 0,
     "ciucuracao.org": 2,
     "cj-antich.com": 1,
@@ -96476,6 +97259,7 @@
     "cus.ca": 0,
     "cus.edu.kh": 0,
     "cusat.ac.in": 0,
+    "cusit.edu.pk": 1,
     "cuslm.ca": 1,
     "cust.edu.cn": 0,
     "cust.edu.pk": 0,
@@ -96486,6 +97270,7 @@
     "cut.ac.zw": 0,
     "cut.edu.lb": 1,
     "cutb.edu.co": 1,
+    "cuw.edu": 1,
     "cuyamaca.edu": 0,
     "cuz.ac.zw": 0,
     "cv.edu": 0,
@@ -96553,6 +97338,7 @@
     "davenport.edu": 0,
     "davidson.edu": 0,
     "davidsonccc.edu": 1,
+    "davidsondavie.edu": 1,
     "davietjal.org": 0,
     "daviscollege.edu": 1,
     "davpushpanjali.com": 0,
@@ -96610,6 +97396,7 @@
     "delta.edu": 0,
     "deltacollege.edu": 0,
     "deltastate.edu": 1,
+    "delval.edu": 1,
     "democracyprep.org": 0,
     "dendai.ac.jp": 0,
     "denison.edu": 0,
@@ -96631,6 +97418,7 @@
     "devinci.fr": 0,
     "devry.edu": 0,
     "dewaslot.vip": 1,
+    "dewv.edu": 0,
     "deylaman.ac.ir": 1,
     "dfh.dk": 1,
     "dfxy.net": 2,
@@ -96676,6 +97464,7 @@
     "diu.net.bd": 1,
     "dju.ac.kr": 1,
     "dkdm.dk": 0,
+    "dkit.ie": 0,
     "dkut.ac.ke": 1,
     "dky.bjedu.cn": 1,
     "dlc.ui.edu.ng": 0,
@@ -96707,6 +97496,7 @@
     "dokkyomed.ac.jp": 1,
     "dolphininstitute.ac.in": 0,
     "dolphininstitute.in": 1,
+    "dom.edu": 0,
     "domalberto.edu.br": 0,
     "domeinwebshop.nl": 1,
     "dominican.edu": 0,
@@ -96746,6 +97536,7 @@
     "drury.edu": 0,
     "dsc.dm": 1,
     "dscc.edu": 0,
+    "dsdt.edu": 0,
     "dshs-koeln.de": 0,
     "dslcc.edu": 1,
     "dspt.edu": 0,
@@ -96789,6 +97580,7 @@
     "dusit.ac.th": 0,
     "dut.ac.za": 0,
     "duth.gr": 0,
+    "duytan.edu.vn": 0,
     "duzce.edu.tr": 1,
     "dv-art.ru": 0,
     "dvc.edu": 0,
@@ -96857,6 +97649,7 @@
     "ece.fr": 0,
     "eciad.bc.ca": 1,
     "ecjtu.jx.cn": 1,
+    "eckerd.edu": 0,
     "ecla.de": 1,
     "ecnu.edu.cn": 1,
     "ecok.edu": 0,
@@ -96929,6 +97722,7 @@
     "ehl.edu": 0,
     "ehs-dresden.de": 0,
     "ehsal.be": 1,
+    "ehtp.ac.ma": 1,
     "ehu.es": 1,
     "ehu.eus": 1,
     "eia.edu.co": 0,
@@ -96936,6 +97730,7 @@
     "eichi-u.ac.jp": 1,
     "eidoseducation.org": 0,
     "eieonline.com": 1,
+    "eigsi.fr": 0,
     "eiilmuniversity.ac.in": 1,
     "eiminternational.edu.au": 1,
     "einsteinmed.edu": 0,
@@ -97004,6 +97799,7 @@
     "en.nagoya-u.ac.jp": 0,
     "en.natfiz.bg": 0,
     "en.shxy.edu.cn": 0,
+    "en.syau.edu.cn": 0,
     "en.ufsc.br": 0,
     "en.uw.edu.pl": 0,
     "en.via.dk": 0,
@@ -97180,6 +97976,7 @@
     "esitpa.org": 0,
     "esm-tbilisi.ge": 0,
     "esmac.com.br": 1,
+    "esmad.ipp.pt": 0,
     "esmbenin.com": 0,
     "esme.fr": 0,
     "esmer-benin.org": 0,
@@ -97312,6 +98109,7 @@
     "fafire.br": 1,
     "fagammon.edu.br": 0,
     "fainor.com.br": 0,
+    "fairfield.edu": 0,
     "fairmontstate.edu": 0,
     "fakultetkozmetologije.com": 1,
     "falavarjan.ac.ir": 1,
@@ -97483,6 +98281,7 @@
     "fh-wuerzburg.de": 1,
     "fh-zwickau.de": 1,
     "fhbb.ch": 1,
+    "fhda.edu": 0,
     "fhdw.bib.de": 1,
     "fhdw.de": 0,
     "fhkt.de": 1,
@@ -97543,6 +98342,7 @@
     "floridacollege.edu": 0,
     "floridapoly.edu": 0,
     "floridaschoolofmassage.com": 1,
+    "floridauniversitaria.es": 0,
     "flsk.fo": 2,
     "flsouthern.edu": 0,
     "flucianofeijao.com.br": 0,
@@ -97677,6 +98477,7 @@
     "fwu.ac.jp": 1,
     "fwu.edu.pk": 1,
     "fzu.edu.cn": 1,
+    "g.fmarion.edu": 1,
     "g.nsu.ru": 1,
     "gabriel-peri.mon-ent-occitanie.fr": 2,
     "gac.edu": 1,
@@ -97694,6 +98495,7 @@
     "galileo.edu": 1,
     "gallaudet.edu": 1,
     "gallus.pl": 1,
+    "gandakiuniversity.edu.np": 0,
     "gandhara.edu.pk": 0,
     "gannon.edu": 0,
     "gantep.edu.tr": 1,
@@ -97750,6 +98552,7 @@
     "geneva.edu": 0,
     "geology.bas.bg": 1,
     "georgebrown.nsw.edu.au": 0,
+    "georgefox.edu": 0,
     "georges-gironde.anjou.e-lyco.fr": 0,
     "georgetown.edu": 0,
     "georgian.edu": 0,
@@ -97820,6 +98623,8 @@
     "gmu.edu": 0,
     "gnduonline.org": 1,
     "gnesin-academy.ru": 0,
+    "gnihm.ac.in": 0,
+    "gnit.ac.in": 0,
     "gntc.edu": 0,
     "gntech.ac.kr": 1,
     "gnu.ac.kr": 1,
@@ -97836,6 +98641,7 @@
     "gollisuniversity.com": 0,
     "gonzaga.edu": 1,
     "gop.edu.tr": 0,
+    "gordon.ac.il": 0,
     "gordontafe.edu.au": 2,
     "gorganiau.ir": 1,
     "gorny-ins.ru": 1,
@@ -97849,11 +98655,13 @@
     "gpc.edu": 1,
     "gpma.ru": 1,
     "gptc.edu": 0,
+    "gpu.edu.np": 1,
     "gpwu.ac.jp": 1,
     "grace.edu": 0,
     "graceland.edu": 0,
     "gradschool.physics.uni-bonn.de": 0,
     "gram.edu": 1,
+    "grandview.edu": 0,
     "grayson.edu": 0,
     "grcc.edu": 0,
     "gre.ac.uk": 0,
@@ -97863,7 +98671,9 @@
     "greenheartmed.org": 0,
     "greenleaf.edu": 1,
     "greenriver.edu": 0,
+    "greensboro.edu": 0,
     "greenviewpublicschool.in": 2,
+    "greenville.edu": 0,
     "greenvilleclubfitness.com": 1,
     "greenwayschool.org": 2,
     "greenwichcollege.com.au": 1,
@@ -98022,6 +98832,7 @@
     "hanseuni.de": 1,
     "hanshin.ac.kr": 1,
     "hansung.ac.kr": 1,
+    "hanuniversity.com": 0,
     "hanyang.ac.kr": 0,
     "hanze.nl": 0,
     "hanzhong.ac.kr": 1,
@@ -98140,6 +98951,7 @@
     "herzen.edu.ru": 1,
     "herzen.spb.ru": 0,
     "hes-so.ch": 0,
+    "hesperides.edu.es": 0,
     "hesston.edu": 0,
     "hetaodaxue.com": 1,
     "heuet.edu.cn": 1,
@@ -98556,6 +99368,7 @@
     "icuzambia.net": 2,
     "idc.ac.il": 1,
     "idi.edu": 0,
+    "idti.edu": 0,
     "idu.edu.tr": 0,
     "ie.edu": 0,
     "iecc.edu": 0,
@@ -98571,12 +99384,16 @@
     "ieseg.fr": 1,
     "iesvns.com": 1,
     "iet.ru": 1,
+    "ieu.edu.tr": 0,
+    "if-pan.edu.pl": 0,
+    "if-pan.krakow.pl": 1,
     "ifcad.net": 0,
     "ifdtung.if.ua": 1,
     "ifg.com.pl": 1,
     "ifheindia.org": 0,
     "ifm.ac.tz": 0,
     "ifmo.ru": 1,
+    "ifmparis.fr": 0,
     "ifp.fr": 1,
     "ifpenergiesnouvelles.fr": 1,
     "ifslearning.ac.uk": 1,
@@ -98900,6 +99717,7 @@
     "isri.ac.mz": 1,
     "iss.nl": 0,
     "issy.com": 0,
+    "ist-hochschule.de": 0,
     "ist.ac.at": 0,
     "ist.edu.pk": 1,
     "ista.ac.id": 0,
@@ -99124,7 +99942,9 @@
     "jinan.edu.lb": 0,
     "jinnah.edu": 0,
     "jinnah.edu.pk": 1,
+    "jiscollege.ac.in": 0,
     "jissen.ac.jp": 1,
+    "jisuniversity.ac.in": 0,
     "jiu.ac.jp": 1,
     "jiwaji.edu": 0,
     "jj.ac.kr": 0,
@@ -99766,6 +100586,8 @@
     "lamalgrange.net": 2,
     "lamandallaz-sillingy.ent.auvergnerhonealpes.fr": 0,
     "lamar.edu": 0,
+    "lamar.mx": 0,
+    "lamar.org.mx": 1,
     "lamarcc.edu": 1,
     "lamarpa.edu": 0,
     "lambtoncollege.ca": 0,
@@ -99944,6 +100766,7 @@
     "lmu.de": 0,
     "lmu.edu": 0,
     "lmu.edu.ng": 1,
+    "lmunet.edu": 0,
     "ln.edu.hk": 0,
     "ln.hk": 1,
     "lnipe.edu": 1,
@@ -100423,6 +101246,8 @@
     "miu.ru": 1,
     "miuegypt.edu.eg": 1,
     "miun.se": 0,
+    "miva.edu.ng": 0,
+    "miva.university": 1,
     "miyakyo-u.ac.jp": 1,
     "miyasankei-u.ac.jp": 1,
     "miyazaki-med.ac.jp": 1,
@@ -100696,6 +101521,7 @@
     "mylambton.ca": 1,
     "mylaurier.ca": 1,
     "mylcp.net": 1,
+    "mymtu.ie": 0,
     "myongji.ac.kr": 1,
     "myport.ac.uk": 3,
     "myseneca.ca": 1,
@@ -100792,6 +101618,7 @@
     "ncipd.org": 2,
     "ncirl.ie": 0,
     "ncktc.edu": 1,
+    "ncl-coll.ac.uk": 0,
     "ncl.ac.uk": 0,
     "ncmich.edu": 0,
     "ncmissouri.edu": 0,
@@ -100948,6 +101775,7 @@
     "nishitech.ac.jp": 1,
     "nishogakusha-u.ac.jp": 1,
     "nisikyu-u.ac.jp": 0,
+    "nit.ac.in": 0,
     "nit.ac.ir": 0,
     "nit.ac.jp": 1,
     "nita.ac.in": 0,
@@ -101019,6 +101847,7 @@
     "nlu.edu.vn": 1,
     "nma.bg": 0,
     "nmaa.edu.af": 1,
+    "nmc.edu": 0,
     "nmc.vic.edu.au": 1,
     "nmcc.edu": 0,
     "nmetau.edu.ua": 0,
@@ -101163,6 +101992,7 @@
     "nu.edu.af": 0,
     "nu.edu.bd": 1,
     "nu.edu.eg": 0,
+    "nu.edu.kz": 0,
     "nu.edu.ph": 1,
     "nu.edu.pk": 0,
     "nu.edu.sa": 0,
@@ -101269,6 +102099,7 @@
     "ogasa.odessa.ua": 1,
     "ogeecheetech.edu": 0,
     "ogi.edu": 1,
+    "oglethorpe.edu": 0,
     "ogr.iu.edu.tr": 0,
     "ogu.edu.tr": 0,
     "ohio.edu": 0,
@@ -101308,6 +102139,7 @@
     "old.vsmiep.cz": 2,
     "olemiss.edu": 0,
     "olivet.edu": 0,
+    "olivetcollege.edu": 1,
     "ollusa.edu": 0,
     "olmeca.edu.mx": 0,
     "olshalice.catholic.edu.au": 0,
@@ -101320,6 +102152,8 @@
     "omsk.edu": 1,
     "omu.ac.jp": 0,
     "omu.edu.ly": 0,
+    "omu.edu.tr": 0,
+    "oneonta.edu": 1,
     "ontariotechu.ca": 0,
     "ontariotechu.net": 1,
     "onu.edu": 0,
@@ -101365,6 +102199,7 @@
     "osmaniye.edu.tr": 1,
     "osmu.odessa.ua": 1,
     "ostfalia.de": 0,
+    "ostimteknik.edu.tr": 1,
     "osu.ac.jp": 1,
     "osu.cz": 0,
     "osu.edu": 2,
@@ -101459,10 +102294,12 @@
     "paramadina.ac.id": 0,
     "pardeerand.edu": 1,
     "parikramaschoolofmusic.com": 0,
+    "paris-sorbonne.fr": 1,
     "paris.ensam.fr": 1,
     "paris.fr": 0,
     "paris4.sorbonne.fr": 1,
     "parisjc.edu": 0,
+    "parisnanterre.fr": 1,
     "park.edu": 0,
     "park.education": 0,
     "parkidiomas.com.br": 2,
@@ -101904,6 +102741,7 @@
     "qu.edu.sa": 0,
     "quadratacademy.com": 0,
     "qub.ac.uk": 1,
+    "queens.edu": 0,
     "queensu.ca": 0,
     "queensuniversity.edu.bd": 0,
     "quest.edu.pk": 0,
@@ -102132,6 +102970,7 @@
     "rumi.ac.ma": 1,
     "rums.ac.ir": 0,
     "run.edu.ng": 1,
+    "runshaw.ac.uk": 0,
     "rupp.edu.kh": 0,
     "ruraluniversity-chitrakoot.org": 1,
     "rusangu-university.edu.zm": 1,
@@ -102324,6 +103163,7 @@
     "scesa.al": 3,
     "scgs.qld.edu.au": 0,
     "sch.ac.kr": 1,
+    "schiller.edu": 0,
     "schillerlondon.ac.uk": 1,
     "schillermadrid.edu": 1,
     "schillerparis.com": 0,
@@ -102368,7 +103208,7 @@
     "scu.edu.cn": 2,
     "scu.edu.tw": 1,
     "scuhs.edu": 0,
-    "scut.edu.cn": 1,
+    "scut.edu.cn": 2,
     "sdada.edu.cn": 0,
     "sdau.edu.cn": 0,
     "sdau.edu.in": 0,
@@ -102460,7 +103300,7 @@
     "seu.ac.bd": 1,
     "seu.ac.lk": 0,
     "seu.edu.bd": 1,
-    "seu.edu.cn": 1,
+    "seu.edu.cn": 2,
     "seua.am": 2,
     "sevntu.com.ua": 1,
     "sevs.sk": 1,
@@ -102726,12 +103566,14 @@
     "snhu.edu": 0,
     "snie.edu.cn": 1,
     "snnu.edu.cn": 1,
+    "snow.edu": 0,
     "sns.it": 1,
     "snspa.ro": 0,
     "snu.ac.kr": 0,
     "snu.edu": 0,
     "snu.edu.ua": 1,
     "snue.ac.kr": 1,
+    "snuniv.ac.in": 0,
     "snut.ac.kr": 1,
     "soa.ac.in": 0,
     "soai.ac.jp": 0,
@@ -102825,6 +103667,7 @@
     "spencercollege.edu.au": 0,
     "spiritus.ch": 0,
     "spiruharet.ro": 0,
+    "spjain.org": 0,
     "spm.sch.id": 0,
     "spmi.edu.ru": 1,
     "spnu.ac.ir": 1,
@@ -102909,6 +103752,7 @@
     "stadt-zuerich.ch": 0,
     "staffs.ac.uk": 0,
     "staidans.qld.edu.au": 2,
+    "stallions.abac.edu": 1,
     "stamford.edu": 0,
     "stamforduniversity.edu.bd": 0,
     "stan.ac.id": 1,
@@ -102949,6 +103793,7 @@
     "stevenson.edu": 0,
     "stfrancis.edu": 0,
     "stfx.ca": 1,
+    "stgc.uwa.edu.au": 0,
     "sthildas.wa.edu.au": 0,
     "sti.edu": 0,
     "stieprimavisi.ac.id": 1,
@@ -103100,6 +103945,7 @@
     "sunmoon.ac.kr": 0,
     "suno.edu": 1,
     "sunway.edu.my": 0,
+    "suny.oneonta.edu": 0,
     "sunyacc.edu": 0,
     "sunybroome.edu": 0,
     "sunycentral.edu": 1,
@@ -103300,6 +104146,7 @@
     "tce.edu": 0,
     "tcetmumbai.in": 0,
     "tcicollege.edu": 1,
+    "tcioe.edu.np": 1,
     "tcl.edu": 1,
     "tcm.ac.uk": 1,
     "tcnj.edu": 0,
@@ -103319,6 +104166,7 @@
     "technion.ac.il": 0,
     "technobros.au": 1,
     "techtitute.com": 0,
+    "tecmilenio.mx": 0,
     "tedi.vic.edu.au": 0,
     "tedu.edu.tr": 0,
     "tees.ac.uk": 0,
@@ -103377,6 +104225,7 @@
     "thierryschool.org": 1,
     "think.edu.au": 0,
     "thiqaruni.org": 0,
+    "thk.edu.tr": 1,
     "thm.de": 0,
     "thmu.edu.tw": 1,
     "thomas.edu": 0,
@@ -103692,6 +104541,7 @@
     "u-aizu.ac.jp": 0,
     "u-bordeaux.fr": 0,
     "u-bordeaux2.fr": 1,
+    "u-bourgogne.fr": 1,
     "u-bunkyo.ac.jp": 1,
     "u-cergy.fr": 1,
     "u-clermont1.fr": 1,
@@ -103701,6 +104551,7 @@
     "u-paris.fr": 0,
     "u-paris10.fr": 1,
     "u-paris2.fr": 1,
+    "u-pec.fr": 1,
     "u-pem.fr": 1,
     "u-picardie.fr": 0,
     "u-psud.fr": 1,
@@ -103855,6 +104706,7 @@
     "uav.ro": 0,
     "uax.com": 0,
     "uax.es": 1,
+    "uaysen.cl": 0,
     "uazuay.edu.ec": 0,
     "ub.ac.id": 1,
     "ub.bw": 0,
@@ -103874,6 +104726,7 @@
     "ubbcluj.ro": 0,
     "ubc.ca": 0,
     "ubd.edu.bn": 0,
+    "ube.fr": 0,
     "ubfc.fr": 0,
     "ubhara.ac.id": 0,
     "ubharajaya.ac.id": 0,
@@ -104159,6 +105012,7 @@
     "uema.br": 1,
     "uenf.br": 0,
     "uenogakuen.ac.jp": 1,
+    "uenp.edu.br": 0,
     "uep.educ.ph": 1,
     "uepb.edu.br": 0,
     "uepg.br": 0,
@@ -104177,6 +105031,7 @@
     "uevora.pt": 0,
     "uew.edu.gh": 0,
     "uexternado.edu.co": 1,
+    "uf3ceu.es": 0,
     "ufabc.edu.br": 0,
     "ufac.br": 0,
     "ufal.br": 0,
@@ -104520,6 +105375,7 @@
     "umkc.edu": 0,
     "uml.edu": 0,
     "umla.edu.mx": 0,
+    "umlp.fr": 0,
     "umm.ac.id": 1,
     "umm.edu.mx": 0,
     "umm.maine.edu": 1,
@@ -104529,6 +105385,7 @@
     "umn.edu": 0,
     "umne.edu.mx": 1,
     "umng.edu.co": 0,
+    "umo.edu": 0,
     "umoar.edu.sv": 1,
     "umobile.edu": 1,
     "umoderna.pt": 1,
@@ -104566,6 +105423,7 @@
     "umuc.edu": 1,
     "umutarapolytech.ac.rw": 1,
     "umw.edu": 0,
+    "umwestern.edu": 0,
     "umy.ac.id": 1,
     "umyu.edu.ng": 0,
     "umz.ac.ir": 1,
@@ -104972,6 +105830,7 @@
     "unimelb.edu.au": 3,
     "unimep.br": 1,
     "unimes.com.br": 1,
+    "unimes.fr": 0,
     "unimet.edu.ve": 0,
     "unimetro.edu.co": 0,
     "unimetro.edu.hn": 0,
@@ -105147,10 +106006,12 @@
     "univ-eltarf.dz": 3,
     "univ-emir.dz": 1,
     "univ-evry.fr": 1,
+    "univ-fcomte.fr": 1,
     "univ-fianar.mg": 1,
     "univ-grenoble-alpes.fr": 2,
     "univ-guelma.dz": 1,
     "univ-ibntofail.ac.ma": 1,
+    "univ-jfc.fr": 0,
     "univ-jijel.dz": 0,
     "univ-k.rnu.tn": 0,
     "univ-kag.org": 0,
@@ -105190,6 +106051,7 @@
     "univ-ouargla.dz": 0,
     "univ-oujda.ac.ma": 1,
     "univ-ovidius.ro": 1,
+    "univ-paris-diderot.fr": 1,
     "univ-paris1.fr": 1,
     "univ-paris12.fr": 1,
     "univ-paris13.fr": 1,
@@ -105264,6 +106126,7 @@
     "universidadcentral.com": 1,
     "universidaddeleon.edu.mx": 0,
     "universidade-autonoma.pt": 1,
+    "universidadean.edu.co": 0,
     "universidademetodista.ao": 1,
     "universidadeuropea.com": 0,
     "universidadlaconcordia.edu.mx": 0,
@@ -105300,6 +106163,7 @@
     "universum-ks.org": 0,
     "univerzitetpim.com": 1,
     "univerzitetps.com": 0,
+    "univesp.br": 1,
     "univet.hu": 0,
     "univgb.rnu.tn": 1,
     "univie.ac.at": 0,
@@ -105517,6 +106381,7 @@
     "uokufa.edu.iq": 0,
     "uol.de": 0,
     "uol.edu.pk": 1,
+    "uolivet.edu": 0,
     "uom.ac.mu": 0,
     "uom.edu.mx": 1,
     "uom.edu.pk": 1,
@@ -105619,6 +106484,7 @@
     "upjs.sk": 0,
     "upla.edu.pe": 0,
     "uplb.edu.ph": 1,
+    "uplearnbusinessschool.com": 1,
     "upm.ac.ma": 1,
     "upm.edu.my": 0,
     "upm.edu.ph": 1,
@@ -105627,6 +106493,7 @@
     "upm.ro": 0,
     "upmc.com": 0,
     "upmc.edu": 4,
+    "upmf-grenoble.fr": 1,
     "upmin.edu.ph": 1,
     "upn.mx": 0,
     "upnfm.edu.hn": 0,
@@ -105791,6 +106658,7 @@
     "usj.edu": 2,
     "usj.edu.lb": 0,
     "usj.edu.mo": 0,
+    "usj.es": 0,
     "usjc.uwaterloo.ca": 1,
     "usjr.edu.ph": 1,
     "usjt.br": 0,
@@ -105814,6 +106682,7 @@
     "usmga.ru": 1,
     "usmma.edu": 1,
     "usmp.edu.pe": 1,
+    "usms.edu.pk": 1,
     "usmtu.edu.ua": 1,
     "usna.edu": 0,
     "usoms.poznan.pl": 1,
@@ -106082,6 +106951,7 @@
     "valleycollege.edu": 0,
     "valpo.edu": 1,
     "vamk.fi": 0,
+    "vanarts.com": 0,
     "vancouver.wsu.edu": 0,
     "vanderbilt.edu": 0,
     "vanguard.edu": 0,
@@ -106121,6 +106991,7 @@
     "vevey-eps.ch": 0,
     "vfmac.edu": 0,
     "vfrta.ru": 1,
+    "vfs.edu": 0,
     "vfu.bg": 0,
     "vfu.cz": 1,
     "vgafk.ru": 0,
@@ -106141,6 +107012,7 @@
     "victoriaparkchristianschool.wa.edu.au": 0,
     "victory.nsw.edu.au": 0,
     "vicu.utoronto.ca": 0,
+    "videndjurs.dk": 0,
     "vidyasagar.ac.in": 0,
     "vieup.ru": 1,
     "vignanuniversity.org": 1,
@@ -106246,6 +107118,7 @@
     "vuu.edu": 0,
     "vuw.ac.nz": 1,
     "vvc.edu": 0,
+    "vvsaz.org": 0,
     "vvsu.ru": 0,
     "vvu.edu.gh": 0,
     "vwc.edu": 1,
@@ -106370,6 +107243,7 @@
     "westminster.ac.uk": 0,
     "westminster.edu": 0,
     "westminster.edu.my": 1,
+    "westminsteru.edu": 0,
     "westmont.edu": 0,
     "westshore.edu": 0,
     "westtexas.tstc.edu": 0,
@@ -106491,6 +107365,7 @@
     "wsb-nlu.edu.pl": 0,
     "wsb.poznan.pl": 1,
     "wsb.toi.tarnow.pl": 1,
+    "wsc.ac.uk": 0,
     "wscal.edu": 0,
     "wscc.edu": 1,
     "wsei.lublin.pl": 1,
@@ -106753,13 +107628,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-10-06T07:19:59+00:00",
+  "last_run": "2026-10-06T07:40:10+00:00",
   "last_verify": {
-    "added_active": 67,
-    "at": "2026-10-06 00:55 UTC",
-    "pending_left": 4318,
+    "added_active": 76,
+    "at": "2026-10-06 07:40 UTC",
+    "pending_left": 4269,
     "reverified": 15,
-    "validated": 118
+    "validated": 122
   },
   "moved": {
     "admu.edu.ph": "ateneo.edu",
@@ -106841,6 +107716,7 @@
     "csufresno.edu": "fresnostate.edu",
     "csum.edu": "maritime.calpoly.edu",
     "cua.edu": "catholic.edu",
+    "cusit.edu.pk": "cityuniversity.edu.pk",
     "cwidaho.cc": "cwi.edu",
     "cybermed.edu.my": "cyberjaya.edu.my",
     "dauphine.fr": "dauphine.psl.eu",
@@ -106971,6 +107847,7 @@
     "ici.edu": "globaluniversity.edu",
     "icuzambia.net": "icu.ac.zm",
     "ieps-marche.be": "eafc-marche.be",
+    "if-pan.krakow.pl": "if-pan.edu.pl",
     "ifmo.ru": "itmo.ru",
     "ifp.fr": "ifpenergiesnouvelles.fr",
     "iha.dk": "ingenioer.au.dk",
@@ -107033,6 +107910,7 @@
     "kuwarangal.com": "adrianavaldessoprano.com",
     "kvl.dk": "science.ku.dk",
     "lakeland.cc.il.us": "lakelandcollege.edu",
+    "lamar.org.mx": "lamar.mx",
     "lancs.ac.uk": "lancaster.ac.uk",
     "langara.bc.ca": "langara.ca",
     "leiden.edu": "universiteitleiden.nl",
@@ -107056,6 +107934,7 @@
     "middlesex.mass.edu": "middlesex.edu",
     "mines-ales.fr": "imt-mines-ales.fr",
     "mitht.ru": "mirea.ru",
+    "miva.university": "miva.edu.ng",
     "mmc.edu": "meharry.edu",
     "moler.org": "moler.edu",
     "moorabbinaviationservices.com.au": "mas.vic.edu.au",
@@ -107088,6 +107967,7 @@
     "oecu.jp": "osakac.ac.jp",
     "ogi.edu": "ohsu.edu",
     "okanagan.bc.ca": "okanagancollege.ca",
+    "olivetcollege.edu": "uolivet.edu",
     "ontariotechu.net": "ontariotechu.ca",
     "oradeauniversity.com": "rainbowcastle.org",
     "otc.edu": "ozarkstech.edu",
@@ -107182,6 +108062,7 @@
     "tut.fi": "tuni.fi",
     "tuwien.ac.at": "tuwien.at",
     "txstate.edu": "txst.edu",
+    "u-bourgogne.fr": "ube.fr",
     "u-cergy.fr": "cyu.fr",
     "uaaan.mx": "uaaan.edu.mx",
     "uab.es": "uab.cat",
@@ -107241,7 +108122,9 @@
     "unisantos.com.br": "unisantos.br",
     "univ-catholyon.fr": "ucly.fr",
     "univ-corse.fr": "universita.corsica",
+    "univ-fcomte.fr": "umlp.fr",
     "univ-lr.fr": "univ-larochelle.fr",
+    "univ-paris-diderot.fr": "u-paris.fr",
     "univ-paris1.fr": "pantheonsorbonne.fr",
     "univ-paris13.fr": "univ-spn.fr",
     "univ-rennes1.fr": "univ-rennes.fr",
