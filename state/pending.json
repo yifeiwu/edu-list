@@ -18723,7 +18723,7 @@
   "domain": "lyc-rfollereau-belfort.eclat-bfc.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e g\u00e9n\u00e9ral et technologique Raoul Follereau",
-  "source": "fr-annuaire:2026-09-30",
+  "source": "fr-annuaire:2026-09-30;fr-annuaire:2026-10-07",
   "type_hint": "k-12",
   "url": "http://lyc-rfollereau-belfort.eclat-bfc.fr"
  },
@@ -25507,7 +25507,7 @@
   "domain": "enmas.dz",
   "iso2": "DZ",
   "name": "Ecole Nationale de Management et de l'Administration de la Sant\u00e9",
-  "source": "wikidata:P856",
+  "source": "wikidata:P856;ror:api-p122",
   "type_hint": "university",
   "url": "http://www.enmas.dz/index.php/ar/"
  },
@@ -28923,7 +28923,7 @@
   "domain": "oslomet.no",
   "iso2": "NO",
   "name": "OsloMet \u2013 Oslo Metropolitan University",
-  "source": "openalex:page113",
+  "source": "openalex:page113;deqar:2026-10-07",
   "type_hint": "university",
   "url": "https://www.oslomet.no"
  },
@@ -31638,5 +31638,477 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "https://www.psm.edu/"
+ },
+ {
+  "domain": "esi.dz",
+  "iso2": "DZ",
+  "name": "\u00c9cole Nationale Sup\u00e9rieure d'Informatique",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://www.esi.dz/"
+ },
+ {
+  "domain": "encg-settat.ma",
+  "iso2": "MA",
+  "name": "National School of Business and Management in Settat",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://encg-settat.ma/"
+ },
+ {
+  "domain": "ucc.ac.cd",
+  "iso2": "CD",
+  "name": "Universit\u00e9 Catholique du Congo",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://ucc.ac.cd/"
+ },
+ {
+  "domain": "mgi.ac.za",
+  "iso2": "ZA",
+  "name": "Midrand Graduate Institute",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://www.mgi.ac.za/"
+ },
+ {
+  "domain": "cranefield.ac.za",
+  "iso2": "ZA",
+  "name": "Cranefield College",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://www.cranefield.ac.za/"
+ },
+ {
+  "domain": "ehect.net",
+  "iso2": "MA",
+  "name": "\u00c9cole des Hautes \u00c9tudes Commerciales Techniques et Informatiques",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://www.ehect.net/"
+ },
+ {
+  "domain": "isseg-gn.com",
+  "iso2": "GN",
+  "name": "Institut Sup\u00e9rieur des Sciences de l'\u00c9ducation de Guin\u00e9e",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://www.isseg-gn.com/"
+ },
+ {
+  "domain": "uglcsonfonia.org",
+  "iso2": "GN",
+  "name": "Universit\u00e9 G\u00e9n\u00e9ral Lansana Cont\u00e9",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://www.uglcsonfonia.org/"
+ },
+ {
+  "domain": "encgt.ma",
+  "iso2": "MA",
+  "name": "\u00c9cole Nationale de Commerce et de Gestion de Tanger",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://www.encgt.ma/"
+ },
+ {
+  "domain": "cepromad.com",
+  "iso2": "CD",
+  "name": "Universit\u00e9 de Cepromad",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://cepromad.com/"
+ },
+ {
+  "domain": "isitt.ma",
+  "iso2": "MA",
+  "name": "Institut Sup\u00e9rieur International du Tourisme de Tanger",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://isitt.ma/"
+ },
+ {
+  "domain": "enstetouan.ma",
+  "iso2": "MA",
+  "name": "\u00c9cole Normale Sup\u00e9rieure de T\u00e9touan",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "https://www.enstetouan.ma/"
+ },
+ {
+  "domain": "ulk-rdc.org",
+  "iso2": "CD",
+  "name": "Universit\u00e9 Libre de Kinshasa",
+  "source": "ror:api-p122",
+  "type_hint": "university",
+  "url": "http://www.ulk-rdc.org/"
+ },
+ {
+  "domain": "up.lublin.pl",
+  "iso2": "PL",
+  "name": "University of Life Sciences in Lublin",
+  "source": "openalex:page121",
+  "type_hint": "university",
+  "url": "https://up.lublin.pl"
+ },
+ {
+  "domain": "lnu.se",
+  "iso2": "SE",
+  "name": "Linnaeus University",
+  "source": "openalex:page121",
+  "type_hint": "university",
+  "url": "https://lnu.se"
+ },
+ {
+  "domain": "cwnu.edu.cn",
+  "iso2": "CN",
+  "name": "China West Normal University",
+  "source": "openalex:page121",
+  "type_hint": "university",
+  "url": "http://cwnu.edu.cn"
+ },
+ {
+  "domain": "bist.eu",
+  "iso2": "ES",
+  "name": "Barcelona Institute of Science and Technology",
+  "source": "openalex:page121",
+  "type_hint": "university",
+  "url": "https://bist.eu"
+ },
+ {
+  "domain": "unaja.ac.id",
+  "iso2": "ID",
+  "name": "Adiwangsa Jambi University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://unaja.ac.id/"
+ },
+ {
+  "domain": "unh.ac.id",
+  "iso2": "ID",
+  "name": "Nurdin Hamzah University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.unh.ac.id"
+ },
+ {
+  "domain": "dhktyduocdn.edu.vn",
+  "iso2": "VN",
+  "name": "Danang University of Medicine and Pharmacy Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://dhktyduocdn.edu.vn/"
+ },
+ {
+  "domain": "polinef.ac.id",
+  "iso2": "ID",
+  "name": "Fakfak State Polytechnic University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://polinef.ac.id/"
+ },
+ {
+  "domain": "politap.ac.id",
+  "iso2": "ID",
+  "name": "Ketapang State Polytechnic",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://politap.ac.id"
+ },
+ {
+  "domain": "polnustar.ac.id",
+  "iso2": "ID",
+  "name": "North Nusa State Polytechnic",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.polnustar.ac.id/"
+ },
+ {
+  "domain": "polsub.ac.id",
+  "iso2": "ID",
+  "name": "Politeknik Negeri Subang",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.polsub.ac.id"
+ },
+ {
+  "domain": "umberau.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Muhammadiyah Berau",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://umberau.ac.id/"
+ },
+ {
+  "domain": "ldzy.com",
+  "iso2": "CN",
+  "name": "Loudi Vocational and Technical College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://ldzy.com/"
+ },
+ {
+  "domain": "unwaha.ac.id",
+  "iso2": "ID",
+  "name": "Universitas KH. A. Wahab Hasbullah",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.unwaha.ac.id"
+ },
+ {
+  "domain": "binabangsa.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Bina Bangsa",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://binabangsa.ac.id/"
+ },
+ {
+  "domain": "unama.ac.id",
+  "iso2": "ID",
+  "name": "Dinamika Bangsa University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://unama.ac.id/"
+ },
+ {
+  "domain": "cambreurcollege.nl",
+  "iso2": "XX",
+  "name": "Cambreur College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://cambreurcollege.nl/"
+ },
+ {
+  "domain": "college-albertmicheneau-villefagnan.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Albert Micheneau",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "https://college-albertmicheneau-villefagnan.fr"
+ },
+ {
+  "domain": "lycee-image-son-angouleme.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e de l'image et du son",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "https://lycee-image-son-angouleme.fr"
+ },
+ {
+  "domain": "lyceeaudouindubreuil.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Louis Audouin Dubreuil",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "https://lyceeaudouindubreuil.fr"
+ },
+ {
+  "domain": "collegegujan.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Chante Cigale",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "https://www.collegegujan.fr/"
+ },
+ {
+  "domain": "college-francois-1er-villers-cotterets.02.ac-amiens.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Fran\u00e7ois 1er",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "https://college-francois-1er-villers-cotterets.02.ac-amiens.fr/"
+ },
+ {
+  "domain": "college-jean-moulin-artix.websco.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jean Moulin",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "http://www.college-jean-moulin-artix.websco.fr"
+ },
+ {
+  "domain": "terresdelyonne.com",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e d'enseignement g\u00e9n\u00e9ral, technologique et professionnel agricole d'Auxerre-Venoy",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "http://www.terresdelyonne.com"
+ },
+ {
+  "domain": "stcharles-camas.com",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Saint-Charles Camas",
+  "source": "fr-annuaire:2026-10-07",
+  "type_hint": "k-12",
+  "url": "http://www.stcharles-camas.com"
+ },
+ {
+  "domain": "aiemel.vic.edu.au",
+  "iso2": "AU",
+  "name": "KFQ Partners Pty Ltd",
+  "source": "cricos:2026-10-07",
+  "type_hint": "",
+  "url": "www.aiemel.vic.edu.au"
+ },
+ {
+  "domain": "queens.qld.edu.au",
+  "iso2": "AU",
+  "name": "Colleges Australia International Pty Ltd",
+  "source": "cricos:2026-10-07",
+  "type_hint": "",
+  "url": "http://www.queens.qld.edu.au"
+ },
+ {
+  "domain": "rshoyskolen.no",
+  "iso2": "NO",
+  "name": "Rudolf Steiner University College",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "http://www.rshoyskolen.no/"
+ },
+ {
+  "domain": "vid.no",
+  "iso2": "NO",
+  "name": "VID Specialized University",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "https://www.vid.no/"
+ },
+ {
+  "domain": "ldh.no",
+  "iso2": "NO",
+  "name": "Lovisenberg Diaconal University College",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "http://www.ldh.no/"
+ },
+ {
+  "domain": "forsvaret.no",
+  "iso2": "NO",
+  "name": "The Norwegian Defence University College",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "https://www.forsvaret.no/en/organisation/nduc"
+ },
+ {
+  "domain": "bi.edu",
+  "iso2": "NO",
+  "name": "BI Norwegian Business School",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "http://www.bi.edu/"
+ },
+ {
+  "domain": "phs.no",
+  "iso2": "NO",
+  "name": "The Norwegian Police University College",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "http://www.phs.no/en/"
+ },
+ {
+  "domain": "noroff.no",
+  "iso2": "NO",
+  "name": "Noroff School of Technology and digital media",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "https://www.noroff.no/en/"
+ },
+ {
+  "domain": "oslonyehoyskole.no",
+  "iso2": "NO",
+  "name": "Oslo New University College",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "https://oslonyehoyskole.no/"
+ },
+ {
+  "domain": "en.uit.no",
+  "iso2": "NO",
+  "name": "University of Tromso - Norway's Arctic University",
+  "source": "deqar:2026-10-07",
+  "type_hint": "university",
+  "url": "http://en.uit.no/startsida"
+ },
+ {
+  "domain": "comfsm.fm",
+  "iso2": "US",
+  "name": "College of Micronesia-FSM",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.comfsm.fm/"
+ },
+ {
+  "domain": "palau.edu",
+  "iso2": "US",
+  "name": "Palau Community College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "palau.edu/"
+ },
+ {
+  "domain": "bluehills.org",
+  "iso2": "US",
+  "name": "Blue Hills Regional Technical School",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.bluehills.org/practical-nursing/overview"
+ },
+ {
+  "domain": "parker.edu",
+  "iso2": "US",
+  "name": "Parker University",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.parker.edu/"
+ },
+ {
+  "domain": "icprjc.edu",
+  "iso2": "US",
+  "name": "ICPR Junior College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.icprjc.edu/"
+ },
+ {
+  "domain": "citycollege.edu",
+  "iso2": "US",
+  "name": "City College-Hollywood",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.citycollege.edu/"
+ },
+ {
+  "domain": "meridian.edu",
+  "iso2": "US",
+  "name": "Meridian College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.meridian.edu/"
+ },
+ {
+  "domain": "perimeter.gsu.edu",
+  "iso2": "US",
+  "name": "Georgia State University-Perimeter College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "perimeter.gsu.edu/"
+ },
+ {
+  "domain": "eticampus.edu",
+  "iso2": "US",
+  "name": "ETI School of Skilled Trades",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.eticampus.edu/"
+ },
+ {
+  "domain": "traxlerschoolofhair.com",
+  "iso2": "US",
+  "name": "Traxlers School of Hair",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "traxlerschoolofhair.com/"
  }
 ]
