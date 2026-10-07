@@ -89,6 +89,7 @@ def write_summary(summary_path: Path, buckets: dict[str, list[dict]],
     oldest = min((r.get("last_visited", "?") for r in rows), default="?")
     archived = sum(1 for d in (state.get("failures", {}) or {})
                    if int(state["failures"].get(d, 0) or 0) >= archive_after)
+    dns_dead = len(state.get("dns_dead", {}) or {})
     moved = len(state.get("moved", {}) or {})
 
     current = {r["web_domain"] for r in rows}
@@ -139,6 +140,7 @@ def write_summary(summary_path: Path, buckets: dict[str, list[dict]],
           f"- Verified in last 30 days: **{fresh}** ({_pct(fresh, total)})",
           f"- Older than 90 days: **{stale90}** (oldest check {oldest})",
           f"- Archived chronic failures (re-check paused): **{archived}**",
+          f"- Retired, no DNS record (`unreachable-dns`): **{dns_dead}**",
           f"- Moved pointers (old domain → new): **{moved}**",
           "", "## Alerts", ""]
     alerts = compute_alerts(buckets, state)

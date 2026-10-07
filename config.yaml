@@ -18,6 +18,13 @@ run:
   # row is kept (archived) but skipped by oldest-N rotation for `archive_skip_days`.
   archive_after_failures: 6
   archive_skip_days: 90
+  # A host with no DNS record can never serve a homepage, so it is retired
+  # immediately (reason `unreachable-dns`) instead of burning retries until
+  # the archive counter fills. The row is kept; it is just skipped by the
+  # re-verify rotation and dropped from the pending queue until this many
+  # days pass, so a name that later gets registered is picked up again.
+  # Retire existing rows once with: python src/verify.py --backfill-dns-dead
+  dns_dead_recheck_days: 365
   # Cap on queued unvalidated candidates (curate defers overflow to next run).
   max_pending: 8000
 
@@ -38,9 +45,12 @@ validation:
   # Homepage bytes to inspect (title/H1/schema/keywords).
   max_bytes: 32768
   politeness_delay_seconds: 0.4
-  # Transient transport retry (ConnectionError/Timeout only; TLS and HTTP
-  # statuses are never retried).
-  retries: 1
+  # Transient retry with exponential backoff (base * 2**attempt, capped at 8s,
+  # capped at 30s when the server sends Retry-After). Covers transport failures
+  # (ConnectionError/Timeout) and transient statuses (429/502/503/504).
+  # TLS errors and all other statuses are never retried. `retries: 2` = up to
+  # 3 attempts; raise for rate-limited hosts, lower to save run budget.
+  retries: 2
   retry_backoff_seconds: 1.0
   user_agent: "edu-domains-bot/1.0 (+https://github.com/yifeiwu/edu-domains; contact: billy.gumdrop066@slmails.com )"
   # Confidence >= threshold => Active (provided final HTTP status is 2xx + HTML).

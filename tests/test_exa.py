@@ -406,7 +406,8 @@ def test_fallback_rescues_connection_error():
 def test_fallback_discovers_replacement_domain():
     import requests as _rq
     with patch("src.validate.requests.get",
-               side_effect=_rq.exceptions.ConnectionError("down")):
+               side_effect=_rq.exceptions.ConnectionError("down")), \
+            patch("src.validate.dns_state", return_value="missing"):
         res = validate.validate_site("https://old.edu", "old.edu",
                                      "US", 10, UA, 32768,
                                      politeness=0, sleep_fn=_no_sleep,

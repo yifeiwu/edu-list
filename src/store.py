@@ -13,6 +13,9 @@ CSV schema: school_name,web_domain,type,last_visited,status,sources,years_regist
 
 Internal quality tracking (NOT in CSV) lives in state/state.json:
   failures: {domain: consecutive Inaccessible count}
+  dns_dead: {domain: {at: YYYY-MM-DD}} hosts with no DNS record. Kept as
+    Inaccessible rows (the school record is real) but skipped by the
+    re-verify rotation until `run.dns_dead_recheck_days` elapses.
   moved: {domain: target} for cross-domain pointers (excluded from archive math)
   confidence/reason: last validation detail per domain.
 """
@@ -72,6 +75,7 @@ def load_state(path: Path) -> dict:
                 data.setdefault("failures", {})
                 data.setdefault("detail", {})
                 data.setdefault("moved", {})
+                data.setdefault("dns_dead", {})
                 data.setdefault("domain_age", {})
                 data.setdefault("exa_cache", {})
                 data.setdefault("last_run", "")
@@ -89,7 +93,7 @@ def load_state(path: Path) -> dict:
             except Exception:
                 pass
     return {"cursors": {}, "failures": {}, "detail": {}, "moved": {},
-            "domain_age": {}, "exa_cache": {}, "last_run": ""}
+            "dns_dead": {}, "domain_age": {}, "exa_cache": {}, "last_run": ""}
 
 
 def save_state(path: Path, state: dict) -> None:

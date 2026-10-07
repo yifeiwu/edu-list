@@ -41,11 +41,14 @@ WHED_COUNTRIES = ["Senegal", "Ghana", "Kenya", "Peru", "Vietnam", "Morocco",
 # for backwards compatibility with existing imports/tests.
 from src.cli_common import DEFAULT_MAILTO  # noqa: F401,E402
 from src.geo import DEQAR_COUNTRY_ISO  # noqa: F401,E402  (single source in geo.py)
+from src.util import TRANSIENT_STATUSES, retry_wait  # noqa: F401,E402
 
 
 def _get(url, timeout=30, params=None, headers=None, stream=False,
          tries: int = 3, sleep_fn=None):
-    """GET with retries on transient statuses (429/502/503/504).
+    """GET with exponential backoff on transient statuses (429/502/503/504),
+    honoring Retry-After. Backoff schedule is shared with the verify pipeline
+    (`util.retry_wait`) so both halves behave identically.
 
     Raises the last exception / returns last response to the caller; adapters
     catch everything and return [] so one source never fails a run.
@@ -59,16 +62,17 @@ def _get(url, timeout=30, params=None, headers=None, stream=False,
         try:
             r = requests.get(url, params=params, headers=h,
                              timeout=timeout, stream=stream)
-            if r.status_code in (429, 502, 503, 504) and attempt < tries - 1:
-                wait = min(2 ** attempt, 8)
+            if r.status_code in TRANSIENT_STATUSES and attempt < tries - 1:
                 try:
                     ra = r.headers.get("Retry-After")
-                    if ra and str(ra).strip().isdigit():
-                        wait = min(int(ra), 30)
+                except Exception:
+                    ra = None
+                try:
+                    r.close()
                 except Exception:
                     pass
                 try:
-                    _sleep(wait)
+                    _sleep(retry_wait(attempt, ra))
                 except Exception:
                     pass
                 continue
@@ -77,7 +81,7 @@ def _get(url, timeout=30, params=None, headers=None, stream=False,
             last_exc = e
             if attempt < tries - 1:
                 try:
-                    _sleep(min(2 ** attempt, 8))
+                    _sleep(retry_wait(attempt))
                 except Exception:
                     pass
                 continue

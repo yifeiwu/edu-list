@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import socket
 import urllib.parse as urlparse
 
 from .geo import MULTI_SUFFIXES  # noqa: F401  (re-export, single source in geo.py)
@@ -305,3 +306,93 @@ def union_sources(old: str, new: str) -> str:
         if c and c not in items:
             items.append(c)
     return ";".join(items)
+
+
+# Statuses worth one polite retry: server hiccups plus explicit rate limits.
+# 403 is deliberately excluded — a WAF/bot block is a real Inaccessible
+# verdict, not a transient failure, so retrying it only wastes a request.
+TRANSIENT_STATUSES = frozenset({429, 502, 503, 504})
+
+# Backoff bounds (seconds). Cap keeps a single stuck host from eating the
+# run budget; max_retry_after bounds a hostile/incorrect Retry-After.
+RETRY_BACKOFF_CAP = 8.0
+RETRY_AFTER_CAP = 30.0
+
+
+def retry_wait(attempt: int, retry_after: str | None = None,
+               base: float = 1.0,
+               cap: float = RETRY_BACKOFF_CAP) -> float:
+    """Exponential backoff for a 0-based `attempt`, honoring Retry-After.
+
+    `base * 2**attempt` capped at `cap`. A numeric Retry-After (delta-seconds)
+    is the server's own instruction, so it overrides that schedule and is
+    bounded only by RETRY_AFTER_CAP. HTTP-date Retry-After values are ignored
+    rather than mis-parsed. Never returns a negative or non-finite value, so
+    callers can sleep on it unconditionally.
+    """
+    try:
+        wait = float(base) * (2.0 ** min(max(int(attempt), 0), 16))
+    except Exception:
+        wait = float(cap)
+    try:
+        ra = str(retry_after or "").strip()
+    except Exception:
+        ra = ""
+    if ra.isdigit():
+        try:
+            return max(0.0, min(float(ra), RETRY_AFTER_CAP))
+        except Exception:
+            pass
+    try:
+        return max(0.0, min(wait, float(cap), RETRY_AFTER_CAP))
+    except Exception:
+        return RETRY_BACKOFF_CAP
+
+
+# --- DNS reachability ---------------------------------------------------------
+# A domain with no DNS record can never serve a homepage, so retrying it is
+# pure waste: every attempt burns a validation slot and, worse, makes a
+# fabricated domain look like a flaky-but-real one. Retired as `unreachable-dns`.
+
+# Errno codes meaning "this name does not exist". POSIX resolvers report
+# EAI_NONAME/EAI_NODATA (negative); Windows reports WSAHOST_NOT_FOUND (11001).
+_DNS_MISSING = {11001, -2, -5}
+for _name in ("EAI_NONAME", "EAI_NODATA"):
+    _v = getattr(socket, _name, None)
+    if isinstance(_v, int):
+        _DNS_MISSING.add(_v)
+
+DNS_MISSING = "missing"      # authoritative: host does not exist
+DNS_RESOLVES = "resolves"    # has an address
+DNS_UNKNOWN = "unknown"      # timeout / resolver trouble — never conclusive
+
+
+def dns_state(host: str, timeout: float | None = None) -> str:
+    """Resolve `host` and classify the outcome as missing/resolves/unknown.
+
+    Only an authoritative "no such name" answer yields DNS_MISSING. Timeouts
+    and other resolver trouble return DNS_UNKNOWN so a transient resolver
+    outage can never retire a healthy domain.
+    """
+    h = registrable_host(host or "")
+    if not h:
+        return DNS_UNKNOWN
+    try:
+        old = socket.getdefaulttimeout()
+        if timeout is not None:
+            socket.setdefaulttimeout(timeout)
+        try:
+            socket.getaddrinfo(h, 443, proto=socket.IPPROTO_TCP)
+            return DNS_RESOLVES
+        finally:
+            socket.setdefaulttimeout(old)
+    except socket.gaierror as e:
+        return DNS_MISSING if e.errno in _DNS_MISSING else DNS_UNKNOWN
+    except Exception:
+        return DNS_UNKNOWN
+
+
+# Reason code for a host with no DNS record. Permanent for practical purposes
+# (a name either exists or not), but still subject to the retirement cooldown
+# so a transient resolver/viewer error can't orphan a row forever.
+DNS_DEAD_REASON = "unreachable-dns"

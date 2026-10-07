@@ -1,5 +1,6 @@
 from unittest.mock import patch
 
+import pytest
 import requests
 
 from src import validate
@@ -212,7 +213,8 @@ def test_transient_retry_then_success():
             raise requests.exceptions.ConnectionError("reset")
         return ok
 
-    with patch("src.validate.requests.get", side_effect=flaky):
+    with patch("src.validate.requests.get", side_effect=flaky), \
+            patch("src.validate.dns_state", return_value="resolves"):
         res = validate.validate_site("https://example.edu", "example.edu",
                                      "US", 10, UA, 32768,
                                      politeness=0, sleep_fn=_no_sleep,
@@ -223,7 +225,8 @@ def test_transient_retry_then_success():
 
 def test_transient_persistent_failure():
     with patch("src.validate.requests.get",
-               side_effect=requests.exceptions.ConnectTimeout("slow")):
+               side_effect=requests.exceptions.ConnectTimeout("slow")), \
+            patch("src.validate.dns_state", return_value="resolves"):
         res = validate.validate_site("https://example.edu", "example.edu",
                                      "US", 10, UA, 32768,
                                      politeness=0, sleep_fn=_no_sleep,
@@ -239,13 +242,267 @@ def test_transient_no_retry_when_disabled():
         calls["n"] += 1
         raise requests.exceptions.ConnectionError("reset")
 
-    with patch("src.validate.requests.get", side_effect=flaky):
+    with patch("src.validate.requests.get", side_effect=flaky), \
+            patch("src.validate.dns_state", return_value="resolves"):
         res = validate.validate_site("https://example.edu", "example.edu",
                                      "US", 10, UA, 32768,
                                      politeness=0, sleep_fn=_no_sleep,
                                      retries=0, retry_backoff=0)
     assert res["status"] == "Inaccessible"
     assert calls["n"] == 1
+
+
+def _status_seq(*statuses):
+    """Build a requests.get side effect returning each status in turn."""
+    seq = list(statuses)
+    calls = {"n": 0}
+
+    def fake_get(url, **kw):
+        i = min(calls["n"], len(seq) - 1)
+        calls["n"] += 1
+        return make_response(url="https://example.edu/", status=seq[i])
+
+    return fake_get, calls
+
+
+@pytest.mark.parametrize("transient", [429, 502, 503, 504])
+def test_transient_status_retried_then_active(transient):
+    fake_get, calls = _status_seq(transient, 200)
+    with patch("src.validate.requests.get", side_effect=fake_get):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=1, retry_backoff=1.0)
+    assert res["status"] == "Active"
+    assert res["code"] == 200
+    assert calls["n"] == 2
+
+
+@pytest.mark.parametrize("transient", [429, 502, 503, 504])
+def test_transient_status_exhausted_keeps_real_code(transient):
+    # Retries must never launder a persistent failure into Active: the
+    # reported verdict stays the status the server actually returned.
+    fake_get, calls = _status_seq(transient)
+    with patch("src.validate.requests.get", side_effect=fake_get):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=2, retry_backoff=0)
+    assert res["status"] == "Inaccessible"
+    assert res["code"] == transient
+    assert res["reason"] == f"http-{transient}"
+    assert calls["n"] == 3
+
+
+def test_transient_status_backoff_is_exponential():
+    fake_get, _ = _status_seq(503, 503, 503, 200)
+    slept = []
+    with patch("src.validate.requests.get", side_effect=fake_get):
+        validate.validate_site("https://example.edu", "example.edu",
+                               "US", 10, UA, 32768,
+                               politeness=0, sleep_fn=slept.append,
+                               retries=3, retry_backoff=1.0)
+    # Three retries: 1s, 2s, 4s. (politeness=0 so nothing else sleeps.)
+    assert slept == [1.0, 2.0, 4.0]
+
+
+def test_transient_status_honors_retry_after():
+    r = make_response(status=429)
+    r.headers = {"Content-Type": "text/html", "Retry-After": "7"}
+    fake_get, calls = _status_seq(429, 200)
+    slept = []
+    real_get = fake_get
+
+    def with_retry_after(url, **kw):
+        if calls["n"] == 0:
+            calls["n"] += 1
+            return r
+        return real_get(url, **kw)
+
+    with patch("src.validate.requests.get", side_effect=with_retry_after):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=slept.append,
+                                     retries=1, retry_backoff=1.0)
+    assert res["status"] == "Active"
+    # Retry-After (7s) overrides the 1s first-step backoff.
+    assert slept == [7.0]
+
+
+def test_transient_status_response_closed_before_retry():
+    # stream=True connections must be released before sleeping, or a
+    # rate-limited host leaks one connection per retry.
+    first = make_response(status=429)
+    fake_get, calls = _status_seq(429, 200)
+    real_get = fake_get
+
+    def with_first(url, **kw):
+        if calls["n"] == 0:
+            calls["n"] += 1
+            return first
+        return real_get(url, **kw)
+
+    with patch("src.validate.requests.get", side_effect=with_first):
+        validate.validate_site("https://example.edu", "example.edu",
+                               "US", 10, UA, 32768,
+                               politeness=0, sleep_fn=_no_sleep,
+                               retries=1, retry_backoff=0)
+    first.close.assert_called_once()
+
+
+@pytest.mark.parametrize("code", [403, 404, 410, 500, 501])
+def test_non_transient_status_never_retried(code):
+    fake_get, calls = _status_seq(code)
+    with patch("src.validate.requests.get", side_effect=fake_get):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=3, retry_backoff=0)
+    assert res["status"] == "Inaccessible"
+    assert res["code"] == code
+    assert calls["n"] == 1
+
+
+def test_transient_status_no_retry_when_retries_zero():
+    fake_get, calls = _status_seq(429)
+    with patch("src.validate.requests.get", side_effect=fake_get):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=0, retry_backoff=1.0)
+    assert res["code"] == 429
+    assert calls["n"] == 1
+
+
+# --- unreachable-dns ---------------------------------------------------------
+def _always_conn_error(*a, **k):
+    raise requests.exceptions.ConnectionError("Name or service not known")
+
+
+def test_no_dns_is_unreachable_dns():
+    with patch("src.validate.requests.get", side_effect=_always_conn_error), \
+            patch("src.validate.dns_state", return_value="missing"):
+        res = validate.validate_site("https://gone.edu", "gone.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=3, retry_backoff=1.0)
+    assert res["status"] == "Inaccessible"
+    assert res["reason"] == "unreachable-dns"
+    assert res["confidence"] == 0
+    assert res["code"] == 0
+
+
+def test_no_dns_is_never_retried():
+    calls = {"n": 0}
+
+    def counting(*a, **k):
+        calls["n"] += 1
+        raise requests.exceptions.ConnectionError("reset")
+
+    with patch("src.validate.requests.get", side_effect=counting), \
+            patch("src.validate.dns_state", return_value="missing"):
+        res = validate.validate_site("https://gone.edu", "gone.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=5, retry_backoff=1.0)
+    assert res["reason"] == "unreachable-dns"
+    # One attempt, not six: the name cannot answer however often we ask.
+    assert calls["n"] == 1
+
+
+def test_no_dns_consults_exa_only_for_replacement():
+    # A dead name can never be the Active site, but Exa may still know the
+    # school's real domain — so the fallback runs, same-domain rescue does not.
+    calls = {"n": 0}
+
+    def only_same_domain(*a, **k):
+        calls["n"] += 1
+        return {"verified": True, "reason": "exa-verified", "candidate": None}
+
+    with patch("src.validate.requests.get", side_effect=_always_conn_error), \
+            patch("src.validate.dns_state", return_value="missing"):
+        res = validate.validate_site("https://gone.edu", "gone.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     exa_fallback_fn=only_same_domain)
+    # Rejected as a same-domain rescue; retired instead.
+    assert res["reason"] == "unreachable-dns"
+    assert res["status"] == "Inaccessible"
+    assert calls["n"] == 1
+
+
+def test_no_dns_accepts_exa_replacement_domain():
+    # Replacement wins over retirement — that is how a fabricated upstream
+    # URL gets fixed rather than parked.
+    def replacement(*a, **k):
+        return {"verified": True, "reason": "exa-discovered",
+                "candidate": "real.edu"}
+    with patch("src.validate.requests.get", side_effect=_always_conn_error), \
+            patch("src.validate.dns_state", return_value="missing"):
+        res = validate.validate_site("https://gone.edu", "gone.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     exa_fallback_fn=replacement)
+    assert res["moved_to"] == "real.edu"
+    assert "exa-discovered" in res["reason"]
+
+
+def test_no_dns_retired_when_exa_has_no_opinion():
+    with patch("src.validate.requests.get", side_effect=_always_conn_error), \
+            patch("src.validate.dns_state", return_value="missing"), \
+            patch("src.validate._consult_exa_fallback", return_value=None):
+        res = validate.validate_site("https://gone.edu", "gone.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     exa_fallback_fn=lambda *a, **k: None)
+    assert res["reason"] == "unreachable-dns"
+
+
+def test_resolver_unknown_keeps_normal_retry_path():
+    # A timeout is not proof of absence: fall through to the ordinary
+    # ConnectionError handling and its retries.
+    calls = {"n": 0}
+
+    def flaky(url, **kw):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise requests.exceptions.ConnectionError("reset")
+        return _ok()
+
+    with patch("src.validate.requests.get", side_effect=flaky), \
+            patch("src.validate.dns_state", return_value="unknown"):
+        res = validate.validate_site("https://example.edu", "example.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=1, retry_backoff=0)
+    assert res["status"] == "Active"
+    assert calls["n"] == 2
+
+
+def test_resolved_host_keeps_fetch_error_reason():
+    with patch("src.validate.requests.get", side_effect=_always_conn_error), \
+            patch("src.validate.dns_state", return_value="resolves"):
+        res = validate.validate_site("https://up.edu", "up.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep,
+                                     retries=1, retry_backoff=0)
+    # DNS is fine, so this is a real connection failure, not a dead name.
+    assert res["reason"] == "fetch-error:ConnectionError"
+
+
+def test_no_dns_not_confused_with_ssl_error():
+    # Strict TLS: a broken chain is its own verdict and must not be
+    # mislabeled as a missing DNS record.
+    with patch("src.validate.requests.get",
+               side_effect=requests.exceptions.SSLError("bad chain")), \
+            patch("src.validate.requests.get",
+                  side_effect=requests.exceptions.SSLError("bad chain")), \
+            patch("src.validate.dns_state", return_value="missing"):
+        res = validate.validate_site("https://expired.edu", "expired.edu",
+                                     "US", 10, UA, 32768,
+                                     politeness=0, sleep_fn=_no_sleep)
+    assert res["reason"] != "unreachable-dns"
+    assert "SSLError" in res["reason"]
 
 
 def test_ssl_not_retried_as_transient():

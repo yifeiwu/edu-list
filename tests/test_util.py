@@ -1,5 +1,11 @@
 from src import util
 
+WINDOWS = util.socket.__name__ == "socket" and hasattr(util.socket, "WSAHOST_NOT_FOUND")
+
+
+def _gaierror(msg, errno):
+    return util.socket.gaierror(errno, msg)
+
 
 def test_registrable_host_strips_www_and_wildcard():
     assert util.registrable_host("www.Example.EDU.") == "example.edu"
@@ -95,3 +101,97 @@ def test_keywords_cover_new_langs():
 def test_union_sources_dedupes_ordered():
     assert util.union_sources("a;b", "b;c") == "a;b;c"
     assert util.union_sources("", "x") == "x"
+
+
+def test_retry_wait_is_exponential_and_capped():
+    assert util.retry_wait(0) == 1.0
+    assert util.retry_wait(1) == 2.0
+    assert util.retry_wait(2) == 4.0
+    assert util.retry_wait(3) == 8.0
+    # Capped from there on, and never blows up on huge attempt counts.
+    assert util.retry_wait(10) == util.RETRY_BACKOFF_CAP
+    assert util.retry_wait(10_000) == util.RETRY_BACKOFF_CAP
+    # Negative attempts clamp to the first backoff step.
+    assert util.retry_wait(-5) == 1.0
+
+
+def test_retry_wait_respects_base():
+    assert util.retry_wait(0, base=2.0) == 2.0
+    assert util.retry_wait(2, base=2.0) == 8.0
+    # A small base still tops out at the absolute cap.
+    assert util.retry_wait(9, base=0.5) == util.RETRY_BACKOFF_CAP
+
+
+def test_retry_wait_honors_numeric_retry_after():
+    # Retry-After (delta-seconds) overrides the computed backoff...
+    assert util.retry_wait(0, "12") == 12.0
+    # ...but is itself capped so a hostile/incorrect header can't stall a run.
+    assert util.retry_wait(0, "9999") == util.RETRY_AFTER_CAP
+    # HTTP-date and junk values fall back to the exponential schedule.
+    assert util.retry_wait(1, "Wed, 21 Oct 2026 07:28:00 GMT") == 2.0
+    assert util.retry_wait(1, "") == 2.0
+    assert util.retry_wait(1, None) == 2.0
+    assert util.retry_wait(1, "-5") == 2.0
+
+
+def test_retry_wait_never_negative():
+    assert util.retry_wait(0, base=-5.0) >= 0.0
+    assert util.retry_wait(3, base=0.0) >= 0.0
+
+
+def test_transient_statuses_exclude_403():
+    # 403 is a real Inaccessible verdict (WAF/bot block), not a hiccup.
+    assert util.TRANSIENT_STATUSES == frozenset({429, 502, 503, 504})
+    assert 403 not in util.TRANSIENT_STATUSES
+
+
+# --- DNS reachability ---------------------------------------------------------
+def test_dns_state_detects_missing(monkeypatch):
+    def boom(*a, **k):
+        raise _gaierror("Name or service not known", 11001 if WINDOWS else -2)
+    monkeypatch.setattr(util.socket, "getaddrinfo", boom)
+    assert util.dns_state("nope.example") == util.DNS_MISSING
+
+
+def test_dns_state_detects_resolves(monkeypatch):
+    monkeypatch.setattr(util.socket, "getaddrinfo",
+                        lambda *a, **k: [(2, 1, 6, "", ("1.2.3.4", 443))])
+    assert util.dns_state("ok.example") == util.DNS_RESOLVES
+
+
+def test_dns_state_timeout_is_unknown_not_missing(monkeypatch):
+    # A resolver timeout must never retire a healthy domain.
+    def slow(*a, **k):
+        raise _gaierror("timed out", 11002 if WINDOWS else -3)
+    monkeypatch.setattr(util.socket, "getaddrinfo", slow)
+    assert util.dns_state("slow.example") == util.DNS_UNKNOWN
+
+
+def test_dns_state_other_gaierror_is_unknown(monkeypatch):
+    def refused(*a, **k):
+        raise _gaierror("server failure", 11002 if WINDOWS else -1)
+    monkeypatch.setattr(util.socket, "getaddrinfo", refused)
+    assert util.dns_state("x.example") == util.DNS_UNKNOWN
+
+
+def test_dns_state_bogus_host_is_unknown(monkeypatch):
+    def never(*a, **k):
+        raise AssertionError("must not resolve an unusable host")
+    monkeypatch.setattr(util.socket, "getaddrinfo", never)
+    assert util.dns_state("") == util.DNS_UNKNOWN
+    assert util.dns_state("   ") == util.DNS_UNKNOWN
+    assert util.dns_state("localhost") == util.DNS_UNKNOWN  # no dot
+    assert util.dns_state("127.0.0.1") == util.DNS_UNKNOWN  # IP literal
+
+
+def test_dns_state_restores_default_timeout(monkeypatch):
+    import socket as _socket
+    monkeypatch.setattr(util.socket, "getaddrinfo",
+                        lambda *a, **k: [(2, 1, 6, "", ("1.2.3.4", 443))])
+    before = _socket.getdefaulttimeout()
+    util.dns_state("ok.example", timeout=3)
+    assert _socket.getdefaulttimeout() == before
+
+
+def test_dns_dead_reason_constant():
+    assert util.DNS_DEAD_REASON == "unreachable-dns"

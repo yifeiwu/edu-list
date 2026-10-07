@@ -10,9 +10,20 @@ Rules (strict-TLS revision + Exa fallback rescue):
   domain (strict TLS, never rescued to Active). Exa may still supply a
   *different* canonical domain, reported as `moved_to` so the caller can
   update the domain.
-- Transient transport failures (ConnectionError/Timeout) are retried once
-  with backoff; persistent failures => Inaccessible, unless Exa verifies the
-  same domain (rescue) or finds a replacement domain (move).
+- Transient conditions are retried with exponential backoff (`validation.retries`
+  attempts, `base * 2**attempt` capped at 8s, `Retry-After` honored up to 30s):
+  transport failures (ConnectionError/Timeout) and transient statuses
+  (429/502/503/504). Persistent failures => Inaccessible, unless Exa verifies
+  the same domain (rescue) or finds a replacement domain (move). Exhausted
+  retries report the real status — a retry can turn a row Active but never
+  launders a persistent failure into one. 403 and all other statuses are real
+  verdicts and are never retried.
+- No DNS record => `unreachable-dns` (confidence 0) with no HTTP retries:
+  the host cannot answer, so retrying only burns validation budget. Exa is
+  still consulted (budget-capped, `allow_rescue_same=False`) because a dead
+  name is exactly when a replacement canonical domain is worth finding; a
+  replacement is reported as `moved_to`. `verify.py` retires the row from the
+  re-verify rotation for `run.dns_dead_recheck_days` (default 365).
 - Social-only / builder-placeholder / service-host => Inaccessible, never
   rescued and never replaced via Exa.
 - Parking / soft-404 / empty => Inaccessible locally; Exa may rescue
@@ -62,10 +73,11 @@ from collections.abc import Callable
 import requests
 
 from .util import (
-    CANONICAL_RE, H1_RE, ICON_RE, PARKING_RES, SCHEMA_RE, SOFT404_RES,
-    TAG_RE, TITLE_RE, is_academic_suffix, is_service_host,
+    CANONICAL_RE, DNS_DEAD_REASON, DNS_MISSING, H1_RE, ICON_RE, PARKING_RES,
+    SCHEMA_RE, SOFT404_RES, TAG_RE, TITLE_RE, TRANSIENT_STATUSES,
+    dns_state, is_academic_suffix, is_service_host,
     is_social_or_builder, keywords_for_country, normalize_domain,
-    registrable_base, same_site,
+    registrable_base, retry_wait, same_site,
 )
 
 try:  # optional: only needed when Exa second-opinion is wired in
@@ -313,12 +325,13 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
             except Exception:
                 pass
 
-    def _backoff() -> None:
-        if retry_backoff and retry_backoff > 0:
-            try:
-                _sleep(retry_backoff)
-            except Exception:
-                pass
+    def _backoff(attempt: int, retry_after: str | None = None) -> None:
+        if not (retry_backoff and retry_backoff > 0):
+            return
+        try:
+            _sleep(retry_wait(attempt, retry_after, base=float(retry_backoff)))
+        except Exception:
+            pass
 
     headers = {"User-Agent": user_agent, "Accept": "text/html,*/*",
                "Accept-Language": "en;q=0.8"}
@@ -344,17 +357,34 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         return {"status": "Inaccessible", "confidence": 0,
                 "reason": "social-only/placeholder", "code": 0,
                 "final_domain": domain, "moved_to": None, "language": lang}
-    # Single immediate retry for transient transport failures
-    # (ConnectionError/Timeout, e.g. reset, DNS blip, read timeout).
-    # SSLError is NOT transient (strict TLS) and HTTP error statuses are
-    # valid responses — neither is retried here.
+    # Retry transient conditions with exponential backoff:
+    # - transport failures (ConnectionError/Timeout: reset, DNS blip, read
+    #   timeout), and
+    # - transient HTTP statuses (429/502/503/504), honoring Retry-After.
+    # SSLError is NOT transient (strict TLS) and any other HTTP status is a
+    # real verdict — neither is retried. Exhausted retries fall through to the
+    # normal non-2xx / fetch-error paths, so the reported code stays truthful.
     g = None
     ssl_error = None
-    for attempt in range(max(int(retries), 0) + 1):
+    max_attempts = max(int(retries), 0) + 1
+    for attempt in range(max_attempts):
         try:
-            g = requests.get(home, headers=headers, timeout=timeout,
-                             allow_redirects=True, stream=True)
+            resp = requests.get(home, headers=headers, timeout=timeout,
+                                allow_redirects=True, stream=True)
             ssl_error = None
+            if (resp.status_code in TRANSIENT_STATUSES
+                    and attempt < max_attempts - 1):
+                # Rate limit or server hiccup: back off and retry. The
+                # streamed body is dropped first so the connection is freed.
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    resp.close()
+                except Exception:
+                    pass
+                _polite()
+                _backoff(attempt, retry_after)
+                continue
+            g = resp
             break
         except requests.exceptions.SSLError as e:
             ssl_error = e
@@ -362,7 +392,27 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
         except (requests.exceptions.ConnectionError,
                 requests.exceptions.Timeout) as e:
             _polite()
-            if attempt >= max(int(retries), 0):
+            # A missing DNS record is permanent: the host can never answer, so skip
+            # the HTTP retries — they only burn validation budget. Exa still
+            # gets one budget-capped look, because a dead name is precisely
+            # when a replacement canonical domain is worth finding (upstream
+            # sources emit guessed URLs); `allow_rescue_same=False` since a
+            # nonexistent name can never be the school's Active site.
+            if (isinstance(e, requests.exceptions.ConnectionError)
+                    and dns_state(host) == DNS_MISSING):
+                fb = _apply_exa_fallback(domain, school_name, country_iso,
+                                         exa_fallback_fn,
+                                         local_reason=DNS_DEAD_REASON,
+                                         local_code=0, local_final=domain,
+                                         active_threshold=active_threshold,
+                                         allow_rescue_same=False)
+                if fb is not None:
+                    return fb
+                return {"status": "Inaccessible", "confidence": 0,
+                        "reason": DNS_DEAD_REASON, "code": 0,
+                        "final_domain": domain, "moved_to": None,
+                        "language": lang}
+            if attempt >= max_attempts - 1:
                 kind = type(e).__name__
                 local_reason = f"fetch-error:{kind}"
                 fb = _apply_exa_fallback(domain, school_name, country_iso,
@@ -375,7 +425,7 @@ def validate_site(url: str, domain: str, country_iso: str, timeout: int,
                 return {"status": "Inaccessible", "confidence": 0,
                         "reason": local_reason, "code": 0,
                         "final_domain": domain, "moved_to": None, "language": lang}
-            _backoff()
+            _backoff(attempt)
             continue
         except requests.RequestException as e:
             _polite()

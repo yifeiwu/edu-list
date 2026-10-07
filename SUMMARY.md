@@ -1,6 +1,6 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-07 20:29 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-07 21:36 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
@@ -39,23 +39,24 @@ _Generated 2026-10-07 20:29 UTC. Full per-country table: [data/countries/INDEX.m
 | reason | count |
 |---|---|
 | `http-2xx-html` | 6950 |
-| `fetch-error:ConnectionError` | 2746 |
-| `fetch-error:ConnectTimeout` | 729 |
+| `unreachable-dns` | 2261 |
+| `fetch-error:ConnectTimeout` | 726 |
 | `http-403` | 638 |
-| `fetch-error:SSLError` | 602 |
+| `fetch-error:SSLError` | 601 |
+| `fetch-error:ConnectionError` | 490 |
 | `low-confidence:http-2xx-html` | 376 |
 | `empty-body` | 124 |
 | `fetch-error:ReadTimeout` | 64 |
-| `http-404` | 37 |
+| `http-404` | 36 |
 | `http-500` | 24 |
 | `parking-linkfarm` | 22 |
-| `http-503` | 15 |
 
 ## Freshness
 
 - Verified in last 30 days: **13001** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **2**
+- Retired, no DNS record (`unreachable-dns`): **2261**
 - Moved pointers (old domain → new): **589**
 
 ## Alerts

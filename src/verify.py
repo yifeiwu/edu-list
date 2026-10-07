@@ -17,6 +17,7 @@ import collections
 import datetime as dt
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -43,7 +44,8 @@ from src.exa_check import (  # noqa: E402
 from src.geo import merge_suffix_map  # noqa: E402
 from src.store import purge_blocklisted, today_iso  # noqa: E402
 from src.util import (  # noqa: E402
-    classify_type, country_from_suffix, is_service_host, union_sources,
+    DNS_DEAD_REASON, DNS_MISSING, DNS_UNKNOWN, classify_type,
+    country_from_suffix, dns_state, is_service_host, union_sources,
 )
 from src.validate import validate_site  # noqa: E402
 from src.whois_check import years_registered as _domain_age  # noqa: E402
@@ -110,6 +112,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
                                run.get("verify_batch_with_new", 100)))
     archive_after = int(run.get("archive_after_failures", 6))
     archive_skip = int(run.get("archive_skip_days", 90))
+    dns_cooldown = int(run.get("dns_dead_recheck_days", 365))
 
     blocklist = {str(b).lower().strip(".") for b in cfg.get("blocklist", []) if b}
     # Honor opt-outs before any network work.
@@ -123,6 +126,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
     failures = state.setdefault("detail", {})
     failcounts = state.setdefault("failures", {})
     moved_map = state.setdefault("moved", {})
+    dns_dead = state.setdefault("dns_dead", {})
     age_cache = state.setdefault("domain_age", {})
     exa_cache = state.setdefault("exa_cache", {})
     exa_cfg = exa_config_from_cfg(cfg)
@@ -284,6 +288,35 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             "language": str(res.get("language", "")),
         }
 
+    def _retired(domain: str) -> bool:
+        """True when a DNS-dead domain is still inside its cooldown.
+
+        Retired rows keep their CSV entry (the school record is real even when
+        the name isn't) but are skipped by the re-verify rotation and dropped
+        from the pending queue, so they stop consuming validation budget.
+        The cooldown means a domain that later gets registered (or that we
+        misdiagnosed) is picked up again rather than orphaned forever.
+        """
+        rec = dns_dead.get(domain)
+        if not isinstance(rec, dict):
+            return False
+        try:
+            since = dt.date.fromisoformat(str(rec.get("at", "")))
+        except ValueError:
+            return True  # unparseable stamp: treat as retired, don't churn
+        age = (dt.datetime.now(dt.timezone.utc).date() - since).days
+        if age < dns_cooldown:
+            return True
+        dns_dead.pop(domain, None)  # cooldown expired; re-check it
+        return False
+
+    def _note_dns(domain: str, res: dict) -> None:
+        """Record or clear a domain's DNS-dead retirement from a result."""
+        if str(res.get("reason", "")) == DNS_DEAD_REASON:
+            dns_dead[domain] = {"at": today_iso()}
+        else:
+            dns_dead.pop(domain, None)
+
     def _record_new(domain, name, iso, type_hint, source):
         """Validate + write a row for a not-yet-known domain."""
         nonlocal validated, added
@@ -314,6 +347,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             moved_map[domain] = res["moved_to"]
         else:
             moved_map.pop(domain, None)
+        _note_dns(domain, res)
         validated += 1
         if status == "Active":
             added += 1
@@ -410,6 +444,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
         # become Active) but are tracked separately for visibility.
         failcounts[d] = prev_fc + 1
         moved_map[d] = target
+        dns_dead.pop(d, None)  # a live redirect proves the name resolves
         touched.add(by_domain[d][0])
         _handle_move(d, target, row.get("school_name", d),
                      by_domain[d][0], row.get("type", ""))
@@ -427,6 +462,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
             if not d or d in by_domain:
                 skipped_dupes += 1
                 continue  # validated by an overlapping run; drop duplicate
+            if _retired(d):
+                continue  # no DNS record; re-queued by a source, still dead
             iso = c.get("iso2", "XX") or "XX"
             prev_fc = int(failcounts.get(d, 0))
             status, res = _record_new(d, c.get("name", d), iso,
@@ -457,6 +494,8 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
                 age = 9999
             if int(failcounts.get(d, 0)) >= archive_after and age < archive_skip:
                 continue  # archived chronic failure; keep row, skip checks
+            if _retired(d):
+                continue  # no DNS record; keep row, stop re-checking it
             cands.append((age, d))
         cands.sort(reverse=True)
         for _, d in cands[:batch]:
@@ -486,6 +525,7 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
                     failures[d]["exa"] = res.get("exa")
                 failcounts[d] = 0 if status == "Active" else prev_fc + 1
                 moved_map.pop(d, None)
+                _note_dns(d, res)
                 touched.add(iso)
             validated += 1
             reverified += 1
@@ -493,6 +533,91 @@ def run_verify(*, cfg: dict, state: dict, by_domain: dict, buckets: dict,
     return {"validated": validated, "added_active": added,
             "reverified": reverified, "touched": touched,
             "pending_left": len(pending), "exa_calls": exa_calls}
+
+
+def _dns_retire_candidates(by_domain: dict) -> list[str]:
+    """Inaccessible rows whose failure was connection-level (or never checked).
+
+    Those are the only ones where "no DNS record" is a plausible explanation;
+    a row that fetched real HTTP (403/404/empty-body/parking) demonstrably
+    resolved at check time, so re-resolving it just burns resolver queries.
+    """
+    out: list[str] = []
+    for d, (_iso, row) in by_domain.items():
+        if row.get("status") == "Active":
+            continue
+        reason = str(row.get("reason", "") or "")
+        if reason == "" or reason.startswith("fetch-error:"):
+            out.append(d)
+    return sorted(out)
+
+
+def backfill_dns_dead(*, cfg: dict, state: dict, by_domain: dict,
+                      buckets: dict, limit: int = 0,
+                      deadline: float) -> dict:
+    """Retire existing rows whose host has no DNS record.
+
+    Resolver lookups only — no HTTP fetches, no Exa budget, no politeness
+    delay (we never touch the schools' servers). Rewrites `reason` to
+    `unreachable-dns` and records the retirement in `state["dns_dead"]` so the
+    re-verify rotation stops spending validation slots on names that cannot
+    answer. `last_visited` is deliberately left alone: the site was not
+    visited, only its name resolved.
+    """
+    dns_dead = state.setdefault("dns_dead", {})
+    detail = state.setdefault("detail", {})
+    candidates = _dns_retire_candidates(by_domain)
+    if limit:
+        candidates = candidates[:limit]
+    log(f"Backfill: resolving {len(candidates)} connection-failure domains "
+        f"(DNS only, no fetches)")
+    today = today_iso()
+    touched: set[str] = set()
+    checked = retired = unknown = 0
+    stopped_early = False
+
+    def _probe(d: str):
+        return d, dns_state(d)
+
+    pool = ThreadPoolExecutor(max_workers=32)
+    try:
+        futures = [pool.submit(_probe, d) for d in candidates]
+        for fut in as_completed(futures):
+            if time.time() > deadline:
+                stopped_early = True
+                for f in futures:
+                    f.cancel()
+                break
+            try:
+                d, verdict = fut.result()
+            except Exception:
+                continue
+            checked += 1
+            iso, row = by_domain.get(d, (None, None))
+            if row is None:
+                continue
+            if verdict == DNS_UNKNOWN:
+                unknown += 1
+                continue  # resolver trouble: never conclusive, keep the row
+            if verdict != DNS_MISSING:
+                continue  # resolves: leave the original failure reason intact
+            row["reason"] = DNS_DEAD_REASON
+            row["confidence"] = "0"
+            dns_dead[d] = {"at": today}
+            info = detail.get(d)
+            if isinstance(info, dict):
+                info["reason"] = DNS_DEAD_REASON
+                info["code"] = 0
+            touched.add(iso)
+            retired += 1
+    finally:
+        pool.shutdown(wait=False)
+
+    log(f"Backfill: checked={checked} retired={retired} "
+        f"resolver-unknown={unknown}"
+        + (" (stopped at deadline)" if stopped_early else ""))
+    return {"checked": checked, "retired": retired, "unknown": unknown,
+            "touched": touched, "candidates": len(candidates)}
 
 
 def main() -> int:
@@ -504,6 +629,9 @@ def main() -> int:
                     help="Only drain pending queue, skip re-verification.")
     ap.add_argument("--reverify-only", action="store_true",
                     help="Skip pending queue, only re-verify existing rows.")
+    ap.add_argument("--backfill-dns-dead", action="store_true",
+                    help="Retire rows whose host has no DNS record "
+                         "(resolver lookups only; no HTTP fetches).")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-network", action="store_true",
                     help="Skip website fetches (for tests/offline).")
@@ -532,6 +660,25 @@ def main() -> int:
 
     apply_contact(cfg)
     deadline = deadline_for(cfg)
+
+    if args.backfill_dns_dead:
+        bf = backfill_dns_dead(cfg=cfg, state=state, by_domain=by_domain,
+                               buckets=buckets, limit=args.limit,
+                               deadline=deadline)
+        if args.dry_run:
+            log(f"DRY-RUN: dns_dead candidates={bf['candidates']} "
+                f"would_retire={bf['retired']}")
+            return 0
+        save_runtime(countries_dir=countries_dir, buckets=buckets,
+                     touched=bf["touched"], index_path=index_path,
+                     pending_path=pending_path, pending=pending,
+                     state_path=state_path, state=state,
+                     archive_after=int(run.get("archive_after_failures", 6)))
+        log(f"Done. retired={bf['retired']} checked={bf['checked']} "
+            f"resolver-unknown={bf['unknown']} "
+            f"countries_touched={len(bf['touched'])}")
+        return 0
+
     stats = run_verify(cfg=cfg, state=state, by_domain=by_domain,
                        buckets=buckets, pending=pending, limit=limit,
                        new_only=args.new_only, reverify_only=args.reverify_only,

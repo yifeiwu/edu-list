@@ -30,7 +30,8 @@ school_name,web_domain,type,last_visited,status,sources,years_registered,confide
   `status`.
 * `confidence`: last validation score `0–100` (Active needs ≥ 50 + HTTP 2xx).
 * `reason`: diagnostic code for the last check (`http-2xx-html`,
-  `http-403`, `parking`, `moved-to:<domain>…`), `""` before first check.
+  `http-403`, `parking`, `moved-to:<domain>…`, `unreachable-dns`), `""`
+  before first check.
 * `final_domain`: landing host after redirects (`== web_domain` when the
   domain answers directly).
 * `language`: homepage `<html lang>` (lowercased BCP47, e.g. `fr`, `pt-br`),
@@ -73,6 +74,24 @@ and commit only on diff. Budget guards stop each run at ~25 min / cap.
   by `exa-verified`, while `exa-parking` demotes a false `Active`. Capped
   (~20 calls/run) + cached 90d in `state/state.json`; without a key the
   pipeline behaves exactly as before.
+* Backoff on transient conditions: transport failures (reset/DNS/read-timeout)
+  and rate-limit/server statuses (429/502/503/504) are retried with exponential
+  backoff (`base * 2**attempt`, capped at 8s), honoring `Retry-After` up to 30s.
+  Retries can only turn a row `Active` — a persistent failure still reports its
+  real status. `403` and every other status are real verdicts, never retried.
+* No-DNS retirement (`unreachable-dns`): a host with no DNS record can never
+  serve a homepage, so it is **not** retried — one attempt, then classified and
+  set aside. Such a host is recorded in `state["dns_dead"]` and skipped by both
+  the re-verify rotation and the pending queue for
+  `run.dns_dead_recheck_days` (default 365), so a name that later gets
+  registered is picked up again rather than orphaned. The CSV row is kept (the
+  school record is real, only the name is dead) and stays `Inaccessible`.
+  A resolver *timeout* is never treated as proof of absence — only an
+  authoritative "no such name" retires a row. Exa is still consulted once
+  (budget-capped, never a same-domain rescue) because a dead name is exactly
+  when finding the school's real domain is worth an API call. Retire existing
+  rows once with `python src/verify.py --backfill-dns-dead` (resolver lookups
+  only — no HTTP fetches, no politeness delay).
 * TLS strictness: valid TLS is required — expired/self-signed/broken chains
   are `Inaccessible` (one `www`-variant retry covers apex-vs-www cert
   mismatches). No unverified fallback.
@@ -102,6 +121,8 @@ python src/verify.py --config config.yaml --limit 50 --dry-run
 # Offline (no network, for tests):
 python src/curate.py --no-network
 python src/verify.py --no-network
+# One-off: retire rows whose host has no DNS record (no HTTP fetches):
+python src/verify.py --backfill-dns-dead --dry-run
 ```
 
 Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|whed|osm|dotgov|cricos|nuc-ng|nz-schools|deqar|ipeds`.
@@ -109,7 +130,8 @@ Force a source: `--source hipo|ror|openalex|wikidata|scorecard|france-annuaire|w
 ## Config
 
 * `config.yaml`: `run.*` budgets + archive policy + suffix→country map +
-  blocklist; `verify.*` caps for the verify pipeline (half-hourly scale —
+  blocklist; `validation.*` fetch knobs (timeout, politeness delay, retry count
+  + backoff base); `verify.*` caps for the verify pipeline (half-hourly scale —
   websites are hit once each, distributed).
 * `sources.yaml`: registry (id, kind, url, license, per_run). Rotation order =
   file order. Set `enabled: false` to skip; K-12 ids honor `k12_enabled`.
