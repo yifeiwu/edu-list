@@ -3,12 +3,12 @@
 | country | total | Active | Inaccessible |
 |---|---|---|---|
 | AD | 4 | 4 | 0 |
-| AE | 38 | 19 | 19 |
+| AE | 39 | 19 | 20 |
 | AF | 40 | 26 | 14 |
 | AG | 2 | 2 | 0 |
 | AL | 35 | 18 | 17 |
 | AM | 44 | 23 | 21 |
-| AO | 10 | 2 | 8 |
+| AO | 11 | 3 | 8 |
 | AR | 126 | 90 | 36 |
 | AT | 77 | 49 | 28 |
 | AU | 428 | 295 | 133 |
@@ -25,7 +25,7 @@
 | BM | 1 | 0 | 1 |
 | BN | 3 | 1 | 2 |
 | BO | 31 | 16 | 15 |
-| BR | 423 | 194 | 229 |
+| BR | 448 | 211 | 237 |
 | BS | 1 | 0 | 1 |
 | BT | 1 | 0 | 1 |
 | BW | 11 | 3 | 8 |
@@ -39,7 +39,7 @@
 | CI | 4 | 0 | 4 |
 | CL | 66 | 33 | 33 |
 | CM | 10 | 4 | 6 |
-| CN | 434 | 56 | 378 |
+| CN | 436 | 57 | 379 |
 | CO | 108 | 61 | 47 |
 | CR | 33 | 16 | 17 |
 | CU | 13 | 2 | 11 |
@@ -63,7 +63,7 @@
 | FI | 41 | 16 | 25 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 887 | 467 | 420 |
+| FR | 938 | 496 | 442 |
 | GA | 1 | 0 | 1 |
 | GB | 257 | 127 | 130 |
 | GD | 1 | 1 | 0 |
@@ -87,7 +87,7 @@
 | ID | 232 | 134 | 98 |
 | IE | 37 | 20 | 17 |
 | IL | 26 | 18 | 8 |
-| IN | 545 | 278 | 267 |
+| IN | 546 | 278 | 268 |
 | IQ | 48 | 22 | 26 |
 | IR | 213 | 69 | 144 |
 | IS | 10 | 6 | 4 |
@@ -165,9 +165,9 @@
 | SC | 2 | 2 | 0 |
 | SD | 43 | 18 | 25 |
 | SE | 41 | 31 | 10 |
-| SG | 20 | 15 | 5 |
-| SI | 4 | 3 | 1 |
-| SK | 36 | 20 | 16 |
+| SG | 22 | 15 | 7 |
+| SI | 12 | 5 | 7 |
+| SK | 37 | 20 | 17 |
 | SL | 4 | 0 | 4 |
 | SM | 1 | 1 | 0 |
 | SN | 12 | 6 | 6 |
@@ -191,7 +191,7 @@
 | TZ | 24 | 13 | 11 |
 | UA | 84 | 30 | 54 |
 | UG | 18 | 14 | 4 |
-| US | 2856 | 2154 | 702 |
+| US | 2868 | 2164 | 704 |
 | UY | 9 | 6 | 3 |
 | UZ | 27 | 13 | 14 |
 | VA | 5 | 1 | 4 |
@@ -206,4 +206,4 @@
 | ZM | 10 | 6 | 4 |
 | ZW | 15 | 13 | 2 |
 
-Total domains: 13107. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 13211. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
