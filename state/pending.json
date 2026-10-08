@@ -4938,8 +4938,8 @@
  {
   "domain": "aviationmaintenance.edu",
   "iso2": "US",
-  "name": "Aviation Institute of Maintenance-Teterboro",
-  "source": "ipeds:2026-09",
+  "name": "Aviation Institute of Maintenance-Philadelphia",
+  "source": "ipeds:2026-09;ipeds:2026-10",
   "type_hint": "university",
   "url": "aviationmaintenance.edu/campuses/teterboro-nj"
  },
@@ -7571,7 +7571,7 @@
   "domain": "lycee-berthelot.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e Marcelin Berthelot",
-  "source": "fr-annuaire:2026-09-26",
+  "source": "fr-annuaire:2026-09-26;fr-annuaire:2026-10-08",
   "type_hint": "k-12",
   "url": "https://lycee-berthelot.fr/"
  },
@@ -7619,7 +7619,7 @@
   "domain": "lyceerostandcaen.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e Jean Rostand",
-  "source": "fr-annuaire:2026-09-26",
+  "source": "fr-annuaire:2026-09-26;fr-annuaire:2026-10-08",
   "type_hint": "k-12",
   "url": "https://www.lyceerostandcaen.fr"
  },
@@ -17827,7 +17827,7 @@
   "domain": "eui.eu",
   "iso2": "IT",
   "name": "European University Institute",
-  "source": "deqar:2026-09-30",
+  "source": "deqar:2026-09-30;openalex:page124",
   "type_hint": "university",
   "url": "http://www.eui.eu/"
  },
@@ -24795,7 +24795,7 @@
   "domain": "institution-saint-francois.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e g\u00e9n\u00e9ral priv\u00e9 Sainte-C\u00e9cile- Institution Saint-Fran\u00e7ois",
-  "source": "fr-annuaire:2026-10-04",
+  "source": "fr-annuaire:2026-10-04;fr-annuaire:2026-10-08",
   "type_hint": "k-12",
   "url": "http://www.institution-saint-francois.fr"
  },
@@ -24803,7 +24803,7 @@
   "domain": "lycee-doucet.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e professionnel Edmond Doucet",
-  "source": "fr-annuaire:2026-10-04",
+  "source": "fr-annuaire:2026-10-04;fr-annuaire:2026-10-08",
   "type_hint": "k-12",
   "url": "https://www.lycee-doucet.fr/"
  },
@@ -27035,7 +27035,7 @@
   "domain": "argouges.ent.auvergnerhonealpes.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e polyvalent Andr\u00e9 Argouges",
-  "source": "fr-annuaire:2026-10-05",
+  "source": "fr-annuaire:2026-10-05;fr-annuaire:2026-10-08",
   "type_hint": "k-12",
   "url": "http://argouges.ent.auvergnerhonealpes.fr/"
  },
@@ -30946,7 +30946,7 @@
  {
   "domain": "dorsey.edu",
   "iso2": "US",
-  "name": "Dorsey College-Wayne",
+  "name": "Dorsey College-Roseville",
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.dorsey.edu/"
@@ -30958,5 +30958,485 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.etseminary.edu/"
+ },
+ {
+  "domain": "rssed.org",
+  "iso2": "US",
+  "name": "Rowan-Salisbury School System",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.rssed.org/"
+ },
+ {
+  "domain": "choate.edu",
+  "iso2": "US",
+  "name": "Choate Rosemary Hall",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.choate.edu/"
+ },
+ {
+  "domain": "beaufort.k12.nc.us",
+  "iso2": "US",
+  "name": "Chocowinity Primary School",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.beaufort.k12.nc.us/schools/chocowinity-primary-school/"
+ },
+ {
+  "domain": "dillardacademy.org",
+  "iso2": "US",
+  "name": "Dillard Academy",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "http://www.dillardacademy.org/"
+ },
+ {
+  "domain": "cookeschool.org",
+  "iso2": "US",
+  "name": "Cooke School and Institute",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://cookeschool.org/"
+ },
+ {
+  "domain": "waynecountyschools.org",
+  "iso2": "US",
+  "name": "Wayne County Public Schools",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "http://www.waynecountyschools.org/"
+ },
+ {
+  "domain": "browardschools.com",
+  "iso2": "US",
+  "name": "Broward County Public Schools",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.browardschools.com"
+ },
+ {
+  "domain": "cotting.org",
+  "iso2": "US",
+  "name": "Cotting School",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "http://www.cotting.org/site/PageServer?pagename=home"
+ },
+ {
+  "domain": "excelsior.edu",
+  "iso2": "US",
+  "name": "Excelsior College",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "http://www.excelsior.edu/"
+ },
+ {
+  "domain": "dpsnc.net",
+  "iso2": "US",
+  "name": "Durham Public Schools",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.dpsnc.net/"
+ },
+ {
+  "domain": "omicscentre.com",
+  "iso2": "ES",
+  "name": "Centre for Omic Sciences",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "http://omicscentre.com/"
+ },
+ {
+  "domain": "dwight.edu",
+  "iso2": "US",
+  "name": "Dwight School",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.dwight.edu/"
+ },
+ {
+  "domain": "csuventures.org",
+  "iso2": "US",
+  "name": "CSU Ventures",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://csuventures.org/"
+ },
+ {
+  "domain": "faithetc.org",
+  "iso2": "US",
+  "name": "Faith Equestrian Therapeutic Center",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.faithetc.org/"
+ },
+ {
+  "domain": "jcpsnc.org",
+  "iso2": "US",
+  "name": "Jackson County Public Schools",
+  "source": "ror:api-p124",
+  "type_hint": "university",
+  "url": "https://www.jcpsnc.org/"
+ },
+ {
+  "domain": "kgmu.org",
+  "iso2": "IN",
+  "name": "King George's Medical University",
+  "source": "openalex:page124",
+  "type_hint": "university",
+  "url": "https://kgmu.org/"
+ },
+ {
+  "domain": "ok.ubc.ca",
+  "iso2": "CA",
+  "name": "University of British Columbia, Okanagan Campus",
+  "source": "openalex:page124",
+  "type_hint": "university",
+  "url": "https://ok.ubc.ca"
+ },
+ {
+  "domain": "portale.unibas.it",
+  "iso2": "IT",
+  "name": "University of Basilicata",
+  "source": "openalex:page124",
+  "type_hint": "university",
+  "url": "http://portale.unibas.it/site/home.html"
+ },
+ {
+  "domain": "uwh.edu.cn",
+  "iso2": "CN",
+  "name": "Wuhu University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.uwh.edu.cn/"
+ },
+ {
+  "domain": "ahjzu.edu.cn",
+  "iso2": "CN",
+  "name": "Anhui Jianzhu University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.ahjzu.edu.cn/"
+ },
+ {
+  "domain": "yangzixueyuan.com",
+  "iso2": "CN",
+  "name": "Anhui Yangtse Vocational and Technical College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.yangzixueyuan.com/"
+ },
+ {
+  "domain": "axhu.cn",
+  "iso2": "CN",
+  "name": "Anhui Xinhua University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.axhu.cn/en/"
+ },
+ {
+  "domain": "ahcme.cn",
+  "iso2": "CN",
+  "name": "Anhui Technical College of Mechanical and Electrical Engineering",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ahcme.cn/"
+ },
+ {
+  "domain": "aepu.com.cn",
+  "iso2": "CN",
+  "name": "Anhui Electrical Engineering Professional Technique College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.aepu.com.cn/"
+ },
+ {
+  "domain": "ahstu.edu.cn",
+  "iso2": "CN",
+  "name": "Anhui Science and Technology University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ahstu.edu.cn"
+ },
+ {
+  "domain": "artah.cn",
+  "iso2": "CN",
+  "name": "Anhui Professional College of Art",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.artah.cn/index.asp"
+ },
+ {
+  "domain": "ayit.edu.cn",
+  "iso2": "CN",
+  "name": "Anyang Institute of Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ayit.edu.cn/"
+ },
+ {
+  "domain": "aynu.edu.cn",
+  "iso2": "CN",
+  "name": "Anyang Normal University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.aynu.edu.cn"
+ },
+ {
+  "domain": "en.asu.edu.cn",
+  "iso2": "CN",
+  "name": "Anshun University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://en.asu.edu.cn/"
+ },
+ {
+  "domain": "stbernadette.dcdsb.ca",
+  "iso2": "CA",
+  "name": "St. Bernadette Catholic School",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://stbernadette.dcdsb.ca/en/index.aspx"
+ },
+ {
+  "domain": "lyc-schwartz.monbureaunumerique.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e des m\u00e9tiers de la logistique et des services Bertrand Schwartz",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "https://lyc-schwartz.monbureaunumerique.fr"
+ },
+ {
+  "domain": "olympe-de-gouges-montech.mon-ent-occitanie.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Olympe de Gouges",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "https://olympe-de-gouges-montech.mon-ent-occitanie.fr"
+ },
+ {
+  "domain": "clg-guillestre.ac-aix-marseille.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge des Hautes Vall\u00e9es",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "http://www.clg-guillestre.ac-aix-marseille.fr/spip/"
+ },
+ {
+  "domain": "clg-henri-matisse-06.ac-nice.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Henri Matisse",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "http://www.clg-henri-matisse-06.ac-nice.fr"
+ },
+ {
+  "domain": "saintthomasdaquin.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Saint-Thomas d'Aquin",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "https://saintthomasdaquin.org/"
+ },
+ {
+  "domain": "institut-lemonnier.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e g\u00e9n\u00e9ral et technologique Institut Lemonnier",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "http://www.institut-lemonnier.fr"
+ },
+ {
+  "domain": "sasserno.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e Sasserno",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "http://www.sasserno.fr/"
+ },
+ {
+  "domain": "lgt-gaston-monnerville.eta.ac-guyane.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e polyvalent Gaston Monnerville",
+  "source": "fr-annuaire:2026-10-08",
+  "type_hint": "k-12",
+  "url": "http://lgt-gaston-monnerville.eta.ac-guyane.fr"
+ },
+ {
+  "domain": "nantien.edu.au",
+  "iso2": "AU",
+  "name": "Nan Tien Institute Limited",
+  "source": "cricos:2026-10-08",
+  "type_hint": "",
+  "url": "http://www.nantien.edu.au"
+ },
+ {
+  "domain": "harward.vic.edu.au",
+  "iso2": "AU",
+  "name": "Pramukh Group of Companies Pty Ltd",
+  "source": "cricos:2026-10-08",
+  "type_hint": "",
+  "url": "http://www.harward.vic.edu.au"
+ },
+ {
+  "domain": "jeg.nsw.edu.au",
+  "iso2": "AU",
+  "name": "Jasmine Education Group Pty Ltd",
+  "source": "cricos:2026-10-08",
+  "type_hint": "",
+  "url": "http://www.jeg.nsw.edu.au"
+ },
+ {
+  "domain": "panschelm.edu.pl",
+  "iso2": "PL",
+  "name": "The State School of Higher Education in Che\u0142m",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "https://panschelm.edu.pl/"
+ },
+ {
+  "domain": "pomeraniachojnice.edu.pl",
+  "iso2": "PL",
+  "name": "General Humanistic Higher School \"Pomerania\" in Chojnice",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.pomeraniachojnice.edu.pl"
+ },
+ {
+  "domain": "gwsp.edu.pl",
+  "iso2": "PL",
+  "name": "Upper Silesian Karol Godula Academy of Entrepreneurship in Chorz\u00f3w",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.gwsp.edu.pl"
+ },
+ {
+  "domain": "golysz.pan.pl",
+  "iso2": "PL",
+  "name": "Polish Academy of Sciences Institute of Ichthyobiology and Aquaculture in Go\u0142ysz",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.golysz.pan.pl/zigr/en"
+ },
+ {
+  "domain": "wsbiz.com.pl",
+  "iso2": "PL",
+  "name": "Europejska Uczelnia Nauk Medycznych i Spo\u0142ecznych",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.wsbiz.com.pl/"
+ },
+ {
+  "domain": "pansim.edu.pl",
+  "iso2": "PL",
+  "name": "Ignacy Mo\u015bcicki University of Applied Sciences in Ciechan\u00f3w",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "https://pansim.edu.pl/"
+ },
+ {
+  "domain": "wsl.edu.pl",
+  "iso2": "PL",
+  "name": "College for Foreign Languages in Cz\u0119stochowa",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.wsl.edu.pl/"
+ },
+ {
+  "domain": "en.ujd.edu.pl",
+  "iso2": "PL",
+  "name": "Jan D\u0142ugosz University in Cz\u0119stochowa",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.en.ujd.edu.pl"
+ },
+ {
+  "domain": "en.ap.edu.pl",
+  "iso2": "PL",
+  "name": "Polonia University in Cz\u0119stochowa",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "https://en.ap.edu.pl/"
+ },
+ {
+  "domain": "wsz.edu.pl",
+  "iso2": "PL",
+  "name": "Cz\u0119stochowa University of Management",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.wsz.edu.pl/"
+ },
+ {
+  "domain": "wsps.pl",
+  "iso2": "PL",
+  "name": "High School of Strategic Planning in Dabrowa G\u00f3rnicza",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.wsps.pl"
+ },
+ {
+  "domain": "wsb.edu.pl",
+  "iso2": "PL",
+  "name": "WSB Academy",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "http://www.wsb.edu.pl/"
+ },
+ {
+  "domain": "wojsko-polskie.pl",
+  "iso2": "PL",
+  "name": "Polish Air Force University",
+  "source": "deqar:2026-10-08",
+  "type_hint": "university",
+  "url": "https://www.wojsko-polskie.pl/law/"
+ },
+ {
+  "domain": "molerhollywood.com",
+  "iso2": "US",
+  "name": "Moler-Pickens Beauty Academy",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "molerhollywood.com/"
+ },
+ {
+  "domain": "rrtc.edu",
+  "iso2": "US",
+  "name": "Red River Technology Center",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.rrtc.edu/"
+ },
+ {
+  "domain": "clintoncardinals.org",
+  "iso2": "US",
+  "name": "Clinton Technical School",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "clintoncardinals.org/"
+ },
+ {
+  "domain": "greenectc.org",
+  "iso2": "US",
+  "name": "Greene County Career and Technology Center",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.greenectc.org/"
+ },
+ {
+  "domain": "dda.edu",
+  "iso2": "US",
+  "name": "Diesel Driving Academy-Shreveport",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.dda.edu/"
+ },
+ {
+  "domain": "plattcollege.edu",
+  "iso2": "US",
+  "name": "Platt College-Los Angeles",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.plattcollege.edu/"
  }
 ]
