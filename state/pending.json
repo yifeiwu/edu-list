@@ -186,8 +186,8 @@
  {
   "domain": "supdeco.sn",
   "iso2": "SN",
-  "name": "\u00c9cole Sup\u00e9rieure de Commerce de Dakar",
-  "source": "wikidata:P856",
+  "name": "Groupe \u00c9cole Sup\u00e9rieure de Commerce de Dakar",
+  "source": "wikidata:P856;ror:api-p133",
   "type_hint": "university",
   "url": "http://www.supdeco.sn/"
  },
@@ -4875,7 +4875,7 @@
   "domain": "educare.edu.au",
   "iso2": "AU",
   "name": "Educare Training Institute of Australasia Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "http://www.educare.edu.au"
  },
@@ -4883,7 +4883,7 @@
   "domain": "harbourside.nsw.edu.au",
   "iso2": "AU",
   "name": "Harbourside Institute of Australia Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "www.harbourside.nsw.edu.au"
  },
@@ -4891,7 +4891,7 @@
   "domain": "medicus.edu.au",
   "iso2": "AU",
   "name": "Medical Training and Development Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "https://medicus.edu.au/"
  },
@@ -4899,7 +4899,7 @@
   "domain": "mcgill.edu.au",
   "iso2": "AU",
   "name": "Higher Learning Australia Pty Ltd A/T for The Trustee for Higher Learning Unit Trust",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "https://mcgill.edu.au/"
  },
@@ -4907,7 +4907,7 @@
   "domain": "acchs.edu.au",
   "iso2": "AU",
   "name": "Australian College of Community and Health Services Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "www.acchs.edu.au"
  },
@@ -5259,7 +5259,7 @@
   "domain": "minttraining.edu.au",
   "iso2": "AU",
   "name": "Mint Training Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "www.minttraining.edu.au"
  },
@@ -5267,7 +5267,7 @@
   "domain": "tiis.edu.au",
   "iso2": "AU",
   "name": "The Institute of International Studies (TIIS) Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "www.tiis.edu.au"
  },
@@ -5275,7 +5275,7 @@
   "domain": "alphainstitute.edu.au",
   "iso2": "AU",
   "name": "Wakefield International Business School Pty Ltd",
-  "source": "cricos:2026-09-28",
+  "source": "cricos:2026-09-28;cricos:2026-10-10",
   "type_hint": "",
   "url": "www.alphainstitute.edu.au"
  },
@@ -12778,8 +12778,8 @@
  {
   "domain": "lamaisonfrancaise.fr",
   "iso2": "FR",
-  "name": "Coll\u00e8ge Jacques Sevin",
-  "source": "fr-annuaire:2026-10-02",
+  "name": "Lyc\u00e9e La Maison fran\u00e7aise",
+  "source": "fr-annuaire:2026-10-02;fr-annuaire:2026-10-10",
   "type_hint": "k-12",
   "url": "https://www.lamaisonfrancaise.fr/"
  },
@@ -27886,5 +27886,437 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "https://www.johnamicoschoolofhairdesign.com/"
+ },
+ {
+  "domain": "csi.edu.eg",
+  "iso2": "EG",
+  "name": "Higher Institute of Engineering",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://csi.edu.eg/"
+ },
+ {
+  "domain": "enstp.cm",
+  "iso2": "CM",
+  "name": "National Advanced School of Public Works",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.enstp.cm/"
+ },
+ {
+  "domain": "iiayaounde.com",
+  "iso2": "CM",
+  "name": "Institut International des Assurances",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "https://www.iiayaounde.com/"
+ },
+ {
+  "domain": "injs.td",
+  "iso2": "CM",
+  "name": "Institut National de la Jeunesse et des Sports",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.injs.td/"
+ },
+ {
+  "domain": "essic.ma",
+  "iso2": "MA",
+  "name": "\u00c9cole Sup\u00e9rieure des Sciences de l'Ing\u00e9nierie Commerciale",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.essic.ma/essic/index.html"
+ },
+ {
+  "domain": "cesag.sn",
+  "iso2": "SN",
+  "name": "Centre Africain d'\u00c9tudes Sup\u00e9rieures en Gestion",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "https://www.cesag.sn/"
+ },
+ {
+  "domain": "siantou-univ.com",
+  "iso2": "CM",
+  "name": "Institut Universitaire Siantou",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "https://siantou-univ.com/"
+ },
+ {
+  "domain": "academyofarts.edu.eg",
+  "iso2": "EG",
+  "name": "Academy of Arts",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.academyofarts.edu.eg/en/"
+ },
+ {
+  "domain": "eismv.org",
+  "iso2": "SN",
+  "name": "\u00c9cole Inter-\u00c9tats des Sciences et M\u00e9decine V\u00e9t\u00e9rinaires de Dakar",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://eismv.org/"
+ },
+ {
+  "domain": "issea-cemac.org",
+  "iso2": "CM",
+  "name": "Institut Sous-R\u00e9gional de Statistique et d'Economie Appliqu\u00e9e",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://issea-cemac.org/"
+ },
+ {
+  "domain": "upac.info",
+  "iso2": "CM",
+  "name": "Universit\u00e9 Protestante d'Afrique Centrale",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.upac.info/index.php/en/"
+ },
+ {
+  "domain": "ena.sn",
+  "iso2": "SN",
+  "name": "\u00c9cole Nationale d'Administration",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.ena.sn/"
+ },
+ {
+  "domain": "unicv.edu.cv",
+  "iso2": "CV",
+  "name": "University of Cape Verde",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "http://www.unicv.edu.cv/"
+ },
+ {
+  "domain": "enset-media.ac.ma",
+  "iso2": "MA",
+  "name": "\u00c9cole Normale Sup\u00e9rieure de l'Enseignement Technique de Mohammedia",
+  "source": "ror:api-p133",
+  "type_hint": "university",
+  "url": "https://www.enset-media.ac.ma/"
+ },
+ {
+  "domain": "inrat.agrinet.tn",
+  "iso2": "TN",
+  "name": "Institut National de la Recherche Agronomique de Tunisie",
+  "source": "openalex:page134",
+  "type_hint": "university",
+  "url": "http://www.inrat.agrinet.tn/index.htm"
+ },
+ {
+  "domain": "gjjl.jxau.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangxi Agricultural University",
+  "source": "openalex:page134",
+  "type_hint": "university",
+  "url": "http://gjjl.jxau.edu.cn/s/31/t/411/p/1/c/2763/list.htm"
+ },
+ {
+  "domain": "unaim-wamena.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Amal Ilmiah Yapis Wamena",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://unaim-wamena.ac.id/"
+ },
+ {
+  "domain": "ugp.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Gajah Putih",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://ugp.ac.id"
+ },
+ {
+  "domain": "billfath.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Billfath",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.billfath.ac.id"
+ },
+ {
+  "domain": "ubmg.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Bina Mandiri Gorontalo",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://ubmg.ac.id"
+ },
+ {
+  "domain": "unikaltar.ac.id",
+  "iso2": "ID",
+  "name": "Kaltara University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://unikaltar.ac.id"
+ },
+ {
+  "domain": "aakannasher.ac.id",
+  "iso2": "ID",
+  "name": "Akademi Analisi Kesehatan An-Nasher",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.aakannasher.ac.id"
+ },
+ {
+  "domain": "umpapua.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Muhammadiyah Papua",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://umpapua.ac.id"
+ },
+ {
+  "domain": "uniqhba.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Qamarul Huda Badaruddin Bagu",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.uniqhba.ac.id"
+ },
+ {
+  "domain": "binawan.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Binawan",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.binawan.ac.id"
+ },
+ {
+  "domain": "prisma.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Prisma",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://prisma.ac.id"
+ },
+ {
+  "domain": "uniwara.ac.id",
+  "iso2": "ID",
+  "name": "Universitas PGRI Wiranegara",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://uniwara.ac.id"
+ },
+ {
+  "domain": "unipo.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Pohuwato",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.unipo.ac.id"
+ },
+ {
+  "domain": "unhaj.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Haji Sumatera Utara",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://unhaj.ac.id"
+ },
+ {
+  "domain": "poltekelbajo.ac.id",
+  "iso2": "ID",
+  "name": "Politeknik Elbajo Commodus",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://poltekelbajo.ac.id"
+ },
+ {
+  "domain": "lyc-erea-toulouse-lautrec-vaucresson.ac-versailles.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge ESHM Toulouse-Lautrec",
+  "source": "fr-annuaire:2026-10-10",
+  "type_hint": "k-12",
+  "url": "http://www.lyc-erea-toulouse-lautrec-vaucresson.ac-versailles.fr/"
+ },
+ {
+  "domain": "ssw-sopot.pl",
+  "iso2": "PL",
+  "name": "Sopot University of Applied Science",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "https://www.ssw-sopot.pl/"
+ },
+ {
+  "domain": "iopan.gda.pl",
+  "iso2": "PL",
+  "name": "Institute of Oceanology of the Polish Academy of Sciences",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.iopan.gda.pl"
+ },
+ {
+  "domain": "humanitas.edu.pl",
+  "iso2": "PL",
+  "name": "Humanitas University in Sosnowiec",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.humanitas.edu.pl/"
+ },
+ {
+  "domain": "wsmsosnowiec.pl",
+  "iso2": "PL",
+  "name": "Higher Medical School in Sosnowiec",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "https://wsmsosnowiec.pl/"
+ },
+ {
+  "domain": "wase.edu.pl",
+  "iso2": "PL",
+  "name": "Wielkopolska Akademia Spo\u0142eczno-Ekonomiczna w \u015arodzie Wielkopolskiej - Akademia Nauk Stosowanych",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "https://wase.edu.pl/"
+ },
+ {
+  "domain": "wse.stalowawola.pl",
+  "iso2": "PL",
+  "name": "Economics College in Stalowa Wola",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.wse.stalowawola.pl/"
+ },
+ {
+  "domain": "psw.stg.pl",
+  "iso2": "PL",
+  "name": "Pomorska Szko\u0142a Wy\u017csza w Starogardzie Gda\u0144skim",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.psw.stg.pl/"
+ },
+ {
+  "domain": "wste.edu.pl",
+  "iso2": "PL",
+  "name": "Higher School of Tourism and Ecology in Sucha Beskidzka",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.wste.edu.pl/"
+ },
+ {
+  "domain": "pwsz.suwalki.pl",
+  "iso2": "PL",
+  "name": "Pa\u0144stwowa Wy\u017csza Szko\u0142a Zawodowa im. prof. E. Szczepanika w Suwa\u0142kach",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.pwsz.suwalki.pl/"
+ },
+ {
+  "domain": "puz.suwalki.pl",
+  "iso2": "PL",
+  "name": "Prof. Edward F. Szczepanik State Vocational University in Suwa\u0142ki",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "https://www.puz.suwalki.pl/"
+ },
+ {
+  "domain": "wsjo.edu.pl",
+  "iso2": "PL",
+  "name": "Linguistics-Technical University in Przasnyszu",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "http://www.wsjo.edu.pl/"
+ },
+ {
+  "domain": "ncbj.gov.pl",
+  "iso2": "PL",
+  "name": "National Centre for Nuclear Research",
+  "source": "deqar:2026-10-10",
+  "type_hint": "university",
+  "url": "https://www.ncbj.gov.pl/"
+ },
+ {
+  "domain": "ohr-sy.com",
+  "iso2": "US",
+  "name": "Rabbinical College of Ohr Shimon Yisroel",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://ohr-sy.com/"
+ },
+ {
+  "domain": "sarasotaschoolofmassagetherapy.edu",
+  "iso2": "US",
+  "name": "Sarasota School of Massage Therapy",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.sarasotaschoolofmassagetherapy.edu/"
+ },
+ {
+  "domain": "gstboces.org",
+  "iso2": "US",
+  "name": "Schuyler Steuben Chemung Tioga Allegany BOCES",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.gstboces.org/page/adult-education"
+ },
+ {
+  "domain": "dcmoboces.com",
+  "iso2": "US",
+  "name": "Delaware Chenango Madison Otsego BOCES-Practical Nursing Program",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.dcmoboces.com/"
+ },
+ {
+  "domain": "csiu.org",
+  "iso2": "US",
+  "name": "Central Susquehanna Intermediate Unit LPN Career",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.csiu.org/lpn"
+ },
+ {
+  "domain": "myotherapycollege.com",
+  "iso2": "US",
+  "name": "Myotherapy Massage College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "myotherapycollege.com/"
+ },
+ {
+  "domain": "gskinbeautyinstitute.edu",
+  "iso2": "US",
+  "name": "G Skin & Beauty Institute",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.gskinbeautyinstitute.edu/"
+ },
+ {
+  "domain": "cosmetlafayettela.com",
+  "iso2": "US",
+  "name": "Cosmetology Training Center",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "cosmetlafayettela.com/"
+ },
+ {
+  "domain": "stageoneinc.com",
+  "iso2": "US",
+  "name": "Stage One-The Hair School",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.stageoneinc.com/"
+ },
+ {
+  "domain": "xenonacademy.net",
+  "iso2": "US",
+  "name": "Xenon A Stephanie Moss Academy",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.xenonacademy.net/"
+ },
+ {
+  "domain": "theorloschool.com",
+  "iso2": "US",
+  "name": "Orlo School of Hair Design and Cosmetology",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.theorloschool.com/"
  }
 ]
