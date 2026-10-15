@@ -939,7 +939,7 @@
   "domain": "clg-lepage.monbureaunumerique.fr",
   "iso2": "FR",
   "name": "Coll\u00e8ge Jules Bastien Lepage",
-  "source": "fr-annuaire:2026-10-07",
+  "source": "fr-annuaire:2026-10-07;fr-annuaire:2026-10-15",
   "type_hint": "k-12",
   "url": "https://clg-lepage.monbureaunumerique.fr"
  },
@@ -3651,7 +3651,7 @@
   "domain": "clg-st-exupery-thierville.monbureaunumerique.fr",
   "iso2": "FR",
   "name": "Coll\u00e8ge Saint-Exup\u00e9ry",
-  "source": "fr-annuaire:2026-10-08",
+  "source": "fr-annuaire:2026-10-08;fr-annuaire:2026-10-15",
   "type_hint": "k-12",
   "url": "https://clg-st-exupery-thierville.monbureaunumerique.fr/"
  },
@@ -3922,8 +3922,8 @@
  {
   "domain": "nusanipa.ac.id",
   "iso2": "ID",
-  "name": "Universitas Nusa Nipa",
-  "source": "wikidata:P856",
+  "name": "Universitas Nusa Nipa Maumere",
+  "source": "wikidata:P856;ror:api-p158",
   "type_hint": "university",
   "url": "https://www.nusanipa.ac.id"
  },
@@ -16670,5 +16670,437 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.omcc.edu/"
+ },
+ {
+  "domain": "crc.ac.th",
+  "iso2": "TH",
+  "name": "Chiangrai College",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "http://www.crc.ac.th"
+ },
+ {
+  "domain": "eng.gu.ac.kr",
+  "iso2": "KR",
+  "name": "Gyeongju University",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "http://eng.gu.ac.kr/"
+ },
+ {
+  "domain": "untb.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Nusa Tenggara Barat",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "http://untb.ac.id/"
+ },
+ {
+  "domain": "istp.ac.id",
+  "iso2": "ID",
+  "name": "Institut Sains dan Teknologi TD Pardede",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "http://istp.ac.id/"
+ },
+ {
+  "domain": "itm.ac.id",
+  "iso2": "ID",
+  "name": "Institut Teknologi Medan",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "https://itm.ac.id/"
+ },
+ {
+  "domain": "alazhar-university.ac.id",
+  "iso2": "ID",
+  "name": "Al-Azhar University",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "http://alazhar-university.ac.id/"
+ },
+ {
+  "domain": "ksu.ac.th",
+  "iso2": "TH",
+  "name": "Kalasin University",
+  "source": "ror:api-p158",
+  "type_hint": "university",
+  "url": "https://www.ksu.ac.th/"
+ },
+ {
+  "domain": "tzu.edu.cn",
+  "iso2": "CN",
+  "name": "Taizhou University",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "https://www.tzu.edu.cn/"
+ },
+ {
+  "domain": "utsc.utoronto.ca",
+  "iso2": "CA",
+  "name": "University of Toronto Scarborough",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "https://www.utsc.utoronto.ca"
+ },
+ {
+  "domain": "fss.rnu.tn",
+  "iso2": "TN",
+  "name": "Faculty of Sciences of Sfax",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "https://fss.rnu.tn"
+ },
+ {
+  "domain": "english.gdufs.edu.cn",
+  "iso2": "CN",
+  "name": "Guangdong University of Foreign Studies",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "http://english.gdufs.edu.cn/"
+ },
+ {
+  "domain": "hau.edu.cn",
+  "iso2": "CN",
+  "name": "Huai'an University",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "https://www.hau.edu.cn"
+ },
+ {
+  "domain": "unip.br",
+  "iso2": "BR",
+  "name": "Universidade Paulista",
+  "source": "openalex:page162",
+  "type_hint": "university",
+  "url": "https://www.unip.br"
+ },
+ {
+  "domain": "jstu.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangsu University of Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.jstu.edu.cn"
+ },
+ {
+  "domain": "justsit.edu.cn",
+  "iso2": "CN",
+  "name": "Suzhou Institute of Technology, Jiangsu University of Science and Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://justsit.edu.cn/"
+ },
+ {
+  "domain": "jvic.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Vocational Institute of Commerce",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.jvic.edu.cn/"
+ },
+ {
+  "domain": "juti.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Union Technical Institute",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.juti.cn"
+ },
+ {
+  "domain": "jspi.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Police Institute",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.jspi.cn/"
+ },
+ {
+  "domain": "jscjxy.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Vocational College of Finance & Economics",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.jscjxy.cn"
+ },
+ {
+  "domain": "jsfpc.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Food and Pharmaceutical Science College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.jsfpc.edu.cn/"
+ },
+ {
+  "domain": "jsfsc.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangsu Food and Pharmaceutical Science College",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.jsfsc.edu.cn/"
+ },
+ {
+  "domain": "jxutcm.edu.cn",
+  "iso2": "CN",
+  "name": "Jiangxi University of Traditional Chinese Medicine",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.jxutcm.edu.cn/"
+ },
+ {
+  "domain": "institut-valsainte.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Valsainte",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "http://institut-valsainte.fr/"
+ },
+ {
+  "domain": "clg-curien.monbureaunumerique.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Hubert Curien",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "https://clg-curien.monbureaunumerique.fr"
+ },
+ {
+  "domain": "clg-arboretum.monbureaunumerique.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge L'Arboretum",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "https://clg-arboretum.monbureaunumerique.fr/"
+ },
+ {
+  "domain": "laheve.arsene76.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge La H\u00e8ve",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "http://laheve.arsene76.fr/"
+ },
+ {
+  "domain": "clg-lyautey.monbureaunumerique.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Lyautey",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "https://clg-lyautey.monbureaunumerique.fr"
+ },
+ {
+  "domain": "julesmichelet.clg.ac-guadeloupe.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jules Michelet",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "https://julesmichelet.clg.ac-guadeloupe.fr/"
+ },
+ {
+  "domain": "saintpierrebriec.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Saint-Pierre",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "http://www.saintpierrebriec.org"
+ },
+ {
+  "domain": "aquiba.org",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Aquiba",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "http://aquiba.org"
+ },
+ {
+  "domain": "gustave-violet.mon-ent-occitanie.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Gustave Violet",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "https://gustave-violet.mon-ent-occitanie.fr/"
+ },
+ {
+  "domain": "college-penanroz-pont-aven.ac-rennes.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Penanroz",
+  "source": "fr-annuaire:2026-10-15",
+  "type_hint": "k-12",
+  "url": "http://www.college-penanroz-pont-aven.ac-rennes.fr"
+ },
+ {
+  "domain": "vss.scng.si",
+  "iso2": "SI",
+  "name": "Nova Gorica School Centre, Higher Vocational College",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://vss.scng.si/"
+ },
+ {
+  "domain": "fuds.si",
+  "iso2": "SI",
+  "name": "School of Advanced Social Studies in Nova Gorica",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.fuds.si/en"
+ },
+ {
+  "domain": "nova-uni.si",
+  "iso2": "SI",
+  "name": "New University",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://nova-uni.si/index.php/en/"
+ },
+ {
+  "domain": "lampret-consulting.si",
+  "iso2": "SI",
+  "name": "Lampret Consulting Ltd., Higher Vocational College",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.lampret-consulting.si/studijski-center/center-visjih-sol"
+ },
+ {
+  "domain": "esnm-visja.si",
+  "iso2": "SI",
+  "name": "School of Economics Novo mesto, Higher Vocational College",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://www.esnm-visja.si/"
+ },
+ {
+  "domain": "vs.grm-nm.si",
+  "iso2": "SI",
+  "name": "GRM Novo mesto - Center of biotechnics and tourism, Higher Vocational College",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://www.vs.grm-nm.si/"
+ },
+ {
+  "domain": "uni-nm.si",
+  "iso2": "SI",
+  "name": "University of Novo mesto",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://uni-nm.si/en/"
+ },
+ {
+  "domain": "fos.unm.si",
+  "iso2": "SI",
+  "name": "Faculty of Organisation Studies Novo mesto",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.fos.unm.si/en/"
+ },
+ {
+  "domain": "fini-unm.si",
+  "iso2": "SI",
+  "name": "Faculty of Industrial Engineering, Novo mesto",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.fini-unm.si/en/"
+ },
+ {
+  "domain": "fis.unm.si",
+  "iso2": "SI",
+  "name": "Faculty of Information Studies in Novo Mesto",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.fis.unm.si/en/"
+ },
+ {
+  "domain": "vsgrm.unm.si",
+  "iso2": "SI",
+  "name": "Landscape Governance College Grm Novo mesto",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://vsgrm.unm.si/"
+ },
+ {
+  "domain": "emuni.si",
+  "iso2": "SI",
+  "name": "Euro-Mediterranean University",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "http://www.emuni.si/"
+ },
+ {
+  "domain": "vspo.si",
+  "iso2": "SI",
+  "name": "Postojna School Centre, Higher Vocational College",
+  "source": "deqar:2026-10-15",
+  "type_hint": "university",
+  "url": "https://www.vspo.si/"
+ },
+ {
+  "domain": "sfiec.edu",
+  "iso2": "US",
+  "name": "San Francisco Institute of Esthetics & Cosmetology Inc",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.sfiec.edu/ and https://paulmitchell.edu/sanfrancisco"
+ },
+ {
+  "domain": "hhs.edu",
+  "iso2": "US",
+  "name": "Healing Hands School of Holistic Health",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://hhs.edu/"
+ },
+ {
+  "domain": "cdi.edu",
+  "iso2": "US",
+  "name": "Career Development Institute Inc",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "cdi.edu/"
+ },
+ {
+  "domain": "escoffier.edu",
+  "iso2": "US",
+  "name": "Auguste Escoffier School of Culinary Arts-Boulder",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.escoffier.edu/"
+ },
+ {
+  "domain": "itea.edu",
+  "iso2": "US",
+  "name": "Institute of Taoist Education and Acupuncture",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.itea.edu/"
+ },
+ {
+  "domain": "cozmo.edu",
+  "iso2": "US",
+  "name": "Cozmo Beauty School",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.cozmo.edu/"
+ },
+ {
+  "domain": "celebrity.edu",
+  "iso2": "US",
+  "name": "Celebrity School of Beauty",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.celebrity.edu/"
+ },
+ {
+  "domain": "evanshairstylingcollege.com",
+  "iso2": "US",
+  "name": "Evans Hairstyling College-Rexburg",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.evanshairstylingcollege.com/"
+ },
+ {
+  "domain": "uac.edu",
+  "iso2": "US",
+  "name": "University of Aesthetics & Cosmetology",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.uac.edu/"
  }
 ]
