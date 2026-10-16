@@ -1,18 +1,18 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-16 04:38 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-16 06:53 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **17043** across **204** countries
 - Active: **9210** (54%) · Inaccessible: **7833** (46%)
-- Pending queue: **1988** unvalidated candidates
+- Pending queue: **2011** unvalidated candidates
 - Known registration age: **7362** domains (median 24 yrs)
 
 ## Last runs
 
 - Verify (2026-10-16 04:38 UTC): validated 119, +51 Active, re-verified 15, pending left 1988
-- Curate (2026-10-16 01:04 UTC): 10698 raw candidates, 50 queued, 10589 re-cited
+- Curate (2026-10-16 06:53 UTC): 10686 raw candidates, 23 queued, 50 re-cited
 
 ## Countries (top 15 by size)
 
