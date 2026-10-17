@@ -1387,7 +1387,7 @@
   "domain": "clg-roger-martin-du-gard-sancergues.tice.ac-orleans-tours.fr",
   "iso2": "FR",
   "name": "Coll\u00e8ge Roger-Martin du Gard",
-  "source": "fr-annuaire:2026-10-11",
+  "source": "fr-annuaire:2026-10-11;fr-annuaire:2026-10-17",
   "type_hint": "k-12",
   "url": "http://clg-roger-martin-du-gard-sancergues.tice.ac-orleans-tours.fr"
  },
@@ -1403,7 +1403,7 @@
   "domain": "lyc-jmboivin-chevigny-saint-sauveur.eclat-bfc.fr",
   "iso2": "FR",
   "name": "Lyc\u00e9e g\u00e9n\u00e9ral et technologique Jean-Marc Boivin",
-  "source": "fr-annuaire:2026-10-11",
+  "source": "fr-annuaire:2026-10-11;fr-annuaire:2026-10-17",
   "type_hint": "k-12",
   "url": "https://lyc-jmboivin-chevigny-saint-sauveur.eclat-bfc.fr/"
  },
@@ -1419,7 +1419,7 @@
   "domain": "savio-lambersart.fr",
   "iso2": "FR",
   "name": "Coll\u00e8ge Dominique Savio",
-  "source": "fr-annuaire:2026-10-11",
+  "source": "fr-annuaire:2026-10-11;fr-annuaire:2026-10-17",
   "type_hint": "k-12",
   "url": "http://www.savio-lambersart.fr"
  },
@@ -12470,5 +12470,381 @@
   "source": "ipeds:2026-10",
   "type_hint": "university",
   "url": "www.skininstitute.edu/"
+ },
+ {
+  "domain": "dru.ac.th",
+  "iso2": "TH",
+  "name": "Dhonburi Rajabhat University",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "https://www.dru.ac.th"
+ },
+ {
+  "domain": "arabaev.kg",
+  "iso2": "KG",
+  "name": "Kyrgyz State National University",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "http://arabaev.kg/"
+ },
+ {
+  "domain": "univa-labuhanbatu.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Al-washliyah Labuhanbatu",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "https://univa-labuhanbatu.ac.id/"
+ },
+ {
+  "domain": "unsamakassar.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Sawerigading Makassar",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "http://www.unsamakassar.ac.id/"
+ },
+ {
+  "domain": "keu.kg",
+  "iso2": "KG",
+  "name": "Kyrgyz Economic University",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "http://www.keu.kg/"
+ },
+ {
+  "domain": "kasei-gakuin.ac.jp",
+  "iso2": "JP",
+  "name": "Tokyo Kasei Gakuin University",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "http://www.kasei-gakuin.ac.jp/"
+ },
+ {
+  "domain": "unda.ac.id",
+  "iso2": "ID",
+  "name": "Universitas Darwan Ali",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "http://unda.ac.id"
+ },
+ {
+  "domain": "kyoai.ac.jp",
+  "iso2": "JP",
+  "name": "Maebashi Kyoai Gakuen College",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "https://www.kyoai.ac.jp/"
+ },
+ {
+  "domain": "santapol.ac.th",
+  "iso2": "TH",
+  "name": "Santapol College",
+  "source": "ror:api-p167",
+  "type_hint": "university",
+  "url": "https://www.santapol.ac.th/"
+ },
+ {
+  "domain": "szgmu.ru",
+  "iso2": "RU",
+  "name": "North-Western State Medical University named after I.I. Mechnikov",
+  "source": "openalex:page172",
+  "type_hint": "university",
+  "url": "https://www.szgmu.ru"
+ },
+ {
+  "domain": "comillas.edu",
+  "iso2": "ES",
+  "name": "Universidad Pontificia Comillas",
+  "source": "openalex:page172",
+  "type_hint": "university",
+  "url": "https://www.comillas.edu"
+ },
+ {
+  "domain": "heilongjiang-international-university.com",
+  "iso2": "CN",
+  "name": "Heilongjiang International University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.heilongjiang-international-university.com/"
+ },
+ {
+  "domain": "hiu.edu.cn",
+  "iso2": "CN",
+  "name": "Heilongjiang International University",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.hiu.edu.cn/"
+ },
+ {
+  "domain": "hljit.edu.cn",
+  "iso2": "CN",
+  "name": "Heilongjiang Institute of Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.hljit.edu.cn/"
+ },
+ {
+  "domain": "usth.edu.cn",
+  "iso2": "CN",
+  "name": "Heilongjiang University of Science and Technology",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.usth.edu.cn/"
+ },
+ {
+  "domain": "ephtm.com",
+  "iso2": "PT",
+  "name": "Madeira Hospitality and Tourism Professional School",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "http://www.ephtm.com"
+ },
+ {
+  "domain": "satr.codes",
+  "iso2": "SA",
+  "name": "Satr Platforms",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://satr.codes/"
+ },
+ {
+  "domain": "gspb.edu.ng",
+  "iso2": "NE",
+  "name": "Gombe State Polytechnic",
+  "source": "wikidata:P856",
+  "type_hint": "university",
+  "url": "https://www.gspb.edu.ng/"
+ },
+ {
+  "domain": "clg-aduvivier-luzy.eclat-bfc.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Antony Duvivier",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "http://clg-aduvivier-luzy.eclat-bfc.fr"
+ },
+ {
+  "domain": "clg-le-reflessoir-blere.tice.ac-orleans-tours.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge le R\u00e9flessoir",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "http://clg-le-reflessoir-blere.tice.ac-orleans-tours.fr/eva/"
+ },
+ {
+  "domain": "sainteunioncdf.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Notre-Dame",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://sainteunioncdf.fr/le-college-sainte-union-coeur-de-flandre-wormhout/"
+ },
+ {
+  "domain": "clg-orbelliere-olivet.tice.ac-orleans-tours.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge l'Orbelli\u00e8re",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "http://clg-orbelliere-olivet.tice.ac-orleans-tours.fr/eva/"
+ },
+ {
+  "domain": "lycee-hotelier-orleanais.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e H\u00f4telier de l'Orl\u00e9anais",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "http://www.lycee-hotelier-orleanais.fr/"
+ },
+ {
+  "domain": "cs-plarousse-toucy.eclat-bfc.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Pierre Larousse",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://cs-plarousse-toucy.eclat-bfc.fr/"
+ },
+ {
+  "domain": "college.stemariebeaucamps.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Sainte-Marie",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://college.stemariebeaucamps.fr/"
+ },
+ {
+  "domain": "0711585m.index-education.net",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Louis Aragon",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://0711585m.index-education.net/pronote/eleve.html"
+ },
+ {
+  "domain": "collegejeanrenoirb.wixsite.com",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge Jean Renoir",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://collegejeanrenoirb.wixsite.com/collegejeanrenoir"
+ },
+ {
+  "domain": "sixte-vignon.mon-ent-occitanie.fr",
+  "iso2": "FR",
+  "name": "Lyc\u00e9e professionnel Sixte Vignon : Lyc\u00e9e des m\u00e9tiers de l'habitat, des \u00e9nergies et de l'automobile",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "http://sixte-vignon.mon-ent-occitanie.fr"
+ },
+ {
+  "domain": "stefamille-steursule.fr",
+  "iso2": "FR",
+  "name": "Coll\u00e8ge priv\u00e9 Sainte-Ursule",
+  "source": "fr-annuaire:2026-10-17",
+  "type_hint": "k-12",
+  "url": "https://stefamille-steursule.fr/"
+ },
+ {
+  "domain": "bbaa.umh.es",
+  "iso2": "ES",
+  "name": "Fine Arts Faculty of Altea",
+  "source": "deqar:2026-10-17",
+  "type_hint": "university",
+  "url": "https://bbaa.umh.es/"
+ },
+ {
+  "domain": "eummia.es",
+  "iso2": "ES",
+  "name": "Maria Inmaculada School of Education (Antequera)",
+  "source": "deqar:2026-10-17",
+  "type_hint": "university",
+  "url": "http://www.eummia.es/"
+ },
+ {
+  "domain": "mondragon.edu",
+  "iso2": "ES",
+  "name": "Mondragon University",
+  "source": "deqar:2026-10-17",
+  "type_hint": "university",
+  "url": "http://www.mondragon.edu"
+ },
+ {
+  "domain": "politecnicavila.usal.es",
+  "iso2": "ES",
+  "name": "Higher Polytechnic School of Avila",
+  "source": "deqar:2026-10-17",
+  "type_hint": "university",
+  "url": "http://politecnicavila.usal.es/"
+ },
+ {
+  "domain": "flaglertech.edu",
+  "iso2": "US",
+  "name": "Flagler Technical College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "flaglertech.edu/"
+ },
+ {
+  "domain": "galaxymedicalcollege.edu",
+  "iso2": "US",
+  "name": "Galaxy Medical College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.galaxymedicalcollege.edu/"
+ },
+ {
+  "domain": "amsc.edu",
+  "iso2": "US",
+  "name": "American Medical Sciences Center",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.amsc.edu/"
+ },
+ {
+  "domain": "mandalynacademy.com",
+  "iso2": "US",
+  "name": "Mandalyn Academy",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "https://www.mandalynacademy.com/"
+ },
+ {
+  "domain": "jmvu.edu",
+  "iso2": "US",
+  "name": "Jose Maria Vargas University",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.jmvu.edu/"
+ },
+ {
+  "domain": "dadorseytech.edu",
+  "iso2": "US",
+  "name": "D A Dorsey Technical College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.dadorseytech.edu/"
+ },
+ {
+  "domain": "kbocc.edu",
+  "iso2": "US",
+  "name": "Keweenaw Bay Ojibwa Community College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.kbocc.edu/"
+ },
+ {
+  "domain": "meridian-institute.edu",
+  "iso2": "US",
+  "name": "Meridian Institute of Surgical Assisting",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.meridian-institute.edu/"
+ },
+ {
+  "domain": "maunaloahelicopters.edu",
+  "iso2": "US",
+  "name": "Mauna Loa Helicopters",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "maunaloahelicopters.edu/"
+ },
+ {
+  "domain": "acaydia.edu",
+  "iso2": "US",
+  "name": "Acaydia School of Aesthetics",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.acaydia.edu/"
+ },
+ {
+  "domain": "massagetrainingbaltimore.com",
+  "iso2": "US",
+  "name": "Holistic Massage Training Institute",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.massagetrainingbaltimore.com/"
+ },
+ {
+  "domain": "diamondscollege.com",
+  "iso2": "US",
+  "name": "Diamonds College",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.diamondscollege.com/"
+ },
+ {
+  "domain": "nvschoolofmassage.com",
+  "iso2": "US",
+  "name": "Northern Virginia School of Therapeutic Massage",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.nvschoolofmassage.com/"
+ },
+ {
+  "domain": "atitraining.edu",
+  "iso2": "US",
+  "name": "Advanced Training Institute",
+  "source": "ipeds:2026-10",
+  "type_hint": "university",
+  "url": "www.atitraining.edu/"
  }
 ]
