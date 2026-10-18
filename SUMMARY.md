@@ -1,77 +1,77 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-18 14:22 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-18 15:03 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **18592** across **205** countries
-- Active: **10055** (54%) · Inaccessible: **8537** (46%)
-- Pending queue: **1162** unvalidated candidates
-- Known registration age: **8209** domains (median 23 yrs)
+- Domains tracked: **18695** across **205** countries
+- Active: **10115** (54%) · Inaccessible: **8580** (46%)
+- Pending queue: **1062** unvalidated candidates
+- Known registration age: **8267** domains (median 23 yrs)
 
 ## Last runs
 
-- Verify (2026-10-18 11:54 UTC): validated 116, +43 Active, re-verified 15, pending left 1101
+- Verify (2026-10-18 15:03 UTC): validated 118, +60 Active, re-verified 15, pending left 1062
 - Curate (2026-10-18 14:22 UTC): 10701 raw candidates, 61 queued, 33 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 3883 | 2922 | 961 |
-| FR | 2118 | 1049 | 1069 |
-| CN | 806 | 104 | 702 |
+| US | 3906 | 2944 | 962 |
+| FR | 2124 | 1054 | 1070 |
+| CN | 815 | 106 | 709 |
 | AU | 731 | 531 | 200 |
-| IN | 667 | 342 | 325 |
-| JP | 656 | 161 | 495 |
-| DE | 594 | 331 | 263 |
-| BR | 501 | 248 | 253 |
-| ID | 448 | 272 | 176 |
-| RU | 435 | 155 | 280 |
+| IN | 693 | 354 | 339 |
+| JP | 659 | 162 | 497 |
+| DE | 595 | 332 | 263 |
+| BR | 502 | 249 | 253 |
+| RU | 454 | 166 | 288 |
+| ID | 450 | 272 | 178 |
 | PL | 410 | 170 | 240 |
 | KR | 316 | 86 | 230 |
-| GB | 284 | 144 | 140 |
-| IR | 255 | 80 | 175 |
+| GB | 286 | 145 | 141 |
+| IR | 256 | 81 | 175 |
 | CA | 227 | 140 | 87 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 10059 |
-| `unreachable-dns` | 2744 |
-| `fetch-error:ConnectTimeout` | 1058 |
-| `http-403` | 869 |
-| `fetch-error:SSLError` | 843 |
-| `fetch-error:ConnectionError` | 838 |
-| `low-confidence:http-2xx-html` | 753 |
+| `http-2xx-html` | 10119 |
+| `unreachable-dns` | 2758 |
+| `fetch-error:ConnectTimeout` | 1063 |
+| `http-403` | 875 |
+| `fetch-error:SSLError` | 848 |
+| `fetch-error:ConnectionError` | 842 |
+| `low-confidence:http-2xx-html` | 756 |
 | `empty-body` | 187 |
-| `fetch-error:ReadTimeout` | 98 |
-| `http-500` | 79 |
+| `fetch-error:ReadTimeout` | 99 |
+| `http-500` | 80 |
 | `http-404` | 64 |
 | `http-503` | 36 |
 
 ## Freshness
 
-- Verified in last 30 days: **18510** (100%)
+- Verified in last 30 days: **18628** (100%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **2**
-- Retired, no DNS record (`unreachable-dns`): **2744**
-- Moved pointers (old domain → new): **817**
+- Retired, no DNS record (`unreachable-dns`): **2758**
+- Moved pointers (old domain → new): **820**
 
 ## Alerts
 
 - ⚠ `AO`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `BW`: low Active rate 3/11 (27%) — check for blocks/stale sources
 - ⚠ `CI`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `CN`: low Active rate 104/806 (13%) — check for blocks/stale sources
+- ⚠ `CN`: low Active rate 106/815 (13%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `GA`: low Active rate 2/11 (18%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 1/10 (10%) — check for blocks/stale sources
-- ⚠ `JP`: low Active rate 161/656 (25%) — check for blocks/stale sources
+- ⚠ `JP`: low Active rate 162/659 (25%) — check for blocks/stale sources
 - ⚠ `KR`: low Active rate 86/316 (27%) — check for blocks/stale sources
 - ⚠ `NA`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `TW`: low Active rate 19/130 (15%) — check for blocks/stale sources
+- ⚠ `TW`: low Active rate 19/133 (14%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 2/7 (29%) — check for blocks/stale sources
 - ⚠ `XX`: 15 unmapped countries — expand `suffix_country` or fix source ISO
 
