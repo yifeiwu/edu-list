@@ -1,29 +1,29 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-25 01:47 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-25 06:56 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **21561** across **205** countries
-- Active: **11558** (54%) · Inaccessible: **10003** (46%)
+- Active: **11559** (54%) · Inaccessible: **10002** (46%)
 - Pending queue: **0** unvalidated candidates
 - Known registration age: **9517** domains (median 22 yrs)
 
 ## Last runs
 
-- Verify (2026-10-25 01:47 UTC): validated 50, +13 Active, re-verified 15, pending left 0
+- Verify (2026-10-25 06:56 UTC): validated 60, +0 Active, re-verified 60, pending left 0
 - Curate (2026-10-25 01:03 UTC): 10686 raw candidates, 35 queued, 10597 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 4492 | 3381 | 1111 |
+| US | 4492 | 3382 | 1110 |
 | FR | 2743 | 1328 | 1415 |
 | CN | 1250 | 140 | 1110 |
 | IN | 763 | 400 | 363 |
 | JP | 753 | 204 | 549 |
-| AU | 736 | 536 | 200 |
+| AU | 736 | 537 | 199 |
 | DE | 600 | 335 | 265 |
 | BR | 559 | 277 | 282 |
 | RU | 519 | 194 | 325 |
@@ -38,25 +38,25 @@ _Generated 2026-10-25 01:47 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 11563 |
-| `unreachable-dns` | 3096 |
-| `fetch-error:ConnectTimeout` | 1275 |
-| `fetch-error:ConnectionError` | 1056 |
-| `http-403` | 980 |
-| `low-confidence:http-2xx-html` | 978 |
+| `http-2xx-html` | 11564 |
+| `unreachable-dns` | 3097 |
+| `fetch-error:ConnectTimeout` | 1276 |
+| `fetch-error:ConnectionError` | 1055 |
+| `low-confidence:http-2xx-html` | 979 |
+| `http-403` | 978 |
 | `fetch-error:SSLError` | 950 |
 | `empty-body` | 210 |
 | `http-500` | 115 |
-| `fetch-error:ReadTimeout` | 113 |
+| `fetch-error:ReadTimeout` | 112 |
 | `http-404` | 85 |
 | `http-503` | 44 |
 
 ## Freshness
 
-- Verified in last 30 days: **17473** (81%)
+- Verified in last 30 days: **17533** (81%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
-- Archived chronic failures (re-check paused): **2**
-- Retired, no DNS record (`unreachable-dns`): **3096**
+- Archived chronic failures (re-check paused): **3**
+- Retired, no DNS record (`unreachable-dns`): **3097**
 - Moved pointers (old domain → new): **911**
 
 ## Alerts
