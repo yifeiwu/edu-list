@@ -1,17 +1,17 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-27 01:35 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-27 06:58 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **21836** across **205** countries
-- Active: **11707** (54%) · Inaccessible: **10129** (46%)
+- Active: **11705** (54%) · Inaccessible: **10131** (46%)
 - Pending queue: **0** unvalidated candidates
 - Known registration age: **9614** domains (median 22 yrs)
 
 ## Last runs
 
-- Verify (2026-10-27 01:35 UTC): validated 65, +24 Active, re-verified 15, pending left 0
+- Verify (2026-10-27 06:57 UTC): validated 60, +0 Active, re-verified 60, pending left 0
 - Curate (2026-10-27 01:17 UTC): 10698 raw candidates, 48 queued, 10596 re-cited
 
 ## Countries (top 15 by size)
@@ -38,22 +38,22 @@ _Generated 2026-10-27 01:35 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 11712 |
+| `http-2xx-html` | 11710 |
 | `unreachable-dns` | 3130 |
 | `fetch-error:ConnectTimeout` | 1294 |
 | `fetch-error:ConnectionError` | 1067 |
 | `low-confidence:http-2xx-html` | 1000 |
 | `http-403` | 984 |
-| `fetch-error:SSLError` | 967 |
+| `fetch-error:SSLError` | 968 |
 | `empty-body` | 210 |
 | `http-500` | 117 |
-| `fetch-error:ReadTimeout` | 115 |
+| `fetch-error:ReadTimeout` | 116 |
 | `http-404` | 86 |
 | `http-503` | 45 |
 
 ## Freshness
 
-- Verified in last 30 days: **16556** (76%)
+- Verified in last 30 days: **16616** (76%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **4**
 - Retired, no DNS record (`unreachable-dns`): **3130**
