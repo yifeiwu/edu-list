@@ -1,24 +1,24 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-10-31 13:46 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-10-31 18:00 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **22789** across **205** countries
-- Active: **12180** (53%) · Inaccessible: **10609** (47%)
+- Active: **12182** (53%) · Inaccessible: **10607** (47%)
 - Pending queue: **0** unvalidated candidates
 - Known registration age: **10071** domains (median 21 yrs)
 
 ## Last runs
 
-- Verify (2026-10-31 13:46 UTC): validated 61, +21 Active, re-verified 15, pending left 0
+- Verify (2026-10-31 18:00 UTC): validated 60, +0 Active, re-verified 60, pending left 0
 - Curate (2026-10-31 13:27 UTC): 10695 raw candidates, 43 queued, 52 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 4609 | 3483 | 1126 |
+| US | 4609 | 3484 | 1125 |
 | FR | 2991 | 1449 | 1542 |
 | CN | 1291 | 147 | 1144 |
 | IN | 808 | 435 | 373 |
@@ -38,26 +38,26 @@ _Generated 2026-10-31 13:46 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 12185 |
-| `unreachable-dns` | 3235 |
+| `http-2xx-html` | 12187 |
+| `unreachable-dns` | 3236 |
 | `fetch-error:ConnectTimeout` | 1374 |
-| `fetch-error:ConnectionError` | 1122 |
+| `fetch-error:ConnectionError` | 1121 |
 | `low-confidence:http-2xx-html` | 1065 |
-| `fetch-error:SSLError` | 1028 |
-| `http-403` | 1016 |
+| `fetch-error:SSLError` | 1029 |
+| `http-403` | 1014 |
 | `empty-body` | 218 |
 | `http-500` | 127 |
 | `fetch-error:ReadTimeout` | 126 |
-| `http-404` | 89 |
-| `http-503` | 50 |
+| `http-404` | 88 |
+| `http-503` | 51 |
 
 ## Freshness
 
-- Verified in last 30 days: **15592** (68%)
+- Verified in last 30 days: **15652** (69%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **4**
-- Retired, no DNS record (`unreachable-dns`): **3235**
-- Moved pointers (old domain → new): **956**
+- Retired, no DNS record (`unreachable-dns`): **3236**
+- Moved pointers (old domain → new): **955**
 
 ## Alerts
 
