@@ -1,33 +1,33 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-11-04 17:06 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-11-04 18:55 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **23406** across **205** countries
-- Active: **12541** (54%) · Inaccessible: **10865** (46%)
-- Pending queue: **17** unvalidated candidates
-- Known registration age: **10360** domains (median 21 yrs)
+- Domains tracked: **23423** across **205** countries
+- Active: **12547** (54%) · Inaccessible: **10876** (46%)
+- Pending queue: **0** unvalidated candidates
+- Known registration age: **10366** domains (median 21 yrs)
 
 ## Last runs
 
-- Verify (2026-11-04 11:40 UTC): validated 41, +13 Active, re-verified 15, pending left 0
+- Verify (2026-11-04 18:55 UTC): validated 32, +6 Active, re-verified 15, pending left 0
 - Curate (2026-11-04 17:06 UTC): 10667 raw candidates, 17 queued, 49 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 4694 | 3549 | 1145 |
-| FR | 3138 | 1515 | 1623 |
-| CN | 1310 | 149 | 1161 |
+| US | 4695 | 3550 | 1145 |
+| FR | 3149 | 1519 | 1630 |
+| CN | 1312 | 149 | 1163 |
 | IN | 844 | 460 | 384 |
 | JP | 808 | 225 | 583 |
 | AU | 737 | 538 | 199 |
 | DE | 608 | 341 | 267 |
-| RU | 596 | 235 | 361 |
-| BR | 580 | 286 | 294 |
-| ID | 569 | 343 | 226 |
+| RU | 596 | 234 | 362 |
+| BR | 580 | 287 | 293 |
+| ID | 570 | 343 | 227 |
 | UA | 484 | 202 | 282 |
 | PL | 459 | 180 | 279 |
 | ES | 413 | 265 | 148 |
@@ -38,30 +38,30 @@ _Generated 2026-11-04 17:06 UTC. Full per-country table: [data/countries/INDEX.m
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 12546 |
-| `unreachable-dns` | 3274 |
-| `fetch-error:ConnectTimeout` | 1409 |
+| `http-2xx-html` | 12552 |
+| `unreachable-dns` | 3276 |
+| `fetch-error:ConnectTimeout` | 1410 |
 | `fetch-error:ConnectionError` | 1171 |
-| `low-confidence:http-2xx-html` | 1107 |
-| `fetch-error:SSLError` | 1057 |
-| `http-403` | 1039 |
+| `low-confidence:http-2xx-html` | 1110 |
+| `fetch-error:SSLError` | 1058 |
+| `http-403` | 1040 |
 | `empty-body` | 226 |
-| `http-500` | 133 |
+| `http-500` | 134 |
 | `fetch-error:ReadTimeout` | 130 |
-| `http-404` | 90 |
+| `http-404` | 91 |
 | `http-503` | 51 |
 
 ## Freshness
 
-- Verified in last 30 days: **14010** (60%)
+- Verified in last 30 days: **14042** (60%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **4**
-- Retired, no DNS record (`unreachable-dns`): **3274**
-- Moved pointers (old domain → new): **970**
+- Retired, no DNS record (`unreachable-dns`): **3276**
+- Moved pointers (old domain → new): **971**
 
 ## Alerts
 
-- ⚠ `CN`: low Active rate 149/1310 (11%) — check for blocks/stale sources
+- ⚠ `CN`: low Active rate 149/1312 (11%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `GA`: low Active rate 2/11 (18%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 2/11 (18%) — check for blocks/stale sources
