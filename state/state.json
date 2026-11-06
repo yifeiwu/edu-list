@@ -96573,7 +96573,7 @@
     "udesa.edu.ar": {
       "code": 200,
       "confidence": 100,
-      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure"
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "udesanmiguel.edu.mx": {
       "code": 0,
@@ -96786,9 +96786,9 @@
       "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "ue-varna.bg": {
-      "code": 403,
-      "confidence": 5,
-      "reason": "http-403"
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ue.edu.ph": {
       "code": 200,
@@ -96841,9 +96841,9 @@
       "reason": "low-confidence:http-2xx-html+substantial-content"
     },
     "uean.edu.ar": {
-      "code": 403,
-      "confidence": 5,
-      "reason": "http-403"
+      "code": 200,
+      "confidence": 100,
+      "reason": "http-2xx-html+multi-source+schema.org-edu+edu-keywords+trusted-suffix+substantial-content"
     },
     "ueap.edu.br": {
       "code": 0,
@@ -96956,9 +96956,9 @@
       "reason": "moved-to:resita.extensii.ubbcluj.ro"
     },
     "uema.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uemc.edu": {
       "code": 500,
@@ -97061,9 +97061,9 @@
       "reason": "unreachable-dns"
     },
     "uespi.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uess.fr": {
       "code": 200,
@@ -97171,9 +97171,9 @@
       "reason": "low-confidence:http-2xx-html+multi-source+trusted-suffix+non-educational-content"
     },
     "ufba.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:ConnectionError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ufc.br": {
       "code": 200,
@@ -97183,7 +97183,7 @@
     "ufcg.edu.br": {
       "code": 0,
       "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ufcspa.edu.br": {
       "code": 200,
@@ -97311,9 +97311,9 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ufms.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:ConnectTimeout"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ufmt.br": {
       "code": 0,
@@ -97326,9 +97326,9 @@
       "reason": "empty-body"
     },
     "ufop.br": {
-      "code": 404,
-      "confidence": 5,
-      "reason": "http-404"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "ufopa.edu.br": {
       "code": 200,
@@ -97426,9 +97426,9 @@
       "reason": "unreachable-dns"
     },
     "ufrpe.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:ConnectTimeout"
+      "code": 200,
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "ufrr.br": {
       "code": 0,
@@ -97438,7 +97438,7 @@
     "ufrrj.br": {
       "code": 0,
       "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "reason": "fetch-error:ConnectTimeout"
     },
     "ufs.ac.za": {
       "code": 0,
@@ -97466,9 +97466,9 @@
       "reason": "unreachable-dns"
     },
     "ufsj.edu.br": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "ufsm.br": {
       "code": 200,
@@ -209733,10 +209733,10 @@
     "ucordillera.edu.bo": 1,
     "ucp.br": 0,
     "ucp.cz": 0,
-    "ucp.edu.ar": 1,
+    "ucp.edu.ar": 2,
     "ucp.edu.pk": 0,
     "ucp.pt": 0,
-    "ucpel.tche.br": 1,
+    "ucpel.tche.br": 2,
     "ucpr.edu.co": 1,
     "ucr.ac.cr": 1,
     "ucr.edu": 0,
@@ -209746,8 +209746,8 @@
     "ucs.mun.ca": 1,
     "ucs.tche.br": 1,
     "ucsa.edu.py": 0,
-    "ucsal.br": 1,
-    "ucsal.edu.br": 1,
+    "ucsal.br": 2,
+    "ucsal.edu.br": 2,
     "ucsanya.com": 1,
     "ucsb.edu": 0,
     "ucsc.cl": 0,
@@ -209835,7 +209835,7 @@
     "udesanmiguel.edu.mx": 1,
     "udesarrollo.cl": 1,
     "udesc.br": 0,
-    "udesmontagnes.org": 1,
+    "udesmontagnes.org": 2,
     "udetijuana.edu.mx": 0,
     "udg.co.cu": 1,
     "udg.edu": 1,
@@ -209874,7 +209874,7 @@
     "udusok.edu.ng": 0,
     "udv.edu.mx": 1,
     "ue-germany.com": 0,
-    "ue-varna.bg": 1,
+    "ue-varna.bg": 0,
     "ue.edu.ph": 0,
     "ue.edu.pk": 0,
     "ue.katowice.pl": 0,
@@ -209885,7 +209885,7 @@
     "uea.edu.sn": 1,
     "ueab.ac.ke": 0,
     "ueab.de": 1,
-    "uean.edu.ar": 1,
+    "uean.edu.ar": 0,
     "ueap.edu.br": 1,
     "ueb.isfun.net": 1,
     "uec.ac.jp": 1,
@@ -209894,7 +209894,7 @@
     "uees.edu.ec": 0,
     "uees.edu.sv": 1,
     "uef.ru": 1,
-    "uefs.br": 1,
+    "uefs.br": 2,
     "ueg.br": 0,
     "ueh.edu.ht": 0,
     "ueh.edu.vn": 0,
@@ -209908,7 +209908,7 @@
     "uem.es": 1,
     "uem.mz": 0,
     "uem.ro": 1,
-    "uema.br": 1,
+    "uema.br": 0,
     "uemc.edu": 1,
     "uemc.es": 0,
     "uemg.br": 0,
@@ -209923,13 +209923,13 @@
     "uergs.edu.br": 0,
     "uerj.br": 1,
     "uerm.edu.ph": 0,
-    "uern.br": 1,
+    "uern.br": 2,
     "uerr.edu.br": 0,
     "ues.edu.sv": 1,
     "uesb.br": 1,
     "uesc.br": 0,
     "uesiglo21.edu.ar": 1,
-    "uespi.br": 1,
+    "uespi.br": 0,
     "uess.fr": 1,
     "uestc.edu.cn": 2,
     "uet.edu": 1,
@@ -209949,11 +209949,11 @@
     "ufac.br": 0,
     "ufal.br": 0,
     "ufam.edu.br": 0,
-    "ufar.am": 1,
-    "ufasta.edu.ar": 1,
-    "ufba.br": 1,
+    "ufar.am": 2,
+    "ufasta.edu.ar": 2,
+    "ufba.br": 0,
     "ufc.br": 0,
-    "ufcg.edu.br": 1,
+    "ufcg.edu.br": 2,
     "ufcspa.edu.br": 0,
     "ufdvirtual.mx": 0,
     "ufe.edu.eg": 0,
@@ -209972,17 +209972,17 @@
     "ufl.li": 0,
     "ufl.udn.vn": 1,
     "ufla.br": 0,
-    "uflo.edu.ar": 1,
+    "uflo.edu.ar": 2,
     "uflouniversidad.edu.ar": 0,
     "ufm.edu.gt": 1,
     "ufm.edu.mx": 1,
     "ufm.edu.vn": 0,
-    "ufma.br": 1,
+    "ufma.br": 2,
     "ufmg.br": 0,
-    "ufms.br": 1,
+    "ufms.br": 0,
     "ufmt.br": 2,
     "ufn.edu.br": 1,
-    "ufop.br": 1,
+    "ufop.br": 0,
     "ufopa.edu.br": 0,
     "ufp.nc": 1,
     "ufp.pt": 1,
@@ -209991,7 +209991,7 @@
     "ufpcanarias.com": 0,
     "ufpcanarias.es": 1,
     "ufpe.br": 1,
-    "ufpel.tche.br": 1,
+    "ufpel.tche.br": 2,
     "ufpi.br": 1,
     "ufpr.br": 0,
     "ufps.edu.co": 0,
@@ -210002,15 +210002,15 @@
     "ufrn.br": 1,
     "ufro.cl": 0,
     "ufromail.cl": 1,
-    "ufrpe.br": 1,
+    "ufrpe.br": 0,
     "ufrr.br": 1,
-    "ufrrj.br": 1,
+    "ufrrj.br": 2,
     "ufs.ac.za": 1,
     "ufs.br": 0,
     "ufsc.br": 0,
     "ufscar.br": 0,
     "ufsia.ac.be": 1,
-    "ufsj.edu.br": 1,
+    "ufsj.edu.br": 0,
     "ufsm.br": 0,
     "uft-plovdiv.bg": 0,
     "uft.edu.br": 0,
@@ -210022,7 +210022,7 @@
     "ufv.br": 0,
     "ufv.ca": 0,
     "ufv.es": 0,
-    "ufvjm.edu.br": 1,
+    "ufvjm.edu.br": 2,
     "ug.edu.ec": 0,
     "ug.edu.ge": 0,
     "ug.edu.gh": 0,
@@ -210039,7 +210039,7 @@
     "ugd.edu.ar": 0,
     "ugd.edu.mk": 0,
     "ugent.be": 0,
-    "ugf.br": 1,
+    "ugf.br": 2,
     "ugf.edu": 1,
     "ugj.ac.id": 1,
     "ugk.ac.id": 0,
@@ -214087,13 +214087,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-11-06T02:28:10+00:00",
+  "last_run": "2026-11-06T10:02:00+00:00",
   "last_verify": {
-    "added_active": 9,
-    "at": "2026-11-06 02:28 UTC",
+    "added_active": 0,
+    "at": "2026-11-06 10:02 UTC",
     "pending_left": 0,
-    "reverified": 15,
-    "validated": 40
+    "reverified": 60,
+    "validated": 60
   },
   "moved": {
     "absparis.com": "american-business-college-paris.com",
