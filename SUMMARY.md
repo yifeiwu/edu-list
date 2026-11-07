@@ -1,18 +1,18 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-11-07 02:26 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-11-07 02:37 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **23658** across **205** countries
 - Active: **12701** (54%) · Inaccessible: **10957** (46%)
-- Pending queue: **0** unvalidated candidates
+- Pending queue: **32** unvalidated candidates
 - Known registration age: **10475** domains (median 21 yrs)
 
 ## Last runs
 
 - Verify (2026-11-07 02:26 UTC): validated 50, +22 Active, re-verified 15, pending left 0
-- Curate (2026-11-06 22:52 UTC): 10677 raw candidates, 34 queued, 36 re-cited
+- Curate (2026-11-07 02:37 UTC): 10687 raw candidates, 32 queued, 10601 re-cited
 
 ## Countries (top 15 by size)
 
@@ -71,7 +71,7 @@ _Generated 2026-11-07 02:26 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `SL`: low Active rate 1/5 (20%) — check for blocks/stale sources
 - ⚠ `TW`: low Active rate 24/157 (15%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 2/8 (25%) — check for blocks/stale sources
-- ⚠ `XX`: 68 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `XX`: 67 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
