@@ -1,51 +1,51 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-11-13 21:18 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-11-13 23:57 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
-- Domains tracked: **24580** across **206** countries
-- Active: **13215** (54%) · Inaccessible: **11365** (46%)
-- Pending queue: **53** unvalidated candidates
-- Known registration age: **10847** domains (median 21 yrs)
+- Domains tracked: **24637** across **206** countries
+- Active: **13243** (54%) · Inaccessible: **11394** (46%)
+- Pending queue: **0** unvalidated candidates
+- Known registration age: **10878** domains (median 21 yrs)
 
 ## Last runs
 
-- Verify (2026-11-13 18:36 UTC): validated 58, +19 Active, re-verified 15, pending left 0
+- Verify (2026-11-13 23:57 UTC): validated 72, +29 Active, re-verified 15, pending left 0
 - Curate (2026-11-13 21:18 UTC): 10705 raw candidates, 53 queued, 49 re-cited
 
 ## Countries (top 15 by size)
 
 | country | total | Active | Inaccessible |
 |---|---|---|---|
-| US | 4761 | 3598 | 1163 |
-| FR | 3481 | 1675 | 1806 |
-| CN | 1356 | 157 | 1199 |
-| IN | 903 | 506 | 397 |
+| US | 4764 | 3598 | 1166 |
+| FR | 3494 | 1686 | 1808 |
+| CN | 1357 | 157 | 1200 |
+| IN | 905 | 508 | 397 |
 | JP | 837 | 233 | 604 |
-| AU | 755 | 554 | 201 |
-| DE | 619 | 347 | 272 |
+| AU | 757 | 555 | 202 |
+| DE | 621 | 348 | 273 |
 | RU | 616 | 248 | 368 |
 | ID | 606 | 368 | 238 |
 | BR | 598 | 308 | 290 |
-| UA | 577 | 247 | 330 |
-| PL | 468 | 182 | 286 |
+| UA | 578 | 248 | 330 |
+| PL | 470 | 182 | 288 |
 | ES | 419 | 269 | 150 |
 | GB | 372 | 207 | 165 |
-| KR | 350 | 98 | 252 |
+| KR | 351 | 99 | 252 |
 
 ## Validation signals (reasons in state detail)
 
 | reason | count |
 |---|---|
-| `http-2xx-html` | 13220 |
-| `unreachable-dns` | 3365 |
-| `fetch-error:ConnectTimeout` | 1501 |
-| `fetch-error:ConnectionError` | 1243 |
-| `low-confidence:http-2xx-html` | 1197 |
-| `fetch-error:SSLError` | 1094 |
-| `http-403` | 1064 |
-| `empty-body` | 234 |
+| `http-2xx-html` | 13248 |
+| `unreachable-dns` | 3369 |
+| `fetch-error:ConnectTimeout` | 1502 |
+| `fetch-error:ConnectionError` | 1244 |
+| `low-confidence:http-2xx-html` | 1205 |
+| `fetch-error:SSLError` | 1096 |
+| `http-403` | 1068 |
+| `empty-body` | 235 |
 | `http-500` | 143 |
 | `fetch-error:ReadTimeout` | 138 |
 | `http-404` | 93 |
@@ -53,26 +53,26 @@ _Generated 2026-11-13 21:18 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **11397** (46%)
+- Verified in last 30 days: **11469** (47%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **4**
-- Retired, no DNS record (`unreachable-dns`): **3365**
-- Moved pointers (old domain → new): **1022**
+- Retired, no DNS record (`unreachable-dns`): **3369**
+- Moved pointers (old domain → new): **1029**
 
 ## Alerts
 
 - ⚠ `BI`: low Active rate 2/10 (20%) — check for blocks/stale sources
 - ⚠ `BY`: low Active rate 17/57 (30%) — check for blocks/stale sources
-- ⚠ `CN`: low Active rate 157/1356 (12%) — check for blocks/stale sources
+- ⚠ `CN`: low Active rate 157/1357 (12%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 3/14 (21%) — check for blocks/stale sources
 - ⚠ `GA`: low Active rate 2/11 (18%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 2/11 (18%) — check for blocks/stale sources
 - ⚠ `JP`: low Active rate 233/837 (28%) — check for blocks/stale sources
-- ⚠ `KR`: low Active rate 98/350 (28%) — check for blocks/stale sources
+- ⚠ `KR`: low Active rate 99/351 (28%) — check for blocks/stale sources
 - ⚠ `SL`: low Active rate 1/5 (20%) — check for blocks/stale sources
-- ⚠ `TW`: low Active rate 24/157 (15%) — check for blocks/stale sources
+- ⚠ `TW`: low Active rate 24/158 (15%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 2/8 (25%) — check for blocks/stale sources
-- ⚠ `XX`: 194 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `XX`: 202 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
