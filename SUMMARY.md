@@ -1,6 +1,6 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-11-16 19:59 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
@@ -11,7 +11,7 @@ _Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Last runs
 
-- Verify (2026-11-16 09:45 UTC): validated 59, +21 Active, re-verified 15, pending left 0
+- Verify (2026-11-16 19:59 UTC): validated 60, +0 Active, re-verified 60, pending left 0
 - Curate (2026-11-16 09:10 UTC): 10692 raw candidates, 41 queued, 48 re-cited
 
 ## Countries (top 15 by size)
@@ -20,7 +20,7 @@ _Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.m
 |---|---|---|---|
 | US | 4779 | 3605 | 1174 |
 | FR | 3586 | 1734 | 1852 |
-| CN | 1374 | 154 | 1220 |
+| CN | 1374 | 153 | 1221 |
 | IN | 925 | 522 | 403 |
 | JP | 910 | 256 | 654 |
 | AU | 762 | 559 | 203 |
@@ -41,9 +41,9 @@ _Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.m
 | `http-2xx-html` | 13451 |
 | `unreachable-dns` | 3448 |
 | `fetch-error:ConnectTimeout` | 1540 |
-| `fetch-error:ConnectionError` | 1279 |
+| `fetch-error:ConnectionError` | 1278 |
 | `low-confidence:http-2xx-html` | 1257 |
-| `fetch-error:SSLError` | 1121 |
+| `fetch-error:SSLError` | 1122 |
 | `http-403` | 1083 |
 | `empty-body` | 238 |
 | `http-500` | 148 |
@@ -53,7 +53,7 @@ _Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.m
 
 ## Freshness
 
-- Verified in last 30 days: **10001** (40%)
+- Verified in last 30 days: **10061** (40%)
 - Older than 90 days: **0** (oldest check 2026-09-16)
 - Archived chronic failures (re-check paused): **4**
 - Retired, no DNS record (`unreachable-dns`): **3448**
@@ -63,7 +63,7 @@ _Generated 2026-11-16 09:45 UTC. Full per-country table: [data/countries/INDEX.m
 
 - ⚠ `BI`: low Active rate 2/10 (20%) — check for blocks/stale sources
 - ⚠ `BY`: low Active rate 17/58 (29%) — check for blocks/stale sources
-- ⚠ `CN`: low Active rate 154/1374 (11%) — check for blocks/stale sources
+- ⚠ `CN`: low Active rate 153/1374 (11%) — check for blocks/stale sources
 - ⚠ `CU`: low Active rate 3/15 (20%) — check for blocks/stale sources
 - ⚠ `GA`: low Active rate 2/11 (18%) — check for blocks/stale sources
 - ⚠ `GN`: low Active rate 2/11 (18%) — check for blocks/stale sources

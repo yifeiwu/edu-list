@@ -115622,8 +115622,8 @@
     },
     "usam.edu.sv": {
       "code": 200,
-      "confidence": 80,
-      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "usam.md": {
       "code": 200,
@@ -115657,8 +115657,8 @@
     },
     "usantotomas.edu.co": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "usao.edu": {
       "code": 200,
@@ -116751,9 +116751,9 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uta.edu.ec": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "uta.fi": {
       "code": 0,
@@ -117233,7 +117233,7 @@
     "utn.edu.ec": {
       "code": 200,
       "confidence": 90,
-      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "utneza.edu.mx": {
       "code": 0,
@@ -118592,8 +118592,8 @@
     },
     "vetuni.cz": {
       "code": 200,
-      "confidence": 20,
-      "reason": "low-confidence:http-2xx-html+non-educational-content"
+      "confidence": 40,
+      "reason": "low-confidence:http-2xx-html+multi-source+non-educational-content"
     },
     "vevey-eps.ch": {
       "code": 200,
@@ -119528,7 +119528,7 @@
     "vsci.cz": {
       "code": 0,
       "confidence": 0,
-      "reason": "fetch-error:ConnectionError"
+      "reason": "fetch-error:SSLError"
     },
     "vsdanubius.sk": {
       "code": 200,
@@ -119982,8 +119982,8 @@
     },
     "vut.cz": {
       "code": 200,
-      "confidence": 50,
-      "reason": "http-2xx-html+edu-keywords+substantial-content"
+      "confidence": 80,
+      "reason": "http-2xx-html+multi-source+edu-keywords+substantial-content"
     },
     "vutbr.cz": {
       "code": 200,
@@ -120706,9 +120706,9 @@
       "reason": "unreachable-dns"
     },
     "wdsdjxy.com": {
-      "code": 200,
-      "confidence": 70,
-      "reason": "http-2xx-html+multi-source+edu-keywords"
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
     },
     "wdt.edu": {
       "code": 200,
@@ -226354,7 +226354,7 @@
     "usenghor-francophonie.org": 0,
     "usep.edu.ph": 0,
     "userena.cl": 1,
-    "usergioarboleda.edu.co": 1,
+    "usergioarboleda.edu.co": 2,
     "usf.br": 1,
     "usf.com.mx": 0,
     "usf.edu": 0,
@@ -226429,7 +226429,7 @@
     "uson.mx": 0,
     "usonsonate.edu.sv": 0,
     "usouixfalls.edu": 1,
-    "usp.ac.fj": 1,
+    "usp.ac.fj": 2,
     "usp.ac.jp": 0,
     "usp.br": 0,
     "usp.edu.ci": 0,
@@ -226439,7 +226439,7 @@
     "uspceu.es": 1,
     "uspee.md": 1,
     "usps.edu.hn": 1,
-    "uspsantapaula.com": 1,
+    "uspsantapaula.com": 2,
     "uspt.edu.ar": 0,
     "uspu.ru": 1,
     "usq.edu.au": 3,
@@ -226467,13 +226467,13 @@
     "ust.hk": 1,
     "ust.md": 1,
     "ust.upsc.md": 1,
-    "usta.edu.co": 1,
+    "usta.edu.co": 2,
     "ustanne.ednet.ns.ca": 2,
-    "ustb.edu.cn": 1,
+    "ustb.edu.cn": 2,
     "ustb.edu.pk": 0,
     "ustboniface.mb.ca": 2,
     "ustc.ac.bd": 0,
-    "ustc.edu": 1,
+    "ustc.edu": 2,
     "ustc.edu.cn": 0,
     "ustdts.edu": 0,
     "ustf.ac.ae": 1,
@@ -226527,13 +226527,13 @@
     "ut.suagm.edu": 1,
     "uta.cl": 2,
     "uta.edu": 0,
-    "uta.edu.ec": 1,
+    "uta.edu.ec": 0,
     "uta.fi": 1,
     "uta45jakarta.ac.id": 0,
     "utac.edu.mx": 0,
     "utad-petel-edu.org": 1,
     "utad.pt": 0,
-    "utadeo.edu.co": 1,
+    "utadeo.edu.co": 2,
     "utah.edu": 0,
     "utahtech.edu": 0,
     "utaipei.edu.tw": 0,
@@ -226598,7 +226598,7 @@
     "uthm.edu.my": 0,
     "uthsc.edu": 0,
     "uti.edu": 0,
-    "utibet.edu.cn": 1,
+    "utibet.edu.cn": 2,
     "utica.edu": 0,
     "utk.edu": 0,
     "utkaluniv.org": 1,
@@ -226640,7 +226640,7 @@
     "utp.edu.pe": 0,
     "utp.edu.pl": 1,
     "utpb.edu": 0,
-    "utpl.edu.ec": 1,
+    "utpl.edu.ec": 2,
     "utpp.edu.kh": 1,
     "utq.edu.iq": 0,
     "utrgv.edu": 0,
@@ -226703,7 +226703,7 @@
     "uvauga.ru": 1,
     "uvb.edu.mx": 0,
     "uvei.edu": 0,
-    "uveritas.ac.cr": 1,
+    "uveritas.ac.cr": 2,
     "uvers.ac.id": 1,
     "uversityireland.com": 1,
     "uvg.edu.gt": 0,
@@ -226895,7 +226895,7 @@
     "veths.no": 1,
     "vetmed.vt.edu": 0,
     "vetmeduni.ac.at": 0,
-    "vetuni.cz": 1,
+    "vetuni.cz": 2,
     "vevey-eps.ch": 0,
     "vfeu.edu.ua": 0,
     "vfmac.edu": 0,
@@ -226903,7 +226903,7 @@
     "vfrta.ru": 1,
     "vfs.edu": 0,
     "vfu.bg": 0,
-    "vfu.cz": 1,
+    "vfu.cz": 2,
     "vgafk.ru": 0,
     "vgasa.ru": 1,
     "vgcc.edu": 0,
@@ -226929,7 +226929,7 @@
     "vic.edu": 1,
     "vicat.mon-ent-occitanie.fr": 1,
     "vicibeautyschool.com": 1,
-    "vicomulsow.com": 1,
+    "vicomulsow.com": 2,
     "victoiredaubie.ent.auvergnerhonealpes.fr": 0,
     "victor-hugo-colomiers.mon-ent-occitanie.fr": 1,
     "victor-hugo-gaillac.mon-ent-occitanie.fr": 1,
@@ -227082,7 +227082,7 @@
     "vsc.edu": 1,
     "vsc.vic.edu.au": 0,
     "vscht.cz": 0,
-    "vsci.cz": 1,
+    "vsci.cz": 2,
     "vsdanubius.sk": 0,
     "vse.cz": 0,
     "vseip.com": 2,
@@ -227107,7 +227107,7 @@
     "vsmu.sk": 0,
     "vso.cz": 1,
     "vsoh.cz": 1,
-    "vsp.cz": 1,
+    "vsp.cz": 2,
     "vspep.edu.rs": 0,
     "vspi.si": 0,
     "vspo.si": 0,
@@ -227174,7 +227174,7 @@
     "vupune.ac.in": 0,
     "vut.ac.za": 0,
     "vut.cz": 0,
-    "vutbr.cz": 1,
+    "vutbr.cz": 2,
     "vuu.edu": 0,
     "vuw.ac.nz": 1,
     "vuz-chursin.ru": 1,
@@ -227318,7 +227318,7 @@
     "wcums.edu.cn": 1,
     "wcupa.edu": 0,
     "wczy.edu.cn": 1,
-    "wdsdjxy.com": 0,
+    "wdsdjxy.com": 1,
     "wdt.edu": 0,
     "wdu.edu.cn": 2,
     "wdu.edu.ng": 0,
@@ -227474,11 +227474,11 @@
     "whsw.net": 1,
     "whsz.slupsk.pl": 1,
     "whtcc.edu.cn": 1,
-    "whtu.edu.cn": 1,
+    "whtu.edu.cn": 2,
     "whu-koblenz.de": 1,
     "whu.edu": 0,
     "whu.edu.cn": 2,
-    "whut.edu.cn": 1,
+    "whut.edu.cn": 2,
     "whwl.edu.cn": 1,
     "whxyart.cn": 1,
     "whz.de": 0,
@@ -227694,7 +227694,7 @@
     "wsm.katowice.pl": 1,
     "wsm.opole.pl": 1,
     "wsm.szczecin.pl": 0,
-    "wsm.whu.edu.cn": 1,
+    "wsm.whu.edu.cn": 2,
     "wsmda.edu": 1,
     "wsmed.edu.pl": 1,
     "wsmiiu.edu.pl": 1,
@@ -227887,16 +227887,16 @@
     "wyssacademy.org": 0,
     "wyu.edu.cn": 1,
     "wzmu.net": 1,
-    "wzu.edu.cn": 1,
+    "wzu.edu.cn": 2,
     "wzvcst.edu.cn": 1,
     "xafa.edu.cn": 1,
     "xahtxy.cn": 1,
-    "xahu.edu.cn": 1,
+    "xahu.edu.cn": 2,
     "xalbador-kolegioa.eus": 1,
     "xasyu.cn": 1,
     "xatzy.cn": 1,
     "xauat.edu.cn": 1,
-    "xaut.edu.cn": 1,
+    "xaut.edu.cn": 2,
     "xavier-bichat.ent.auvergnerhonealpes.fr": 0,
     "xavier-college.com": 0,
     "xavier.edu": 0,
@@ -227909,13 +227909,13 @@
     "xdxy.com.cn": 1,
     "xenonacademy.net": 0,
     "xgllzyxy.com": 1,
-    "xhcom.edu.cn": 1,
+    "xhcom.edu.cn": 2,
     "xhu.edu.cn": 1,
     "xhxy.cumt.edu.cn": 1,
     "xidian.edu.cn": 1,
     "xihang.com.cn": 1,
     "xijing.edu.cn": 1,
-    "xiju.edu.cn": 1,
+    "xiju.edu.cn": 2,
     "xios.be": 1,
     "xisu.edu.cn": 1,
     "xit.edu.cn": 1,
@@ -227928,7 +227928,7 @@
     "xjnzy.edu.cn": 1,
     "xjtlu.edu.cn": 1,
     "xjtu.edu.cn": 2,
-    "xju.edu.cn": 1,
+    "xju.edu.cn": 2,
     "xjufe.edu.cn": 1,
     "xktek.edu.ua": 1,
     "xmu.edu.cn": 0,
@@ -227955,7 +227955,7 @@
     "xtit.edu.cn": 0,
     "xtmc.edu.cn": 1,
     "xtnu.edu.cn": 1,
-    "xtu.edu.cn": 1,
+    "xtu.edu.cn": 2,
     "xtylocollege.com": 1,
     "xu-university.com": 0,
     "xu.edu.ph": 1,
@@ -228304,13 +228304,13 @@
     "skipped_service": 9,
     "unmapped": 7
   },
-  "last_run": "2026-11-16T09:45:44+00:00",
+  "last_run": "2026-11-16T19:59:57+00:00",
   "last_verify": {
-    "added_active": 21,
-    "at": "2026-11-16 09:45 UTC",
+    "added_active": 0,
+    "at": "2026-11-16 19:59 UTC",
     "pending_left": 0,
-    "reverified": 15,
-    "validated": 59
+    "reverified": 60,
+    "validated": 60
   },
   "moved": {
     "aambfs.org": "aambfs.edu.eg",
