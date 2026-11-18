@@ -10760,6 +10760,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "bowen.edu.ng": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
     "bowenedu.cn": {
       "code": 0,
       "confidence": 0,
@@ -14130,6 +14135,11 @@
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
+    "cecilia-wjc.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "unreachable-dns"
+    },
     "cecm.usp.br": {
       "code": 200,
       "confidence": 50,
@@ -16254,6 +16264,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "city.hamamatsu-szo.ed.jp": {
+      "code": 403,
+      "confidence": 5,
+      "reason": "http-403"
     },
     "city.sanjo.niigata.jp": {
       "code": 0,
@@ -24664,6 +24679,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "unreachable-dns"
+    },
+    "daito-h.ed.jp": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
     },
     "daito.ac.jp": {
       "code": 0,
@@ -41155,6 +41175,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "hanken.fi": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
+    },
     "hankyong.ac.kr": {
       "code": 0,
       "confidence": 0,
@@ -48270,6 +48295,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
+    "inagakuen.spec.ed.jp": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
     "inalco.fr": {
       "code": 200,
       "confidence": 60,
@@ -52580,6 +52610,11 @@
       "confidence": 0,
       "reason": "unreachable-dns"
     },
+    "jc.rikkyojogakuin.ac.jp": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
     "jccc.edu": {
       "code": 403,
       "confidence": 5,
@@ -52819,6 +52854,11 @@
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "jean-moulin-beziers.mon-ent-occitanie.fr": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectionError"
     },
     "jean-moulin-gace.college.ac-normandie.fr": {
       "code": 200,
@@ -57330,6 +57370,11 @@
       "confidence": 0,
       "reason": "unreachable-dns"
     },
+    "kodama-h.spec.ed.jp": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "kodolanyi.hu": {
       "code": 200,
       "confidence": 90,
@@ -58509,6 +58554,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "unreachable-dns"
+    },
+    "kumajo-h.spec.ed.jp": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "kumamoto-kmm.ed.jp": {
       "code": 0,
@@ -62500,6 +62550,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "lp-philibert-de-l-orme.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "lp-pierre-joseph-fontaine-anzin.59.ac-lille.fr": {
       "code": 200,
       "confidence": 50,
@@ -63820,6 +63875,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectTimeout"
     },
+    "lyc-mauriceviollette-dreux.tice.ac-orleans-tours.fr": {
+      "code": 200,
+      "confidence": 20,
+      "reason": "low-confidence:http-2xx-html+non-educational-content"
+    },
     "lyc-mayer.monbureaunumerique.fr": {
       "code": 500,
       "confidence": 5,
@@ -64071,6 +64131,11 @@
       "reason": "fetch-error:ConnectTimeout"
     },
     "lycee-agricole-prive-tourville.fr": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "lycee-agricole-stflour.fr": {
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
@@ -64375,6 +64440,11 @@
       "confidence": 40,
       "reason": "moved-to:lyceesellier.fr"
     },
+    "lycee-henribrisson.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "lycee-hotelier-etiolles.fr": {
       "code": 200,
       "confidence": 50,
@@ -64415,6 +64485,16 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "lycee-jdb.fr": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
+    "lycee-jean-de-berry.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "lycee-jean-lurcat.mon-ent-occitanie.fr": {
       "code": 0,
       "confidence": 0,
@@ -64434,6 +64514,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "lycee-jean-moulin-st-amand.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "lycee-jean-taris-40.net": {
       "code": 200,
@@ -65135,6 +65220,11 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "lyceejeangiraudoux36.fr": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "lyceejeanjauresreims.fr": {
       "code": 0,
       "confidence": 0,
@@ -65684,6 +65774,11 @@
       "code": 200,
       "confidence": 50,
       "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
+    "madame-de-stael-montlucon.ent.auvergnerhonealpes.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "madenatalelem.com": {
       "code": 200,
@@ -67864,6 +67959,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
+    },
+    "meilipeterpartner.ch": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
     "meio-u.ac.jp": {
       "code": 0,
@@ -80865,10 +80965,20 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix"
     },
+    "pnk.ac.id": {
+      "code": 200,
+      "confidence": 5,
+      "reason": "empty-body"
+    },
     "pnl.ac.id": {
       "code": 403,
       "confidence": 5,
       "reason": "http-403"
+    },
+    "pnm.ac.id": {
+      "code": 200,
+      "confidence": 85,
+      "reason": "http-2xx-html+schema.org-edu+edu-keywords+structure+substantial-content"
     },
     "pnt.edu.vn": {
       "code": 200,
@@ -80985,6 +81095,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "polibatam.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
     "police.ac.kr": {
       "code": 200,
       "confidence": 60,
@@ -81041,6 +81156,11 @@
       "reason": "unreachable-dns"
     },
     "polinef.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "polinela.ac.id": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
@@ -81140,6 +81260,11 @@
       "confidence": 40,
       "reason": "moved-to:turin.uz"
     },
+    "poliupg.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
     "polizeiakademie.niedersachsen.de": {
       "code": 0,
       "confidence": 0,
@@ -81160,10 +81285,25 @@
       "confidence": 5,
       "reason": "http-503"
     },
+    "polma.ac.id": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "unreachable-dns"
+    },
+    "polman-bandung.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
+    },
     "polmed.ac.id": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "polnam.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+trusted-suffix+substantial-content"
     },
     "polnep.ac.id": {
       "code": 200,
@@ -86830,6 +86970,16 @@
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
+    "saintjoseph-vendome.com": {
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:saintjoseph-vendome.fr"
+    },
+    "saintjoseph-vendome.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "saintjoseph01.fr": {
       "code": 200,
       "confidence": 90,
@@ -88064,6 +88214,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "scbmch.nic.in": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "unreachable-dns"
     },
     "scc.edu.tw": {
       "code": 0,
@@ -90165,6 +90320,11 @@
       "confidence": 0,
       "reason": "unreachable-dns"
     },
+    "shiga-ec.ed.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "unreachable-dns"
+    },
     "shiga-med.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -90196,6 +90356,11 @@
       "reason": "unreachable-dns"
     },
     "shimane-u.ac.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "unreachable-dns"
+    },
+    "shimanet.ed.jp": {
       "code": 0,
       "confidence": 0,
       "reason": "unreachable-dns"
@@ -92265,6 +92430,11 @@
       "confidence": 0,
       "reason": "fetch-error:SSLError"
     },
+    "sophia-sw.jp": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:SSLError"
+    },
     "sophia.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -93496,6 +93666,11 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "st-joseph01.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
+    "st-mary.ac.jp": {
       "code": 200,
       "confidence": 60,
       "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
@@ -95499,6 +95674,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "sumire.ac.jp": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
     },
     "sumitalia.it": {
       "code": 200,
@@ -99495,6 +99675,11 @@
       "confidence": 80,
       "reason": "http-2xx-html+multi-source+edu-keywords+structure"
     },
+    "tokonishi-h.spec.ed.jp": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "tokushima-u.ac.jp": {
       "code": 0,
       "confidence": 0,
@@ -99759,6 +99944,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "unreachable-dns"
+    },
+    "toyooka-h.spec.ed.jp": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "toyota-ct.ac.jp": {
       "code": 0,
@@ -116020,6 +116210,11 @@
       "confidence": 0,
       "reason": "unreachable-dns"
     },
+    "urawaichijo-h.spec.ed.jp": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+structure"
+    },
     "urbana.edu": {
       "code": 0,
       "confidence": 0,
@@ -124085,6 +124280,11 @@
       "confidence": 0,
       "reason": "fetch-error:ConnectionError"
     },
+    "www2.cortland.edu": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "www2.espm.br": {
       "code": 0,
       "confidence": 0,
@@ -127373,6 +127573,9 @@
     },
     "ceaprc.org": {
       "at": "2026-10-07"
+    },
+    "cecilia-wjc.ac.jp": {
+      "at": "2026-11-18"
     },
     "cedarvalleycollege.edu": {
       "at": "2026-10-07"
@@ -132918,6 +133121,9 @@
     "politeknikkpsidoarjo.kkp.go.id": {
       "at": "2026-10-07"
     },
+    "polma.ac.id": {
+      "at": "2026-11-18"
+    },
     "polsl.gliwice.pl": {
       "at": "2026-10-07"
     },
@@ -133332,6 +133538,9 @@
     "scar.utoronto.ca": {
       "at": "2026-10-07"
     },
+    "scbmch.nic.in": {
+      "at": "2026-11-18"
+    },
     "scc.edu.tw": {
       "at": "2026-10-07"
     },
@@ -133566,6 +133775,9 @@
     "shift.edu.cn": {
       "at": "2026-10-07"
     },
+    "shiga-ec.ed.jp": {
+      "at": "2026-11-18"
+    },
     "shiga-med.ac.jp": {
       "at": "2026-10-07"
     },
@@ -133580,6 +133792,9 @@
     },
     "shimane-u.ac.jp": {
       "at": "2026-10-07"
+    },
+    "shimanet.ed.jp": {
+      "at": "2026-11-18"
     },
     "shimonoseki-cu.ac.jp": {
       "at": "2026-10-07"
@@ -142482,6 +142697,7 @@
       "ts": "2026-10-03"
     },
     "bowdoin.edu": "1990-04-09",
+    "bowen.edu.ng": "2018-08-30",
     "bowenedu.cn": {
       "reg": "",
       "ts": "2026-10-15"
@@ -144110,6 +144326,10 @@
     "ceaprc.org": "2026-01-18",
     "cebudoctorsuniversity.edu": "2005-03-02",
     "cecil.edu": "2007-03-20",
+    "cecilia-wjc.ac.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "cecm.usp.br": "1996-01-01",
     "cecos.edu.pk": {
       "reg": "",
@@ -145195,6 +145415,10 @@
     "city.edu.my": {
       "reg": "",
       "ts": "2026-09-27"
+    },
+    "city.hamamatsu-szo.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "city.sanjo.niigata.jp": {
       "reg": "",
@@ -150266,6 +150490,10 @@
     "daishodai.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "daito-h.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "daito.ac.jp": {
       "reg": "",
@@ -159143,6 +159371,7 @@
     "hangkong.ac.kr": "1993-07-27",
     "hangtuah.ac.id": "2000-09-27",
     "hanil.ac.kr": "1997-06-24",
+    "hanken.fi": "2001-01-09",
     "hankyong.ac.kr": "1999-03-19",
     "hanlyo.ac.kr": {
       "reg": "",
@@ -163266,6 +163495,10 @@
       "reg": "",
       "ts": "2026-10-14"
     },
+    "inagakuen.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "inalco.fr": "1995-11-19",
     "inam.uji.es": {
       "reg": "",
@@ -165639,6 +165872,10 @@
       "reg": "",
       "ts": "2026-10-24"
     },
+    "jc.rikkyojogakuin.ac.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "jccc.edu": "2002-01-08",
     "jccmi.edu": "2002-02-26",
     "jcgxy.org": "2003-09-09",
@@ -165782,6 +166019,10 @@
     "jean-monnet-st-etienne.ent.auvergnerhonealpes.fr": {
       "reg": "",
       "ts": "2026-10-28"
+    },
+    "jean-moulin-beziers.mon-ent-occitanie.fr": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "jean-moulin-gace.college.ac-normandie.fr": {
       "reg": "",
@@ -168321,6 +168562,10 @@
       "reg": "",
       "ts": "2026-11-15"
     },
+    "kodama-h.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "kodolanyi.hu": {
       "reg": "",
       "ts": "2026-09-24"
@@ -169003,6 +169248,10 @@
     "kumagaku.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "kumajo-h.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "kumamoto-kmm.ed.jp": {
       "reg": "",
@@ -171081,6 +171330,7 @@
       "reg": "",
       "ts": "2026-11-18"
     },
+    "lp-philibert-de-l-orme.fr": "2017-01-23",
     "lp-pierre-joseph-fontaine-anzin.59.ac-lille.fr": {
       "reg": "",
       "ts": "2026-10-11"
@@ -171938,6 +172188,10 @@
       "reg": "",
       "ts": "2026-10-08"
     },
+    "lyc-mauriceviollette-dreux.tice.ac-orleans-tours.fr": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "lyc-mayer.monbureaunumerique.fr": {
       "reg": "",
       "ts": "2026-10-14"
@@ -172136,6 +172390,7 @@
       "ts": "2026-10-24"
     },
     "lycee-agricole-prive-tourville.fr": "2011-10-27",
+    "lycee-agricole-stflour.fr": "2010-03-01",
     "lycee-alfredcostes.fr": "2014-07-17",
     "lycee-alienor.fr": "2006-11-21",
     "lycee-ampere41.com": "2012-12-07",
@@ -172220,6 +172475,7 @@
     "lycee-grignard.fr": "2013-07-06",
     "lycee-guehenno-vannes.fr": "2011-02-11",
     "lycee-henri-sellier.fr": "2008-10-29",
+    "lycee-henribrisson.com": "2017-12-20",
     "lycee-hotelier-etiolles.fr": "2018-07-27",
     "lycee-hotelier-nice.fr": "2024-07-10",
     "lycee-hotelier-orleanais.fr": "2016-06-20",
@@ -172231,6 +172487,8 @@
     },
     "lycee-jacques-duhamel-dole-jura.fr": "2014-01-22",
     "lycee-jblt.fr": "2011-04-26",
+    "lycee-jdb.fr": "2006-09-22",
+    "lycee-jean-de-berry.fr": "2021-11-25",
     "lycee-jean-lurcat.mon-ent-occitanie.fr": {
       "reg": "",
       "ts": "2026-10-21"
@@ -172238,6 +172496,7 @@
     "lycee-jean-lurcat.net": "2005-01-13",
     "lycee-jean-monnet-37.fr": "2021-03-15",
     "lycee-jean-moulin-langon.fr": "2025-08-28",
+    "lycee-jean-moulin-st-amand.fr": "2019-06-06",
     "lycee-jean-taris-40.net": "2014-09-09",
     "lycee-jean-vilar77.com": "2007-11-15",
     "lycee-jeanmoulin-andelys.fr": "2019-01-08",
@@ -172432,6 +172691,7 @@
     "lyceehorticole.fr": "2016-11-08",
     "lyceehotelier-nd.org": "2002-04-27",
     "lyceejberiau.fr": "2010-12-10",
+    "lyceejeangiraudoux36.fr": "2025-07-03",
     "lyceejeanjauresreims.fr": "2012-12-04",
     "lyceejeanmonnet-cognac.fr": "2012-11-20",
     "lyceejeanmoulinlbm.com": "2019-08-26",
@@ -172643,6 +172903,10 @@
     "macuspana.tecnm.mx": {
       "reg": "",
       "ts": "2026-10-14"
+    },
+    "madame-de-stael-montlucon.ent.auvergnerhonealpes.fr": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "madenatalelem.com": "2023-04-30",
     "madeprogram.it": {
@@ -173727,6 +173991,10 @@
     "meikai.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "meilipeterpartner.ch": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "meio-u.ac.jp": {
       "reg": "",
@@ -180460,7 +180728,9 @@
       "ts": "2026-09-19"
     },
     "pnj.ac.id": "2002-04-20",
+    "pnk.ac.id": "2012-06-27",
     "pnl.ac.id": "2004-06-08",
+    "pnm.ac.id": "2012-11-07",
     "pnt.edu.vn": {
       "reg": "",
       "ts": "2026-10-03"
@@ -180525,6 +180795,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "polibatam.ac.id": "2001-04-20",
     "police.ac.kr": "1997-11-19",
     "policeacademy.gov.ge": {
       "reg": "",
@@ -180564,6 +180835,7 @@
       "ts": "2026-09-27"
     },
     "polinef.ac.id": "2017-04-16",
+    "polinela.ac.id": "2010-02-02",
     "polinema.ac.id": "2011-06-08",
     "polines.ac.id": "2002-07-04",
     "polinpdg.ac.id": "2025-10-05",
@@ -180616,6 +180888,7 @@
       "ts": "2026-09-25"
     },
     "polito.uz": "2009-05-25",
+    "poliupg.ac.id": "2005-04-21",
     "polizeiakademie.niedersachsen.de": {
       "reg": "",
       "ts": "2026-10-10"
@@ -180623,7 +180896,10 @@
     "polk.edu": "2002-01-10",
     "polkschoolsfl.com": "2018-07-09",
     "pollub.pl": "2003-12-16",
+    "polma.ac.id": "2023-03-01",
+    "polman-bandung.ac.id": "2003-11-07",
     "polmed.ac.id": "2003-01-27",
+    "polnam.ac.id": "2012-02-10",
     "polnep.ac.id": "2003-01-15",
     "polnustar.ac.id": "2017-11-10",
     "polomichelangelo.it": {
@@ -183416,6 +183692,8 @@
     "saintjoe.edu": "1989-01-27",
     "saintjoseph-chinon.fr": "2014-11-24",
     "saintjoseph-lasalletoulouse.fr": "2023-10-17",
+    "saintjoseph-vendome.com": "2007-12-22",
+    "saintjoseph-vendome.fr": "2023-11-10",
     "saintjoseph01.fr": "2008-03-05",
     "saintjosephdecluny972.fr": "2018-12-27",
     "saintjosephfleurance.com": "2007-10-11",
@@ -183966,6 +184244,7 @@
       "reg": "",
       "ts": "2026-09-25"
     },
+    "scbmch.nic.in": "2004-12-23",
     "scc.edu.tw": {
       "reg": "",
       "ts": "2026-10-02"
@@ -185097,6 +185376,10 @@
       "reg": "",
       "ts": "2026-09-22"
     },
+    "shiga-ec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "shiga-med.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -185124,6 +185407,10 @@
     "shimane-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "shimanet.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "shimonoseki-cu.ac.jp": {
       "reg": "",
@@ -186225,6 +186512,10 @@
     "sonoran.edu": "2022-07-18",
     "sookmyung.ac.kr": "1994-09-08",
     "soongsil.ac.kr": "1994-10-17",
+    "sophia-sw.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "sophia.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -186835,6 +187126,10 @@
     },
     "st-joseph-st-julien.com": "2007-03-14",
     "st-joseph01.fr": "2006-03-23",
+    "st-mary.ac.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "st-michel.fr": "2006-05-15",
     "st-nicolas.lamayenne.e-lyco.fr": {
       "reg": "",
@@ -187790,6 +188085,10 @@
     "sumdu.edu.ua": {
       "reg": "",
       "ts": "2026-10-03"
+    },
+    "sumire.ac.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "sumitalia.it": {
       "reg": "",
@@ -189971,6 +190270,10 @@
       "reg": "",
       "ts": "2026-09-26"
     },
+    "tokonishi-h.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "tokushima-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
@@ -190121,6 +190424,10 @@
     "toyogakuen-u.ac.jp": {
       "reg": "",
       "ts": "2026-09-26"
+    },
+    "toyooka-h.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
     },
     "toyota-ct.ac.jp": {
       "reg": "",
@@ -198974,6 +199281,10 @@
       "reg": "",
       "ts": "2026-10-21"
     },
+    "urawaichijo-h.spec.ed.jp": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "urbana.edu": "1996-11-15",
     "urbanbarbercollege.com": "2012-06-01",
     "urbancollege.edu": "2002-12-06",
@@ -203083,6 +203394,10 @@
       "reg": "",
       "ts": "2026-10-15"
     },
+    "www2.cortland.edu": {
+      "reg": "",
+      "ts": "2026-11-18"
+    },
     "www2.espm.br": "1996-12-06",
     "www2.fukujo.ac.jp": {
       "reg": "",
@@ -206640,6 +206955,7 @@
     "bourdonnieres.e-lyco.fr": 0,
     "bournemouth.ac.uk": 1,
     "bowdoin.edu": 0,
+    "bowen.edu.ng": 0,
     "bowenedu.cn": 1,
     "bowenuniversity-edu.org": 1,
     "bowiestate.edu": 0,
@@ -207314,6 +207630,7 @@
     "ceaprc.org": 1,
     "cebudoctorsuniversity.edu": 0,
     "cecil.edu": 0,
+    "cecilia-wjc.ac.jp": 1,
     "cecm.usp.br": 0,
     "cecos.edu.pk": 0,
     "cedac.edu.hn": 0,
@@ -207739,6 +208056,7 @@
     "citruscollege.edu": 0,
     "city.ac.uk": 1,
     "city.edu.my": 0,
+    "city.hamamatsu-szo.ed.jp": 1,
     "city.sanjo.niigata.jp": 1,
     "citycollege.edu": 1,
     "cityenglish.edu.au": 0,
@@ -209421,6 +209739,7 @@
     "dainam.edu.vn": 0,
     "daion.ac.jp": 0,
     "daishodai.ac.jp": 1,
+    "daito-h.ed.jp": 0,
     "daito.ac.jp": 1,
     "dakotacollege.edu": 0,
     "dal.ca": 0,
@@ -212719,6 +213038,7 @@
     "hangkong.ac.kr": 1,
     "hangtuah.ac.id": 2,
     "hanil.ac.kr": 1,
+    "hanken.fi": 0,
     "hankyong.ac.kr": 1,
     "hanlyo.ac.kr": 1,
     "hannam.ac.kr": 1,
@@ -214142,6 +214462,7 @@
     "in.bgu.ac.il": 1,
     "ina.edu.sy": 1,
     "inaes.edu.py": 0,
+    "inagakuen.spec.ed.jp": 0,
     "inalco.fr": 0,
     "inam.uji.es": 1,
     "inatek.ac.rw": 1,
@@ -215004,6 +215325,7 @@
     "jc.hachinohe-u.ac.jp": 0,
     "jc.kwansei.ac.jp": 0,
     "jc.nagoya-ku.ac.jp": 1,
+    "jc.rikkyojogakuin.ac.jp": 0,
     "jccc.edu": 1,
     "jccmi.edu": 0,
     "jcgxy.org": 1,
@@ -215052,6 +215374,7 @@
     "jean-monnet-montpellier.mon-ent-occitanie.fr": 1,
     "jean-monnet-ouistreham.college.ac-normandie.fr": 0,
     "jean-monnet-st-etienne.ent.auvergnerhonealpes.fr": 0,
+    "jean-moulin-beziers.mon-ent-occitanie.fr": 1,
     "jean-moulin-gace.college.ac-normandie.fr": 0,
     "jean-moulin-lyon5.etab.ac-lyon.fr": 0,
     "jean-moulin-sete.mon-ent-occitanie.fr": 1,
@@ -215954,6 +216277,7 @@
     "kochi-u.ac.jp": 0,
     "kochi-wu.ac.jp": 1,
     "kochinet.ed.jp": 1,
+    "kodama-h.spec.ed.jp": 0,
     "kodolanyi.hu": 0,
     "kogakkan-u.ac.jp": 1,
     "kogakuin.ac.jp": 1,
@@ -216190,6 +216514,7 @@
     "kulturaskoledza.lv": 0,
     "kum.edu.ng": 1,
     "kumagaku.ac.jp": 1,
+    "kumajo-h.spec.ed.jp": 0,
     "kumamoto-kmm.ed.jp": 1,
     "kumamoto-nct.ac.jp": 0,
     "kumamoto-u.ac.jp": 1,
@@ -216988,6 +217313,7 @@
     "lp-lyc-metier-leo-lagrange-bully-les-mines.62.ac-lille.fr": 1,
     "lp-lyc-metier-normandie-niemen-calais.62.ac-lille.fr": 1,
     "lp-maximilien-de-robespierre-lens.62.ac-lille.fr": 1,
+    "lp-philibert-de-l-orme.fr": 0,
     "lp-pierre-joseph-fontaine-anzin.59.ac-lille.fr": 0,
     "lp-pierre-joseph-laurent-aniche.59.ac-lille.fr": 1,
     "lp-pierre-mendes-france-saint-pol-sur-ternoise.62.ac-lille.fr": 1,
@@ -217252,6 +217578,7 @@
     "lyc-marie-laurencin.ac-paris.fr": 1,
     "lyc-mathias-chalon-sur-saone.eclat-bfc.fr": 2,
     "lyc-maupassant-colombes.ac-versailles.fr": 1,
+    "lyc-mauriceviollette-dreux.tice.ac-orleans-tours.fr": 1,
     "lyc-mayer.monbureaunumerique.fr": 1,
     "lyc-mendes-france-contrexeville.monbureaunumerique.fr": 1,
     "lyc-mendes-france-epinal.monbureaunumerique.fr": 1,
@@ -217303,6 +217630,7 @@
     "lyc21-hfontaine.sd.ac-dijon.fr": 0,
     "lyc58-colas.ac-dijon.fr": 1,
     "lycee-agricole-prive-tourville.fr": 0,
+    "lycee-agricole-stflour.fr": 0,
     "lycee-alfredcostes.fr": 1,
     "lycee-alienor.fr": 0,
     "lycee-ampere41.com": 0,
@@ -217363,6 +217691,7 @@
     "lycee-grignard.fr": 0,
     "lycee-guehenno-vannes.fr": 0,
     "lycee-henri-sellier.fr": 1,
+    "lycee-henribrisson.com": 0,
     "lycee-hotelier-etiolles.fr": 0,
     "lycee-hotelier-nice.fr": 0,
     "lycee-hotelier-orleanais.fr": 0,
@@ -217371,10 +217700,13 @@
     "lycee-immac.immaculee.net": 2,
     "lycee-jacques-duhamel-dole-jura.fr": 0,
     "lycee-jblt.fr": 1,
+    "lycee-jdb.fr": 0,
+    "lycee-jean-de-berry.fr": 0,
     "lycee-jean-lurcat.mon-ent-occitanie.fr": 1,
     "lycee-jean-lurcat.net": 1,
     "lycee-jean-monnet-37.fr": 0,
     "lycee-jean-moulin-langon.fr": 0,
+    "lycee-jean-moulin-st-amand.fr": 0,
     "lycee-jean-taris-40.net": 0,
     "lycee-jean-vilar77.com": 0,
     "lycee-jeanmoulin-andelys.fr": 0,
@@ -217515,6 +217847,7 @@
     "lyceehorticole.fr": 0,
     "lyceehotelier-nd.org": 0,
     "lyceejberiau.fr": 0,
+    "lyceejeangiraudoux36.fr": 0,
     "lyceejeanjauresreims.fr": 1,
     "lyceejeanmonnet-cognac.fr": 0,
     "lyceejeanmoulinlbm.com": 0,
@@ -217625,6 +217958,7 @@
     "macromedia-fachhochschule.de": 0,
     "macuniversity.edu": 0,
     "macuspana.tecnm.mx": 0,
+    "madame-de-stael-montlucon.ent.auvergnerhonealpes.fr": 0,
     "madenatalelem.com": 1,
     "madeprogram.it": 0,
     "madi.ru": 0,
@@ -218061,6 +218395,7 @@
     "meijigakuin.ac.jp": 1,
     "meijo-u.ac.jp": 1,
     "meikai.ac.jp": 0,
+    "meilipeterpartner.ch": 0,
     "meio-u.ac.jp": 1,
     "meipn.org": 0,
     "meirin-c.ac.jp": 0,
@@ -220661,7 +220996,9 @@
     "pnb.ac.id": 1,
     "pnc.edu": 1,
     "pnj.ac.id": 0,
+    "pnk.ac.id": 1,
     "pnl.ac.id": 1,
+    "pnm.ac.id": 0,
     "pnt.edu.vn": 0,
     "pntu.edu.ua": 0,
     "pnu.ac.ir": 1,
@@ -220685,6 +221022,7 @@
     "polban.ac.id": 0,
     "poli.edu.co": 1,
     "poliba.it": 1,
+    "polibatam.ac.id": 0,
     "police.ac.kr": 0,
     "policeacademy.gov.ge": 1,
     "poligran.edu.co": 1,
@@ -220697,6 +221035,7 @@
     "polimi.it": 0,
     "polimuadzam.edu.my": 1,
     "polinef.ac.id": 0,
+    "polinela.ac.id": 0,
     "polinema.ac.id": 0,
     "polines.ac.id": 1,
     "polinpdg.ac.id": 1,
@@ -220716,11 +221055,15 @@
     "politihogskolen.no": 1,
     "polito.it": 1,
     "polito.uz": 1,
+    "poliupg.ac.id": 0,
     "polizeiakademie.niedersachsen.de": 1,
     "polk.edu": 0,
     "polkschoolsfl.com": 0,
     "pollub.pl": 1,
+    "polma.ac.id": 1,
+    "polman-bandung.ac.id": 0,
     "polmed.ac.id": 0,
+    "polnam.ac.id": 0,
     "polnep.ac.id": 0,
     "polnustar.ac.id": 0,
     "polomichelangelo.it": 1,
@@ -221854,6 +222197,8 @@
     "saintjoe.edu": 0,
     "saintjoseph-chinon.fr": 0,
     "saintjoseph-lasalletoulouse.fr": 0,
+    "saintjoseph-vendome.com": 1,
+    "saintjoseph-vendome.fr": 0,
     "saintjoseph01.fr": 0,
     "saintjosephdecluny972.fr": 0,
     "saintjosephfleurance.com": 1,
@@ -222101,6 +222446,7 @@
     "scau.edu.cn": 0,
     "scavc.com": 1,
     "scbaghdad.edu.iq": 0,
+    "scbmch.nic.in": 1,
     "scc.edu.tw": 1,
     "scc.losrios.edu": 0,
     "scc.spokane.edu": 0,
@@ -222521,6 +222867,7 @@
     "shien.oita-ed.jp": 1,
     "shiep.edu.cn": 0,
     "shift.edu.cn": 1,
+    "shiga-ec.ed.jp": 1,
     "shiga-med.ac.jp": 1,
     "shiga-u.ac.jp": 0,
     "shigaku.go.jp": 1,
@@ -222528,6 +222875,7 @@
     "shimabara-h.ed.jp": 1,
     "shimane-med.ac.jp": 1,
     "shimane-u.ac.jp": 1,
+    "shimanet.ed.jp": 1,
     "shimonoseki-cu.ac.jp": 1,
     "shinawatra.ac.th": 1,
     "shinhan.ac.kr": 1,
@@ -222941,6 +223289,7 @@
     "sonoran.edu": 0,
     "sookmyung.ac.kr": 1,
     "soongsil.ac.kr": 1,
+    "sophia-sw.jp": 1,
     "sophia.ac.jp": 1,
     "sopocka.edu.pl": 0,
     "soran.edu.iq": 0,
@@ -223188,6 +223537,7 @@
     "st-joseph-segre.anjou.e-lyco.fr": 0,
     "st-joseph-st-julien.com": 0,
     "st-joseph01.fr": 0,
+    "st-mary.ac.jp": 0,
     "st-michel.fr": 0,
     "st-nicolas.lamayenne.e-lyco.fr": 0,
     "st-patricks.ac.uk": 1,
@@ -223588,6 +223938,7 @@
     "sum.edu.pl": 0,
     "suma.kobe-wu.ac.jp": 1,
     "sumdu.edu.ua": 0,
+    "sumire.ac.jp": 0,
     "sumitalia.it": 1,
     "summitcc.edu": 0,
     "summitcollege.edu": 0,
@@ -224387,6 +224738,7 @@
     "tokaijoshi-u.ac.jp": 1,
     "tokiwa.ac.jp": 1,
     "tokoha-u.ac.jp": 0,
+    "tokonishi-h.spec.ed.jp": 0,
     "tokushima-u.ac.jp": 1,
     "tokuyama-u.ac.jp": 1,
     "tokyo-glass.jp": 0,
@@ -224440,6 +224792,7 @@
     "toyo.ac.jp": 0,
     "toyoeiwa.ac.jp": 1,
     "toyogakuen-u.ac.jp": 1,
+    "toyooka-h.spec.ed.jp": 0,
     "toyota-ct.ac.jp": 1,
     "toyota-ti.ac.jp": 1,
     "tp.edu.sg": 0,
@@ -226065,7 +226418,7 @@
     "unachile.cl": 2,
     "unad.edu.co": 1,
     "unad.edu.do": 0,
-    "unadeca.ac.cr": 1,
+    "unadeca.ac.cr": 2,
     "unadecacr.com": 0,
     "unadp.ac.pa": 0,
     "unadqtc.edu.pe": 0,
@@ -226079,7 +226432,7 @@
     "unaja.ac.id": 0,
     "unajma.edu.pe": 0,
     "unak.is": 0,
-    "unal.edu.co": 1,
+    "unal.edu.co": 2,
     "unam.ac.cr": 1,
     "unam.edu.ar": 0,
     "unam.edu.na": 0,
@@ -226124,7 +226477,7 @@
     "unbeg.edu.sd": 1,
     "unbi.ba": 0,
     "unbl.ac.id": 0,
-    "unbosque.edu.co": 1,
+    "unbosque.edu.co": 2,
     "unbsj.ca": 2,
     "unc.br": 0,
     "unc.edu": 0,
@@ -226221,7 +226574,7 @@
     "ung.br": 2,
     "ung.edu": 0,
     "ung.si": 0,
-    "unge.gq": 1,
+    "unge.gq": 2,
     "ungs.edu.ar": 2,
     "unh.ac.id": 0,
     "unh.edu": 0,
@@ -226344,7 +226697,7 @@
     "uniaene.edu.br": 0,
     "uniag.sk": 0,
     "uniajc.edu.co": 1,
-    "uniamazonia.edu.co": 1,
+    "uniamazonia.edu.co": 2,
     "unian.it": 1,
     "uniandes.edu.co": 0,
     "uniandes.edu.ec": 0,
@@ -227692,6 +228045,7 @@
     "uralgufk.ru": 0,
     "uran.ru": 0,
     "urao.edu": 1,
+    "urawaichijo-h.spec.ed.jp": 0,
     "urbana.edu": 1,
     "urbanbarbercollege.com": 0,
     "urbancollege.edu": 0,
@@ -229305,6 +229659,7 @@
     "www2.aua.gr": 0,
     "www2.bigpi.biysk.ru": 1,
     "www2.clg-philipe-martigues.ac-aix-marseille.fr": 1,
+    "www2.cortland.edu": 0,
     "www2.espm.br": 1,
     "www2.fukujo.ac.jp": 1,
     "www2.gmu.edu": 0,
@@ -229771,13 +230126,13 @@
     "skipped_service": 9,
     "unmapped": 4
   },
-  "last_run": "2026-11-18T03:25:25+00:00",
+  "last_run": "2026-11-18T11:41:48+00:00",
   "last_verify": {
-    "added_active": 19,
-    "at": "2026-11-18 03:01 UTC",
+    "added_active": 29,
+    "at": "2026-11-18 11:41 UTC",
     "pending_left": 0,
     "reverified": 15,
-    "validated": 61
+    "validated": 55
   },
   "moved": {
     "aambfs.org": "aambfs.edu.eg",
@@ -230512,6 +230867,7 @@
     "sacrecoeuraix.com": "sacrecoeuraix.fr",
     "saint-ambroise.fr": "saintambroise.fr",
     "saintemariesarrebourg.com": "es-saintclement.com",
+    "saintjoseph-vendome.com": "saintjoseph-vendome.fr",
     "saintjosephfleurance.com": "ensemble-saintjoseph.com",
     "saintremi.fr": "groupefresc.com",
     "samara.university": "ssau.ru",
