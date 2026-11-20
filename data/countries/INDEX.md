@@ -42,17 +42,17 @@
 | CN | 1387 | 153 | 1234 |
 | CO | 134 | 81 | 53 |
 | CR | 43 | 24 | 19 |
-| CU | 15 | 3 | 12 |
+| CU | 16 | 3 | 13 |
 | CV | 5 | 3 | 2 |
 | CW | 2 | 1 | 1 |
 | CY | 22 | 15 | 7 |
 | CZ | 83 | 39 | 44 |
-| DE | 630 | 355 | 275 |
+| DE | 634 | 359 | 275 |
 | DJ | 1 | 1 | 0 |
 | DK | 70 | 35 | 35 |
 | DM | 3 | 1 | 2 |
 | DO | 28 | 24 | 4 |
-| DZ | 63 | 30 | 33 |
+| DZ | 64 | 30 | 34 |
 | EC | 65 | 35 | 30 |
 | EE | 14 | 9 | 5 |
 | EG | 117 | 49 | 68 |
@@ -63,7 +63,7 @@
 | FI | 54 | 24 | 30 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 3684 | 1780 | 1904 |
+| FR | 3696 | 1785 | 1911 |
 | GA | 11 | 2 | 9 |
 | GB | 379 | 213 | 166 |
 | GD | 1 | 1 | 0 |
@@ -84,17 +84,17 @@
 | HR | 20 | 14 | 6 |
 | HT | 7 | 3 | 4 |
 | HU | 82 | 36 | 46 |
-| ID | 682 | 415 | 267 |
+| ID | 690 | 420 | 270 |
 | IE | 51 | 30 | 21 |
 | IL | 54 | 33 | 21 |
-| IN | 942 | 533 | 409 |
+| IN | 943 | 534 | 409 |
 | IQ | 73 | 40 | 33 |
-| IR | 305 | 96 | 209 |
+| IR | 305 | 97 | 208 |
 | IS | 11 | 6 | 5 |
 | IT | 237 | 122 | 115 |
 | JM | 6 | 4 | 2 |
 | JO | 34 | 18 | 16 |
-| JP | 978 | 285 | 693 |
+| JP | 979 | 285 | 694 |
 | KE | 64 | 43 | 21 |
 | KG | 29 | 13 | 16 |
 | KH | 30 | 19 | 11 |
@@ -210,4 +210,4 @@
 | ZM | 19 | 11 | 8 |
 | ZW | 17 | 14 | 3 |
 
-Total domains: 25516. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 25544. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
