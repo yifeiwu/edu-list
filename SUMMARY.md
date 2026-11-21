@@ -1,18 +1,18 @@
 # Edu-Domains — Run Summary
 
-_Generated 2026-11-21 04:23 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
+_Generated 2026-11-21 09:23 UTC. Full per-country table: [data/countries/INDEX.md](data/countries/INDEX.md)._
 
 ## Totals
 
 - Domains tracked: **25608** across **207** countries
 - Active: **13700** (53%) · Inaccessible: **11908** (47%)
-- Pending queue: **0** unvalidated candidates
+- Pending queue: **32** unvalidated candidates
 - Known registration age: **11242** domains (median 21 yrs)
 
 ## Last runs
 
 - Verify (2026-11-21 04:23 UTC): validated 48, +13 Active, re-verified 15, pending left 0
-- Curate (2026-11-21 01:11 UTC): 10696 raw candidates, 32 queued, 10606 re-cited
+- Curate (2026-11-21 09:23 UTC): 10696 raw candidates, 32 queued, 58 re-cited
 
 ## Countries (top 15 by size)
 
@@ -31,7 +31,7 @@ _Generated 2026-11-21 04:23 UTC. Full per-country table: [data/countries/INDEX.m
 | UA | 586 | 253 | 333 |
 | PL | 483 | 184 | 299 |
 | ES | 421 | 270 | 151 |
-| GB | 379 | 213 | 166 |
+| GB | 380 | 214 | 166 |
 | KR | 352 | 100 | 252 |
 
 ## Validation signals (reasons in state detail)
@@ -74,7 +74,7 @@ _Generated 2026-11-21 04:23 UTC. Full per-country table: [data/countries/INDEX.m
 - ⚠ `SS`: low Active rate 0/5 (0%) — check for blocks/stale sources
 - ⚠ `TW`: low Active rate 27/164 (16%) — check for blocks/stale sources
 - ⚠ `VA`: low Active rate 2/8 (25%) — check for blocks/stale sources
-- ⚠ `XX`: 301 unmapped countries — expand `suffix_country` or fix source ISO
+- ⚠ `XX`: 300 unmapped countries — expand `suffix_country` or fix source ISO
 
 ## Pipelines
 
