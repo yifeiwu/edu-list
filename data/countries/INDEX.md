@@ -46,7 +46,7 @@
 | CV | 5 | 3 | 2 |
 | CW | 2 | 1 | 1 |
 | CY | 22 | 15 | 7 |
-| CZ | 83 | 39 | 44 |
+| CZ | 83 | 38 | 45 |
 | DE | 640 | 361 | 279 |
 | DJ | 1 | 1 | 0 |
 | DK | 70 | 35 | 35 |
@@ -55,15 +55,15 @@
 | DZ | 64 | 30 | 34 |
 | EC | 65 | 35 | 30 |
 | EE | 14 | 9 | 5 |
-| EG | 117 | 50 | 67 |
+| EG | 117 | 51 | 66 |
 | ER | 1 | 0 | 1 |
 | ES | 422 | 270 | 152 |
-| ET | 48 | 22 | 26 |
+| ET | 48 | 23 | 25 |
 | EU | 2 | 2 | 0 |
 | FI | 55 | 25 | 30 |
 | FJ | 4 | 2 | 2 |
 | FO | 2 | 1 | 1 |
-| FR | 3796 | 1836 | 1960 |
+| FR | 3799 | 1839 | 1960 |
 | GA | 11 | 2 | 9 |
 | GB | 380 | 214 | 166 |
 | GD | 1 | 1 | 0 |
@@ -84,7 +84,7 @@
 | HR | 21 | 15 | 6 |
 | HT | 7 | 3 | 4 |
 | HU | 82 | 36 | 46 |
-| ID | 748 | 458 | 290 |
+| ID | 749 | 459 | 290 |
 | IE | 51 | 30 | 21 |
 | IL | 54 | 33 | 21 |
 | IN | 957 | 541 | 416 |
@@ -194,7 +194,7 @@
 | TZ | 36 | 21 | 15 |
 | UA | 586 | 253 | 333 |
 | UG | 32 | 22 | 10 |
-| US | 4791 | 3611 | 1180 |
+| US | 4793 | 3612 | 1181 |
 | UY | 14 | 8 | 6 |
 | UZ | 73 | 46 | 27 |
 | VA | 8 | 2 | 6 |
@@ -210,4 +210,4 @@
 | ZM | 19 | 11 | 8 |
 | ZW | 18 | 14 | 4 |
 
-Total domains: 25815. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 25821. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.

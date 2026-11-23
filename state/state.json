@@ -28756,6 +28756,11 @@
       "confidence": 40,
       "reason": "low-confidence:http-2xx-html+edu-keywords"
     },
+    "ecolemassillon.com": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "ecolenationaledecirque.ca": {
       "code": 200,
       "confidence": 60,
@@ -38535,6 +38540,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "fetch-error:ReadTimeout"
+    },
+    "gaspardmonge-stjeoire.ent.auvergnerhonealpes.fr": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
     "gass.edu.vn": {
       "code": 0,
@@ -66386,6 +66396,11 @@
       "confidence": 40,
       "reason": "moved-to:desandaines.lycee.ac-normandie.fr"
     },
+    "lyceedescartesantony.fr": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+    },
     "lyceedubois.fr": {
       "code": 200,
       "confidence": 50,
@@ -70762,9 +70777,9 @@
       "reason": "fetch-error:SSLError"
     },
     "miuegypt.edu.eg": {
-      "code": 403,
-      "confidence": 5,
-      "reason": "http-403"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "miun.se": {
       "code": 200,
@@ -71887,9 +71902,9 @@
       "reason": "http-2xx-html+edu-keywords+substantial-content"
     },
     "mpu-prague.cz": {
-      "code": 200,
-      "confidence": 70,
-      "reason": "http-2xx-html+multi-source+structure+substantial-content"
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ReadTimeout"
     },
     "mpu.ac.jp": {
       "code": 0,
@@ -72477,9 +72492,9 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mtu.edu.et": {
-      "code": 0,
-      "confidence": 0,
-      "reason": "fetch-error:SSLError"
+      "code": 200,
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
     },
     "mtu.ie": {
       "code": 200,
@@ -72542,9 +72557,9 @@
       "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "mu.edu.et": {
-      "code": 403,
-      "confidence": 5,
-      "reason": "http-403"
+      "code": 200,
+      "confidence": 40,
+      "reason": "moved-to:technobros.au"
     },
     "mu.edu.iq": {
       "code": 200,
@@ -72713,8 +72728,8 @@
     },
     "muirden.sa.edu.au": {
       "code": 200,
-      "confidence": 60,
-      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
+      "confidence": 90,
+      "reason": "http-2xx-html+multi-source+edu-keywords+structure+substantial-content"
     },
     "muis.mn": {
       "code": 0,
@@ -93696,6 +93711,11 @@
       "confidence": 0,
       "reason": "unreachable-dns"
     },
+    "smtexas.org": {
+      "code": 200,
+      "confidence": 50,
+      "reason": "http-2xx-html+edu-keywords+substantial-content"
+    },
     "smtu.ru": {
       "code": 200,
       "confidence": 80,
@@ -96720,6 +96740,11 @@
       "code": 200,
       "confidence": 90,
       "reason": "http-2xx-html+multi-source+edu-keywords+trusted-suffix+substantial-content"
+    },
+    "stonewalllearningcenter.com": {
+      "code": 0,
+      "confidence": 0,
+      "reason": "fetch-error:ConnectTimeout"
     },
     "stonybrook.edu": {
       "code": 200,
@@ -109895,6 +109920,11 @@
       "code": 0,
       "confidence": 0,
       "reason": "unreachable-dns"
+    },
+    "umsb.ac.id": {
+      "code": 200,
+      "confidence": 60,
+      "reason": "http-2xx-html+edu-keywords+structure+substantial-content"
     },
     "umsf.dp.ua": {
       "code": 200,
@@ -155218,6 +155248,7 @@
     "ecolejeanninemanuel.org": "2007-04-02",
     "ecolejulesrichard.fr": "2025-07-02",
     "ecolekoenig.com": "2004-02-04",
+    "ecolemassillon.com": "2004-10-14",
     "ecolenationaledecirque.ca": "2003-09-22",
     "ecolepascal.fr": "1999-10-26",
     "ecolepriveecatholique22.fr": "2020-11-30",
@@ -160686,6 +160717,10 @@
       "ts": "2026-10-07"
     },
     "gasc.gujarat.gov.in": "2004-02-28",
+    "gaspardmonge-stjeoire.ent.auvergnerhonealpes.fr": {
+      "reg": "",
+      "ts": "2026-11-23"
+    },
     "gass.edu.vn": {
       "reg": "",
       "ts": "2026-10-12"
@@ -176084,6 +176119,7 @@
     "lyceedelunion.com": "2018-02-07",
     "lyceederignac.fr": "2023-01-24",
     "lyceedesandaines.fr": "2014-03-25",
+    "lyceedescartesantony.fr": "2022-06-17",
     "lyceedubois.fr": "2007-01-30",
     "lyceedumontdurville.fr": "2019-12-02",
     "lyceedupaysdaunis.com": "2023-05-19",
@@ -189923,6 +189959,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "smtexas.org": "1999-03-16",
     "smtu.ru": {
       "reg": "",
       "ts": "2026-09-30"
@@ -191318,6 +191355,7 @@
     "stolaf.edu": "1988-11-11",
     "stonechild.edu": "2003-04-30",
     "stonehill.edu": "1992-07-10",
+    "stonewalllearningcenter.com": "2015-05-12",
     "stonybrook.edu": "1996-04-29",
     "stonybrookmedicine.edu": "2011-07-19",
     "stou.ac.th": {
@@ -198682,6 +198720,7 @@
       "reg": "",
       "ts": "2026-09-20"
     },
+    "umsb.ac.id": "2007-01-14",
     "umsf.dp.ua": "2015-01-20",
     "umsh.edu.al": {
       "reg": "",
@@ -214533,6 +214572,7 @@
     "ecolejeanninemanuel.org": 0,
     "ecolejulesrichard.fr": 0,
     "ecolekoenig.com": 2,
+    "ecolemassillon.com": 0,
     "ecolenationaledecirque.ca": 0,
     "ecolepascal.fr": 0,
     "ecolepriveecatholique22.fr": 0,
@@ -216489,6 +216529,7 @@
     "garrettcollege.edu": 0,
     "gasbb.edupage.org": 1,
     "gasc.gujarat.gov.in": 1,
+    "gaspardmonge-stjeoire.ent.auvergnerhonealpes.fr": 0,
     "gass.edu.vn": 1,
     "gaston-bonheur.mon-ent-occitanie.fr": 1,
     "gaston-darboux.mon-ent-occitanie.fr": 1,
@@ -220770,7 +220811,7 @@
     "kvenskinstitutt.no": 1,
     "kvgdentalcollege.com": 1,
     "kvk.lt": 0,
-    "kvl.dk": 1,
+    "kvl.dk": 2,
     "kvnzchmy.at.ua": 0,
     "kvpubd.com": 1,
     "kvsector8rkpuram.org": 2,
@@ -221161,7 +221202,7 @@
     "leeuniversity.edu": 0,
     "leeward.hawaii.edu": 1,
     "lef.upn.mx": 1,
-    "lefke.edu.tr": 1,
+    "lefke.edu.tr": 2,
     "legacyuniversity.edu": 1,
     "legends-barber-college.com": 0,
     "legiondhonneur.fr": 0,
@@ -222059,6 +222100,7 @@
     "lyceedelunion.com": 0,
     "lyceederignac.fr": 1,
     "lyceedesandaines.fr": 1,
+    "lyceedescartesantony.fr": 0,
     "lyceedubois.fr": 0,
     "lyceedumontdurville.fr": 1,
     "lyceedupaysdaunis.com": 0,
@@ -222290,7 +222332,7 @@
     "mannheim.dhbw.de": 0,
     "manoa.hawaii.edu": 1,
     "manor.edu": 0,
-    "mans.edu.eg": 1,
+    "mans.edu.eg": 2,
     "mans.edu.pl": 0,
     "mans.org.pl": 1,
     "mansfield.edu": 2,
@@ -222934,7 +222976,7 @@
     "miu.edu.pk": 0,
     "miu.ru": 1,
     "miuarh.ru": 1,
-    "miuegypt.edu.eg": 1,
+    "miuegypt.edu.eg": 0,
     "miun.se": 0,
     "miurarinkai-h.pen-kanagawa.ed.jp": 1,
     "miva.edu.ng": 0,
@@ -223159,7 +223201,7 @@
     "mppcvv.org": 2,
     "mps.si": 0,
     "mpsaz.org": 0,
-    "mpu-prague.cz": 0,
+    "mpu-prague.cz": 1,
     "mpu.ac.jp": 1,
     "mpu.edu.iq": 0,
     "mpu.edu.mo": 0,
@@ -223181,7 +223223,7 @@
     "ms447.org": 0,
     "msa.ac.za": 1,
     "msa.edu.eg": 0,
-    "msa.eun.eg": 1,
+    "msa.eun.eg": 2,
     "msaab.ru": 1,
     "msal.ru": 0,
     "msb.tn": 1,
@@ -223277,7 +223319,7 @@
     "mtti.edu": 0,
     "mtu.ac.kr": 1,
     "mtu.edu": 0,
-    "mtu.edu.et": 1,
+    "mtu.edu.et": 0,
     "mtu.ie": 0,
     "mtu.moe.edu.mm": 1,
     "mtuci.ru": 1,
@@ -223290,7 +223332,7 @@
     "mu.ac.ke": 1,
     "mu.ac.tz": 0,
     "mu.ac.zm": 0,
-    "mu.edu.et": 1,
+    "mu.edu.et": 2,
     "mu.edu.iq": 1,
     "mu.edu.np": 0,
     "mu.edu.sa": 1,
@@ -227521,6 +227563,7 @@
     "smsouth.smsd.org": 0,
     "smsu.edu": 0,
     "smtafe.wa.edu.au": 1,
+    "smtexas.org": 0,
     "smtu.ru": 0,
     "smu.ac.kr": 1,
     "smu.ac.uk": 1,
@@ -228126,6 +228169,7 @@
     "stolaf.edu": 0,
     "stonechild.edu": 0,
     "stonehill.edu": 0,
+    "stonewalllearningcenter.com": 1,
     "stonybrook.edu": 0,
     "stonybrookmedicine.edu": 0,
     "stou.ac.th": 1,
@@ -230761,6 +230805,7 @@
     "umsa.edu.mx": 0,
     "umsa.edu.ua": 1,
     "umsanet.edu.bo": 1,
+    "umsb.ac.id": 0,
     "umsf.dp.ua": 0,
     "umsh.edu.al": 0,
     "umsha.ac.ir": 0,
@@ -234609,13 +234654,13 @@
     "skipped_service": 9,
     "unmapped": 0
   },
-  "last_run": "2026-11-23T20:58:50+00:00",
+  "last_run": "2026-11-23T22:18:33+00:00",
   "last_verify": {
-    "added_active": 12,
-    "at": "2026-11-23 10:46 UTC",
+    "added_active": 5,
+    "at": "2026-11-23 22:18 UTC",
     "pending_left": 0,
     "reverified": 15,
-    "validated": 39
+    "validated": 21
   },
   "moved": {
     "aambfs.org": "aambfs.edu.eg",
@@ -235226,6 +235271,7 @@
     "mrxom.uz": "pin-up-online.world",
     "msb.tn": "smu.tn",
     "mtcbr.com": "deltacollege.com",
+    "mu.edu.et": "technobros.au",
     "muni.ceitec.cz": "ceitec.eu",
     "murshidabadmedicalcollege.in": "hotelsitaragrand.in",
     "mwu.edu.np": "mu.edu.np",
