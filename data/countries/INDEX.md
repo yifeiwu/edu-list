@@ -40,12 +40,12 @@
 | CL | 97 | 44 | 53 |
 | CM | 34 | 18 | 16 |
 | CN | 1393 | 153 | 1240 |
-| CO | 134 | 82 | 52 |
+| CO | 135 | 85 | 50 |
 | CR | 43 | 24 | 19 |
 | CU | 17 | 4 | 13 |
 | CV | 5 | 3 | 2 |
 | CW | 2 | 1 | 1 |
-| CY | 22 | 15 | 7 |
+| CY | 22 | 14 | 8 |
 | CZ | 83 | 38 | 45 |
 | DE | 642 | 363 | 279 |
 | DJ | 1 | 1 | 0 |
@@ -53,12 +53,12 @@
 | DM | 3 | 1 | 2 |
 | DO | 28 | 24 | 4 |
 | DZ | 65 | 30 | 35 |
-| EC | 65 | 35 | 30 |
+| EC | 65 | 36 | 29 |
 | EE | 14 | 9 | 5 |
 | EG | 117 | 52 | 65 |
 | ER | 1 | 0 | 1 |
 | ES | 422 | 270 | 152 |
-| ET | 48 | 23 | 25 |
+| ET | 48 | 24 | 24 |
 | EU | 2 | 2 | 0 |
 | FI | 55 | 25 | 30 |
 | FJ | 4 | 2 | 2 |
@@ -210,4 +210,4 @@
 | ZM | 19 | 11 | 8 |
 | ZW | 18 | 14 | 4 |
 
-Total domains: 25881. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
+Total domains: 25882. Schema: `school_name,web_domain,type,last_visited,status,sources,years_registered,confidence,reason,final_domain,language`.
